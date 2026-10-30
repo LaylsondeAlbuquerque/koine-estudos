@@ -1,0 +1,16 @@
+tmp/
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+*.pdf
+*.pptx
+*.docx
+*.zip
+screenshots/

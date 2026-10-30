@@ -1,0 +1,1038 @@
+[
+  {
+    "id": "v-lemma",
+    "area": "vocabulary",
+    "level": 0,
+    "order": 1,
+    "title": "A palavra que você procura no léxico",
+    "summary": "Distinguir a forma encontrada no texto do lema usado para estudar.",
+    "minutes": 8,
+    "objectives": [
+      "Distinguir a forma encontrada no texto do lema usado para estudar.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Uma palavra, várias formas",
+        "body": "No texto, uma mesma palavra pode aparecer com terminações diferentes. λόγος, λόγον e λόγου pertencem ao repertório de λόγος. O lema é uma forma convencional usada para reunir essas ocorrências. Aprender um lema abre acesso a uma família de formas, mas não dispensa o reconhecimento de suas terminações. Por isso vocabulário e morfologia devem caminhar juntos."
+      },
+      {
+        "heading": "O que memorizar primeiro",
+        "body": "Associe a forma grega a uma glossa curta em português. Para um substantivo, o artigo e a forma de genitivo ajudam a reconhecer gênero e padrão de flexão. Para um verbo, o lema apresentado no repertório é o ponto de referência para localizar formas distintas. Esses dados podem ser aprendidos em etapas: primeiro reconheça a palavra; em seguida, incorpore os padrões morfológicos."
+      },
+      {
+        "heading": "Reconhecer sem adivinhar",
+        "body": "Leia a palavra inteira antes de selecionar uma resposta. Duas palavras parecidas podem ter sentidos diferentes; duas formas diferentes podem pertencer ao mesmo lema. Se uma forma do texto não se parece com o lema que você conhece, procure pistas no radical e na análise morfológica. A glossa é um apoio inicial, não uma tradução automática de toda ocorrência."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "λόγος · λόγον · λόγου",
+        "translation": "palavra; mensagem; discurso",
+        "note": "Formas do mesmo lema; a função no texto depende da construção."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Qual forma reúne λόγον e λόγου no repertório?",
+        "greek": "λόγον · λόγου",
+        "options": [
+          "λόγος",
+          "λίθος",
+          "λαός"
+        ],
+        "answer": 0,
+        "explanation": "λόγος é o lema que reúne essas formas flexionadas.",
+        "id": "v-lemma-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O que aprender o lema permite?",
+        "greek": "",
+        "options": [
+          "Ignorar as terminações",
+          "Agrupar formas da mesma palavra",
+          "Traduzir qualquer contexto com uma única palavra"
+        ],
+        "answer": 1,
+        "explanation": "O lema reúne formas; a flexão e o contexto ainda precisam ser analisados.",
+        "id": "v-lemma-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione forma e lema.",
+        "pairs": [
+          {
+            "left": "λόγον",
+            "right": "λόγος"
+          },
+          {
+            "left": "θεοῦ",
+            "right": "θεός"
+          },
+          {
+            "left": "μαθητήν",
+            "right": "μαθητής"
+          }
+        ],
+        "explanation": "As terminações mudam; a identidade lexical é preservada.",
+        "id": "v-lemma-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-gloss",
+    "area": "vocabulary",
+    "level": 0,
+    "order": 2,
+    "title": "Uma glossa é uma pista de sentido",
+    "summary": "Usar equivalentes portugueses sem confundi-los com definições completas.",
+    "minutes": 8,
+    "objectives": [
+      "Usar equivalentes portugueses sem confundi-los com definições completas.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Apoio de memória",
+        "body": "Uma glossa é um equivalente breve: λόγος pode ser apresentado como palavra, mensagem ou discurso. O cartão não reúne toda a história da palavra nem decide qual sentido cabe em determinada passagem. Sua função é criar um primeiro vínculo de memória, que depois será refinado pelo uso no texto."
+      },
+      {
+        "heading": "Um equivalente por contexto",
+        "body": "Quando uma lista apresenta várias glossas, elas não precisam ser inseridas juntas na tradução. A construção e o contexto ajudam a escolher a opção adequada. Evite somar todos os sentidos conhecidos como se cada ocorrência carregasse uma definição completa. Anote mentalmente uma imagem ou uma situação simples, sem transformar esse recurso de memória em uma regra de interpretação."
+      },
+      {
+        "heading": "O cartão e a leitura",
+        "body": "Nos flashcards, selecione a glossa que corresponde ao vocábulo apresentado. Na leitura, faça uma pergunta adicional: esse equivalente produz uma tradução coerente com a oração e com o assunto? Se não produzir, consulte um léxico e examine outros sentidos documentados. A familiaridade com o repertório deve tornar a investigação mais rápida, não eliminar a necessidade dela."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "καρπός",
+        "translation": "fruto; resultado",
+        "note": "Uma ocorrência pode se referir a fruto concreto; outra, a resultado de uma atividade."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Uma lista apresenta “fruto; resultado”. Como usar essas glossas?",
+        "greek": "καρπός",
+        "options": [
+          "Inserir os dois sentidos em toda tradução",
+          "Escolher o sentido adequado ao contexto",
+          "Ignorar o contexto"
+        ],
+        "answer": 1,
+        "explanation": "As glossas apresentam possibilidades; o contexto orienta a seleção.",
+        "id": "v-gloss-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O que um flashcard fornece?",
+        "greek": "",
+        "options": [
+          "Uma pista lexical breve",
+          "Uma interpretação completa de qualquer passagem",
+          "Todos os usos históricos da palavra"
+        ],
+        "answer": 0,
+        "explanation": "O cartão oferece um ponto de entrada para reconhecer a palavra.",
+        "id": "v-gloss-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe vocábulo e glossa.",
+        "pairs": [
+          {
+            "left": "καρδία",
+            "right": "coração"
+          },
+          {
+            "left": "θάλασσα",
+            "right": "mar"
+          },
+          {
+            "left": "θύρα",
+            "right": "porta"
+          }
+        ],
+        "explanation": "Estas associações básicas servem de ponto de partida para a leitura.",
+        "id": "v-gloss-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-review",
+    "area": "vocabulary",
+    "level": 0,
+    "order": 3,
+    "title": "Recordar hoje, reencontrar amanhã",
+    "summary": "Organizar revisões que exijam recordar a palavra em dias diferentes.",
+    "minutes": 8,
+    "objectives": [
+      "Organizar revisões que exijam recordar a palavra em dias diferentes.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Recordação antes da resposta",
+        "body": "Olhe a palavra grega e tente lembrar o sentido antes de examinar as alternativas. Isso transforma a atividade em uma tentativa de recuperação da memória. Reconhecer visualmente uma resposta depois de vê-la pode parecer fácil, mas não é o mesmo que conseguir recordar o vocábulo em um texto sem ajuda."
+      },
+      {
+        "heading": "O critério deste espaço",
+        "body": "O sistema registra um vocábulo como memorizado depois de acertos em três dias diferentes. Repetir o mesmo item no mesmo dia não aumenta esse contador de dias. Após os acertos, a próxima revisão se afasta gradualmente; um erro devolve a palavra à revisão. Esse critério organiza o estudo e não representa uma garantia permanente de retenção."
+      },
+      {
+        "heading": "Um hábito que cabe no dia",
+        "body": "Faça sessões pequenas e retorne aos itens devidos antes de ampliar demais o repertório. Quando errar, leia a explicação e observe o que confundiu: a escrita, uma palavra parecida ou a glossa. O histórico fica neste navegador. Para preservá-lo ao trocar de aparelho ou limpar dados, use a exportação em Meu progresso."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "γράφω",
+        "translation": "escrever",
+        "note": "Tente recordar o sentido antes de selecionar a alternativa."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "O que aumenta o contador de dias com acertos?",
+        "greek": "",
+        "options": [
+          "Responder várias vezes no mesmo dia",
+          "Acertar em outro dia",
+          "Apenas abrir o repertório"
+        ],
+        "answer": 1,
+        "explanation": "O contador considera datas diferentes, não o número de cliques em uma sessão.",
+        "id": "v-review-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Um erro em palavra memorizada produz o quê?",
+        "greek": "",
+        "options": [
+          "Retorno à revisão",
+          "Exclusão definitiva da palavra",
+          "Manutenção automática do status"
+        ],
+        "answer": 0,
+        "explanation": "A palavra volta à revisão para ser consolidada novamente.",
+        "id": "v-review-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione ação e objetivo.",
+        "pairs": [
+          {
+            "left": "Recordar antes de selecionar",
+            "right": "Testar a recuperação da memória"
+          },
+          {
+            "left": "Voltar em outro dia",
+            "right": "Reencontrar a palavra com intervalo"
+          },
+          {
+            "left": "Exportar o histórico",
+            "right": "Preservar uma cópia do progresso"
+          }
+        ],
+        "explanation": "Memória e preservação do histórico são tarefas diferentes.",
+        "id": "v-review-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-core300",
+    "area": "vocabulary",
+    "level": 1,
+    "order": 4,
+    "title": "Os 300 vocábulos prioritários",
+    "summary": "Interpretar corretamente o marco de cobertura lexical do repertório.",
+    "minutes": 8,
+    "objectives": [
+      "Interpretar corretamente o marco de cobertura lexical do repertório.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Contar ocorrências",
+        "body": "Uma palavra frequente reaparece muitas vezes. O indicador de cobertura soma as ocorrências dos lemas selecionados e divide pelo total de palavras do corpus usado. Ele não divide o número de lemas conhecidos pelo número de lemas do idioma. Conhecer um pequeno conjunto frequente pode alcançar muitas ocorrências, embora continuem existindo milhares de palavras distintas."
+      },
+      {
+        "heading": "O marco dos 300",
+        "body": "Os 300 lemas prioritários deste repertório foram selecionados pela frequência calculada no corpus MACULA SBLGNT. Sua cobertura é apresentada no painel e nos metadados. A porcentagem depende da edição, do recorte textual e das decisões de lematização. Não é uma promessa atribuída a Porter nem uma medida de quantas passagens você já interpreta sem auxílio."
+      },
+      {
+        "heading": "Usar a prioridade com equilíbrio",
+        "body": "Priorize o núcleo sem abandonar morfologia e sintaxe. Artigos, pronomes, preposições e conjunções aparecem entre os itens frequentes e sustentam as relações do texto. Aprenda-os em pequenas orações, além de reconhecer sua glossa. O marcador se completa quando os 300 itens cumprem o critério de memorização do sistema."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "ὁ · καί · αὐτός",
+        "translation": "o/a · e/também · ele/mesmo",
+        "note": "Palavras muito frequentes ajudam a reconhecer a estrutura do texto."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Cobertura lexical mede o quê?",
+        "greek": "",
+        "options": [
+          "Ocorrências representadas pelos lemas conhecidos",
+          "Porcentagem de doutrinas compreendidas",
+          "Porcentagem de versículos traduzidos corretamente"
+        ],
+        "answer": 0,
+        "explanation": "A medida conta palavras do corpus, não a compreensão de passagens.",
+        "id": "v-core300-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Por que aprender palavras funcionais?",
+        "greek": "ὁ · καί",
+        "options": [
+          "Elas não participam do sentido",
+          "Elas ajudam a organizar as relações do enunciado",
+          "Todas significam a mesma coisa"
+        ],
+        "answer": 1,
+        "explanation": "Artigos e conectores são frequentes e estruturam o texto.",
+        "id": "v-core300-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione indicador e significado.",
+        "pairs": [
+          {
+            "left": "Número de lemas",
+            "right": "Quantidade de palavras lexicais distintas"
+          },
+          {
+            "left": "Número de ocorrências",
+            "right": "Quantidade de aparições no corpus"
+          },
+          {
+            "left": "Compreensão",
+            "right": "Resultado de leitura com contexto e análise"
+          }
+        ],
+        "explanation": "Os três conceitos não devem ser confundidos.",
+        "id": "v-core300-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-function",
+    "area": "vocabulary",
+    "level": 1,
+    "order": 5,
+    "title": "As pequenas palavras que conectam o texto",
+    "summary": "Memorizar palavras funcionais com atenção ao seu papel na oração.",
+    "minutes": 8,
+    "objectives": [
+      "Memorizar palavras funcionais com atenção ao seu papel na oração.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Mais do que uma tradução curta",
+        "body": "Preposições, conjunções, artigos e partículas costumam ter glossas breves, mas exercem funções importantes. Uma conjunção pode relacionar afirmações; uma preposição organiza a relação de um grupo nominal com outro elemento. Memorizar apenas um equivalente português é insuficiente para descrever toda a função dessas palavras."
+      },
+      {
+        "heading": "Aprender com uma construção",
+        "body": "Estude preposições junto ao caso que introduzem e a exemplos pequenos. Algumas mudam de possibilidade de sentido conforme o caso e a construção. Para conectores, observe se a oração acrescenta, contrasta, explica ou apresenta uma consequência. Essas relações não devem ser atribuídas mecanicamente a uma tradução isolada."
+      },
+      {
+        "heading": "Selecionar com atenção",
+        "body": "No repertório, a glossa identifica uma possibilidade. Na prática de sintaxe, o mesmo vocábulo deve ser observado no enunciado. Se uma palavra possui mais de uma função, não transforme a mais frequente em regra universal. Repita a associação lexical e retorne às lições de preposições e conjunções para ampliar o entendimento."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "ἐν τῷ οἴκῳ",
+        "translation": "na casa",
+        "note": "Exemplo didático: a preposição forma um grupo com o dativo."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Como é melhor estudar uma preposição?",
+        "greek": "ἐν",
+        "options": [
+          "Sem observar o caso",
+          "Com caso e exemplo de construção",
+          "Apenas contando suas letras"
+        ],
+        "answer": 1,
+        "explanation": "Caso, construção e contexto ajudam a especificar a relação.",
+        "id": "v-function-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "A conjunção sempre mantém uma única tradução portuguesa?",
+        "greek": "καί",
+        "options": [
+          "Sim, obrigatoriamente “e”",
+          "Não; pode exigir outro equivalente contextual",
+          "Não participa de relações"
+        ],
+        "answer": 1,
+        "explanation": "Uma glossa frequente não esgota os usos da conjunção.",
+        "id": "v-function-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe a glossa inicial.",
+        "pairs": [
+          {
+            "left": "καί",
+            "right": "e; também"
+          },
+          {
+            "left": "γάρ",
+            "right": "pois; porque"
+          },
+          {
+            "left": "εἰ",
+            "right": "se"
+          }
+        ],
+        "explanation": "As glossas ajudam a reconhecer o conector; a análise contextual vem em seguida.",
+        "id": "v-function-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-families",
+    "area": "vocabulary",
+    "level": 1,
+    "order": 6,
+    "title": "Famílias de palavras, com cautela",
+    "summary": "Usar relações entre palavras como apoio de memória sem deduzir sentidos automaticamente.",
+    "minutes": 8,
+    "objectives": [
+      "Usar relações entre palavras como apoio de memória sem deduzir sentidos automaticamente.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Perceber sem substituir a consulta",
+        "body": "Algumas palavras compartilham elementos reconhecíveis. Isso pode ajudar a lembrar uma forma e associá-la a outras palavras estudadas. Uma família de palavras, porém, não determina uma tradução única para todos os seus membros. Cada palavra desenvolve usos próprios e deve ser observada no contexto."
+      },
+      {
+        "heading": "Compostos não são uma conta simples",
+        "body": "Verbos compostos podem reunir um prefixo e uma base conhecida. Essa estrutura oferece uma pista para reconhecer a palavra, mas o sentido do composto nem sempre corresponde à soma literal das partes. Aprenda uma glossa do composto e compare ocorrências, em vez de substituir a leitura por uma decomposição etimológica."
+      },
+      {
+        "heading": "Criar grupos úteis",
+        "body": "Organize pequenos grupos: escrever, escrito, escritura; ensinar, mestre, ensino. Estude as diferenças de classe e os sentidos usuais. Em outra sessão, misture os grupos para verificar se você reconhece cada item fora da sequência memorizada. A semelhança é um recurso de aprendizagem, não uma justificativa suficiente para uma interpretação."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "γράφω · γραφή · γράμμα",
+        "translation": "escrever · escrito/Escritura · letra/escrito",
+        "note": "Uma associação de família não torna os membros equivalentes em todos os usos."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "O que uma família de palavras oferece?",
+        "greek": "γράφω · γραφή",
+        "options": [
+          "Um apoio de memória",
+          "Uma tradução idêntica obrigatória",
+          "Dispensa de observar o contexto"
+        ],
+        "answer": 0,
+        "explanation": "A associação auxilia a memória, mas cada item tem classe e usos próprios.",
+        "id": "v-families-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O sentido de um composto é sempre a soma literal das partes?",
+        "greek": "",
+        "options": [
+          "Sim",
+          "Não",
+          "Somente se for verbo"
+        ],
+        "answer": 1,
+        "explanation": "A formação oferece pistas; os usos documentados determinam o sentido contextual.",
+        "id": "v-families-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione classe e exemplo.",
+        "pairs": [
+          {
+            "left": "γράφω",
+            "right": "Verbo: escrever"
+          },
+          {
+            "left": "διδάσκαλος",
+            "right": "Substantivo: mestre"
+          },
+          {
+            "left": "καλός",
+            "right": "Adjetivo: bom/belo"
+          }
+        ],
+        "explanation": "Perceber a classe ajuda a separar vocábulos associados.",
+        "id": "v-families-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-similar",
+    "area": "vocabulary",
+    "level": 2,
+    "order": 7,
+    "title": "Parecidas na escrita, distintas no uso",
+    "summary": "Distinguir vocábulos semelhantes sem depender apenas de sua aparência.",
+    "minutes": 8,
+    "objectives": [
+      "Distinguir vocábulos semelhantes sem depender apenas de sua aparência.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Uma leitura completa",
+        "body": "O começo de uma palavra pode lembrar um vocábulo já conhecido. Antes de responder, confira a forma inteira, incluindo vogais, consoantes e sinais relevantes. Pares parecidos são bons candidatos a revisão conjunta, desde que você pratique também cada palavra fora do par. O objetivo é reconhecer o item, não adivinhar pela primeira letra."
+      },
+      {
+        "heading": "Acentos e identidade lexical",
+        "body": "A busca do repertório permite encontrar palavras sem acentos, mas isso é uma facilidade de pesquisa. No grego, acentos e espíritos fazem parte da representação escrita e podem contribuir para distinguir formas. Preserve-os ao estudar. Em casos ambíguos, a função na frase e os outros elementos da oração ajudam a decidir a leitura."
+      },
+      {
+        "heading": "Revisão por contraste",
+        "body": "Associe cada palavra a um exemplo curto e a uma diferença clara. Depois misture os itens nas sessões regulares. Se a confusão persistir, compare radical e significado, sem inventar uma regra histórica para justificar uma semelhança gráfica. Um recurso pessoal de memória pode ser útil mesmo quando não é uma explicação etimológica."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "λαός · λίθος · λόγος",
+        "translation": "povo · pedra · palavra",
+        "note": "O contraste obriga a observar a forma inteira."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Qual vocábulo significa “povo”?",
+        "greek": "λαός · λίθος · λόγος",
+        "options": [
+          "λαός",
+          "λίθος",
+          "λόγος"
+        ],
+        "answer": 0,
+        "explanation": "λαός é povo; λίθος é pedra e λόγος pode significar palavra ou mensagem.",
+        "id": "v-similar-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "A busca sem acentos significa que os acentos podem ser descartados no estudo?",
+        "greek": "",
+        "options": [
+          "Sim",
+          "Não",
+          "Apenas nos substantivos"
+        ],
+        "answer": 1,
+        "explanation": "A busca normalizada facilita localizar itens, sem substituir a grafia completa.",
+        "id": "v-similar-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione as formas semelhantes.",
+        "pairs": [
+          {
+            "left": "λαός",
+            "right": "povo"
+          },
+          {
+            "left": "λίθος",
+            "right": "pedra"
+          },
+          {
+            "left": "λόγος",
+            "right": "palavra; mensagem"
+          }
+        ],
+        "explanation": "Observe cada vocábulo por inteiro.",
+        "id": "v-similar-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-polysemy",
+    "area": "vocabulary",
+    "level": 2,
+    "order": 8,
+    "title": "Uma palavra, possibilidades de sentido",
+    "summary": "Selecionar um sentido contextual sem acumular todas as glossas conhecidas.",
+    "minutes": 8,
+    "objectives": [
+      "Selecionar um sentido contextual sem acumular todas as glossas conhecidas.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Sentidos em uso",
+        "body": "Uma palavra pode participar de mais de um padrão de sentido. κόσμος, por exemplo, pode exigir atenção à ideia de mundo, ordem ou humanidade conforme a passagem. Não há uma glossa portuguesa que resolva automaticamente todas as ocorrências. Aprender essas possibilidades prepara a leitura, mas a oração e o contexto mais amplo orientam a seleção."
+      },
+      {
+        "heading": "Pistas que precisam convergir",
+        "body": "Observe com que palavras o vocábulo se combina, que função exerce e qual assunto está em desenvolvimento. Compare usos semelhantes e teste uma tradução coerente. Uma glossa que parece familiar pode produzir uma leitura inadequada se ignorar essas pistas. Evite concluir uma questão exegética apenas pela presença de uma palavra."
+      },
+      {
+        "heading": "Memória com ampliação gradual",
+        "body": "Comece com uma glossa comum e acrescente outra quando encontrar um uso que a justifique. Na leitura, explique por que escolheu o equivalente, em vez de citar toda a lista do léxico. O objetivo não é decorar uma frase longa para cada item; é tornar mais rápido o reconhecimento das possibilidades relevantes."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "κεφαλή",
+        "translation": "cabeça",
+        "note": "O sentido contextual deve ser examinado; uma glossa isolada não resolve toda discussão interpretativa."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Quando uma palavra tem várias glossas, devemos:",
+        "greek": "κόσμος",
+        "options": [
+          "Somar todas em cada ocorrência",
+          "Escolher o sentido sustentado pelo contexto",
+          "Selecionar sempre o sentido menos frequente"
+        ],
+        "answer": 1,
+        "explanation": "A seleção depende das pistas do enunciado e do uso documentado.",
+        "id": "v-polysemy-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que informação ajuda a escolher o sentido?",
+        "greek": "",
+        "options": [
+          "Somente a aparência da palavra",
+          "Combinações, função e assunto do trecho",
+          "A ordem alfabética do léxico"
+        ],
+        "answer": 1,
+        "explanation": "Esses elementos precisam convergir para uma leitura coerente.",
+        "id": "v-polysemy-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione atividade e propósito.",
+        "pairs": [
+          {
+            "left": "Estudar glossas",
+            "right": "Reconhecer possibilidades"
+          },
+          {
+            "left": "Ler o contexto",
+            "right": "Selecionar o sentido adequado"
+          },
+          {
+            "left": "Comparar ocorrências",
+            "right": "Testar a proposta de leitura"
+          }
+        ],
+        "explanation": "Memorização e análise contextual se apoiam.",
+        "id": "v-polysemy-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-text",
+    "area": "vocabulary",
+    "level": 2,
+    "order": 9,
+    "title": "Levar o repertório para a leitura",
+    "summary": "Reconhecer vocábulos dentro de pequenas orações e ampliar a memória contextual.",
+    "minutes": 8,
+    "objectives": [
+      "Reconhecer vocábulos dentro de pequenas orações e ampliar a memória contextual.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Do cartão ao enunciado",
+        "body": "Um cartão apresenta uma tarefa delimitada. O texto exige combinar repertório, forma e relações. Depois de reconhecer os vocábulos de uma oração, identifique o verbo, agrupe os termos relacionados e procure a contribuição de cada elemento. Uma tradução palavra por palavra na ordem grega nem sempre produz um português compreensível."
+      },
+      {
+        "heading": "Uma sequência de trabalho",
+        "body": "Leia a oração inteira; reconheça os lemas; observe flexões; proponha as relações sintáticas; só então monte uma tradução didática. Quando uma palavra estiver desconhecida, tente localizar seu lema e consulte o repertório. Se a glossa disponível não se ajustar ao contexto, amplie a investigação em um léxico adequado."
+      },
+      {
+        "heading": "Voltar com uma pergunta melhor",
+        "body": "Após traduzir, escolha um ou dois vocábulos para revisão. Pergunte como foram usados ali e se a forma encontrada se parece com o lema memorizado. Esse retorno conecta o treinamento de memória à leitura real. A fluência se desenvolve com reencontros variados, incluindo palavras que pareciam dominadas no exercício isolado."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "ὁ μαθητὴς βλέπει τὸν οἶκον.",
+        "translation": "O aluno vê a casa.",
+        "note": "Exemplo didático: reconhecer os vocábulos é uma etapa; identificar sujeito e objeto é outra."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Qual é a tradução didática da oração?",
+        "greek": "ὁ μαθητὴς βλέπει τὸν οἶκον.",
+        "options": [
+          "O aluno vê a casa.",
+          "A casa vê o aluno.",
+          "O mestre escreve a pedra."
+        ],
+        "answer": 0,
+        "explanation": "μαθητής é aluno; βλέπει é vê; οἶκον é forma de οἶκος, casa.",
+        "id": "v-text-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Organize a tradução didática.",
+        "greek": "ὁ μαθητὴς βλέπει τὸν οἶκον.",
+        "tokens": [
+          "a casa.",
+          "vê",
+          "O aluno"
+        ],
+        "answer": [
+          "O aluno",
+          "vê",
+          "a casa."
+        ],
+        "explanation": "A tradução mantém a relação entre sujeito, verbo e objeto.",
+        "id": "v-text-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione forma do texto e glossa.",
+        "pairs": [
+          {
+            "left": "μαθητής",
+            "right": "aluno"
+          },
+          {
+            "left": "βλέπει",
+            "right": "vê"
+          },
+          {
+            "left": "οἶκον",
+            "right": "casa"
+          }
+        ],
+        "explanation": "As formas flexionadas devem ser conectadas aos lemas conhecidos.",
+        "id": "v-text-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-lexicons",
+    "area": "vocabulary",
+    "level": 3,
+    "order": 10,
+    "title": "Consultar um léxico com uma pergunta",
+    "summary": "Ler um verbete procurando evidências para uma ocorrência específica.",
+    "minutes": 8,
+    "objectives": [
+      "Ler um verbete procurando evidências para uma ocorrência específica.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Comece pela ocorrência",
+        "body": "Antes de abrir o léxico, formule a pergunta: qual palavra estou analisando e que problema de sentido preciso resolver? Confirme o lema, a classe e a construção. Uma busca por uma forma flexionada pode exigir análise morfológica. O resultado esperado é uma proposta de sentido para aquela ocorrência, com evidências que possam ser conferidas."
+      },
+      {
+        "heading": "Nem toda informação tem a mesma função",
+        "body": "Um verbete pode apresentar formas, sentidos, construções, exemplos e referências. Separe esses tipos de informação. A origem histórica de uma palavra não substitui a descrição de seus usos. Uma tradução sugerida também não deve ser transferida automaticamente para outra passagem com construção diferente."
+      },
+      {
+        "heading": "Ler criticamente",
+        "body": "Compare a passagem com os exemplos pertinentes e registre o sentido escolhido. Se dois léxicos organizam o material de modos diferentes, examine as evidências em vez de contar quantas palavras portuguesas ou inglesas cada um oferece. O presente repertório é uma ferramenta de memorização e não pretende substituir um léxico acadêmico de consulta."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "γινώσκω",
+        "translation": "conhecer; reconhecer",
+        "note": "Uma consulta deve investigar o uso na ocorrência, não apenas recuperar uma glossa familiar."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Qual é a melhor pergunta ao consultar um léxico?",
+        "greek": "",
+        "options": [
+          "Que sentido cabe nesta ocorrência e por quê?",
+          "Qual é a primeira tradução da lista?",
+          "Qual definição permite minha conclusão preferida?"
+        ],
+        "answer": 0,
+        "explanation": "A consulta deve responder ao problema do texto e testar evidências.",
+        "id": "v-lexicons-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "A etimologia substitui a análise dos usos?",
+        "greek": "",
+        "options": [
+          "Sim",
+          "Não",
+          "Somente em palavras frequentes"
+        ],
+        "answer": 1,
+        "explanation": "A história da forma e seu uso contextual respondem a perguntas diferentes.",
+        "id": "v-lexicons-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione informação e função.",
+        "pairs": [
+          {
+            "left": "Lema",
+            "right": "Localizar a entrada lexical"
+          },
+          {
+            "left": "Exemplos de uso",
+            "right": "Comparar ocorrências pertinentes"
+          },
+          {
+            "left": "Glossa de flashcard",
+            "right": "Apoiar a memorização inicial"
+          }
+        ],
+        "explanation": "Um repertório de memória e um léxico de consulta cumprem funções distintas.",
+        "id": "v-lexicons-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-semantic",
+    "area": "vocabulary",
+    "level": 3,
+    "order": 11,
+    "title": "Comparar palavras sem criar fronteiras artificiais",
+    "summary": "Avaliar semelhanças e diferenças de sentido com base nos usos.",
+    "minutes": 8,
+    "objectives": [
+      "Avaliar semelhanças e diferenças de sentido com base nos usos.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Semelhança não é identidade",
+        "body": "Duas palavras podem compartilhar uma glossa e ainda ter distribuições diferentes. O português precisa, às vezes, empregar o mesmo equivalente para vocábulos gregos distintos. Isso não significa que eles sejam intercambiáveis em qualquer construção. Também não significa que exista necessariamente uma oposição rígida entre todos os seus usos."
+      },
+      {
+        "heading": "Testar as diferenças",
+        "body": "Uma proposta de contraste deve ser examinada em ocorrências comparáveis: gênero textual, construção, autor e assunto podem influenciar o uso. Observe onde as palavras se aproximam e onde a diferença é relevante. Evite criar uma definição fixa a partir de uma única passagem ou de uma explicação repetida sem verificação."
+      },
+      {
+        "heading": "Comparar ferramentas e teorias",
+        "body": "Gramáticas e léxicos podem organizar as evidências com categorias diferentes. Identifique se a discussão é lexical, sintática, aspectual ou discursiva. A divergência de termos não prova, por si, uma divergência de análise; a semelhança dos termos também não garante concordância. Apresente a questão e as evidências antes de escolher uma formulação didática."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "λέγω · λαλέω",
+        "translation": "dizer/falar · falar/expressar-se",
+        "note": "Há aproximações de sentido; uma oposição rígida exige evidências e não pode ser presumida."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Se dois vocábulos compartilham uma glossa, isso prova que são sempre intercambiáveis?",
+        "greek": "",
+        "options": [
+          "Sim",
+          "Não",
+          "Apenas se forem verbos"
+        ],
+        "answer": 1,
+        "explanation": "A glossa portuguesa não descreve toda a distribuição das palavras gregas.",
+        "id": "v-semantic-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Como testar uma diferença lexical proposta?",
+        "greek": "",
+        "options": [
+          "Comparando usos e construções pertinentes",
+          "Apenas separando as letras",
+          "Escolhendo o verbete mais longo"
+        ],
+        "answer": 0,
+        "explanation": "As ocorrências comparáveis oferecem evidências para o contraste.",
+        "id": "v-semantic-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione foco e questão.",
+        "pairs": [
+          {
+            "left": "Lexical",
+            "right": "Que sentido a palavra assume?"
+          },
+          {
+            "left": "Sintático",
+            "right": "Que relação ela mantém na construção?"
+          },
+          {
+            "left": "Discursivo",
+            "right": "Como participa da organização do texto?"
+          }
+        ],
+        "explanation": "Os níveis de análise se relacionam, mas não são equivalentes.",
+        "id": "v-semantic-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  },
+  {
+    "id": "v-independence",
+    "area": "vocabulary",
+    "level": 3,
+    "order": 12,
+    "title": "Um repertório que continua crescendo",
+    "summary": "Planejar a ampliação do vocabulário com leitura, revisão e avaliação crítica.",
+    "minutes": 8,
+    "objectives": [
+      "Planejar a ampliação do vocabulário com leitura, revisão e avaliação crítica.",
+      "Aplicar o conceito a uma atividade de seleção"
+    ],
+    "sections": [
+      {
+        "heading": "Depois do repertório inicial",
+        "body": "Concluir a lista não encerra o estudo da língua. Novos textos apresentam palavras raras, combinações inesperadas e usos menos familiares de itens frequentes. A lista fornece uma base para continuar lendo com mais autonomia. Mantenha a prática de consultar fontes e registrar o que o contexto acrescenta à glossa memorizada."
+      },
+      {
+        "heading": "Reconhecer os limites do indicador",
+        "body": "Uma frequência é um dado do corpus, não um julgamento sobre o valor teológico de uma palavra. Um termo raro pode ser central para uma passagem. Do mesmo modo, alta cobertura lexical não garante uma tradução correta: relações sintáticas complexas e usos contextuais podem continuar exigindo investigação. Use os indicadores para orientar o esforço de memória."
+      },
+      {
+        "heading": "Revisão orientada pela leitura",
+        "body": "Combine revisões do núcleo frequente com reencontros dos itens que causaram dificuldade. Retorne às lições de morfologia quando o problema for reconhecer uma forma e às de sintaxe quando a relação estiver pouco clara. A autonomia aparece na capacidade de formular boas perguntas, avaliar respostas e justificar uma leitura com evidências."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "ἀναγινώσκω",
+        "translation": "ler",
+        "note": "O objetivo da memorização é apoiar leituras cada vez mais atentas e autônomas."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Uma palavra pouco frequente pode ser importante para uma passagem?",
+        "greek": "",
+        "options": [
+          "Sim",
+          "Não",
+          "Somente se estiver no núcleo dos 300"
+        ],
+        "answer": 0,
+        "explanation": "A importância no contexto não é determinada apenas pela frequência global.",
+        "id": "v-independence-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que atitude representa autonomia de leitura?",
+        "greek": "",
+        "options": [
+          "Dispensar qualquer fonte",
+          "Formular perguntas e justificar a análise",
+          "Traduzir apenas por glossas"
+        ],
+        "answer": 1,
+        "explanation": "Autonomia inclui reconhecer limites e avaliar as evidências disponíveis.",
+        "id": "v-independence-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione dificuldade e retorno ao estudo.",
+        "pairs": [
+          {
+            "left": "Não reconhecer uma terminação",
+            "right": "Rever morfologia"
+          },
+          {
+            "left": "Não entender uma relação na oração",
+            "right": "Rever sintaxe"
+          },
+          {
+            "left": "Não recordar uma glossa",
+            "right": "Rever vocabulário"
+          }
+        ],
+        "explanation": "Localizar a dificuldade torna a revisão mais precisa.",
+        "id": "v-independence-3"
+      }
+    ],
+    "references": [
+      "Porter, Reed e O’Donnell, Fundamentals of New Testament Greek, introdução e orientações sobre estudo de vocabulário. Desenvolvimento didático original.",
+      "Frequências e lemas: MACULA Greek SBLGNT, versão identificada em data/vocabulary.json."
+    ]
+  }
+]

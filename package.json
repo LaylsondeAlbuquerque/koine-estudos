@@ -1,0 +1,13 @@
+{
+  "name": "koine-estudos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Estudo aberto e estático de grego koiné, com artigos e prática por seleção.",
+  "license": "MIT",
+  "author": "Laylson de Albuquerque (https://github.com/LaylsondeAlbuquerque)",
+  "scripts": {
+    "dev": "python -m http.server 4173 --bind 127.0.0.1",
+    "check": "node --check app.js && node --check core.js && node scripts/validate.mjs && node --test scripts/core.test.mjs"
+  }
+}
