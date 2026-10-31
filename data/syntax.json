@@ -35,11 +35,11 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual pergunta é propriamente sintática?",
+        "prompt": "Ao analisar τὸν λόγον, qual pergunta investiga sua função sintática, e não apenas sua forma?",
         "greek": "τὸν λόγον",
         "options": [
-          "Qual é a desinência de acusativo?",
-          "Quantas letras há na palavra?",
+          "Qual terminação marca o acusativo?",
+          "Qual é o número gramatical do substantivo?",
           "Que função esse grupo exerce na oração?"
         ],
         "answer": 2,
@@ -48,12 +48,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Na oração, o que τὸν λόγον completa?",
+        "prompt": "Qual elemento é completado pelo objeto τὸν λόγον na oração apresentada?",
         "greek": "ὁ μαθητὴς γράφει τὸν λόγον.",
         "options": [
-          "O ponto final, como vocativo.",
-          "O verbo γράφει, como objeto.",
-          "O artigo ὁ, como sujeito."
+          "O substantivo μαθητής, como modificador nominal.",
+          "O verbo γράφει, como objeto direto.",
+          "O artigo ὁ, como complemento nominal."
         ],
         "answer": 1,
         "explanation": "O grupo identifica aquilo que o aluno escreve.",
@@ -78,6 +78,49 @@
         ],
         "explanation": "As três atividades se apoiam mutuamente, mas respondem a perguntas diferentes.",
         "id": "s-what-is-syntax-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual análise distingue corretamente a forma de λόγον de sua função nesta oração?",
+        "greek": "ὁ μαθητὴς γράφει τὸν λόγον.",
+        "options": [
+          "Forma: acusativo singular; função: objeto de γράφει.",
+          "Forma: objeto de γράφει; função: acusativo singular.",
+          "Forma: nominativo singular; função: sujeito de γράφει."
+        ],
+        "answer": 0,
+        "explanation": "“Acusativo singular” descreve a flexão; “objeto de γράφει” descreve a relação sintática.",
+        "id": "s-what-is-syntax-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza com os blocos na sequência sujeito → verbo → objeto.",
+        "greek": "ὁ διδάσκαλος γράφει τὸ βιβλίον.",
+        "tokens": [
+          "O professor",
+          "escreve",
+          "o livro."
+        ],
+        "answer": [
+          "O professor",
+          "escreve",
+          "o livro."
+        ],
+        "explanation": "O grupo ὁ διδάσκαλος é sujeito; τὸ βιβλίον é o objeto de γράφει. A ordem solicitada é um modelo didático do português.",
+        "id": "s-what-is-syntax-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual informação adicional é necessária para explicar a função de um nominativo, além de reconhecer seu caso?",
+        "greek": "λόγος",
+        "options": [
+          "Somente a quantidade de sílabas da palavra.",
+          "As relações da palavra com o restante do enunciado.",
+          "Somente sua tradução no dicionário."
+        ],
+        "answer": 1,
+        "explanation": "A forma isolada não mostra se o nominativo atua como sujeito, predicativo, aposto ou em outra construção.",
+        "id": "s-what-is-syntax-extra-3"
       }
     ],
     "references": [
@@ -133,7 +176,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual grupo é preposicional?",
+        "prompt": "Qual dos grupos abaixo é introduzido por uma preposição?",
         "greek": "ὁ λόγος τοῦ διδασκάλου ἐν τῷ οἴκῳ",
         "options": [
           "τοῦ διδασκάλου",
@@ -163,6 +206,53 @@
         ],
         "explanation": "Não confunda papéis internos do sintagma com funções do grupo na oração.",
         "id": "s-phrases-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual grupo inteiro exerce a função de sujeito na oração apresentada?",
+        "greek": "ὁ ἀγαθὸς μαθητὴς μένει ἐν τῷ οἴκῳ.",
+        "options": [
+          "ὁ, isoladamente.",
+          "ἐν τῷ οἴκῳ.",
+          "ὁ ἀγαθὸς μαθητής."
+        ],
+        "answer": 2,
+        "explanation": "O sujeito é o sintagma nominal completo. Dentro dele, μαθητής é o núcleo; artigo e adjetivo o acompanham.",
+        "id": "s-phrases-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na expressão apresentada, de que substantivo depende o grupo τοῦ διδασκάλου?",
+        "greek": "ὁ λόγος τοῦ διδασκάλου",
+        "options": [
+          "λόγος.",
+          "διδάσκαλος.",
+          "Um substantivo necessariamente omitido."
+        ],
+        "answer": 0,
+        "explanation": "O genitivo integra um grupo dependente do núcleo λόγος. O núcleo do grupo maior não é o substantivo genitivo.",
+        "id": "s-phrases-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada limite de grupo à sua descrição.",
+        "greek": "ὁ ἀγαθὸς μαθητὴς μένει ἐν τῷ οἴκῳ.",
+        "pairs": [
+          {
+            "left": "ὁ ἀγαθὸς μαθητής",
+            "right": "Sintagma nominal completo"
+          },
+          {
+            "left": "ἐν τῷ οἴκῳ",
+            "right": "Sintagma preposicional completo"
+          },
+          {
+            "left": "τῷ οἴκῳ dentro de ἐν τῷ οἴκῳ",
+            "right": "Complemento nominal da preposição"
+          }
+        ],
+        "explanation": "Um grupo pode integrar outro maior; a expressão inteira com ἐν inclui a preposição e seu complemento.",
+        "id": "s-phrases-extra-3"
       }
     ],
     "references": [
@@ -205,7 +295,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual trecho apresenta a causa, na leitura proposta?",
+        "prompt": "Na leitura causal indicada por “porque”, qual trecho explica a permanência do aluno?",
         "greek": "ὁ μαθητὴς μένει ὅτι ἀκούει τὸν διδάσκαλον.",
         "options": [
           "τὸν διδάσκαλον sozinho",
@@ -218,12 +308,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Uma oração grega precisa sempre de verbo expresso?",
-        "greek": "",
+        "prompt": "Na descrição adotada nesta lição, uma predicação nominal exige um verbo grego expresso?",
+        "greek": "ἡ εἰρήνη ἀγαθή.",
         "options": [
-          "Não; há orações nominais.",
-          "Sim; sem verbo não existe enunciado.",
-          "Sim; um particípio sempre equivale a dois verbos."
+          "Não; uma oração nominal pode apresentar a predicação sem verbo expresso.",
+          "Sim; é obrigatório inserir ἐστιν no próprio texto grego.",
+          "Sim; um adjetivo só pode ser modificador de um substantivo."
         ],
         "answer": 0,
         "explanation": "Porter reconhece orações nominais, sem exigir em todos os casos um verbo omitido.",
@@ -231,7 +321,7 @@
       },
       {
         "kind": "order",
-        "prompt": "Organize a tradução didática.",
+        "prompt": "Organize os blocos na ordem portuguesa solicitada: oração principal → causa.",
         "greek": "μένω ὅτι ἀκούω.",
         "tokens": [
           "Permaneço",
@@ -243,8 +333,55 @@
           "porque",
           "ouço."
         ],
-        "explanation": "A sequência portuguesa explicita a relação causal que o exemplo estabelece.",
+        "explanation": "A sequência portuguesa explicita a relação causal que o exemplo estabelece. O exercício verifica essa sequência didática; outras formulações portuguesas podem ser naturais.",
         "id": "s-clauses-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual trecho é a oração principal, à qual se liga a explicação introduzida por ὅτι?",
+        "greek": "ὁ μαθητὴς μένει ὅτι ἀκούει τὸν διδάσκαλον.",
+        "options": [
+          "ὁ μαθητὴς μένει.",
+          "ὅτι ἀκούει τὸν διδάσκαλον.",
+          "τὸν διδάσκαλον."
+        ],
+        "answer": 0,
+        "explanation": "A permanência é apresentada na oração principal. A oração com ὅτι fornece a causa na leitura proposta.",
+        "id": "s-clauses-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada unidade à sua organização.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "ὁ μαθητὴς γράφει",
+            "right": "Predicação com verbo finito expresso"
+          },
+          {
+            "left": "ἡ εἰρήνη ἀγαθή",
+            "right": "Predicação nominal sem verbo expresso"
+          },
+          {
+            "left": "ἐν τῷ οἴκῳ",
+            "right": "Sintagma preposicional, sem predicação própria neste exemplo"
+          }
+        ],
+        "explanation": "Reconhecer uma oração exige identificar uma predicação; nem todo grupo de palavras constitui uma oração.",
+        "id": "s-clauses-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na tradução “O aluno permanece porque ouve o professor”, o que o conector português “porque” explicita?",
+        "greek": "ὁ μαθητὴς μένει ὅτι ἀκούει τὸν διδάσκαλον.",
+        "options": [
+          "Uma relação de finalidade.",
+          "Uma relação causal entre as duas predicações.",
+          "Uma relação de identidade entre aluno e professor."
+        ],
+        "answer": 1,
+        "explanation": "A oração de ouvir é lida como razão da permanência. Essa relação deve ser conferida no conjunto, não apenas em uma palavra isolada.",
+        "id": "s-clauses-extra-3"
       }
     ],
     "references": [
@@ -292,12 +429,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a função de ὁ μαθητής?",
+        "prompt": "Qual é a função sintática do grupo ὁ μαθητής na oração passiva apresentada?",
         "greek": "ὁ μαθητὴς διδάσκεται.",
         "options": [
-          "Agente que ensina, necessariamente.",
-          "Objeto direto.",
-          "Sujeito."
+          "Agente expresso da ação de ensinar.",
+          "Objeto direto da ação de ensinar.",
+          "Sujeito gramatical da oração."
         ],
         "answer": 2,
         "explanation": "A construção passiva apresenta o aluno como sujeito afetado pelo ensino.",
@@ -305,12 +442,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que permite recuperar “eu” sem pronome expresso?",
+        "prompt": "Em γράφω, que informação da flexão permite traduzir o sujeito por “eu”?",
         "greek": "γράφω.",
         "options": [
-          "O fato de todo verbo ter agente humano.",
-          "A primeira pessoa singular do verbo.",
-          "O nominativo de um artigo invisível."
+          "A voz ativa, que por si só indica quem fala.",
+          "A pessoa e o número: primeira pessoa do singular.",
+          "O aspecto do presente, que por si só indica quem fala."
         ],
         "answer": 1,
         "explanation": "A flexão pessoal indica quem ocupa a referência de primeira pessoa.",
@@ -335,6 +472,47 @@
         ],
         "explanation": "Os dois termos nominais estão no nominativo e exercem funções distintas.",
         "id": "s-subject-predicate-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na oração apresentada, qual termo atribui uma qualidade ao sujeito?",
+        "greek": "ὁ μαθητὴς ἀγαθός ἐστιν.",
+        "options": [
+          "ὁ μαθητής.",
+          "ἀγαθός.",
+          "ἐστιν."
+        ],
+        "answer": 1,
+        "explanation": "ἀγαθός é predicativo: a qualidade de ser bom é atribuída ao aluno por meio de ἐστιν.",
+        "id": "s-subject-predicate-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza a construção passiva na sequência sujeito → locução verbal.",
+        "greek": "ὁ μαθητὴς διδάσκεται.",
+        "tokens": [
+          "O aluno",
+          "é ensinado."
+        ],
+        "answer": [
+          "O aluno",
+          "é ensinado."
+        ],
+        "explanation": "O sujeito gramatical continua sendo o aluno, mesmo sendo apresentado como quem recebe o ensino.",
+        "id": "s-subject-predicate-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que informação o nominativo de ὁ μαθητής fornece nesta passiva, sem identificar por si só quem ensina?",
+        "greek": "ὁ μαθητὴς διδάσκεται.",
+        "options": [
+          "Que o aluno é sujeito gramatical.",
+          "Que o aluno é necessariamente o agente do ensino.",
+          "Que o aluno é objeto direto da oração."
+        ],
+        "answer": 0,
+        "explanation": "Na construção passiva, ser sujeito e ser agente não são a mesma coisa. O agente não está expresso nesta oração.",
+        "id": "s-subject-predicate-extra-3"
       }
     ],
     "references": [
@@ -403,7 +581,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione os grupos na cena de dar.",
+        "prompt": "Na oração apresentada, associe cada expressão ao papel que desempenha.",
         "pairs": [
           {
             "left": "τὸ βιβλίον",
@@ -419,7 +597,55 @@
           }
         ],
         "explanation": "A função é reconhecida pela construção inteira, não pela posição após o verbo.",
-        "id": "s-complements-3"
+        "id": "s-complements-3",
+        "greek": "ὁ διδάσκαλος δίδωσιν τὸ βιβλίον τῷ μαθητῇ σήμερον."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual expressão indica a pessoa que recebe o livro?",
+        "greek": "ὁ διδάσκαλος δίδωσιν τὸ βιβλίον τῷ μαθητῇ σήμερον.",
+        "options": [
+          "τὸ βιβλίον.",
+          "σήμερον.",
+          "τῷ μαθητῇ."
+        ],
+        "answer": 2,
+        "explanation": "O dativo τῷ μαθητῇ apresenta o destinatário. O livro é aquilo que é dado, e σήμερον situa o ato no tempo.",
+        "id": "s-complements-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Organize a tradução na sequência sujeito → verbo → objeto → destinatário → tempo.",
+        "greek": "ὁ διδάσκαλος δίδωσιν τὸ βιβλίον τῷ μαθητῇ σήμερον.",
+        "tokens": [
+          "O professor",
+          "dá",
+          "o livro",
+          "ao aluno",
+          "hoje."
+        ],
+        "answer": [
+          "O professor",
+          "dá",
+          "o livro",
+          "ao aluno",
+          "hoje."
+        ],
+        "explanation": "Os blocos preservam os papéis da construção de dar. A posição final de “hoje” é a sequência solicitada pelo exercício.",
+        "id": "s-complements-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual pergunta é respondida por σήμερον nesta oração?",
+        "greek": "ὁ διδάσκαλος δίδωσιν τὸ βιβλίον τῷ μαθητῇ σήμερον.",
+        "options": [
+          "O que é dado?",
+          "Quando o professor dá o livro?",
+          "A quem o livro é dado?"
+        ],
+        "answer": 1,
+        "explanation": "σήμερον significa “hoje” e acrescenta uma circunstância temporal; não identifica o objeto ou o destinatário.",
+        "id": "s-complements-extra-3"
       }
     ],
     "references": [
@@ -467,12 +693,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O caso nominativo determina sempre a função de sujeito?",
-        "greek": "",
+        "prompt": "Reconhecer o caso nominativo basta para classificar um termo como sujeito?",
+        "greek": "ὁ μαθητὴς διδάσκαλός ἐστιν.",
         "options": [
-          "Sim; toda palavra nominativa é agente.",
-          "Não; também pode ocorrer em outras funções.",
-          "Sim; é sinônimo de sujeito."
+          "Sim; μαθητής e διδάσκαλος são ambos sujeitos.",
+          "Não; διδάσκαλος está no nominativo, mas é predicativo do sujeito.",
+          "Sim; o nominativo identifica sempre quem pratica uma ação."
         ],
         "answer": 1,
         "explanation": "Caso e função são planos diferentes da análise.",
@@ -480,12 +706,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Depois de reconhecer um genitivo, qual é um próximo passo útil?",
+        "prompt": "Após identificar um genitivo, qual procedimento ajuda a interpretar sua relação sintática?",
         "greek": "",
         "options": [
-          "Identificar de que termo ele depende.",
-          "Traduzir sempre por “pertence a”.",
-          "Ignorar o contexto porque a terminação já resolve."
+          "Identificar seu regente e examinar o contexto.",
+          "Escolher “pertence a” antes de identificar o regente.",
+          "Escolher “de” como se essa tradução determinasse a função."
         ],
         "answer": 0,
         "explanation": "A regência e a relação com o núcleo delimitam as interpretações possíveis.",
@@ -510,6 +736,53 @@
         ],
         "explanation": "Uma tradução pode representar a relação, mas não substitui a identificação da forma.",
         "id": "s-case-and-function-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual par mostra o mesmo caso gramatical exercendo duas funções distintas?",
+        "greek": "ὁ μαθητὴς διδάσκαλός ἐστιν.",
+        "options": [
+          "μαθητής e διδάσκαλος: nominativos, respectivamente sujeito e predicativo.",
+          "μαθητής e διδάσκαλος: acusativos, respectivamente sujeito e objeto.",
+          "μαθητής e διδάσκαλος: dativos, respectivamente objeto e destinatário."
+        ],
+        "answer": 0,
+        "explanation": "O nominativo não equivale a uma função única: μαθητής é sujeito e διδάσκαλος é predicativo do sujeito.",
+        "id": "s-case-and-function-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada procedimento à informação que ele estabelece.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Reconhecer a terminação de λόγον",
+            "right": "Identificação do caso e do número"
+          },
+          {
+            "left": "Relacionar τὸν λόγον a γράφει",
+            "right": "Identificação de dependência sintática"
+          },
+          {
+            "left": "Escolher “a palavra” na versão portuguesa",
+            "right": "Formulação da tradução"
+          }
+        ],
+        "explanation": "Forma, relação e tradução se apoiam, mas não devem ser confundidas.",
+        "id": "s-case-and-function-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Um aluno traduz todo dativo por “ao”. Qual correção de método é adequada?",
+        "greek": "γράφει καλάμῳ.",
+        "options": [
+          "Manter “ao” sem examinar o verbo.",
+          "Traduzir todos os dativos por “com”, em qualquer contexto.",
+          "Identificar a relação contextual; aqui o cálamo é o instrumento da escrita."
+        ],
+        "answer": 2,
+        "explanation": "Neste exemplo, καλάμῳ expressa meio instrumental. A tradução de um caso deve decorrer da construção, não de um equivalente fixo.",
+        "id": "s-case-and-function-extra-3"
       }
     ],
     "references": [
@@ -557,7 +830,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual expressão apresenta “bom” como modificador do substantivo?",
+        "prompt": "Qual expressão usa ἀγαθός como adjetivo atributivo de μαθητής, isto é, “bom aluno”?",
         "greek": "",
         "options": [
           "ὁ μαθητὴς ἀγαθός ἐστιν",
@@ -583,7 +856,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione as configurações.",
+        "prompt": "Associe cada configuração ao funcionamento do adjetivo nela apresentado.",
         "pairs": [
           {
             "left": "ὁ ἀγαθὸς μαθητής",
@@ -600,6 +873,47 @@
         ],
         "explanation": "A distribuição do artigo ajuda a reconhecer a organização de cada construção.",
         "id": "s-article-adjective-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual configuração atribui “bom” ao aluno por uma predicação, em vez de incluí-lo como modificador atributivo?",
+        "greek": "",
+        "options": [
+          "ὁ ἀγαθὸς μαθητής.",
+          "ὁ μαθητὴς ἀγαθός ἐστιν.",
+          "οἱ ἀγαθοί."
+        ],
+        "answer": 1,
+        "explanation": "Com ἐστιν, ἀγαθός funciona como predicativo. Em ὁ ἀγαθὸς μαθητής, o adjetivo integra o grupo nominal atributivo.",
+        "id": "s-article-adjective-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza os blocos na sequência sujeito substantivado → verbo.",
+        "greek": "οἱ ἀγαθοὶ μένουσιν.",
+        "tokens": [
+          "Os bons",
+          "permanecem."
+        ],
+        "answer": [
+          "Os bons",
+          "permanecem."
+        ],
+        "explanation": "O artigo com o adjetivo permite um uso substantivado. Não é necessário inserir um substantivo grego ausente para reconhecer a expressão nominal.",
+        "id": "s-article-adjective-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em οἱ ἀγαθοί, que diferença há em relação a ὁ ἀγαθὸς μαθητής?",
+        "greek": "οἱ ἀγαθοί / ὁ ἀγαθὸς μαθητής",
+        "options": [
+          "Na primeira expressão, o adjetivo constitui o núcleo de um grupo nominal; na segunda, modifica μαθητής.",
+          "Na primeira expressão, ἀγαθοί é verbo; na segunda, é preposição.",
+          "Nas duas expressões, o adjetivo modifica obrigatoriamente um substantivo grego expresso."
+        ],
+        "answer": 0,
+        "explanation": "A presença de μαθητής na segunda expressão permite reconhecer o adjetivo atributivo; na primeira, o adjetivo com artigo funciona substantivamente.",
+        "id": "s-article-adjective-extra-3"
       }
     ],
     "references": [
@@ -655,12 +969,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual afirmação sobre a ordem é mais adequada?",
+        "prompt": "Como a ordem das palavras contribui para a leitura de uma oração grega?",
         "greek": "",
         "options": [
-          "É totalmente aleatória.",
-          "É sempre igual à ordem do português.",
-          "É relativamente flexível e pode ter função discursiva."
+          "As posições inicial e final não contribuem para a comunicação.",
+          "As funções são sempre definidas pela mesma ordem do português.",
+          "A ordem é relativamente flexível e pode contribuir para a organização do discurso."
         ],
         "answer": 2,
         "explanation": "A flexão amplia as possibilidades de ordem, sem eliminar sua contribuição comunicativa.",
@@ -668,7 +982,7 @@
       },
       {
         "kind": "order",
-        "prompt": "Organize uma tradução portuguesa natural.",
+        "prompt": "Organize os blocos na ordem portuguesa solicitada: sujeito → verbo → objeto.",
         "greek": "τὸ βιβλίον ὁ μαθητὴς γράφει.",
         "tokens": [
           "O aluno",
@@ -680,8 +994,55 @@
           "escreve",
           "o livro."
         ],
-        "explanation": "A reorganização preserva sujeito, verbo e objeto reconhecidos no grego.",
+        "explanation": "A reorganização preserva sujeito, verbo e objeto reconhecidos no grego. O exercício verifica essa sequência didática; outras formulações portuguesas podem ser naturais.",
         "id": "s-word-order-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual análise preserva as funções desta oração, mesmo com o objeto colocado no início?",
+        "greek": "τὸν λόγον ὁ διδάσκαλος γράφει.",
+        "options": [
+          "ὁ διδάσκαλος é objeto; τὸν λόγον é sujeito.",
+          "ὁ διδάσκαλος é sujeito; τὸν λόγον é objeto.",
+          "Os dois grupos são sujeitos porque antecedem o verbo."
+        ],
+        "answer": 1,
+        "explanation": "O acusativo τὸν λόγον é objeto de γράφει; o nominativo ὁ διδάσκαλος é sujeito. A posição inicial não troca essas funções.",
+        "id": "s-word-order-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada grupo à sua função na oração apresentada.",
+        "greek": "τὸν λόγον ὁ διδάσκαλος γράφει.",
+        "pairs": [
+          {
+            "left": "τὸν λόγον",
+            "right": "Objeto anteposto"
+          },
+          {
+            "left": "ὁ διδάσκαλος",
+            "right": "Sujeito"
+          },
+          {
+            "left": "γράφει",
+            "right": "Verbo da predicação"
+          }
+        ],
+        "explanation": "A identificação das formas e de suas relações precede a reorganização da tradução portuguesa.",
+        "id": "s-word-order-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao encontrar um objeto no início de uma oração, qual conclusão discursiva exige investigação adicional?",
+        "greek": "τὸν λόγον ὁ διδάσκαλος γράφει.",
+        "options": [
+          "Que λόγον está no acusativo.",
+          "Que γράφει é o verbo da oração.",
+          "Que a posição inicial marca necessariamente uma ênfase específica."
+        ],
+        "answer": 2,
+        "explanation": "A anteposição é observável, mas sua contribuição discursiva deve ser comparada com o contexto e com os padrões do texto.",
+        "id": "s-word-order-extra-3"
       }
     ],
     "references": [
@@ -729,12 +1090,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a função de διδάσκαλος?",
+        "prompt": "Na oração apresentada, que função exerce διδάσκαλος, ligado ao sujeito por ἐστιν?",
         "greek": "ὁ μαθητὴς διδάσκαλός ἐστιν.",
         "options": [
-          "Vocativo.",
+          "Aposto do sujeito.",
           "Predicativo do sujeito.",
-          "Objeto direto."
+          "Objeto direto do verbo."
         ],
         "answer": 1,
         "explanation": "O termo atribui uma identidade ao sujeito por meio de ἐστιν.",
@@ -772,6 +1133,57 @@
         ],
         "explanation": "O nominativo pode ocorrer em mais de uma função na mesma oração.",
         "id": "s-nominative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual grupo acrescenta uma segunda designação para Paulo na oração apresentada?",
+        "greek": "Παῦλος ὁ διδάσκαλος γράφει.",
+        "options": [
+          "Παῦλος.",
+          "ὁ διδάσκαλος.",
+          "γράφει."
+        ],
+        "answer": 1,
+        "explanation": "ὁ διδάσκαλος está em aposição a Παῦλος: as duas expressões designam o mesmo referente.",
+        "id": "s-nominative-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe o termo destacado à função nominativa que ele exerce.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "μαθητής em ὁ μαθητὴς γράφει",
+            "right": "Sujeito"
+          },
+          {
+            "left": "διδάσκαλος em ὁ μαθητὴς διδάσκαλός ἐστιν",
+            "right": "Predicativo do sujeito"
+          },
+          {
+            "left": "ὁ διδάσκαλος em Παῦλος ὁ διδάσκαλος γράφει",
+            "right": "Aposto"
+          }
+        ],
+        "explanation": "O caso é o mesmo, mas as relações com o verbo e com os demais nomes diferenciam as funções.",
+        "id": "s-nominative-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito → verbo de ligação → predicativo.",
+        "greek": "ὁ μαθητὴς διδάσκαλός ἐστιν.",
+        "tokens": [
+          "O aluno",
+          "é",
+          "professor."
+        ],
+        "answer": [
+          "O aluno",
+          "é",
+          "professor."
+        ],
+        "explanation": "O aluno é o sujeito identificado neste exemplo; “professor” apresenta a identidade atribuída a ele.",
+        "id": "s-nominative-extra-3"
       }
     ],
     "references": [
@@ -819,12 +1231,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual afirmação descreve a tradução de ἡ εἰρήνη ἀγαθή?",
-        "greek": "",
+        "prompt": "Na tradução “A paz é boa”, por que aparece a palavra portuguesa “é”?",
+        "greek": "ἡ εἰρήνη ἀγαθή.",
         "options": [
-          "O grego contém a palavra ἐστιν.",
-          "ἀγαθή é um verbo finito.",
-          "O português acrescenta “é” para expressar a predicação."
+          "Porque o texto grego contém ἐστιν.",
+          "Porque ἀγαθή é uma forma do verbo εἰμί.",
+          "Porque o português expressa com “é” a predicação nominal sem verbo grego expresso."
         ],
         "answer": 2,
         "explanation": "O verbo não está expresso no exemplo grego.",
@@ -832,12 +1244,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual termo retoma o referente introduzido no nominativo?",
+        "prompt": "Qual termo da oração retoma o aluno apresentado inicialmente como tópico?",
         "greek": "ὁ μαθητής, γράφω αὐτῷ.",
         "options": [
-          "Nenhum: toda mudança de caso muda o referente.",
-          "αὐτῷ",
-          "γράφω"
+          "O pronome retomador não pode mudar de caso.",
+          "αὐτῷ, em função interna da oração de γράφω.",
+          "γράφω, como substantivo referente ao aluno."
         ],
         "answer": 1,
         "explanation": "O dativo αὐτῷ retoma o aluno, exercendo sua função na oração de γράφω.",
@@ -862,6 +1274,49 @@
         ],
         "explanation": "Distinguir os níveis da estrutura explica a mudança de caso.",
         "id": "s-nominal-hanging-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "No exemplo apresentado, qual forma pertence à predicação de primeira pessoa, em vez de ser seu sujeito?",
+        "greek": "ὁ μαθητής, γράφω αὐτῷ.",
+        "options": [
+          "ὁ μαθητής, como sujeito nominativo de γράφω.",
+          "αὐτῷ, como destinatário retomador do tópico.",
+          "ὁ μαθητής, como predicativo de γράφω."
+        ],
+        "answer": 1,
+        "explanation": "γράφω é primeira pessoa singular: o tópico “o aluno” é retomado por αὐτῷ dentro da oração, como destinatário.",
+        "id": "s-nominal-hanging-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência tópico inicial → oração de primeira pessoa.",
+        "greek": "ὁ μαθητής, γράφω αὐτῷ.",
+        "tokens": [
+          "Quanto ao aluno,",
+          "escrevo",
+          "a ele."
+        ],
+        "answer": [
+          "Quanto ao aluno,",
+          "escrevo",
+          "a ele."
+        ],
+        "explanation": "A paráfrase mantém separadas a introdução do tópico e a função dativa de sua retomada.",
+        "id": "s-nominal-hanging-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em ἡ εἰρήνη ἀγαθή, quais elementos estabelecem a predicação nominal?",
+        "greek": "ἡ εἰρήνη ἀγαθή.",
+        "options": [
+          "ἡ εἰρήνη como referente e ἀγαθή como qualidade atribuída.",
+          "ἡ como verbo e εἰρήνη como objeto.",
+          "ἀγαθή como verbo finito e εἰρήνη como vocativo."
+        ],
+        "answer": 0,
+        "explanation": "A oração atribui a qualidade de ser boa à paz sem apresentar uma forma explícita de εἰμί.",
+        "id": "s-nominal-hanging-extra-3"
       }
     ],
     "references": [
@@ -917,12 +1372,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "É preciso encontrar ὦ para reconhecer um vocativo?",
-        "greek": "",
+        "prompt": "A partícula ὦ é obrigatória para haver tratamento no vocativo?",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
         "options": [
-          "Sim; sem ὦ só existe sujeito.",
-          "Sim; ela fornece a desinência vocativa.",
-          "Não; a partícula é facultativa."
+          "Sim; a ausência de ὦ obriga a analisar διδάσκαλε como sujeito.",
+          "Sim; somente ὦ fornece a função de chamamento.",
+          "Não; διδάσκαλε já funciona como tratamento direto sem ὦ."
         ],
         "answer": 2,
         "explanation": "A função de chamamento pode ocorrer sem a partícula.",
@@ -930,7 +1385,7 @@
       },
       {
         "kind": "order",
-        "prompt": "Organize a tradução.",
+        "prompt": "Organize os blocos na ordem portuguesa solicitada: chamamento → verbo → objeto.",
         "greek": "διδάσκαλε, γράφε τὸν λόγον.",
         "tokens": [
           "Professor,",
@@ -942,8 +1397,55 @@
           "escreva",
           "a palavra."
         ],
-        "explanation": "O vocativo aparece como chamamento, separado da predicação do imperativo.",
+        "explanation": "O vocativo aparece como chamamento, separado da predicação do imperativo. O exercício verifica essa sequência didática; outras formulações portuguesas podem ser naturais.",
         "id": "s-vocative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na orientação dirigida ao professor, qual termo é o objeto de γράφε?",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "options": [
+          "διδάσκαλε.",
+          "τὸν λόγον.",
+          "O interlocutor, necessariamente no nominativo."
+        ],
+        "answer": 1,
+        "explanation": "O professor é a pessoa chamada; τὸν λόγον identifica aquilo que deve ser escrito.",
+        "id": "s-vocative-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada expressão à sua contribuição para a orientação.",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "pairs": [
+          {
+            "left": "διδάσκαλε",
+            "right": "Pessoa a quem se dirige o chamamento"
+          },
+          {
+            "left": "γράφε",
+            "right": "Forma verbal que apresenta a orientação"
+          },
+          {
+            "left": "τὸν λόγον",
+            "right": "Aquilo que se deve escrever"
+          }
+        ],
+        "explanation": "O vocativo pertence ao tratamento direto e não deve ser confundido com o objeto da predicação.",
+        "id": "s-vocative-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual mudança preserva a função de chamamento de διδάσκαλε?",
+        "greek": "διδάσκαλε, γράφε.",
+        "options": [
+          "Acrescentar ὦ: ὦ διδάσκαλε, γράφε.",
+          "Trocar o vocativo por τὸν διδάσκαλον e tratá-lo como objeto.",
+          "Analisar διδάσκαλε como sujeito de terceira pessoa de γράφε."
+        ],
+        "answer": 0,
+        "explanation": "A partícula ὦ pode acompanhar o vocativo, mas não é obrigatória para a função de tratamento direto.",
+        "id": "s-vocative-extra-3"
       }
     ],
     "references": [
@@ -991,12 +1493,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a função de διδάσκαλον?",
+        "prompt": "Na construção com νομίζω, que função exerce διδάσκαλον em relação a τὸν μαθητήν?",
         "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
         "options": [
-          "Vocativo dirigido ao leitor.",
+          "Destinatário da ação de considerar.",
           "Predicativo do objeto.",
-          "Sujeito de νομίζω."
+          "Sujeito da oração principal."
         ],
         "answer": 1,
         "explanation": "A expressão atribui ao aluno uma identificação dentro da construção de considerar.",
@@ -1004,12 +1506,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que δύο ἡμέρας indica?",
+        "prompt": "Na oração apresentada, que informação δύο ἡμέρας acrescenta à permanência?",
         "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
         "options": [
-          "Duração da permanência.",
-          "Objeto que é permanecido.",
-          "Agente da permanência."
+          "Sua duração: dois dias.",
+          "Seu lugar: duas casas.",
+          "Seu destinatário: dois alunos."
         ],
         "answer": 0,
         "explanation": "O acusativo mede a extensão temporal do acontecimento.",
@@ -1034,6 +1536,49 @@
         ],
         "explanation": "As mesmas marcas de caso participam de relações sintáticas diferentes.",
         "id": "s-accusative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na construção apresentada, qual grupo é o objeto ao qual se atribui a identidade de professor?",
+        "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
+        "options": [
+          "διδάσκαλον.",
+          "τὸν μαθητήν.",
+          "Um nominativo não expresso depois de διδάσκαλον."
+        ],
+        "answer": 1,
+        "explanation": "τὸν μαθητήν é o objeto da construção de considerar; διδάσκαλον é seu predicativo.",
+        "id": "s-accusative-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito → verbo → duração.",
+        "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
+        "tokens": [
+          "O aluno",
+          "permanece",
+          "dois dias."
+        ],
+        "answer": [
+          "O aluno",
+          "permanece",
+          "dois dias."
+        ],
+        "explanation": "δύο ἡμέρας mede a duração. O exemplo não apresenta “dois dias” como objeto sobre o qual recai a ação.",
+        "id": "s-accusative-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença sintática existe entre os dois acusativos destacados?",
+        "greek": "γράφω τὸν λόγον. / μένω δύο ἡμέρας.",
+        "options": [
+          "τὸν λόγον e δύο ἡμέρας são ambos sujeitos.",
+          "τὸν λόγον é duração; δύο ἡμέρας é destinatário.",
+          "τὸν λόγον é objeto; δύο ἡμέρας expressa duração."
+        ],
+        "answer": 2,
+        "explanation": "O mesmo caso pode servir ao objeto de um verbo ou à extensão temporal; a construção inteira permite distinguir os usos.",
+        "id": "s-accusative-extra-3"
       }
     ],
     "references": [
@@ -1081,12 +1626,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Que relação aparece de maneira clara?",
+        "prompt": "Que relação o genitivo τῶν μαθητῶν estabelece com εἷς neste grupo?",
         "greek": "εἷς τῶν μαθητῶν",
         "options": [
-          "Dois nominativos em aposição.",
-          "Um destinatário no dativo.",
-          "Um membro em relação ao conjunto."
+          "O agente de uma ação passiva.",
+          "O destinatário de uma ação de dar.",
+          "O conjunto do qual um membro é destacado."
         ],
         "answer": 2,
         "explanation": "εἷς destaca um elemento do conjunto expresso pelo genitivo plural.",
@@ -1124,6 +1669,47 @@
         ],
         "explanation": "Paráfrases tornam visível uma relação que a tradução com “de” pode deixar aberta.",
         "id": "s-genitive-nouns-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "No contexto em que a casa pertence ao aluno, que relação τοῦ μαθητοῦ estabelece com οἶκος?",
+        "greek": "ὁ οἶκος τοῦ μαθητοῦ μένει.",
+        "options": [
+          "Posse.",
+          "Comparação.",
+          "Parte retirada de um conjunto."
+        ],
+        "answer": 0,
+        "explanation": "O contexto de pertencimento sustenta a leitura possessiva. A terminação genitiva não determina essa relação em toda ocorrência.",
+        "id": "s-genitive-nouns-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Organize a tradução do grupo na sequência membro destacado → conjunto.",
+        "greek": "εἷς τῶν μαθητῶν",
+        "tokens": [
+          "Um",
+          "dos alunos."
+        ],
+        "answer": [
+          "Um",
+          "dos alunos."
+        ],
+        "explanation": "εἷς destaca um indivíduo; o genitivo plural apresenta o conjunto ao qual ele pertence.",
+        "id": "s-genitive-nouns-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao ler “o amor do professor”, por que o português “de” não basta para classificar a relação grega?",
+        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+        "options": [
+          "Porque todo genitivo expressa apenas conteúdo.",
+          "Porque “de” pode representar relações diferentes, que precisam de contexto.",
+          "Porque o português “de” determina sempre posse material."
+        ],
+        "answer": 1,
+        "explanation": "A relação nominal pode ser mais específica que seu equivalente português. Identifique os termos e as informações fornecidas pelo contexto.",
+        "id": "s-genitive-nouns-extra-3"
       }
     ],
     "references": [
@@ -1171,12 +1757,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Se o pai ama os filhos, qual leitura de τοῦ πατρός corresponde ao contexto?",
+        "prompt": "O contexto informa que o pai ama os filhos. Como classificar τοῦ πατρός nessa leitura de ἡ ἀγάπη τοῦ πατρός?",
         "greek": "ἡ ἀγάπη τοῦ πατρός",
         "options": [
-          "Genitivo subjetivo.",
-          "Genitivo objetivo.",
-          "Vocativo."
+          "Genitivo subjetivo: o pai é quem ama.",
+          "Genitivo objetivo: o pai é quem recebe o amor.",
+          "Genitivo de conteúdo: o pai é o conteúdo de um recipiente."
         ],
         "answer": 0,
         "explanation": "O referente do genitivo corresponde ao sujeito da paráfrase verbal “o pai ama”.",
@@ -1184,12 +1770,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Se os filhos amam o pai, qual leitura corresponde ao contexto?",
+        "prompt": "O contexto informa que os filhos amam o pai. Como classificar τοῦ πατρός nessa leitura de ἡ ἀγάπη τοῦ πατρός?",
         "greek": "ἡ ἀγάπη τοῦ πατρός",
         "options": [
-          "Genitivo subjetivo.",
-          "Sujeito nominativo.",
-          "Genitivo objetivo."
+          "Genitivo subjetivo: o pai é quem ama.",
+          "Genitivo partitivo: o pai é um conjunto do qual se retira uma parte.",
+          "Genitivo objetivo: o pai é quem recebe o amor."
         ],
         "answer": 2,
         "explanation": "O pai corresponde ao objeto na paráfrase “os filhos amam o pai”.",
@@ -1214,6 +1800,53 @@
         ],
         "explanation": "As duas primeiras classificações interpretam uma relação nominal; a terceira observa a regência verbal.",
         "id": "s-genitive-complements-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Sem contexto que indique quem ama quem, que análise de ἡ ἀγάπη τοῦ πατρός é mais responsável?",
+        "greek": "ἡ ἀγάπη τοῦ πατρός",
+        "options": [
+          "Escolher obrigatoriamente genitivo subjetivo pela posição.",
+          "Escolher obrigatoriamente genitivo objetivo pelo artigo.",
+          "Manter abertas as leituras subjetiva e objetiva até examinar o contexto."
+        ],
+        "answer": 2,
+        "explanation": "A forma genitiva é identificável, mas não escolhe sozinha entre “o pai ama” e “amam o pai”.",
+        "id": "s-genitive-complements-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual elemento seleciona o complemento genitivo τοῦ διδασκάλου na oração apresentada?",
+        "greek": "ἀκούω τοῦ διδασκάλου.",
+        "options": [
+          "O verbo ἀκούω.",
+          "Um substantivo de amor não expresso.",
+          "O artigo τοῦ, independentemente do verbo."
+        ],
+        "answer": 0,
+        "explanation": "Aqui o genitivo integra a regência do verbo de ouvir. Não é necessário inventar um substantivo anterior para explicá-lo.",
+        "id": "s-genitive-complements-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe a paráfrase de τοῦ πατρός à leitura adotada para ἡ ἀγάπη τοῦ πατρός.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "O pai ama os filhos",
+            "right": "Leitura subjetiva"
+          },
+          {
+            "left": "Os filhos amam o pai",
+            "right": "Leitura objetiva"
+          },
+          {
+            "left": "O texto isolado não informa quem ama quem",
+            "right": "Relação ainda não determinada pelo contexto"
+          }
+        ],
+        "explanation": "Subjetivo e objetivo classificam relações interpretadas, não formas diferentes de genitivo.",
+        "id": "s-genitive-complements-extra-3"
       }
     ],
     "references": [
@@ -1304,6 +1937,49 @@
         ],
         "explanation": "O dativo integra construções diferentes, que precisam ser interpretadas em conjunto.",
         "id": "s-dative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual é o regente verbal do dativo τῷ φίλῳ no exemplo?",
+        "greek": "γράφω τῷ φίλῳ.",
+        "options": [
+          "φίλῳ.",
+          "γράφω.",
+          "Uma preposição necessariamente omitida."
+        ],
+        "answer": 1,
+        "explanation": "O dativo se relaciona ao verbo de escrever como destinatário. Não há preposição expressa no grupo.",
+        "id": "s-dative-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito → verbo → instrumento.",
+        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
+        "tokens": [
+          "O aluno",
+          "escreve",
+          "com um cálamo."
+        ],
+        "answer": [
+          "O aluno",
+          "escreve",
+          "com um cálamo."
+        ],
+        "explanation": "A tradução com “com” representa o instrumento usado para escrever neste exemplo; não é equivalente obrigatório de todo dativo.",
+        "id": "s-dative-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença de construção deve ser preservada ao analisar estes dativos?",
+        "greek": "γράφω τῷ φίλῳ. / μένω ἐν τῷ οἴκῳ.",
+        "options": [
+          "τῷ φίλῳ liga-se diretamente ao verbo; τῷ οἴκῳ é complemento de ἐν.",
+          "Ambos são complementos de uma preposição expressa.",
+          "Ambos devem ser classificados como destinatário apenas por serem dativos."
+        ],
+        "answer": 0,
+        "explanation": "O caso é compartilhado, mas a presença de ἐν modifica a organização da expressão e precisa entrar na análise.",
+        "id": "s-dative-extra-3"
       }
     ],
     "references": [
@@ -1364,12 +2040,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual descrição de εἰς é mais adequada?",
+        "prompt": "Ao interpretar εἰς com acusativo, como deve ser usado seu sentido espacial de direção?",
         "greek": "",
         "options": [
-          "Elimina a necessidade de interpretar o complemento.",
-          "Pode indicar direção, mas também possui outros usos contextuais.",
-          "Significa sempre movimento físico para dentro."
+          "Como substituto da análise do nome e do verbo.",
+          "Como ponto de partida que precisa ser ajustado aos usos contextuais.",
+          "Como tradução física obrigatória para todas as ocorrências."
         ],
         "answer": 1,
         "explanation": "Não se deve estender um desenho espacial a todas as ocorrências abstratas.",
@@ -1394,6 +2070,53 @@
         ],
         "explanation": "Estes sentidos valem para os exemplos didáticos; o contexto pode produzir outros usos.",
         "id": "s-prepositions-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na leitura espacial do exemplo, que relação ἐκ τοῦ οἴκου expressa?",
+        "greek": "ὁ μαθητὴς ἐξέρχεται ἐκ τοῦ οἴκου.",
+        "options": [
+          "Lugar em que o aluno permanece.",
+          "Origem da saída: a casa.",
+          "Destinatário a quem o aluno escreve."
+        ],
+        "answer": 1,
+        "explanation": "ἐκ com o genitivo apresenta a origem da saída neste contexto. O sentido decorre da expressão e do verbo ἐξέρχεται.",
+        "id": "s-prepositions-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada construção com διά ao sentido introdutório indicado.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "διὰ τοῦ διδασκάλου: por intermédio do professor",
+            "right": "Meio ou intermediação, com genitivo"
+          },
+          {
+            "left": "διὰ τὸν διδάσκαλον: por causa do professor",
+            "right": "Causa, com acusativo"
+          },
+          {
+            "left": "ἐν τῷ οἴκῳ: na casa",
+            "right": "Localização, com dativo"
+          }
+        ],
+        "explanation": "A preposição e o caso precisam ser lidos juntos. As paráfrases fornecem o sentido contextual solicitado pelo exercício.",
+        "id": "s-prepositions-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual é o limite completo do sintagma que localiza a permanência?",
+        "greek": "ὁ μαθητὴς μένει ἐν τῷ οἴκῳ.",
+        "options": [
+          "τῷ οἴκῳ, excluindo a preposição.",
+          "μένει ἐν, excluindo o complemento.",
+          "ἐν τῷ οἴκῳ, incluindo preposição e complemento."
+        ],
+        "answer": 2,
+        "explanation": "O sintagma preposicional reúne ἐν e seu complemento. Retirar uma das partes desfaz a unidade que está sendo analisada.",
+        "id": "s-prepositions-extra-3"
       }
     ],
     "references": [
@@ -1441,12 +2164,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Por que αὐτῷ pode retomar τὸν μαθητήν apesar dos casos diferentes?",
-        "greek": "",
+        "prompt": "Na leitura em que αὐτῷ retoma o aluno, por que o pronome dativo pode ter o mesmo referente de τὸν μαθητήν, que está no acusativo?",
+        "greek": "ὁ διδάσκαλος βλέπει τὸν μαθητὴν καὶ γράφει αὐτῷ.",
         "options": [
-          "Cada expressão recebe caso conforme sua função local.",
-          "Pronomes não têm caso.",
-          "O dativo transforma o aluno em outro personagem."
+          "Porque cada expressão recebe caso conforme sua função na própria oração.",
+          "Porque a retomada pronominal elimina a distinção entre os casos.",
+          "Porque o pronome copia apenas a posição do antecedente."
         ],
         "answer": 0,
         "explanation": "A identidade de referente não exige identidade de função sintática.",
@@ -1454,11 +2177,11 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual é a tradução adequada desta configuração?",
+        "prompt": "Que tradução corresponde a αὐτός entre o artigo e o substantivo nesta expressão?",
         "greek": "ὁ αὐτὸς διδάσκαλος",
         "options": [
-          "O professor escreve a ele.",
-          "O próprio livro.",
+          "O próprio professor.",
+          "Ao professor.",
           "O mesmo professor."
         ],
         "answer": 2,
@@ -1484,6 +2207,47 @@
         ],
         "explanation": "A posição e a função do grupo orientam a interpretação.",
         "id": "s-pronouns-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual configuração expressa “o próprio professor”, com uso intensivo de αὐτός?",
+        "greek": "",
+        "options": [
+          "ὁ αὐτὸς διδάσκαλος.",
+          "αὐτὸς ὁ διδάσκαλος.",
+          "γράφω αὐτῷ."
+        ],
+        "answer": 1,
+        "explanation": "A posição externa ao grupo com artigo corresponde ao uso intensivo neste exemplo. Com αὐτός entre artigo e nome, a leitura apresentada é “o mesmo professor”.",
+        "id": "s-pronouns-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O contexto informa que o professor escreve ao aluno que acabou de ver. Qual referente é retomado por αὐτῷ?",
+        "greek": "ὁ διδάσκαλος βλέπει τὸν μαθητὴν καὶ γράφει αὐτῷ.",
+        "options": [
+          "O aluno.",
+          "A ação de escrever.",
+          "Um livro não mencionado."
+        ],
+        "answer": 0,
+        "explanation": "A informação contextual identifica o aluno como destinatário. A compatibilidade morfológica ajuda, mas não substitui essa evidência.",
+        "id": "s-pronouns-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza os blocos na sequência sujeito intensificado → verbo.",
+        "greek": "αὐτὸς ὁ διδάσκαλος γράφει.",
+        "tokens": [
+          "O próprio professor",
+          "escreve."
+        ],
+        "answer": [
+          "O próprio professor",
+          "escreve."
+        ],
+        "explanation": "Neste arranjo, αὐτός intensifica o sujeito nominal. A tradução solicitada preserva esse uso e não o confunde com “o mesmo”.",
+        "id": "s-pronouns-extra-3"
       }
     ],
     "references": [
@@ -1531,12 +2295,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O que καλῶς modifica?",
+        "prompt": "Na oração apresentada, qual palavra é modificada pelo advérbio καλῶς?",
         "greek": "ὁ ἀγαθὸς μαθητὴς καλῶς γράφει.",
         "options": [
-          "A terminação de μαθητής.",
+          "O substantivo μαθητής.",
           "O verbo γράφει.",
-          "O artigo ὁ como substantivo."
+          "O adjetivo ἀγαθός."
         ],
         "answer": 1,
         "explanation": "O advérbio descreve a maneira de escrever.",
@@ -1544,12 +2308,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual é uma descrição possível de τὰ τέκνα γράφει?",
-        "greek": "",
+        "prompt": "Como se descreve a concordância entre τὰ τέκνα e γράφει na oração apresentada?",
+        "greek": "τὰ τέκνα γράφει.",
         "options": [
           "Sujeito neutro plural com verbo singular.",
-          "O sujeito é necessariamente singular.",
-          "O verbo tem forma nominativa plural."
+          "Sujeito neutro singular com verbo plural.",
+          "Sujeito masculino plural com verbo singular."
         ],
         "answer": 0,
         "explanation": "O grego apresenta esse padrão de concordância; a tradução portuguesa usa normalmente plural.",
@@ -1557,7 +2321,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione os termos à função no exemplo.",
+        "prompt": "Associe cada termo destacado ao papel que exerce no exemplo incluído no próprio item.",
         "pairs": [
           {
             "left": "ἀγαθός em ὁ ἀγαθὸς μαθητής",
@@ -1574,6 +2338,53 @@
         ],
         "explanation": "Uma palavra da classe dos adjetivos pode ter funções diferentes conforme a construção.",
         "id": "s-agreement-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que termo é caracterizado pelo adjetivo ἀγαθός na oração apresentada?",
+        "greek": "ὁ ἀγαθὸς μαθητὴς καλῶς γράφει.",
+        "options": [
+          "O verbo γράφει.",
+          "O advérbio καλῶς.",
+          "O substantivo μαθητής."
+        ],
+        "answer": 2,
+        "explanation": "O adjetivo integra o sintagma nominal e concorda com μαθητής; o advérbio καλῶς caracteriza a escrita.",
+        "id": "s-agreement-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada relação de concordância ao conjunto de traços normalmente compartilhados.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Artigo com substantivo",
+            "right": "Caso, número e gênero"
+          },
+          {
+            "left": "Verbo finito com sujeito",
+            "right": "Pessoa e número"
+          },
+          {
+            "left": "τὰ τέκνα com γράφει neste padrão grego",
+            "right": "Sujeito neutro plural acompanhado de verbo singular"
+          }
+        ],
+        "explanation": "As regras gerais são pontos de partida. O padrão neutro plural com verbo singular precisa ser reconhecido, não corrigido automaticamente.",
+        "id": "s-agreement-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Duas palavras próximas têm terminações semelhantes. Qual evidência adicional é necessária antes de tratá-las como um único grupo?",
+        "greek": "",
+        "options": [
+          "Apenas a proximidade gráfica.",
+          "A relação sintática e o sentido da construção.",
+          "Apenas a igualdade da última letra."
+        ],
+        "answer": 1,
+        "explanation": "Concordância é uma pista; a ligação proposta precisa explicar a função das palavras e o sentido do conjunto.",
+        "id": "s-agreement-extra-3"
       }
     ],
     "references": [
@@ -1621,11 +2432,11 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Na análise de Porter, qual aspecto é expresso pelo aoristo?",
+        "prompt": "Na abordagem de Porter adotada nesta lição, qual aspecto a forma aorista expressa?",
         "greek": "",
         "options": [
           "Imperfectivo.",
-          "Sempre repetitivo.",
+          "Estativo.",
           "Perfectivo."
         ],
         "answer": 2,
@@ -1664,6 +2475,53 @@
         ],
         "explanation": "Essa correspondência apresenta a teoria de Porter, que será comparada com outras no nível avançado.",
         "id": "s-aspect-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na teoria de Porter, qual descrição combina o aspecto de ἔγραφεν com o papel de χθές?",
+        "greek": "χθὲς ὁ μαθητὴς ἔγραφεν.",
+        "options": [
+          "ἔγραφεν apresenta aspecto imperfectivo; χθές situa o acontecimento no passado.",
+          "ἔγραφεν apresenta aspecto perfectivo; χθές indica um participante.",
+          "ἔγραφεν apresenta aspecto estativo; χθές é seu objeto."
+        ],
+        "answer": 0,
+        "explanation": "O imperfeito é imperfectivo na abordagem adotada, enquanto χθές fornece a indicação lexical “ontem”.",
+        "id": "s-aspect-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Um relato usa aoristo para uma atividade que durou muitos anos. Isso contradiz necessariamente o aspecto perfectivo de Porter?",
+        "greek": "",
+        "options": [
+          "Sim; perfectivo significa duração de um instante.",
+          "Não; o aspecto apresenta o acontecimento como um todo, sem medir sua duração.",
+          "Sim; uma atividade longa exige sempre uma forma perfeita."
+        ],
+        "answer": 1,
+        "explanation": "Duração e perspectiva aspectual não são a mesma propriedade. Um acontecimento longo pode receber apresentação perfectiva.",
+        "id": "s-aspect-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Na abordagem de Porter, associe cada observação ao nível de informação que fornece.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "O aoristo apresenta o acontecimento em conjunto",
+            "right": "Perspectiva perfectiva"
+          },
+          {
+            "left": "χθές significa ontem",
+            "right": "Localização temporal lexical"
+          },
+          {
+            "left": "O contexto mostra que a ação se repetiu",
+            "right": "Interpretação de frequência contextual"
+          }
+        ],
+        "explanation": "Forma aspectual, tempo e repetição devem ser distinguidos. Um rótulo aspectual não fornece sozinho as outras informações.",
+        "id": "s-aspect-extra-3"
       }
     ],
     "references": [
@@ -1724,12 +2582,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Uma desinência média/passiva do presente decide sozinha entre os dois sentidos?",
+        "prompt": "Uma desinência compartilhada pela média e pela passiva do presente basta para escolher a interpretação?",
         "greek": "",
         "options": [
-          "Sim; toda forma é passiva.",
-          "Sim; toda forma significa “a si mesmo”.",
-          "Não; léxico e construção também precisam ser avaliados."
+          "Sim; uma tradução passiva deve ser escolhida antes do contexto.",
+          "Sim; uma tradução reflexiva deve ser escolhida antes do contexto.",
+          "Não; o léxico e a construção precisam ser examinados."
         ],
         "answer": 2,
         "explanation": "A forma compartilhada requer interpretação contextual.",
@@ -1737,7 +2595,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione os componentes da construção passiva.",
+        "prompt": "Na leitura passiva da oração apresentada, associe cada expressão à sua função.",
         "pairs": [
           {
             "left": "ὁ μαθητής",
@@ -1753,7 +2611,51 @@
           }
         ],
         "explanation": "Sujeito gramatical e agente são relações distintas.",
-        "id": "s-voice-3"
+        "id": "s-voice-3",
+        "greek": "ὁ μαθητὴς διδάσκεται ὑπὸ τοῦ διδασκάλου."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na leitura passiva desta oração, quem é apresentado como agente do ensino?",
+        "greek": "ὁ μαθητὴς διδάσκεται ὑπὸ τοῦ διδασκάλου.",
+        "options": [
+          "O aluno, porque é sujeito.",
+          "O professor, na expressão com ὑπό.",
+          "O verbo, por estar na terceira pessoa."
+        ],
+        "answer": 1,
+        "explanation": "O sujeito é o aluno, mas a expressão ὑπὸ τοῦ διδασκάλου identifica o professor como agente.",
+        "id": "s-voice-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito → locução passiva → agente.",
+        "greek": "ὁ μαθητὴς διδάσκεται ὑπὸ τοῦ διδασκάλου.",
+        "tokens": [
+          "O aluno",
+          "é ensinado",
+          "pelo professor."
+        ],
+        "answer": [
+          "O aluno",
+          "é ensinado",
+          "pelo professor."
+        ],
+        "explanation": "A locução passiva preserva a distinção entre o aluno afetado e o professor agente.",
+        "id": "s-voice-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O exemplo λούεται foi traduzido por “se lava”. O que essa leitura permite concluir sobre outros verbos médios?",
+        "greek": "ὁ μαθητὴς λούεται.",
+        "options": [
+          "Que toda forma média deve ser traduzida com “a si mesmo”.",
+          "Que nenhuma forma média admite interpretação reflexiva.",
+          "Que a reflexividade é adequada aqui, mas outros usos médios exigem análise lexical e contextual."
+        ],
+        "answer": 2,
+        "explanation": "A leitura reflexiva deste exemplo não define universalmente a voz média. O envolvimento do sujeito varia conforme o verbo e a construção.",
+        "id": "s-voice-extra-3"
       }
     ],
     "references": [
@@ -1801,12 +2703,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O indicativo garante que a afirmação é verdadeira?",
+        "prompt": "Identificar um verbo no indicativo comprova, por si só, que o conteúdo afirmado é verdadeiro?",
         "greek": "",
         "options": [
-          "Sim; o contexto deixa de importar.",
-          "Não; modo não é prova da verdade factual.",
-          "Sim; é impossível mentir no indicativo."
+          "Sim; identificar o modo substitui a avaliação do conteúdo.",
+          "Não; o modo de apresentação não comprova a verdade factual.",
+          "Sim; o indicativo garante a confiabilidade de quem fala."
         ],
         "answer": 1,
         "explanation": "A forma apresenta o enunciado de uma maneira, mas não verifica sua correspondência com o mundo.",
@@ -1814,12 +2716,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que relação ἵνα ... μάθῃ expressa na leitura proposta?",
+        "prompt": "Na leitura “Escrevo para que o aluno aprenda”, que relação a oração com ἵνα expressa?",
         "greek": "γράφω ἵνα ὁ μαθητὴς μάθῃ.",
         "options": [
-          "Finalidade.",
-          "Posse.",
-          "Aposição nominativa."
+          "Finalidade da ação de escrever.",
+          "Causa da ação de escrever.",
+          "Conteúdo de uma declaração."
         ],
         "answer": 0,
         "explanation": "A oração informa o objetivo da ação de escrever.",
@@ -1844,6 +2746,51 @@
         ],
         "explanation": "Identificar o modo é o primeiro passo; a função concreta depende da construção.",
         "id": "s-mood-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Um aluno pede respeitosamente ao professor: “Escreva a palavra, por favor”. Que conclusão sobre γράφε é adequada nesse contexto?",
+        "greek": "γράφε τὸν λόγον.",
+        "options": [
+          "O imperativo pode realizar um pedido; não exige uma ordem autoritária.",
+          "O pedido respeitoso muda automaticamente a forma para indicativo.",
+          "O imperativo comprova que a ação já ocorreu."
+        ],
+        "answer": 0,
+        "explanation": "O modo é identificado pela forma; a força comunicativa do pedido depende da situação e dos participantes.",
+        "id": "s-mood-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência ação principal → finalidade.",
+        "greek": "γράφω ἵνα ὁ μαθητὴς μάθῃ.",
+        "tokens": [
+          "Escrevo",
+          "para que",
+          "o aluno",
+          "aprenda."
+        ],
+        "answer": [
+          "Escrevo",
+          "para que",
+          "o aluno",
+          "aprenda."
+        ],
+        "explanation": "A oração com ἵνα e subjuntivo é interpretada como finalidade no contexto didático fornecido.",
+        "id": "s-mood-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao encontrar um imperativo presente, qual inferência não deve ser feita sem contexto adicional?",
+        "greek": "γράφε.",
+        "options": [
+          "Que a forma está no imperativo.",
+          "Que o interlocutor já escrevia e deve necessariamente continuar.",
+          "Que a força do enunciado precisa ser interpretada."
+        ],
+        "answer": 1,
+        "explanation": "O presente imperativo não fornece sozinho a fórmula “continue fazendo”. A existência de uma atividade anterior precisa de contexto.",
+        "id": "s-mood-extra-3"
       }
     ],
     "references": [
@@ -1891,12 +2838,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Como funciona οἱ ἀκούοντες τὸν λόγον?",
+        "prompt": "Que função o grupo οἱ ἀκούοντες τὸν λόγον exerce em relação a μανθάνουσιν?",
         "greek": "οἱ ἀκούοντες τὸν λόγον μανθάνουσιν.",
         "options": [
-          "Como preposição com genitivo.",
-          "Como objeto de μανθάνουσιν.",
-          "Como grupo nominal sujeito."
+          "Circunstância temporal da oração principal.",
+          "Objeto do verbo μανθάνουσιν.",
+          "Sujeito da oração principal."
         ],
         "answer": 2,
         "explanation": "O artigo com particípio constitui uma expressão nominal que concorda com o verbo plural.",
@@ -1904,12 +2851,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que termo ὁ γράφων modifica?",
+        "prompt": "Qual substantivo é modificado pelo particípio atributivo ὁ γράφων na oração apresentada?",
         "greek": "ὁ μαθητὴς ὁ γράφων μένει.",
         "options": [
-          "Um substantivo oculto obrigatório",
-          "μαθητής",
-          "μένει como objeto acusativo"
+          "λόγος.",
+          "μαθητής.",
+          "διδάσκαλος."
         ],
         "answer": 1,
         "explanation": "O particípio atributivo acrescenta uma característica ao substantivo expresso.",
@@ -1917,7 +2864,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione partes do primeiro exemplo.",
+        "prompt": "Na oração apresentada, associe cada expressão ao papel que desempenha.",
         "pairs": [
           {
             "left": "οἱ ἀκούοντες",
@@ -1933,7 +2880,59 @@
           }
         ],
         "explanation": "Um particípio pode organizar seus próprios complementos dentro de um grupo maior.",
-        "id": "s-participles-3"
+        "id": "s-participles-3",
+        "greek": "οἱ ἀκούοντες τὸν λόγον μανθάνουσιν."
+      },
+      {
+        "kind": "choice",
+        "prompt": "De que forma verbal depende o objeto τὸν λόγον nesta oração?",
+        "greek": "οἱ ἀκούοντες τὸν λόγον μανθάνουσιν.",
+        "options": [
+          "Do particípio ἀκούοντες.",
+          "Do verbo μανθάνουσιν, obrigatoriamente.",
+          "De uma forma de εἰμί não expressa."
+        ],
+        "answer": 0,
+        "explanation": "τὸν λόγον completa a ação de ouvir expressa pelo particípio. O grupo participial inteiro funciona como sujeito de μανθάνουσιν.",
+        "id": "s-participles-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada grupo participial ao seu funcionamento.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "οἱ ἀκούοντες: os que ouvem",
+            "right": "Particípio em expressão substantivada"
+          },
+          {
+            "left": "ὁ μαθητὴς ὁ γράφων: o aluno que escreve",
+            "right": "Particípio atributivo de nome expresso"
+          },
+          {
+            "left": "τὸν λόγον em οἱ ἀκούοντες τὸν λόγον",
+            "right": "Objeto selecionado pelo particípio"
+          }
+        ],
+        "explanation": "O particípio pode funcionar nominalmente ou modificar um nome, sem perder sua capacidade de selecionar complementos.",
+        "id": "s-participles-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito completo → verbo principal.",
+        "greek": "ὁ μαθητὴς ὁ γράφων μένει.",
+        "tokens": [
+          "O aluno",
+          "que escreve",
+          "permanece."
+        ],
+        "answer": [
+          "O aluno",
+          "que escreve",
+          "permanece."
+        ],
+        "explanation": "“Que escreve” corresponde ao particípio atributivo que caracteriza o aluno; “permanece” traduz a predicação principal.",
+        "id": "s-participles-extra-3"
       }
     ],
     "references": [
@@ -1994,12 +2993,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Um particípio aoristo significa sempre ação anterior?",
+        "prompt": "Na análise de Porter adotada nesta lição, basta identificar um particípio aoristo para afirmar que sua ação ocorre antes da principal?",
         "greek": "",
         "options": [
-          "Sim; sem exceções.",
-          "Não; significa sempre futuro.",
-          "Não; é necessário avaliar contexto e construção."
+          "Sim; a forma aorista determina sempre anterioridade.",
+          "Não; a forma aorista determina sempre posterioridade.",
+          "Não; a relação temporal exige avaliar contexto e construção."
         ],
         "answer": 2,
         "explanation": "Há uma tendência em diversos contextos, mas não uma equivalência temporal universal.",
@@ -2024,6 +3023,49 @@
         ],
         "explanation": "Essas paráfrases precisam ser justificadas; a forma participial sozinha não escolhe entre todas.",
         "id": "s-circumstantial-participles-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "No genitivo absoluto apresentado, qual expressão identifica o participante de λέγοντος?",
+        "greek": "τοῦ διδασκάλου λέγοντος, οἱ μαθηταὶ ἀκούουσιν.",
+        "options": [
+          "οἱ μαθηταί.",
+          "τοῦ διδασκάλου.",
+          "ἀκούουσιν."
+        ],
+        "answer": 1,
+        "explanation": "O professor é o participante da predicação participial; os alunos são sujeitos do verbo principal de ouvir.",
+        "id": "s-circumstantial-participles-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "A leitura adotada é temporal simultânea. Organize os blocos: circunstância → oração principal.",
+        "greek": "τοῦ διδασκάλου λέγοντος, οἱ μαθηταὶ ἀκούουσιν.",
+        "tokens": [
+          "Enquanto o professor fala,",
+          "os alunos",
+          "ouvem."
+        ],
+        "answer": [
+          "Enquanto o professor fala,",
+          "os alunos",
+          "ouvem."
+        ],
+        "explanation": "“Enquanto” explicita a relação temporal escolhida para o exercício. O particípio não possui uma terminação exclusiva de simultaneidade.",
+        "id": "s-circumstantial-participles-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na tradução “O aluno aprende ouvindo”, que relação se atribui a ἀκούων?",
+        "greek": "ἀκούων ὁ μαθητὴς μανθάνει.",
+        "options": [
+          "Causa, independentemente do contexto.",
+          "Concessão, independentemente do contexto.",
+          "Meio pelo qual o aluno aprende, na leitura fornecida."
+        ],
+        "answer": 2,
+        "explanation": "A tradução fornecida orienta a leitura instrumental. Sem esse apoio contextual, outras relações precisariam ser avaliadas.",
+        "id": "s-circumstantial-participles-extra-3"
       }
     ],
     "references": [
@@ -2071,12 +3113,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O que γράφειν faz nesta construção?",
+        "prompt": "Que função o infinitivo γράφειν exerce na construção com θέλω?",
         "greek": "θέλω γράφειν τὸν λόγον.",
         "options": [
-          "É um imperativo finito.",
-          "Completa o verbo θέλω.",
-          "Modifica λόγον como adjetivo nominativo."
+          "É uma orientação independente dirigida ao interlocutor.",
+          "Completa o verbo θέλω, fornecendo o conteúdo do querer.",
+          "É um modificador atributivo do substantivo λόγον."
         ],
         "answer": 1,
         "explanation": "O querer recebe como conteúdo a atividade de escrever.",
@@ -2084,12 +3126,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Quem deve escrever?",
+        "prompt": "Na oração apresentada, quem é entendido como sujeito da ação de γράφειν?",
         "greek": "δεῖ τὸν μαθητὴν γράφειν.",
         "options": [
           "O aluno.",
-          "Um objeto chamado necessidade.",
-          "O infinitivo não pode ter participante."
+          "Um professor não mencionado.",
+          "Um participante necessariamente diferente do aluno."
         ],
         "answer": 0,
         "explanation": "O acusativo τὸν μαθητήν é entendido como sujeito da expressão infinitiva.",
@@ -2097,7 +3139,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione os elementos do primeiro exemplo.",
+        "prompt": "Na oração apresentada, associe cada expressão ao papel que desempenha.",
         "pairs": [
           {
             "left": "θέλω",
@@ -2113,7 +3155,51 @@
           }
         ],
         "explanation": "O objeto pode depender do infinitivo, e não diretamente do verbo principal.",
-        "id": "s-infinitives-3"
+        "id": "s-infinitives-3",
+        "greek": "θέλω γράφειν τὸν λόγον."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual grupo é objeto do infinitivo γράφειν, dentro do conteúdo de θέλω?",
+        "greek": "θέλω γράφειν τὸν λόγον.",
+        "options": [
+          "τὸν λόγον.",
+          "O sujeito implícito de θέλω.",
+          "O próprio verbo θέλω."
+        ],
+        "answer": 0,
+        "explanation": "O querer recebe como conteúdo a ação de escrever; dentro dessa expressão infinitiva, τὸν λόγον é aquilo que se escreve.",
+        "id": "s-infinitives-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência expressão de necessidade → participante → ação infinitiva.",
+        "greek": "δεῖ τὸν μαθητὴν γράφειν.",
+        "tokens": [
+          "É necessário",
+          "que o aluno",
+          "escreva."
+        ],
+        "answer": [
+          "É necessário",
+          "que o aluno",
+          "escreva."
+        ],
+        "explanation": "O português reorganiza a expressão com uma oração finita. O aluno continua sendo o participante da ação expressa por γράφειν.",
+        "id": "s-infinitives-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Por que não se deve classificar automaticamente τὸν μαθητήν como objeto de δεῖ?",
+        "greek": "δεῖ τὸν μαθητὴν γράφειν.",
+        "options": [
+          "Porque todo acusativo é predicativo.",
+          "Porque é o participante entendido como sujeito da expressão infinitiva γράφειν.",
+          "Porque o infinitivo recebe pessoa e número como um verbo finito."
+        ],
+        "answer": 1,
+        "explanation": "É preciso delimitar o infinitivo e seus participantes. O caso acusativo não determina sozinho a função de objeto do verbo anterior.",
+        "id": "s-infinitives-extra-3"
       }
     ],
     "references": [
@@ -2199,6 +3285,49 @@
         ],
         "explanation": "Esses são pontos de partida; a relação contextual precisa confirmar a escolha de tradução.",
         "id": "s-connectives-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na leitura “O aluno permanece, pois ouve o professor”, qual predicação é explicada pela oração com γάρ?",
+        "greek": "ὁ μαθητὴς μένει· ἀκούει γὰρ τὸν διδάσκαλον.",
+        "options": [
+          "A permanência do aluno, na primeira oração.",
+          "A identidade do professor, expressa pelo artigo.",
+          "A referência de τὸν διδάσκαλον, como uma oração relativa."
+        ],
+        "answer": 0,
+        "explanation": "A segunda oração fundamenta o que se afirma na primeira. O alcance de γάρ não se limita à palavra que o antecede.",
+        "id": "s-connectives-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Na tradução didática, coloque a afirmação primeiro e sua explicação depois.",
+        "greek": "ὁ μαθητὴς μένει· ἀκούει γὰρ τὸν διδάσκαλον.",
+        "tokens": [
+          "O aluno permanece,",
+          "pois",
+          "ouve o professor."
+        ],
+        "answer": [
+          "O aluno permanece,",
+          "pois",
+          "ouve o professor."
+        ],
+        "explanation": "O grego põe γάρ após o início da segunda unidade; o português pode apresentar “pois” no início dessa oração.",
+        "id": "s-connectives-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Por que δέ não deve ser traduzido automaticamente por “mas” em toda ocorrência?",
+        "greek": "ὁ μαθητὴς γράφει. ὁ διδάσκαλος δὲ ἀκούει.",
+        "options": [
+          "Porque δέ não participa de relações entre enunciados.",
+          "Porque δέ pode marcar desenvolvimento ou transição, e o contexto determina se há contraste.",
+          "Porque toda ocorrência de δέ marca obrigatoriamente causa."
+        ],
+        "answer": 1,
+        "explanation": "O contexto pode favorecer “por sua vez”, uma transição ou um contraste. Um equivalente isolado não explica todos os usos.",
+        "id": "s-connectives-extra-3"
       }
     ],
     "references": [
@@ -2246,12 +3375,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual relação a oração com ὅτι apresenta aqui?",
+        "prompt": "Na leitura “Digo que o aluno escreve”, que relação a oração com ὅτι mantém com λέγω?",
         "greek": "λέγω ὅτι ὁ μαθητὴς γράφει.",
         "options": [
-          "Conteúdo do dizer.",
-          "Instrumento de escrita.",
-          "Vocativo."
+          "Fornece o conteúdo do dizer.",
+          "Fornece a finalidade do dizer.",
+          "Fornece a causa do dizer."
         ],
         "answer": 0,
         "explanation": "A oração responde à pergunta “o que digo?”.",
@@ -2259,11 +3388,11 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual relação aparece na leitura proposta?",
+        "prompt": "Na leitura “Alegro-me porque o aluno escreve”, que relação a oração com ὅτι expressa?",
         "greek": "χαίρω ὅτι ὁ μαθητὴς γράφει.",
         "options": [
-          "Aposto do sujeito.",
-          "Posse do aluno.",
+          "Conteúdo de uma declaração.",
+          "Finalidade da alegria.",
           "Causa da alegria."
         ],
         "answer": 2,
@@ -2289,6 +3418,51 @@
         ],
         "explanation": "A função é reconhecida pelo sentido da construção completa, e não por uma conjunção isolada.",
         "id": "s-dependent-clauses-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual diferença de relação a oração com ὅτι apresenta nos dois exemplos?",
+        "greek": "λέγω ὅτι ὁ μαθητὴς γράφει. / χαίρω ὅτι ὁ μαθητὴς γράφει.",
+        "options": [
+          "Primeiro: causa; segundo: finalidade.",
+          "Primeiro: conteúdo do dizer; segundo: causa da alegria.",
+          "Nos dois: finalidade obrigatória de ὅτι."
+        ],
+        "answer": 1,
+        "explanation": "O verbo regente e a relação entre as predicações distinguem o conteúdo afirmado da razão da alegria.",
+        "id": "s-dependent-clauses-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência verbo de dizer → conteúdo da declaração.",
+        "greek": "λέγω ὅτι ὁ μαθητὴς γράφει.",
+        "tokens": [
+          "Digo",
+          "que",
+          "o aluno",
+          "escreve."
+        ],
+        "answer": [
+          "Digo",
+          "que",
+          "o aluno",
+          "escreve."
+        ],
+        "explanation": "A oração de escrever é apresentada como conteúdo de λέγω, e não como causa ou finalidade do dizer.",
+        "id": "s-dependent-clauses-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Um enunciado usa ἵνα. O que precisa ser examinado antes de classificar a oração como final?",
+        "greek": "",
+        "options": [
+          "Apenas a tradução usual de ἵνα, sem o regente.",
+          "Apenas a quantidade de verbos presentes no enunciado.",
+          "O regente e a relação da oração com o restante da construção."
+        ],
+        "answer": 2,
+        "explanation": "Embora ἵνα frequentemente introduza finalidade, construções de conteúdo e resultado também precisam ser consideradas conforme o contexto.",
+        "id": "s-dependent-clauses-extra-3"
       }
     ],
     "references": [
@@ -2331,12 +3505,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Por que ὅν está no acusativo?",
+        "prompt": "Na oração apresentada, por que o pronome relativo ὅν está no acusativo?",
         "greek": "ὁ μαθητὴς ὃν βλέπω γράφει.",
         "options": [
-          "Porque todo relativo é acusativo.",
-          "Porque é objeto de βλέπω na relativa.",
-          "Porque μαθητής é genitivo."
+          "Porque copia obrigatoriamente o caso de μαθητής.",
+          "Porque é objeto de βλέπω dentro da oração relativa.",
+          "Porque a posição após μαθητής determina o acusativo."
         ],
         "answer": 1,
         "explanation": "O caso do relativo é explicado pela função local na oração de βλέπω.",
@@ -2357,7 +3531,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione os termos às funções neste exemplo.",
+        "prompt": "Na oração apresentada, associe cada termo à função que exerce.",
         "pairs": [
           {
             "left": "μαθητής",
@@ -2373,7 +3547,51 @@
           }
         ],
         "explanation": "A análise distingue a estrutura interna da relativa e a estrutura principal.",
-        "id": "s-relative-clauses-3"
+        "id": "s-relative-clauses-3",
+        "greek": "ὁ μαθητὴς ὃν βλέπω γράφει."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual trecho é a oração relativa que caracteriza o aluno?",
+        "greek": "ὁ μαθητὴς ὃν βλέπω γράφει.",
+        "options": [
+          "ὃν βλέπω.",
+          "ὁ μαθητὴς γράφει, incluindo a principal.",
+          "γράφει, isoladamente."
+        ],
+        "answer": 0,
+        "explanation": "A relativa reúne o pronome ὅν e seu verbo βλέπω. Ela caracteriza o aluno, enquanto γράφει pertence à predicação principal.",
+        "id": "s-relative-clauses-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito com sua oração relativa → verbo principal.",
+        "greek": "ὁ μαθητὴς ὃν βλέπω γράφει.",
+        "tokens": [
+          "O aluno",
+          "que vejo",
+          "escreve."
+        ],
+        "answer": [
+          "O aluno",
+          "que vejo",
+          "escreve."
+        ],
+        "explanation": "O aluno é objeto de “vejo” dentro da relativa e sujeito de “escreve” na principal. A tradução preserva os dois níveis.",
+        "id": "s-relative-clauses-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença de caso é explicada pelas funções locais de μαθητής e ὅν?",
+        "greek": "ὁ μαθητὴς ὃν βλέπω γράφει.",
+        "options": [
+          "μαθητής é genitivo; ὅν é dativo por copiar o antecedente.",
+          "μαθητής é nominativo como sujeito da principal; ὅν é acusativo como objeto da relativa.",
+          "μαθητής e ὅν precisam ter o mesmo caso para se referirem à mesma pessoa."
+        ],
+        "answer": 1,
+        "explanation": "O relativo se refere ao aluno, mas recebe caso segundo sua função em βλέπω. A identidade de referência não exige identidade de caso.",
+        "id": "s-relative-clauses-extra-3"
       }
     ],
     "references": [
@@ -2421,7 +3639,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a prótase?",
+        "prompt": "Qual trecho é a prótase, isto é, a oração que apresenta a condição?",
         "greek": "ἐὰν ὁ μαθητὴς ἀκούῃ, μανθάνει.",
         "options": [
           "μανθάνει",
@@ -2434,12 +3652,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "εἰ com indicativo permite sempre traduzir “visto que”?",
+        "prompt": "Na construção εἰ com indicativo, a hipótese é necessariamente um fato comprovado?",
         "greek": "",
         "options": [
-          "Sim; o indicativo elimina a condição.",
-          "Não; a concessão argumentativa não garante a realidade da hipótese.",
-          "Sim; toda hipótese está comprovada."
+          "Sim; a escolha do indicativo comprova a hipótese.",
+          "Não; assumir uma hipótese para argumentar não comprova sua realidade.",
+          "Sim; εἰ deve ser traduzido sempre por “visto que”."
         ],
         "answer": 1,
         "explanation": "Até em Wallace, a pressuposição para o argumento não equivale a uma garantia factual.",
@@ -2464,6 +3682,49 @@
         ],
         "explanation": "Distinguir forma e função ajuda a interpretar o argumento sem exagerar o que a construção afirma.",
         "id": "s-conditionals-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual é a apódose, isto é, a oração que apresenta a consequência da condição?",
+        "greek": "ἐὰν ὁ μαθητὴς ἀκούῃ, μανθάνει.",
+        "options": [
+          "ἐὰν ὁ μαθητὴς ἀκούῃ.",
+          "ὁ μαθητής, isoladamente.",
+          "μανθάνει."
+        ],
+        "answer": 2,
+        "explanation": "A prótase apresenta “se o aluno ouve”; a apódose μανθάνει fornece a consequência: “aprende”.",
+        "id": "s-conditionals-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência condição → consequência.",
+        "greek": "εἰ ὁ μαθητὴς γράφει, ὁ διδάσκαλος χαίρει.",
+        "tokens": [
+          "Se o aluno escreve,",
+          "o professor",
+          "se alegra."
+        ],
+        "answer": [
+          "Se o aluno escreve,",
+          "o professor",
+          "se alegra."
+        ],
+        "explanation": "“Se” mantém a relação condicional. O indicativo da prótase não transforma automaticamente a hipótese em fato comprovado.",
+        "id": "s-conditionals-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que parte da análise é formal, e não uma afirmação sobre a realidade da hipótese?",
+        "greek": "ἐὰν ὁ μαθητὴς ἀκούῃ, μανθάνει.",
+        "options": [
+          "Reconhecer ἐάν seguido de subjuntivo na prótase.",
+          "Concluir que o aluno realmente ouviu o professor.",
+          "Concluir que o aluno nunca deixará de aprender."
+        ],
+        "answer": 0,
+        "explanation": "A construção formal é observável no texto. A confirmação factual do que é proposto exigiria informação adicional.",
+        "id": "s-conditionals-extra-3"
       }
     ],
     "references": [
@@ -2525,12 +3786,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual é a função de τὸν μαθητήν no segundo exemplo?",
+        "prompt": "Na construção apresentada, que função τὸν μαθητήν exerce dentro da expressão com γράφειν?",
         "greek": "λέγει τὸν μαθητὴν γράφειν.",
         "options": [
-          "Objeto que está sendo escrito.",
-          "Vocativo.",
-          "Participante sujeito da expressão infinitiva."
+          "Objeto da ação de escrever.",
+          "Destinatário da ação de dizer.",
+          "Participante entendido como sujeito do infinitivo."
         ],
         "answer": 2,
         "explanation": "O aluno é entendido como quem escreve, dentro do conteúdo relatado.",
@@ -2555,6 +3816,51 @@
         ],
         "explanation": "Os exemplos didáticos ilustram formatos distintos; pontuação e contexto ajudam na delimitação.",
         "id": "s-indirect-discourse-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma verbal apresenta o ato principal de dizer, e não o conteúdo infinitivo?",
+        "greek": "ὁ διδάσκαλος λέγει τὸν μαθητὴν γράφειν.",
+        "options": [
+          "γράφειν.",
+          "λέγει.",
+          "μαθητήν."
+        ],
+        "answer": 1,
+        "explanation": "λέγει é o verbo finito principal. O infinitivo γράφειν e seu participante apresentam o conteúdo do relato.",
+        "id": "s-indirect-discourse-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito do relato → verbo de dizer → conteúdo.",
+        "greek": "ὁ διδάσκαλος λέγει τὸν μαθητὴν γράφειν.",
+        "tokens": [
+          "O professor",
+          "diz",
+          "que o aluno",
+          "escreve."
+        ],
+        "answer": [
+          "O professor",
+          "diz",
+          "que o aluno",
+          "escreve."
+        ],
+        "explanation": "O conteúdo infinitivo é expresso em português com “que” e verbo finito; o aluno continua sendo quem escreve.",
+        "id": "s-indirect-discourse-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença formal existe entre as duas maneiras de apresentar o mesmo conteúdo didático?",
+        "greek": "λέγει ὅτι ὁ μαθητὴς γράφει. / λέγει τὸν μαθητὴν γράφειν.",
+        "options": [
+          "A primeira usa oração finita com ὅτι; a segunda usa expressão infinitiva.",
+          "A primeira é necessariamente uma pergunta; a segunda, um comando.",
+          "A primeira apresenta o aluno como objeto da escrita; a segunda, como destinatário."
+        ],
+        "answer": 0,
+        "explanation": "As duas construções podem relatar o conteúdo de que o aluno escreve, embora o organizem de maneiras formais distintas.",
+        "id": "s-indirect-discourse-extra-3"
       }
     ],
     "references": [
@@ -2607,12 +3913,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Que tipo de enunciado é μὴ γράφε no exemplo?",
-        "greek": "",
+        "prompt": "Na leitura “Não escreva”, que tipo de orientação μὴ γράφε expressa?",
+        "greek": "μὴ γράφε.",
         "options": [
-          "Genitivo de comparação.",
-          "Proibição.",
-          "Relativa atributiva."
+          "Uma afirmação negativa.",
+          "Uma proibição.",
+          "Uma pergunta informativa."
         ],
         "answer": 1,
         "explanation": "μή se associa ao imperativo para orientar a não realização da ação.",
@@ -2620,12 +3926,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Por que duas negativas gregas não devem ser canceladas automaticamente?",
+        "prompt": "Ao encontrar duas negativas no mesmo enunciado grego, qual procedimento evita uma interpretação automática equivocada?",
         "greek": "",
         "options": [
-          "A construção pode produzir reforço ou outro padrão próprio do grego.",
-          "Porque a segunda palavra deixa de existir.",
-          "Porque toda negação é uma pergunta."
+          "Analisar a construção: as negativas podem produzir reforço ou outro padrão próprio da língua.",
+          "Aplicar sempre a regra lógica de cancelar uma negativa pela outra.",
+          "Traduzir apenas a primeira e desconsiderar a segunda."
         ],
         "answer": 0,
         "explanation": "O funcionamento precisa ser estabelecido pela gramática e pelo contexto da língua.",
@@ -2633,7 +3939,7 @@
       },
       {
         "kind": "order",
-        "prompt": "Organize a tradução.",
+        "prompt": "Organize os blocos na ordem portuguesa solicitada: sujeito → negação → verbo.",
         "greek": "ὁ μαθητὴς οὐ γράφει.",
         "tokens": [
           "O aluno",
@@ -2645,8 +3951,55 @@
           "não",
           "escreve."
         ],
-        "explanation": "A tradução conserva a negação sobre a predicação de escrever.",
+        "explanation": "A tradução conserva a negação sobre a predicação de escrever. O exercício verifica essa sequência didática; outras formulações portuguesas podem ser naturais.",
         "id": "s-questions-negation-commands-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na pergunta informativa apresentada, que informação τίς solicita?",
+        "greek": "τίς γράφει;",
+        "options": [
+          "O tempo exato em que se escreve.",
+          "A identidade de quem escreve.",
+          "O instrumento usado para escrever."
+        ],
+        "answer": 1,
+        "explanation": "τίς é lido como “quem” nesta pergunta informativa. Uma eventual força retórica dependeria de contexto adicional.",
+        "id": "s-questions-negation-commands-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada enunciado à função comunicativa indicada para este exercício.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "ὁ μαθητὴς οὐ γράφει: o aluno não escreve",
+            "right": "Afirmação negativa"
+          },
+          {
+            "left": "μὴ γράφε: não escreva",
+            "right": "Proibição"
+          },
+          {
+            "left": "τίς γράφει;: quem escreve?",
+            "right": "Pergunta informativa"
+          }
+        ],
+        "explanation": "A classificação combina a forma e a leitura fornecida. Perguntas podem receber outras funções pragmáticas em contextos diferentes.",
+        "id": "s-questions-negation-commands-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual parte da oração é negada na leitura “O aluno não escreve”?",
+        "greek": "ὁ μαθητὴς οὐ γράφει.",
+        "options": [
+          "A predicação de escrever atribuída ao aluno.",
+          "A existência de qualquer aluno no mundo.",
+          "A possibilidade de o substantivo μαθητής ter artigo."
+        ],
+        "answer": 0,
+        "explanation": "οὐ nega o que se afirma sobre a escrita do aluno neste enunciado; não elimina por si só a existência do referente.",
+        "id": "s-questions-negation-commands-extra-3"
       }
     ],
     "references": [
@@ -2689,12 +4042,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual afirmação representa adequadamente Porter?",
+        "prompt": "Qual afirmação descreve a relação entre forma verbal e referência temporal na teoria de Porter?",
         "greek": "",
         "options": [
-          "O grego não consegue expressar quando algo ocorre.",
-          "Todo aoristo descreve uma ação instantânea.",
-          "O texto comunica tempo, mas a referência temporal não é tempo absoluto codificado pela forma verbal."
+          "O texto grego não pode situar acontecimentos no tempo.",
+          "Todo aoristo codifica um acontecimento instantâneo.",
+          "O texto comunica tempo, mas a forma verbal não codifica tempo absoluto."
         ],
         "answer": 2,
         "explanation": "A proposta distingue referência temporal do texto e significado codificado pela forma.",
@@ -2732,6 +4085,53 @@
         ],
         "explanation": "A comparação fica mais clara quando dados, interpretações e modelos são separados.",
         "id": "s-aspect-theories-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Porter e Wallace podem concordar com uma tradução passada e ainda divergir sobre qual ponto?",
+        "greek": "ὁ μαθητὴς ἔγραψεν τὸν λόγον.",
+        "options": [
+          "Sobre se há um verbo no enunciado.",
+          "Sobre se o texto pode comunicar alguma relação temporal.",
+          "Sobre quanto da referência temporal pertence à forma e quanto é explicado pelo contexto."
+        ],
+        "answer": 2,
+        "explanation": "Uma tradução pode ser compatível com modelos distintos. A comparação precisa localizar a origem teórica de cada informação.",
+        "id": "s-aspect-theories-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada descrição à perspectiva apresentada no artigo.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Rejeita a codificação de tempo absoluto pelas formas verbais, inclusive no indicativo",
+            "right": "Proposta de Porter"
+          },
+          {
+            "left": "Mantém associações temporais na descrição das formas indicativas",
+            "right": "Descrição de Wallace"
+          },
+          {
+            "left": "Reconhecer aspecto sem deduzir duração mínima de um aoristo",
+            "right": "Cautela compartilhada pelos dois enfoques"
+          }
+        ],
+        "explanation": "A diferença não se resume a “um autor usa aspecto e o outro não”. A localização da informação temporal é parte central da comparação.",
+        "id": "s-aspect-theories-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual conjunto de dados permite avaliar melhor uma divergência teórica sobre uma forma verbal?",
+        "greek": "",
+        "options": [
+          "Forma, lexema, advérbios e contexto narrativo da passagem.",
+          "Somente o tempo verbal escolhido na tradução portuguesa.",
+          "Somente a preferência do leitor por uma das gramáticas."
+        ],
+        "answer": 0,
+        "explanation": "A comparação exige evidência textual e previsões dos modelos. O resultado de uma tradução, isoladamente, não demonstra sua explicação teórica.",
+        "id": "s-aspect-theories-extra-3"
       }
     ],
     "references": [
@@ -2780,12 +4180,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Que inferência não é autorizada apenas pela forma perfeita?",
+        "prompt": "Ao interpretar uma forma perfeita, qual conclusão exige evidência contextual adicional?",
         "greek": "",
         "options": [
-          "Que o estado durará para sempre.",
-          "Que a forma precisa ser identificada.",
-          "Que o léxico e o contexto devem ser examinados."
+          "Que o estado apresentado durará para sempre.",
+          "Que a identificação morfológica deve preceder a interpretação.",
+          "Que o léxico deve ser levado em conta."
         ],
         "answer": 0,
         "explanation": "Permanência ilimitada exige evidência adicional; não é uma tradução automática do perfeito.",
@@ -2823,6 +4223,47 @@
         ],
         "explanation": "A comparação avançada distingue classificação formal, leitura e explicação teórica.",
         "id": "s-perfect-future-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na comparação apresentada, que descrição distingue a ênfase teórica de Porter e a exposição do perfeito indicativo em Wallace?",
+        "greek": "γέγραπται ὁ λόγος.",
+        "options": [
+          "Porter destaca o estativo; Wallace articula acontecimento anterior e estado ou resultado pertinente.",
+          "Porter exige duração eterna; Wallace proíbe qualquer relação com estado.",
+          "Os dois definem perfeito exclusivamente como ação instantânea futura."
+        ],
+        "answer": 0,
+        "explanation": "A comparação deve preservar o que cada modelo atribui ao perfeito. Nenhum deles autoriza inserir duração eterna apenas pela forma.",
+        "id": "s-perfect-future-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Organize a tradução didática na sequência sujeito → estado apresentado.",
+        "greek": "γέγραπται ὁ λόγος.",
+        "tokens": [
+          "A palavra",
+          "está escrita."
+        ],
+        "answer": [
+          "A palavra",
+          "está escrita."
+        ],
+        "explanation": "A tradução apresenta um estado pertinente ao exemplo. Ela não afirma, por si só, que esse estado permanecerá para sempre.",
+        "id": "s-perfect-future-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "A forma γράψει aparece em um enunciado de promessa. Qual dado sustenta classificá-lo como promessa, em vez de apenas reconhecer sua forma futura?",
+        "greek": "ὁ μαθητὴς γράψει.",
+        "options": [
+          "A terminação futura, que obriga todas as ocorrências a ser promessas.",
+          "A situação comunicativa e a relação entre quem fala e seu interlocutor.",
+          "O nominativo do sujeito, que obriga a leitura de promessa."
+        ],
+        "answer": 1,
+        "explanation": "Futuro pode participar de predição, promessa e outros usos. A força comunicativa concreta depende da situação, além da identificação da forma.",
+        "id": "s-perfect-future-extra-3"
       }
     ],
     "references": [
@@ -2871,12 +4312,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O que a expressão isolada resolve de modo suficiente?",
+        "prompt": "Sem contexto adicional, o que é possível afirmar com segurança sobre τοῦ διδασκάλου?",
         "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
         "options": [
-          "Que alguém necessariamente ama o professor.",
-          "Que τοῦ διδασκάλου é genitivo; a direção do amor pede contexto.",
-          "Que o professor necessariamente ama."
+          "Que o professor é necessariamente quem recebe o amor.",
+          "Que é genitivo; a direção da relação de amor continua aberta.",
+          "Que o professor é necessariamente quem exerce o amor."
         ],
         "answer": 1,
         "explanation": "A forma é identificável, mas não escolhe sozinha entre as duas relações.",
@@ -2914,6 +4355,53 @@
         ],
         "explanation": "A análise avançada mantém explícito o caminho entre forma e interpretação.",
         "id": "s-case-ambiguity-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O contexto esclarece: “O professor ama seus alunos”. Que leitura de τοῦ διδασκάλου é favorecida nesse contexto?",
+        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+        "options": [
+          "Genitivo objetivo: o professor recebe o amor.",
+          "Genitivo subjetivo: o professor é quem ama.",
+          "Genitivo partitivo: o professor é um conjunto de pessoas."
+        ],
+        "answer": 1,
+        "explanation": "A informação contextual associa o referente genitivo ao sujeito da ação nominalizada de amar.",
+        "id": "s-case-ambiguity-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual dado adicional favoreceria a leitura objetiva de τοῦ διδασκάλου?",
+        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+        "options": [
+          "Uma explicação contextual de que os alunos amam o professor.",
+          "A mera presença da terminação genitiva.",
+          "A mera presença de artigo no genitivo."
+        ],
+        "answer": 0,
+        "explanation": "A leitura objetiva relaciona o professor ao objeto da ação de amar. O contexto sobre os alunos amando o professor fornece essa evidência.",
+        "id": "s-case-ambiguity-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada atitude de análise à sua avaliação.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Registrar que duas leituras continuam possíveis sem contexto decisivo",
+            "right": "Reconhecimento justificado de ambiguidade"
+          },
+          {
+            "left": "Escolher uma leitura porque o contexto identifica quem ama",
+            "right": "Conclusão apoiada em evidência"
+          },
+          {
+            "left": "Escolher um rótulo só porque ele aparece numa lista de casos",
+            "right": "Classificação insuficientemente justificada"
+          }
+        ],
+        "explanation": "Uma análise pode ser graduada: algo é formalmente seguro, algo é favorecido pelo contexto e algo ainda permanece aberto.",
+        "id": "s-case-ambiguity-extra-3"
       }
     ],
     "references": [
@@ -2962,7 +4450,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O que seria inverter indevidamente Colwell?",
+        "prompt": "Qual conclusão inverte indevidamente a direção lógica da observação de Colwell?",
         "greek": "",
         "options": [
           "Reconhecer que a ordem precisa ser observada.",
@@ -2975,7 +4463,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual requisito precisa ser conferido na formulação usual de Sharp?",
+        "prompt": "Além da configuração com artigo compartilhado e καί, que condições precisam ser verificadas na formulação usual da regra de Granville Sharp?",
         "greek": "",
         "options": [
           "Que qualquer conjunção substitua καί.",
@@ -3005,6 +4493,53 @@
         ],
         "explanation": "Regras úteis só funcionam quando suas condições e sua direção lógica são preservadas.",
         "id": "s-article-rules-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "A expressão apresentada tem artigo compartilhado entre nomes pessoais singulares ligados por καί. O que ainda deve ser feito antes de aplicar Granville Sharp a uma passagem?",
+        "greek": "ὁ διδάσκαλος καὶ φίλος",
+        "options": [
+          "Conferir todas as condições da formulação adotada e o contexto da passagem.",
+          "Estender a mesma conclusão a qualquer par de nomes plurais.",
+          "Ignorar se os nomes são próprios, desde que estejam próximos."
+        ],
+        "answer": 0,
+        "explanation": "A configuração inicial não dispensa conferir o domínio da regra. Ela não deve ser estendida automaticamente a nomes próprios ou plurais.",
+        "id": "s-article-rules-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Por que a ausência de artigo em um predicativo não resolve sozinha se ele é definido, qualitativo ou indefinido?",
+        "greek": "ἀγαθὸς ὁ διδάσκαλος.",
+        "options": [
+          "Porque o artigo português pode substituir a análise do grego.",
+          "Porque todo predicativo sem artigo tem um único valor fixo.",
+          "Porque sintaxe, léxico e contexto também contribuem para sua interpretação."
+        ],
+        "answer": 2,
+        "explanation": "“Sem artigo” é uma observação formal. A classificação de referência ou qualidade requer investigar a construção e o sentido.",
+        "id": "s-article-rules-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada raciocínio à sua avaliação segundo as cautelas do artigo.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Todo predicativo pré-verbal sem artigo é definido",
+            "right": "Inversão indevida da observação de Colwell"
+          },
+          {
+            "left": "Qualquer par de plurais coordenados recebe automaticamente a regra de Sharp",
+            "right": "Extensão indevida do domínio da regra"
+          },
+          {
+            "left": "Verificar forma, condições e contexto antes da conclusão",
+            "right": "Uso criterioso de uma generalização gramatical"
+          }
+        ],
+        "explanation": "Uma regra deve ser aplicada na direção e no domínio em que foi formulada, sem substituir a análise da passagem.",
+        "id": "s-article-rules-extra-3"
       }
     ],
     "references": [
@@ -3053,12 +4588,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Sujeito e tópico são sempre a mesma função?",
+        "prompt": "A função sintática de sujeito equivale necessariamente ao tópico de um enunciado?",
         "greek": "",
         "options": [
-          "Não; pertencem a níveis de análise distintos.",
-          "Sim; todo nominativo é tópico e agente.",
-          "Sim; a posição inicial define as duas coisas."
+          "Não; são conceitos de níveis distintos, ainda que possam coincidir.",
+          "Sim; todo sujeito é necessariamente a referência sobre a qual o discurso se organiza.",
+          "Sim; a posição inicial basta para identificar as duas funções."
         ],
         "answer": 0,
         "explanation": "Uma função sintática pode coincidir com o tópico discursivo sem que os conceitos sejam idênticos.",
@@ -3096,6 +4631,49 @@
         ],
         "explanation": "Separar esses conceitos ajuda a explicar como a sintaxe contribui para a leitura do texto.",
         "id": "s-discourse-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na leitura apresentada, o que muda da primeira para a segunda oração?",
+        "greek": "ὁ μαθητὴς γράφει. ὁ διδάσκαλος δὲ ἀκούει.",
+        "options": [
+          "O mesmo sujeito é repetido com outra flexão.",
+          "Há mudança do participante sujeito, do aluno para o professor, acompanhada de δέ.",
+          "A segunda oração deixa de ter sujeito gramatical."
+        ],
+        "answer": 1,
+        "explanation": "O texto passa da escrita do aluno à escuta do professor. A mudança de participante e o conector ajudam a organizar o desenvolvimento.",
+        "id": "s-discourse-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza preservando a leitura de δέ como transição e a sequência das duas orações.",
+        "greek": "ὁ μαθητὴς γράφει. ὁ διδάσκαλος δὲ ἀκούει.",
+        "tokens": [
+          "O aluno escreve.",
+          "O professor, por sua vez,",
+          "ouve."
+        ],
+        "answer": [
+          "O aluno escreve.",
+          "O professor, por sua vez,",
+          "ouve."
+        ],
+        "explanation": "“Por sua vez” é a leitura de transição fornecida neste exercício. A sequência mantém a mudança de participante observada no grego.",
+        "id": "s-discourse-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que contraste entre tópico e sujeito aparece no exemplo apresentado?",
+        "greek": "ὁ μαθητής, γράφω αὐτῷ.",
+        "options": [
+          "O aluno é o tópico inicial; o sujeito de γράφω é a primeira pessoa que fala.",
+          "O aluno é obrigatoriamente sujeito de γράφω por estar no nominativo inicial.",
+          "αὐτῷ é sujeito de γράφω porque retoma o tópico."
+        ],
+        "answer": 0,
+        "explanation": "A referência inicial organiza o tópico; o verbo de primeira pessoa organiza a oração interna, onde αὐτῷ é o destinatário retomador.",
+        "id": "s-discourse-extra-3"
       }
     ],
     "references": [
@@ -3151,12 +4729,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual afirmação distingue forma e interpretação no exemplo?",
-        "greek": "",
+        "prompt": "Qual afirmação separa a forma de μάθῃ da identificação de seu referente na oração apresentada?",
+        "greek": "ὁ διδάσκαλος γράφει τῷ μαθητῇ ἵνα μάθῃ τὸν λόγον.",
         "options": [
           "μάθῃ é terceira pessoa singular; identificar seu referente exige contexto.",
-          "μάθῃ contém a palavra grega “aluno”.",
-          "O sujeito de toda subordinada é obrigatoriamente o da principal."
+          "μάθῃ contém uma indicação lexical explícita de “aluno”.",
+          "A forma de μάθῃ exige que seu sujeito seja o professor."
         ],
         "answer": 0,
         "explanation": "A desinência fornece pessoa e número; o referente concreto deve ser recuperado na construção e no contexto.",
@@ -3181,6 +4759,59 @@
         ],
         "explanation": "O procedimento pode ser repetido a cada nova evidência; as etapas se corrigem mutuamente.",
         "id": "s-integrated-reading-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual trecho apresenta a finalidade da ação de escrever na leitura proposta?",
+        "greek": "ὁ διδάσκαλος γράφει τῷ μαθητῇ ἵνα μάθῃ τὸν λόγον.",
+        "options": [
+          "τῷ μαθητῇ.",
+          "ὁ διδάσκαλος.",
+          "ἵνα μάθῃ τὸν λόγον."
+        ],
+        "answer": 2,
+        "explanation": "A oração com ἵνα apresenta o objetivo: aprender a palavra. O dativo anterior identifica o destinatário da escrita.",
+        "id": "s-integrated-reading-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada relação local ao elemento que ela explica.",
+        "greek": "ὁ διδάσκαλος γράφει τῷ μαθητῇ ἵνα μάθῃ τὸν λόγον.",
+        "pairs": [
+          {
+            "left": "ὁ διδάσκαλος em relação a γράφει",
+            "right": "Sujeito da predicação principal"
+          },
+          {
+            "left": "τῷ μαθητῇ em relação a γράφει",
+            "right": "Destinatário da escrita"
+          },
+          {
+            "left": "τὸν λόγον em relação a μάθῃ",
+            "right": "Objeto da aprendizagem"
+          }
+        ],
+        "explanation": "A análise integrada preserva as dependências locais antes de avançar para a interpretação da finalidade e dos referentes.",
+        "id": "s-integrated-reading-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Adotando o aluno como sujeito de μάθῃ, traduza na sequência principal → destinatário → finalidade.",
+        "greek": "ὁ διδάσκαλος γράφει τῷ μαθητῇ ἵνα μάθῃ τὸν λόγον.",
+        "tokens": [
+          "O professor escreve",
+          "ao aluno",
+          "para que ele aprenda",
+          "a palavra."
+        ],
+        "answer": [
+          "O professor escreve",
+          "ao aluno",
+          "para que ele aprenda",
+          "a palavra."
+        ],
+        "explanation": "O enunciado explicita a interpretação assumida para “ele”. A pessoa e o número de μάθῃ não identificam lexicalmente o aluno sem apoio contextual.",
+        "id": "s-integrated-reading-extra-3"
       }
     ],
     "references": [

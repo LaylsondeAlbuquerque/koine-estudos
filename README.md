@@ -12,6 +12,8 @@ Aplicação estática em português, preparada para GitHub Pages. Não requer se
 - Cada área tem percurso, artigos, flashcards e prática, distribuídos em Fundamentos, Essencial, Aprofundamento e Avançado.
 - O repertório é pesquisável em grego ou português, inclusive sem acentos. Os artigos também têm busca.
 - Tema noturno inicial com alternância para o claro e preferência salva no navegador. A home tem uma animação original de letras e palavras gregas, com pausa e respeito à preferência de movimento reduzido.
+- Os flashcards revelam o verso ao selecionar a resposta; a prática combina desafios de escolha com confirmação, associação de pares, parsing e ordenação de blocos. As sessões priorizam perguntas ainda não vistas e alternam assuntos e atividades; um filtro pequeno termina sem duplicar questões para completar a quantidade solicitada.
+- Os artigos atuais exibem discretamente “Texto produzido por IA”. Para futuros artigos de autoria humana, o campo opcional `author` identifica o autor no mesmo espaço.
 
 O progresso é salvo **somente no navegador**. Um vocábulo é registrado como memorizado depois de acertos em três dias diferentes; um erro o devolve à revisão. Repetições no mesmo dia não aceleram esse marcador. É possível exportar/importar o histórico em Meu progresso. Leituras concluídas não equivalem a uma certificação de domínio.
 

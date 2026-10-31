@@ -35,7 +35,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual forma reúne λόγον e λόγου no repertório?",
+        "prompt": "Qual é o lema usado no léxico para localizar as formas λόγον e λόγου?",
         "greek": "λόγον · λόγου",
         "options": [
           "λόγος",
@@ -48,12 +48,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que aprender o lema permite?",
+        "prompt": "Qual é a função do lema em um repertório de vocabulário?",
         "greek": "",
         "options": [
-          "Ignorar as terminações",
-          "Agrupar formas da mesma palavra",
-          "Traduzir qualquer contexto com uma única palavra"
+          "Indicar a função sintática de toda ocorrência",
+          "Reunir as formas flexionadas de uma mesma palavra",
+          "Fixar uma única tradução para todos os contextos"
         ],
         "answer": 1,
         "explanation": "O lema reúne formas; a flexão e o contexto ainda precisam ser analisados.",
@@ -61,7 +61,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e lema.",
+        "prompt": "Associe cada forma flexionada, à esquerda, ao seu lema no léxico, à direita.",
         "pairs": [
           {
             "left": "λόγον",
@@ -78,6 +78,53 @@
         ],
         "explanation": "As terminações mudam; a identidade lexical é preservada.",
         "id": "v-lemma-3"
+      },
+      {
+        "id": "v-lemma-extra-1",
+        "kind": "choice",
+        "prompt": "Você encontra θεοῦ em uma oração. Qual entrada do léxico deve procurar para estudar esse vocábulo?",
+        "greek": "θεοῦ",
+        "options": [
+          "θεός",
+          "θεοῦ como uma palavra sem relação com θεός",
+          "λόγος"
+        ],
+        "answer": 0,
+        "explanation": "θεοῦ é uma forma flexionada de θεός. O lema θεός reúne as formas desse vocábulo."
+      },
+      {
+        "id": "v-lemma-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada informação de um registro de vocabulário à função que ela cumpre.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Lema: λόγος",
+            "right": "Localizar a entrada no repertório"
+          },
+          {
+            "left": "Glossa: palavra",
+            "right": "Apoiar a recordação de um sentido"
+          },
+          {
+            "left": "Forma encontrada: λόγον",
+            "right": "Reconhecer a flexão usada na ocorrência"
+          }
+        ],
+        "explanation": "O lema identifica a entrada; a glossa apoia a memória; a forma encontrada deve ser analisada na construção."
+      },
+      {
+        "id": "v-lemma-extra-3",
+        "kind": "choice",
+        "prompt": "Qual registro acrescenta ao lema λόγος as pistas de gênero e flexão recomendadas para estudar um substantivo?",
+        "greek": "λόγος",
+        "options": [
+          "λόγος — palavra",
+          "ὁ λόγος, λόγου — palavra",
+          "λόγον — palavra"
+        ],
+        "answer": 1,
+        "explanation": "O artigo ὁ informa o gênero masculino; λόγου apresenta o genitivo singular. O lema continua sendo λόγος."
       }
     ],
     "references": [
@@ -121,12 +168,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Uma lista apresenta “fruto; resultado”. Como usar essas glossas?",
+        "prompt": "O repertório apresenta καρπός com as glossas “fruto; resultado”. Ao traduzir uma ocorrência, como selecionar o equivalente português?",
         "greek": "καρπός",
         "options": [
-          "Inserir os dois sentidos em toda tradução",
-          "Escolher o sentido adequado ao contexto",
-          "Ignorar o contexto"
+          "Usar as duas glossas juntas em cada ocorrência",
+          "Escolher a glossa sustentada pela construção e pelo contexto",
+          "Usar sempre a primeira glossa da lista"
         ],
         "answer": 1,
         "explanation": "As glossas apresentam possibilidades; o contexto orienta a seleção.",
@@ -134,12 +181,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que um flashcard fornece?",
+        "prompt": "Qual é a função da glossa curta apresentada em um flashcard de vocabulário?",
         "greek": "",
         "options": [
-          "Uma pista lexical breve",
-          "Uma interpretação completa de qualquer passagem",
-          "Todos os usos históricos da palavra"
+          "Apoiar a recordação de um sentido do vocábulo",
+          "Definir a interpretação de qualquer passagem que contenha o vocábulo",
+          "Reunir todos os usos históricos do vocábulo"
         ],
         "answer": 0,
         "explanation": "O cartão oferece um ponto de entrada para reconhecer a palavra.",
@@ -147,7 +194,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Associe vocábulo e glossa.",
+        "prompt": "Associe cada vocábulo grego a uma glossa básica em português.",
         "pairs": [
           {
             "left": "καρδία",
@@ -164,6 +211,53 @@
         ],
         "explanation": "Estas associações básicas servem de ponto de partida para a leitura.",
         "id": "v-gloss-3"
+      },
+      {
+        "id": "v-gloss-extra-1",
+        "kind": "choice",
+        "prompt": "Em um exemplo didático, καρπός se refere ao que foi colhido de uma árvore. Entre as glossas do cartão, qual se ajusta a essa referência?",
+        "greek": "καρπός — fruto; resultado",
+        "options": [
+          "fruto",
+          "resultado de uma atividade",
+          "fruto e resultado obrigatoriamente juntos"
+        ],
+        "answer": 0,
+        "explanation": "A referência a algo colhido de uma árvore sustenta “fruto” concreto. A lista de glossas apresenta possibilidades, não uma soma obrigatória."
+      },
+      {
+        "id": "v-gloss-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada informação ao alcance que ela tem para o estudo de uma palavra.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Glossa curta no cartão",
+            "right": "Um ponto de partida para recordar um sentido"
+          },
+          {
+            "left": "Oração em que a palavra aparece",
+            "right": "Uma evidência para selecionar o equivalente"
+          },
+          {
+            "left": "Lista com várias glossas",
+            "right": "Possibilidades que não precisam ocorrer juntas"
+          }
+        ],
+        "explanation": "A glossa apoia a memória; a oração ajuda a selecionar uma possibilidade da lista."
+      },
+      {
+        "id": "v-gloss-extra-3",
+        "kind": "choice",
+        "prompt": "Um aluno recorda a glossa do cartão, mas ela produz uma tradução incoerente na oração. Qual é o próximo passo adequado?",
+        "greek": "",
+        "options": [
+          "Examinar a construção e consultar outros sentidos documentados",
+          "Manter a glossa porque foi a primeira memorizada",
+          "Inserir todas as glossas para evitar escolher um sentido"
+        ],
+        "answer": 0,
+        "explanation": "O acerto no cartão não determina a tradução de toda ocorrência. A construção e outros usos documentados devem orientar a investigação."
       }
     ],
     "references": [
@@ -207,33 +301,33 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O que aumenta o contador de dias com acertos?",
+        "prompt": "Neste site, qual ação acrescenta uma nova data ao histórico de acertos de um vocábulo?",
         "greek": "",
         "options": [
-          "Responder várias vezes no mesmo dia",
-          "Acertar em outro dia",
-          "Apenas abrir o repertório"
+          "Acertar várias vezes em uma data já registrada",
+          "Acertar em uma data ainda não registrada para o vocábulo",
+          "Abrir o cartão sem responder"
         ],
         "answer": 1,
-        "explanation": "O contador considera datas diferentes, não o número de cliques em uma sessão.",
+        "explanation": "Cada data conta uma vez para aquele vocábulo. Vários acertos na mesma data não acrescentam novos dias.",
         "id": "v-review-1"
       },
       {
         "kind": "choice",
-        "prompt": "Um erro em palavra memorizada produz o quê?",
+        "prompt": "Neste site, o que acontece ao errar um vocábulo que estava marcado como memorizado?",
         "greek": "",
         "options": [
-          "Retorno à revisão",
-          "Exclusão definitiva da palavra",
-          "Manutenção automática do status"
+          "O vocábulo perde o marcador e volta à revisão",
+          "O vocábulo é retirado do repertório",
+          "O vocábulo mantém o marcador de memorização"
         ],
         "answer": 0,
-        "explanation": "A palavra volta à revisão para ser consolidada novamente.",
+        "explanation": "Um erro reinicia a sequência de datas com acertos desse vocábulo. Ele volta à revisão, mas permanece no repertório.",
         "id": "v-review-2"
       },
       {
         "kind": "match",
-        "prompt": "Relacione ação e objetivo.",
+        "prompt": "Associe cada ação de estudo ou de preservação do histórico ao seu objetivo principal.",
         "pairs": [
           {
             "left": "Recordar antes de selecionar",
@@ -250,6 +344,53 @@
         ],
         "explanation": "Memória e preservação do histórico são tarefas diferentes.",
         "id": "v-review-3"
+      },
+      {
+        "id": "v-review-extra-1",
+        "kind": "choice",
+        "prompt": "Um vocábulo recebeu cinco respostas corretas hoje e ainda não tinha acertos registrados. Quantos dias com acertos ele acumulou hoje?",
+        "greek": "",
+        "options": [
+          "Um dia",
+          "Três dias",
+          "Cinco dias"
+        ],
+        "answer": 0,
+        "explanation": "O sistema conta datas distintas. Cinco acertos hoje representam uma única data com acerto para esse vocábulo."
+      },
+      {
+        "id": "v-review-extra-2",
+        "kind": "choice",
+        "prompt": "Você acerta um vocábulo em três datas diferentes e depois o erra em outra sessão. Qual será a situação desse vocábulo no site?",
+        "greek": "",
+        "options": [
+          "Continuará memorizado porque já atingiu três datas",
+          "Voltará à revisão e precisará consolidar novas datas com acertos",
+          "Será eliminado do histórico de estudo"
+        ],
+        "answer": 1,
+        "explanation": "Um erro remove o marcador e reinicia a sequência de datas com acertos desse vocábulo. O item permanece disponível para revisão."
+      },
+      {
+        "id": "v-review-extra-3",
+        "kind": "match",
+        "prompt": "Associe cada situação à ação que atende diretamente à dificuldade descrita.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "A palavra só parece familiar depois de ler as opções",
+            "right": "Tentar recordar o sentido antes de examinar as opções"
+          },
+          {
+            "left": "Uma resposta errada revelou confusão entre duas formas",
+            "right": "Comparar as formas e ler a explicação do erro"
+          },
+          {
+            "left": "O estudo será retomado em outro aparelho",
+            "right": "Exportar o histórico e importar a cópia no outro aparelho"
+          }
+        ],
+        "explanation": "As ações resolvem problemas distintos: recordação, identificação da confusão e preservação do histórico."
       }
     ],
     "references": [
@@ -293,12 +434,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Cobertura lexical mede o quê?",
+        "prompt": "O que o percentual de cobertura lexical informa sobre os lemas memorizados?",
         "greek": "",
         "options": [
-          "Ocorrências representadas pelos lemas conhecidos",
-          "Porcentagem de doutrinas compreendidas",
-          "Porcentagem de versículos traduzidos corretamente"
+          "A proporção de ocorrências do corpus representada por esses lemas",
+          "A proporção de conceitos do texto que o aluno compreende",
+          "A proporção de versículos que o aluno traduz corretamente"
         ],
         "answer": 0,
         "explanation": "A medida conta palavras do corpus, não a compreensão de passagens.",
@@ -306,12 +447,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Por que aprender palavras funcionais?",
+        "prompt": "Além da frequência, por que artigos e conjunções, como ὁ e καί, merecem atenção no estudo do vocabulário?",
         "greek": "ὁ · καί",
         "options": [
-          "Elas não participam do sentido",
-          "Elas ajudam a organizar as relações do enunciado",
-          "Todas significam a mesma coisa"
+          "Porque substituem a análise das flexões dos demais termos",
+          "Porque contribuem para organizar as relações do enunciado",
+          "Porque todos desempenham a mesma função gramatical"
         ],
         "answer": 1,
         "explanation": "Artigos e conectores são frequentes e estruturam o texto.",
@@ -319,23 +460,70 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione indicador e significado.",
+        "prompt": "Associe cada medida ou capacidade àquilo que ela descreve.",
         "pairs": [
           {
             "left": "Número de lemas",
-            "right": "Quantidade de palavras lexicais distintas"
+            "right": "Quantidade de entradas lexicais distintas"
           },
           {
             "left": "Número de ocorrências",
             "right": "Quantidade de aparições no corpus"
           },
           {
-            "left": "Compreensão",
-            "right": "Resultado de leitura com contexto e análise"
+            "left": "Compreensão de uma passagem",
+            "right": "Leitura que integra contexto e análise linguística"
           }
         ],
         "explanation": "Os três conceitos não devem ser confundidos.",
         "id": "v-core300-3"
+      },
+      {
+        "id": "v-core300-extra-1",
+        "kind": "choice",
+        "prompt": "Em um corpus didático de 1.000 ocorrências, os lemas conhecidos somam 600 ocorrências. Qual é a cobertura lexical desses lemas nesse corpus?",
+        "greek": "",
+        "options": [
+          "60%",
+          "6%",
+          "600%"
+        ],
+        "answer": 0,
+        "explanation": "A cobertura é 600 ÷ 1.000 × 100 = 60%. O cálculo usa ocorrências, não a quantidade de lemas distintos."
+      },
+      {
+        "id": "v-core300-extra-2",
+        "kind": "match",
+        "prompt": "Considere apenas os itens de cada linha. Associe o conjunto à contagem de lemas e ocorrências.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "λόγος · λόγον · λόγου",
+            "right": "1 lema e 3 ocorrências"
+          },
+          {
+            "left": "θεός · λόγος",
+            "right": "2 lemas e 2 ocorrências"
+          },
+          {
+            "left": "θεός · θεός · λόγος · λόγος",
+            "right": "2 lemas e 4 ocorrências"
+          }
+        ],
+        "explanation": "As três formas λόγος, λόγον e λόγου pertencem a um lema. Repetir uma palavra aumenta as ocorrências, sem criar outro lema."
+      },
+      {
+        "id": "v-core300-extra-3",
+        "kind": "choice",
+        "prompt": "Um aluno memorizou o núcleo dos 300, mas ainda não entende uma oração. O que esse resultado mostra?",
+        "greek": "",
+        "options": [
+          "O marcador comprova memorização pelo critério do site, mas não elimina a necessidade de analisar a oração",
+          "O marcador deveria garantir a tradução correta de qualquer oração",
+          "A dificuldade prova que nenhum dos vocábulos foi memorizado"
+        ],
+        "answer": 0,
+        "explanation": "Cobertura lexical e compreensão são medidas diferentes. Mesmo com muitos lemas conhecidos, a leitura exige flexões, relações e contexto."
       }
     ],
     "references": [
@@ -379,12 +567,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Como é melhor estudar uma preposição?",
+        "prompt": "Que conjunto de informações ajuda a aprender o uso da preposição ἐν em uma construção?",
         "greek": "ἐν",
         "options": [
-          "Sem observar o caso",
-          "Com caso e exemplo de construção",
-          "Apenas contando suas letras"
+          "A glossa isolada, tratada como tradução fixa",
+          "A glossa, o caso do grupo introduzido e um exemplo de uso",
+          "A frequência, tratada como descrição completa do uso"
         ],
         "answer": 1,
         "explanation": "Caso, construção e contexto ajudam a especificar a relação.",
@@ -392,12 +580,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "A conjunção sempre mantém uma única tradução portuguesa?",
+        "prompt": "Qual afirmação descreve a relação entre καί e a glossa frequente “e”?",
         "greek": "καί",
         "options": [
-          "Sim, obrigatoriamente “e”",
-          "Não; pode exigir outro equivalente contextual",
-          "Não participa de relações"
+          "“E” é a tradução obrigatória de καί em qualquer contexto",
+          "“E” é uma glossa útil, mas outros equivalentes podem ser necessários no contexto",
+          "“E” informa, por si só, todas as relações expressas por καί"
         ],
         "answer": 1,
         "explanation": "Uma glossa frequente não esgota os usos da conjunção.",
@@ -405,7 +593,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Associe a glossa inicial.",
+        "prompt": "Associe cada conector grego às glossas básicas apresentadas para ele.",
         "pairs": [
           {
             "left": "καί",
@@ -422,6 +610,57 @@
         ],
         "explanation": "As glossas ajudam a reconhecer o conector; a análise contextual vem em seguida.",
         "id": "v-function-3"
+      },
+      {
+        "id": "v-function-extra-1",
+        "kind": "choice",
+        "prompt": "No grupo apresentado, qual glossa de καί expressa a ligação entre os dois grupos nominais?",
+        "greek": "ὁ μαθητὴς καὶ ὁ διδάσκαλος",
+        "options": [
+          "e",
+          "se",
+          "pois"
+        ],
+        "answer": 0,
+        "explanation": "Neste exemplo, καί coordena “o aluno” e “o mestre”. A glossa “e” expressa essa ligação aditiva."
+      },
+      {
+        "id": "v-function-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada item à informação que convém observar além da glossa.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Preposição ἐν",
+            "right": "Caso e grupo nominal que ela introduz"
+          },
+          {
+            "left": "Conjunção καί",
+            "right": "Elementos que ela relaciona no enunciado"
+          },
+          {
+            "left": "Artigo ὁ",
+            "right": "Grupo nominal a que ele pertence e sua concordância"
+          }
+        ],
+        "explanation": "Palavras funcionais devem ser aprendidas também em construções: a glossa isolada não descreve todo o seu papel."
+      },
+      {
+        "id": "v-function-extra-3",
+        "kind": "order",
+        "prompt": "Monte o equivalente português do grupo, mantendo a ordem dos dois substantivos apresentada em grego.",
+        "greek": "ὁ μαθητὴς καὶ ὁ διδάσκαλος",
+        "tokens": [
+          "o mestre",
+          "e",
+          "o aluno"
+        ],
+        "answer": [
+          "o aluno",
+          "e",
+          "o mestre"
+        ],
+        "explanation": "μαθητής corresponde a “aluno”, καί a “e” neste grupo e διδάσκαλος a “mestre”. A instrução pede preservar a ordem aluno → mestre."
       }
     ],
     "references": [
@@ -465,12 +704,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "O que uma família de palavras oferece?",
+        "prompt": "Ao estudar γράφω e γραφή como palavras relacionadas, que uso é adequado fazer dessa associação?",
         "greek": "γράφω · γραφή",
         "options": [
-          "Um apoio de memória",
-          "Uma tradução idêntica obrigatória",
-          "Dispensa de observar o contexto"
+          "Usá-la como apoio de memória, estudando também a classe e os usos de cada palavra",
+          "Atribuir obrigatoriamente a mesma tradução às duas palavras",
+          "Tratar a semelhança como prova de que exercem a mesma função na oração"
         ],
         "answer": 0,
         "explanation": "A associação auxilia a memória, mas cada item tem classe e usos próprios.",
@@ -478,20 +717,20 @@
       },
       {
         "kind": "choice",
-        "prompt": "O sentido de um composto é sempre a soma literal das partes?",
+        "prompt": "Ao reconhecer o prefixo e a base de um composto grego, o que ainda é necessário verificar?",
         "greek": "",
         "options": [
-          "Sim",
-          "Não",
-          "Somente se for verbo"
+          "Se a tradução obtida pela soma das partes é sempre obrigatória",
+          "Quais sentidos o composto apresenta em usos documentados",
+          "Se o composto pode ser traduzido sem considerar a construção"
         ],
         "answer": 1,
-        "explanation": "A formação oferece pistas; os usos documentados determinam o sentido contextual.",
+        "explanation": "Reconhecer os componentes ajuda a identificar a palavra. O sentido do composto deve ser confirmado por seus usos; ele não é necessariamente a soma literal das partes.",
         "id": "v-families-2"
       },
       {
         "kind": "match",
-        "prompt": "Relacione classe e exemplo.",
+        "prompt": "Associe cada vocábulo grego à sua classe gramatical acompanhada de uma glossa.",
         "pairs": [
           {
             "left": "γράφω",
@@ -508,6 +747,53 @@
         ],
         "explanation": "Perceber a classe ajuda a separar vocábulos associados.",
         "id": "v-families-3"
+      },
+      {
+        "id": "v-families-extra-1",
+        "kind": "choice",
+        "prompt": "Ao montar cartões para γράφω e γραφή, qual organização preserva a diferença de classe entre os dois vocábulos?",
+        "greek": "γράφω · γραφή",
+        "options": [
+          "γράφω: verbo, escrever; γραφή: substantivo, escrito/Escritura",
+          "γράφω e γραφή: dois verbos, ambos traduzidos como escrever",
+          "γράφω e γραφή: dois substantivos, ambos traduzidos como escrito"
+        ],
+        "answer": 0,
+        "explanation": "γράφω é verbo; γραφή é substantivo. A associação ajuda a recordar as formas, sem apagar a diferença de classe."
+      },
+      {
+        "id": "v-families-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada vocábulo grego à glossa e à classe indicadas.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "διδάσκω",
+            "right": "ensinar — verbo"
+          },
+          {
+            "left": "διδάσκαλος",
+            "right": "mestre/professor — substantivo"
+          },
+          {
+            "left": "καλός",
+            "right": "bom/belo — adjetivo"
+          }
+        ],
+        "explanation": "A palavra relacionada deve ser reconhecida individualmente. A classe e a glossa distinguem o verbo διδάσκω do substantivo διδάσκαλος."
+      },
+      {
+        "id": "v-families-extra-3",
+        "kind": "choice",
+        "prompt": "Ao decompor um composto, o aluno obtém uma tradução literal que não se ajusta à oração. Que procedimento permite conferir o sentido do composto?",
+        "greek": "",
+        "options": [
+          "Comparar usos documentados do composto naquela construção",
+          "Repetir a soma das partes como tradução obrigatória",
+          "Trocar a análise do composto pela glossa da base, sem consultar os usos"
+        ],
+        "answer": 0,
+        "explanation": "A decomposição oferece uma pista formal. A proposta de sentido precisa ser conferida no uso do composto, especialmente quando não se ajusta à oração."
       }
     ],
     "references": [
@@ -551,7 +837,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual vocábulo significa “povo”?",
+        "prompt": "Entre os três vocábulos apresentados, qual tem a glossa básica “povo”?",
         "greek": "λαός · λίθος · λόγος",
         "options": [
           "λαός",
@@ -564,12 +850,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "A busca sem acentos significa que os acentos podem ser descartados no estudo?",
+        "prompt": "A busca aceita uma palavra sem acentos. Que grafia deve ser preservada ao estudar o vocábulo encontrado?",
         "greek": "",
         "options": [
-          "Sim",
-          "Não",
-          "Apenas nos substantivos"
+          "A grafia sem acentos, porque a busca eliminou essa distinção",
+          "A grafia completa do vocábulo, incluindo acentos e espíritos",
+          "A grafia apenas das consoantes, porque identifica o radical"
         ],
         "answer": 1,
         "explanation": "A busca normalizada facilita localizar itens, sem substituir a grafia completa.",
@@ -577,7 +863,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione as formas semelhantes.",
+        "prompt": "Associe cada um dos vocábulos de escrita parecida à sua glossa em português.",
         "pairs": [
           {
             "left": "λαός",
@@ -594,6 +880,53 @@
         ],
         "explanation": "Observe cada vocábulo por inteiro.",
         "id": "v-similar-3"
+      },
+      {
+        "id": "v-similar-extra-1",
+        "kind": "choice",
+        "prompt": "Um aluno confunde οἶκος com οἶνος. Qual diferença deve conferir na escrita completa dos dois lemas?",
+        "greek": "οἶκος · οἶνος",
+        "options": [
+          "κ em οἶκος e ν em οἶνος",
+          "O primeiro ο, que é diferente nas duas palavras",
+          "O espírito inicial, que é a única diferença"
+        ],
+        "answer": 0,
+        "explanation": "Os lemas compartilham οἶ- e -ος, mas diferem na consoante κ/ν. οἶκος pode significar casa; οἶνος, vinho."
+      },
+      {
+        "id": "v-similar-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada lema à glossa básica indicada, observando a palavra inteira.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "οἶκος",
+            "right": "casa"
+          },
+          {
+            "left": "οἶνος",
+            "right": "vinho"
+          },
+          {
+            "left": "ἄρτος",
+            "right": "pão"
+          }
+        ],
+        "explanation": "As formas devem ser reconhecidas por inteiro. A semelhança entre οἶκος e οἶνος não implica semelhança de sentido."
+      },
+      {
+        "id": "v-similar-extra-3",
+        "kind": "choice",
+        "prompt": "A pesquisa por οινος, sem sinais, localiza οἶνος. Que forma deve ser copiada para um novo cartão de estudo desse lema?",
+        "greek": "",
+        "options": [
+          "οἶνος, preservando a grafia completa",
+          "οινος, tratando a forma de pesquisa como a grafia completa",
+          "οἶκος, porque a busca dispensa conferir todas as letras"
+        ],
+        "answer": 0,
+        "explanation": "A pesquisa sem acentos é uma facilidade do site. No cartão, preserve οἶνος com seus sinais e confira também as consoantes."
       }
     ],
     "references": [
@@ -637,12 +970,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Quando uma palavra tem várias glossas, devemos:",
+        "prompt": "Uma ocorrência de κόσμος precisa ser traduzida. Como devem ser usadas as diferentes glossas registradas para esse lema?",
         "greek": "κόσμος",
         "options": [
-          "Somar todas em cada ocorrência",
-          "Escolher o sentido sustentado pelo contexto",
-          "Selecionar sempre o sentido menos frequente"
+          "Reunindo todas as glossas na tradução dessa ocorrência",
+          "Selecionando o sentido apoiado pela construção e pelo contexto",
+          "Preferindo o sentido menos frequente, independentemente da passagem"
         ],
         "answer": 1,
         "explanation": "A seleção depende das pistas do enunciado e do uso documentado.",
@@ -650,12 +983,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que informação ajuda a escolher o sentido?",
+        "prompt": "Que evidências do trecho ajudam a selecionar o sentido de uma palavra com várias glossas?",
         "greek": "",
         "options": [
-          "Somente a aparência da palavra",
-          "Combinações, função e assunto do trecho",
-          "A ordem alfabética do léxico"
+          "A semelhança gráfica com palavras portuguesas",
+          "As combinações com outras palavras, a função e o assunto do trecho",
+          "A posição da glossa dentro da lista do léxico"
         ],
         "answer": 1,
         "explanation": "Esses elementos precisam convergir para uma leitura coerente.",
@@ -663,7 +996,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione atividade e propósito.",
+        "prompt": "Associe cada etapa do estudo lexical à contribuição principal que oferece à leitura.",
         "pairs": [
           {
             "left": "Estudar glossas",
@@ -680,6 +1013,53 @@
         ],
         "explanation": "Memorização e análise contextual se apoiam.",
         "id": "v-polysemy-3"
+      },
+      {
+        "id": "v-polysemy-extra-1",
+        "kind": "choice",
+        "prompt": "Um texto didático descreve o efeito positivo de um trabalho e emprega καρπός para esse efeito. Qual das glossas se ajusta à referência fornecida?",
+        "greek": "καρπός — fruto; resultado",
+        "options": [
+          "resultado",
+          "fruto colhido de uma árvore",
+          "fruto concreto e resultado obrigatoriamente ao mesmo tempo"
+        ],
+        "answer": 0,
+        "explanation": "A referência fornecida é o efeito de uma atividade, o que sustenta “resultado”. A tarefa pede o sentido neste contexto, não todos os sentidos possíveis."
+      },
+      {
+        "id": "v-polysemy-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada situação de uso de καρπός à conclusão permitida pelas informações fornecidas.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "O texto descreve a colheita de uma árvore",
+            "right": "A referência sustenta fruto concreto"
+          },
+          {
+            "left": "O texto descreve o efeito de uma atividade",
+            "right": "A referência sustenta resultado"
+          },
+          {
+            "left": "O lema aparece isolado, sem oração nem assunto",
+            "right": "A informação fornecida não decide um sentido contextual"
+          }
+        ],
+        "explanation": "A mesma entrada pode oferecer possibilidades diferentes. A situação descrita seleciona uma delas; o lema isolado não fornece todo esse contexto."
+      },
+      {
+        "id": "v-polysemy-extra-3",
+        "kind": "choice",
+        "prompt": "Você já conhece duas glossas de uma palavra. Uma nova passagem parece não se ajustar a nenhuma delas. Qual conclusão orienta uma investigação responsável?",
+        "greek": "",
+        "options": [
+          "É preciso conferir a análise e procurar outros usos documentados",
+          "A passagem deve conter necessariamente um erro porque o cartão só tem duas glossas",
+          "As duas glossas conhecidas devem ser somadas para criar o sentido"
+        ],
+        "answer": 0,
+        "explanation": "O cartão não esgota o repertório de usos. A dificuldade pode exigir nova análise da construção e consulta a outros sentidos documentados."
       }
     ],
     "references": [
@@ -723,20 +1103,20 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a tradução didática da oração?",
+        "prompt": "Qual tradução preserva quem vê e o que é visto na oração apresentada?",
         "greek": "ὁ μαθητὴς βλέπει τὸν οἶκον.",
         "options": [
           "O aluno vê a casa.",
-          "A casa vê o aluno.",
-          "O mestre escreve a pedra."
+          "O aluno é visto pela casa.",
+          "O aluno escreve sobre a casa."
         ],
         "answer": 0,
-        "explanation": "μαθητής é aluno; βλέπει é vê; οἶκον é forma de οἶκος, casa.",
+        "explanation": "ὁ μαθητής identifica o aluno como sujeito de βλέπει, “vê”; τὸν οἶκον é o objeto, “a casa”.",
         "id": "v-text-1"
       },
       {
         "kind": "order",
-        "prompt": "Organize a tradução didática.",
+        "prompt": "Monte a tradução em português na ordem sujeito → verbo → objeto, usando os três blocos.",
         "greek": "ὁ μαθητὴς βλέπει τὸν οἶκον.",
         "tokens": [
           "a casa.",
@@ -748,15 +1128,15 @@
           "vê",
           "a casa."
         ],
-        "explanation": "A tradução mantém a relação entre sujeito, verbo e objeto.",
+        "explanation": "Na ordem solicitada, ὁ μαθητής corresponde a “O aluno”, βλέπει a “vê” e τὸν οἶκον a “a casa.” Outras ordens podem ocorrer em português; aqui o exercício solicita essa sequência.",
         "id": "v-text-2"
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma do texto e glossa.",
+        "prompt": "Na oração apresentada, associe cada forma grega à glossa portuguesa usada nesta tradução didática.",
         "pairs": [
           {
-            "left": "μαθητής",
+            "left": "μαθητὴς",
             "right": "aluno"
           },
           {
@@ -769,7 +1149,59 @@
           }
         ],
         "explanation": "As formas flexionadas devem ser conectadas aos lemas conhecidos.",
-        "id": "v-text-3"
+        "id": "v-text-3",
+        "greek": "ὁ μαθητὴς βλέπει τὸν οἶκον."
+      },
+      {
+        "id": "v-text-extra-1",
+        "kind": "choice",
+        "prompt": "Qual tradução preserva o sujeito, o verbo e o objeto da oração apresentada?",
+        "greek": "ὁ διδάσκαλος βλέπει τὸν μαθητήν.",
+        "options": [
+          "O mestre vê o aluno.",
+          "O aluno vê o mestre.",
+          "O mestre ensina o aluno."
+        ],
+        "answer": 0,
+        "explanation": "ὁ διδάσκαλος é o sujeito, “o mestre”; βλέπει é “vê”; τὸν μαθητήν é o objeto, “o aluno”."
+      },
+      {
+        "id": "v-text-extra-2",
+        "kind": "order",
+        "prompt": "Monte a tradução em português na ordem sujeito → verbo → objeto. Neste exercício, use λόγος com a glossa “mensagem”.",
+        "greek": "ὁ μαθητὴς γράφει λόγον.",
+        "tokens": [
+          "uma mensagem.",
+          "escreve",
+          "O aluno"
+        ],
+        "answer": [
+          "O aluno",
+          "escreve",
+          "uma mensagem."
+        ],
+        "explanation": "A ordem solicitada reúne “O aluno” como sujeito, “escreve” como verbo e “uma mensagem” como objeto. A instrução delimita a glossa de λόγον usada na atividade."
+      },
+      {
+        "id": "v-text-extra-3",
+        "kind": "match",
+        "prompt": "Na oração apresentada, associe cada forma ao lema que permite localizá-la no repertório.",
+        "greek": "ὁ διδάσκαλος βλέπει τὸν μαθητήν.",
+        "pairs": [
+          {
+            "left": "διδάσκαλος",
+            "right": "διδάσκαλος"
+          },
+          {
+            "left": "βλέπει",
+            "right": "βλέπω"
+          },
+          {
+            "left": "μαθητήν",
+            "right": "μαθητής"
+          }
+        ],
+        "explanation": "A forma verbal βλέπει remete a βλέπω, e μαθητήν remete a μαθητής. Reconhecer o lema é uma etapa distinta de identificar a função na oração."
       }
     ],
     "references": [
@@ -813,12 +1245,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a melhor pergunta ao consultar um léxico?",
+        "prompt": "Você consulta um léxico para resolver uma dúvida de tradução em uma passagem. Qual pergunta orienta a escolha do sentido?",
         "greek": "",
         "options": [
-          "Que sentido cabe nesta ocorrência e por quê?",
-          "Qual é a primeira tradução da lista?",
-          "Qual definição permite minha conclusão preferida?"
+          "Que sentido se ajusta a esta ocorrência e quais usos apoiam essa escolha?",
+          "Qual tradução aparece primeiro, sem considerar os exemplos?",
+          "Qual definição permite manter a interpretação escolhida antes da consulta?"
         ],
         "answer": 0,
         "explanation": "A consulta deve responder ao problema do texto e testar evidências.",
@@ -826,12 +1258,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "A etimologia substitui a análise dos usos?",
+        "prompt": "O verbete explica a origem histórica de uma palavra. Como usar essa informação ao investigar um sentido na passagem?",
         "greek": "",
         "options": [
-          "Sim",
-          "Não",
-          "Somente em palavras frequentes"
+          "Tratar a origem como definição obrigatória de toda ocorrência",
+          "Distinguir a origem histórica dos usos documentados relevantes para a passagem",
+          "Dispensar os exemplos de uso quando a origem parecer clara"
         ],
         "answer": 1,
         "explanation": "A história da forma e seu uso contextual respondem a perguntas diferentes.",
@@ -839,7 +1271,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione informação e função.",
+        "prompt": "Associe cada informação ou recurso lexical à sua utilidade principal na consulta ou no estudo.",
         "pairs": [
           {
             "left": "Lema",
@@ -856,6 +1288,53 @@
         ],
         "explanation": "Um repertório de memória e um léxico de consulta cumprem funções distintas.",
         "id": "v-lexicons-3"
+      },
+      {
+        "id": "v-lexicons-extra-1",
+        "kind": "choice",
+        "prompt": "Você procura no léxico uma forma flexionada e não encontra uma entrada com essa grafia. Qual procedimento ajuda a localizar o verbete?",
+        "greek": "",
+        "options": [
+          "Analisar a forma e identificar o lema antes de procurar a entrada",
+          "Concluir que a palavra não existe porque a grafia não é um título de verbete",
+          "Selecionar a entrada de escrita mais parecida sem conferir a morfologia"
+        ],
+        "answer": 0,
+        "explanation": "O verbete costuma ser localizado pelo lema. A análise morfológica pode ser necessária para relacionar a forma encontrada ao título da entrada."
+      },
+      {
+        "id": "v-lexicons-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada pergunta de consulta ao tipo de informação que responde diretamente a ela.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Sob qual forma a palavra aparece como entrada?",
+            "right": "Lema do verbete"
+          },
+          {
+            "left": "Que usos documentados se aproximam desta construção?",
+            "right": "Exemplos e referências pertinentes"
+          },
+          {
+            "left": "De que elementos históricos se formou a palavra?",
+            "right": "Informação etimológica"
+          }
+        ],
+        "explanation": "Lema, exemplos de uso e etimologia respondem a perguntas diferentes. A origem histórica não substitui os exemplos pertinentes ao sentido investigado."
+      },
+      {
+        "id": "v-lexicons-extra-3",
+        "kind": "choice",
+        "prompt": "Dois léxicos organizam os sentidos de um vocábulo de maneiras diferentes. Qual comparação ajuda a avaliar uma tradução da sua passagem?",
+        "greek": "",
+        "options": [
+          "Comparar os exemplos e as construções que cada obra apresenta para esse uso",
+          "Contar as glossas e adotar automaticamente a obra com a lista maior",
+          "Adotar a primeira glossa da obra mais recente sem examinar exemplos"
+        ],
+        "answer": 0,
+        "explanation": "O tamanho da lista não decide o sentido. Os exemplos e as construções pertinentes permitem avaliar qual proposta se ajusta à ocorrência."
       }
     ],
     "references": [
@@ -899,25 +1378,25 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Se dois vocábulos compartilham uma glossa, isso prova que são sempre intercambiáveis?",
+        "prompt": "Dois vocábulos gregos têm a mesma glossa portuguesa. Qual conclusão é justificada apenas por esse dado?",
         "greek": "",
         "options": [
-          "Sim",
-          "Não",
-          "Apenas se forem verbos"
+          "Eles podem substituir um ao outro em qualquer construção",
+          "A glossa coincide, mas é preciso comparar os usos para avaliar as diferenças",
+          "Eles expressam obrigatoriamente sentidos opostos"
         ],
         "answer": 1,
-        "explanation": "A glossa portuguesa não descreve toda a distribuição das palavras gregas.",
+        "explanation": "O equivalente português compartilhado mostra uma aproximação de glossa, não identidade de distribuição nem uma oposição rígida entre os vocábulos.",
         "id": "v-semantic-1"
       },
       {
         "kind": "choice",
-        "prompt": "Como testar uma diferença lexical proposta?",
+        "prompt": "Que procedimento permite testar uma diferença de sentido proposta entre dois vocábulos?",
         "greek": "",
         "options": [
-          "Comparando usos e construções pertinentes",
-          "Apenas separando as letras",
-          "Escolhendo o verbete mais longo"
+          "Comparar ocorrências pertinentes, observando construção, autor, gênero textual e assunto",
+          "Derivar a diferença apenas das letras que não compartilham",
+          "Escolher como referência apenas o verbete que contém mais glossas"
         ],
         "answer": 0,
         "explanation": "As ocorrências comparáveis oferecem evidências para o contraste.",
@@ -925,7 +1404,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione foco e questão.",
+        "prompt": "Associe cada nível de análise à pergunta que ele investiga sobre a palavra no texto.",
         "pairs": [
           {
             "left": "Lexical",
@@ -942,6 +1421,53 @@
         ],
         "explanation": "Os níveis de análise se relacionam, mas não são equivalentes.",
         "id": "v-semantic-3"
+      },
+      {
+        "id": "v-semantic-extra-1",
+        "kind": "choice",
+        "prompt": "Um aluno afirma que dois verbos nunca se aproximam no sentido. Ele encontra ocorrências comparáveis em que ambos recebem adequadamente “falar”. O que esses dados exigem?",
+        "greek": "λέγω · λαλέω",
+        "options": [
+          "Reavaliar a afirmação de que nunca há aproximação, sem concluir que os verbos são sempre idênticos",
+          "Manter a oposição absoluta, desconsiderando as ocorrências",
+          "Concluir que não existe diferença entre os verbos em nenhuma construção"
+        ],
+        "answer": 0,
+        "explanation": "Uma ocorrência de aproximação enfraquece uma oposição formulada como absoluta. Ela não prova, por si, identidade de todos os usos."
+      },
+      {
+        "id": "v-semantic-extra-2",
+        "kind": "choice",
+        "prompt": "Uma comparação encontra um verbo em cartas de um autor e outro em narrativas de outro autor. Que cuidado é necessário antes de atribuir toda diferença à escolha lexical?",
+        "greek": "",
+        "options": [
+          "Considerar também diferenças de autor, gênero textual, construção e assunto",
+          "Supor que autor e gênero textual nunca influenciam os usos",
+          "Tratar a diferença entre os textos como uma definição fixa dos verbos"
+        ],
+        "answer": 0,
+        "explanation": "A comparação lexical precisa controlar as diferenças relevantes entre os contextos. Autor, gênero, construção e assunto podem contribuir para os resultados."
+      },
+      {
+        "id": "v-semantic-extra-3",
+        "kind": "match",
+        "prompt": "Associe cada evidência ao alcance da conclusão que ela permite.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Dois vocábulos recebem a mesma glossa portuguesa",
+            "right": "Há uma aproximação de equivalente, a ser examinada nos usos"
+          },
+          {
+            "left": "Uma ocorrência comparável mostra uma diferença pertinente",
+            "right": "Há evidência de contraste naquele contexto"
+          },
+          {
+            "left": "Duas obras usam rótulos diferentes para analisar o mesmo material",
+            "right": "É preciso comparar o que os rótulos descrevem antes de afirmar divergência"
+          }
+        ],
+        "explanation": "Uma glossa, uma ocorrência e um rótulo teórico fornecem tipos de evidência diferentes. A conclusão não deve ultrapassar o alcance dos dados."
       }
     ],
     "references": [
@@ -985,12 +1511,12 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Uma palavra pouco frequente pode ser importante para uma passagem?",
+        "prompt": "Uma palavra rara aparece em um ponto decisivo da passagem. Qual atitude é adequada?",
         "greek": "",
         "options": [
-          "Sim",
-          "Não",
-          "Somente se estiver no núcleo dos 300"
+          "Investigar seu uso ali, mesmo que tenha baixa frequência no corpus",
+          "Desconsiderá-la porque sua contribuição acompanha a frequência global",
+          "Investigar apenas se ela também integrar o núcleo dos 300"
         ],
         "answer": 0,
         "explanation": "A importância no contexto não é determinada apenas pela frequência global.",
@@ -998,12 +1524,12 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que atitude representa autonomia de leitura?",
+        "prompt": "Qual procedimento demonstra autonomia diante de uma dificuldade de leitura?",
         "greek": "",
         "options": [
-          "Dispensar qualquer fonte",
-          "Formular perguntas e justificar a análise",
-          "Traduzir apenas por glossas"
+          "Evitar consultar fontes para manter a independência",
+          "Formular a dúvida, consultar evidências pertinentes e justificar a análise",
+          "Escolher a glossa memorizada sem testar a construção"
         ],
         "answer": 1,
         "explanation": "Autonomia inclui reconhecer limites e avaliar as evidências disponíveis.",
@@ -1011,7 +1537,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione dificuldade e retorno ao estudo.",
+        "prompt": "Associe cada dificuldade identificada à área de estudo que trata diretamente dela.",
         "pairs": [
           {
             "left": "Não reconhecer uma terminação",
@@ -1028,6 +1554,53 @@
         ],
         "explanation": "Localizar a dificuldade torna a revisão mais precisa.",
         "id": "v-independence-3"
+      },
+      {
+        "id": "v-independence-extra-1",
+        "kind": "choice",
+        "prompt": "Após concluir o repertório, um aluno encontra uma palavra rara essencial à passagem. Como integrar essa dificuldade ao estudo?",
+        "greek": "",
+        "options": [
+          "Identificar o lema, investigar seu uso e incluí-la em revisões posteriores",
+          "Ignorar a palavra porque a lista inicial já foi concluída",
+          "Substituí-la pela glossa de uma palavra frequente de grafia parecida"
+        ],
+        "answer": 0,
+        "explanation": "O repertório inicial é uma base, não um limite. A leitura indica quais palavras e usos precisam ser incorporados às revisões."
+      },
+      {
+        "id": "v-independence-extra-2",
+        "kind": "match",
+        "prompt": "Associe cada registro feito após uma leitura ao reencontro que ele sugere.",
+        "greek": "",
+        "pairs": [
+          {
+            "left": "Reconheci o lema, mas confundi a flexão",
+            "right": "Retomar o padrão morfológico usado na passagem"
+          },
+          {
+            "left": "Recordei a glossa, mas ela não se ajustou ao assunto",
+            "right": "Investigar o sentido contextual em usos pertinentes"
+          },
+          {
+            "left": "Entendi a passagem, mas não recordei um vocábulo dias depois",
+            "right": "Incluir o vocábulo em uma sessão de revisão espaçada"
+          }
+        ],
+        "explanation": "O registro da dificuldade distingue reconhecimento de forma, seleção de sentido e retenção de vocabulário."
+      },
+      {
+        "id": "v-independence-extra-3",
+        "kind": "choice",
+        "prompt": "O painel mostra alta cobertura lexical, mas a leitura ainda exige consultas. Como usar esse resultado para planejar a próxima etapa?",
+        "greek": "",
+        "options": [
+          "Manter revisões e investigar as dificuldades concretas que aparecerem na leitura",
+          "Encerrar morfologia e sintaxe porque a cobertura já mede compreensão",
+          "Usar apenas o percentual para decidir que toda passagem será simples"
+        ],
+        "answer": 0,
+        "explanation": "O percentual orienta o esforço de memória. As dificuldades reais da leitura mostram quais formas, construções e sentidos precisam de estudo adicional."
       }
     ],
     "references": [

@@ -28,18 +28,35 @@ export function meaningsOverlap(first, second) {
   const senses=value=>normalize(value).replace(/\([^)]*\)/g,'').split(/[;,/]/).map(x=>x.trim().replace(/^(?:ato de |e |ser |estar |ter )/, '')).filter(Boolean);
   return senses(first).some(term=>senses(second).some(other=>term===other || (Math.min(term.length,other.length)>3 && (term.startsWith(`${other} `)||other.startsWith(`${term} `)))));
 }
-export function vocabularyQuestion(word, entries, random = Math.random) {
+export function vocabularyQuestion(word, entries, random = Math.random, reverse = false) {
   const candidates = entries.filter(x=>x.id!==word.id && !meaningsOverlap(word.meaning,x.meaning));
   const distinct = [...new Map(shuffle(candidates,random).map(x=>[x.meaning,x])).values()];
-  const options=shuffle([word.meaning,...distinct.slice(0,3).map(x=>x.meaning)],random);
-  return { id:`word-${word.id}`,kind:'choice',wordId:word.id,greek:word.lemma,audio:word.audio||null,prompt:'Qual é uma glossa deste vocábulo?',options,answer:options.indexOf(word.meaning),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Uma glossa é uma pista de sentido; a tradução final depende do contexto.`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
+  const distractors=reverse?[...new Map(distinct.filter(x=>x.lemma!==word.lemma).map(x=>[x.lemma,x])).values()]:distinct;
+  const correct=reverse?word.lemma:word.meaning;
+  const options=shuffle([correct,...distractors.slice(0,3).map(x=>reverse?x.lemma:x.meaning)],random);
+  return { id:`${reverse?'reverse':'word'}-${word.id}`,kind:'choice',wordId:word.id,greek:reverse?null:word.lemma,stimulus:reverse?word.meaning:null,optionsLang:reverse?'grc':null,audio:word.audio||null,prompt:reverse?'Qual palavra grega corresponde ao sentido apresentado em português?':'Qual alternativa apresenta um sentido em português para esta palavra grega?',options,answer:options.indexOf(correct),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Estes são sentidos de referência para memorizar; a tradução de uma passagem depende do contexto.`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
 }
-export function selectWords(entries, reviews, {limit=10, filter='all',level=null,day=localDate(),random=Math.random}={}) {
+export function selectWords(entries, reviews, {limit=10, filter='all',level=null,day=localDate(),random=Math.random,recent=[]}={}) {
   let pool=entries.filter(word => (level===null || word.level===level) && (filter!=='core' || word.core300) && (filter!=='mastered' || isMastered(reviews[word.id])) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id]));
   const due=shuffle(pool.filter(w=>isDue(reviews[w.id],day)),random);
   const fresh=shuffle(pool.filter(w=>!reviews[w.id]),random);
   const remaining=shuffle(pool.filter(w=>reviews[w.id]&&!isDue(reviews[w.id],day)),random);
-  return [...due,...fresh,...remaining].slice(0,limit);
+  const seen=new Set(recent),byRecency=group=>[...group.filter(w=>!seen.has(w.id)),...group.filter(w=>seen.has(w.id))];
+  return [...byRecency(due),...byRecency(fresh),...byRecency(remaining)].slice(0,limit);
+}
+// Prefer unseen material, then older reviews; alternate lessons and activities.
+export function selectStudyQuestions(questions, answers={}, {limit=10,recent=[],random=Math.random}={}) {
+  const seen=new Map(recent.map((id,i)=>[id,i]));
+  const unique=[...new Map(questions.map(q=>[q.id,q])).values()];
+  const pool=shuffle(unique,random),selected=[];
+  const rank=q=>seen.has(q.id)?3:!answers[q.id]?0:answers[q.id].correct?2:1;
+  while(pool.length&&selected.length<limit){
+    const previous=selected.at(-1),penultimate=selected.at(-2);
+    const score=q=>rank(q)*100000+(seen.has(q.id)?seen.get(q.id)*4:0)+(q.lessonId&&q.lessonId===previous?.lessonId?400:0)+(q.lessonId&&q.lessonId===penultimate?.lessonId?100:0)+(q.kind===previous?.kind?50:0);
+    let best=0;for(let i=1;i<pool.length;i++)if(score(pool[i])<score(pool[best]))best=i;
+    selected.push(pool.splice(best,1)[0]);
+  }
+  return selected;
 }
 export function coverage(words, reviews, tokenCount) {
   if (!tokenCount) return 0;
@@ -50,6 +67,8 @@ export function validProgress(value) {
   const integer=(x,max=Number.MAX_SAFE_INTEGER)=>Number.isSafeInteger(x)&&x>=0&&x<=max;
   const date=x=>typeof x==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,10)===x;
   if (!object(value)||value.version!==1||!object(value.vocab)||!object(value.lessons)||!object(value.levels)||!object(value.answers)||!integer(value.sessions))return false;
+  if(value.recentQuestions!==undefined&&(!Array.isArray(value.recentQuestions)||value.recentQuestions.length>200||!value.recentQuestions.every(id=>typeof id==='string'&&id.length<=500)))return false;
+  if(value.recentWords!==undefined&&(!Array.isArray(value.recentWords)||value.recentWords.length>200||!value.recentWords.every(id=>typeof id==='string'&&id.length<=500)))return false;
   if(!['morphology','syntax','vocabulary'].every(area=>integer(value.levels[area],3)))return false;
   if(!Object.values(value.lessons).every(x=>typeof x==='boolean'))return false;
   if(!Object.values(value.answers).every(x=>object(x)&&typeof x.correct==='boolean'&&date(x.day)&&integer(x.attempts)))return false;

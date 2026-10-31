@@ -170,7 +170,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual é a forma final de sigma?",
+        "prompt": "Qual grafia de sigma é normalmente usada no final de uma palavra grega?",
         "options": [
           "ζ",
           "ς",
@@ -183,7 +183,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione letra e nome.",
+        "prompt": "Relacione cada letra grega minúscula ao seu nome.",
         "pairs": [
           {
             "left": "λ",
@@ -207,16 +207,71 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual par representa a mesma letra?",
+        "prompt": "Qual par apresenta a mesma letra em maiúscula e minúscula?",
         "options": [
-          "ο e ω",
-          "ε e η",
-          "σ e ς",
-          "ν e υ"
+          "Ρ e ρ",
+          "Ο e ω",
+          "Ε e η",
+          "Ν e υ"
         ],
-        "answer": 2,
-        "explanation": "σ e ς são duas formas de sigma; os outros pares têm letras diferentes.",
+        "answer": 0,
+        "explanation": "Ρ e ρ são rho maiúsculo e minúsculo. Os demais pares reúnem letras diferentes.",
         "id": "m-alfabeto-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual destas letras é rho, e não pi?",
+        "options": [
+          "ρ",
+          "π",
+          "ν",
+          "υ"
+        ],
+        "answer": 0,
+        "explanation": "ρ é rho; π é pi. Reconhecer o desenho evita confundir duas letras diferentes.",
+        "id": "m-alfabeto-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada letra maiúscula à sua minúscula.",
+        "pairs": [
+          {
+            "left": "Α",
+            "right": "α"
+          },
+          {
+            "left": "Β",
+            "right": "β"
+          },
+          {
+            "left": "Γ",
+            "right": "γ"
+          },
+          {
+            "left": "Ω",
+            "right": "ω"
+          }
+        ],
+        "explanation": "Maiúsculas e minúsculas são grafias da mesma letra: alfa, beta, gama e ômega.",
+        "id": "m-alfabeto-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Ordene estas quatro letras do início do alfabeto grego na sequência tradicional.",
+        "tokens": [
+          "α",
+          "β",
+          "γ",
+          "δ"
+        ],
+        "answer": [
+          "α",
+          "β",
+          "γ",
+          "δ"
+        ],
+        "explanation": "O alfabeto começa por alfa, beta, gama e delta.",
+        "id": "m-alfabeto-extra-3"
       }
     ],
     "references": [
@@ -298,7 +353,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que a diérese orienta a fazer?",
+        "prompt": "Quando uma vogal apresenta diérese (ϊ ou ϋ), como ela deve ser lida em relação à vogal anterior?",
         "options": [
           "Ler duas vogais separadamente",
           "Apagar a última vogal",
@@ -311,7 +366,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Associe grafia e descrição.",
+        "prompt": "Associe cada grafia vocálica à descrição de sua marca ou de sua quantidade tradicional.",
         "pairs": [
           {
             "left": "ῳ",
@@ -332,6 +387,53 @@
         ],
         "explanation": "As marcas serão reutilizadas no reconhecimento das terminações.",
         "id": "m-vogais-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em οἶκος, qual sequência de letras forma o ditongo da primeira sílaba?",
+        "greek": "οἶκος",
+        "options": [
+          "οι",
+          "οκ",
+          "ικ",
+          "ος"
+        ],
+        "answer": 0,
+        "explanation": "Em οἶκος, ο e ι formam o ditongo inicial. O circunflexo não cria outra letra.",
+        "id": "m-vogais-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual grafia apresenta eta com iota subscrito?",
+        "options": [
+          "ῃ",
+          "η",
+          "ϊ",
+          "ει"
+        ],
+        "answer": 0,
+        "explanation": "Em ῃ, o pequeno iota fica sob eta. Diérese e iota subscrito são marcas diferentes.",
+        "id": "m-vogais-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada conjunto de vogais à sua quantidade na descrição tradicional.",
+        "pairs": [
+          {
+            "left": "ε, ο",
+            "right": "sempre breves"
+          },
+          {
+            "left": "η, ω",
+            "right": "sempre longas"
+          },
+          {
+            "left": "α, ι, υ",
+            "right": "podem ser breves ou longas"
+          }
+        ],
+        "explanation": "A quantidade tradicional das vogais ajuda a estudar a acentuação; ela não é indicada apenas pela pronúncia portuguesa.",
+        "id": "m-vogais-extra-3"
       }
     ],
     "references": [
@@ -417,7 +519,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual sinal funciona como interrogação?",
+        "prompt": "Nas edições gregas do Novo Testamento, qual destes sinais representa uma pergunta?",
         "options": [
           ";",
           "/",
@@ -430,7 +532,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione sinal e descrição.",
+        "prompt": "Relacione a marca presente em cada alfa à sua identificação: acento ou espírito.",
         "pairs": [
           {
             "left": "ά",
@@ -451,6 +553,53 @@
         ],
         "explanation": "As marcas ocupam posições próximas, mas não têm a mesma função.",
         "id": "m-acentos-espiritos-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em ὁ, qual marca indica a aspiração inicial na leitura erasmiana?",
+        "greek": "ὁ",
+        "options": [
+          "O espírito áspero sobre ο",
+          "O iota subscrito sob ο",
+          "O acento agudo sobre ο",
+          "O espírito brando sobre ο"
+        ],
+        "answer": 0,
+        "explanation": "ὁ contém espírito áspero. Esta marca orienta a aspiração na convenção erasmiana; não identifica caso ou número.",
+        "id": "m-acentos-espiritos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual sinal representa o circunflexo sobre alfa?",
+        "options": [
+          "ᾶ",
+          "ά",
+          "ὰ",
+          "ἀ"
+        ],
+        "answer": 0,
+        "explanation": "ᾶ tem circunflexo; ά tem agudo, ὰ tem grave e ἀ tem espírito brando.",
+        "id": "m-acentos-espiritos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione o sinal de pontuação grego à orientação de leitura.",
+        "pairs": [
+          {
+            "left": ";",
+            "right": "interrogação"
+          },
+          {
+            "left": "·",
+            "right": "pausa que pode corresponder a dois-pontos ou ponto e vírgula"
+          },
+          {
+            "left": ",",
+            "right": "pausa de vírgula"
+          }
+        ],
+        "explanation": "São convenções editoriais de pontuação; ajudam a organizar a leitura, sem substituir a análise da oração.",
+        "id": "m-acentos-espiritos-extra-3"
       }
     ],
     "references": [
@@ -528,7 +677,7 @@
     "questions": [
       {
         "kind": "choice",
-        "prompt": "Qual informação é morfológica?",
+        "prompt": "Qual alternativa informa caso e número, em vez de uma função sintática?",
         "options": [
           "Sujeito da oração",
           "Objeto direto",
@@ -542,7 +691,7 @@
       {
         "kind": "parse",
         "greek": "λόγον",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λόγον, forma do substantivo masculino λόγος: indique caso e número.",
         "fields": [
           {
             "label": "Caso",
@@ -564,21 +713,72 @@
             ]
           }
         ],
-        "explanation": "Neste paradigma, -ον marca acusativo singular.",
+        "explanation": "No paradigma de λόγος, λόγον é acusativo singular. A análise parte do lema, não apenas do final -ον.",
         "id": "m-caso-genero-numero-2"
       },
       {
         "kind": "choice",
-        "prompt": "Como memorizar ὁδός?",
+        "prompt": "Qual é o gênero gramatical de ὁδός e qual artigo deve acompanhá-lo no nominativo singular?",
         "options": [
-          "Masculino porque termina em -ος",
-          "Feminino, com o artigo ἡ",
-          "Neutro porque designa objeto",
-          "Gênero variável em toda ocorrência"
+          "Feminino: ἡ ὁδός",
+          "Masculino: ὁ ὁδός",
+          "Neutro: τὸ ὁδός",
+          "Não tem gênero gramatical"
         ],
-        "answer": 1,
-        "explanation": "A terminação não garante gênero; aprende-se ἡ ὁδός.",
+        "answer": 0,
+        "explanation": "ὁδός é um substantivo feminino e aprende-se como ἡ ὁδός. O final -ος não garante gênero masculino.",
         "id": "m-caso-genero-numero-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na expressão “dativo plural”, que duas categorias morfológicas estão sendo informadas?",
+        "options": [
+          "Caso e número",
+          "Gênero e pessoa",
+          "Função sintática e voz",
+          "Lema e tradução"
+        ],
+        "answer": 0,
+        "explanation": "Dativo é um caso; plural é um número. A expressão não informa, por si só, gênero ou função na oração.",
+        "id": "m-caso-genero-numero-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Sem uma oração, a forma neutra δῶρον determina um único caso?",
+        "greek": "δῶρον",
+        "options": [
+          "Não: pode ser nominativo, acusativo ou vocativo singular",
+          "Sim: é somente nominativo singular",
+          "Sim: é somente acusativo singular",
+          "Não: pode ser singular ou plural"
+        ],
+        "answer": 0,
+        "explanation": "No paradigma de δῶρον, os três casos neutros coincidem no singular; o plural é δῶρα.",
+        "id": "m-caso-genero-numero-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada informação ao tipo de dado que ela fornece.",
+        "pairs": [
+          {
+            "left": "ὁδός",
+            "right": "lema de consulta"
+          },
+          {
+            "left": "feminino",
+            "right": "gênero gramatical"
+          },
+          {
+            "left": "acusativo",
+            "right": "caso"
+          },
+          {
+            "left": "sujeito",
+            "right": "função sintática"
+          }
+        ],
+        "explanation": "Lema, gênero, caso e função são informações diferentes; identificar uma delas não determina automaticamente as demais.",
+        "id": "m-caso-genero-numero-extra-3"
       }
     ],
     "references": [
@@ -677,7 +877,7 @@
       {
         "kind": "parse",
         "greek": "ταῖς",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ταῖς: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -713,7 +913,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que τῶν identifica sem outro termo?",
+        "prompt": "Sem outro termo no contexto, que informações de caso e número a forma do artigo τῶν permite identificar?",
         "options": [
           "Acusativo neutro singular",
           "Genitivo plural",
@@ -726,7 +926,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione artigo e análise.",
+        "prompt": "Relacione cada forma do artigo ao conjunto de caso, gênero e número.",
         "pairs": [
           {
             "left": "τήν",
@@ -747,6 +947,71 @@
         ],
         "explanation": "Memorize as séries e confira a concordância nos grupos nominais.",
         "id": "m-artigo-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise o artigo τῆς: indique caso, gênero e número.",
+        "greek": "τῆς",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Genitivo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Feminino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "τῆς é a forma de genitivo feminino singular do artigo.",
+        "id": "m-artigo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O artigo isolado τοῦ permite identificar o gênero sem outra palavra?",
+        "greek": "τοῦ",
+        "options": [
+          "Não: é genitivo singular masculino ou neutro",
+          "Sim: somente masculino",
+          "Sim: somente neutro",
+          "Não: seu número também é indeterminado"
+        ],
+        "answer": 0,
+        "explanation": "τοῦ identifica genitivo singular, mas a forma é compartilhada pelo masculino e pelo neutro.",
+        "id": "m-artigo-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Monte o grupo “às palavras” na ordem artigo–substantivo, usando as formas dativas plurais fornecidas.",
+        "tokens": [
+          "τοῖς",
+          "λόγοις"
+        ],
+        "answer": [
+          "τοῖς",
+          "λόγοις"
+        ],
+        "explanation": "τοῖς e λόγοις estão no dativo masculino plural; a ordem solicitada coloca o artigo antes do substantivo.",
+        "id": "m-artigo-extra-3"
       }
     ],
     "references": [
@@ -842,7 +1107,7 @@
       {
         "kind": "parse",
         "greek": "λόγους",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λόγους, forma do substantivo masculino λόγος: indique caso, gênero e número.",
         "fields": [
           {
             "label": "Caso",
@@ -878,7 +1143,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que casos coincidem no neutro?",
+        "prompt": "Dentro de um mesmo número, quais casos apresentam a mesma forma nos substantivos neutros?",
         "options": [
           "Nominativo, acusativo e vocativo",
           "Genitivo e dativo apenas",
@@ -891,7 +1156,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e análise.",
+        "prompt": "Relacione cada forma grega à análise morfológica compatível com seu paradigma.",
         "pairs": [
           {
             "left": "λόγου",
@@ -912,6 +1177,80 @@
         ],
         "explanation": "Reconheça a terminação dentro do paradigma do lema.",
         "id": "m-segunda-declinacao-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λόγοις, do substantivo masculino λόγος.",
+        "greek": "λόγοις",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Dativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "No paradigma de λόγος, -οις marca dativo plural. O gênero masculino vem da informação lexical do substantivo.",
+        "id": "m-segunda-declinacao-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é o nominativo plural neutro de δῶρον?",
+        "options": [
+          "δῶρα",
+          "δῶρον",
+          "δώρου",
+          "δώροις"
+        ],
+        "answer": 0,
+        "explanation": "Os neutros da segunda declinação apresentam -α no nominativo e acusativo plurais. δῶρον é singular.",
+        "id": "m-segunda-declinacao-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione as formas de δοῦλος à análise de caso e número.",
+        "pairs": [
+          {
+            "left": "δούλου",
+            "right": "genitivo singular"
+          },
+          {
+            "left": "δούλῳ",
+            "right": "dativo singular"
+          },
+          {
+            "left": "δούλους",
+            "right": "acusativo plural"
+          },
+          {
+            "left": "δούλων",
+            "right": "genitivo plural"
+          }
+        ],
+        "explanation": "O modelo de λόγος pode ser transferido para δοῦλος; compare as terminações das formas completas.",
+        "id": "m-segunda-declinacao-extra-3"
       }
     ],
     "references": [
@@ -995,7 +1334,7 @@
       {
         "kind": "parse",
         "greek": "τιμαῖς",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise τιμαῖς: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -1031,7 +1370,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual descrição de προφήτης está correta?",
+        "prompt": "Qual alternativa identifica corretamente o gênero e a declinação de προφήτης?",
         "options": [
           "Feminino porque é da primeira declinação",
           "Masculino da primeira declinação",
@@ -1044,7 +1383,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e análise.",
+        "prompt": "Relacione cada forma grega à análise morfológica compatível com seu paradigma.",
         "pairs": [
           {
             "left": "τιμῆς",
@@ -1060,11 +1399,75 @@
           },
           {
             "left": "τιμαί",
-            "right": "nominativo plural"
+            "right": "nominativo ou vocativo plural"
           }
         ],
-        "explanation": "Diferencie as terminações, o iota subscrito e os acentos.",
+        "explanation": "τιμαί pode ser nominativo ou vocativo plural sem contexto; as demais formas apresentadas identificam os casos indicados. Preserve as coincidências do paradigma.",
         "id": "m-primeira-declinacao-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise τιμήν, do substantivo feminino τιμή.",
+        "greek": "τιμήν",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Acusativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Feminino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "τιμήν apresenta -ην, acusativo singular no paradigma de τιμή.",
+        "id": "m-primeira-declinacao-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual genitivo singular deve ser aprendido com o lema feminino δόξα?",
+        "options": [
+          "δόξης",
+          "δόξας",
+          "δόξαν",
+          "δόξαι"
+        ],
+        "answer": 0,
+        "explanation": "O par lexical é δόξα, δόξης: este grupo alterna alfa e eta no singular. Não se deve transferir a conservação de alfa de χώρα para todas as palavras.",
+        "id": "m-primeira-declinacao-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Monte o grupo “às honras” na ordem artigo–substantivo, com as formas dativas plurais fornecidas.",
+        "tokens": [
+          "ταῖς",
+          "τιμαῖς"
+        ],
+        "answer": [
+          "ταῖς",
+          "τιμαῖς"
+        ],
+        "explanation": "ταῖς e τιμαῖς concordam em dativo feminino plural.",
+        "id": "m-primeira-declinacao-extra-3"
       }
     ],
     "references": [
@@ -1154,7 +1557,7 @@
       {
         "kind": "parse",
         "greek": "ἀγαθῇ",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἀγαθῇ: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -1203,7 +1606,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Por que ἀγαθός e προφήτης podem concordar com finais diferentes?",
+        "prompt": "No grupo ὁ ἀγαθὸς προφήτης, por que o adjetivo e o substantivo concordam apesar de terminarem com letras diferentes?",
         "options": [
           "Não existe concordância",
           "O substantivo é feminino",
@@ -1214,6 +1617,73 @@
         "explanation": "Concordância não é identidade de letras finais.",
         "greek": "ὁ ἀγαθὸς προφήτης",
         "id": "m-adjetivos-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual adjetivo concorda com o substantivo feminino singular τιμή no grupo ἡ ___ τιμή?",
+        "greek": "ἡ ___ τιμή",
+        "options": [
+          "ἀγαθή",
+          "ἀγαθός",
+          "ἀγαθόν",
+          "ἀγαθαί"
+        ],
+        "answer": 0,
+        "explanation": "ἡ τιμή é nominativo feminino singular; a forma correspondente de ἀγαθός é ἀγαθή.",
+        "id": "m-adjetivos-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise o adjetivo ἀγαθοῖς em concordância com τοῖς λόγοις.",
+        "greek": "τοῖς ἀγαθοῖς λόγοις",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Dativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λόγος é masculino; o artigo, o adjetivo e o substantivo concordam em dativo masculino plural. Sem λόγοις, ἀγαθοῖς também poderia ser neutro.",
+        "id": "m-adjetivos-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Monte o grupo no dativo plural na ordem artigo–adjetivo–substantivo.",
+        "tokens": [
+          "ταῖς",
+          "ἀγαθαῖς",
+          "τιμαῖς"
+        ],
+        "answer": [
+          "ταῖς",
+          "ἀγαθαῖς",
+          "τιμαῖς"
+        ],
+        "explanation": "As três formas são dativas femininas plurais. A ordem foi fixada no enunciado para esta atividade.",
+        "id": "m-adjetivos-extra-3"
       }
     ],
     "references": [
@@ -1302,7 +1772,7 @@
       {
         "kind": "parse",
         "greek": "σώματος",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise σώματος: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -1338,7 +1808,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual par revela o tema σαρκ-?",
+        "prompt": "Qual par de nominativo e genitivo singulares revela o tema σαρκ-?",
         "options": [
           "σάρξ, σαρκός",
           "λόγος, λόγου",
@@ -1351,7 +1821,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e análise.",
+        "prompt": "Relacione cada forma grega à análise morfológica compatível com seu paradigma.",
         "pairs": [
           {
             "left": "σαρκί",
@@ -1372,6 +1842,80 @@
         ],
         "explanation": "Reconheça primeiro o paradigma do lema.",
         "id": "m-terceira-declinacao-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O genitivo ὀνόματος revela qual tema do substantivo ὄνομα?",
+        "options": [
+          "ὀνοματ-",
+          "ὀνομ- sem τ",
+          "ὀνομο-",
+          "ὀνομασ-"
+        ],
+        "answer": 0,
+        "explanation": "ὀνόματος mostra o tema ὀνοματ-. O nominativo ὄνομα não exibe esse τ final.",
+        "id": "m-terceira-declinacao-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise σαρκί, do substantivo feminino σάρξ, σαρκός.",
+        "greek": "σαρκί",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Dativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Feminino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "σαρκί é dativo singular de σάρξ; o genitivo σαρκός revela o tema σαρκ-.",
+        "id": "m-terceira-declinacao-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada nominativo ao seu genitivo singular.",
+        "pairs": [
+          {
+            "left": "σῶμα",
+            "right": "σώματος"
+          },
+          {
+            "left": "σάρξ",
+            "right": "σαρκός"
+          },
+          {
+            "left": "ἐλπίς",
+            "right": "ἐλπίδος"
+          },
+          {
+            "left": "πατήρ",
+            "right": "πατρός"
+          }
+        ],
+        "explanation": "Aprender o nominativo com o genitivo ajuda a reconhecer temas e alterações da terceira declinação.",
+        "id": "m-terceira-declinacao-extra-3"
       }
     ],
     "references": [
@@ -1460,7 +2004,7 @@
       {
         "kind": "parse",
         "greek": "ὑμᾶς",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ὑμᾶς: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Pessoa",
@@ -1496,7 +2040,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Com que palavra o feminino de ἐμή concorda em ἐμὴ μήτηρ?",
+        "prompt": "Em ἐμὴ μήτηρ, com qual palavra o possessivo ἐμή concorda em gênero?",
         "options": [
           "Com o falante",
           "Com μήτηρ",
@@ -1509,7 +2053,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e análise.",
+        "prompt": "Relacione cada pronome pessoal à indicação de pessoa e caso.",
         "pairs": [
           {
             "left": "ἡμεῖς",
@@ -1530,6 +2074,81 @@
         ],
         "explanation": "A diferença entre η e υ é decisiva para reconhecer as duas séries.",
         "id": "m-pronomes-pessoais-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao comparar ἡμῖν e ὑμῖν, qual categoria muda?",
+        "greek": "ἡμῖν / ὑμῖν",
+        "options": [
+          "A pessoa: primeira para segunda",
+          "O caso: nominativo para dativo",
+          "O número: singular para plural",
+          "O gênero: masculino para feminino"
+        ],
+        "answer": 0,
+        "explanation": "As duas formas são dativas plurais; ἡμῖν refere-se à primeira pessoa, e ὑμῖν, à segunda.",
+        "id": "m-pronomes-pessoais-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise o pronome pessoal ἡμᾶς: indique pessoa, caso e número.",
+        "greek": "ἡμᾶς",
+        "fields": [
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Caso",
+            "answer": "Acusativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἡμᾶς é acusativo da primeira pessoa plural. A forma não distingue gênero.",
+        "id": "m-pronomes-pessoais-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada pronome pessoal à sua descrição.",
+        "pairs": [
+          {
+            "left": "ἐγώ",
+            "right": "primeira pessoa singular, nominativo"
+          },
+          {
+            "left": "σύ",
+            "right": "segunda pessoa singular, nominativo"
+          },
+          {
+            "left": "σοῦ",
+            "right": "segunda pessoa singular, genitivo"
+          },
+          {
+            "left": "ἐμοί",
+            "right": "primeira pessoa singular, dativo"
+          }
+        ],
+        "explanation": "As séries de primeira e segunda pessoas devem ser aprendidas por contraste; as formas não se obtêm de uma única base invariável.",
+        "id": "m-pronomes-pessoais-extra-3"
       }
     ],
     "references": [
@@ -1607,7 +2226,7 @@
       {
         "kind": "parse",
         "greek": "ταύτης",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ταύτης: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -1643,7 +2262,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual é a forma interrogativa neutra?",
+        "prompt": "Qual forma é o neutro singular do pronome interrogativo τίς?",
         "options": [
           "τί",
           "τις",
@@ -1656,7 +2275,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione família e exemplo.",
+        "prompt": "Relacione cada forma à família pronominal ou aos usos do seu lema.",
         "pairs": [
           {
             "left": "ἐκεῖνος",
@@ -1677,6 +2296,80 @@
         ],
         "explanation": "Confirme diferenças gráficas e categoria lexical no contexto.",
         "id": "m-demonstrativos-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual par apresenta as formas neutras do interrogativo e do indefinido, nessa ordem?",
+        "options": [
+          "τί / τι",
+          "τι / τί",
+          "τίς / τις",
+          "οὗτος / αὐτός"
+        ],
+        "answer": 0,
+        "explanation": "τί é o neutro interrogativo; τι é o neutro indefinido. A acentuação e o contexto fazem parte do reconhecimento.",
+        "id": "m-demonstrativos-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise a forma demonstrativa ἐκείνης: indique caso, gênero e número.",
+        "greek": "ἐκείνης",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Genitivo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Feminino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἐκείνης é genitivo feminino singular do demonstrativo ἐκεῖνος, ἐκείνη, ἐκεῖνο.",
+        "id": "m-demonstrativos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione as formas do demonstrativo οὗτος à descrição morfológica.",
+        "pairs": [
+          {
+            "left": "οὗτος",
+            "right": "nominativo masculino singular"
+          },
+          {
+            "left": "αὕτη",
+            "right": "nominativo feminino singular"
+          },
+          {
+            "left": "τούτου",
+            "right": "genitivo singular masculino ou neutro"
+          },
+          {
+            "left": "ταύτας",
+            "right": "acusativo feminino plural"
+          }
+        ],
+        "explanation": "Algumas formas distinguem gênero; outras, como τούτου, preservam mais de uma possibilidade sem contexto.",
+        "id": "m-demonstrativos-extra-3"
       }
     ],
     "references": [
@@ -1760,7 +2453,7 @@
       {
         "kind": "parse",
         "greek": "ἥν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἥν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -1796,7 +2489,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual a análise de ἀλλήλων?",
+        "prompt": "Qual alternativa identifica a família pronominal, o caso e o número de ἀλλήλων?",
         "options": [
           "Recíproco no genitivo plural",
           "Artigo masculino singular",
@@ -1809,7 +2502,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O caso do relativo é automaticamente o caso do antecedente?",
+        "prompt": "Ao analisar um pronome relativo, seu caso deve ser copiado automaticamente do caso do antecedente?",
         "options": [
           "Sim, sempre",
           "Não: analise a construção do relativo",
@@ -1819,6 +2512,81 @@
         "answer": 1,
         "explanation": "O relativo possui uma função na sua própria construção, que pode exigir outro caso.",
         "id": "m-relativos-reflexivos-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual diferença gráfica separa o relativo feminino ἥ do artigo feminino ἡ?",
+        "greek": "ἥ / ἡ",
+        "options": [
+          "O relativo tem acento agudo, e o artigo não",
+          "O relativo tem iota subscrito",
+          "O artigo tem circunflexo",
+          "As duas grafias são idênticas"
+        ],
+        "answer": 0,
+        "explanation": "As duas formas têm espírito áspero sobre eta; ἥ acrescenta o acento agudo.",
+        "id": "m-relativos-reflexivos-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise o pronome relativo οὕς: indique caso, gênero e número.",
+        "greek": "οὕς",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Acusativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "οὕς é acusativo masculino plural do relativo ὅς. O caso deve ser interpretado na oração relativa.",
+        "id": "m-relativos-reflexivos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma pronominal à sua família.",
+        "pairs": [
+          {
+            "left": "ἑαυτοῦ",
+            "right": "reflexivo"
+          },
+          {
+            "left": "ἀλλήλων",
+            "right": "recíproco"
+          },
+          {
+            "left": "ὅς",
+            "right": "relativo"
+          },
+          {
+            "left": "τίς",
+            "right": "interrogativo"
+          }
+        ],
+        "explanation": "A família pronominal e a flexão são etapas distintas da análise. ἑαυτοῦ pode ser masculino ou neutro sem contexto.",
+        "id": "m-relativos-reflexivos-extra-3"
       }
     ],
     "references": [
@@ -1891,7 +2659,7 @@
       {
         "kind": "parse",
         "greek": "λύεις",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λύεις: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -1950,7 +2718,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual categoria não pertence ao infinitivo?",
+        "prompt": "Qual categoria não é flexionada no infinitivo grego?",
         "options": [
           "Forma temporal",
           "Voz",
@@ -1963,7 +2731,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que é o lema?",
+        "prompt": "No estudo do vocabulário e do parsing, o que se chama de lema?",
         "options": [
           "Uma função obrigatória",
           "A forma convencional de consulta lexical",
@@ -1973,6 +2741,103 @@
         "answer": 1,
         "explanation": "O lema reúne as formas flexionadas do verbo.",
         "id": "m-estrutura-verbal-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual informação de parsing deve ser acrescentada a um particípio, mas não a um infinitivo?",
+        "options": [
+          "Caso, gênero e número",
+          "Pessoa, sempre primeira",
+          "Tradução fixa no passado",
+          "Aumento obrigatório"
+        ],
+        "answer": 0,
+        "explanation": "Particípios se declinam em caso, gênero e número. Infinitivos não recebem essas categorias nem pessoa.",
+        "id": "m-estrutura-verbal-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise a forma verbal λύομεν, do lema λύω.",
+        "greek": "λύομεν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Presente",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λύομεν é presente ativo indicativo, primeira pessoa plural. -ομεν distingue a forma de λύεις.",
+        "id": "m-estrutura-verbal-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada informação de λύεις à categoria que ela identifica.",
+        "pairs": [
+          {
+            "left": "λύω",
+            "right": "lema"
+          },
+          {
+            "left": "presente",
+            "right": "série temporal"
+          },
+          {
+            "left": "ativa",
+            "right": "voz"
+          },
+          {
+            "left": "segunda singular",
+            "right": "pessoa e número"
+          }
+        ],
+        "explanation": "Um parsing completo combina categorias; a forma de consulta λύω não substitui a análise de λύεις.",
+        "id": "m-estrutura-verbal-extra-3"
       }
     ],
     "references": [
@@ -2041,7 +2906,7 @@
       {
         "kind": "parse",
         "greek": "ἐλύσαμεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλύσαμεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -2100,7 +2965,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Em que modo se encontra o aumento aorista?",
+        "prompt": "Na formação regular do primeiro aoristo, em qual modo aparece o aumento?",
         "options": [
           "Em todos os modos",
           "No indicativo",
@@ -2113,7 +2978,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e pessoa.",
+        "prompt": "Relacione cada forma do aoristo ativo indicativo de λύω à pessoa e ao número.",
         "pairs": [
           {
             "left": "ἔλυσας",
@@ -2134,6 +2999,98 @@
         ],
         "explanation": "Reconheça os finais dentro da mesma série.",
         "id": "m-primeiro-aoristo-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἔλυσαν, do lema λύω.",
+        "greek": "ἔλυσαν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Terceira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἔλυσαν é aoristo ativo indicativo de terceira pessoa plural. A formação -σαν distingue essa forma de ἔλυσε(ν), que é terceira singular.",
+        "id": "m-primeiro-aoristo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em ἔλυσε e ἔλυσεν, o nu móvel muda pessoa ou número?",
+        "options": [
+          "Não: ambas são terceira pessoa singular",
+          "Sim: singular passa a plural",
+          "Sim: terceira passa a segunda pessoa",
+          "Sim: indicativo passa a infinitivo"
+        ],
+        "answer": 0,
+        "explanation": "ἔλυσε(ν) representa duas grafias da terceira singular do aoristo ativo indicativo. O nu móvel não é a terminação da terceira plural.",
+        "id": "m-primeiro-aoristo-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Ordene os blocos de ἐλύσαμεν, da esquerda para a direita: aumento, tema, formação aorista e terminação pessoal.",
+        "greek": "ἐλύσαμεν",
+        "tokens": [
+          "ἐ-",
+          "λυ-",
+          "-σα-",
+          "-μεν"
+        ],
+        "answer": [
+          "ἐ-",
+          "λυ-",
+          "-σα-",
+          "-μεν"
+        ],
+        "explanation": "A decomposição didática localiza aumento ἐ-, tema λυ-, formação -σα- e terminação de primeira plural -μεν.",
+        "id": "m-primeiro-aoristo-extra-3"
       }
     ],
     "references": [
@@ -2202,7 +3159,7 @@
       {
         "kind": "parse",
         "greek": "ἐλάβετε",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλάβετε: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -2261,7 +3218,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que distingue primeiro e segundo aoristos?",
+        "prompt": "Qual é a diferença entre “primeiro aoristo” e “segundo aoristo” como tipos de formação verbal?",
         "options": [
           "Aspecto perfectivo e imperfectivo",
           "Formação morfológica",
@@ -2274,7 +3231,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que ambiguidade há em ἔλαβον isolado?",
+        "prompt": "Sem um sujeito ou outra indicação de contexto, quais análises de pessoa e número são possíveis para ἔλαβον?",
         "options": [
           "Presente ou futuro",
           "1ª singular ou 3ª plural",
@@ -2284,6 +3241,100 @@
         "answer": 1,
         "explanation": "A forma ocorre nessas duas pessoas e números; o contexto decide.",
         "id": "m-segundo-aoristo-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença entre ἔλαβες e ἐλάμβανες permite distinguir aoristo e imperfeito?",
+        "greek": "ἔλαβες / ἐλάμβανες",
+        "options": [
+          "O tema: λαβ- é aorista; λαμβαν- pertence ao presente/imperfeito",
+          "Só o aumento: apenas uma forma o possui",
+          "Só o final -ες, exclusivo do aoristo",
+          "O gênero gramatical das formas"
+        ],
+        "answer": 0,
+        "explanation": "As duas formas possuem aumento e terminações secundárias; a comparação dos temas distingue as séries.",
+        "id": "m-segundo-aoristo-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἔλαβον nesta oração, usando o sujeito ἐγώ para decidir pessoa e número.",
+        "greek": "ἐγὼ ἔλαβον τὸ δῶρον",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἐγώ é primeira pessoa singular; o sujeito elimina a leitura de terceira plural que ἔλαβον também permite isoladamente.",
+        "id": "m-segundo-aoristo-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma de segundo aoristo ao seu lema.",
+        "pairs": [
+          {
+            "left": "ἔλαβες",
+            "right": "λαμβάνω"
+          },
+          {
+            "left": "ἦλθες",
+            "right": "ἔρχομαι"
+          },
+          {
+            "left": "εἶδες",
+            "right": "ὁράω"
+          }
+        ],
+        "explanation": "As relações entre temas pertencem à memória lexical. A terminação pessoal pode ser reconhecida depois de recuperar o lema.",
+        "id": "m-segundo-aoristo-extra-3"
       }
     ],
     "references": [
@@ -2389,7 +3440,7 @@
       {
         "kind": "parse",
         "greek": "ἐλύετε",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλύετε: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -2449,7 +3500,7 @@
       {
         "kind": "parse",
         "greek": "ἦσαν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἦσαν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -2498,16 +3549,114 @@
       },
       {
         "kind": "choice",
-        "prompt": "Como distinguir um imperfeito de um segundo aoristo com final -ον?",
+        "prompt": "Ao comparar ἔλυον e ἔλαβον, qual evidência distingue imperfeito e segundo aoristo?",
         "options": [
-          "Pelo final -ον sozinho",
-          "Pela cor da palavra",
-          "Pelo tema e pelo lema",
-          "Pela ausência de artigo"
+          "A relação do tema de cada forma com o paradigma de seu lema",
+          "O final -ον, que por si só distingue as séries",
+          "O aumento, que aparece somente em uma das formas",
+          "A quantidade de palavras da oração"
         ],
-        "answer": 2,
-        "explanation": "As terminações podem coincidir. Reconheça o tema da série.",
+        "answer": 0,
+        "explanation": "ἔλυον usa o tema do presente de λύω; ἔλαβον usa o tema aorista de λαμβάνω. Aumento e final -ον são compartilhados.",
         "id": "m-imperfeito-eimi-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao comparar ἐσμέν e ἦμεν, que informação permanece igual?",
+        "greek": "ἐσμέν / ἦμεν",
+        "options": [
+          "Primeira pessoa plural",
+          "Presente do indicativo",
+          "Forma sem aumento",
+          "Gênero neutro"
+        ],
+        "answer": 0,
+        "explanation": "ἐσμέν é presente e ἦμεν é imperfeito de εἰμί; ambas são primeira pessoa plural.",
+        "id": "m-imperfeito-eimi-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἔλυον nesta oração, usando οἱ δοῦλοι para decidir pessoa e número.",
+        "greek": "οἱ δοῦλοι ἔλυον τὰς ἁλύσεις",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Imperfeito",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Terceira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "οἱ δοῦλοι é sujeito de terceira pessoa plural; neste contexto, ἔλυον não é primeira singular.",
+        "id": "m-imperfeito-eimi-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione estas formas de εἰμί à pessoa e ao número.",
+        "pairs": [
+          {
+            "left": "ἐσμέν",
+            "right": "primeira pessoa plural"
+          },
+          {
+            "left": "ἐστέ",
+            "right": "segunda pessoa plural"
+          },
+          {
+            "left": "ἐστίν",
+            "right": "terceira pessoa singular"
+          },
+          {
+            "left": "ἦσαν",
+            "right": "terceira pessoa plural"
+          }
+        ],
+        "explanation": "As três primeiras formas pertencem ao presente; ἦσαν pertence ao imperfeito. Nesta atividade, a tarefa é identificar pessoa e número.",
+        "id": "m-imperfeito-eimi-extra-3"
       }
     ],
     "references": [
@@ -2589,7 +3738,7 @@
       {
         "kind": "parse",
         "greek": "λύσετε",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λύσετε: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -2648,20 +3797,20 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual correspondência está correta?",
+        "prompt": "Qual alternativa apresenta corretamente um lema e seu futuro ativo indicativo de primeira pessoa singular?",
         "options": [
           "γράφω → γράψω",
-          "γράφω → γράφον como futuro",
-          "λύω → ἔλυσα como futuro",
-          "λαμβάνω nunca muda de tema"
+          "γράφω → ἔγραψα",
+          "λύω → ἔλυσα",
+          "ἄγω → ἤγαγον"
         ],
         "answer": 0,
-        "explanation": "A combinação consonantal produz ψ no futuro γράψω.",
+        "explanation": "γράφω apresenta futuro γράψω, com alteração da consoante diante de sigma. As outras formas da segunda coluna são aoristos.",
         "id": "m-presente-futuro-2"
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e análise.",
+        "prompt": "Relacione cada forma de λύω, considerada aqui como ativa indicativa, à série temporal, à pessoa e ao número.",
         "pairs": [
           {
             "left": "λύεις",
@@ -2682,6 +3831,104 @@
         ],
         "explanation": "Reconheça série e terminação pessoal juntas.",
         "id": "m-presente-futuro-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma mantém primeira pessoa plural, mas muda λύομεν do presente para o futuro ativo indicativo?",
+        "greek": "λύομεν → ___",
+        "options": [
+          "λύσομεν",
+          "λύουσιν",
+          "λύσετε",
+          "ἔλυσα"
+        ],
+        "answer": 0,
+        "explanation": "λύσομεν acrescenta o sigma da série futura e conserva a terminação de primeira plural.",
+        "id": "m-presente-futuro-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λύσουσιν, do lema λύω.",
+        "greek": "λύσουσιν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Futuro",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Terceira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λύσουσιν é futuro ativo indicativo, terceira plural. O sigma da série futura precede -ουσιν.",
+        "id": "m-presente-futuro-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada lema ao seu futuro apresentado no curso.",
+        "pairs": [
+          {
+            "left": "λύω",
+            "right": "λύσω"
+          },
+          {
+            "left": "γράφω",
+            "right": "γράψω"
+          },
+          {
+            "left": "ἄγω",
+            "right": "ἄξω"
+          },
+          {
+            "left": "λαμβάνω",
+            "right": "λήμψομαι"
+          }
+        ],
+        "explanation": "A formação do futuro pode modificar consoantes ou empregar outra base; não basta acrescentar sigma à grafia completa do presente.",
+        "id": "m-presente-futuro-extra-3"
       }
     ],
     "references": [
@@ -2796,7 +4043,7 @@
       {
         "kind": "parse",
         "greek": "ποιοῦμεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ποιοῦμεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -2868,7 +4115,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e família.",
+        "prompt": "Relacione cada forma contraída ao lema e à pessoa e ao número, sem decidir o modo nas formas em que ele pode coincidir.",
         "pairs": [
           {
             "left": "ποιεῖς",
@@ -2893,7 +4140,7 @@
       {
         "id": "m-contratos-4",
         "kind": "choice",
-        "prompt": "Em ἐν τῷ οἴκῳ, qual palavra é a preposição indeclinável?",
+        "prompt": "No grupo ἐν τῷ οἴκῳ, qual item é uma preposição e, por isso, não recebe caso na sua própria flexão?",
         "greek": "ἐν τῷ οἴκῳ",
         "options": [
           "ἐν",
@@ -2903,6 +4150,53 @@
         ],
         "answer": 0,
         "explanation": "ἐν é preposição e não recebe caso. τῷ e οἴκῳ estão no dativo singular."
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em ποιεῖτε isolado, que informação permanece aberta sem contexto?",
+        "greek": "ποιεῖτε",
+        "options": [
+          "Se o modo é indicativo ou imperativo",
+          "Se o lema é ποιέω ou λύω",
+          "Se a pessoa é primeira ou terceira",
+          "Se o número é singular ou plural"
+        ],
+        "answer": 0,
+        "explanation": "ποιεῖτε pode ser presente ativo indicativo ou imperativo de segunda plural; contexto e construção distinguem o modo.",
+        "id": "m-contratos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual lema de consulta corresponde à forma contraída δηλοῖ?",
+        "options": [
+          "δηλόω",
+          "ποιέω",
+          "ἀγαπάω",
+          "λύω"
+        ],
+        "answer": 0,
+        "explanation": "δηλοῖ pertence ao verbo contrato δηλόω. A forma visível precisa ser relacionada ao lema não contraído.",
+        "id": "m-contratos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada palavra do grupo à sua classe gramatical.",
+        "pairs": [
+          {
+            "left": "ἐν",
+            "right": "preposição indeclinável"
+          },
+          {
+            "left": "τῷ",
+            "right": "artigo flexionado"
+          },
+          {
+            "left": "οἴκῳ",
+            "right": "substantivo flexionado"
+          }
+        ],
+        "explanation": "Em ἐν τῷ οἴκῳ, o caso dativo pertence ao artigo e ao substantivo; a preposição não recebe parsing nominal.",
+        "id": "m-contratos-extra-3"
       }
     ],
     "references": [
@@ -2987,7 +4281,7 @@
       {
         "kind": "parse",
         "greek": "λυθῆναι",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λυθῆναι: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3029,7 +4323,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual informação pertence ao infinitivo em si?",
+        "prompt": "Quais categorias morfológicas são identificadas na própria forma de um infinitivo grego?",
         "options": [
           "Terceira pessoa",
           "Gênero feminino",
@@ -3042,7 +4336,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e análise.",
+        "prompt": "Considerando as formas abaixo como infinitivos, relacione cada uma à série temporal e à voz.",
         "pairs": [
           {
             "left": "λύειν",
@@ -3063,6 +4357,86 @@
         ],
         "explanation": "Tema e terminação precisam ser reconhecidos em conjunto.",
         "id": "m-infinitivos-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λύειν, que nesta atividade é um infinitivo do lema λύω.",
+        "greek": "λύειν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Presente",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Infinitivo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          }
+        ],
+        "explanation": "λύειν é infinitivo presente ativo. Infinitivos não recebem pessoa, número, caso ou gênero.",
+        "id": "m-infinitivos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é o infinitivo aoristo médio de λύω?",
+        "options": [
+          "λύσασθαι",
+          "λῦσαι",
+          "λυθῆναι",
+          "λελυκέναι"
+        ],
+        "answer": 0,
+        "explanation": "λύσασθαι pertence à série aorista média; λῦσαι, quando infinitivo, é ativo; λυθῆναι é passivo; λελυκέναι é perfeito ativo.",
+        "id": "m-infinitivos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Considerando todas as formas abaixo como infinitivos, associe cada uma à série e à voz.",
+        "pairs": [
+          {
+            "left": "λύεσθαι",
+            "right": "presente médio/passivo"
+          },
+          {
+            "left": "λύσεσθαι",
+            "right": "futuro médio"
+          },
+          {
+            "left": "λυθήσεσθαι",
+            "right": "futuro passivo"
+          },
+          {
+            "left": "λελύσθαι",
+            "right": "perfeito médio/passivo"
+          }
+        ],
+        "explanation": "As terminações e os temas distinguem as séries; o infinitivo não tem pessoa ou número.",
+        "id": "m-infinitivos-extra-3"
       }
     ],
     "references": [
@@ -3139,7 +4513,7 @@
       {
         "kind": "parse",
         "greek": "λυόμεθα",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λυόμεθα: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3199,7 +4573,7 @@
       {
         "kind": "parse",
         "greek": "ἐλύοντο",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλύοντο: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3258,7 +4632,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que é seguro para λύεται isolado?",
+        "prompt": "Sem contexto que esclareça o sentido da voz, qual classificação morfológica é segura para λύεται?",
         "options": [
           "É sempre semanticamente passivo",
           "É ativo",
@@ -3268,6 +4642,104 @@
         "answer": 2,
         "explanation": "A flexão não decide sozinha a interpretação média ou passiva.",
         "id": "m-presente-medio-passivo-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é o imperfeito indicativo de primeira pessoa plural correspondente a λυόμεθα?",
+        "greek": "λυόμεθα → ___",
+        "options": [
+          "ἐλυόμεθα",
+          "ἐλύοντο",
+          "λύονται",
+          "λυσόμεθα"
+        ],
+        "answer": 0,
+        "explanation": "ἐλυόμεθα conserva primeira plural e a série média/passiva, mas pertence ao imperfeito.",
+        "id": "m-presente-medio-passivo-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λύονται, preservando a série morfológica média/passiva sem escolher uma interpretação de voz pelo sentido.",
+        "greek": "λύονται",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Presente",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Média ou passiva",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Terceira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λύονται é presente médio/passivo indicativo, terceira plural. O contexto é necessário para interpretar a voz.",
+        "id": "m-presente-medio-passivo-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione estas formas médias/passivas do imperfeito à pessoa e ao número.",
+        "pairs": [
+          {
+            "left": "ἐλυόμην",
+            "right": "primeira singular"
+          },
+          {
+            "left": "ἐλύου",
+            "right": "segunda singular"
+          },
+          {
+            "left": "ἐλύετο",
+            "right": "terceira singular"
+          },
+          {
+            "left": "ἐλύοντο",
+            "right": "terceira plural"
+          }
+        ],
+        "explanation": "Todas pertencem ao imperfeito médio/passivo indicativo. O tema e a terminação devem ser lidos em conjunto.",
+        "id": "m-presente-medio-passivo-extra-3"
       }
     ],
     "references": [
@@ -3349,7 +4821,7 @@
       {
         "kind": "parse",
         "greek": "ἐλύσασθε",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλύσασθε: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3409,7 +4881,7 @@
       {
         "kind": "parse",
         "greek": "λύσεται",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λύσεται: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3468,7 +4940,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual par distingue futuro médio e futuro passivo?",
+        "prompt": "Qual par apresenta primeiro o futuro médio e depois o futuro passivo indicativos de primeira pessoa singular de λύω?",
         "options": [
           "λύσομαι / λυθήσομαι",
           "λύομαι / λύομαι",
@@ -3478,6 +4950,103 @@
         "answer": 0,
         "explanation": "O futuro passivo inclui o tema em -θη-; o médio não.",
         "id": "m-aoristo-futuro-medios-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἐλυσάμεθα, do lema λύω.",
+        "greek": "ἐλυσάμεθα",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Média",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἐλυσάμεθα tem aumento e formação aorista média; -μεθα identifica primeira pessoa plural.",
+        "id": "m-aoristo-futuro-medios-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é o futuro médio indicativo de segunda pessoa plural de λύω?",
+        "options": [
+          "λύσεσθε",
+          "λύσεται",
+          "λυσόμεθα",
+          "λυθήσεσθε"
+        ],
+        "answer": 0,
+        "explanation": "λύσεσθε é segunda plural do futuro médio; λυθήσεσθε pertence ao futuro passivo.",
+        "id": "m-aoristo-futuro-medios-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma à série temporal e à voz.",
+        "pairs": [
+          {
+            "left": "λύομαι",
+            "right": "presente médio/passivo"
+          },
+          {
+            "left": "λύσομαι",
+            "right": "futuro médio"
+          },
+          {
+            "left": "ἐλυσάμην",
+            "right": "aoristo médio"
+          },
+          {
+            "left": "λυθήσομαι",
+            "right": "futuro passivo"
+          }
+        ],
+        "explanation": "No aoristo e no futuro, as formações médias se distinguem das passivas. Não transfira automaticamente o padrão compartilhado do presente.",
+        "id": "m-aoristo-futuro-medios-extra-3"
       }
     ],
     "references": [
@@ -3562,7 +5131,7 @@
       {
         "kind": "parse",
         "greek": "ἐλύθησαν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλύθησαν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3622,7 +5191,7 @@
       {
         "kind": "parse",
         "greek": "λυθήσομαι",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λυθήσομαι: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3681,7 +5250,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Todo aoristo passivo precisa conter θ?",
+        "prompt": "A presença de θ é obrigatória em toda formação de aoristo passivo grego?",
         "options": [
           "Sim",
           "Não; existem segundos aoristos passivos sem θ",
@@ -3691,6 +5260,104 @@
         "answer": 1,
         "explanation": "ἐγράφην exemplifica uma formação sem θ; é preciso conhecer o tema.",
         "id": "m-aoristo-futuro-passivos-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἐλύθημεν, do lema λύω.",
+        "greek": "ἐλύθημεν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Passiva",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἐλύθημεν é aoristo passivo indicativo, primeira plural. A formação em -θη- participa da identificação desta série.",
+        "id": "m-aoristo-futuro-passivos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma passa ἐλύθησαν para o futuro passivo indicativo, conservando terceira pessoa plural?",
+        "greek": "ἐλύθησαν → ___",
+        "options": [
+          "λυθήσονται",
+          "λυθήσεται",
+          "λύσονται",
+          "ἐλύθημεν"
+        ],
+        "answer": 0,
+        "explanation": "λυθήσονται é terceira plural do futuro passivo; λύσονται é futuro médio.",
+        "id": "m-aoristo-futuro-passivos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione as formas passivas à descrição morfológica.",
+        "pairs": [
+          {
+            "left": "ἐλύθης",
+            "right": "aoristo indicativo, segunda singular"
+          },
+          {
+            "left": "ἐλύθητε",
+            "right": "aoristo indicativo, segunda plural"
+          },
+          {
+            "left": "λυθήσεται",
+            "right": "futuro indicativo, terceira singular"
+          },
+          {
+            "left": "λυθήσεσθε",
+            "right": "futuro indicativo, segunda plural"
+          }
+        ],
+        "explanation": "Nesta família, -θη- marca a formação passiva; sigma distingue as formas futuras apresentadas.",
+        "id": "m-aoristo-futuro-passivos-extra-3"
       }
     ],
     "references": [
@@ -3767,7 +5434,7 @@
       {
         "kind": "parse",
         "greek": "λύσωμεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λύσωμεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3826,7 +5493,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que par contrasta presente indicativo e presente subjuntivo de 1ª plural?",
+        "prompt": "Qual par apresenta, nessa ordem, presente ativo indicativo e presente ativo subjuntivo de primeira pessoa plural de λύω?",
         "options": [
           "λύομεν / λύωμεν",
           "ἔλυσα / ἔλυσαν",
@@ -3840,7 +5507,7 @@
       {
         "kind": "parse",
         "greek": "λυθῇς",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λυθῇς: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -3896,6 +5563,103 @@
         ],
         "explanation": "Tema passivo e -ῇς identificam aoristo passivo subjuntivo, segunda singular.",
         "id": "m-subjuntivo-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λύῃς, do lema λύω, nesta oração introduzida por ἵνα.",
+        "greek": "ἵνα λύῃς τὸν δοῦλον",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Presente",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Subjuntivo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Segunda",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "Neste contexto, λύῃς é presente ativo subjuntivo, segunda singular. A forma difere do indicativo λύεις.",
+        "id": "m-subjuntivo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é o subjuntivo aoristo ativo de segunda pessoa plural de λύω?",
+        "options": [
+          "λύσητε",
+          "λύσετε",
+          "ἐλύσατε",
+          "λύετε"
+        ],
+        "answer": 0,
+        "explanation": "λύσητε usa a vogal longa η da série subjuntiva; λύσετε é futuro indicativo e ἐλύσατε é aoristo indicativo.",
+        "id": "m-subjuntivo-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione estas formas de primeira pessoa plural à série e ao modo.",
+        "pairs": [
+          {
+            "left": "λύομεν",
+            "right": "presente indicativo"
+          },
+          {
+            "left": "λύωμεν",
+            "right": "presente subjuntivo"
+          },
+          {
+            "left": "λύσομεν",
+            "right": "futuro indicativo"
+          },
+          {
+            "left": "λύσωμεν",
+            "right": "aoristo subjuntivo"
+          }
+        ],
+        "explanation": "A vogal e o tema devem ser observados juntos: sigma não decide sozinho entre futuro e aoristo subjuntivo.",
+        "id": "m-subjuntivo-extra-3"
       }
     ],
     "references": [
@@ -3974,7 +5738,7 @@
       {
         "kind": "parse",
         "greek": "λυσάτω",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λυσάτω: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -4033,7 +5797,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual forma pode ser indicativo ou imperativo presente ativo?",
+        "prompt": "Qual forma isolada de λύω admite tanto presente ativo indicativo quanto presente ativo imperativo de segunda pessoa plural?",
         "options": [
           "λύετε",
           "ἔλυσαν",
@@ -4047,7 +5811,7 @@
       {
         "kind": "parse",
         "greek": "λύθητι",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λύθητι: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -4103,6 +5867,100 @@
         ],
         "explanation": "λύθητι é a segunda singular do aoristo passivo imperativo.",
         "id": "m-imperativo-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λυσάτωσαν, apresentado como ordem dirigida à terceira pessoa plural.",
+        "greek": "λυσάτωσαν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Imperativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Terceira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λυσάτωσαν é imperativo aoristo ativo de terceira plural. O imperativo grego não se limita à segunda pessoa.",
+        "id": "m-imperativo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na ordem λῦε τὸν δοῦλον, qual é o modo de λῦε?",
+        "greek": "λῦε τὸν δοῦλον",
+        "options": [
+          "Imperativo",
+          "Indicativo",
+          "Optativo",
+          "Infinitivo"
+        ],
+        "answer": 0,
+        "explanation": "λῦε é presente ativo imperativo de segunda singular. A terminação e a construção de ordem sustentam a análise.",
+        "id": "m-imperativo-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione estas formas de imperativo à pessoa e ao número.",
+        "pairs": [
+          {
+            "left": "λῦε",
+            "right": "segunda singular"
+          },
+          {
+            "left": "λυέτω",
+            "right": "terceira singular"
+          },
+          {
+            "left": "λυέτωσαν",
+            "right": "terceira plural"
+          }
+        ],
+        "explanation": "As três formas pertencem ao presente ativo imperativo. Identifique pessoa e número pela série, não por uma tradução portuguesa fixa.",
+        "id": "m-imperativo-extra-3"
       }
     ],
     "references": [
@@ -4257,7 +6115,7 @@
       {
         "kind": "parse",
         "greek": "ὁ λαβὼν τὸ δῶρον μαθητής",
-        "prompt": "Analise λαβών neste grupo nominal.",
+        "prompt": "Analise λαβών no grupo ὁ λαβὼν τὸ δῶρον μαθητής, em concordância com μαθητής.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -4327,7 +6185,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que categoria não integra o parsing do particípio?",
+        "prompt": "Qual categoria não faz parte da flexão de um particípio grego?",
         "options": [
           "Caso",
           "Gênero",
@@ -4337,6 +6195,106 @@
         "answer": 2,
         "explanation": "Particípios se declinam, mas não recebem primeira, segunda ou terceira pessoa.",
         "id": "m-participios-ativos-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λύοντες, em concordância com οἱ μαθηταί.",
+        "greek": "οἱ λύοντες μαθηταί",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Presente",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Particípio",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Caso",
+            "answer": "Nominativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "O artigo e o substantivo tornam explícita a concordância de λύοντες em nominativo masculino plural.",
+        "id": "m-participios-ativos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença de série temporal há entre λύων e λύσας?",
+        "options": [
+          "Presente e aoristo, respectivamente",
+          "Aoristo e presente, respectivamente",
+          "Presente e perfeito, respectivamente",
+          "As duas formas são infinitivos"
+        ],
+        "answer": 0,
+        "explanation": "λύων é particípio presente ativo; λύσας é particípio aoristo ativo. Ambos são nominativos masculinos singulares.",
+        "id": "m-participios-ativos-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Monte o grupo na ordem artigo–particípio–substantivo, usando as formas nominativas femininas singulares.",
+        "tokens": [
+          "ἡ",
+          "λύουσα",
+          "γυνή"
+        ],
+        "answer": [
+          "ἡ",
+          "λύουσα",
+          "γυνή"
+        ],
+        "explanation": "λύουσα concorda com γυνή em nominativo feminino singular. A posição foi fixada no enunciado para a montagem.",
+        "id": "m-participios-ativos-extra-3"
       }
     ],
     "references": [
@@ -4497,7 +6455,7 @@
       {
         "kind": "parse",
         "greek": "λυσάμενος",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λυσάμενος: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -4567,7 +6525,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "O que distingue λυόμενος e λελυμένος?",
+        "prompt": "Qual diferença de série temporal separa os particípios λυόμενος e λελυμένος?",
         "options": [
           "Só o gênero",
           "Presente e perfeito",
@@ -4577,6 +6535,114 @@
         "answer": 1,
         "explanation": "Tema e reduplicação distinguem as séries presentes e perfeitas.",
         "id": "m-participios-medios-passivos-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λυθέντος, em concordância com τοῦ δούλου.",
+        "greek": "τοῦ λυθέντος δούλου",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Passiva",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Particípio",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Caso",
+            "answer": "Genitivo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λυθέντος é particípio aoristo passivo; a concordância com δοῦλος identifica genitivo masculino singular.",
+        "id": "m-participios-medios-passivos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Sem contexto, qual série morfológica deve ser registrada para λυόμενος?",
+        "options": [
+          "Presente médio/passivo",
+          "Aoristo apenas passivo",
+          "Perfeito apenas médio",
+          "Futuro ativo"
+        ],
+        "answer": 0,
+        "explanation": "λυόμενος pertence à série presente com flexão média/passiva. A interpretação de voz depende da construção.",
+        "id": "m-participios-medios-passivos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione os particípios nominativos masculinos singulares à série e à voz.",
+        "pairs": [
+          {
+            "left": "λυσάμενος",
+            "right": "aoristo médio"
+          },
+          {
+            "left": "λυθείς",
+            "right": "aoristo passivo"
+          },
+          {
+            "left": "λυόμενος",
+            "right": "presente médio/passivo"
+          },
+          {
+            "left": "λελυμένος",
+            "right": "perfeito médio/passivo"
+          }
+        ],
+        "explanation": "As formações participiais distinguem presente, aoristo e perfeito; no aoristo, médio e passivo têm séries próprias.",
+        "id": "m-participios-medios-passivos-extra-3"
       }
     ],
     "references": [
@@ -4645,7 +6711,7 @@
       {
         "kind": "parse",
         "greek": "λελύκαμεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λελύκαμεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -4704,7 +6770,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual afirmação é correta?",
+        "prompt": "Qual afirmação sobre a formação morfológica do perfeito ativo está correta?",
         "options": [
           "Todo perfeito ativo tem kappa",
           "Reduplicação é aumento",
@@ -4717,7 +6783,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e identificação.",
+        "prompt": "Relacione cada forma verbal à identificação morfológica ou à sua família lexical.",
         "pairs": [
           {
             "left": "λέλυκας",
@@ -4738,6 +6804,98 @@
         ],
         "explanation": "Reconheça as formas principais além do modelo regular.",
         "id": "m-perfeito-ativo-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λέλυκεν, do lema λύω.",
+        "greek": "λέλυκεν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Perfeito",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Terceira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λέλυκεν é perfeito ativo indicativo de terceira singular; o nu móvel não altera o número.",
+        "id": "m-perfeito-ativo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em λέλυκα, qual segmento inicial representa a reduplicação do modelo regular?",
+        "options": [
+          "λε-",
+          "ἐ-",
+          "-κα",
+          "-μεν"
+        ],
+        "answer": 0,
+        "explanation": "A repetição da consoante inicial com ε forma λε-. Esse elemento é reduplicação, não o aumento do aoristo.",
+        "id": "m-perfeito-ativo-extra-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Ordene os blocos de λελύκαμεν, da esquerda para a direita: reduplicação, tema, formação perfeita e terminação pessoal.",
+        "greek": "λελύκαμεν",
+        "tokens": [
+          "λε-",
+          "λυ-",
+          "-κα-",
+          "-μεν"
+        ],
+        "answer": [
+          "λε-",
+          "λυ-",
+          "-κα-",
+          "-μεν"
+        ],
+        "explanation": "Esta decomposição didática distingue a reduplicação λε- da formação em -κα- e da terminação de primeira plural -μεν.",
+        "id": "m-perfeito-ativo-extra-3"
       }
     ],
     "references": [
@@ -4854,7 +7012,7 @@
       {
         "kind": "parse",
         "greek": "γέγραπται",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise γέγραπται: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -4913,7 +7071,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual par distingue presente e perfeito do mesmo lema?",
+        "prompt": "Qual par apresenta, nessa ordem, presente e perfeito médios/passivos indicativos do mesmo lema?",
         "options": [
           "λύεται / λέλυται",
           "λόγος / λόγον",
@@ -4923,6 +7081,104 @@
         "answer": 0,
         "explanation": "λύεται é presente; λέλυται é perfeito.",
         "id": "m-perfeito-medio-passivo-3"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λελύμεθα, preservando a série morfológica média/passiva.",
+        "greek": "λελύμεθα",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Perfeito",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Média ou passiva",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λελύμεθα é perfeito médio/passivo indicativo, primeira plural. A interpretação média ou passiva exige contexto.",
+        "id": "m-perfeito-medio-passivo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual diferença entre λέλυκα e λέλυμαι deve ser registrada no parsing?",
+        "greek": "λέλυκα / λέλυμαι",
+        "options": [
+          "Ativa e média/passiva, respectivamente",
+          "Presente e futuro, respectivamente",
+          "Singular e plural, respectivamente",
+          "Indicativo e infinitivo, respectivamente"
+        ],
+        "answer": 0,
+        "explanation": "As duas formas pertencem ao perfeito indicativo de primeira singular, mas usam séries de voz diferentes.",
+        "id": "m-perfeito-medio-passivo-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione as formas do perfeito médio/passivo indicativo à pessoa e ao número.",
+        "pairs": [
+          {
+            "left": "λέλυμαι",
+            "right": "primeira singular"
+          },
+          {
+            "left": "λέλυσαι",
+            "right": "segunda singular"
+          },
+          {
+            "left": "λέλυται",
+            "right": "terceira singular"
+          },
+          {
+            "left": "λελύμεθα",
+            "right": "primeira plural"
+          }
+        ],
+        "explanation": "A reduplicação e as terminações identificam as formas apresentadas. As formas compartilham a série média/passiva.",
+        "id": "m-perfeito-medio-passivo-extra-3"
       }
     ],
     "references": [
@@ -5003,7 +7259,7 @@
       {
         "kind": "parse",
         "greek": "ᾔδεισαν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ᾔδεισαν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5133,7 +7389,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que diferença de parsing está correta?",
+        "prompt": "Que diferença de categorias de parsing separa a forma finita ᾔδει do particípio λελυκώς?",
         "options": [
           "ᾔδει tem caso; λελυκώς tem pessoa",
           "Ambas têm pessoa",
@@ -5143,6 +7399,110 @@
         "answer": 2,
         "explanation": "ᾔδει é finita; λελυκώς é particípio.",
         "id": "m-mais-que-perfeito-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual contraste de série temporal há entre οἶδα e ᾔδεισαν?",
+        "options": [
+          "Perfeito e mais-que-perfeito, respectivamente",
+          "Presente e futuro, respectivamente",
+          "Aoristo e presente, respectivamente",
+          "Imperfeito e aoristo, respectivamente"
+        ],
+        "answer": 0,
+        "explanation": "οἶδα pertence morfologicamente ao perfeito; ᾔδεισαν é mais-que-perfeito ativo indicativo, terceira plural. Uma tradução presente de οἶδα não muda sua classificação.",
+        "id": "m-mais-que-perfeito-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise λελυκότος, em concordância com τοῦ μαθητοῦ.",
+        "greek": "τοῦ λελυκότος μαθητοῦ",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Perfeito",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Particípio",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Caso",
+            "answer": "Genitivo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "λελυκότος é particípio perfeito ativo. O grupo com μαθητής identifica a concordância em genitivo masculino singular.",
+        "id": "m-mais-que-perfeito-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma perfeita ao conjunto de categorias que ela recebe.",
+        "pairs": [
+          {
+            "left": "λελυκέναι",
+            "right": "infinitivo: série temporal e voz, sem pessoa"
+          },
+          {
+            "left": "λελυκώς",
+            "right": "particípio: caso, gênero e número"
+          },
+          {
+            "left": "ᾔδεισαν",
+            "right": "verbo finito: pessoa e número"
+          }
+        ],
+        "explanation": "Infinitivo, particípio e verbo finito não recebem o mesmo conjunto de categorias de parsing.",
+        "id": "m-mais-que-perfeito-extra-3"
       }
     ],
     "references": [
@@ -5221,7 +7581,7 @@
       {
         "kind": "parse",
         "greek": "δίδωσιν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise δίδωσιν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5281,7 +7641,7 @@
       {
         "kind": "parse",
         "greek": "ἔθηκα",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἔθηκα: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5340,7 +7700,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "A reduplicação de δίδωμι faz dele um perfeito?",
+        "prompt": "A reduplicação inicial de δίδωμι basta para classificá-lo como perfeito?",
         "options": [
           "Sim, sempre",
           "Não; a família tem reduplicação no presente",
@@ -5350,6 +7710,99 @@
         "answer": 1,
         "explanation": "Reduplicação não é marca exclusiva do perfeito; reconheça a família.",
         "id": "m-verbos-mi-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual lema corresponde à forma δίδωσιν?",
+        "options": [
+          "δίδωμι",
+          "τίθημι",
+          "ἵστημι",
+          "λύω"
+        ],
+        "answer": 0,
+        "explanation": "δίδωσιν é presente ativo indicativo, terceira singular de δίδωμι. A família possui reduplicação no presente.",
+        "id": "m-verbos-mi-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise δίδομεν, do lema δίδωμι.",
+        "greek": "δίδομεν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Presente",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "δίδομεν é presente ativo indicativo, primeira plural, da série atemática de δίδωμι.",
+        "id": "m-verbos-mi-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma verbal ao seu lema.",
+        "pairs": [
+          {
+            "left": "δίδωσιν",
+            "right": "δίδωμι"
+          },
+          {
+            "left": "τίθησιν",
+            "right": "τίθημι"
+          },
+          {
+            "left": "ἵστησιν",
+            "right": "ἵστημι"
+          }
+        ],
+        "explanation": "As famílias em -μι têm paradigmas próprios. A recuperação do lema precede a transferência de terminações de outros modelos.",
+        "id": "m-verbos-mi-extra-3"
       }
     ],
     "references": [
@@ -5423,7 +7876,7 @@
       {
         "kind": "parse",
         "greek": "ἔμειναν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἔμειναν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5483,7 +7936,7 @@
       {
         "kind": "parse",
         "greek": "μενοῦμεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise μενοῦμεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5542,7 +7995,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual afirmação explica ἔκρινα?",
+        "prompt": "Como a forma ἔκρινα deve ser identificada no paradigma do verbo κρίνω?",
         "options": [
           "Não é aoristo porque falta sigma",
           "É aoristo de κρίνω com formação própria da família",
@@ -5552,6 +8005,99 @@
         "answer": 1,
         "explanation": "Alguns aoristos líquidos/nasais não apresentam sigma visível.",
         "id": "m-liquidos-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual contraste entre κρίνω e κρινῶ ajuda a reconhecer suas séries?",
+        "options": [
+          "O acento: κρινῶ é a forma futura apresentada",
+          "O número de letras muda de singular para plural",
+          "κρινῶ passa a ser substantivo",
+          "κρίνω é uma forma aorista com aumento"
+        ],
+        "answer": 0,
+        "explanation": "No par apresentado, a acentuação distingue o presente κρίνω do futuro κρινῶ. É preciso aprender a relação lexical, não procurar sigma obrigatório.",
+        "id": "m-liquidos-extra-1"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἐμείναμεν, do lema μένω.",
+        "greek": "ἐμείναμεν",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Plural",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἐμείναμεν é aoristo ativo indicativo de primeira plural; o tema μειν- pertence à família de μένω.",
+        "id": "m-liquidos-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma de μένω à sua descrição.",
+        "pairs": [
+          {
+            "left": "μένει",
+            "right": "presente indicativo, terceira singular"
+          },
+          {
+            "left": "μενοῦμεν",
+            "right": "futuro indicativo, primeira plural"
+          },
+          {
+            "left": "ἔμειναν",
+            "right": "aoristo indicativo, terceira plural"
+          }
+        ],
+        "explanation": "As formas da família devem ser comparadas pelo tema e pela terminação pessoal. A ausência de sigma não exclui futuro ou aoristo.",
+        "id": "m-liquidos-extra-3"
       }
     ],
     "references": [
@@ -5632,7 +8178,7 @@
       {
         "kind": "parse",
         "greek": "γένοιτο",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise γένοιτο: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5692,7 +8238,7 @@
       {
         "kind": "parse",
         "greek": "λύοιμι",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise λύοιμι: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -5751,7 +8297,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que par muda o modo e mantém lema e série aorista?",
+        "prompt": "Qual par mantém o mesmo lema e a série aorista, mas contrasta optativo e indicativo?",
         "options": [
           "γένοιτο / ἐγένετο",
           "λόγος / λόγου",
@@ -5761,6 +8307,53 @@
         "answer": 0,
         "explanation": "γένοιτο é optativo; ἐγένετο é indicativo de γίνομαι.",
         "id": "m-optativo-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é presente ativo optativo de primeira pessoa singular de λύω?",
+        "options": [
+          "λύοιμι",
+          "λύωμεν",
+          "λύειν",
+          "ἔλυσα"
+        ],
+        "answer": 0,
+        "explanation": "A terminação da série -οιμι identifica λύοιμι como primeira singular do presente ativo optativo.",
+        "id": "m-optativo-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao comparar γένοιτο e ἐγένετο, qual afirmação distingue corretamente os modos?",
+        "greek": "γένοιτο / ἐγένετο",
+        "options": [
+          "γένοιτο é optativo; ἐγένετο é indicativo",
+          "Ambas são imperativos de segunda pessoa",
+          "γένοιτο é infinitivo; ἐγένετο é particípio",
+          "Ambas são presentes subjuntivos"
+        ],
+        "answer": 0,
+        "explanation": "As duas formas pertencem à família aorista de γίνομαι. O optativo aoristo não usa o aumento do indicativo.",
+        "id": "m-optativo-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione estas formas do presente ativo optativo à pessoa e ao número.",
+        "pairs": [
+          {
+            "left": "λύοιμι",
+            "right": "primeira singular"
+          },
+          {
+            "left": "λύοις",
+            "right": "segunda singular"
+          },
+          {
+            "left": "λύοι",
+            "right": "terceira singular"
+          }
+        ],
+        "explanation": "A série optativa possui terminações pessoais próprias. A mera sequência οι em outra palavra não basta para identificar este modo.",
+        "id": "m-optativo-extra-3"
       }
     ],
     "references": [
@@ -5842,7 +8435,7 @@
       {
         "kind": "parse",
         "greek": "μιᾶς",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise μιᾶς: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Caso",
@@ -5878,7 +8471,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual a classe lexical de μείζων?",
+        "prompt": "A qual classe lexical pertence μείζων no paradigma de comparação estudado?",
         "options": [
           "Particípio obrigatório",
           "Adjetivo comparativo",
@@ -5891,7 +8484,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione família e forma.",
+        "prompt": "Relacione cada forma ao grau de comparação do adjetivo ou à identificação do numeral.",
         "pairs": [
           {
             "left": "μέγας",
@@ -5912,6 +8505,57 @@
         ],
         "explanation": "Use o lema e o paradigma, além da aparência visual.",
         "id": "m-comparacao-numerais-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual forma é o nominativo feminino singular do numeral εἷς, μία, ἕν?",
+        "options": [
+          "μία",
+          "εἷς",
+          "ἕν",
+          "μιᾶς"
+        ],
+        "answer": 0,
+        "explanation": "μία é a forma feminina no nominativo singular; μιᾶς é genitivo feminino singular.",
+        "id": "m-comparacao-numerais-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "O genitivo isolado ἑνός permite escolher entre masculino e neutro?",
+        "greek": "ἑνός",
+        "options": [
+          "Não: a forma é compartilhada pelos dois gêneros",
+          "Sim: somente masculino",
+          "Sim: somente neutro",
+          "Não: é feminino plural"
+        ],
+        "answer": 0,
+        "explanation": "ἑνός é genitivo singular masculino ou neutro. O genitivo feminino é μιᾶς.",
+        "id": "m-comparacao-numerais-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada forma de μέγας à descrição do seu paradigma.",
+        "pairs": [
+          {
+            "left": "μέγας",
+            "right": "nominativo masculino singular"
+          },
+          {
+            "left": "μεγάλη",
+            "right": "nominativo feminino singular"
+          },
+          {
+            "left": "μέγα",
+            "right": "neutro singular: nominativo, acusativo ou vocativo"
+          },
+          {
+            "left": "μεγάλου",
+            "right": "genitivo singular masculino ou neutro"
+          }
+        ],
+        "explanation": "O adjetivo combina formas de tema diferentes; o contexto é necessário quando caso ou gênero coincidem.",
+        "id": "m-comparacao-numerais-extra-3"
       }
     ],
     "references": [
@@ -6013,7 +8657,7 @@
       {
         "kind": "parse",
         "greek": "ἐλήλυθεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἐλήλυθεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -6072,7 +8716,7 @@
       },
       {
         "kind": "match",
-        "prompt": "Relacione forma e lema.",
+        "prompt": "Relacione cada forma aorista ao lema de consulta correspondente.",
         "pairs": [
           {
             "left": "εἶδον",
@@ -6093,6 +8737,52 @@
         ],
         "explanation": "Conhecer as relações entre temas é parte da memória lexical.",
         "id": "m-formas-principais-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual lema deve ser consultado para reconhecer a forma perfeita ἐλήλυθα?",
+        "options": [
+          "ἔρχομαι",
+          "λαμβάνω",
+          "λύω",
+          "γράφω"
+        ],
+        "answer": 0,
+        "explanation": "ἐλήλυθα e ἦλθον pertencem à família de ἔρχομαι. Nem todas as séries mantêm a base visível do presente.",
+        "id": "m-formas-principais-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Se um verbo não apresenta uma das seis formas principais convencionais na fonte consultada, qual procedimento é adequado?",
+        "options": [
+          "Registrar a lacuna e consultar a documentação lexical",
+          "Inventar a forma para completar a tabela",
+          "Tratar a forma ausente como presente regular",
+          "Trocar automaticamente o lema por λύω"
+        ],
+        "answer": 0,
+        "explanation": "As formas principais são referências lexicais, não garantia de que todo verbo possui todas as seis formas documentadas.",
+        "id": "m-formas-principais-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione formas de ἔρχομαι às séries morfológicas.",
+        "pairs": [
+          {
+            "left": "ἔρχομαι",
+            "right": "presente de consulta"
+          },
+          {
+            "left": "ἦλθεν",
+            "right": "aoristo ativo indicativo"
+          },
+          {
+            "left": "ἐλήλυθεν",
+            "right": "perfeito ativo indicativo"
+          }
+        ],
+        "explanation": "Bases distintas podem pertencer ao mesmo lema; recuperar a família evita confundir identidade lexical com flexão.",
+        "id": "m-formas-principais-extra-3"
       }
     ],
     "references": [
@@ -6179,7 +8869,7 @@
       {
         "kind": "parse",
         "greek": "ἀπέστειλεν",
-        "prompt": "Selecione a análise da forma indicada.",
+        "prompt": "Analise ἀπέστειλεν: identifique as categorias morfológicas solicitadas.",
         "fields": [
           {
             "label": "Forma temporal",
@@ -6238,7 +8928,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Após reconhecer o lema de ἐξέβαλον, o que pode continuar aberto sem contexto?",
+        "prompt": "Mesmo depois de recuperar o lema ἐκβάλλω, quais análises de pessoa e número permanecem possíveis para ἐξέβαλον isolado?",
         "options": [
           "Se é artigo",
           "Primeira singular ou terceira plural",
@@ -6248,6 +8938,93 @@
         "answer": 1,
         "explanation": "O reconhecimento lexical não elimina a coincidência dessas terminações.",
         "id": "m-alteracoes-compostos-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Em ἀπέστειλα, onde se localiza o aumento em relação ao prefixo ἀπο-?",
+        "greek": "ἀποστέλλω → ἀπέστειλα",
+        "options": [
+          "Depois do prefixo, que sofre ajuste na grafia",
+          "Antes de toda a palavra, sem alteração do prefixo",
+          "Somente depois da terminação pessoal",
+          "A forma não possui aumento"
+        ],
+        "answer": 0,
+        "explanation": "O par ἀποστέλλω / ἀπέστειλα ilustra aumento interno ao composto e ajuste gráfico do prefixo.",
+        "id": "m-alteracoes-compostos-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual resultado pode surgir do encontro de uma consoante velar com sigma, nos padrões apresentados no curso?",
+        "options": [
+          "ξ",
+          "ψ",
+          "θ",
+          "μ"
+        ],
+        "answer": 0,
+        "explanation": "No padrão ilustrado por ἄγω / ἄξω, o encontro com sigma produz ξ. Labiais com sigma podem produzir ψ.",
+        "id": "m-alteracoes-compostos-extra-2"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise ἐξέβαλον nesta oração, usando ἐγώ para decidir pessoa e número.",
+        "greek": "ἐγὼ ἐξέβαλον τὸν δοῦλον",
+        "fields": [
+          {
+            "label": "Forma temporal",
+            "answer": "Aoristo",
+            "options": [
+              "Presente",
+              "Imperfeito",
+              "Futuro",
+              "Aoristo",
+              "Perfeito",
+              "Mais-que-perfeito"
+            ]
+          },
+          {
+            "label": "Voz",
+            "answer": "Ativa",
+            "options": [
+              "Ativa",
+              "Média",
+              "Passiva",
+              "Média ou passiva"
+            ]
+          },
+          {
+            "label": "Modo",
+            "answer": "Indicativo",
+            "options": [
+              "Indicativo",
+              "Subjuntivo",
+              "Imperativo",
+              "Optativo",
+              "Infinitivo",
+              "Particípio"
+            ]
+          },
+          {
+            "label": "Pessoa",
+            "answer": "Primeira",
+            "options": [
+              "Primeira",
+              "Segunda",
+              "Terceira"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "ἐξέβαλον pertence ao aoristo de ἐκβάλλω. O sujeito ἐγώ resolve a coincidência entre primeira singular e terceira plural.",
+        "id": "m-alteracoes-compostos-extra-3"
       }
     ],
     "references": [
@@ -6380,7 +9157,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual resposta respeita a ambiguidade de λῦσαι isolado?",
+        "prompt": "Sem contexto, quais duas análises morfológicas são possíveis para λῦσαι?",
         "options": [
           "É sempre só infinitivo",
           "Pode ser infinitivo aoristo ativo ou imperativo aoristo médio de 2ª singular",
@@ -6464,7 +9241,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual procedimento é mais seguro para uma forma desconhecida?",
+        "prompt": "Qual sequência de análise evita impor uma tradução a uma forma grega ainda não identificada?",
         "options": [
           "Traduzir e ajustar a morfologia à tradução",
           "Reconhecer lema e paradigma, registrar possibilidades e conferir contexto",
@@ -6474,6 +9251,53 @@
         "answer": 1,
         "explanation": "A análise reúne evidências lexicais, morfológicas e contextuais.",
         "id": "m-diagnostico-4"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Sem contexto, que distinção de modo permanece aberta em λύετε?",
+        "greek": "λύετε",
+        "options": [
+          "Presente ativo indicativo ou imperativo de segunda plural",
+          "Aoristo ativo indicativo ou infinitivo",
+          "Presente passivo optativo ou particípio",
+          "Futuro médio ou aoristo passivo"
+        ],
+        "answer": 0,
+        "explanation": "λύετε pode ser uma afirmação ou uma ordem de segunda pessoa plural; o paradigma e a construção precisam ser combinados.",
+        "id": "m-diagnostico-extra-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Antes de classificar εἰμί + particípio como perífrase, o que deve ser verificado?",
+        "options": [
+          "Se as formas funcionam juntas como unidade verbal no contexto",
+          "Apenas se aparecem próximas na linha",
+          "Apenas se ambas têm o mesmo número de letras",
+          "Se o particípio recebeu uma pessoa gramatical"
+        ],
+        "answer": 0,
+        "explanation": "A proximidade não prova perífrase. Analise as duas formas e examine a relação que a construção estabelece entre elas.",
+        "id": "m-diagnostico-extra-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada dificuldade ao tipo de evidência necessário para resolvê-la.",
+        "pairs": [
+          {
+            "left": "ἔλαβον: recuperar o lema",
+            "right": "formas principais de λαμβάνω"
+          },
+          {
+            "left": "ἔλυον: primeira singular ou terceira plural",
+            "right": "sujeito e contexto da oração"
+          },
+          {
+            "left": "τοῦ: masculino ou neutro",
+            "right": "concordância e informação lexical do grupo"
+          }
+        ],
+        "explanation": "Dificuldades lexicais e coincidências de flexão pedem evidências diferentes. A conclusão deve preservar possibilidades que os dados não eliminam.",
+        "id": "m-diagnostico-extra-3"
       }
     ],
     "references": [
