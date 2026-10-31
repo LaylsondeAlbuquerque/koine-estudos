@@ -8,6 +8,6 @@
   "author": "Laylson de Albuquerque (https://github.com/LaylsondeAlbuquerque)",
   "scripts": {
     "dev": "python -m http.server 4173 --bind 127.0.0.1",
-    "check": "node --check app.js && node --check core.js && node scripts/validate.mjs && node --test scripts/core.test.mjs"
+    "check": "node --check app.js && node --check core.js && node --check appearance.js && node scripts/validate.mjs && node --test scripts/core.test.mjs"
   }
 }

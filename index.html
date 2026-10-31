@@ -1,16 +1,22 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#051d3b">
+  <meta name="theme-color" content="#0c1018">
+  <meta name="color-scheme" content="dark light">
+  <script>
+    try { const saved=localStorage.getItem('koine-theme-v1'); document.documentElement.dataset.theme=saved==='light'?'light':'dark'; if(saved==='light') document.querySelector('meta[name="theme-color"]').setAttribute('content','#f5f7f9'); } catch {}
+  </script>
   <meta name="description" content="Um espaço aberto para aprender grego koiné: morfologia, sintaxe e vocabulário, do primeiro contato à leitura crítica.">
   <title>Koiné — formações em grego do Novo Testamento</title>
   <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml">
   <link rel="preload" href="./assets/EncodeSans.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="./styles.css?v=2.1">
-  <link rel="stylesheet" href="./study.css?v=2">
-  <script type="module" src="./app.js?v=2"></script>
+  <link rel="stylesheet" href="./styles.css?v=3">
+  <link rel="stylesheet" href="./study.css?v=3">
+  <link rel="stylesheet" href="./home.css?v=3">
+  <link rel="stylesheet" href="./theme.css?v=3">
+  <script type="module" src="./app.js?v=3"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Ir para o conteúdo</a>
