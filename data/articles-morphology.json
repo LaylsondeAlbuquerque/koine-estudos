@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "am-m-alfabeto",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-alfabeto",
+    "order": 1,
+    "title": "Três maneiras de dar voz ao grego: escolhas e argumentos",
+    "summary": "Compare os objetivos da pronúncia erasmiana, da koiné reconstruída e da tradição grega moderna.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma decisão que depende do objetivo",
+        "body": "Reconhecer as mesmas letras não obriga todos os leitores a produzir os mesmos sons. Ao escolher uma pronúncia, convém separar três objetivos: aprender a distinguir grafias, aproximar uma situação histórica e participar de uma comunidade atual de leitura. Um sistema pode favorecer um desses objetivos sem resolver os outros. Neste curso, a convenção inicial é erasmiana. Isso organiza o estudo e a comunicação entre alunos; não equivale a declarar que todos os habitantes do Mediterrâneo pronunciavam o grego dessa maneira."
+      },
+      {
+        "heading": "A opção erasmiana e a sala de aula",
+        "body": "Bill Mounce disponibiliza resumos tanto erasmianos quanto modernos em seu material de alfabeto. Isso documenta alternativas pedagógicas, não uma defesa exclusiva de um sistema. O projeto FreeGreek explica sua adoção da erasmiana pela utilidade inicial e pela compatibilidade com materiais de ensino. Distinguir sons associados a grafias diferentes pode ajudar a recordar uma palavra escrita. A vantagem didática precisa, porém, ser apresentada como vantagem didática: conservar uma distinção na leitura não demonstra, por si só, que ela existia em determinada época."
+      },
+      {
+        "heading": "Reconstrução e continuidade",
+        "body": "Randall Buth, no Biblical Language Center, relaciona a pronúncia koiné reconstruída à evidência documental e ao uso oral necessário à aquisição da língua. Benjamin Kantor também distingue em seu projeto a reconstrução histórica de decisões adotadas para ensinar. Já Chrys Caragounis defende a chamada Historical Greek Pronunciation, vinculando sua posição à continuidade da língua e à pronúncia dos falantes gregos. Essas propostas não precisam ser fundidas: concordar que a tradição erasmiana de seminário não reproduz simplesmente a fala antiga não elimina divergências sobre a cronologia das mudanças."
+      },
+      {
+        "heading": "Como comparar sem transformar a escolha em disputa",
+        "body": "Pergunte qual período, região e finalidade cada autor procura representar. Observe também se uma gravação apresenta uma reconstrução específica ou apenas a convenção de uma turma. Não deduza a qualidade de uma análise gramatical apenas pelo sotaque do leitor. É possível manter uma pronúncia consistente no treino inicial e aprender posteriormente a reconhecer outras. Ao mudar de sistema, conserve a associação entre som, grafia e significado: a troca de sons não deve obrigar você a reaprender cada palavra como se fosse outro vocábulo."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1."
+      },
+      {
+        "title": "Bill Mounce — Alphabet & Transliteration: materiais erasmianos e modernos",
+        "url": "https://www.billmounce.com/biblicalgreek/2-alphabet-transliteration"
+      },
+      {
+        "title": "FreeGreek — Pronunciation: justificativa pedagógica da opção erasmiana",
+        "url": "https://freegreek.online/pronunciation/"
+      },
+      {
+        "title": "Randall Buth — entrevista ao Biblical Language Center, oralidade e pronúncia",
+        "url": "https://www.biblicallanguagecenter.com/interview-randall-buth/"
+      },
+      {
+        "title": "Benjamin Kantor — KoineGreek.com: reconstrução histórica e escolhas pedagógicas",
+        "url": "https://www.koinegreek.com/koine-pronunciation"
+      },
+      {
+        "title": "Chrys C. Caragounis — The Historical Greek Pronunciation Is Spreading",
+        "url": "https://chrys-caragounis.com/My_New_WEBSITE/PDF_Folders/Research.New/Pronunciation.New/The_HGP_Is_Spreading.pdf"
+      }
+    ],
+    "discussionQuestions": [
+      "Que objetivo pedagógico sustenta a pronúncia escolhida para sua turma?",
+      "Que evidência distinguiria uma convenção útil de uma reconstrução histórica?"
+    ]
+  },
+  {
+    "id": "am-m-vogais",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-vogais",
+    "order": 2,
+    "title": "Uma grafia, mais de uma história sonora",
+    "summary": "Entenda por que letras, dígrafos e sons não mantêm uma correspondência simples em todas as épocas.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Contar letras não é contar sons",
+        "body": "Uma tabela do alfabeto descreve sinais escritos; uma descrição fonológica organiza contrastes sonoros. As duas tarefas se relacionam, mas não são equivalentes. O fato de duas letras aparecerem juntas não determina que um leitor de qualquer período tenha produzido dois sons separados. Inversamente, uma convenção de ensino pode preservar uma distinção para facilitar a identificação da grafia. Antes de comparar gravações de αι, ει ou οι, identifique o sistema adotado. Uma diferença de leitura pode resultar da convenção, e não de uma leitura errada do texto."
+      },
+      {
+        "heading": "O que a escrita conserva",
+        "body": "A ortografia pode conservar distinções que já não funcionam da mesma maneira na fala de determinada comunidade. Por isso, a aprendizagem da escrita não pode depender exclusivamente de reproduzir um som. Compare uma atividade de ditado com uma atividade de análise morfológica: na primeira, sons semelhantes criam dificuldade para recuperar a grafia; na segunda, a terminação e o contexto oferecem informações adicionais. Intercalamentos gráficos são relevantes para reconstruir pronúncias, mas um exemplo isolado também pode envolver hábitos de escrita ou um erro de cópia."
+      },
+      {
+        "heading": "Diérese e iota subscrito como informação",
+        "body": "A diérese merece atenção porque interrompe uma associação visual que o iniciante costuma fazer automaticamente. Seu valor na leitura precisa ser relacionado à segmentação da palavra, não ao tamanho decorativo dos pontos. O iota subscrito apresenta outra situação: o sinal participa da grafia convencional de formas como τῷ, mesmo quando a convenção oral escolhida não lhe dá um som independente. Ignorá-lo na cópia pode eliminar uma pista morfológica. Pronunciar e transcrever são atividades relacionadas, mas os critérios de correção de cada uma não precisam ser idênticos."
+      },
+      {
+        "heading": "Uma rotina que mantém as duas dimensões",
+        "body": "Ao estudar uma forma, registre sua grafia completa e a maneira de pronunciá-la no sistema da turma. Depois compare uma gravação de outra convenção sem substituir silenciosamente uma pela outra. Pergunte quais diferenças alteram apenas sua realização oral e quais permitem distinguir palavras ou formas escritas. Essa comparação ajuda a reconhecer que uma reconstrução deve declarar seu recorte histórico. Para o estudo inicial, a consistência favorece a memória; para o aprofundamento, identificar a convenção alheia favorece a escuta e a avaliação dos argumentos."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1."
+      }
+    ],
+    "discussionQuestions": [
+      "Que informações você perderia copiando τῷ sem iota subscrito?",
+      "Por que uma grafia semelhante não basta para datar uma mudança de pronúncia?"
+    ]
+  },
+  {
+    "id": "am-m-acentos-espiritos",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-acentos-espiritos",
+    "order": 3,
+    "title": "Acentos impressos: pistas linguísticas e decisões de leitura",
+    "summary": "Separe reconhecimento de sinais, interpretação de palavras e apresentação editorial do texto.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Um sinal pode cumprir mais de uma tarefa",
+        "body": "Espíritos e acentos não devem ser tratados como enfeites que o leitor remove depois de reconhecer as letras. Eles participam da grafia convencional e podem ajudar a identificar uma palavra ou uma forma. Entretanto, a realização oral desses sinais depende da pronúncia escolhida. Reconhecer um espírito áspero na página não obriga um leitor que usa uma convenção moderna a produzir a mesma aspiração de uma convenção erasmiana. A descrição do sinal e a instrução de pronúncia precisam permanecer explicitamente relacionadas ao objetivo da atividade."
+      },
+      {
+        "heading": "Quando o acento ajuda a distinguir",
+        "body": "O contraste entre τίς e τις mostra por que é arriscado normalizar todo acento antes de compreender o enunciado. A distinção gráfica orienta o reconhecimento de interrogativo e indefinido, embora a análise final ainda deva acompanhar sua construção. A tarefa é diferente de procurar um significado secreto em cada acento. Nem todo sinal acrescenta uma categoria morfológica nova. Em uma busca eletrônica, ignorar acentos pode aumentar os resultados; ao conferir a ocorrência, é necessário retornar à forma completa para não fundir dados que o texto distingue."
+      },
+      {
+        "heading": "A página também interpreta",
+        "body": "Pontuação, separação de palavras e apresentação tipográfica ajudam o leitor a agrupar uma sequência. Na leitura de uma edição, convém distinguir uma decisão de apresentação de uma marca que a análise linguística exige. Uma vírgula pode favorecer determinada divisão sem substituir a investigação das relações entre as palavras. Isso não torna a pontuação arbitrária ou inútil. Torna sua utilização uma hipótese de leitura que deve ser comparada com a estrutura da oração, especialmente quando uma passagem permite mais de um agrupamento."
+      },
+      {
+        "heading": "Do exercício de cópia à leitura responsável",
+        "body": "Um bom treino alterna duas escalas. Na escala pequena, copie acentos e espíritos com precisão, observando sua posição na vogal ou no ditongo. Na escala maior, leia o grupo inteiro e pergunte se o sinal contribui para reconhecer a palavra, pronunciar segundo a convenção adotada ou segmentar a frase. Quando uma ferramenta de pesquisa desconsiderar diacríticos, trate isso como facilidade de localização, não como afirmação de que os sinais são irrelevantes. A conferência cuidadosa começa depois de encontrar o resultado, e não termina nele."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1."
+      }
+    ],
+    "discussionQuestions": [
+      "Em que etapa uma busca sem acentos deve ser conferida na grafia completa?",
+      "Como distinguir uma pista de pontuação de uma prova sobre a função sintática?"
+    ]
+  },
+  {
+    "id": "am-m-caso-genero-numero",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-caso-genero-numero",
+    "order": 4,
+    "title": "Gênero gramatical: por que significado e terminação não bastam",
+    "summary": "Examine os tipos de evidência usados para classificar uma forma nominal.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Categorias diferentes pedem evidências diferentes",
+        "body": "O parsing reúne categorias em uma mesma resposta, mas isso não significa que todas sejam recuperadas da mesma maneira. O número pode ser reconhecido por uma terminação; o caso pode exigir a comparação entre formas coincidentes; o gênero de um substantivo frequentemente depende de informação lexical e de concordância. Confundir essas fontes produz respostas que parecem explicações, mas apenas repetem expectativas. Dizer que uma palavra é masculina porque designa uma pessoa do sexo masculino pode descrever certos exemplos; não estabelece um método suficiente para todo o vocabulário nominal."
+      },
+      {
+        "heading": "O teste de ὁδός",
+        "body": "O substantivo ὁδός oferece um contraste útil porque termina em -ος e pertence ao gênero feminino. A informação lexical ἡ ὁδός impede que uma associação frequente seja transformada em regra universal. Não se trata de um gênero escolhido livremente em cada ocorrência. A tarefa do leitor é reconhecer a entrada lexical e observar como as palavras do grupo concordam com ela. O exercício também mostra que declinação e gênero são classificações diferentes: compartilhar terminações não obriga dois substantivos a compartilhar o mesmo gênero."
+      },
+      {
+        "heading": "Coincidência de forma não elimina categorias",
+        "body": "O sincretismo ocorre quando uma forma escrita serve a mais de uma combinação de categorias. Em substantivos neutros, a coincidência entre nominativo e acusativo é importante para o iniciante. Isso não significa que sujeito e objeto sejam indistinguíveis em toda oração. Significa apenas que a terminação, isoladamente, não fornece toda a resposta. O verbo, a organização do grupo e as relações do enunciado precisam participar da análise. Uma hipótese sintática pode decidir entre formas possíveis; ela não deve apagar o fato morfológico de que havia uma coincidência."
+      },
+      {
+        "heading": "Como escrever uma justificativa melhor",
+        "body": "Ao explicar um parsing, indique de onde veio cada informação: paradigma, lema, concordância ou construção. Compare “é feminino porque termina assim” com “a entrada lexical é feminina e o artigo do grupo confirma essa leitura”. A segunda justificativa permite que outro leitor examine sua evidência. Também permite registrar incertezas com precisão. Você pode saber o número de uma forma e ainda não decidir seu caso. Reconhecer uma categoria com segurança e deixar outra provisória é mais informativo do que escolher uma análise completa sem apoio suficiente."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 2–3 e Guide to Parsing."
+      }
+    ],
+    "discussionQuestions": [
+      "Que evidências sustentam o gênero de ἡ ὁδός?",
+      "Como registrar um parsing quando a forma não decide entre nominativo e acusativo?"
+    ]
+  },
+  {
+    "id": "am-m-artigo",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-artigo",
+    "order": 5,
+    "title": "O artigo como evidência: o que ele revela e o que deixa em aberto",
+    "summary": "Avalie a utilidade do artigo sem atribuir a uma forma mais informação do que ela contém.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma pista forte não é uma resposta completa",
+        "body": "O artigo costuma ser uma das primeiras formas memorizadas porque sua frequência e sua organização ajudam a reconhecer grupos nominais. Essa utilidade pode criar uma expectativa excessiva: olhar o artigo e supor que todas as categorias do substantivo já estão resolvidas. Em alguns grupos, isso funciona; em outros, o próprio paradigma contém coincidências. A pergunta relevante não é se o artigo ajuda, mas qual informação uma forma específica realmente fornece. A análise precisa respeitar tanto as distinções quanto os limites do paradigma aprendido."
+      },
+      {
+        "heading": "O exemplo de τῶν",
+        "body": "τῶν identifica o genitivo plural, mas não escolhe sozinho um gênero. Compare τῶν λόγων e τῶν γυναικῶν: a mesma forma de artigo acompanha substantivos de gêneros diferentes. O gênero é recuperado por outra evidência, como a entrada lexical e a concordância disponível no restante do grupo. Isso corrige duas estratégias inadequadas: memorizar apenas um equivalente português para o artigo ou supor que a primeira combinação vista define todos os seus usos. O paradigma deve ser aprendido como sistema de possibilidades, não como coleção de traduções fixas."
+      },
+      {
+        "heading": "Concordar não é repetir terminações",
+        "body": "Um artigo e um substantivo podem compartilhar caso, gênero e número sem terminar com as mesmas letras. A concordância é uma relação entre categorias; a identidade visual é apenas um efeito que às vezes aparece. Esse princípio se torna importante quando o substantivo segue outra declinação. Ao encontrar uma terminação desconhecida, use o artigo para formular uma hipótese e depois confira o paradigma do substantivo. Se a análise só funcionar apagando a forma real da palavra, a pista foi usada para impor uma resposta, em vez de orientar a investigação."
+      },
+      {
+        "heading": "Da morfologia à interpretação",
+        "body": "Aprender o artigo com precisão não resolve automaticamente questões sobre definição, referência ou substantivação. Essas perguntas pertencem à interpretação da construção e devem ser desenvolvidas na sintaxe. A progressão saudável usa a morfologia como apoio: primeiro reconheça quais formas podem concordar; depois investigue o que o grupo faz no enunciado. No estudo pessoal, experimente anotar duas colunas: informação garantida pela forma e informação que exige contexto. O procedimento evita que uma ajuda prática de leitura se transforme em explicação universal do significado do artigo grego."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 3."
+      }
+    ],
+    "discussionQuestions": [
+      "Que categorias τῶν permite afirmar antes de ler o substantivo?",
+      "Por que concordância não exige terminações visualmente iguais?"
+    ]
+  },
+  {
+    "id": "am-m-segunda-declinacao",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-segunda-declinacao",
+    "order": 6,
+    "title": "Regularidade sem automatismo na segunda declinação",
+    "summary": "Use o paradigma para gerar hipóteses, preservando gênero lexical e ambiguidades do neutro.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O que um modelo regular oferece",
+        "body": "Um paradigma organiza correspondências de maneira compacta. Estudar λόγος ajuda a reconhecer relações entre λόγου, λόγῳ e λόγους sem memorizar cada ocorrência como uma palavra independente. A economia é importante, mas um modelo regular pode ser confundido com a descrição de todo o vocabulário. A segunda declinação fornece padrões produtivos de flexão; não transforma a terminação -ος em indicador infalível de gênero, nem faz de cada terminação uma função sintática única. O modelo é um instrumento de comparação e precisa ser aplicado a um lema identificado."
+      },
+      {
+        "heading": "A unidade do padrão e a diversidade lexical",
+        "body": "A existência de substantivos femininos como ὁδός permite separar dois eixos. A declinação organiza formas; o gênero participa das relações de concordância. Quando um aluno aprende ambos apenas pela tradução portuguesa, corre o risco de transferir o gênero da língua de chegada para o grego. Por isso, um registro lexical com artigo e genitivo é mais informativo do que equivalentes soltos. A regularidade das terminações continua útil, mas passa a trabalhar em conjunto com a identificação da palavra que recebe essas terminações."
+      },
+      {
+        "heading": "O neutro muda a estratégia de análise",
+        "body": "No neutro, a coincidência entre nominativo e acusativo exige cuidado. Se δῶρον aparece isoladamente, não é adequado tratá-lo como objeto apenas porque uma atividade anterior usou essa leitura. Uma oração poderá fornecer evidências suficientes, mas elas precisam ser mencionadas. O mesmo princípio vale para o plural neutro. A aprendizagem melhora quando o aluno compara deliberadamente formas iguais com funções diferentes e formas diferentes com categorias comuns. Esse treino impede que uma tabela corretamente memorizada seja aplicada incorretamente durante a leitura."
+      },
+      {
+        "heading": "Da terminação para a palavra inteira",
+        "body": "Reconhecer segmentos é útil, mas a conferência deve retornar à forma completa. Um final semelhante pode ocorrer em outro paradigma; um substantivo pode apresentar particularidades que sua forma de dicionário não deixa prever sem o genitivo. Em vez de perguntar apenas “qual terminação eu vi?”, formule uma sequência: qual é o lema provável, a qual padrão ele pertence e quais análises a forma admite? Essa ordem preserva a contribuição do paradigma e torna visíveis os pontos em que vocabulário e contexto precisam completar o raciocínio."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 2."
+      }
+    ],
+    "discussionQuestions": [
+      "O que muda quando um substantivo em -ος é feminino?",
+      "Que evidência adicional permitiria decidir a função de δῶρον numa oração?"
+    ]
+  },
+  {
+    "id": "am-m-primeira-declinacao",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-primeira-declinacao",
+    "order": 7,
+    "title": "Alfa e eta: aprender famílias sem criar uma regra única",
+    "summary": "Investigue por que substantivos da mesma declinação precisam de modelos contrastantes.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma família não precisa de uma única aparência",
+        "body": "O nome primeira declinação reúne padrões relacionados, mas não garante que todas as palavras mantenham a mesma vogal em todas as formas. A comparação entre τιμή, χώρα e δόξα mostra por que um único nominativo não deve ser usado como receita universal. A aula introdutória organiza as séries; o aprofundamento pergunta como memorizar suas relações sem esconder as diferenças. Em vez de tratar cada variação como exceção isolada e arbitrária, é mais produtivo identificar famílias e registrar a qual delas cada substantivo pertence."
+      },
+      {
+        "heading": "O genitivo como parte do vocabulário",
+        "body": "Aprender δόξα junto de δόξης conserva uma informação que a tradução “glória” não fornece. A mudança de vogal faz parte da descrição de suas formas e precisa acompanhar o lema no estudo. Compare esse registro com χώρα e seu próprio genitivo: a tarefa não consiste em escolher qual palavra é mais regular, mas em reconhecer quais relações cada modelo conserva. O artigo informa o gênero; o genitivo ajuda a identificar o padrão. Esses dados se complementam e não devem competir por uma única posição no cartão de memória."
+      },
+      {
+        "heading": "Masculinos e uma classificação independente",
+        "body": "Substantivos masculinos da primeira declinação demonstram que gênero e declinação não são sinônimos. Um aluno pode compreender a tabela feminina e ainda aplicar indevidamente uma expectativa sobre o artigo ou o genitivo ao encontrar outro grupo. A solução é comparar sistemas completos em pequenas doses, mantendo explícito o lema de cada série. Não é necessário supor que uma palavra mudou de gênero porque sua terminação lembra uma série feminina. A classificação morfológica precisa respeitar os dados lexicais e as correspondências próprias daquele substantivo."
+      },
+      {
+        "heading": "Que tipo de revisão produz autonomia?",
+        "body": "Uma revisão eficiente não pergunta sempre a mesma forma do mesmo modelo. Alterne a recuperação do genitivo, o reconhecimento de um dativo, a comparação de dois substantivos e a análise de um grupo com artigo. Quando errar, identifique a origem da transferência: você aplicou a série de τιμή a δόξα ou trouxe a tradução portuguesa para decidir o gênero? Diagnosticar o tipo de erro é mais útil do que repetir a tabela inteira sem direção. O objetivo é construir contrastes estáveis que possam ser recuperados em palavras e contextos novos."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 5."
+      }
+    ],
+    "discussionQuestions": [
+      "Que informação δόξης acrescenta ao registro de δόξα?",
+      "Como distinguir um erro de gênero de um erro de padrão flexional?"
+    ]
+  },
+  {
+    "id": "am-m-adjetivos",
+    "area": "morphology",
+    "level": 0,
+    "lessonId": "m-adjetivos",
+    "order": 8,
+    "title": "Concordância além da semelhança: como um adjetivo encontra seu referente",
+    "summary": "Separe categoria, declinação e função para analisar grupos visualmente diferentes.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O risco de procurar finais iguais",
+        "body": "No início, artigo, adjetivo e substantivo parecem formar uma sequência reconhecível pela repetição de terminações. Essa impressão pode ajudar em exemplos simples, mas não define a concordância. As palavras precisam compartilhar as categorias pertinentes, mesmo quando cada uma realiza essas categorias por um padrão de flexão diferente. O aluno que procura apenas letras finais iguais pode rejeitar um grupo correto ou aceitar uma combinação incorreta. A pergunta mais segura é quais valores de caso, gênero e número cada forma admite e qual referente sustenta a relação."
+      },
+      {
+        "heading": "Um contraste com o neutro",
+        "body": "Considere um grupo didático com σῶμα e ἀγαθόν. O substantivo não precisa terminar em -ον para que o adjetivo concorde com ele no neutro singular. A relação depende das categorias, não de copiar o final do substantivo. O exemplo evidencia o papel do vocabulário: é necessário conhecer o gênero do lema σῶμα. Quando o substantivo e o adjetivo apresentam formas sincréticas, a construção pode ser necessária para completar o caso. Concordância ajuda a reduzir possibilidades, mas não cria uma distinção que nenhuma das formas expressa isoladamente."
+      },
+      {
+        "heading": "Forma adjetival não determina função",
+        "body": "O mesmo repertório flexional pode participar de construções diferentes. Um adjetivo pode modificar um substantivo, funcionar predicativamente ou ser empregado substantivamente. Reconhecer o paradigma é indispensável, mas não basta para decidir qual dessas relações aparece no texto. A presença e a posição do artigo são pistas que devem ser analisadas dentro do grupo. Evite transformar a tradução portuguesa de um exemplo em propriedade permanente da forma. O parsing descreve as categorias da palavra; a análise sintática descreve a relação que ela estabelece naquele enunciado."
+      },
+      {
+        "heading": "Testar hipóteses de concordância",
+        "body": "Ao analisar um trecho, liste os referentes possíveis de um adjetivo e compare cada candidato com seus valores morfológicos. Elimine os incompatíveis, mas não escolha automaticamente o mais próximo se mais de um permanecer. Observe o agrupamento, a estrutura da oração e o sentido contextual. Esse procedimento pode ser escrito de maneira curta: forma, candidatos e evidência decisiva. Ele torna a leitura verificável e prepara o aluno para ordens menos familiares. A flexibilidade da ordem grega exige mais atenção às relações, e não menos atenção às formas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 2."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que σῶμα e ἀγαθόν podem concordar apesar de terminarem de modo diferente?",
+      "Que informação falta depois de identificar o parsing de um adjetivo?"
+    ]
+  },
+  {
+    "id": "am-m-terceira-declinacao",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-terceira-declinacao",
+    "order": 9,
+    "title": "A terceira declinação é irregular ou apenas menos transparente?",
+    "summary": "Observe o papel do genitivo, das alterações de tema e dos modelos de descrição.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Irregular para quem?",
+        "body": "Uma forma pode parecer irregular quando é comparada apenas com o nominativo que o aluno conhece. Isso não significa que suas relações sejam impossíveis de organizar. Na terceira declinação, o nominativo nem sempre apresenta de maneira transparente o segmento que reaparece nas demais formas. O genitivo, por isso, adquire valor diagnóstico. Chamar toda diferença de irregularidade pode encerrar a investigação cedo demais. O aprofundamento consiste em perguntar qual parte da dificuldade vem do padrão da palavra e qual parte vem do modelo limitado escolhido para descrevê-la."
+      },
+      {
+        "heading": "O tema como hipótese de análise",
+        "body": "O par σῶμα, σώματος permite reconhecer uma relação que o nominativo sozinho não mostra com a mesma clareza. O tema empregado na descrição ajuda a comparar as formas, mas não é uma palavra independente que deva aparecer sem alterações em toda ocorrência. Segmentação é uma ferramenta analítica: deve explicar os dados sem exigir que o texto tenha sido produzido pela simples justaposição de blocos invariáveis. Essa distinção impede que uma boa técnica de reconhecimento seja confundida com uma reconstrução completa da história de cada palavra."
+      },
+      {
+        "heading": "O que deve ficar no registro lexical",
+        "body": "O lema, o genitivo e o gênero formam um conjunto especialmente útil nessa etapa. Se o aluno conserva apenas uma tradução, não terá informação suficiente para relacionar formas visualmente distantes. Se conserva apenas uma raiz abstrata, pode perder particularidades do nominativo ou do padrão. Um registro equilibrado mantém exemplos reais e a relação entre eles. As palavras devem ser agrupadas por comportamento relevante, mas cada entrada precisa continuar identificável. A organização em famílias reduz a carga de memória sem substituir a conferência lexical."
+      },
+      {
+        "heading": "Consequências para a leitura",
+        "body": "Ao encontrar uma forma difícil, procure um lema plausível e teste se as relações do seu paradigma explicam a ocorrência. Depois confira artigo, adjetivos e construção. Se mais de uma análise permanecer, registre a ambiguidade em vez de forçar a palavra para dentro do primeiro modelo disponível. A terceira declinação ensina uma habilidade que ultrapassa seu próprio conjunto de tabelas: mudar de hipótese quando uma pista isolada não explica o dado. O progresso aparece quando você consegue justificar tanto o reconhecimento quanto os limites da identificação proposta."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 7."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que o genitivo é mais informativo que uma tradução isolada?",
+      "Quando a palavra “irregular” ajuda e quando atrapalha uma análise?"
+    ]
+  },
+  {
+    "id": "am-m-pronomes-pessoais",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-pronomes-pessoais",
+    "order": 10,
+    "title": "Pronomes expressos e formas fortes: por que o parsing não mede ênfase",
+    "summary": "Explore a diferença entre reconhecer uma forma pronominal e explicar sua presença no discurso.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "A categoria não decide a intenção",
+        "body": "Identificar um pronome como primeira pessoa singular descreve uma propriedade gramatical. Explicar por que o autor o empregou naquela oração exige outro tipo de investigação. O grego permite que formas verbais indiquem pessoa e número, mas disso não se segue que todo pronome sujeito expresso produza a mesma intensidade de ênfase. Sua presença pode participar de contrastes, mudanças de referente ou outras relações no discurso. A análise deve mostrar a contribuição do contexto, em vez de atribuir uma intenção uniforme à simples presença de ἐγώ."
+      },
+      {
+        "heading": "Formas diferentes, uma categoria compartilhada",
+        "body": "Formas como ἐμοί e μοι ilustram a necessidade de aprender séries relacionadas sem reduzi-las a equivalentes portugueses intercambiáveis em qualquer posição. A identificação de pessoa, número e caso não esgota sua distribuição. Uma forma pode ocorrer em construção que favorece determinada realização; outra pode participar de um contraste que o contexto torna explícito. Por isso, o adjetivo “forte” empregado na apresentação de uma série não deve ser transformado automaticamente em escala de emoção do falante. Descrição formal e efeito discursivo precisam permanecer distinguíveis."
+      },
+      {
+        "heading": "Possessivos exigem outro cuidado",
+        "body": "Um possessivo declinável concorda com o substantivo que caracteriza, não diretamente com a pessoa que possui. Essa diferença pode parecer contraintuitiva ao aluno que organiza o vocabulário apenas por traduções. A informação de posse e as categorias da flexão pertencem a dimensões relacionadas, mas diferentes. Um grupo pode referir-se ao mesmo possuidor e apresentar formas possessivas distintas por causa dos substantivos envolvidos. Assim, o estudo deve perguntar separadamente quem é o possuidor e qual palavra determina os valores de caso, gênero e número da forma adjetival."
+      },
+      {
+        "heading": "Como observar a escolha em um texto",
+        "body": "Ao examinar um pronome expresso, identifique primeiro a referência que ele recebe no trecho. Compare então alternativas próximas: há outro participante sendo contrastado? O referente foi retomado depois de uma interrupção? A construção exige uma forma específica? Essas perguntas não garantem uma única explicação para todo exemplo, mas tornam a argumentação mais precisa. Um comentário como “há contraste entre duas pessoas nesta sequência” pode ser sustentado por dados do texto; dizer apenas “o pronome é enfático” frequentemente deixa sem explicação aquilo que pretendia esclarecer."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 15."
+      }
+    ],
+    "discussionQuestions": [
+      "Qual é a diferença entre forma forte e efeito de contraste?",
+      "Com qual elemento um possessivo declinável deve concordar?"
+    ]
+  },
+  {
+    "id": "am-m-demonstrativos",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-demonstrativos",
+    "order": 11,
+    "title": "Quando formas semelhantes cumprem tarefas diferentes",
+    "summary": "Leia demonstrativos, interrogativos e αὐτός sem transformar cada lema em tradução fixa.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O lema é um ponto de partida",
+        "body": "Conhecer a tradução inicial de um pronome ajuda a reconhecê-lo, mas não explica todas as suas construções. Demonstrativos relacionam o enunciado a referentes; interrogativos organizam perguntas; indefinidos apresentam referentes sem a mesma identificação. A flexão coloca essas formas no sistema nominal, enquanto a construção define a relação que estabelecem. O aprofundamento começa quando o aluno deixa de procurar uma tradução universal para cada sequência de letras e passa a examinar como a forma se combina com o restante do grupo e com o desenvolvimento do texto."
+      },
+      {
+        "heading": "Acentos que orientam o reconhecimento",
+        "body": "τίς e τις mostram que uma distinção pequena na grafia pode ser relevante para reconhecer entradas diferentes. Isso não autoriza uma leitura puramente mecânica: uma pergunta indireta, por exemplo, continua exigindo que a palavra seja situada na construção. Ao pesquisar eletronicamente, a normalização de acentos pode aproximar resultados que o texto distingue. Por isso, a etapa de localização deve ser seguida por conferência da grafia completa. A conveniência de uma ferramenta de busca não elimina a necessidade de decidir qual forma está efetivamente presente na ocorrência."
+      },
+      {
+        "heading": "O caso de αὐτός",
+        "body": "αὐτός merece atenção porque seu comportamento não cabe em uma única glossa portuguesa. Dependendo da construção, pode funcionar na referência pessoal, na identificação de identidade ou em uso intensivo. O parsing informa as categorias da forma, mas não escolhe sozinho uma dessas interpretações. A posição em relação ao artigo e ao substantivo oferece evidências importantes, que devem ser examinadas no grupo real. A análise perde precisão quando uma tradução aprendida num exemplo é transportada para todos os demais sem considerar a diferença entre as construções."
+      },
+      {
+        "heading": "Uma leitura que compara alternativas",
+        "body": "Ao encontrar um demonstrativo ou uma forma de αὐτός, identifique o referente possível e descreva o agrupamento. Depois compare traduções que representem relações diferentes e pergunte qual delas preserva melhor a organização do texto. Esse procedimento torna visível a diferença entre escolher um equivalente por hábito e justificar uma interpretação. A intenção não é multiplicar incertezas desnecessárias, mas saber em qual etapa elas surgem. A morfologia limita possibilidades; a sintaxe e o discurso fornecem evidências adicionais para decidir entre as leituras ainda compatíveis."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 9 e 12."
+      }
+    ],
+    "discussionQuestions": [
+      "Em que situação uma busca sem acentos pode aproximar duas entradas diferentes?",
+      "Quais dados além do parsing ajudam a interpretar αὐτός?"
+    ]
+  },
+  {
+    "id": "am-m-relativos-reflexivos",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-relativos-reflexivos",
+    "order": 12,
+    "title": "Duas relações num relativo: antecedente e oração própria",
+    "summary": "Entenda por que concordância com o antecedente e função na relativa não são a mesma operação.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Um pronome participa de mais de uma relação",
+        "body": "O pronome relativo conecta um referente a uma oração, mas também ocupa uma posição dentro dessa oração. Essa dupla participação explica por que sua análise não pode ser feita apenas olhando a palavra que o antecede. Gênero e número normalmente se relacionam ao antecedente; o caso precisa ser explicado pela construção em que o relativo participa. O aluno que copia todas as categorias do antecedente para o relativo acerta alguns exemplos por coincidência e perde justamente a informação que permite compreender sua função na oração própria."
+      },
+      {
+        "heading": "Uma diferença de caso que faz sentido",
+        "body": "Num exemplo didático como ὁ ἄνθρωπος ὃν βλέπω, o grupo inicial apresenta ἄνθρωπος no nominativo, enquanto ὃν está no acusativo porque ocupa a posição de objeto de βλέπω na relativa. O relativo mantém uma relação de referência com o antecedente sem repetir seu caso. Esse exemplo permite abandonar uma regra inadequada de concordância total. Ele não esgota fenômenos mais complexos, como atrações de caso, que exigem análise sintática específica. A regra inicial deve ajudar a reconhecer as relações, sem esconder os limites de sua generalização."
+      },
+      {
+        "heading": "Reflexividade e reciprocidade não são intensidade",
+        "body": "Reflexivos e recíprocos acrescentam outro tipo de relação entre participantes. Um reflexivo faz o leitor investigar a correferência pertinente à construção; um recíproco distribui uma relação entre participantes. Essas propriedades não se reduzem ao aumento de ênfase de um pronome pessoal. Aprender apenas um equivalente português pode fazer o aluno confundir referência reflexiva com uso intensivo. O reconhecimento morfológico continua importante porque caso e número restringem possibilidades, mas a explicação precisa dizer quais participantes são relacionados e em que estrutura essa relação se estabelece."
+      },
+      {
+        "heading": "Uma anotação em duas etapas",
+        "body": "Para um relativo, anote primeiro o antecedente provável e a concordância relevante; depois escreva sua função na oração que introduz. Para um reflexivo ou recíproco, identifique os participantes envolvidos e a relação que a construção autoriza. Essa pequena separação impede que uma etiqueta formal seja usada como explicação completa. Quando houver dificuldade, retorne à oração de cada verbo e verifique seus constituintes. A distância gráfica entre palavras pode tornar a leitura mais lenta, mas não muda a necessidade de justificar cada relação por sua própria evidência."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 5 e 23."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que ὃν pode ser acusativo quando seu antecedente está no nominativo?",
+      "Que relação um reflexivo ou recíproco exige investigar além das terminações?"
+    ]
+  },
+  {
+    "id": "am-m-estrutura-verbal",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-estrutura-verbal",
+    "order": 13,
+    "title": "Desmontar um verbo não é cortar a palavra em qualquer lugar",
+    "summary": "Avalie a segmentação por evidências cumulativas e reconheça os limites de uma fórmula.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Segmentação é uma análise, não uma fotografia",
+        "body": "Uma fórmula como aumento, tema e terminação organiza observações recorrentes; ela não significa que cada verbo tenha sido formado pela junção de peças sempre visíveis e invariáveis. Mudanças no encontro de sons, temas diferentes e coincidências entre terminações complicam o quadro. A apresentação de padrões em Fundamentals fornece uma base para comparar séries. O passo seguinte é testar se a segmentação proposta explica a forma inteira e se combina com o lema identificado. Uma divisão visualmente possível não é, por isso só, uma análise linguística suficiente."
+      },
+      {
+        "heading": "Um segmento só ganha valor em uma série",
+        "body": "O sigma de λύσω é informativo quando a palavra é comparada com λύω e com outras formas pertinentes do mesmo verbo. Encontrar a letra σ em qualquer ponto de outra palavra não basta para anunciar futuro ou aoristo. O mesmo vale para o começo ἐ-: sua identificação como aumento exige que a relação com o tema e a série seja demonstrada. A força da análise está na convergência entre pistas, não na descoberta de um pequeno trecho ao qual se atribuiu antecipadamente uma função universal."
+      },
+      {
+        "heading": "A ambiguidade de uma forma completa",
+        "body": "ἔλυον pode corresponder à primeira pessoa singular ou à terceira plural do imperfeito ativo indicativo. Aqui, todos os caracteres estão visíveis e o reconhecimento do tema é seguro, mas a forma não distingue essas duas combinações. O contexto pode reduzir a ambiguidade; acrescentar mais cortes à palavra não resolve uma oposição que o paradigma não expressa. Essa distinção é importante para o uso de analisadores automáticos: apresentar uma possibilidade não é o mesmo que demonstrar que ela é a única análise autorizada pela ocorrência."
+      },
+      {
+        "heading": "O que uma boa justificativa contém",
+        "body": "Uma análise verificável informa o lema, identifica a série, reconhece as categorias que a forma efetivamente expressa e registra alternativas relevantes. Depois pergunta se a construção permite escolher entre elas. Esse método também protege contra a tradução circular: não decida primeiro que a frase deve estar no passado e depois procure segmentos que confirmem a escolha. Compare as evidências morfológicas antes de construir uma tradução final. A segmentação é mais útil quando participa desse raciocínio, em vez de substituir a consulta lexical e a investigação contextual."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 4 e Guide to Parsing."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que encontrar σ não basta para identificar uma série verbal?",
+      "Qual ambiguidade de ἔλυον permanece mesmo depois de reconhecer todos os seus segmentos?"
+    ]
+  },
+  {
+    "id": "am-m-primeiro-aoristo",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-primeiro-aoristo",
+    "order": 14,
+    "title": "O sigma do aoristo e o mito da ação instantânea",
+    "summary": "Distinga o modo de formar uma série do modo de apresentar um acontecimento.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Duas perguntas que costumam ser misturadas",
+        "body": "O estudo do primeiro aoristo frequentemente reúne uma fórmula morfológica e uma explicação de interpretação. As duas são necessárias, mas respondem a perguntas diferentes. A fórmula mostra como reconhecer uma família de formas; a interpretação investiga a contribuição dessas formas numa construção. Quando o aluno aprende tudo como uma única associação, pode concluir que localizar sigma significa localizar um acontecimento instantâneo. Esse salto não é autorizado pela morfologia. O nome de uma série e a duração de uma situação pertencem a dimensões distintas da análise."
+      },
+      {
+        "heading": "O que a formação sigmática permite reconhecer",
+        "body": "Compare λύω e ἔλυσα como formas de referência de um mesmo lema. A série aorista oferece um conjunto de correspondências que deve ser aprendido em várias pessoas e categorias, não apenas pela primeira singular. É a combinação das evidências que identifica o aoristo da ocorrência. A tradição chamar essa família de primeiro aoristo não estabelece uma primeira etapa cronológica do evento, nem faz dela um aspecto diferente do chamado segundo aoristo. Os rótulos organizam padrões de formação, não duas velocidades de ação."
+      },
+      {
+        "heading": "Perfectivo não mede a duração",
+        "body": "Na abordagem aspectual de Porter adotada pelo curso, o aoristo apresenta o acontecimento em perspectiva perfectiva. Apresentar uma situação em conjunto não significa dizer que ela durou um instante. Uma atividade longa pode ser apresentada dessa maneira, enquanto uma situação breve pode receber outra perspectiva em um contexto apropriado. Também não basta traduzir por um pretérito português para explicar a forma grega. A tradução reúne informações da forma verbal, do léxico, de expressões temporais e da organização do enunciado, que convém manter separadas durante a análise."
+      },
+      {
+        "heading": "Uma comparação que melhora a leitura",
+        "body": "Ao explicar um aoristo, faça duas anotações independentes: como a forma foi reconhecida e quais dados do trecho informam duração, localização temporal e repetição. Se a justificativa sobre duração desaparecer quando um advérbio é retirado, esse dado não vinha apenas da terminação verbal. O procedimento não elimina a contribuição do aspecto; torna essa contribuição mais precisa. A aprendizagem deixa de procurar uma tradução automática para o aoristo e passa a observar como a mesma família verbal participa de apresentações diferentes de acontecimentos em contextos diferentes."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 4."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que primeiro e segundo aoristos não representam duas durações?",
+      "Que informações do contexto você separaria da perspectiva aspectual ao interpretar uma ocorrência?"
+    ]
+  },
+  {
+    "id": "am-m-segundo-aoristo",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-segundo-aoristo",
+    "order": 15,
+    "title": "Segundo aoristo: outra formação, não um segundo significado de passado",
+    "summary": "Examine mudanças de tema, sincretismo e a necessidade de aprender relações lexicais.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "O número no nome não descreve o acontecimento",
+        "body": "Primeiro e segundo aoristos são rótulos tradicionais de famílias morfológicas. Eles não indicam que um acontecimento aoristo ocorreu antes ou depois de outro, nem que uma família seja mais completa ou mais breve. A distinção permite organizar maneiras de formar a série. Essa observação parece simples, mas evita uma confusão frequente: transferir para a interpretação nomes que foram criados para descrever diferenças de forma. Na perspectiva do curso, reconhecer a família morfológica é indispensável; atribuir-lhe um significado adicional exige evidência que o rótulo não fornece."
+      },
+      {
+        "heading": "O tema pode mudar de modo reconhecível",
+        "body": "O par λαμβάνω e ἔλαβον mostra por que não basta acrescentar uma terminação à forma presente para prever toda a flexão. O tema aoristo deve ser aprendido como parte da família lexical. A comparação com ἐλάμβανον também é instrutiva: o imperfeito conserva o tema de presente, enquanto o aoristo apresenta o tema próprio dessa série. Como terminações podem ser semelhantes, o reconhecimento do tema exerce papel decisivo. O aumento, isoladamente, não decide entre essas formas; a análise precisa considerar o conjunto."
+      },
+      {
+        "heading": "A pessoa pode continuar em aberto",
+        "body": "ἔλαβον ilustra ainda uma coincidência entre primeira singular e terceira plural do indicativo aoristo ativo. Identificar corretamente o lema e o aoristo não obriga a inventar uma distinção de pessoa e número que a grafia não fornece. O contexto poderá mostrar qual leitura convém. Essa limitação deve acompanhar a resposta de um exercício sem contexto: há informação reconhecida com segurança e há informação que permanece alternativa. Um parsing parcial bem fundamentado é preferível a um parsing completo que apenas escolhe a primeira linha de uma tabela."
+      },
+      {
+        "heading": "Aprender nos dois sentidos",
+        "body": "O treino não deve seguir apenas do presente para o aoristo. Apresente também uma forma aorista e tente recuperar o lema, depois confira a relação. Essa inversão é importante porque a leitura real começa por formas encontradas no texto, não por uma entrada de dicionário já identificada. Registre juntos os temas que você tende a separar por engano e compare formas que têm terminações parecidas. A memória passa a conservar redes de correspondências, permitindo reconhecer o padrão sem atribuir a todas as mudanças de tema uma explicação semântica inexistente."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 6."
+      }
+    ],
+    "discussionQuestions": [
+      "Qual evidência distingue ἔλαβον de ἐλάμβανον?",
+      "Que categorias permanecem ambíguas em ἔλαβον isolado?"
+    ]
+  },
+  {
+    "id": "am-m-imperfeito-eimi",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-imperfeito-eimi",
+    "order": 16,
+    "title": "Imperfeito: continuidade, contexto e verbos que não nomeiam ações",
+    "summary": "Investigue por que o imperfeito não pode ser reduzido a uma ação que estava acontecendo.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma imagem didática tem limites",
+        "body": "Descrever o imperfeito como uma ação em andamento pode ajudar em certos exemplos, mas não serve como definição suficiente de todas as ocorrências. Alguns verbos apresentam estados, relações ou propriedades, e o contexto pode acrescentar ideias de repetição, tentativa ou desenvolvimento. Se essas interpretações forem tratadas como partes obrigatórias da terminação, a leitura atribuirá à morfologia informações que vêm de outros lugares. O aprofundamento consiste em conservar a contribuição da série verbal e perguntar, separadamente, que tipo de situação o lema e o enunciado apresentam."
+      },
+      {
+        "heading": "O tema de presente não é tempo presente",
+        "body": "O imperfeito emprega o tema associado à série de presente, mas identificar esse tema é uma observação morfológica. Não se segue que o verbo se refira ao mesmo intervalo temporal de uma forma presente no trecho. A análise precisa distinguir o nome da base utilizada e a interpretação da ocorrência. Compare λύω e ἔλυον: a semelhança do tema permite reconhecer uma família; a diferença de formação impede tratar as palavras como equivalentes. Também aqui ἔλυον conserva a conhecida ambiguidade entre primeira singular e terceira plural."
+      },
+      {
+        "heading": "Por que εἰμί precisa de atenção própria",
+        "body": "As formas de εἰμί não devem ser forçadas a reproduzir visualmente a série de λύω. Além de suas particularidades formais, o verbo pode participar de predicações em que não há uma ação concreta para representar como uma cena em movimento. Uma tradução com “era” ou “estava” pode ser adequada, mas a escolha entre elas pertence ao português e à construção interpretada. Memorizar a família própria de εἰμί evita que a ausência das pistas regulares seja confundida com ausência de categorias verbais."
+      },
+      {
+        "heading": "Comparar interpretações sem multiplicar significados fixos",
+        "body": "Ao encontrar um imperfeito, identifique a forma e o lema antes de escolher uma paráfrase. Em seguida, procure dados de tempo, participantes e tipo de situação. Pergunte quais elementos autorizam falar em hábito ou desenvolvimento, se essa for sua proposta. Duas ocorrências da mesma série podem receber traduções portuguesas diferentes sem que o paradigma tenha mudado de significado a cada linha. O objetivo é explicar a interação entre forma e contexto, e não construir uma lista na qual cada tradução possível se transforma em uma nova terminação imaginária."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 6–7."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que o tema de presente não determina sozinho o tempo de uma ocorrência?",
+      "Que problema surge ao definir todo imperfeito como ação em andamento?"
+    ]
+  },
+  {
+    "id": "am-m-presente-futuro",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-presente-futuro",
+    "order": 17,
+    "title": "O futuro não é sempre o presente acrescido de sigma",
+    "summary": "Compare produtividade, informação lexical e coincidências entre séries verbais.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma fórmula útil tem um domínio de aplicação",
+        "body": "O par λύω e λύσω torna visível um padrão produtivo, mas é perigoso transformá-lo em algoritmo para qualquer verbo. Uma fórmula de formação descreve uma família de relações; um repertório lexical informa quais formas pertencem efetivamente a cada lema. O aluno que combina essas duas fontes ganha autonomia. O aluno que conserva apenas a fórmula pode fabricar uma forma plausível que não corresponde ao vocabulário estudado. A pergunta correta não é se o modelo funciona, mas para quais palavras ele fornece uma previsão que pode ser confirmada."
+      },
+      {
+        "heading": "Terminações compartilhadas não bastam",
+        "body": "Presente e futuro ativos podem compartilhar terminações pessoais. Isso torna a identificação do tema particularmente importante. A mesma terminação não transforma duas formas em uma única série, assim como temas visualmente próximos não garantem o mesmo conjunto de possibilidades modais. Ao analisar uma ocorrência, recupere o lema e compare a base usada naquela série. O processo precisa retornar à palavra completa: procurar somente a última sílaba ou um sigma interno pode aproximar famílias que exigem distinção. A comparação sistemática explica mais que uma pista isolada."
+      },
+      {
+        "heading": "A voz também pode surpreender",
+        "body": "A relação entre presente e futuro não precisa conservar a aparência que o aluno espera. O futuro de εἰμί, por exemplo, é aprendido com formas como ἔσομαι; sua terminação não deve ser convertida automaticamente em uma tradução reflexiva. Esse caso mostra por que voz morfológica e comportamento lexical não podem ser reduzidos a uma mesma etiqueta de tradução. O paradigma deve ser registrado segundo suas formas reais. Para compreender o emprego em uma oração, será necessário acrescentar a análise da construção e do significado do verbo."
+      },
+      {
+        "heading": "Duas perguntas antes de traduzir",
+        "body": "Pergunte primeiro qual família morfológica está presente e como seu reconhecimento é justificado. Depois investigue o que o enunciado faz com essa forma: apresenta uma previsão, uma promessa, uma orientação ou outra relação? Essas interpretações exigem contexto e não são obtidas apenas copiando a palavra “futuro” para o português. A separação também impede um erro inverso: traduzir com uma expressão futura e concluir que a forma grega deve ser morfologicamente futura. A análise começa no texto grego e testa a tradução, em vez de usar a tradução para inventar a forma."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 8."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que a terminação pessoal não distingue sozinha presente e futuro?",
+      "O que ἔσομαι ensina sobre voz morfológica e tradução?"
+    ]
+  },
+  {
+    "id": "am-m-contratos",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-contratos",
+    "order": 18,
+    "title": "Reverter uma contração: por que nem toda expansão visual identifica um lema",
+    "summary": "Investigue o alcance das regras de contração e seu uso na consulta lexical.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "A regra explica uma relação",
+        "body": "Uma tabela de contrações permite compreender correspondências entre uma base vocálica e formas que apresentam o resultado de encontros de vogais. Ela não significa que toda vogal longa de uma palavra deva ser expandida para reconstruir um verbo contrato. O reconhecimento exige que a hipótese combine com a família lexical e com a categoria verbal. A diferença é importante: uma expansão possível no papel pode não fornecer o lema correto. O modelo deve explicar dados já relacionados, e não autorizar livremente qualquer sequência que produza a mesma aparência final."
+      },
+      {
+        "heading": "Da forma encontrada ao verbo de referência",
+        "body": "A relação entre τιμῶ e τιμάω mostra como o registro lexical pode apresentar uma base diferente da forma que o leitor encontra flexionada. A consulta eficiente pergunta por um lema provável e confirma se as demais categorias se ajustam a ele. O acento também precisa ser observado, pois integra a grafia convencional da ocorrência e participa da comparação entre formas. Uma busca que ignora diacríticos pode localizar entradas úteis; a confirmação deve retornar ao texto completo. Reconstruir a entrada não dispensa conferir a forma efetivamente lida."
+      },
+      {
+        "heading": "Contração não é o nome de toda alteração",
+        "body": "Encontros de segmentos podem produzir fenômenos diferentes. A combinação de vogais num paradigma contrato não deve ser confundida com elisão de um elemento final antes de outra palavra ou com mudanças no encontro de um prefixo e uma base. Agrupar tudo como “caiu uma letra” apaga as condições que permitem prever as relações. O estudo ganha precisão quando o aluno informa quais segmentos foram comparados, em qual ambiente e dentro de qual família. O nome do fenômeno passa a resumir uma análise demonstrada, em vez de substituir a explicação."
+      },
+      {
+        "heading": "Aprender o processo sem abandonar as formas",
+        "body": "Uma boa revisão apresenta tanto o lema quanto formas flexionadas que precisam ser reconhecidas rapidamente. Se o aluno refaz mentalmente uma tabela inteira a cada ocorrência, a regra ainda não se transformou em capacidade de leitura. Se decora resultados sem perceber a relação, perde a possibilidade de analisar formas novas. Alterne os dois caminhos: explique a correspondência em exemplos escolhidos e depois identifique formas completas em grupos curtos. O objetivo é reconhecer famílias de maneira ágil, mantendo a consulta lexical como ferramenta de verificação nos casos em que a expansão não decide entre candidatos."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 8 e 16."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que uma expansão graficamente possível pode levar ao lema errado?",
+      "Como distinguir contração dentro de um paradigma de outras alterações no encontro de segmentos?"
+    ]
+  },
+  {
+    "id": "am-m-infinitivos",
+    "area": "morphology",
+    "level": 1,
+    "lessonId": "m-infinitivos",
+    "order": 19,
+    "title": "Sem pessoa não significa sem participantes: os limites do parsing do infinitivo",
+    "summary": "Separe categorias morfológicas e relações sintáticas das formas não finitas.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma ausência formal não elimina relações",
+        "body": "O infinitivo não expressa pessoa e número como uma forma verbal finita. Isso não significa que a situação apresentada não tenha participantes, nem que o texto seja incapaz de indicar quem a realiza. Essa distinção é importante porque a expressão “forma sem pessoa” pode ser entendida como descrição completa da construção. A morfologia informa quais categorias a palavra flexiona; a sintaxe investiga como seus participantes e sua relação com outra predicação são organizados. Um sujeito expresso ou recuperado pelo contexto não transforma o infinitivo em verbo pessoal."
+      },
+      {
+        "heading": "Categorias que continuam relevantes",
+        "body": "Tema e voz permanecem fundamentais no reconhecimento de infinitivos. Compare λύειν, λῦσαι e λύσασθαι como formas de referência relacionadas ao mesmo lema. A identificação dessas séries não fornece, por si só, a tradução temporal de cada ocorrência. Uma forma aorista de infinitivo não deve ser definida simplesmente como um passado português, pois sua interpretação depende da construção em que participa. A associação entre aoristo e pretérito que parece funcionar em determinado indicativo não pode ser transferida automaticamente a toda forma não finita da mesma família."
+      },
+      {
+        "heading": "Sincretismo exige uma leitura da construção",
+        "body": "λῦσαι é um bom exemplo da necessidade de declarar o recorte de uma análise. Quando a forma é tomada como infinitivo, pertence à série aorista ativa; a mesma grafia também pode corresponder a outra análise verbal fora desse recorte. Um exercício que deseja apenas reconhecer infinitivos pode explicitar essa condição. Na leitura livre, é a construção que deve ajudar a decidir. O reconhecimento de uma terminação familiar fornece um candidato, não a licença para ignorar outras possibilidades que a forma e o contexto possam autorizar."
+      },
+      {
+        "heading": "Uma sequência de investigação mais completa",
+        "body": "Ao analisar um infinitivo, comece por lema, série e voz, registrando alternativas relevantes. Em seguida, pergunte qual expressão o relaciona a outra parte do enunciado, quem participa da situação e que relação a construção estabelece. Só depois escolha uma tradução que preserve essa organização em português. O procedimento evita dois extremos: tratar o infinitivo como um substantivo sem propriedades verbais ou atribuir-lhe todas as marcas de uma oração finita. Sua combinação de propriedades é precisamente o que o torna útil em construções que uma tabela de terminações, isoladamente, não explica."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 4, 6, 8, 11, 13, 20 e 25–26."
+      }
+    ],
+    "discussionQuestions": [
+      "Como uma construção pode indicar o participante de um infinitivo que não flexiona pessoa?",
+      "Por que λῦσαι exige um recorte explícito quando aparece sem contexto?"
+    ]
+  },
+  {
+    "id": "am-m-presente-medio-passivo",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-presente-medio-passivo",
+    "order": 20,
+    "title": "Uma forma compartilhada não contém duas interpretações simultâneas",
+    "summary": "Diferencie o rótulo médio/passivo de uma conclusão sobre o evento descrito.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "O que a barra realmente informa",
+        "body": "Na apresentação de certos paradigmas, a etiqueta médio/passivo indica que uma mesma série de formas serve às duas classificações relevantes. A barra é uma informação sobre o sistema de reconhecimento; não obriga cada ocorrência a apresentar ao mesmo tempo dois sentidos. Esse ponto é decisivo para evitar traduções artificiais. O aluno pode identificar corretamente uma forma como pertencente à série compartilhada e ainda precisar investigar a voz interpretada na construção. A análise deve tornar visível essa passagem entre reconhecer uma possibilidade formal e justificar uma leitura contextual."
+      },
+      {
+        "heading": "O contraste não cabe em uma fórmula portuguesa",
+        "body": "Uma tradução com “se” não demonstra, isoladamente, que a forma grega é média, assim como uma tradução com “ser” não resolve toda ocorrência passiva. As línguas organizam seus recursos de maneiras diferentes. É necessário observar o lema, seus participantes e a construção real. λύεται, apresentada isoladamente, oferece informação de série e de pessoa que não decide todos esses aspectos. Ao produzir uma tradução, o leitor reúne morfologia e contexto; não encontra um pequeno equivalente português guardado dentro de cada terminação."
+      },
+      {
+        "heading": "O papel do comportamento lexical",
+        "body": "Alguns verbos são aprendidos com formas médias em sua entrada de referência. Essa característica lexical não deve ser tratada como erro a corrigir, nem como prova automática de reflexividade. Comparar entradas e exemplos ajuda a reconhecer o comportamento do verbo, enquanto o paradigma fornece as relações entre formas. Quando uma gramática usa uma categoria tradicional para agrupar esses verbos, procure saber se o rótulo descreve sua distribuição formal ou pretende explicar sua semântica. A mesma palavra técnica pode organizar um inventário sem esgotar o funcionamento de todos os seus integrantes."
+      },
+      {
+        "heading": "Como registrar uma incerteza produtiva",
+        "body": "Em um primeiro registro, escreva o que a forma permite reconhecer com segurança: lema provável, série compartilhada e categorias pessoais. Depois acrescente a evidência que favorece a leitura média ou passiva, se houver. Se a ocorrência não permitir uma decisão segura, mantenha a alternativa explicitada. Esse modo de trabalhar não enfraquece o estudo dos paradigmas. Ele impede que a certeza sobre uma terminação seja confundida com certeza sobre toda a interpretação. A boa análise sabe exatamente quais perguntas a morfologia respondeu e quais ainda precisam de contexto."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 13."
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença existe entre reconhecer uma série médio/passiva e interpretar uma ocorrência?",
+      "Por que traduzir com “se” não basta para demonstrar voz média?"
+    ]
+  },
+  {
+    "id": "am-m-aoristo-futuro-medios",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-aoristo-futuro-medios",
+    "order": 21,
+    "title": "Voz média e reflexividade: uma associação que não deve virar identidade",
+    "summary": "Examine por que a formação média não fornece automaticamente uma tradução reflexiva.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma tradução frequente pode esconder o problema",
+        "body": "É comum introduzir a voz média por um exemplo no qual o sujeito participa de maneira particular da situação, recorrendo a uma tradução com “se”. O recurso pode ser útil, mas se torna inadequado quando transforma reflexividade em definição universal. Nem toda forma média exige que sujeito e objeto sejam o mesmo participante. O estudo precisa observar como cada lema organiza seus participantes e como a construção apresenta sua relação com o sujeito. A terminação orienta a análise, mas não substitui a descrição lexical e sintática."
+      },
+      {
+        "heading": "Média e passiva nem sempre compartilham a mesma série",
+        "body": "A comparação entre aoristo médio e aoristo passivo mostra uma distinção formal que pode não estar visível no presente. Para λύω, formas de referência como ἐλυσάμην e ἐλύθην pertencem a séries diferentes. Essa diferença não deve ser apagada porque o aluno aprendeu antes uma tabela chamada médio/passivo. O rótulo da tabela anterior descrevia uma coincidência específica, não uma identidade permanente entre as classificações. A aprendizagem fica mais precisa quando cada série é comparada por seus próprios marcadores e terminações."
+      },
+      {
+        "heading": "O futuro exige informação lexical",
+        "body": "A correspondência entre séries de um mesmo verbo precisa ser aprendida com atenção ao vocabulário. Não se deve concluir que a presença de terminações médias num futuro obriga uma interpretação reflexiva que não aparece nas outras construções do lema. O registro de formas principais ajuda a antecipar esses encontros e evita a fabricação de uma ativa por analogia. A explicação deve separar dois problemas: qual série a palavra apresenta e que organização de participantes o verbo admite naquela ocorrência. A resposta de um problema não é automaticamente a resposta do outro."
+      },
+      {
+        "heading": "Uma comparação que realmente testa a análise",
+        "body": "Ao estudar um verbo com formas ativas e médias, compare exemplos completos e identifique o que muda nos participantes, na construção e no foco interpretativo. Não atribua toda diferença de tradução apenas à voz se os contextos também forem diferentes. Quando o material disponível não permite uma comparação controlada, registre essa limitação. O procedimento evita transformar uma preferência intuitiva de tradução em regra gramatical. O domínio do paradigma continua indispensável, mas seu melhor resultado é permitir perguntas mais precisas sobre o uso, em vez de encerrar antecipadamente a investigação."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 11."
+      }
+    ],
+    "discussionQuestions": [
+      "Que distinção formal aparece entre ἐλυσάμην e ἐλύθην?",
+      "Como testar uma leitura média sem pressupor que ela significa reflexividade?"
+    ]
+  },
+  {
+    "id": "am-m-aoristo-futuro-passivos",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-aoristo-futuro-passivos",
+    "order": 22,
+    "title": "O marcador -θη- não é uma teoria completa de voz",
+    "summary": "Distinga identificação de uma série passiva e interpretação dos participantes da oração.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Da pista formal à generalização excessiva",
+        "body": "O grupo -θη- é uma pista valiosa em muitas formas aoristas e futuras tradicionalmente apresentadas como passivas. Essa utilidade não autoriza duas generalizações: que toda forma da série precisa apresentar theta ou que sua identificação resolve toda a organização semântica da ocorrência. A morfologia fornece correspondências que devem ser aprendidas; a interpretação pergunta o que a construção faz com seus participantes. Reconhecer a pista e declarar os limites de sua contribuição é mais rigoroso do que transformar a terminação em uma pequena tradução pronta."
+      },
+      {
+        "heading": "Passivos sem theta também pertencem ao sistema",
+        "body": "A distinção entre formações com -θη- e formações sem esse theta impede que o aluno procure uma única assinatura gráfica para todas as ocorrências. A comparação precisa considerar o tema passivo do lema e as demais terminações pertinentes. O registro lexical ou uma tabela de formas principais pode fornecer a relação que não seria previsível apenas a partir do presente. Não encontrar theta, portanto, não basta para rejeitar a análise passiva. É preciso testar a série completa e confirmar se a hipótese se ajusta ao vocabulário realmente documentado."
+      },
+      {
+        "heading": "Morfologia passiva e tradução",
+        "body": "Verbos como πορεύομαι mostram por que uma forma tradicionalmente classificada na série passiva não precisa ser traduzida por uma locução portuguesa com “ser”. O comportamento lexical deve participar da explicação. Isso não torna a identificação morfológica inútil, nem exige inventar uma forma ativa ausente para corrigir o verbo. Significa que um rótulo de formação e uma descrição da situação não são idênticos. A análise pode reconhecer o tema e a série enquanto explica, em outra etapa, como o lema e a construção organizam seus participantes."
+      },
+      {
+        "heading": "O que conferir antes de apresentar um gabarito",
+        "body": "Um exercício de reconhecimento deve deixar claro se pergunta pela série morfológica ou pela interpretação da voz em uma oração. Se pedir a segunda, precisa oferecer contexto suficiente. Na leitura, aplique a mesma disciplina a si próprio: confira o lema, suas formas principais, o sujeito e os demais constituintes. Evite adicionar um agente apenas porque uma tradução passiva portuguesa o permitiria. O objetivo é reconstruir as relações autorizadas pelo texto, não completar automaticamente uma cena que a terminação verbal sozinha não descreveu."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 20 e 22."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que a ausência de theta não exclui toda análise passiva?",
+      "Que diferença deve aparecer entre uma pergunta sobre série morfológica e outra sobre interpretação de voz?"
+    ]
+  },
+  {
+    "id": "am-m-subjuntivo",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-subjuntivo",
+    "order": 23,
+    "title": "Subjuntivo: a forma não contém a palavra “talvez”",
+    "summary": "Avalie pistas vocálicas, coincidências entre formas e a função das construções.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "O perigo de traduzir o nome do modo",
+        "body": "Associar subjuntivo a uma situação incerta pode facilitar a primeira apresentação, mas não fornece uma tradução universal. As construções em que o modo aparece são relevantes para interpretar a relação entre as predicações. Se o aluno insere “talvez” em toda ocorrência, passa a acrescentar uma avaliação que o texto pode não estar fazendo daquela maneira. O reconhecimento morfológico e a explicação da construção devem ser ensinados como etapas relacionadas. Primeiro identifique a forma; depois pergunte o que autoriza sua presença e que relação está sendo expressa no enunciado."
+      },
+      {
+        "heading": "Vogal longa é uma pista, não um algoritmo isolado",
+        "body": "A comparação entre séries do indicativo e do subjuntivo ajuda a reconhecer padrões vocálicos. Entretanto, uma vogal visível só é interpretada corretamente quando relacionada ao lema, ao tema e às terminações. Verbos contratos e formas coincidentes demonstram o limite de uma procura puramente visual. O aluno deve aprender a justificar a identificação por um conjunto de correspondências, não apenas por uma letra. A tabela regular de λύω oferece uma base, mas o método precisa continuar funcionando quando o resultado superficial é menos transparente."
+      },
+      {
+        "heading": "O exemplo de λύῃ",
+        "body": "A grafia λύῃ pode admitir mais de uma análise conforme a série e a construção consideradas. Entre as possibilidades estão a segunda pessoa singular do presente médio/passivo indicativo e a terceira pessoa singular do presente ativo subjuntivo. A coincidência é um dado do sistema, não um defeito da leitura. Um contexto que contém uma construção pertinente pode favorecer a análise subjuntiva. Essa evidência deve ser declarada. Apresentar apenas a palavra e exigir uma única etiqueta apaga justamente o problema que um leitor cuidadoso precisa aprender a resolver."
+      },
+      {
+        "heading": "Aspecto e interpretação da construção",
+        "body": "A distinção entre presente e aoristo no subjuntivo não deve ser reduzida automaticamente a uma diferença entre presente e passado em português. Na abordagem do curso, as séries aspectuais continuam relevantes, enquanto a construção fornece outras relações necessárias à interpretação. Ao comparar dois exemplos, conserve essa separação e examine se o contexto também mudou. Um comentário rigoroso distingue o que vem da forma escolhida e o que depende dos elementos que a acompanham. Essa disciplina torna a análise mais informativa do que uma lista de traduções associadas ao nome do modo."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 14 e 22."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que “talvez” não é tradução automática de toda forma subjuntiva?",
+      "Quais evidências poderiam distinguir análises possíveis de λύῃ?"
+    ]
+  },
+  {
+    "id": "am-m-imperativo",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-imperativo",
+    "order": 24,
+    "title": "Imperativo: forma gramatical, pedido e ordem não são a mesma coisa",
+    "summary": "Separe pessoa, aspecto e força comunicativa ao interpretar formas imperativas.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "O modo não mede o tom de voz",
+        "body": "Uma forma imperativa pode participar de uma ordem, de um pedido ou de outra intervenção dirigida à conduta de alguém. A escolha do modo é uma informação gramatical importante, mas não revela sozinha a intensidade social da fala. Quem fala, a quem se dirige e em qual situação são perguntas necessárias para avaliar a força comunicativa. Traduzir toda ocorrência com o mesmo grau de dureza transforma uma categoria verbal em descrição psicológica. A investigação deve manter distintas a identificação formal e a interpretação da relação entre os participantes."
+      },
+      {
+        "heading": "A terceira pessoa exige uma solução portuguesa",
+        "body": "O paradigma grego inclui formas de terceira pessoa que não se encaixam de maneira simples na imagem de alguém falando diretamente “faça você”. Uma tradução portuguesa pode precisar recorrer a uma construção com “que”. Isso não altera o parsing da forma grega. O problema mostra por que não se deve usar a aparência da tradução para decidir quais pessoas existem no paradigma de outra língua. Primeiro descreva as categorias gregas; depois escolha os recursos portugueses capazes de representar adequadamente a relação pretendida no enunciado."
+      },
+      {
+        "heading": "Presente e aoristo não organizam duas datas",
+        "body": "A comparação entre imperativos presentes e aoristos envolve as séries verbais e sua contribuição aspectual, não uma oposição automática entre ordem para agora e ordem para o passado. Uma ordem pode referir-se a uma situação ainda não realizada independentemente de o verbo apresentar aoristo. O contexto fornece informações de oportunidade, repetição e duração que não devem ser confundidas com a forma isolada. Na abordagem de Porter adotada pelo curso, a perspectiva aspectual deve ser distinguida dessas informações antes que se estabeleça uma paráfrase portuguesa."
+      },
+      {
+        "heading": "Coincidências que a construção precisa resolver",
+        "body": "A grafia λῦσαι ilustra a necessidade de comparar análises possíveis: ela pode ser reconhecida como infinitivo aoristo ativo ou, em outro recorte, como imperativo aoristo médio de segunda singular. O formato da palavra não anuncia sozinho qual construção foi escolhida pelo autor. A leitura deve examinar o enunciado e os participantes pertinentes. Essa atenção evita que um exercício de memória se torne uma regra de interpretação equivocada. Saber uma tabela inclui saber quando sua forma coincide com outra e qual informação adicional seria necessária para decidir."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 24."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que uma forma imperativa não determina sozinha o grau de dureza de uma fala?",
+      "O que a coincidência em λῦσαι exige de uma pergunta sem contexto?"
+    ]
+  },
+  {
+    "id": "am-m-participios-ativos",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-participios-ativos",
+    "order": 25,
+    "title": "Por que um particípio não é simplesmente um gerúndio grego",
+    "summary": "Explore a combinação de propriedades verbais e nominais sem apagar suas consequências sintáticas.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma comparação útil pode se tornar uma redução",
+        "body": "Traduzir um particípio por um gerúndio português pode funcionar em determinado trecho, mas não define a categoria grega. O particípio se flexiona em caso, gênero e número, além de apresentar categorias ligadas ao sistema verbal. Um gerúndio português não oferece a mesma rede de flexões. Se a comparação for tomada como identidade, o leitor perderá justamente os dados que ajudam a relacionar o particípio a um referente. O aprofundamento deve começar pela combinação de propriedades que a forma grega apresenta, antes de escolher uma solução de tradução."
+      },
+      {
+        "heading": "A forma não escolhe sua relação sintática",
+        "body": "Um particípio ativo pode participar de usos adjetivais, substantivos ou circunstanciais, conforme a construção. Reconhecer sua série não decide sozinho qual dessas relações está presente. O artigo, a concordância e a organização do enunciado fornecem evidências adicionais. Por isso, uma atividade que mostra apenas o nominativo de um particípio é adequada para reconhecer uma família, mas insuficiente para treinar todas as decisões da leitura. É necessário encontrar as formas em diferentes casos e perguntar com que elementos elas podem se relacionar naquele contexto."
+      },
+      {
+        "heading": "O tema precisa sobreviver à declinação",
+        "body": "Formas como λύων e λύοντος mostram por que estudar apenas o nominativo cria uma imagem incompleta da família ativa. O reconhecimento deve acompanhar as alterações que aparecem no paradigma nominal do particípio. Ao encontrar outra forma, o leitor precisa recuperar o lema verbal e também analisar as categorias nominais. As duas tarefas podem apoiar-se mutuamente: a concordância sugere um conjunto de possibilidades, enquanto o tema e as terminações permitem testá-lo. Nenhuma delas substitui a outra, e um acerto parcial não autoriza completar todas as categorias por adivinhação."
+      },
+      {
+        "heading": "Uma tradução que preserva relações",
+        "body": "Depois do parsing, identifique o referente provável e a relação com a predicação principal. Compare então soluções portuguesas: uma expressão adjetival, uma oração relativa ou uma construção adverbial podem tornar mais explícita a análise proposta. A comparação não deve ser um concurso de elegância independente do grego. Ela serve para testar se a tradução mantém as relações sustentadas pelas formas e pelo contexto. Quando mais de uma interpretação permanecer defensável, explique o ponto de divergência em vez de fazer do gerúndio escolhido uma prova de que o problema desapareceu."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 10."
+      }
+    ],
+    "discussionQuestions": [
+      "Que informações de um particípio grego se perdem quando ele é identificado apenas com um gerúndio?",
+      "Por que λύοντος precisa integrar o estudo de uma família aprendida inicialmente por λύων?"
+    ]
+  },
+  {
+    "id": "am-m-participios-medios-passivos",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-participios-medios-passivos",
+    "order": 26,
+    "title": "-μενος e -θείς: famílias de particípios que não podem ser confundidas",
+    "summary": "Analise voz, série e concordância sem deduzir o evento apenas de uma terminação.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma terminação nominal conserva informação verbal",
+        "body": "O particípio oferece uma combinação de pistas. A flexão nominal ajuda a reconhecer caso, gênero e número, enquanto o tema e os elementos de formação ajudam a identificar a série verbal e a voz morfológica. O aluno que observa apenas o final adjetival pode aproximar formas de séries diferentes. O aluno que vê apenas o elemento verbal perde a relação de concordância. Uma análise completa precisa manter as duas dimensões visíveis. Essa exigência explica por que os particípios não devem ser memorizados como traduções soltas acompanhadas de uma única etiqueta verbal."
+      },
+      {
+        "heading": "O alcance da família em -μενος",
+        "body": "Compare λυόμενος e λελυμένος. A semelhança da parte final não torna as formas equivalentes quanto à série verbal: outros elementos de sua formação participam da identificação. O mesmo repertório nominal pode receber bases diferentes, e o reconhecimento precisa explicar essa combinação. Além disso, em séries que compartilham formas médias e passivas, a morfologia pode não decidir a interpretação da voz na ocorrência. O contexto e o comportamento do lema continuam necessários. Identificar uma família em -μενος é uma etapa de reconhecimento, não uma interpretação pronta de toda a situação."
+      },
+      {
+        "heading": "A família passiva do aoristo",
+        "body": "λυθείς demonstra outro padrão, que não deve ser forçado a apresentar a mesma terminação de λυόμενος. O aluno precisa reconhecer a série e acompanhar sua declinação nos gêneros e casos pertinentes. A forma masculina de referência não permite ignorar a organização própria das outras formas do paradigma. Tampouco é correto deduzir o gênero de um participante real apenas porque um particípio isolado aparece como masculino num quadro. O gênero da ocorrência deve ser explicado pela concordância e pela construção, respeitando o referente a que a palavra se associa."
+      },
+      {
+        "heading": "Comparar sem confundir níveis de descrição",
+        "body": "Ao explicar dois particípios, compare primeiro suas categorias verbais; depois, suas categorias nominais; finalmente, sua função na construção. Essa ordem evita justificar uma diferença de função apenas pela família de terminações. Dois particípios da mesma série podem participar de relações sintáticas diferentes, e séries diferentes podem ocupar relações comparáveis. O aprofundamento está em perceber essas combinações sem perder as distinções. Uma tradução portuguesa bem escolhida deve representar a análise final, mas não pode ser usada como atalho para preencher antecipadamente as categorias que ainda não foram demonstradas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 17, 22 e 27."
+      }
+    ],
+    "discussionQuestions": [
+      "O que distingue λυόμενος de λελυμένος apesar da semelhança final?",
+      "Como a concordância limita a interpretação de um particípio encontrado num texto?"
+    ]
+  },
+  {
+    "id": "am-m-perfeito-ativo",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-perfeito-ativo",
+    "order": 27,
+    "title": "Reduplicação e perfeito: pistas de formação não são uma tradução temporal",
+    "summary": "Distinga reconhecer o perfeito de explicar sua relação com um estado ou acontecimento.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma pista conhecida não resolve todos os casos",
+        "body": "A reduplicação é apresentada cedo no estudo do perfeito porque ajuda a reconhecer muitas formas. Sua utilidade não torna toda repetição inicial um perfeito, nem exige que todo verbo apresente a mesma aparência superficial de λέλυκα. O comportamento da base e as particularidades lexicais precisam ser considerados. A identificação segura reúne o conjunto de pistas e a relação entre formas de um mesmo lema. Aprender a série regular é indispensável, mas o modelo deve servir à comparação, e não substituir o repertório real por palavras fabricadas segundo uma receita."
+      },
+      {
+        "heading": "Perfeito e perfectivo não são sinônimos",
+        "body": "A semelhança entre os nomes pode produzir um erro conceitual: usar “perfeito” e “perfectivo” como etiquetas intercambiáveis. Um é o nome tradicional de uma série verbal; o outro participa da descrição aspectual e deve ser compreendido segundo a abordagem adotada. No programa orientado por Porter, a análise de aspecto precisa permanecer distinta da simples identificação de um tempo verbal tradicional. A formação de λέλυκα pode ser reconhecida antes de se discutir detalhadamente a contribuição interpretativa do perfeito. Saber o rótulo morfológico não encerra essa discussão."
+      },
+      {
+        "heading": "A tradução portuguesa reúne várias decisões",
+        "body": "Uma tradução que emprega “tem feito”, “fez” ou uma expressão de estado não fornece, por si só, uma definição do perfeito grego. O português organiza suas formas e seus usos de outro modo. A análise deve investigar o lema, os participantes e a relação que o enunciado estabelece, sem presumir que uma construção portuguesa corresponde a todas as ocorrências. Também é necessário distinguir uma consequência que o contexto torna relevante de uma informação obrigatoriamente expressa por cada forma. Uma paráfrase útil de um exemplo não se transforma automaticamente em propriedade universal da série."
+      },
+      {
+        "heading": "Como ler uma divergência de gramáticas",
+        "body": "Quando duas gramáticas descrevem o perfeito de maneiras diferentes, compare a pergunta que cada uma está respondendo. Uma pode organizar formações e traduções iniciais; outra pode propor uma análise semântica da categoria. Procure as definições empregadas, os dados examinados e os limites admitidos pela explicação. Não conclua que todo desacordo é apenas terminológico, mas também não suponha que nomes diferentes provem análises incompatíveis em todos os exemplos. O estudo morfológico prepara essa comparação ao tornar segura a identificação das formas antes que as hipóteses interpretativas sejam avaliadas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 25."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que perfeito e perfectivo não podem ser tratados como o mesmo rótulo?",
+      "Como testar se uma paráfrase portuguesa descreve apenas um exemplo ou toda a série?"
+    ]
+  },
+  {
+    "id": "am-m-perfeito-medio-passivo",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-perfeito-medio-passivo",
+    "order": 28,
+    "title": "Sem kappa não significa incompleto: outra arquitetura do perfeito",
+    "summary": "Compare as séries ativas e médias/passivas sem tomar um modelo como medida exclusiva do outro.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "O padrão ativo não é uma receita universal",
+        "body": "Depois de memorizar um perfeito ativo regular, o aluno pode esperar encontrar os mesmos marcadores em qualquer forma perfeita. A série média/passiva exige abandonar essa expectativa. Sua organização não precisa conservar o kappa do modelo ativo para ser reconhecida como perfeita. A ausência de uma pista característica de outra família não é ausência de categoria. O reconhecimento precisa ser feito por correspondências pertinentes à série examinada. Essa mudança de perspectiva evita chamar de incompleta uma forma que simplesmente segue outra organização de tema e terminações."
+      },
+      {
+        "heading": "Compare λέλυκα e λέλυμαι",
+        "body": "As duas formas de referência pertencem ao perfeito de λύω, mas sua análise de voz e sua formação não são idênticas. A comparação deve ser feita em mais de uma pessoa para que o aluno reconheça uma série, e não apenas um par de palavras memorizado. O final de λέλυμαι se relaciona com o conjunto de terminações aprendido nessa família. Isso não permite transferir automaticamente todas as interpretações do presente médio/passivo para o perfeito. A série verbal e a construção precisam continuar integradas à identificação da ocorrência."
+      },
+      {
+        "heading": "Quando o tema termina em consoante",
+        "body": "O encontro entre uma base consonantal e as terminações pode produzir uma aparência menos transparente do que a do modelo de λύω. Por isso, o estudo de uma família regular deve ser acompanhado de exemplos lexicais e de suas relações efetivamente documentadas. Formas como γέγραπται são reconhecidas com apoio no lema γράφω e em sua família, não apenas por uma procura da sequência γράφ em todos os lugares. A hipótese de tema precisa explicar alterações pertinentes, mas não autoriza expandir livremente qualquer combinação até chegar ao lema desejado."
+      },
+      {
+        "heading": "O que uma leitura de estado precisa demonstrar",
+        "body": "Uma tradução usual como “está escrito” é informativa, mas não deve substituir a análise. Identifique pessoa e número, reconheça a série e examine a relação estabelecida no contexto. Se a explicação propuser um estado relevante, diga como o enunciado o apresenta e qual papel o lema desempenha nessa leitura. O procedimento permite comparar descrições do perfeito sem confundir uma boa tradução de γέγραπται com definição completa de todas as formas médias/passivas perfeitas. A comparação teórica começa com dados morfológicos estáveis e continua no nível da interpretação."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 26."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que o modelo com kappa não define toda forma do perfeito?",
+      "Que papel a família lexical de γράφω exerce no reconhecimento de γέγραπται?"
+    ]
+  },
+  {
+    "id": "am-m-mais-que-perfeito",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-mais-que-perfeito",
+    "order": 29,
+    "title": "Uma família perfeita em formas raras: paradigma, uso e interpretação",
+    "summary": "Examine o que se conserva e o que muda quando o tema perfeito aparece em diferentes categorias.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "A série não se reduz à forma mais conhecida",
+        "body": "O perfeito costuma ser apresentado pelo indicativo, mas um tema verbal não se identifica com uma única palavra de referência. Ao comparar λέλυκα, λελυκέναι e λελυκώς, o leitor encontra uma organização comum acompanhada de flexões diferentes. O infinitivo não recebe pessoa; o particípio exige categorias nominais. O mais-que-perfeito acrescenta outra série finita a esse repertório. Estudar essas relações permite tratar uma forma rara como parte de um sistema, em vez de acrescentá-la a uma lista de exceções sem ligação com os conhecimentos já adquiridos."
+      },
+      {
+        "heading": "Uma família frequente pode ter membros pouco frequentes",
+        "body": "οἶδα é útil para observar a distância entre familiaridade lexical e transparência morfológica. O leitor pode conhecer muito bem sua tradução usual e ainda hesitar diante de ᾔδει ou εἰδῆτε. A primeira forma pertence ao mais-que-perfeito; a segunda, ao perfeito subjuntivo. A tradução portuguesa pode empregar “sabia” e “saibam”, respectivamente. Isso demonstra que o tempo da tradução não constitui um teste suficiente da categoria grega. A identificação depende da família efetivamente documentada e do paradigma ao qual a ocorrência pertence."
+      },
+      {
+        "heading": "A hipótese aspectual vem depois da identificação",
+        "body": "Na orientação adotada pelo curso, a proposta de Porter relaciona perfeito e mais-que-perfeito ao aspecto estativo. Essa descrição teórica precisa ser distinguida da tarefa de reconhecer tema, modo, pessoa e número. Uma discussão de aspecto pergunta como a situação é apresentada; uma discussão da localização temporal examina também o contexto. Evite definir a série simplesmente como um passado mais distante que outro passado. Essa paráfrase pode ajudar numa tradução particular, mas não explica, sozinha, as relações entre todas as categorias construídas com o tema perfeito."
+      },
+      {
+        "heading": "Raridade pede consulta seletiva",
+        "body": "Diante de uma forma rara, procure a informação que falta. Se o problema é o lema, consulte formas principais; se é a categoria, compare o paradigma específico; se é a interpretação, leia a construção completa. Uma tabela de modelos regulares não prova que cada célula tenha a mesma frequência nos textos. Tampouco a ausência de uma forma num pequeno corpus prova impossibilidade gramatical. O estudo avançado distingue modelo de formação, ocorrência documentada e hipótese interpretativa, registrando qual dessas três coisas sustenta cada conclusão."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 25–27."
+      }
+    ],
+    "discussionQuestions": [
+      "Que informação é conservada na relação entre λέλυκα e λελυκώς, e quais categorias precisam mudar?",
+      "Por que a tradução “saibam” não transforma εἰδῆτε em presente morfológico?"
+    ]
+  },
+  {
+    "id": "am-m-verbos-mi",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-verbos-mi",
+    "order": 30,
+    "title": "Atemático não é irregular em tudo: duas organizações da flexão",
+    "summary": "Compare temas e terminações dos verbos em -μι sem medir todas as séries pelo modelo de λύω.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Regularidade depende da família comparada",
+        "body": "Chamar um verbo em -μι de “irregular” pode ser uma abreviação pedagógica, mas também pode esconder sua organização. A classe atemática apresenta relações recorrentes entre tema e terminações, embora não reproduza a vogal temática do modelo em -ω nas séries pertinentes. A pergunta produtiva é quais formas pertencem ao mesmo padrão e onde esse padrão deixa de prever o comportamento do lema. Essa mudança de perspectiva permite reconhecer regularidades locais sem exigir que todos os verbos tenham a mesma arquitetura de λύω."
+      },
+      {
+        "heading": "Reduplicação não identifica sozinha o perfeito",
+        "body": "δίδωμι e τίθημι apresentam reduplicação no presente. A observação impede transformar a repetição inicial de uma consoante num diagnóstico exclusivo de perfeito. O mesmo tipo geral de mecanismo pode participar de séries distintas; a combinação de tema, vogal, terminações e família lexical é que permite a identificação. Compare δίδωσιν com ἔδωκεν: a relação entre as formas é lexicalmente estável, embora elas não conservem toda a aparência superficial. Memorizar esse par com a categoria correspondente ensina uma ligação que a simples procura por letras repetidas não consegue oferecer."
+      },
+      {
+        "heading": "Um lema pode organizar séries de maneiras diferentes",
+        "body": "A descrição atemática não exige que todas as formas de um verbo se comportem exatamente como seu presente. O repertório precisa ser examinado por séries. Em ἵστημι, a comparação entre ἔστησα e ἔστην também exige atenção ao comportamento da construção: uma diferença de formação pode acompanhar diferenças de transitividade e de sentido. Isso não autoriza uma fórmula universal aplicável a qualquer aoristo semelhante. O aprofundamento consiste em relacionar paradigma e uso lexical, conferindo como cada forma se associa aos participantes no enunciado estudado."
+      },
+      {
+        "heading": "Uma comparação que pode ser testada",
+        "body": "Monte um pequeno conjunto com δίδωμι, τίθημι e seus compostos. Compare primeiro as formas de uma mesma série e pessoa; depois, compare séries do mesmo lema. Assim, uma mudança de pessoa não se confunde com uma mudança de tema. Acrescente à ficha a fonte consultada e uma ocorrência completa. Se uma análise depende de uma forma principal memorizada, diga isso explicitamente. Reconhecer os limites de uma regra é parte do domínio do sistema: uma explicação útil prevê relações reais e indica quais outras relações dependem do conhecimento lexical."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 18 e 21."
+      },
+      {
+        "title": "McLean, B. H. New Testament Greek: An Introduction. Cambridge University Press, 2011, cap. 20, pp. 176–183.",
+        "url": "https://www.cambridge.org/core/books/abs/new-testament-greek/athematic-conjugation-verbs-part-1-the-indicative-mood/D5E3F208C67A88975C8FFB1584B6A373"
+      }
+    ],
+    "discussionQuestions": [
+      "Que erro surge quando toda reduplicação é tratada como marca exclusiva do perfeito?",
+      "Como uma comparação entre séries ajuda mais do que comparar apenas as formas do presente?"
+    ]
+  },
+  {
+    "id": "am-m-liquidos",
+    "area": "morphology",
+    "level": 2,
+    "lessonId": "m-liquidos",
+    "order": 31,
+    "title": "Quando o sigma desaparece: regra sonora e identidade do tema",
+    "summary": "Explore a diferença entre reconhecer uma família e reconstruir mecanicamente qualquer forma.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma regra inicial encontra outro padrão",
+        "body": "O modelo λύω, λύσω, ἔλυσα torna o sigma uma pista fácil de memorizar. Essa pista tem utilidade inicial, mas não define sozinha futuro e aoristo. As famílias com líquidas e nasais mostram por que uma generalização deve incluir seu domínio de aplicação. μενῶ pertence ao futuro de μένω, enquanto ἔμεινα pertence ao aoristo. Nenhuma das duas formas apresenta o sigma visível do primeiro modelo aprendido. A categoria é reconhecida pela relação entre tema, flexão e repertório lexical, e não por uma letra tratada como condição universal."
+      },
+      {
+        "heading": "Descrição da forma e explicação histórica",
+        "body": "Uma gramática pode descrever diretamente os paradigmas disponíveis ao leitor; outra pode explicar como certas diferenças surgiram na história da língua. São tarefas relacionadas, mas distintas. Uma explicação histórica de perda consonantal ou alteração vocálica não significa que o aluno possa inverter qualquer mudança sem restrições. A reconstrução precisa respeitar o ambiente e a família lexical. Para ler o Novo Testamento, o primeiro objetivo é identificar a forma documentada. A história esclarece relações e limita analogias; ela não substitui a consulta de um paradigma quando há variantes ou dúvidas."
+      },
+      {
+        "heading": "O acento participa do contraste escrito",
+        "body": "κρίνω e κρινῶ oferecem um contraste instrutivo: uma diferença pequena na escrita acompanha a distinção entre presente e futuro de primeira pessoa singular. A observação exige leitura da palavra inteira, inclusive sua acentuação. Isso não significa que todo acento, isoladamente, decida a série verbal em qualquer lema. Em textos sem todos os sinais modernos, o leitor depende ainda mais da construção e da identidade lexical. A comparação ajuda a compreender por que as convenções editoriais facilitam o estudo, sem confundi-las com um substituto para a análise gramatical."
+      },
+      {
+        "heading": "Alternância não equivale a outro verbo",
+        "body": "Em μένω e ἔμειναν, a diferença vocálica não obriga a postular outro lema. Reconhecer a alternância permite recuperar a família e, depois, analisar pessoa e número. O percurso inverso também é útil: parta do lema e confira quais temas ele efetivamente apresenta. Ao registrar um erro, diferencie desconhecimento da família e confusão de terminação. O primeiro pede uma associação lexical mais firme; o segundo pede comparação entre formas da mesma série. Essa distinção produz uma revisão mais precisa do que repetir indefinidamente uma tabela inteira já parcialmente dominada."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 23."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que o sigma é uma pista útil, mas não uma definição suficiente de futuro ou aoristo?",
+      "Que limites precisam acompanhar uma explicação histórica usada para recuperar um tema?"
+    ]
+  },
+  {
+    "id": "am-m-optativo",
+    "area": "morphology",
+    "level": 3,
+    "lessonId": "m-optativo",
+    "order": 32,
+    "title": "O que uma forma rara ensina sobre modo, frequência e contexto",
+    "summary": "Discuta o optativo sem reduzi-lo a uma tradução fixa ou a uma curiosidade de paradigma.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Frequência não mede importância de uma ocorrência",
+        "body": "O optativo aparece menos no Novo Testamento do que os modos verbais mais estudados. Essa distribuição justifica dedicar menos tempo inicial à produção de paradigmas extensos, mas não permite ignorar uma ocorrência que participa da argumentação de um texto. É preciso distinguir prioridade pedagógica e análise local. Uma categoria rara pode ter papel decisivo numa passagem específica. Além disso, a frequência de uma forma num corpus não descreve automaticamente sua distribuição em todos os períodos, gêneros e variedades da língua grega."
+      },
+      {
+        "heading": "Um desejo não constitui toda a definição",
+        "body": "μὴ γένοιτο é uma expressão particularmente conhecida e costuma ser traduzida por uma rejeição enfática ou por um desejo negativo. γένοιτο é aoristo médio optativo, terceira pessoa singular, de γίνομαι. O conhecimento dessa fórmula ajuda no reconhecimento, mas pode gerar um atalho indevido: presumir que todo optativo deve receber a mesma tradução. A análise de modo precisa ser acompanhada da construção em que ele participa. Negação, partículas, dependência sintática e contexto contribuem para explicar o valor de uma ocorrência concreta."
+      },
+      {
+        "heading": "O contraste precisa preservar a família lexical",
+        "body": "Compare γένοιτο com ἐγένετο. As formas pertencem ao mesmo lema e à série aorista, mas diferem em modo e formação. Uma oposição entre dois exemplos controlados revela mais do que procurar a sequência οι em qualquer palavra. Essa sequência também ocorre fora do optativo. A identificação depende do conjunto morfológico e da classe da palavra. O aluno avançado deve conseguir explicar tanto por que a hipótese de optativo funciona num caso quanto por que a mesma pista gráfica seria insuficiente num substantivo ou pronome."
+      },
+      {
+        "heading": "Comparar gramáticas requer delimitar o corpus",
+        "body": "Quando uma gramática dedica muitas páginas ao optativo e outra oferece uma exposição breve, a diferença pode refletir seus objetivos e corpora, além de escolhas teóricas. Uma descrição ampla do grego clássico não deve ser aplicada sem ajustes à distribuição neotestamentária. A apresentação de Porter orienta o reconhecimento no programa de grego do Novo Testamento; consultas comparativas podem ampliar o horizonte, desde que o leitor registre o período e o tipo de texto estudados. A pergunta relevante é qual análise explica esta construção, e não qual obra apresenta a maior quantidade de etiquetas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 30."
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença existe entre reconhecer γένοιτο numa fórmula e compreender todos os usos do optativo?",
+      "Como o período e o corpus podem explicar diferenças de extensão entre duas gramáticas?"
+    ]
+  },
+  {
+    "id": "am-m-comparacao-numerais",
+    "area": "morphology",
+    "level": 3,
+    "lessonId": "m-comparacao-numerais",
+    "order": 33,
+    "title": "Classe, flexão e escala: por que -ων não identifica um particípio",
+    "summary": "Compare adjetivos, graus de comparação e numerais sem confundir semelhança gráfica e identidade gramatical.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma terminação pode atravessar classes",
+        "body": "O leitor que aprendeu λύων pode associar rapidamente o final -ων a um particípio. Essa associação precisa ser controlada quando surge μείζων, forma comparativa de um adjetivo. A semelhança da sequência final não determina a classe lexical. A análise deve recuperar a família e verificar a flexão correspondente. Isso mostra uma diferença entre um sinal de reconhecimento e uma definição: o sinal sugere uma hipótese, enquanto a identificação exige que o restante da palavra e seu comportamento sejam compatíveis com ela."
+      },
+      {
+        "heading": "A comparação também possui organização lexical",
+        "body": "μέγας, μείζων e μέγιστος integram relações de grau que não podem ser obtidas simplesmente anexando a mesma terminação ao nominativo positivo. A memória lexical participa da identificação, assim como participa da recuperação de temas verbais distintos. Ao mesmo tempo, reconhecer a família comparativa não resolve automaticamente caso, gênero e número. É preciso distinguir duas perguntas: a que adjetivo pertence a forma e como ela está flexionada nesta ocorrência? A primeira organiza a relação lexical; a segunda explica sua participação no grupo nominal e na oração."
+      },
+      {
+        "heading": "Três gêneros não exigem três paradigmas iguais",
+        "body": "O conjunto εἷς, μία, ἕν mostra como um numeral pode expressar distinções de gênero com formas bastante diferentes. Uma descrição adequada preserva a relação entre elas sem tentar fazê-las parecer idênticas. Em τρεῖς e τρία, a distribuição formal já se organiza de outro modo. O número designado pelo numeral também não deve ser confundido com a categoria de número da palavra: dizer “três” é uma informação lexical de quantidade, enquanto singular e plural pertencem à análise gramatical. Essas dimensões interagem, mas respondem a perguntas diferentes."
+      },
+      {
+        "heading": "Concordância restringe sem inventar precisão",
+        "body": "ἑνός pode ser genitivo masculino ou neutro. O grupo em que aparece pode fornecer informação suficiente para escolher entre as possibilidades, mas a palavra isolada não precisa fazê-lo. Essa coincidência formal exemplifica o sincretismo: uma mesma forma atende a mais de uma posição do paradigma. O fenômeno não é defeito da língua nem falta de competência do leitor. O domínio consiste em registrar as possibilidades, procurar as relações pertinentes e reconhecer quando a evidência ainda não permite uma escolha. Uma tradução portuguesa com gênero expresso não constitui, sozinha, prova da análise grega."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 7, 19 e 29."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que μείζων não pode ser classificado como particípio apenas por seu final?",
+      "Como distinguir quantidade lexical e número gramatical ao analisar um numeral?"
+    ]
+  },
+  {
+    "id": "am-m-formas-principais",
+    "area": "morphology",
+    "level": 3,
+    "lessonId": "m-formas-principais",
+    "order": 34,
+    "title": "Entre regra e memória: o que as formas principais realmente organizam",
+    "summary": "Investigue como uma rede de temas permite reconhecer verbos sem prometer gerar todas as formas possíveis.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Um mapa lexical, não seis verbos",
+        "body": "As formas principais organizam pontos de referência de um mesmo lema. O conjunto de λύω permite relacionar séries presentes, futuras, aoristas e perfeitas sem tratar cada tema como uma entrada lexical independente. A organização é econômica porque mostra onde o conhecimento de uma série apoia a recuperação de outras formas. Isso não significa que as seis posições convencionais tenham o mesmo preenchimento para todos os verbos. Uma lacuna numa tabela pode pedir consulta ao repertório do lema, e não a fabricação de uma forma que simplesmente se pareça com o modelo."
+      },
+      {
+        "heading": "Quando a semelhança visual oferece pouco apoio",
+        "body": "ἔρχομαι, ἦλθον e ἐλήλυθα demonstram por que a identidade de um verbo não depende de conservar uma sequência de letras igual em todas as séries. O leitor precisa conhecer a relação lexical entre as bases. Uma vez recuperada essa relação, a análise das terminações volta a ter seu papel habitual. A aprendizagem deve associar formas e categorias, permitindo transitar do lema para a série e da ocorrência para o lema. Decorar somente uma tradução de ἦλθον deixa de fora justamente a ligação que torna o reconhecimento reutilizável em outras flexões."
+      },
+      {
+        "heading": "Raiz, tema e forma de dicionário",
+        "body": "Esses três termos não devem ser empregados como sinônimos automáticos. O lema é a forma convencional de entrada; o tema é a base pertinente à formação examinada; uma análise de raiz pode buscar uma unidade mais abstrata ou histórica. O objetivo da consulta determina o nível de descrição necessário. Para identificar ἦλθεν, recuperar o lema e a série pode ser suficiente. Uma hipótese histórica sobre a origem das bases responde a outra pergunta. Confundir os níveis leva a esperar que o dicionário ofereça uma receita gráfica transparente para toda ocorrência."
+      },
+      {
+        "heading": "O lugar das fórmulas de formação",
+        "body": "Uma fórmula morfológica descreve combinações regulares quando o tema apropriado já é conhecido. Ela não elimina a necessidade de aprender qual tema um lema utiliza. O quadro do Institute of Biblical Greek também organiza as formas por seis partes principais; aqui, essa estrutura pode servir como comparação visual, mantendo a orientação de Porter como referência do curso. Ao revisar, pergunte se o erro esteve na recuperação do tema ou na combinação com a flexão. Essa distinção torna a memória lexical e o reconhecimento dos padrões parceiros de trabalho, em vez de métodos concorrentes."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, Guide to Parsing e apêndice Principal Parts."
+      },
+      {
+        "title": "Institute of Biblical Greek. Greek Verb Chart Overview: organização pelas seis formas principais.",
+        "url": "https://biblicalgreek.org/grammar/verb-chart/"
+      }
+    ],
+    "discussionQuestions": [
+      "Qual parte da identificação de ἦλθεν depende de conhecer a família lexical de ἔρχομαι?",
+      "Em que condições uma fórmula de formação ajuda, e o que ela não informa sozinha?"
+    ]
+  },
+  {
+    "id": "am-m-alteracoes-compostos",
+    "area": "morphology",
+    "level": 3,
+    "lessonId": "m-alteracoes-compostos",
+    "order": 35,
+    "title": "A palavra muda de aparência: limites da análise por segmentos",
+    "summary": "Compare composição, flexão e alteração sonora sem supor que separar prefixos revele todo o significado.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma palavra escrita não exibe sempre sua montagem",
+        "body": "γράφω e γράψω permitem observar como o encontro de elementos numa formação verbal pode produzir uma sequência diferente da base familiar. O reconhecimento não consiste em procurar o lema inteiro dentro de cada forma. É preciso conhecer a relação entre os segmentos e o tema pertinente à série. Ao mesmo tempo, a análise deve evitar o extremo oposto: aceitar qualquer transformação imaginada para chegar a um lema desejado. Uma explicação morfológica precisa respeitar padrões definidos e a família lexical documentada, de modo que possa ser conferida por outros leitores."
+      },
+      {
+        "heading": "Composição e flexão deixam pistas diferentes",
+        "body": "Em ἐξέβαλον, a relação com ἐκβάλλω envolve o composto e a série aorista de βάλλω. Reconhecer ἐκ-/ἐξ- não basta: o leitor também precisa explicar a base βαλ- e a flexão da ocorrência. A presença de um prefixo pode tornar menos transparente a localização do aumento, mas não transforma cada palavra longa num novo paradigma independente. Compare primeiro o composto e o verbo simples nas séries pertinentes; depois observe as alterações no ponto de encontro. Essa ordem ajuda a distinguir informação de composição e informação de flexão."
+      },
+      {
+        "heading": "A etimologia não fornece uma tradução completa",
+        "body": "Separar um composto pode esclarecer sua formação e apoiar a memória, mas não garante recuperar todo o seu sentido em uso. A contribuição de um prefixo deve ser verificada no comportamento lexical da palavra completa. Uma soma literal de duas glossas portuguesas pode produzir uma tradução artificial ou equivocada. A mesma cautela vale quando se atribui ênfase especial a todo prefixo: essa interpretação exige evidência da ocorrência. A análise morfológica identifica relações formais; o estudo lexical e a construção determinam como essas relações participam do sentido do enunciado."
+      },
+      {
+        "heading": "Recuperar o lema não encerra o parsing",
+        "body": "Depois de identificar ἐξέβαλον como forma de ἐκβάλλω, ainda permanece a coincidência entre primeira pessoa singular e terceira pessoa plural do aoristo ativo indicativo. O contexto deve fornecer os elementos pertinentes para a escolha. Esse exemplo separa duas conquistas frequentemente confundidas: reconhecer de qual verbo se trata e determinar todas as categorias da ocorrência. Uma análise avançada informa o que cada evidência resolve. Também registra o que continua aberto, impedindo que a satisfação de recuperar um lema difícil leve a acrescentar automaticamente pessoa, número ou função ainda não demonstrados."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 1, 4, 8, 20 e 23; apêndice Verb Formulas."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que decompor um composto não garante uma tradução adequada ao contexto?",
+      "Quais partes da análise de ἐξέβαλον continuam abertas depois de recuperar o lema?"
+    ]
+  },
+  {
+    "id": "am-m-diagnostico",
+    "area": "morphology",
+    "level": 3,
+    "lessonId": "m-diagnostico",
+    "order": 36,
+    "title": "Uma análise pode ser rigorosa e continuar aberta",
+    "summary": "Discuta sincretismo, evidência contextual e perífrase para distinguir certeza, hipótese e interpretação.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Mais de uma análise pode ser a resposta correta",
+        "body": "O sincretismo ocorre quando uma mesma forma corresponde a posições distintas de um paradigma. ἔλυον, por exemplo, permite primeira pessoa singular ou terceira pessoa plural do imperfeito ativo indicativo. A existência de duas análises não significa que o sistema falhou. Significa que a informação necessária não está toda codificada naquela palavra isolada. O leitor precisa distinguir ambiguidade morfológica e indefinição contextual. Um enunciado pode fornecer um sujeito que resolva a escolha; outro pode depender de informações recuperáveis em uma sequência maior do discurso."
+      },
+      {
+        "heading": "O contexto restringe possibilidades reais",
+        "body": "O contexto não é uma autorização para atribuir qualquer categoria que produza uma tradução conveniente. Primeiro, determine quais análises são compatíveis com a forma. Depois, verifique concordância, dependências e relações que favorecem uma delas. Em λύετε, a coincidência entre indicativo e imperativo exige examinar a construção; a tradução portuguesa escolhida não pode funcionar como prova independente da decisão que a produziu. O procedimento evita raciocínio circular: escolher a interpretação desejada, traduzir segundo ela e usar essa tradução para afirmar que a análise foi demonstrada."
+      },
+      {
+        "heading": "Da palavra para a construção perifrástica",
+        "body": "Uma combinação de εἰμί com particípio pode participar de uma perífrase verbal. A identificação deve passar por dois níveis: as categorias de cada palavra e a relação estabelecida entre elas. A simples proximidade no texto não resolve a questão. É necessário perguntar se o particípio e o verbo funcionam juntos na predicação e como a construção se relaciona com o restante da oração. A concordância é uma pista relevante, mas o particípio também pode participar de outras relações. Uma etiqueta de perífrase precisa explicar a combinação concreta, não apenas repetir que há duas formas próximas."
+      },
+      {
+        "heading": "Como apresentar uma conclusão verificável",
+        "body": "Uma boa análise distingue observação, hipótese e limite. Registre a forma encontrada, as categorias compatíveis, o indício que favorece a escolha e a alternativa que foi descartada. Quando uma alternativa continuar possível, mantenha-a visível e explique o motivo. Esse procedimento também permite comparar gramáticas: pode haver acordo sobre a morfologia e divergência sobre a função ou a descrição semântica. A organização do diagnóstico segue a orientação de Porter para integrar reconhecimento e leitura, sem transformar a segurança de um rótulo morfológico em certeza automática sobre toda a interpretação do texto."
+      }
+    ],
+    "references": [
+      {
+        "title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, Guide to Parsing; caps. 6, 24 e 28."
+      }
+    ],
+    "discussionQuestions": [
+      "Como evitar que uma tradução escolhida seja usada como prova circular do próprio parsing?",
+      "Que evidência adicional você pediria antes de classificar εἰμί com particípio como perífrase?"
+    ]
+  }
+]

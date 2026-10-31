@@ -21,3 +21,11 @@ Cada lição deve conter conteúdo substantivo, exemplos conferidos e questões 
 O enunciado deve funcionar fora do artigo: apresente a forma ou oração necessária e nomeie o que deve ser identificado (caso, gênero, função, sentido ou comparação teórica). Evite referências como “no primeiro exemplo” sem incluir esse exemplo. Em formas sincréticas, forneça contexto ou preserve as análises possíveis. Nas ordenações, explicite a sequência solicitada; não apresente uma ordem didática como a única tradução natural. Alternativas e pares devem ter uma única correspondência correta.
 
 Os artigos atuais mostram “Texto produzido por IA”. O campo opcional `author`, com o nome do autor, deve ser usado quando um texto de autoria humana for fornecido e identificado pelo responsável do projeto. Ele muda apenas a assinatura daquele artigo; não atribua textos gerados ao responsável pelo site.
+
+## Aulas e aprofundamentos
+
+Os arquivos `morphology.json`, `syntax.json` e `vocabulary-lessons.json` guardam as aulas do Percurso e os exercícios avaliados. Seus IDs continuam vinculados ao progresso anterior. A rota principal de uma aula é `#/area/lesson/id`; os antigos links `#/area/article/id-da-aula` continuam abrindo a aula.
+
+Os arquivos `articles-morphology.json`, `articles-syntax.json` e `articles-vocabulary.json` guardam os aprofundamentos da aba Artigos. Cada registro tem `id` próprio, `area`, `level`, `lessonId`, `order`, `title`, `summary`, `minutes`, `sections`, `references` e `discussionQuestions`. O `lessonId` deve apontar para uma aula da mesma área e nível. O texto precisa desenvolver uma discussão diferente da explicação básica; não copie o corpo da aula. As perguntas de reflexão não geram nota ou tentativas no histórico de exercícios.
+
+As referências de aprofundamentos aceitam `{ "title": "Título da fonte", "url": "https://..." }`; a URL é opcional para referências bibliográficas impressas. Atribuições de posições a autores precisam de fonte identificável. Marcar um artigo como lido não conclui a aula correspondente. O aviso de IA fica no fim dos artigos de aprofundamento.

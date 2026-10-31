@@ -1,0 +1,1381 @@
+[
+  {
+    "id": "as-s-what-is-syntax",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-what-is-syntax",
+    "order": 1,
+    "title": "Quando uma análise gramatical realmente explica o texto?",
+    "summary": "Diferencie a identificação de formas, a descrição de relações e uma interpretação sustentada por evidências.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma resposta pode estar correta e ainda ser insuficiente",
+        "body": "Reconhecer λόγος como nominativo singular é uma informação morfológica. Dizer que ele funciona como sujeito já envolve sua relação com um predicado. Propor que o autor o colocou em determinada posição para contrastá-lo com outra ideia é uma hipótese discursiva. Essas respostas pertencem a níveis diferentes e não se substituem. A análise se torna mais precisa quando o estudante declara qual pergunta está respondendo, em vez de reunir todos os rótulos disponíveis numa única lista aparentemente explicativa."
+      },
+      {
+        "heading": "O que mudaria se a análise fosse outra?",
+        "body": "Compare o exemplo didático ὁ μαθητὴς γράφει τὴν ἐπιστολήν, “o aluno escreve a carta”, com ἡ ἐπιστολὴ γράφεται, “a carta é escrita”. O substantivo que designa a carta participa do mesmo acontecimento geral, mas ocupa funções diferentes nas duas construções. Uma explicação sintática deve mostrar essa diferença de organização. Não basta afirmar que uma palavra representa uma coisa, uma pessoa ou uma ideia: o significado do referente não determina sozinho seu lugar gramatical."
+      },
+      {
+        "heading": "Três compromissos de uma boa explicação",
+        "body": "Primeiro, apresente a evidência observável: flexão, concordância, posição, presença de artigo ou tipo de complemento. Depois, formule a relação que essa evidência favorece. Por fim, mostre o efeito interpretativo da proposta. Se uma oração admitir duas análises, a tarefa não é esconder a segunda, mas identificar qual informação falta para decidir. O contexto mais amplo pode resolver uma ambiguidade que a morfologia, tomada isoladamente, deixa inteiramente aberta. A conclusão deve ter a mesma força que seus argumentos."
+      },
+      {
+        "heading": "Da classificação à leitura responsável",
+        "body": "Porter fornece o eixo gramatical deste curso, mas conhecer sua terminologia não dispensa demonstrar como ela se aplica a cada enunciado. Ao consultar outra gramática, verifique se o autor usa o mesmo nome para a mesma relação. Para aprofundar uma passagem, escreva uma pequena justificativa em prosa: qual é a construção, que elementos a sustentam e que alternativa foi considerada. Esse exercício desenvolve uma leitura verificável e permite revisar a interpretação quando surgirem novos dados, sem transformar toda mudança de rótulo numa mudança automática de sentido."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, introdução e cap. 20."
+      }
+    ],
+    "discussionQuestions": [
+      "Na passagem da construção ativa “o aluno escreve a carta” para a passiva “a carta é escrita”, o que muda na função sintática da carta e o que permanece em sua participação no acontecimento?",
+      "Como você distinguiria, numa anotação de leitura, uma forma reconhecida, uma relação sintática proposta e uma hipótese sobre o efeito discursivo da ordem das palavras?"
+    ]
+  },
+  {
+    "id": "as-s-phrases",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-phrases",
+    "order": 2,
+    "title": "Onde começa e termina um grupo de palavras?",
+    "summary": "Investigue os limites dos sintagmas e veja por que uma tradução palavra por palavra pode criar relações inexistentes.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Reconhecer constituintes, não apenas sequências",
+        "body": "Um sintagma é um grupo organizado em torno de um núcleo, mas seus limites nem sempre coincidem com uma faixa contínua e visualmente destacada do texto. O grego pode separar elementos relacionados e acrescentar grupos dentro de outros grupos. Em ὁ λόγος τοῦ διδασκάλου, o genitivo participa da identificação de λόγος; não é uma oração independente. A pergunta inicial é que palavras estabelecem uma unidade de funcionamento, e não simplesmente quantas aparecem entre dois sinais de pontuação."
+      },
+      {
+        "heading": "A dependência pode formar vários níveis",
+        "body": "Considere o grupo didático ἡ φωνὴ τοῦ ἀδελφοῦ τοῦ διδασκάλου. Uma leitura possível é “a voz do irmão do professor”: o último genitivo depende de “irmão”, enquanto o grupo inteiro dos genitivos especifica “voz”. Traduzir todos os termos numa lista de equivalentes não registra essa hierarquia. Um esquema com colchetes ajuda: [a voz [do irmão [do professor]]]. Antes de adotá-lo, porém, examine se o contexto realmente identifica esse encadeamento ou favorece outra relação entre os referentes."
+      },
+      {
+        "heading": "Testes são pistas, não demonstrações mecânicas",
+        "body": "Substituir mentalmente um grupo por um pronome pode ajudar a perceber que seus componentes funcionam juntos. Perguntar a que termo um adjetivo concorda também é útil. Nenhum teste isolado é infalível: a concordância pode ser compatível com mais de um substantivo e a ordem pode colocar o modificador longe do núcleo. Quando duas pistas divergem, investigue o alcance do modificador e a coerência da construção completa. A dificuldade deve aparecer na análise, em vez de ser apagada por um desenho excessivamente simples."
+      },
+      {
+        "heading": "O ganho para a interpretação",
+        "body": "Uma tradução fluente frequentemente esconde a estrutura que permitiu produzi-la. Para estudar com profundidade, faça o movimento inverso: reconstrua os grupos e explique que informação cada dependente acrescenta. Diferencie a descrição de uma característica, a identificação de um possuidor e a seleção de um complemento exigido por um nome. Esse trabalho mostra onde uma interpretação depende da sintaxe e onde depende do conhecimento contextual. Depois de estabelecer os limites, traduza a unidade inteira e confira se a versão portuguesa preserva as mesmas dependências."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 5, 6, 9 e 20."
+      }
+    ],
+    "discussionQuestions": [
+      "Em ἡ φωνὴ τοῦ ἀδελφοῦ τοῦ διδασκάλου, como você representaria a leitura “a voz do irmão do professor” com grupos encaixados? Que contexto poderia favorecer outro agrupamento?",
+      "Se um adjetivo estiver distante do substantivo com que parece concordar, que pistas você combinaria para decidir os limites do sintagma?"
+    ]
+  },
+  {
+    "id": "as-s-clauses",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-clauses",
+    "order": 3,
+    "title": "Predicação sem contar verbos: como reconhecer uma oração",
+    "summary": "Explore orações nominais, predicações secundárias e os limites da pontuação editorial.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Por que contar formas verbais não resolve",
+        "body": "Uma oração organiza uma predicação, mas nem toda predicação apresenta um verbo finito expresso. Uma sequência como ἡ εἰρήνη ἀγαθή, “a paz é boa”, atribui uma qualidade a um referente mesmo sem uma forma escrita de εἰμί. No outro extremo, uma única oração pode conter várias formas verbais dependentes. Contar verbos serve como levantamento inicial, não como critério suficiente para dividir o texto. A pergunta decisiva é que relação está sendo afirmada, perguntada, desejada ou apresentada como dependente de outra."
+      },
+      {
+        "heading": "Predicações dentro de predicações",
+        "body": "No exemplo didático βλέπω τὸν μαθητὴν γράφοντα, “vejo o aluno escrevendo”, γράφοντα introduz uma atividade associada ao aluno, mas participa da construção selecionada por “ver”. Há informação predicativa adicional sem uma nova oração independente com verbo finito. Essa observação ajuda a separar duas decisões: reconhecer uma predicação e determinar o grau de dependência que ela tem. Tratar cada forma verbal como uma frase autônoma pode desfazer justamente a relação de percepção expressa pelo conjunto."
+      },
+      {
+        "heading": "A pontuação também interpreta",
+        "body": "As edições oferecem pontos, vírgulas e outros sinais para orientar a leitura. Esses sinais são valiosos, mas não constituem uma flexão grega capaz de decidir qualquer estrutura por si mesma. Ao encontrar uma divisão difícil, procure conectores, concordância e construções que continuam através do limite proposto. Experimente duas segmentações e descreva o que cada uma faria com os participantes e os complementos. A escolha de pontuação deve poder ser defendida linguisticamente, não apenas repetida porque uma tradução conhecida organizou o período daquela maneira."
+      },
+      {
+        "heading": "Separar forma, dependência e ato comunicativo",
+        "body": "Uma oração dependente pode apresentar um conteúdo afirmado pelo personagem, mas não endossado pelo narrador. Outra pode introduzir uma hipótese ou finalidade. Assim, identificar uma unidade de predicação não resolve ainda quem assume seu conteúdo e com que compromisso. Anote esses três níveis em separado: que construção existe, de que outra expressão ela depende e qual é seu papel no enunciado. Essa prática evita tanto dividir demais uma frase longa quanto reunir sob um único predicado relações que o autor mantém distintas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 4, 14 e 20."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que a oração nominal ἡ εἰρήνη ἀγαθή e a construção βλέπω τὸν μαθητὴν γράφοντα mostram limites diferentes do procedimento de contar verbos finitos?",
+      "Ao comparar duas pontuações de um período, quais conectores, concordâncias e dependências você examinaria antes de escolher onde termina uma oração?"
+    ]
+  },
+  {
+    "id": "as-s-subject-predicate",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-subject-predicate",
+    "order": 4,
+    "title": "Sujeito, agente e tópico: três perguntas diferentes",
+    "summary": "Aprenda a distinguir organização gramatical, participação no acontecimento e assunto do discurso.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O sujeito não é necessariamente quem age",
+        "body": "A pergunta “quem pratica a ação?” funciona em alguns exemplos ativos e transitivos, mas falha como definição geral de sujeito. Em ὁ μαθητὴς διδάσκεται, “o aluno é ensinado”, o aluno é sujeito, embora seja apresentado como quem recebe o ensino. Verbos de estado, experiência ou existência também mostram o limite desse atalho. A identificação do sujeito precisa considerar a construção e a concordância; a descrição de seu papel no acontecimento pertence a uma segunda etapa da análise."
+      },
+      {
+        "heading": "Uma relação não precisa de um nome escrito",
+        "body": "Uma forma verbal pessoal pode apresentar uma oração sem substantivo ou pronome nominativo expresso. Em γράφομεν, “escrevemos”, a primeira pessoa plural fornece informação sobre o sujeito, mas o contexto identifica quem integra esse “nós”. Acrescentar automaticamente um pronome na descrição do original mistura o que está escrito com o que a tradução portuguesa torna explícito. É melhor registrar que o sujeito não foi expresso por um grupo nominal e que sua referência é recuperável pela flexão e pelo contexto."
+      },
+      {
+        "heading": "O tópico pode ocupar outra função",
+        "body": "Uma sequência pode continuar falando do mesmo aluno mesmo quando ele aparece como objeto, destinatário ou pronome numa oração seguinte. O assunto do discurso, portanto, não coincide sempre com o sujeito de cada frase. Ao acompanhar um participante, mantenha dois registros: sua função em cada construção e sua continuidade ao longo do parágrafo. Isso permite explicar por que uma mudança de sujeito não representa necessariamente uma mudança completa de assunto, e por que uma expressão inicial pode apresentar o cenário em vez do participante central."
+      },
+      {
+        "heading": "Um procedimento que preserva as distinções",
+        "body": "Comece pelo predicado e identifique os participantes que sua construção permite. Em seguida, estabeleça o sujeito e descreva seu papel semântico: agente, paciente ou outra relação apropriada ao exemplo. Só então pergunte o que já estava em discussão e que elemento o enunciado desenvolve. Se a informação disponível não decidir um desses pontos, diga-o. A precisão não está em escolher um único rótulo que pareça explicar tudo, mas em relacionar descrições diferentes sem fazer delas equivalentes automáticos."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 3, 4 e 20."
+      }
+    ],
+    "discussionQuestions": [
+      "Em ὁ μαθητὴς διδάσκεται, como você descreveria separadamente o sujeito gramatical e o papel do aluno no acontecimento?",
+      "Se um participante continuar sendo o assunto do parágrafo, mas passar de sujeito a objeto, o que essa mudança revela sobre a diferença entre tópico e função sintática?"
+    ]
+  },
+  {
+    "id": "as-s-complements",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-complements",
+    "order": 5,
+    "title": "Complemento ou circunstância? Os limites do teste da omissão",
+    "summary": "Examine regência, valência e contexto para não confundir palavras dispensáveis com informações sem função estrutural.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "A ausência não determina a categoria",
+        "body": "É comum distinguir complementos de circunstâncias perguntando se um termo pode ser omitido. O teste tem utilidade inicial, mas não oferece uma fronteira absoluta. Um complemento pode ficar implícito porque já é conhecido; uma informação circunstancial pode ser indispensável para que a mensagem faça sentido naquela situação. Gramaticalidade, completude comunicativa e necessidade contextual são avaliações diferentes. Uma análise mais cuidadosa pergunta qual construção o verbo estabelece e como o termo examinado participa dela."
+      },
+      {
+        "heading": "O verbo oferece possibilidades de construção",
+        "body": "No exemplo δίδωμι τὸ βιβλίον τῷ μαθητῇ, “dou o livro ao aluno”, o objeto dado e o destinatário participam da configuração de dar. Já uma indicação acrescentada de tempo situa o acontecimento. Ainda assim, alguém pode dizer apenas “já dei”, deixando o objeto e o destinatário recuperáveis do diálogo. A omissão não transformou esses participantes em elementos estranhos à construção. Para avaliar o caso, compare ocorrências do mesmo verbo e do mesmo sentido, em vez de aplicar uma lista universal de perguntas portuguesas."
+      },
+      {
+        "heading": "Regência não dispensa interpretação",
+        "body": "Um verbo pode selecionar complemento em caso diferente do acusativo; outro pode ocorrer com uma expressão preposicional. É a construção documentada que importa. Além disso, o mesmo verbo pode apresentar mais de um sentido e mais de uma configuração de participantes. Consultar o léxico ajuda quando a pergunta é específica: que tipo de complemento aparece neste uso? O resultado deve ser confrontado com a oração, pois uma possibilidade registrada no verbete não demonstra que todas as ocorrências seguem o mesmo padrão."
+      },
+      {
+        "heading": "Descrever sem forçar uma fronteira",
+        "body": "Na leitura aprofundada, justifique por que um grupo parece selecionado pelo predicado ou acrescentado à predicação. Quando a distinção for discutível, apresente a hipótese e seu efeito interpretativo. É possível preservar a tradução e divergir sobre o estatuto de um constituinte; também é possível que uma análise de regência altere o alcance de um modificador. Compare essas consequências antes de decidir. Um rótulo útil torna as relações mais transparentes e não serve apenas para distribuir cada expressão numa caixa previamente escolhida."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 4, 7 e 20."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que a possibilidade de dizer apenas “já dei” não demonstra que o objeto dado e o destinatário sejam simples circunstâncias do verbo dar?",
+      "Que ocorrências do mesmo verbo você procuraria para avaliar se um grupo preposicional é selecionado pela construção ou acrescenta uma circunstância?"
+    ]
+  },
+  {
+    "id": "as-s-case-and-function",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-case-and-function",
+    "order": 6,
+    "title": "Por que um caso não cabe numa preposição portuguesa",
+    "summary": "Investigue a distância entre forma nominal, relação sintática e escolha de tradução.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "A flexão delimita, mas não traduz",
+        "body": "Reconhecer um genitivo, dativo ou acusativo reduz as possibilidades de análise; não entrega uma frase portuguesa pronta. O mesmo caso participa de construções diferentes, e línguas distintas distribuem essas relações de maneiras distintas. Traduzir todo genitivo por “de”, por exemplo, pode funcionar como anotação provisória de ligação, mas não explica se a relação envolve posse, conteúdo, ação ou outra interpretação. O primeiro cuidado é não confundir um apoio de tradução com a definição gramatical da forma."
+      },
+      {
+        "heading": "A construção muda a pergunta",
+        "body": "Compare um genitivo dependente de um substantivo com um genitivo selecionado por determinado verbo. Nos dois casos a terminação pertence ao mesmo sistema morfológico, mas a relação precisa ser descrita a partir de núcleos diferentes. Também um grupo preposicional exige que caso e preposição sejam lidos conjuntamente. Separar cada palavra e procurar seu equivalente mais frequente pode produzir uma versão aparentemente compreensível que atribui ao caso uma contribuição que, naquela ocorrência, vem da construção completa."
+      },
+      {
+        "heading": "Rótulos semânticos são propostas de leitura",
+        "body": "Categorias como “genitivo de posse” ou “dativo de meio” resumem interpretações recorrentes. Elas são úteis quando vêm acompanhadas de uma paráfrase que esclarece a relação. Não são novos casos ocultos na terminação. Duas gramáticas podem agrupar os mesmos exemplos em conjuntos maiores ou menores, ou destacar critérios diferentes. Ao comparar seus rótulos, pergunte se há desacordo sobre a estrutura, sobre o sentido contextual ou apenas sobre o nível de detalhe escolhido para organizar a descrição."
+      },
+      {
+        "heading": "Traduzir depois de explicitar a relação",
+        "body": "Uma boa anotação registra a forma, identifica seu núcleo ou regente e propõe uma relação em linguagem comum. Só depois escolhe a expressão portuguesa mais adequada. Se duas relações permanecerem possíveis, produza duas paráfrases e procure no contexto o dado que as distingue. Às vezes a tradução conserva a ambiguidade; isso pode ser preferível a resolvê-la sem argumento. A meta do aprofundamento é tornar visível a decisão interpretativa, e não multiplicar termos técnicos que escondam a mesma tradução literal."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 1."
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença existe entre reconhecer um genitivo ligado a um substantivo e interpretar um genitivo selecionado por um verbo?",
+      "Como você registraria uma análise de caso sem depender de uma equivalência fixa como “genitivo significa de”?"
+    ]
+  },
+  {
+    "id": "as-s-article-adjective",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-article-adjective",
+    "order": 7,
+    "title": "Descrever um referente ou fazer uma afirmação sobre ele?",
+    "summary": "Aprofunde a distinção entre configuração atributiva e predicação sem tratar o artigo como o português “o”.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Duas operações que a tradução pode aproximar",
+        "body": "Um adjetivo pode ajudar a identificar ou caracterizar o referente de um grupo nominal, ou constituir uma predicação acerca dele. Compare o grupo didático ὁ ἀγαθὸς μαθητής, “o bom aluno”, com ὁ μαθητὴς ἀγαθός, “o aluno é bom”. A mudança não consiste apenas em deslocar uma qualidade para outra posição gráfica: muda a organização da informação. No primeiro caso o grupo pode funcionar como constituinte de uma oração maior; no segundo, apresenta-se uma afirmação sobre o aluno."
+      },
+      {
+        "heading": "O artigo organiza relações internas",
+        "body": "As configurações com repetição do artigo mostram por que não basta traduzir cada ocorrência por uma palavra portuguesa independente. Em ὁ μαθητὴς ὁ ἀγαθός, o segundo artigo participa da configuração que relaciona o adjetivo ao nome. Uma tradução pode usar “o aluno bom” ou outra formulação apropriada ao contexto, sem reproduzir dois artigos portugueses. O analista deve explicar a relação que o padrão favorece e distinguir esse resultado de uma associação mecânica entre a quantidade de artigos e a quantidade de referentes."
+      },
+      {
+        "heading": "Ausência de artigo não resolve tudo",
+        "body": "Quando o artigo falta, a interpretação pode depender mais amplamente da construção e do contexto. Não transforme a regra inicial de posição num método que dispensa examinar nomes próprios, expressões fixas e usos substantivados. Também é necessário perguntar se a sequência é um grupo nominal, uma oração nominal ou parte de uma predicação mais ampla. A forma do adjetivo e sua concordância dão pistas, mas nem sempre decidem sozinhas a relação entre elementos que compartilham caso, gênero e número."
+      },
+      {
+        "heading": "O que vale a pena comparar entre gramáticas",
+        "body": "Compare primeiro os exemplos e as estruturas reconhecidas, antes dos nomes das categorias. Uma gramática pode destacar posição, outra pode discutir referência, definitude ou força qualitativa. Esses focos não representam necessariamente análises incompatíveis. Para avaliar uma proposta, explique que referente está sendo introduzido ou retomado e que característica é atribuída a ele. Depois confira se sua tradução preserva a diferença entre apresentar “um aluno bom” e afirmar que certo aluno é bom. Uma interpretação mais profunda nasce dessa articulação entre configuração e uso."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 5 e 6."
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença de organização você explicaria entre ὁ ἀγαθὸς μαθητής e ὁ μαθητὴς ἀγαθός, além de observar a posição do adjetivo?",
+      "Se uma expressão não tiver artigo, que outras pistas serão necessárias para avaliar se o adjetivo caracteriza um referente ou participa de uma predicação?"
+    ]
+  },
+  {
+    "id": "as-s-word-order",
+    "area": "syntax",
+    "level": 0,
+    "lessonId": "s-word-order",
+    "order": 8,
+    "title": "A primeira palavra é sempre a mais importante?",
+    "summary": "Examine ordem, continuidade e contraste sem transformar qualquer deslocamento em ênfase.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma observação correta pode gerar uma regra falsa",
+        "body": "O grego permite ordens que diferem das mais familiares em português. Disso não decorre que qualquer posição inicial seja uma marca autossuficiente de ênfase. A organização de um enunciado depende do que os interlocutores já conhecem, do elemento que está sendo contrastado e da conexão com o trecho anterior. Uma palavra pode aparecer cedo porque estabelece um cenário ou retoma um participante. A explicação de sua posição exige comparar essas possibilidades, não apenas sublinhar o primeiro termo."
+      },
+      {
+        "heading": "A sintaxe continua sendo necessária",
+        "body": "Antes de discutir destaque, descubra as dependências e as funções dos constituintes. As flexões permitem reconhecer relações que o português costuma sinalizar fortemente pela ordem, mas não tornam a ordem irrelevante. Em três versões didáticas de “o aluno lê o livro”, mudar a disposição dos grupos pode preservar sujeito e objeto enquanto altera a apresentação da informação. Se a análise morfológica ainda é incerta, uma afirmação sobre foco pode apoiar-se numa estrutura que nunca foi demonstrada."
+      },
+      {
+        "heading": "Perguntar a que sequência o enunciado responde",
+        "body": "Uma experiência útil é imaginar perguntas contextuais diferentes: “Quem lê o livro?”, “O que o aluno lê?” e “O que acontece agora?”. Elas tornam perceptíveis necessidades comunicativas distintas, embora uma mesma sequência possa ocorrer em contextos mais complexos. O exercício não prova que cada ordem grega corresponde exclusivamente a uma dessas perguntas. Ele mostra por que a análise precisa do diálogo ou do parágrafo. A ausência desse contexto deve limitar a segurança com que atribuímos contraste ou foco a um elemento."
+      },
+      {
+        "heading": "Confrontar modelos sem misturar suas categorias",
+        "body": "Porter discute a organização da oração dentro de sua abordagem linguística; estudos de estrutura informacional, como os de Levinsohn, oferecem outros instrumentos para investigar continuidade e desenvolvimento. Use cada proposta com seus próprios critérios. Não substitua “posição inicial” por “tópico”, nem “forma menos frequente” por “palavra teologicamente central”. Ao aprofundar uma passagem, identifique o padrão local, proponha o efeito comunicativo e procure ocorrências comparáveis. Uma conclusão sustentada por vários indícios é mais forte que uma fórmula universal sobre a primeira palavra."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 20."
+      },
+      {
+        "title": "Stephen H. Levinsohn — materiais do autor sobre estrutura informacional e discurso",
+        "url": "https://scholars.sil.org/stephen_h_levinsohn"
+      }
+    ],
+    "discussionQuestions": [
+      "Antes de interpretar uma palavra inicial como enfática, como você investigaria o que já estava em discussão e a que pergunta o enunciado responde?",
+      "Como você distinguiria uma ordem que ajuda a identificar dependências sintáticas de uma ordem interpretada como sinal de contraste no discurso?"
+    ]
+  },
+  {
+    "id": "as-s-nominative",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-nominative",
+    "order": 9,
+    "title": "Quem é o sujeito de uma oração com dois nominativos?",
+    "summary": "Explore os critérios que distinguem sujeito, predicativo e identificação em construções equativas.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O caso compartilhado não iguala as funções",
+        "body": "Em orações com εἰμί, dois grupos no nominativo podem participar da mesma predicação sem exercer a mesma função. Um estabelece o referente de que se fala; o outro apresenta uma identificação, classificação ou caracterização. A simples tradução de ambos por substantivos portugueses não resolve qual organiza a predicação como sujeito. É necessário examinar referência, artigo, pronomes, contexto e a relação entre as duas expressões. O problema mostra claramente por que reconhecer o caso é uma etapa anterior à análise sintática."
+      },
+      {
+        "heading": "Critérios devem ser combinados",
+        "body": "A presença de artigo pode ser uma pista importante, mas não se transforma numa regra que resolve qualquer oração equativa. Considere o exemplo didático ὁ διδάσκαλος φίλος ἐστίν, “o professor é amigo”. O grupo articulado identifica o participante, enquanto φίλος o caracteriza ou o inclui numa classe. Se os dois grupos fossem definidos e recuperáveis no contexto, a interpretação exigiria atenção adicional. Ordem linear e familiaridade da tradução são pistas frágeis quando tratadas isoladamente; comece pela maneira como cada expressão introduz ou retoma seu referente."
+      },
+      {
+        "heading": "Aposto não é um segundo predicado obrigatório",
+        "body": "Um nominativo em aposição pode renomear ou explicar outro grupo no mesmo caso sem constituir, por si só, outra oração. Em um enunciado sobre “o professor, nosso amigo”, a segunda expressão pode ser uma identificação explicativa inserida no grupo. Já “o professor é nosso amigo” apresenta essa relação como predicação principal. A pontuação portuguesa facilita visualizar a diferença, mas a análise grega deve considerar a construção e seu ambiente. Não se deve inferir um verbo elíptico em toda sequência de dois nomes."
+      },
+      {
+        "heading": "Justificar a tradução e seus limites",
+        "body": "Ao escrever uma análise, declare qual expressão é tomada como sujeito e qual relação o predicativo estabelece. Discuta se uma tradução com artigo indefinido acrescentaria uma decisão interpretativa que o original não obriga. Quando a evidência admitir mais de uma organização, preserve a alternativa e explique qual informação contextual pesaria a favor de cada leitura. O objetivo não é eliminar toda ambiguidade por uma regra resumida, mas tornar explícitas as razões pelas quais determinada tradução e determinada descrição sintática foram adotadas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.1–2.1.3."
+      }
+    ],
+    "discussionQuestions": [
+      "Numa oração equativa com dois nominativos, quais indícios você combinaria para distinguir sujeito e predicativo, sem decidir apenas pela ordem?",
+      "Como você diferenciaria uma expressão em aposição de uma segunda predicação e que consequência essa escolha teria para a tradução?"
+    ]
+  },
+  {
+    "id": "as-s-nominal-hanging",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-nominal-hanging",
+    "order": 10,
+    "title": "Uma palavra fora da construção? Entendendo o nominativo pendente",
+    "summary": "Examine o tópico inicial, a retomada pronominal e os limites da ideia de “frase incompleta”.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O problema aparece quando procuramos só concordância",
+        "body": "Alguns enunciados apresentam primeiro um referente e depois constroem uma oração na qual ele é retomado de outra maneira. O nominativo inicial pode não exercer a função de sujeito do verbo seguinte. Em vez de corrigir imediatamente a sequência como se fosse um erro, pergunte que participante ela introduz e como esse participante se conecta ao restante da mensagem. A construção pode organizar o discurso por um tópico destacado, mesmo quando a oração subsequente usa outra pessoa verbal ou outro caso para retomá-lo."
+      },
+      {
+        "heading": "Uma retomada pode ter caso diferente",
+        "body": "No exemplo didático ὁ μαθητής, γράφω αὐτῷ, a primeira expressão introduz “o aluno”; a oração seguinte informa “escrevo a ele”. O dativo αὐτῷ participa da regência de γράφω, enquanto o nominativo inicial apresenta o referente. Uma paráfrase portuguesa com “quanto ao aluno” torna explícita essa organização, mas não significa que haja no original uma preposição omitida que precise ser reconstruída. A diferença de caso é justamente uma pista de que introdução do tópico e função na oração não devem ser confundidas."
+      },
+      {
+        "heading": "Distinguir de uma oração nominal",
+        "body": "Uma sequência sem verbo escrito também pode apresentar uma predicação completa: ἡ ἐλπὶς ἀγαθή, “a esperança é boa”. Nesse caso, não basta chamar o nominativo de pendente porque ele aparece sem εἰμί expresso. É preciso descobrir se o enunciado atribui uma propriedade ao referente ou se o apresenta como tópico de uma oração posterior. Observe a relação semântica, a possibilidade de retomada e a continuidade do parágrafo. A ausência de verbo não constitui um diagnóstico único para estruturas diferentes."
+      },
+      {
+        "heading": "Tradução, pontuação e continuidade",
+        "body": "Uma tradução pode reproduzir o destaque, inserir uma expressão como “quanto a” ou reorganizar a mensagem numa frase mais usual em português. Cada escolha tem um custo: algumas preservam a progressão discursiva, outras facilitam a leitura e disfarçam a mudança de construção. O aprofundamento consiste em reconhecer esse custo e justificá-lo. Antes de falar em desvio ou irregularidade, descreva como o leitor acompanha o referente. Uma sintaxe que leva o discurso em conta pode explicar uma sequência que pareceria inadequada se fosse avaliada apenas pela ordem esperada no português."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.4–2.1.5."
+      }
+    ],
+    "discussionQuestions": [
+      "Em ὁ μαθητής, γράφω αὐτῷ, que função o nominativo inicial desempenha e como o dativo retoma o mesmo referente dentro da oração?",
+      "Por que a ausência de εἰμί não basta para classificar uma expressão como nominativo pendente? Como você a distinguiria de uma oração nominal?"
+    ]
+  },
+  {
+    "id": "as-s-vocative",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-vocative",
+    "order": 11,
+    "title": "O vocativo entre a gramática e a relação com o interlocutor",
+    "summary": "Investigue o tratamento direto, as formas coincidentes e a força pragmática do chamamento.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Identificar um destinatário não é identificar um sujeito",
+        "body": "O vocativo marca tratamento direto: a expressão se dirige ao interlocutor em vez de descrevê-lo simplesmente como participante de uma predicação. Em διδάσκαλε, ἄκουε, “professor, escute”, o nome chama a pessoa a quem a orientação é dirigida; a segunda pessoa do verbo expressa a estrutura do comando. Os dois elementos podem apontar para a mesma pessoa, mas exercem funções diferentes. Usar a pergunta “de quem a frase fala?” apaga essa distinção e pode transformar qualquer chamamento num sujeito nominal."
+      },
+      {
+        "heading": "A morfologia nem sempre oferece uma forma exclusiva",
+        "body": "Algumas palavras têm vocativo reconhecível por uma terminação própria; outras apresentam coincidência com formas usadas no nominativo. Além disso, o tratamento direto pode empregar configurações que não correspondem ao paradigma mais simples aprendido no início. Por isso, a análise deve combinar forma e situação enunciativa. Pergunte se a expressão está sendo mencionada ou se o falante se dirige à pessoa por meio dela. A presença de um nome numa margem da oração é sugestiva, mas não elimina a necessidade de examinar sua relação com o enunciado."
+      },
+      {
+        "heading": "O chamamento não tem uma única emoção",
+        "body": "Um vocativo pode chamar a atenção, organizar uma transição, expressar um apelo ou reconhecer uma relação social. Não é correto deduzir intimidade, irritação ou solenidade apenas da categoria gramatical. Até um título respeitoso pode ser usado de maneiras diferentes em diálogos diferentes. Para discutir o efeito pragmático, observe a escolha lexical, o tipo de orientação ou pergunta e a reação do interlocutor. Um rótulo sintático identifica o tratamento; a descrição da relação interpessoal exige outros indícios."
+      },
+      {
+        "heading": "Representar o tratamento na tradução",
+        "body": "O português dispõe de recursos próprios para reproduzir chamamentos e suas nuances. A vírgula facilita reconhecer o vocativo, mas a escolha entre um nome, título ou expressão de tratamento depende do texto e do público da tradução. Ao aprofundar uma ocorrência, compare uma versão que preserve literalmente a forma de tratamento com outra que busque um efeito comunicativo semelhante. Registre o que cada uma esclarece ou acrescenta. Assim, a leitura passa de “há um vocativo” para uma explicação de como o enunciado se dirige efetivamente a alguém."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.6 e 2.2."
+      }
+    ],
+    "discussionQuestions": [
+      "Quando a forma usada no chamamento coincide com o nominativo, que pistas da interação permitem reconhecer um tratamento direto?",
+      "Que evidências seriam necessárias para interpretar um vocativo como afetuoso, solene ou repreensivo, sem atribuir uma emoção fixa ao caso?"
+    ]
+  },
+  {
+    "id": "as-s-accusative",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-accusative",
+    "order": 12,
+    "title": "Dois acusativos, relações diferentes: objeto e predicativo",
+    "summary": "Compare construções de objeto, caracterização e extensão para evitar uma tradução automática do caso.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "A terminação não identifica o papel completo",
+        "body": "O acusativo é frequentemente apresentado primeiro como caso do objeto direto. Esse ponto de partida é útil, mas insuficiente para uma leitura aprofundada. Uma expressão acusativa pode predicar algo a respeito de um objeto, indicar extensão ou integrar uma construção dependente. Quando dois acusativos aparecem próximos, a tarefa não é simplesmente traduzir ambos como objetos independentes. Identifique o predicado e investigue que relações ele estabelece entre os elementos, observando também a configuração lexical e o contexto da oração."
+      },
+      {
+        "heading": "Uma caracterização pode recair sobre o objeto",
+        "body": "Considere o exemplo didático καλοῦμεν τὸν μαθητὴν φίλον, “chamamos o aluno de amigo”. O grupo τὸν μαθητήν identifica a pessoa nomeada; φίλον expressa a designação que lhe atribuímos. A relação entre os dois acusativos faz parte do sentido da construção. Uma tradução que apenas os coordene, como se fossem duas pessoas chamadas, altera essa relação. Compare o padrão com outra ocorrência do mesmo verbo antes de decidir que dois nomes compartilham exatamente a mesma função."
+      },
+      {
+        "heading": "Extensão não equivale a um objeto afetado",
+        "body": "Uma expressão como πολλὰς ἡμέρας pode indicar durante quantos dias um acontecimento se estende. Sua interpretação depende do predicado e do ambiente, mas ela não precisa designar uma entidade sobre a qual alguém age. Essa diferença mostra o limite de uma definição baseada em “quem sofre a ação”. Também permite distinguir dois tipos de pergunta: qual participante entra na construção e qual medida é atribuída ao acontecimento. A escolha de uma preposição portuguesa, quando necessária, é consequência da interpretação, não a definição do acusativo."
+      },
+      {
+        "heading": "Descrever a construção antes de classificar o uso",
+        "body": "Faça um esquema que mostre o verbo, o elemento sobre o qual se afirma algo e a propriedade ou extensão acrescentada. Depois compare o esquema com as categorias da gramática consultada. Se duas obras usam nomes diferentes, verifique se elas discordam sobre essa relação ou apenas a organizam de modo distinto. Quando o léxico admite construções alternativas, mostre qual delas o contexto favorece. O rótulo final deve resumir uma explicação já estabelecida, em vez de substituir a demonstração das relações entre os termos."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.3."
+      }
+    ],
+    "discussionQuestions": [
+      "Numa construção com dois acusativos, como você verificaria se um caracteriza o objeto em vez de representar um segundo objeto independente?",
+      "Que diferença você explicaria entre um acusativo que identifica o participante afetado e outro que delimita extensão ou duração?"
+    ]
+  },
+  {
+    "id": "as-s-genitive-nouns",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-genitive-nouns",
+    "order": 13,
+    "title": "Genitivo entre nomes: posse, conteúdo ou caracterização?",
+    "summary": "Aprenda a testar paráfrases e a evitar que a palavra portuguesa “de” decida a interpretação.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma ligação formal, várias relações possíveis",
+        "body": "Dois substantivos ligados por genitivo podem estabelecer relações muito diferentes. Um nome pode identificar um possuidor, especificar um conteúdo, caracterizar outro referente ou delimitar um conjunto. A flexão informa que existe uma relação nominal, mas não oferece por si só uma paráfrase completa. A tradução inicial com “de” conserva a ligação de modo econômico; o aprofundamento começa quando perguntamos exatamente como os dois referentes se relacionam e que parte dessa interpretação vem do contexto."
+      },
+      {
+        "heading": "Testar paráfrases sem tratá-las como equivalências fixas",
+        "body": "Compare os exemplos didáticos ὁ οἶκος τοῦ διδασκάλου, “a casa do professor”, e τὸ ποτήριον τοῦ οἴνου, “o copo de vinho”. No primeiro, o contexto pode relacionar a casa ao professor por propriedade, residência ou outra associação reconhecida; a tradução portuguesa sozinha não decide qual. No segundo, uma leitura de conteúdo é plausível, mas precisa fazer sentido na situação descrita. Perguntar “pertence a?”, “contém?” ou “é caracterizado por?” ajuda a explicitar hipóteses, não a produzir uma resposta automática."
+      },
+      {
+        "heading": "O núcleo e o léxico restringem as alternativas",
+        "body": "O significado dos nomes torna algumas relações mais plausíveis que outras. Uma palavra que designa recipiente favorece certas leituras; um nome que expressa quantidade ou parte favorece outras. Essa informação lexical não elimina o papel do contexto. Registre separadamente o que a construção permite e o que a situação torna provável. A diferença importa porque uma análise pode estar bem apoiada sem ser a única leitura gramaticalmente possível. A tradução deve refletir essa medida de segurança e evitar detalhes que o texto não fornece."
+      },
+      {
+        "heading": "Comparar classificações sem colecionar rótulos",
+        "body": "Uma gramática detalhada pode oferecer várias subcategorias para relações que outra reúne sob uma designação mais ampla. Antes de escolher entre elas, escreva sua própria paráfrase e confira se a categoria realmente a descreve. Alguns nomes próximos expressam relações sobrepostas e exigem julgamento interpretativo. Se a distinção não altera o entendimento da passagem, diga isso. A finalidade do estudo é explicar por que determinado nome depende de outro e como essa relação contribui para o enunciado, não demonstrar familiaridade com a maior quantidade possível de etiquetas."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.4."
+      }
+    ],
+    "discussionQuestions": [
+      "Como paráfrases distintas de uma expressão com “de” poderiam tornar visível a diferença entre posse, conteúdo e caracterização?",
+      "Que propriedades do substantivo regente ajudariam a rejeitar uma interpretação de genitivo que seria formalmente possível?"
+    ]
+  },
+  {
+    "id": "as-s-genitive-complements",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-genitive-complements",
+    "order": 14,
+    "title": "Quem ama quem? Genitivos ligados a nomes de ação",
+    "summary": "Aprofunde as leituras subjetiva e objetiva e diferencie ambiguidades de sentido de regras de regência.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Uma ação pode ser apresentada por um nome",
+        "body": "Nomes relacionados a ações ou atitudes podem envolver participantes que também apareceriam numa oração verbal. Uma expressão como ἡ ἀγάπη τοῦ διδασκάλου pode, em um contexto, designar o amor que o professor manifesta; em outro, o amor dirigido ao professor. Esses exemplos são didáticos e não resolvem nenhuma passagem por si mesmos. Eles mostram por que a ligação nominal não explicita necessariamente a direção da relação. A pergunta “amor de quem?” pode esconder duas perguntas diferentes, ambas importantes para interpretar a expressão."
+      },
+      {
+        "heading": "As paráfrases tornam a hipótese verificável",
+        "body": "Na leitura chamada subjetiva, uma paráfrase verbal coloca o referente do genitivo na posição de quem realiza ou manifesta a ação nominalizada. Na leitura objetiva, ele aparece como alvo dessa ação. As paráfrases são instrumentos de análise: não demonstram que um verbo esteja literalmente omitido no original, nem autorizam reproduzir qualquer construção verbal dentro de um nome. Primeiro verifique se o significado do substantivo permite esse tipo de relação. Depois procure no contexto os participantes e as orientações que favorecem uma das leituras."
+      },
+      {
+        "heading": "Não confundir genitivo nominal e complemento regido",
+        "body": "Um genitivo ligado a um verbo ou adjetivo por uma construção lexical específica exige outra investigação. Nesse caso, consultar a regência e exemplos comparáveis pode ser mais esclarecedor que testar imediatamente as categorias subjetiva e objetiva. Identifique o termo do qual o genitivo depende antes de nomear o uso. Uma sequência de genitivos não assegura que todos se liguem ao mesmo núcleo: pode existir uma cadeia de dependências. Desenhar essa cadeia evita atribuir a um nome a relação que pertence a outro elemento do grupo."
+      },
+      {
+        "heading": "Preservar a ambiguidade quando ela permanece",
+        "body": "Uma tradução pode optar por “o amor que o professor demonstra” ou “o amor pelo professor”, explicitando interpretações diferentes. Se o contexto não oferecer evidência suficiente, uma versão menos específica pode conservar melhor o espaço interpretativo do original. Compare as alternativas e indique o peso de cada argumento. Não transforme a possibilidade de duas leituras numa afirmação de que o autor necessariamente quis comunicar ambas. Reconhecer uma ambiguidade é descrever o alcance dos dados disponíveis; atribuir uma intenção dupla é uma hipótese adicional que também precisa de justificativa."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.4, especialmente 2.4.5–2.4.6."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você formularia duas paráfrases que deixem claro quem realiza e quem recebe a ação expressa por um nome como “amor”?",
+      "Se o contexto não decidir entre leituras subjetiva e objetiva de um genitivo, como você apresentaria a ambiguidade sem afirmar que o autor necessariamente quis os dois sentidos?"
+    ]
+  },
+  {
+    "id": "as-s-dative",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-dative",
+    "order": 15,
+    "title": "O dativo e os limites das perguntas “a quem?” e “com quê?”",
+    "summary": "Investigue destinatário, meio e referência sem reduzir o caso a três equivalentes de tradução.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Perguntas didáticas precisam de uma construção",
+        "body": "Perguntar “a quem?” ajuda a identificar destinatários em vários exemplos, mas não define o dativo. A mesma forma pode indicar o meio pelo qual uma ação ocorre ou delimitar a referência de uma afirmação. A decisão depende do predicado, do significado lexical e do contexto. Um método mais rigoroso começa identificando qual relação está em jogo e só depois escolhe a pergunta portuguesa que a torna compreensível. Assim evitamos tratar qualquer pessoa no dativo como destinatário e qualquer objeto material como instrumento."
+      },
+      {
+        "heading": "O destinatário participa de uma organização de participantes",
+        "body": "No exemplo didático γράφω τῷ φίλῳ, “escrevo ao amigo”, o amigo é o destinatário da escrita. Em outras construções, um dativo pode apresentar o beneficiário ou o participante interessado, e essas relações não precisam ser idênticas. Uma pessoa pode receber uma carta sem ser beneficiada pelo seu conteúdo. Observe o que o verbo seleciona e o que o enunciado acrescenta. A semelhança entre as traduções com “a” ou “para” não prova que as descrições sintáticas devam ser fundidas."
+      },
+      {
+        "heading": "Meio e agente não são a mesma coisa",
+        "body": "Um instrumento participa de um acontecimento de maneira diferente daquela de quem o realiza. Quando uma expressão dativa é interpretada como meio, explique que aspecto do predicado ela ajuda a executar. Não deduza automaticamente agência de uma tradução com “por”, nem passividade de toda relação que envolva um paciente. A forma verbal e as construções de agente precisam ser examinadas independentemente. Se houver dúvida entre uma leitura instrumental e uma leitura de modo, explicite as paráfrases e mostre o dado que permitiria distingui-las."
+      },
+      {
+        "heading": "Referência delimita o alcance da afirmação",
+        "body": "Certas expressões indicam sob que aspecto uma qualidade ou situação é avaliada. Nesse caso, a tarefa não é encontrar um destinatário imaginário, mas descobrir o alcance da predicação. O aprofundamento melhora quando a análise nomeia essa limitação com linguagem comum antes de recorrer à terminologia especializada. Consulte categorias de Porter e, quando necessário, classificações mais detalhadas de outras gramáticas, comparando os mesmos exemplos. A classificação escolhida deve ser consequência de uma relação demonstrada, sempre com atenção ao que a tradução portuguesa torna explícito ou deixa implícito."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.5."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que identificar um meio usado na ação não equivale a identificar o agente? Como você justificaria essa distinção na construção examinada?",
+      "Quando um dativo delimita a referência de uma afirmação, o que uma tradução apenas com “a quem?” deixaria de explicar?"
+    ]
+  },
+  {
+    "id": "as-s-prepositions",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-prepositions",
+    "order": 16,
+    "title": "Sentidos espaciais e extensões: como estudar uma preposição",
+    "summary": "Examine o papel conjunto da preposição, do caso e do contexto sem buscar um equivalente universal.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O desenho de setas tem um limite",
+        "body": "Diagramas espaciais ajudam a memorizar contrastes iniciais, mas não esgotam os usos das preposições. Expressões que localizam objetos também podem participar de relações de meio, associação, causa ou referência, conforme a construção. Não é necessário imaginar um movimento físico oculto em cada ocorrência para preservar a unidade de uma preposição. O estudante precisa distinguir uma imagem pedagógica útil de uma explicação suficiente do uso. Uma tradução coerente deve ser avaliada no enunciado completo, especialmente quando a relação deixa de ser estritamente espacial."
+      },
+      {
+        "heading": "A unidade de estudo é a construção",
+        "body": "Aprender preposição, caso e exemplos juntos oferece um ponto de partida melhor que decorar uma coluna de traduções isoladas. Em uma expressão com ἐν e dativo, o contexto pode favorecer localização ou outra relação reconhecida pelo uso. O dativo sozinho não produz todo o sentido, e a preposição tampouco funciona como uma palavra portuguesa invariável. Compare construções semelhantes e observe que tipos de nomes e predicados entram nelas. Essa distribuição ajuda a distinguir um uso recorrente de uma interpretação excepcional proposta para determinada passagem."
+      },
+      {
+        "heading": "História não substitui uso contextual",
+        "body": "A origem de uma preposição e suas relações espaciais podem explicar caminhos de desenvolvimento semântico. Entretanto, uma história plausível não demonstra o sentido de uma ocorrência específica. Também é inadequado exigir que todos os usos do período do Novo Testamento conservem as mesmas distinções encontradas numa descrição de outro período do grego. Ao consultar uma gramática ou léxico, confira os exemplos e o recorte histórico. O objetivo é reconstruir a relação efetivamente comunicada, não impor ao texto um esquema derivado de uma etimologia ou de outra fase da língua."
+      },
+      {
+        "heading": "Comparar traduções com uma pergunta precisa",
+        "body": "Quando duas versões divergem, pergunte primeiro se a diferença está no sentido da preposição, no alcance do grupo ou na maneira portuguesa de expressar a mesma relação. Um grupo pode modificar o verbo, um nome ou a predicação inteira; mudar essa dependência altera a interpretação mesmo quando a preposição é traduzida pela mesma palavra. Produza paráfrases que tornem o vínculo visível e compare as evidências. Esse procedimento transforma uma lista de equivalentes num estudo de construções e torna a consulta às referências gramaticais muito mais produtiva."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 9."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você investigaria um uso não espacial de uma preposição sem exigir que ele reproduza uma imagem espacial em todos os detalhes?",
+      "Que informações se perdem quando se compara apenas a tradução da preposição e se deixa de considerar seu caso e a construção completa?"
+    ]
+  },
+  {
+    "id": "as-s-pronouns",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-pronouns",
+    "order": 17,
+    "title": "A quem o pronome se refere? Concordância e continuidade",
+    "summary": "Compare candidatos a antecedente e aprenda a justificar uma retomada além da proximidade gráfica.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O nome mais próximo não vence automaticamente",
+        "body": "Um pronome pode concordar em gênero e número com mais de um candidato a antecedente. Escolher o substantivo mais próximo é um atalho que falha quando o discurso mantém outro participante como centro da atenção. Considere a oração, o trecho anterior e a plausibilidade das relações descritas. A concordância ajuda a eliminar candidatos incompatíveis; a proximidade fornece uma pista de processamento. Nenhum desses fatores deve ser transformado, isoladamente, numa regra que identifica sem exceção o referente de qualquer pronome."
+      },
+      {
+        "heading": "Retomada não exige repetir o caso",
+        "body": "No exemplo didático ὁ μαθητὴς ἔρχεται· γράφω αὐτῷ, o aluno é apresentado como sujeito de “vem” e retomado como destinatário de “escrevo”. O dativo de αὐτῷ depende da nova construção, não de uma obrigação de copiar o nominativo anterior. Essa distinção é essencial: identidade de referente e identidade de função não são equivalentes. Ao fazer anotações, marque a ligação referencial entre os dois grupos e registre separadamente a função sintática que cada um exerce em sua própria oração."
+      },
+      {
+        "heading": "Referência pode ultrapassar um substantivo isolado",
+        "body": "Algumas expressões retomam acontecimentos, afirmações ou partes mais amplas do texto. Também há usos que apontam para a situação compartilhada pelos interlocutores, e não para um nome escrito imediatamente antes. Antes de procurar um antecedente mecânico, pergunte que tipo de entidade está sendo retomada: pessoa, objeto, proposição ou situação. Uma tradução que introduz um nome explícito pode esclarecer o referente, mas também pode escolher uma leitura que o original deixa menos determinada. Essa intervenção deve aparecer na justificativa da tradução."
+      },
+      {
+        "heading": "Construir uma cadeia de participantes",
+        "body": "Para aprofundar um parágrafo, acompanhe cada participante por meio de nomes, pronomes e sujeitos não expressos. Observe onde ele é reintroduzido por uma expressão mais completa e onde uma forma reduzida mantém a continuidade. Depois teste os candidatos alternativos nas passagens ambíguas: que sequência de ações e relações cada proposta produz? A análise referencial não termina num catálogo de pronomes. Ela explica como o leitor consegue seguir os participantes e em que pontos uma interpretação depende de inferência contextual, com maior ou menor grau de segurança."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 8."
+      }
+    ],
+    "discussionQuestions": [
+      "Se dois nomes forem candidatos a antecedente de um pronome, como você avaliaria concordância, continuidade do participante e coerência, além da proximidade?",
+      "Por que um pronome pode retomar um referente em caso diferente do nome anterior? Que função deve determinar o caso na nova oração?"
+    ]
+  },
+  {
+    "id": "as-s-agreement",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-agreement",
+    "order": 18,
+    "title": "Quando a concordância não corresponde a uma simples cópia",
+    "summary": "Investigue forma, referência coletiva e compatibilidade sem tratar toda diferença como erro.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Concordância é uma relação estruturada",
+        "body": "Um adjetivo pode concordar com um substantivo em caso, gênero e número sem repetir suas terminações. Também um verbo pode fornecer pistas sobre seu sujeito sem reproduzir todas as propriedades do grupo nominal. A concordância organiza relações entre elementos, mas deve ser descrita segundo as categorias relevantes para cada construção. O erro inicial é tratar qualquer coincidência de forma como prova de dependência: dois nomes no mesmo caso podem exercer funções diferentes, e dois adjetivos compatíveis podem modificar núcleos distintos no contexto."
+      },
+      {
+        "heading": "A referência pode ser mais complexa que o paradigma",
+        "body": "Expressões coletivas e grupos coordenados mostram que as relações entre número gramatical e quantidade de participantes não são inteiramente simples. Além disso, o grego apresenta padrões de concordância que não coincidem com as expectativas do português, como a associação de sujeitos neutros plurais com verbo singular em determinados usos. Esses fenômenos não autorizam ignorar a flexão. Eles exigem reconhecer o padrão documentado e distinguir uma construção possível de uma exceção inventada apenas para salvar uma interpretação desejada."
+      },
+      {
+        "heading": "Compatibilidade não garante ligação",
+        "body": "Imagine uma oração com dois substantivos masculinos singulares e um particípio na mesma combinação de categorias. A concordância torna ambos candidatos morfológicos, mas não resolve sozinha a ligação. A sintaxe da construção, a posição e o sentido precisam participar da decisão. Descreva o que cada hipótese faria com os participantes antes de optar pela mais plausível. Quando a evidência não for conclusiva, registre essa limitação em vez de transformar uma compatibilidade parcial numa demonstração completa de que o modificador pertence a certo termo."
+      },
+      {
+        "heading": "Comparar regularidade e variação com método",
+        "body": "Ao encontrar um padrão inesperado, confira primeiro o texto, o parsing e o núcleo relevante. Depois procure exemplos comparáveis na gramática, respeitando a diferença entre explicação semântica, uso recorrente e hipótese de transmissão textual. Nem toda dificuldade exige corrigir o texto, e nem toda divergência pode ser explicada por “concordância segundo o sentido”. Uma análise aprofundada indica quais categorias concordam, que padrão foi identificado e que efeito isso tem para a leitura. Assim a concordância continua sendo evidência valiosa, sem ser usada como prova automática de qualquer relação possível."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 3, 6 e 7."
+      }
+    ],
+    "discussionQuestions": [
+      "Quando uma expressão coletiva e seu referente permitem descrições de número diferentes, como você distinguiria concordância formal e consideração do sentido?",
+      "Se dois substantivos forem compatíveis com a flexão de um adjetivo, que evidências adicionais você usaria para decidir a ligação?"
+    ]
+  },
+  {
+    "id": "as-s-aspect",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-aspect",
+    "order": 19,
+    "title": "Aspecto não é duração: o que uma forma verbal permite afirmar",
+    "summary": "Separe a perspectiva aspectual, o sentido lexical e a localização temporal para evitar conclusões excessivas.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Três perguntas que se cruzam",
+        "body": "Ao estudar um verbo, pergunte como o acontecimento é apresentado, que tipo de situação o verbo descreve naquele uso e quando ela ocorre. Essas perguntas se relacionam, mas não são equivalentes. Uma atividade duradoura pode ser apresentada globalmente; um acontecimento breve pode receber atenção ao seu desenvolvimento. A duração real não é uma tradução direta do aspecto. Antes de afirmar que uma forma exige ação instantânea, contínua ou repetida, identifique de onde exatamente vem essa informação na construção e no contexto."
+      },
+      {
+        "heading": "O eixo adotado neste curso",
+        "body": "Na abordagem de Porter, seguida como referência prioritária, a distinção entre a apresentação perfectiva do aoristo e a imperfectiva de presente e imperfeito organiza parte essencial da análise. O curso também identifica o tratamento estativo das formas do perfeito em seu modelo. Esses termos descrevem perspectivas gramaticais, não uma contagem de segundos nem a avaliação de que uma ação foi feita perfeitamente. Aprender a terminologia exige abandonar as associações cotidianas que palavras como “perfeito” e “imperfeito” podem sugerir em português."
+      },
+      {
+        "heading": "O tempo precisa de evidência própria",
+        "body": "Um advérbio como χθές, “ontem”, participa da localização temporal de um enunciado. O gênero do texto, a sequência dos acontecimentos e as referências estabelecidas anteriormente também contribuem. A proposta de Porter distingue a categoria aspectual da referência temporal construída na ocorrência; outras descrições do verbo grego distribuem essas contribuições de maneira diferente. Para aprofundar uma passagem, não basta chamar uma forma de “passada” ou “atemporal”: mostre a relação entre a descrição gramatical adotada e os indícios contextuais que orientam a leitura."
+      },
+      {
+        "heading": "Da teoria à comparação de interpretações",
+        "body": "Imagine um relato que resume em uma oração uma atividade desenvolvida durante muitos anos. A extensão da atividade não contradiz, por si só, uma apresentação perfectiva do acontecimento. Em seguida, imagine uma descrição que se demora num momento dessa mesma atividade: a escolha de perspectiva pode mudar sem que o acontecimento histórico seja outro. Use essas comparações para avaliar traduções e comentários. Uma afirmação interpretativa forte deve explicar se depende da forma, do léxico, do contexto ou da combinação deles, e reconhecer quando teorias distintas chegam à mesma tradução por caminhos diferentes."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 1, seções 1–2."
+      }
+    ],
+    "discussionQuestions": [
+      "Como uma atividade que dura muitos anos pode ser apresentada de maneira perfectiva sem se tornar um acontecimento instantâneo?",
+      "Ao interpretar uma forma acompanhada de χθές, como você separaria a perspectiva aspectual da contribuição de “ontem” para a localização temporal?"
+    ]
+  },
+  {
+    "id": "as-s-voice",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-voice",
+    "order": 20,
+    "title": "Além de “ativo na tradução”: por que discutir a voz média",
+    "summary": "Investigue a organização dos participantes e compare a noção de deponência com descrições da voz média.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "A tradução portuguesa não redefine a forma",
+        "body": "Um verbo grego com morfologia média pode receber uma tradução portuguesa que não apresenta marca reflexiva ou passiva. Isso não demonstra que sua forma grega deva ser classificada como ativa. Línguas diferentes organizam os mesmos acontecimentos com recursos diferentes. Primeiro descreva a forma e a construção gregas; depois explique como a versão portuguesa representa o acontecimento. Essa separação evita tratar o verbo como um problema apenas porque o português usa uma expressão formalmente ativa para traduzir um padrão comum do grego."
+      },
+      {
+        "heading": "A proposta de Conrad e o debate terminológico",
+        "body": "Carl Conrad defende uma compreensão da voz que dispense a ideia de muitos verbos simplesmente terem abandonado formas ativas. Sua proposta chama atenção para padrões médios e para a complexidade das relações entre morfologia e participação do sujeito. Essa perspectiva oferece um contraste útil com o rótulo tradicional “deponente”. Ela não deve ser confundida automaticamente com todos os detalhes da abordagem de Porter. Ao comparar autores, registre como cada um define forma média, leitura passiva e participação do sujeito, em vez de trocar apenas uma etiqueta por outra."
+      },
+      {
+        "heading": "Nem toda forma média expressa ação sobre si mesmo",
+        "body": "A reflexividade direta é uma possibilidade limitada diante da variedade de usos associados à voz média. Movimento, experiência e envolvimento do sujeito podem aparecer em construções que não se traduzem acrescentando “a si mesmo”. O estudante precisa consultar o verbo e seu uso concreto. Também deve distinguir uma construção passiva, na qual um participante é apresentado como sujeito sob determinada organização do acontecimento, de uma classificação puramente morfológica. Uma interpretação pode exigir contexto mesmo quando a terminação é perfeitamente reconhecível."
+      },
+      {
+        "heading": "Um método de leitura que preserva as diferenças",
+        "body": "Anote o paradigma formal, identifique os participantes selecionados pelo verbo e proponha o sentido da construção. Depois compare essa descrição com a tradução, explicitando as mudanças necessárias para o português. Se o léxico empregar “deponente”, use a informação como indicação de um padrão de formas documentadas, não como explicação completa do significado. A leitura aprofundada pergunta o que a construção permite dizer sobre o sujeito e o acontecimento, sem concluir que toda diferença de voz produz automaticamente uma nuance que pode ser transportada palavra por palavra para outra língua."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 3, seção 1."
+      },
+      {
+        "title": "Carl W. Conrad — Propositions Concerning Ancient Greek Voice, Department of Classics, Washington University",
+        "url": "https://classics.washu.edu/ancient-greek-voice"
+      }
+    ],
+    "discussionQuestions": [
+      "Por que uma tradução portuguesa formalmente ativa não demonstra que a morfologia média grega perdeu qualquer relevância na análise?",
+      "Como você compararia a descrição tradicional de um verbo como deponente com a proposta de Conrad, preservando as diferenças entre formas documentadas e interpretação dos participantes?"
+    ]
+  },
+  {
+    "id": "as-s-mood",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-mood",
+    "order": 21,
+    "title": "Indicativo não significa fato comprovado: modo e uso comunicativo",
+    "summary": "Aprofunde a relação entre forma verbal, compromisso do falante e atos como perguntar, desejar e orientar.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma afirmação gramatical pode ser falsa",
+        "body": "O indicativo participa de enunciados apresentados de modo assertivo, mas isso não garante que seu conteúdo seja verdadeiro no mundo. Alguém pode errar, mentir ou reproduzir uma afirmação alheia. A distinção entre forma gramatical e confirmação factual é essencial para interpretar narrativas e discussões. Ao identificar o modo, descreva como o conteúdo é organizado linguisticamente; para avaliar se ele aconteceu ou é endossado pelo autor, examine o contexto e a situação de comunicação, sem exigir da flexão uma prova histórica."
+      },
+      {
+        "heading": "O mesmo ato admite construções diferentes",
+        "body": "Uma orientação pode aparecer numa construção imperativa, mas também pode ser comunicada por uma pergunta, desejo ou formulação indireta. Da mesma maneira, uma forma imperativa precisa ser lida em relação ao interlocutor e à situação para determinar se funciona como ordem, pedido ou apelo. Não reduza a força do enunciado ao nome tradicional do modo. A análise deve começar pelo padrão formal e avançar para o uso comunicativo, preservando a diferença entre o recurso gramatical escolhido e o efeito produzido naquele contexto."
+      },
+      {
+        "heading": "Possibilidade e projeção não são sinônimos de irrealidade",
+        "body": "Nas construções com subjuntivo ou optativo, a descrição exige atenção à relação com partículas, orações dependentes e outros elementos. A classificação não deve ser resumida à ideia de que o acontecimento “não é real”. Uma projeção pode referir-se a algo que venha efetivamente a ocorrer; uma hipótese pode ser aceita provisoriamente para construir um argumento. Na abordagem de Porter, modo e atitude integram a análise do sistema verbal, mas o estudante ainda precisa mostrar como a construção específica participa do enunciado completo."
+      },
+      {
+        "heading": "Comparar teorias a partir das mesmas ocorrências",
+        "body": "Para avaliar duas descrições do modo, escolha um exemplo e registre primeiro os dados compartilhados: forma, partículas, dependência e tipo de predicação. Depois veja que significado cada modelo atribui ao recurso gramatical e o que deixa para o contexto. Diferenças de vocabulário teórico nem sempre representam previsões interpretativas incompatíveis. Uma comparação produtiva procura o ponto em que as análises realmente divergem e pergunta que evidência poderia favorecer uma delas. Evite apresentar como consenso uma descrição que, na realidade, depende de um quadro teórico identificado."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 2."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que uma afirmação no indicativo pode ser falsa sem deixar de apresentar uma construção no indicativo?",
+      "Que dados de contexto você examinaria para distinguir a forma verbal de um enunciado do ato de perguntar, orientar, desejar ou afirmar que ele realiza?"
+    ]
+  },
+  {
+    "id": "as-s-participles",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-participles",
+    "order": 22,
+    "title": "O artigo torna um particípio substantivo? Função e construção",
+    "summary": "Explore o lugar do particípio no sintagma e na predicação antes de escolher uma tradução portuguesa.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma forma verbal pode funcionar em configurações nominais",
+        "body": "O particípio conserva propriedades verbais enquanto participa de construções que podem modificar um nome, apresentar um referente ou integrar uma predicação. Seu parsing não determina sozinho qual dessas relações ocorre. Uma forma no nominativo masculino singular, por exemplo, ainda precisa ser situada na oração. O aprofundamento começa justamente depois de identificar caso, gênero, número, série aspectual e voz: qual é seu núcleo, que complementos ela admite e que relação estabelece com o restante do enunciado?"
+      },
+      {
+        "heading": "Artigo e referente não se confundem com uma transformação lexical",
+        "body": "Uma expressão como ὁ γράφων pode designar “quem escreve” ou “aquele que escreve”, conforme o contexto. O artigo participa da organização nominal, mas não transforma o verbo num substantivo lexical com todas as propriedades de uma entrada independente do léxico. Além disso, o particípio pode continuar selecionando seus complementos. É mais preciso descrever a função substantivada da construção que afirmar que qualquer particípio articulado deixou inteiramente de ser verbal. A categoria morfológica e o funcionamento sintático precisam ser mantidos em níveis distintos."
+      },
+      {
+        "heading": "Uma ligação aparente pode esconder outra construção",
+        "body": "Quando um particípio concorda com um nome, ele pode modificá-lo ou participar de uma predicação relacionada a ele. No exemplo didático βλέπω τὸν μαθητὴν γράφοντα, “vejo o aluno escrevendo”, a relação de percepção é central para entender o conjunto. Traduzir mecanicamente por “o aluno que escreve” pode alterar o foco da construção. Examine o verbo principal e suas possibilidades de complemento antes de escolher entre uma relativa, uma expressão predicativa ou outra solução portuguesa. Concordância é uma pista indispensável, mas não substitui esse exame."
+      },
+      {
+        "heading": "A tradução deve tornar a escolha analisável",
+        "body": "Um particípio pode ser representado por uma oração relativa, forma verbal finita ou expressão nominal, entre outros recursos. A escolha deve preservar a relação reconhecida e explicar os detalhes acrescentados em português. Se uma versão introduzir um sujeito explícito ou um conector que não aparece como palavra separada no grego, identifique a decisão. Depois confira se sua solução respeita a perspectiva aspectual e a dependência do particípio. O objetivo não é usar sempre o mesmo equivalente, mas mostrar como uma construção grega específica pode ser reconstruída de maneira inteligível sem apagar suas relações."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 10, seções 1–4."
+      }
+    ],
+    "discussionQuestions": [
+      "Que função o artigo pode desempenhar numa construção participial sem transformar o particípio, por si só, num novo item lexical substantivo?",
+      "Como você verificaria se um particípio se liga a um grupo nominal ou acrescenta uma predicação, antes de escolher uma tradução portuguesa?"
+    ]
+  },
+  {
+    "id": "as-s-circumstantial-participles",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-circumstantial-participles",
+    "order": 23,
+    "title": "“Quando”, “porque” ou “embora”? Interpretando particípios circunstanciais",
+    "summary": "Compare paráfrases contextuais e examine o que o genitivo absoluto efetivamente põe em relação.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "A tradução pode acrescentar uma relação explícita",
+        "body": "Ao converter um particípio circunstancial numa oração portuguesa, frequentemente precisamos escolher um conector. “Quando”, “porque” e “embora” tornam explícitas relações diferentes entre acontecimentos. O grego nem sempre apresenta uma palavra separada que corresponda ao conector escolhido. Isso não torna qualquer tradução igualmente válida: a relação precisa ser compatível com o contexto, os participantes e a progressão do enunciado. O analista deve indicar qual evidência favorece sua paráfrase e distinguir essa evidência da simples presença de uma forma participial."
+      },
+      {
+        "heading": "Aspecto não funciona como relógio automático",
+        "body": "Uma oposição entre particípios de séries diferentes não deve ser reduzida a uma tabela universal de acontecimentos anteriores, simultâneos e posteriores. Relações temporais podem resultar da combinação de aspecto, léxico e contexto. Na abordagem priorizada neste curso, preserve a distinção entre perspectiva e referência temporal. Uma tradução que emprega “depois que” faz uma decisão interpretativa específica; essa decisão precisa ser defendida pela sequência narrada ou por outros indícios, não apenas pela etiqueta “aoristo” no parsing da forma."
+      },
+      {
+        "heading": "Em que sentido o genitivo é “absoluto”",
+        "body": "Numa construção de genitivo absoluto, o grupo participial apresenta sua própria configuração nominal no genitivo, relativamente destacada da estrutura da oração principal. O termo “absoluto” não significa que o conteúdo não tenha relação com o contexto. Pelo contrário, a construção contribui para situar ou interpretar a predicação principal. Compare quem participa de cada acontecimento e como a unidade se liga à sequência maior. Nem toda expressão com nome e particípio no genitivo constitui automaticamente esse padrão: primeiro exclua dependências que integrem o grupo a outra construção."
+      },
+      {
+        "heading": "Trabalhar com alternativas justificadas",
+        "body": "Escreva duas traduções que revelem relações plausíveis e indique o efeito de cada uma. Uma leitura causal explica o acontecimento principal por meio do participial; uma concessiva contrapõe uma expectativa; uma temporal o situa. Depois examine o contexto para avaliar se alguma alternativa fica enfraquecida. Não use uma categoria sofisticada para disfarçar que a evidência é limitada. O aprofundamento consiste em graduar a confiança da interpretação e mostrar o trabalho realizado pela tradução, preservando a distinção entre forma do particípio, construção sintática e relação inferida entre os acontecimentos."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 10, seções 2.1, 4 e 5."
+      }
+    ],
+    "discussionQuestions": [
+      "Que evidências contextuais você exigiria para traduzir um particípio por “porque” ou “embora”, em vez de apenas “quando”?",
+      "Em que sentido um genitivo absoluto possui certa independência sintática, e por que isso não significa ausência de ligação com o restante do discurso?"
+    ]
+  },
+  {
+    "id": "as-s-infinitives",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-infinitives",
+    "order": 24,
+    "title": "Quem é o sujeito do infinitivo? Controle e acusativo expresso",
+    "summary": "Investigue as relações do infinitivo sem reconstruir automaticamente um sujeito onde o texto não o exprime.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma forma sem pessoa não é uma atividade sem participante",
+        "body": "O infinitivo não apresenta a flexão pessoal de um verbo finito, mas seu acontecimento pode envolver participantes recuperáveis da construção. Em uma expressão equivalente a “quero aprender”, o sujeito de aprender é normalmente entendido a partir do participante de querer. Já outras configurações apresentam explicitamente um sujeito relacionado ao infinitivo. A ausência de pessoa na terminação exige investigar essa ligação; não autoriza concluir que o infinitivo descreve uma ação inteiramente abstrata, sem sujeito interpretável ou sem relações com a oração maior."
+      },
+      {
+        "heading": "O acusativo precisa ser situado na construção",
+        "body": "Quando um grupo acusativo aparece com infinitivo, pode participar de uma configuração em que é interpretado como sujeito dessa predicação. Mas a mera proximidade entre acusativo e infinitivo não prova essa relação. O nome também pode ser complemento de outro elemento, e o infinitivo pode depender de um predicado com organização própria. Comece pelo termo regente e compare usos documentados. Uma análise adequada explica por que o acusativo recebe aquela interpretação e como os participantes se distribuem entre a oração principal e a expressão infinitiva."
+      },
+      {
+        "heading": "O artigo e a preposição organizam o conjunto",
+        "body": "O infinitivo articulado pode integrar grupos com preposição, e o grupo inteiro participa de uma relação com o restante do enunciado. Nesse caso, não traduza artigo, preposição e infinitivo como unidades independentes sem antes determinar sua configuração. Uma solução portuguesa pode usar uma oração finita para tornar finalidade, tempo ou outra relação mais clara. A escolha não é um significado invariável da forma infinitiva. Examine o conjunto formal e o contexto, observando ainda a perspectiva aspectual e os complementos selecionados pelo infinitivo."
+      },
+      {
+        "heading": "Evitar equivalências que escondem o problema",
+        "body": "Reescrever toda construção por “para fazer” pode sugerir finalidade mesmo onde o texto apresenta conteúdo ou complemento. Acrescentar “antes” ou “depois” pode decidir uma relação temporal não demonstrada. Para aprofundar, identifique o regente, proponha o sujeito interpretável e registre a função do grupo infinitivo. Depois compare duas paráfrases portuguesas e verifique qual preserva essas relações com menos acréscimos indevidos. Se houver ambiguidade, mostre em que ponto ela surge e qual evidência adicional permitiria distinguir as leituras, em vez de solucionar o problema apenas escolhendo uma tradução familiar."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 11."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você investigaria quem participa da atividade de um infinitivo quando não há sujeito expresso, sem acrescentar automaticamente um nome ao original?",
+      "Se houver um acusativo perto de um infinitivo, que relações da construção precisam ser verificadas antes de chamá-lo de sujeito dessa forma verbal?"
+    ]
+  },
+  {
+    "id": "as-s-connectives",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-connectives",
+    "order": 25,
+    "title": "Uma conjunção liga ideias de que maneira? Relação e desenvolvimento",
+    "summary": "Compare sentidos locais e instruções de organização do discurso sem reduzir cada conector a uma palavra portuguesa.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Um equivalente lexical pode esconder a conexão",
+        "body": "Traduzir καί por “e” ou γάρ por “pois” fornece um apoio inicial, mas não explica completamente a relação entre duas unidades. Uma conjunção pode ligar palavras, predicações ou trechos de um argumento; seu alcance precisa ser estabelecido. Mesmo quando duas traduções usam a mesma palavra portuguesa, elas podem atribuir dependências diferentes ao enunciado. O estudo aprofundado pergunta que informação o novo segmento acrescenta, de qual afirmação ele depende e como o conector ajuda o leitor a interpretar essa passagem."
+      },
+      {
+        "heading": "Relação lógica e progressão não são a mesma pergunta",
+        "body": "Um segmento pode justificar uma afirmação anterior e, ao mesmo tempo, desenvolver uma linha de argumentação. Descrever apenas uma relação lógica deixa de lado como o texto orienta a atenção do leitor. Estudos de discurso, como os de Levinsohn, oferecem ferramentas para investigar esse nível de organização. Elas precisam ser distinguidas das categorias de outras gramáticas. Uma comparação responsável explicita se está discutindo o sentido de uma conjunção, sua contribuição para a sequência textual ou uma inferência contextual sobre a relação entre as proposições."
+      },
+      {
+        "heading": "Não atribuir ao conector tudo que o contexto produz",
+        "body": "Uma sequência ligada por καί pode ser lida como temporalmente sucessiva, mas isso não significa que o conector por si só codifique sempre “depois”. De maneira semelhante, uma relação de contraste pode depender de mais de um elemento do trecho. Teste a interpretação com paráfrases e pergunte que parte se mantém quando o conteúdo muda. Esse exercício ajuda a distinguir uma contribuição relativamente estável do recurso linguístico de uma relação que surge principalmente dos acontecimentos narrados e das expectativas compartilhadas pelos interlocutores."
+      },
+      {
+        "heading": "Analisar também a ausência de conexão explícita",
+        "body": "A falta de uma conjunção escrita não implica ausência de relação entre unidades. O leitor pode inferir continuidade, explicação ou mudança com apoio no contexto, nos participantes e na organização do texto. Ao comparar segmentos conectados e não conectados, evite preencher automaticamente cada ausência com um “e” imaginário. Primeiro descreva como a relação é recuperada. Depois avalie se a tradução portuguesa necessita explicitar uma ligação para manter a leitura inteligível. O resultado deve registrar tanto os recursos formais presentes quanto as decisões de tradução que tornam a sequência compreensível."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 12."
+      },
+      {
+        "title": "Stephen H. Levinsohn — publicações e materiais do autor sobre discurso",
+        "url": "https://scholars.sil.org/stephen_h_levinsohn"
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença você faria entre a relação lógica que associa duas ideias e a função de um conector no desenvolvimento do argumento?",
+      "Quando duas orações aparecem sem conector explícito, como você investigaria sua relação sem concluir que não existe ligação entre elas?"
+    ]
+  },
+  {
+    "id": "as-s-dependent-clauses",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-dependent-clauses",
+    "order": 26,
+    "title": "A mesma conjunção pode introduzir relações diferentes?",
+    "summary": "Examine finalidade, resultado, causa e conteúdo pela dependência da oração e pela natureza do regente.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Identificar o marcador é apenas o começo",
+        "body": "Uma oração dependente não recebe sua interpretação completa apenas do reconhecimento de uma conjunção. Formas como ὅτι podem participar de construções interpretadas como conteúdo de uma fala ou como explicação causal, conforme a relação com o restante do enunciado. O procedimento inicial é localizar a oração, identificar de que expressão ela depende e observar o tipo de conteúdo introduzido. Uma lista de equivalentes portugueses ajuda a formular hipóteses, mas não decide automaticamente qual delas se aplica a cada ocorrência."
+      },
+      {
+        "heading": "Conteúdo não é uma circunstância da fala",
+        "body": "Compare uma construção equivalente a “o professor diz que o aluno chegou” com outra equivalente a “o professor se alegra porque o aluno chegou”. Na primeira, a oração apresenta o conteúdo do dizer; na segunda, apresenta uma razão para a alegria. O acontecimento subordinado pode ser o mesmo, mas sua função na construção muda. Por isso, perguntar apenas “o que aconteceu?” é insuficiente. É preciso explicar que relação esse acontecimento estabelece com o predicado regente e que possibilidades lexicais tornam essa relação plausível."
+      },
+      {
+        "heading": "Finalidade e resultado exigem atenção à perspectiva",
+        "body": "Uma interpretação final apresenta um objetivo; uma interpretação consecutiva apresenta um efeito. Contextos concretos podem aproximar essas relações, e algumas construções demandam discussão mais detalhada. Não transforme a tradução com “para que” ou “de modo que” numa prova independente da análise que levou a escolhê-la. Observe agência, intenção, sequência do argumento e dependência sintática. Também não deduza que todo uso de ἵνα comunica automaticamente uma finalidade intencional da mesma maneira: o marcador precisa ser estudado dentro de sua construção e do uso do período."
+      },
+      {
+        "heading": "Desenhar o alcance evita relações falsas",
+        "body": "Em períodos longos, duas orações próximas podem depender de núcleos diferentes. Marque os limites, indique o regente e escreva uma paráfrase que torne a dependência visível. Depois veja que mudança ocorreria se a oração fosse ligada a outro termo. Esse contraste mostra por que a proximidade gráfica não resolve qualquer vínculo. Uma análise aprofundada deve justificar a relação, distinguir o que é formalmente claro do que é semanticamente inferido e admitir quando duas descrições permanecem compatíveis com os dados, sem impor uma precisão que o texto não oferece."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 14."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você distinguiria uma oração que apresenta o conteúdo de uma fala de outra que explica uma circunstância ou finalidade dessa fala?",
+      "Que indícios do regente e da perspectiva do enunciado ajudariam a comparar leituras de finalidade e resultado introduzidas pelo mesmo marcador?"
+    ]
+  },
+  {
+    "id": "as-s-relative-clauses",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-relative-clauses",
+    "order": 27,
+    "title": "O pronome relativo tem dois vínculos: antecedente e oração",
+    "summary": "Aprofunde a diferença entre concordância, função interna e atração de caso.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Retomar um nome e participar de uma predicação",
+        "body": "O relativo liga sua oração a um antecedente e também exerce uma função dentro da oração relativa. Esses dois vínculos não devem ser reduzidos a uma única regra de concordância. No exemplo didático ὁ μαθητὴς ὃν βλέπω γράφει, “o aluno que vejo escreve”, o antecedente ὁ μαθητής funciona na oração principal; ὃν participa de βλέπω como objeto. O caso do antecedente e o caso do relativo diferem porque suas funções pertencem a construções diferentes, embora ambos apontem para o mesmo participante."
+      },
+      {
+        "heading": "A concordância não precisa copiar o caso",
+        "body": "Gênero e número ajudam a identificar a ligação com o antecedente, enquanto o caso normalmente deve ser investigado a partir da função do pronome na oração relativa. Essa formulação inicial evita o erro de exigir que toda retomada copie todas as categorias morfológicas. Quando houver mais de um antecedente compatível, a concordância ainda não oferece uma decisão completa. Observe o sentido da relativa, sua posição e a sequência discursiva. Registrar cada vínculo separadamente torna mais fácil identificar exatamente onde surge uma ambiguidade."
+      },
+      {
+        "heading": "O que a atração acrescenta ao problema",
+        "body": "Construções descritas como atração mostram que a relação entre as duas partes pode afetar a forma esperada do relativo. O fenômeno deve ser reconhecido por comparação com padrões documentados, não usado como recurso geral para justificar qualquer caso inesperado. Primeiro estabeleça como a relativa se organizaria segundo sua função interna; depois examine a influência possível do antecedente e do ambiente. Uma explicação por atração fica mais forte quando indica claramente o padrão envolvido e preserva uma análise coerente da predicação inteira."
+      },
+      {
+        "heading": "A tradução pode esconder uma diferença importante",
+        "body": "O português frequentemente usa “que” sem exibir as distinções de caso visíveis no grego. Uma versão fluente, portanto, pode disfarçar tanto o trabalho sintático do relativo quanto uma configuração de atração. Para aprofundar, explicite a função interna do pronome numa paráfrase e verifique se a tradução preserva o alcance da relativa: ela identifica qual referente está em questão ou acrescenta uma informação sobre um referente já estabelecido? A resposta depende da construção e do contexto; a pontuação portuguesa escolhida deve refletir essa análise, em vez de funcionar como sua única justificativa."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 15."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que o pronome relativo pode concordar em gênero e número com o antecedente, mas apresentar um caso diferente dele?",
+      "Antes de propor atração de caso, como você demonstraria a função que o relativo desempenha dentro da própria oração?"
+    ]
+  },
+  {
+    "id": "as-s-conditionals",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-conditionals",
+    "order": 28,
+    "title": "Condição não é confirmação: o que uma hipótese assume",
+    "summary": "Compare forma gramatical, estratégia argumentativa e avaliação factual nas orações condicionais.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Um raciocínio pode começar por algo não confirmado",
+        "body": "Uma oração condicional relaciona uma hipótese a uma consequência. A construção pode permitir explorar uma possibilidade, formular uma orientação ou desenvolver um argumento sem confirmar que a hipótese ocorreu. Essa distinção é particularmente importante quando o estudante transforma uma classificação gramatical numa declaração sobre a realidade. Pergunte separadamente como a prótase está formada, que consequência a apódose apresenta e que compromisso o falante assume no contexto. Nenhuma dessas perguntas deve ser respondida apenas traduzindo “se” por uma palavra portuguesa mais assertiva."
+      },
+      {
+        "heading": "O alcance de assumir algo para argumentar",
+        "body": "Na descrição tradicional representada por Wallace, a condição de primeira classe envolve uma hipótese tomada como base do argumento. Isso não equivale a uma garantia de que ela seja verdadeira no mundo. É possível desenvolver consequências a partir de alternativas incompatíveis sem aceitar ambas como fatos. As notas da NET para Atos 25:11 exemplificam precisamente esse uso argumentativo. O dado formal deve ser reconhecido, mas a avaliação factual precisa considerar quem fala, que alternativas propõe e por que as introduz naquela situação."
+      },
+      {
+        "heading": "A forma não fornece uma escala universal de probabilidades",
+        "body": "Não trate as classes condicionais como porcentagens prontas de chance de cumprimento. Construções distintas podem organizar a relação hipotética de maneiras diferentes, mas a probabilidade concreta depende também de informações que não estão na morfologia. Na referência prioritária deste curso, a análise de Porter deve ser lida dentro de sua descrição de modo e contexto; a terminologia de outra obra não deve ser inserida como se os modelos fossem idênticos. Compare as mesmas ocorrências e identifique o que cada descrição efetivamente pretende explicar."
+      },
+      {
+        "heading": "Traduzir preservando a relação proposta",
+        "body": "No exemplo didático εἰ ὁ μαθητὴς γράφει, ὁ διδάσκαλος χαίρει, uma versão com “se o aluno escreve, o professor se alegra” conserva a relação condicional. Trocar “se” por “já que” adiciona uma interpretação que exige justificativa contextual. Analise ainda o alcance da hipótese: ela abrange um acontecimento, uma afirmação de outro interlocutor ou uma condição para agir? Explique a consequência e teste uma paráfrase alternativa. O aprofundamento deve mostrar como o argumento funciona, sem converter a classificação formal numa autorização para decidir sozinho o que aconteceu."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 16."
+      },
+      {
+        "title": "Daniel B. Wallace, Gramática Grega: uma sintaxe exegética do Novo Testamento, capítulo sobre orações condicionais, primeira classe. Complemento comparativo identificado; redação própria."
+      },
+      {
+        "title": "NET Bible — notas de tradução sobre Atos 25:11 e condições de primeira classe",
+        "url": "https://bible.org/download/netbible/ondemand/bybook/act.pdf"
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença existe entre aceitar provisoriamente uma premissa para argumentar e afirmar que essa premissa corresponde aos fatos?",
+      "Como você avaliaria a hipótese expressa numa condição sem transformar sua classificação gramatical numa porcentagem fixa de probabilidade?"
+    ]
+  },
+  {
+    "id": "as-s-indirect-discourse",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-indirect-discourse",
+    "order": 29,
+    "title": "Quem está afirmando isso? As camadas do discurso relatado",
+    "summary": "Examine mudanças de perspectiva e compromisso ao incorporar a fala de outra pessoa.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Relatar uma afirmação não é endossá-la",
+        "body": "Uma narrativa pode apresentar o conteúdo de uma fala sem garantir sua verdade. O narrador afirma que alguém falou; o personagem assume o conteúdo relatado. Essas duas camadas precisam ser distinguidas. Se um verbo declarativo introduz uma oração com indicativo, a forma verbal interna não transforma automaticamente a afirmação da personagem numa posição do autor. Identifique primeiro o responsável por cada enunciado e só depois avalie como o contexto confirma, corrige ou contrasta o conteúdo que foi apresentado."
+      },
+      {
+        "heading": "O discurso indireto reorganiza pontos de referência",
+        "body": "Ao incorporar uma fala, o texto pode ajustar pronomes e referências de pessoa, lugar ou tempo. Não reconstrua a fala original como se cada palavra pudesse ser recuperada por uma substituição mecânica. Uma paráfrase portuguesa pode tornar as mudanças mais visíveis, mas precisa distinguir o que o original apresenta do que está sendo inferido. Pergunte quem é “eu”, a quem um “ele” se refere e de que momento se avalia uma expressão temporal. A organização da voz narrativa pode ser decisiva para responder corretamente."
+      },
+      {
+        "heading": "O mesmo marcador admite papéis diferentes",
+        "body": "Uma oração com ὅτι pode apresentar conteúdo dependente de um verbo de dizer ou de outra expressão regente; há também usos em que o marcador introduz uma fala direta. Reconhecer a forma não dispensa examinar pronomes, referências pessoais e a estrutura que se segue. Também é necessário distinguir esse emprego de uma leitura causal em outra construção. A tradução com aspas, dois-pontos ou “que” registra uma análise do vínculo discursivo. Esses recursos editoriais ajudam o leitor, mas não substituem a demonstração das relações presentes no texto."
+      },
+      {
+        "heading": "Uma leitura em duas colunas",
+        "body": "Para aprofundar um trecho, mantenha duas anotações paralelas: o conteúdo comunicado e a fonte a quem ele é atribuído. Observe onde o narrador retorna à sua própria exposição, onde cita outra fonte e onde resume várias falas. Depois compare duas traduções que organizem o período de maneiras diferentes. A diferença altera quem parece assumir a afirmação ou apenas melhora a fluência em português? Essa pergunta permite avaliar escolhas de pontuação e subordinação sem confundir a análise da estrutura com a avaliação histórica ou teológica do conteúdo relatado."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 17."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você distinguiria o compromisso do narrador do compromisso de uma pessoa cuja afirmação é relatada por ele?",
+      "Ao passar de uma fala direta para um relato indireto, quais referências de pessoa, tempo e lugar precisariam ser acompanhadas para preservar a perspectiva?"
+    ]
+  },
+  {
+    "id": "as-s-questions-negation-commands",
+    "area": "syntax",
+    "level": 2,
+    "lessonId": "s-questions-negation-commands",
+    "order": 30,
+    "title": "O que exatamente está sendo negado, perguntado ou solicitado?",
+    "summary": "Aprofunde alcance, expectativas de resposta e força comunicativa sem transformar partículas em atalhos infalíveis.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma negação pode ter alcance limitado",
+        "body": "Não basta localizar οὐ ou μή e traduzir a oração inteira como uma negação indiferenciada. Pergunte que constituinte ou predicação está sob seu alcance e se o enunciado contrasta duas alternativas. Negar que certa pessoa realizou uma ação não é necessariamente negar que a ação aconteceu; negar um modo de agir não equivale a excluir o acontecimento inteiro. A organização da frase e o contexto ajudam a estabelecer essa diferença. Uma tradução precisa deve tornar visível a relação que efetivamente está sendo negada."
+      },
+      {
+        "heading": "A pergunta faz mais que pedir uma informação",
+        "body": "Uma interrogação pode solicitar um dado desconhecido, desafiar uma posição, expressar surpresa ou orientar a conclusão do interlocutor. Partículas e configurações negativas podem contribuir para expectativas de resposta, mas não devem ser usadas como garantias absolutas fora do contexto. Antes de afirmar que a resposta “só pode ser sim”, identifique a situação do diálogo e o papel do enunciado na sequência argumentativa. A descrição gramatical fornece indícios; a força comunicativa se estabelece pela combinação desses indícios com o contexto."
+      },
+      {
+        "heading": "Proibições e aspecto exigem cuidado",
+        "body": "É arriscado deduzir de toda combinação de negação e forma verbal se uma ação já começou ou nunca ocorreu. A oposição aspectual não equivale automaticamente a uma instrução sobre interromper algo em curso ou evitar qualquer início possível. Examine a construção, o verbo e a situação apresentada. Se uma tradução usa “pare de” ou “não volte a”, ela está explicitando informações específicas. Mostre de onde vêm esses detalhes e verifique se a escolha não introduz um cenário que o texto, por si só, deixa aberto."
+      },
+      {
+        "heading": "Distinguir comando, pedido e conselho",
+        "body": "Uma forma imperativa pode participar de interações com relações sociais e propósitos diferentes. Não classifique o ato comunicativo apenas pela intensidade que uma tradução portuguesa parece ter. Observe o destinatário, a posição da orientação no discurso e as razões oferecidas para agir. Ao aprofundar uma passagem, formule duas paráfrases com graus diferentes de explicitação e avalie qual preserva melhor sua força. O resultado deve articular forma gramatical, alcance e situação enunciativa, mantendo separadas as informações linguisticamente reconhecíveis e as inferências que continuam sujeitas a discussão."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 13, 18 e 19."
+      }
+    ],
+    "discussionQuestions": [
+      "Como uma mudança no alcance da negação alteraria a interpretação sem exigir uma mudança no significado de cada palavra?",
+      "Que contexto ajudaria a distinguir comando, pedido e conselho, e por que uma partícula ou uma forma aspectual isolada não resolve toda essa distinção?"
+    ]
+  },
+  {
+    "id": "as-s-aspect-theories",
+    "area": "syntax",
+    "level": 3,
+    "lessonId": "s-aspect-theories",
+    "order": 31,
+    "title": "Porter e Wallace: como localizar um desacordo real sobre o verbo",
+    "summary": "Compare pressupostos e previsões interpretativas, em vez de escolher uma teoria pela tradução que prefere.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Duas análises podem produzir a mesma versão",
+        "body": "Uma tradução portuguesa no passado pode ser defendida por modelos diferentes do verbo grego. O desacordo pode estar em como se distribuem as contribuições da forma gramatical, do léxico e do contexto, e não na escolha final do tempo português. A comparação precisa perguntar o que cada modelo considera codificado e o que entende como interpretação contextual. Sem essa distinção, uma discussão sobre teoria verbal facilmente se reduz a exemplos de tradução que não demonstram a diferença que se pretende avaliar."
+      },
+      {
+        "heading": "Explicitar o ponto de partida de Porter",
+        "body": "No quadro priorizado pelo curso, Porter coloca o aspecto no centro da descrição do sistema e distingue apresentação perfectiva, imperfectiva e estativa. Sua análise não trata referência temporal e duração como equivalentes diretos dessas categorias. Wallace organiza sua discussão do verbo com outra distribuição entre valores gramaticais e usos contextuais, preservando referências temporais na descrição de formas do indicativo. O aluno deve ler as definições de cada autor antes de comparar seus exemplos; termos parecidos não asseguram que ambos estejam formulando exatamente a mesma proposta."
+      },
+      {
+        "heading": "Uma comparação precisa de um caso de teste",
+        "body": "Escolha uma ocorrência, anote a forma, o conteúdo lexical, os marcadores temporais e a sequência discursiva. Depois reconstrua a explicação de cada modelo sem alterar o exemplo para favorecê-lo. Uma teoria atribui ao contexto uma informação que a outra relaciona à categoria gramatical? Elas fazem previsões distintas sobre casos semelhantes? O trabalho de Fanning amplia a comparação ao investigar interações entre aspecto e outros elementos linguísticos. Consultá-lo não significa fundir modelos diferentes numa descrição eclética que já não possa ser atribuída com precisão a nenhum autor."
+      },
+      {
+        "heading": "Critérios para avaliar, não apenas declarar preferência",
+        "body": "Uma avaliação consistente considera cobertura de dados, clareza das categorias e capacidade de distinguir contribuição gramatical de inferência contextual. Exemplos problemáticos precisam ser discutidos, e não escondidos sob traduções convenientes. Também é necessário reconhecer o alcance limitado de uma comparação introdutória: um único enunciado raramente resolve uma teoria do sistema inteiro. Neste espaço de aprofundamento, a prioridade de Porter orienta o estudo, mas não impede examinar objeções. O objetivo é aprender a formular o desacordo corretamente e identificar que evidência poderia efetivamente alterar a conclusão."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 1, especialmente seções 1.1–1.3."
+      },
+      {
+        "title": "Daniel B. Wallace, Gramática Grega: uma sintaxe exegética do Novo Testamento, seções sobre significado afetado/não afetado e Os Tempos: Introdução."
+      },
+      {
+        "title": "Buist M. Fanning — Verbal Aspect in New Testament Greek, Oxford University Press",
+        "url": "https://academic.oup.com/book/50303"
+      }
+    ],
+    "discussionQuestions": [
+      "Se Porter e Wallace sustentarem a mesma tradução no passado, que perguntas sobre a contribuição da forma e do contexto ainda permitiriam localizar um desacordo teórico?",
+      "Que conjunto de ocorrências e marcadores temporais você escolheria para comparar os modelos sem selecionar apenas exemplos favoráveis à sua preferência?"
+    ]
+  },
+  {
+    "id": "as-s-perfect-future",
+    "area": "syntax",
+    "level": 3,
+    "lessonId": "s-perfect-future",
+    "order": 32,
+    "title": "Perfeito e futuro: o que muda quando o modelo muda?",
+    "summary": "Examine estado, resultado, expectativa e referência temporal sem igualar terminologias de teorias diferentes.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Um nome tradicional não encerra a descrição",
+        "body": "Chamar uma forma de perfeito ou futuro identifica uma categoria do paradigma, mas não resolve o debate sobre sua contribuição semântica. Uma discussão aprofundada deve separar esse reconhecimento formal da teoria usada para explicá-lo. No caso do perfeito, estado e relação com um acontecimento anterior são organizados de maneiras diferentes em descrições concorrentes. No caso do futuro, referência temporal e expectativa também demandam atenção. As categorias precisam ser comparadas por suas definições e aplicações, não apenas pela familiaridade de seus nomes."
+      },
+      {
+        "heading": "O estativo de Porter precisa ser lido como categoria",
+        "body": "Na análise priorizada neste curso, o perfeito é relacionado ao aspecto estativo de Porter. Isso não significa que toda forma traduza uma qualidade eterna, nem que nenhum acontecimento anterior seja relevante na interpretação. Também não basta acrescentar “e continua assim” a todas as versões portuguesas. O analista deve demonstrar como a forma participa da apresentação de uma situação e como o léxico e o contexto acrescentam detalhes. Descrições de estado resultante precisam ser distinguidas de afirmações sobre aquilo que a forma, sozinha, obrigatoriamente codifica."
+      },
+      {
+        "heading": "O futuro não é uma previsão garantida",
+        "body": "Um enunciado orientado ao futuro pode expressar expectativa, promessa, previsão ou outra função contextual. Sua ocorrência não comprova que o acontecimento se realizará. Porter discute a expectativa no tratamento da forma futura; outras descrições atribuem à referência temporal um papel diferente na organização do sistema. Para comparar as análises, identifique o tipo de enunciado e os indícios de localização temporal. Não use o cumprimento posterior de um acontecimento como prova direta de que determinada categoria gramatical contém, por si mesma, uma garantia factual."
+      },
+      {
+        "heading": "Testar as diferenças em interpretações concretas",
+        "body": "Compare duas explicações do mesmo perfeito e pergunte se divergem sobre a situação apresentada, sobre sua relação temporal ou apenas sobre o nível de descrição. Repita o procedimento com um futuro. Algumas diferenças de modelo têm consequências interpretativas reais; outras permitem traduções próximas e exigem um conjunto maior de dados para serem avaliadas. Uma leitura crítica preserva essa proporção. Registre a posição de cada obra com referência identificada e evite montar uma combinação de afirmações de autores diferentes como se todos compartilhassem uma única teoria do verbo grego."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 1, seções 1.1, 2.3 e 2.4; cap. 2, seção 2.4."
+      },
+      {
+        "title": "Daniel B. Wallace, Gramática Grega: uma sintaxe exegética do Novo Testamento, seções sobre perfeito, mais-que-perfeito e futuro."
+      },
+      {
+        "title": "Buist M. Fanning — Verbal Aspect in New Testament Greek, capítulos sobre aspectos e indicativo",
+        "url": "https://academic.oup.com/book/50303"
+      }
+    ],
+    "discussionQuestions": [
+      "Que diferença existe entre identificar o perfeito como estativo no modelo de Porter e acrescentar obrigatoriamente “e continua assim” a toda tradução?",
+      "Por que a realização posterior de um acontecimento não prova que uma forma futura codifique garantia factual? Como você separaria expectativa, contexto e referência temporal?"
+    ]
+  },
+  {
+    "id": "as-s-case-ambiguity",
+    "area": "syntax",
+    "level": 3,
+    "lessonId": "s-case-ambiguity",
+    "order": 33,
+    "title": "Quando duas classificações de caso podem estar certas?",
+    "summary": "Examine a granularidade das categorias e separe divergência terminológica de desacordo interpretativo.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Os rótulos não são novas terminações",
+        "body": "Uma gramática pode distribuir os usos de um caso em muitas categorias; outra pode agrupá-los em famílias mais amplas. Essa diferença não significa que as duas reconheçam sistemas morfológicos distintos. Frequentemente elas procuram organizar relações semânticas e contextuais com graus diferentes de detalhe. Ao comparar classificações de genitivo ou dativo, comece pela paráfrase proposta para o exemplo. Se as obras descrevem a mesma relação e apenas a nomeiam em níveis diferentes, o desacordo é menor do que a lista de termos pode sugerir."
+      },
+      {
+        "heading": "Estrutura e sentido podem divergir separadamente",
+        "body": "Há casos em que os autores concordam sobre o núcleo de uma expressão, mas divergem sobre a relação contextual do genitivo. Em outros, a questão anterior é a própria dependência: o grupo se liga ao nome, ao verbo ou à predicação inteira? Misturar essas dúvidas dificulta avaliar qualquer proposta. Escreva primeiro um esquema das dependências e depois as paráfrases semânticas. Uma nova classificação só resolve o problema se esclarecer a relação que estava em discussão; trocar o nome da categoria não demonstra uma nova interpretação."
+      },
+      {
+        "heading": "Ambiguidade não exige uma intenção dupla",
+        "body": "Se uma construção admite duas leituras, isso mostra uma possibilidade linguística que precisa ser avaliada no contexto. Não prova que o autor quis necessariamente comunicar ambas ao mesmo tempo. Também não obriga o tradutor a escolher uma interpretação mais específica quando uma versão menos determinada preserva melhor os dados. Compare o que cada paráfrase acrescenta, que evidência a favorece e que informações a enfraquecem. A leitura aprofundada deve graduar a segurança das propostas, evitando tanto a decisão apressada quanto a multiplicação ilimitada de sentidos possíveis."
+      },
+      {
+        "heading": "Usar Porter e Wallace como instrumentos comparáveis",
+        "body": "O curso parte de Porter e apresenta Wallace como referência complementar identificada. Para comparar suas categorias, escolha uma ocorrência e registre as definições usadas por cada obra. Pergunte se os critérios dependem de regência, relação lexical, contexto ou classificação semântica. Depois avalie os efeitos para a tradução. Uma comparação criteriosa não precisa eleger uma terminologia exclusiva para todo trabalho futuro; precisa permitir que outra pessoa reconstrua seu raciocínio. A melhor categoria, naquele estudo, é a que resume com clareza uma análise sustentada e revela seus limites."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 1 e 2.4.5–2.4.6."
+      },
+      {
+        "title": "Daniel B. Wallace, Gramática Grega: uma sintaxe exegética do Novo Testamento, introdução metodológica e capítulos sobre os casos."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você verificaria se dois rótulos de caso descrevem níveis diferentes da mesma relação ou realmente propõem interpretações incompatíveis?",
+      "Quando duas leituras permanecem possíveis, que evidência seria necessária para atribuir ao autor uma intenção de manter ambas, em vez de apenas reconhecer a dúvida do leitor?"
+    ]
+  },
+  {
+    "id": "as-s-article-rules",
+    "area": "syntax",
+    "level": 3,
+    "lessonId": "s-article-rules",
+    "order": 34,
+    "title": "Colwell e Granville Sharp: como não inverter uma regra",
+    "summary": "Aprofunde condições de aplicação e limites inferenciais antes de extrair conclusões exegéticas.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Uma observação de distribuição não funciona ao contrário",
+        "body": "A observação associada a Colwell trata de predicativos definidos e da ausência frequente do artigo em determinada posição antes do verbo. Não se pode inverter o raciocínio e concluir que todo predicativo sem artigo nessa posição seja definido. A ausência do artigo, isoladamente, tampouco resolve entre indefinição e interpretação qualitativa. Wallace chama atenção para esse problema metodológico em sua discussão. Antes de usar a regra, identifique a estrutura e os argumentos independentes para a interpretação do predicativo, evitando fazer da conclusão a premissa que deveria demonstrá-la."
+      },
+      {
+        "heading": "Uma inferência precisa preservar suas condições",
+        "body": "A construção normalmente associada à regra de Granville Sharp reúne artigo, substantivo, καί e outro substantivo sob condições restritas. Na apresentação clássica discutida por Wallace, importam o caráter pessoal, singular e não próprio dos substantivos, além de sua configuração de caso e artigo. Uma sequência que apenas se parece visualmente com o padrão não autoriza transportar automaticamente a conclusão para plurais, nomes próprios ou expressões impessoais. A análise deve conferir cada condição antes de avaliar se os termos se referem à mesma pessoa."
+      },
+      {
+        "heading": "A gramática não dispensa a análise do referente",
+        "body": "Mesmo ao estudar um padrão bem delimitado, é necessário identificar os substantivos, suas funções e a configuração completa do grupo. Um artigo repetido, uma coordenação diferente ou a natureza de um dos nomes pode exigir outra análise. A finalidade deste estudo não é oferecer uma fórmula que resolva qualquer debate com duas palavras. É mostrar como uma proposta gramatical delimitada pode contribuir para a identificação dos referentes, sem substituir o exame lexical, textual e contextual da passagem na qual se pretende aplicá-la."
+      },
+      {
+        "heading": "Uma sequência de trabalho que evita excessos",
+        "body": "Primeiro registre a estrutura tal como aparece; depois verifique as condições da regra na obra consultada. Em seguida, separe a conclusão propriamente linguística das inferências exegéticas posteriores. Uma afirmação teológica pode depender de mais dados do que uma relação de referência entre dois substantivos. Quando uma condição não se cumpre, isso não demonstra automaticamente a conclusão oposta: significa que aquela regra específica não fornece a decisão. O aprofundamento consiste em usar ferramentas com precisão e reconhecer quando sua aplicação termina, em vez de ampliar seu alcance para obter um resultado previamente desejado."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 5, especialmente seções 1, 2.5 e 2.6."
+      },
+      {
+        "title": "Daniel B. Wallace, Gramática Grega: uma sintaxe exegética do Novo Testamento, O Artigo, parte II: predicativo anartro pré-verbal, regra de Colwell e construções de Granville Sharp."
+      },
+      {
+        "title": "Daniel B. Wallace — Granville Sharp’s Canon and Its Kin: Semantics and Significance, amostra editorial, introdução",
+        "url": "https://api.pageplace.de/preview/DT0400.9781453902721_A24026646/preview-9781453902721_A24026646.pdf"
+      }
+    ],
+    "discussionQuestions": [
+      "Por que a observação de Colwell sobre predicativos definidos antes do verbo não autoriza concluir que todo predicativo anartro nessa posição é definido?",
+      "Que condições você conferiria antes de aplicar a regra de Granville Sharp, e o que pode concluir quando uma dessas condições não se cumpre?"
+    ]
+  },
+  {
+    "id": "as-s-discourse",
+    "area": "syntax",
+    "level": 3,
+    "lessonId": "s-discourse",
+    "order": 35,
+    "title": "Proeminência não é importância teológica: sintaxe além da frase",
+    "summary": "Compare indicadores linguísticos de destaque e a interpretação do que é central no argumento.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "Duas perguntas diferentes sobre destaque",
+        "body": "Um elemento pode receber uma apresentação linguística marcada sem constituir, por isso, o centro teológico de um texto. A proeminência discursiva investiga como o enunciado orienta atenção, continuidade e desenvolvimento. A importância interpretativa mais ampla depende também do conteúdo, do gênero e da organização do argumento. Confundir esses níveis pode produzir uma exegese em que qualquer mudança formal vira um sinal de profundidade especial. O aprofundamento começa perguntando que efeito comunicativo concreto está sendo proposto e quais elementos do texto permitem reconhecê-lo."
+      },
+      {
+        "heading": "O modelo de Porter deve ser identificado",
+        "body": "Porter relaciona escolhas linguísticas à organização da proeminência em sua abordagem do discurso. Isso não autoriza transformar uma única forma verbal numa escala independente de todo contexto, nem atribuir a outros autores exatamente os mesmos termos e pressupostos. Ao estudar uma proposta desse tipo, verifique como o autor estabelece o padrão de comparação e como aplica suas categorias a um trecho. A frequência de uma forma, seu valor no sistema e sua função naquela sequência não são três medidas automaticamente intercambiáveis de relevância."
+      },
+      {
+        "heading": "Continuidade pode usar recursos discretos",
+        "body": "Um participante pode permanecer acessível por meio de pronomes e sujeitos não expressos, enquanto uma expressão nominal mais completa sinaliza uma mudança ou reintrodução. Conectores, ordem e organização das unidades também participam da progressão. Estudos de estrutura informacional, como os de Levinsohn, oferecem outra entrada para essas perguntas. Não é necessário fundir todas as categorias num único modelo para aproveitá-las. Compare que fenômeno cada análise descreve e evite atribuir o mesmo efeito a recursos diferentes apenas porque ambos foram chamados de “ênfase”."
+      },
+      {
+        "heading": "Analisar conjuntos de indícios",
+        "body": "Escolha um parágrafo, identifique seus participantes e acompanhe as ligações entre as predicações. Só depois formule uma hipótese de continuidade ou destaque. Teste se ela explica a sequência inteira e se há alternativas para o padrão observado. Uma hipótese baseada em vários indícios convergentes é mais robusta que uma leitura apoiada num único detalhe. Ao traduzir, considere quais diferenças o português consegue representar sem acrescentar uma ênfase artificial. O objetivo é reconstruir a organização comunicativa do trecho, distinguindo os resultados observáveis das interpretações que exigem argumentos adicionais."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 20 e 21."
+      },
+      {
+        "title": "Stephen H. Levinsohn — Discourse Features of New Testament Greek e materiais complementares do autor",
+        "url": "https://scholars.sil.org/stephen_h_levinsohn"
+      }
+    ],
+    "discussionQuestions": [
+      "Como você distinguiria um sinal linguístico de proeminência da importância teológica que atribui a uma passagem?",
+      "Que combinação de continuidade referencial, conectores e organização das orações seria mais informativa do que interpretar isoladamente uma palavra destacada?"
+    ]
+  },
+  {
+    "id": "as-s-integrated-reading",
+    "area": "syntax",
+    "level": 3,
+    "lessonId": "s-integrated-reading",
+    "order": 36,
+    "title": "Como escrever uma análise que outra pessoa consiga verificar",
+    "summary": "Integre morfologia, sintaxe, léxico e discurso num argumento revisável, em vez de apresentar apenas uma tradução final.",
+    "minutes": 8,
+    "sections": [
+      {
+        "heading": "A interpretação precisa deixar um percurso",
+        "body": "Uma tradução pode ser elegante e esconder decisões importantes sobre referentes, dependências e relações entre acontecimentos. Para aprofundar a leitura, apresente o caminho que levou até ela. Registre o texto analisado, as formas cuja identificação é relevante e as ligações sintáticas que sustentam a proposta. Depois mostre onde a interpretação depende do léxico e do contexto. Essa organização permite distinguir um erro de parsing, uma escolha entre construções possíveis e uma divergência exegética que surge apenas depois das etapas gramaticais."
+      },
+      {
+        "heading": "Uma hipótese deve ser confrontada com outra plausível",
+        "body": "Não basta comparar sua interpretação com uma alternativa obviamente inadequada. Escolha a melhor leitura concorrente e explique que evidência a favorece. Pode ser outra ligação de um grupo preposicional, outro antecedente para um pronome ou outra relação de um particípio. Escreva as duas paráfrases antes de decidir. Se a diferença desaparecer na tradução, discuta por que o desacordo continua ou deixa de ser relevante. Esse procedimento evita que a nomenclatura técnica crie a aparência de uma controvérsia maior do que os dados permitem sustentar."
+      },
+      {
+        "heading": "Integrar os níveis sem fundi-los",
+        "body": "A morfologia restringe possibilidades; a sintaxe organiza relações; o léxico e o contexto contribuem para a interpretação; a análise discursiva investiga a progressão. Nenhuma dessas etapas deve ser transformada num substituto universal das outras. Uma terminação não decide sozinha quem é o referente de um pronome, e um tema central do parágrafo não autoriza alterar uma relação sintática inconveniente. Na comparação de modelos, indique quando segue Porter e quando apresenta outra descrição. A integração exige explicitar a função de cada ferramenta e conservar a coerência de seus critérios."
+      },
+      {
+        "heading": "Concluir com uma medida de segurança",
+        "body": "Separe o que considera demonstrado, provável e ainda aberto à discussão. Identifique que dado adicional poderia mudar a conclusão e que efeito a mudança teria na tradução. Uma boa análise não se torna fraca por reconhecer limites; ela se torna mais útil porque permite revisão precisa. Ao receber uma nova fonte, você saberá que parte do argumento precisa ser reavaliada. O resultado do estudo não é apenas um rótulo ou uma versão portuguesa, mas uma justificativa clara, proporcional às evidências e suficientemente transparente para que outro leitor possa examiná-la."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, caps. 1, 4, 14, 20 e 21."
+      }
+    ],
+    "discussionQuestions": [
+      "Como você organizaria uma análise para que outro leitor pudesse separar observações morfológicas, relações sintáticas e hipóteses de interpretação?",
+      "Que alternativa plausível você apresentaria junto de sua conclusão, e como indicaria quais dados poderiam fazê-lo rever a análise?"
+    ]
+  }
+]

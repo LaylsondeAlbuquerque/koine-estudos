@@ -283,13 +283,14 @@
     "area": "morphology",
     "level": 0,
     "order": 2,
-    "title": "Vogais, ditongos e sílabas",
-    "summary": "Perceba como as letras formam unidades de leitura.",
-    "minutes": 10,
+    "title": "Vogais, ditongos e pronúncia erasmiana",
+    "summary": "Aprenda os sons da convenção erasmiana do curso e faça sua primeira leitura em voz alta.",
+    "minutes": 14,
     "objectives": [
       "Reconhecer vogais e ditongos.",
       "Identificar diérese e iota subscrito.",
-      "Preparar a leitura silábica."
+      "Preparar a leitura silábica.",
+      "Aplicar a convenção erasmiana adotada no curso."
     ],
     "sections": [
       {
@@ -323,6 +324,86 @@
       {
         "heading": "O iota subscrito",
         "body": "As grafias ᾳ, ῃ e ῳ conservam um iota sob a vogal. A marca participa da identificação de formas como τῷ. Em muitos padrões erasmianos de sala de aula, ela não recebe som separado. Mesmo assim, precisa ser reconhecida, pois pode distinguir formas gramaticais. Durante a revisão, localize vogais, ditongos e marcas antes de procurar o acento."
+      },
+      {
+        "heading": "Uma convenção de leitura para começar",
+        "body": "Neste percurso usamos uma convenção erasmiana de sala de aula, adaptada ao português. O objetivo inicial é ligar escrita e som com consistência; não estamos afirmando que esta seja a única pronúncia erasmiana nem uma reconstrução exata de todo o período koiné. No quadro, “é”, “ê”, “ó” e “ô” são aproximações didáticas. Distinga as letras mesmo quando ainda estiver ajustando a articulação.",
+        "table": {
+          "headers": [
+            "Vogal",
+            "Apoio de pronúncia"
+          ],
+          "rows": [
+            [
+              "α",
+              "a, sem nasalizar"
+            ],
+            [
+              "ε",
+              "é breve"
+            ],
+            [
+              "η",
+              "ê sustentado, distinto de ε nesta convenção"
+            ],
+            [
+              "ι",
+              "i"
+            ],
+            [
+              "ο",
+              "ó breve"
+            ],
+            [
+              "υ",
+              "ü: diga i mantendo os lábios arredondados como para u"
+            ],
+            [
+              "ω",
+              "ô sustentado, distinto de ο nesta convenção"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Consoantes e combinações frequentes",
+        "body": "Leia β como b e γ como o g de “gato”, mesmo diante de ε ou ι; diante de γ, κ, χ ou ξ, o primeiro γ é nasal. Use σ e ς com som de s. Para φ, use f; ξ representa ks e ψ representa ps. Para θ, aproxime o th de “think” em inglês, com a língua junto aos dentes. Para χ, produza fricção na parte posterior da boca, como em “Bach” em alemão; evite o som de ch em “chuva”. Essas aproximações servem ao treino; o nome da letra não deve ser acrescentado à palavra ao lê-la.",
+        "table": {
+          "headers": [
+            "Combinação",
+            "Leitura usada aqui"
+          ],
+          "rows": [
+            [
+              "αι",
+              "ai, como em pai"
+            ],
+            [
+              "ει",
+              "ei, como em rei"
+            ],
+            [
+              "οι",
+              "oi, como em boi"
+            ],
+            [
+              "αυ",
+              "au, como em mau"
+            ],
+            [
+              "ευ",
+              "eu, como em meu"
+            ],
+            [
+              "ου",
+              "u, como em lua"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Sua primeira rotina de leitura",
+        "body": "Faça três passagens curtas. Primeiro, aponte cada letra de λόγος e recorde seu som. Depois, una as sílabas: λό-γος; destaque a sílaba marcada pelo acento. Por fim, leia a palavra inteira sem inserir uma vogal depois do sigma final. Faça o mesmo com οἶ-κος: nesta convenção, οι mantém o apoio “oi”. Volte à aula de espíritos e acentos para ler palavras iniciadas por vogal. As grafias latinas são apoios provisórios: procure ler diretamente as letras gregas. O artigo de aprofundamento sobre pronúncias compara os sistemas e as razões usadas por seus defensores."
       }
     ],
     "examples": [
@@ -437,7 +518,15 @@
       }
     ],
     "references": [
-      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1. Síntese, organização dos paradigmas e exercícios próprios."
+      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1. Síntese, organização dos paradigmas e exercícios próprios.",
+      {
+        "title": "Bill Mounce — Greek Alphabet e convenções de pronúncia; referência complementar para esta adaptação didática.",
+        "url": "https://www.billmounce.com/greek-alphabet"
+      },
+      {
+        "title": "Bill Mounce — quadro de pronúncia erasmiana (material do autor).",
+        "url": "https://bsg.billmounce.com/Alphabet%20%28Erasmian%29.pdf"
+      }
     ]
   },
   {

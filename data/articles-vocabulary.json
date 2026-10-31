@@ -1,0 +1,438 @@
+[
+  {
+    "id": "av-v-lemma",
+    "area": "vocabulary",
+    "level": 0,
+    "lessonId": "v-lemma",
+    "order": 1,
+    "title": "O lema é uma decisão de organização: o que um verbete reúne?",
+    "summary": "Investigue a relação entre forma escrita, identidade lexical e escolhas feitas por repertórios e ferramentas digitais.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "A entrada não é a palavra inteira",
+        "body": "Um lema funciona como endereço: permite reunir formas que o leitor encontra separadamente. Esse endereço não contém, por si, todas as informações da ocorrência. Ao localizar λόγου sob λόγος, você recupera uma identidade lexical; ainda precisa explicar a flexão e a relação dessa forma com a oração. Confundir essas duas tarefas produz um erro frequente: acreditar que encontrar o verbete já resolveu a análise. A consulta lexical responde quais usos podem pertencer à palavra; o texto fornece evidências para selecionar uma análise e um sentido. O trabalho do leitor continua depois de abrir a entrada."
+      },
+      {
+        "heading": "Por que repertórios podem divergir",
+        "body": "Uma lista precisa decidir como representar variantes de escrita, formas relacionadas e entradas de classes diferentes. Por isso, duas ferramentas podem oferecer resultados aparentemente distintos sem que uma palavra tenha desaparecido do texto. Antes de comparar suas contagens, examine qual unidade foi contada. Um índice de formas escritas e um índice de lemas respondem a perguntas diferentes. A documentação do MACULA distingue o texto dos campos de anotação que o acompanham. Essa distinção ajuda a perceber que uma identificação lexical é uma análise registrada, não uma propriedade visual que se lê automaticamente na sequência de letras."
+      },
+      {
+        "heading": "Uma pequena investigação de leitura",
+        "body": "Considere a sequência didática λόγος, λόγον, λόγου. Ela permite testar uma hipótese de identidade lexical enquanto as terminações variam. Em seguida, compare λόγος e λίθος: ambos podem fornecer exemplos do mesmo padrão nominal, mas isso não os torna o mesmo vocábulo. A investigação separa duas relações: pertencer a um paradigma de flexão e compartilhar um padrão de declinação. Esse contraste explica por que reconhecer uma terminação ajuda a procurar uma entrada, mas não autoriza escolher qualquer entrada com aquela terminação. O radical, a classe gramatical e o contexto precisam sustentar a identificação proposta."
+      },
+      {
+        "heading": "O que registrar além do endereço",
+        "body": "Um registro útil de leitura guarda três elementos: a forma encontrada, o lema identificado e a evidência usada para relacioná-los. Para λόγου, você pode anotar o lema λόγος e a identificação de genitivo singular no paradigma estudado. Acrescente depois a construção concreta em que a forma apareceu. Assim, uma dúvida futura pode ser localizada: você esqueceu o lema, confundiu a flexão ou interpretou mal uma relação? Essa separação transforma o caderno de vocabulário em registro de investigação. A lista de Porter fornece uma base de estudo; os reencontros acrescentam informação sobre como os itens funcionam em textos."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Orientações de vocabulário e paradigmas nominais."},
+      {"title": "Clear Bible. MACULA Greek: documentação dos textos e das anotações linguísticas.", "url": "https://github.com/Clear-Bible/macula-greek"}
+    ],
+    "discussionQuestions": [
+      "Que informação você recupera ao localizar λόγου no verbete λόγος, e que informação ainda depende da oração?",
+      "Por que contar formas escritas pode produzir um resultado diferente de contar lemas?"
+    ]
+  },
+  {
+    "id": "av-v-gloss",
+    "area": "vocabulary",
+    "level": 0,
+    "lessonId": "v-gloss",
+    "order": 2,
+    "title": "Entre glossa, definição e tradução: três tarefas diferentes",
+    "summary": "Entenda o que se ganha e o que se perde ao ligar uma palavra grega a um equivalente português.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "O equivalente curto tem uma finalidade",
+        "body": "Uma glossa pode ser excelente para iniciar a memória e insuficiente para resolver uma tradução. Não há contradição nisso: as duas tarefas exigem quantidades diferentes de informação. Ao estudar καρπός com “fruto”, o aluno estabelece uma associação manejável. Ao ler uma passagem, precisa investigar a referência concreta e a participação da palavra naquela construção. A glossa não falhou porque uma ocorrência exige “resultado”; ela cumpriu uma função limitada. O problema aparece quando o leitor trata um apoio inicial como definição completa, ou quando tenta transformar o cartão em um verbete tão extenso que já não consegue recordar a palavra."
+      },
+      {
+        "heading": "O português também organiza sentidos",
+        "body": "O equivalente escolhido traz consigo possibilidades do português que podem não corresponder à ocorrência grega. “Palavra”, por exemplo, pode designar uma unidade de escrita, uma fala ou um compromisso assumido. Não se deve transferir automaticamente cada possibilidade portuguesa para λόγος. A relação de tradução precisa ser testada em um uso determinado. O percurso inverso também é arriscado: duas palavras gregas traduzidas pelo mesmo substantivo português não se tornam intercambiáveis. Traduzir envolve aproximar recursos de duas línguas dentro de uma situação, e não construir um catálogo de peças que tenham sempre o mesmo encaixe."
+      },
+      {
+        "heading": "Uma lista de sentidos não é uma soma",
+        "body": "Imagine dois exemplos didáticos: alguém recolhe καρπός de uma árvore; em outro texto, um trabalho apresenta καρπός depois de esforço prolongado. O primeiro favorece a referência concreta; o segundo permite investigar a ideia de resultado. Não é necessário inserir “fruto-resultado” nas duas traduções. A presença da palavra não obriga o autor a ativar simultaneamente todas as possibilidades que um léxico descreve. Também não impede que um escritor explore uma associação entre elas, mas essa proposta exige sinais no texto. A interpretação deve distinguir uma conexão possível na língua de uma conexão efetivamente sustentada naquela passagem."
+      },
+      {
+        "heading": "Uma hipótese que pode ser revisada",
+        "body": "Na leitura, trate o equivalente como hipótese: ele se ajusta ao referente, às palavras próximas e ao desenvolvimento do argumento? Se a resposta for negativa, formule uma alternativa e compare usos pertinentes. Uma definição mais detalhada pode explicar limites que a glossa não registra. A metodologia do Cambridge Greek Lexicon, por exemplo, apresenta a organização semântica e a consulta contextual como dimensões do trabalho lexicográfico. Isso não transforma aquela obra em autoridade automática para toda passagem do Novo Testamento. Mostra, porém, por que um léxico de consulta e um repertório de memória devem oferecer recursos diferentes ao leitor."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Vocabulário e exemplos didáticos."},
+      {"title": "University of Cambridge, Faculty of Classics. Greek Lexicon Project: Methodology and Future Use.", "url": "https://www.classics.cam.ac.uk/research/projects/glp/methodology"}
+    ],
+    "discussionQuestions": [
+      "Como uma glossa pode ajudar a memória e, ainda assim, ser inadequada para determinada ocorrência?",
+      "Que evidências seriam necessárias para afirmar que uma passagem explora dois sentidos de uma palavra ao mesmo tempo?"
+    ]
+  },
+  {
+    "id": "av-v-review",
+    "area": "vocabulary",
+    "level": 0,
+    "lessonId": "v-review",
+    "order": 3,
+    "title": "Recuperar, reconhecer e espaçar: o que a pesquisa permite afirmar",
+    "summary": "Examine a diferença entre familiaridade e recordação, e os limites de aplicar pesquisas de memória a um curso de grego.",
+    "minutes": 11,
+    "sections": [
+      {
+        "heading": "Uma resposta fácil pode esconder tarefas distintas",
+        "body": "Ver γράφω e lembrar “escrever” antes de olhar as opções é diferente de reconhecer a resposta depois de encontrá-la na tela. As duas situações podem terminar em acerto, mas fornecem evidências diferentes sobre a aprendizagem. No primeiro caso, o aluno recuperou uma associação com pouca ajuda; no segundo, a alternativa ofereceu uma pista adicional. Uma sessão por seleção continua sendo útil, desde que essa ajuda seja reconhecida. Para avaliar a dificuldade real, tente produzir mentalmente uma resposta e só depois examine as alternativas. Registre também quando a palavra parece conhecida, mas seu sentido não aparece sem apoio."
+      },
+      {
+        "heading": "O que um experimento de recuperação mostrou",
+        "body": "Karpicke e Roediger investigaram a aprendizagem de pares de vocabulário em língua estrangeira e encontraram benefício da recuperação repetida para a retenção posterior. Esse resultado apoia distinguir tentativa de recordar e simples reestudo. Ele não demonstra que toda atividade com alternativas produz o mesmo efeito, nem estabelece um número universal de acertos para dominar um vocábulo grego. A aplicação ao curso é uma escolha didática: criar oportunidades de recuperação e fornecer correção. Para saber se houve transferência para a leitura, ainda é necessário observar o reconhecimento de formas e sentidos em orações que não reproduzam o cartão."
+      },
+      {
+        "heading": "Espaçamento é uma relação entre intervalos",
+        "body": "A síntese quantitativa de Cepeda e colaboradores examinou o espaçamento em tarefas de recordação verbal. Um resultado relevante é que o intervalo entre episódios de estudo e o tempo até o teste final interagem; um mesmo intervalo não é ideal para qualquer horizonte de retenção. Assim, “estudar em dias diferentes” é uma orientação geral, e não uma fórmula completa para todas as pessoas. O critério de três datas deste site serve ao acompanhamento local. Não foi apresentado como protocolo experimentalmente validado para garantir domínio permanente do grego ou para prever quanto tempo cada estudante conservará uma palavra."
+      },
+      {
+        "heading": "Como usar a evidência sem transformar o painel em diagnóstico",
+        "body": "Considere o marcador de memorização um convite a novos reencontros. Um vocábulo pode ser lembrado no cartão e não reconhecido numa flexão inesperada; outro pode ser compreendido na oração, mas não recuperado isoladamente. Ao errar, identifique qual dificuldade apareceu antes de simplesmente aumentar o número de repetições. Compare formas confundidas, reveja o sentido e retorne ao texto. Uma rotina equilibrada pode combinar cartões, leitura breve e revisão posterior. Se o indicador do site e sua experiência de leitura divergirem, essa diferença é informação útil para planejar o estudo, não uma razão para ignorar a dificuldade observada."
+      }
+    ],
+    "references": [
+      {"title": "Karpicke, Jeffrey D.; Roediger, Henry L. The Critical Importance of Retrieval for Learning. Science, 2008.", "url": "https://doi.org/10.1126/science.1152408"},
+      {"title": "Cepeda, Nicholas J. et al. Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 2006. Repositório da University of California.", "url": "https://escholarship.org/uc/item/3rr6q10c"},
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Estudo progressivo do vocabulário."}
+    ],
+    "discussionQuestions": [
+      "Que diferença você observa entre recordar um sentido antes das opções e reconhecer a alternativa correta depois de lê-la?",
+      "Por que o marcador de três datas não deve ser entendido como uma medida de domínio permanente?"
+    ]
+  },
+  {
+    "id": "av-v-core300",
+    "area": "vocabulary",
+    "level": 1,
+    "lessonId": "v-core300",
+    "order": 4,
+    "title": "Cobertura lexical: o que os 300 frequentes explicam e o que deixam aberto",
+    "summary": "Analise a diferença entre conhecer muitas ocorrências e compreender um texto, incluindo os limites da comparação com pesquisas de outras línguas.",
+    "minutes": 11,
+    "sections": [
+      {
+        "heading": "O denominador muda a pergunta",
+        "body": "Considere um texto didático com cem ocorrências de palavras. Se os lemas conhecidos correspondem a oitenta delas, sua cobertura lexical é de oitenta por cento naquele texto. Esse resultado não informa quantos lemas diferentes existem no idioma, quantos sentidos você conhece ou quantas orações consegue analisar. Uma palavra repetida vinte vezes contribui com vinte ocorrências, mesmo que represente um único item no repertório. O indicador pode, portanto, crescer rapidamente quando o estudante aprende palavras frequentes. Sua utilidade depende de manter explícita a unidade contada e de não transformar uma medida de ocorrências em uma medida geral de competência."
+      },
+      {
+        "heading": "Um recorte textual não representa todos os textos",
+        "body": "A seleção deste projeto deriva de um corpus identificado e de decisões de lematização registradas. A ordem obtida ajuda a definir prioridades para esse material. Se o estudante mudar para uma narrativa específica, uma carta ou outro conjunto de textos gregos, encontrará uma distribuição diferente. Uma palavra rara no conjunto pode se repetir num capítulo decisivo. Além disso, unir ou separar variantes pode alterar posições próximas no ranking. Por isso, o núcleo dos 300 deve ser lido como seleção operacional do repertório, não como lista universal cuja porcentagem permaneça idêntica em qualquer edição ou gênero textual."
+      },
+      {
+        "heading": "O cuidado ao comparar com estudos de inglês",
+        "body": "Nation investigou o tamanho do vocabulário necessário para diferentes tarefas de leitura e escuta em inglês, empregando famílias de palavras e corpora dessa língua. O estudo torna visível a importância do recorte e da unidade de contagem. Seus números não devem ser transferidos diretamente para lemas gregos do Novo Testamento. Uma família lexical inglesa e um lema grego não são unidades equivalentes, e ler com consulta não é a mesma tarefa que compreender sem apoio. Seria necessária investigação própria para estabelecer um limiar de compreensão neste curso. O percentual do painel não fornece esse resultado experimental."
+      },
+      {
+        "heading": "A palavra desconhecida pode ser a decisiva",
+        "body": "Imagine uma oração cujas palavras são quase todas conhecidas, exceto o verbo principal. A porcentagem pode parecer confortável, mas a ação afirmada permanece obscura. Em outra oração, os lemas são familiares, porém uma negação ou uma relação subordinada foi interpretada incorretamente. Esses exemplos mostram por que a leitura exige integrar léxico e construção. Use o ranking para distribuir esforço de memória; use as dificuldades concretas da passagem para decidir o que investigar. Um plano produtivo mantém revisões do núcleo e reserva espaço para termos menos frequentes que estejam cumprindo uma função relevante no texto estudado."
+      }
+    ],
+    "references": [
+      {"title": "Nation, I. S. P. How Large a Vocabulary Is Needed for Reading and Listening? Canadian Modern Language Review, 2006. Repositório oficial da Victoria University of Wellington.", "url": "https://doi.org/10.26686/wgtn.12552221.v1"},
+      {"title": "Clear Bible. MACULA Greek: identificação do texto e das anotações do corpus.", "url": "https://github.com/Clear-Bible/macula-greek"},
+      {"title": "Metadados do repertório deste projeto: corpus, cobertura e normalizações documentados em data/vocabulary.json."}
+    ],
+    "discussionQuestions": [
+      "Como duas passagens com a mesma cobertura lexical podem apresentar dificuldades de compreensão diferentes?",
+      "Que informações você precisaria conferir antes de comparar a porcentagem de duas listas de frequência?"
+    ]
+  },
+  {
+    "id": "av-v-function",
+    "area": "vocabulary",
+    "level": 1,
+    "lessonId": "v-function",
+    "order": 5,
+    "title": "Palavras pequenas, decisões grandes: aprender léxico de função",
+    "summary": "Investigue por que preposições e conectores exigem conhecimento de construções, além de equivalentes curtos.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "Conhecer a palavra ou conhecer sua contribuição?",
+        "body": "Reconhecer uma preposição no repertório é um primeiro conhecimento. Explicar sua contribuição numa oração exige observar o grupo que ela introduz e a relação com os demais elementos. Essa diferença fica evidente quando uma mesma glossa portuguesa aparece para construções gregas distintas. O leitor pode recordar o equivalente e ainda não saber a que termo o grupo preposicional se liga. Por isso, o estudo das palavras de função se beneficia de registros que incluam uma construção completa. O objetivo não é substituir vocabulário por sintaxe, mas perceber quais informações precisam ser aprendidas em conjunto para permitir uma leitura fundamentada."
+      },
+      {
+        "heading": "Preposição e caso formam uma pergunta conjunta",
+        "body": "Considere, como exemplos didáticos, εἰς τὸν οἶκον e ἐν τῷ οἴκῳ. As glossas de εἰς e ἐν oferecem um ponto de partida, mas a leitura também precisa reconhecer as formas nominais e a situação descrita. Não basta observar que duas expressões portuguesas podem envolver “casa”. Ao registrar uma preposição, anote o caso da construção estudada e uma paráfrase coerente do grupo inteiro. Quando houver mais de um padrão de uso, mantenha exemplos separados. Assim, você evita criar uma definição ampla demais que já não permite perceber qual relação está sendo efetivamente expressa no texto."
+      },
+      {
+        "heading": "Conectores não são apenas palavras entre orações",
+        "body": "Um conector pode orientar a leitura da relação entre enunciados. Sua interpretação envolve aquilo que vem antes e depois, e nem sempre corresponde a uma palavra portuguesa fixa. Ao estudar καί, por exemplo, compare uma coordenação de dois substantivos com uma sequência que acrescenta uma nova afirmação. A semelhança lexical não elimina diferenças na organização do material. Na análise de partículas e conectores, convém distinguir aquilo que a palavra sinaliza daquilo que o leitor infere a partir do conteúdo. Se uma oração parece explicar outra, essa relação deve ser justificada com o contexto e com a construção, não apenas com uma tradução previamente decorada."
+      },
+      {
+        "heading": "Como construir um repertório de relações",
+        "body": "Além do cartão isolado, mantenha um pequeno conjunto de exemplos com a palavra destacada. Para cada exemplo, registre o elemento relacionado, a construção e a contribuição que você propõe. Em outro momento, esconda a tradução e explique a relação com suas próprias palavras. Depois confronte sua proposta com a lição de sintaxe e com uma gramática de referência. Porter orienta a progressão do curso; categorias complementares devem ser identificadas quando forem usadas. Esse procedimento evita tanto reduzir toda relação a uma glossa quanto atribuir a uma palavra tudo o que foi inferido durante a interpretação da passagem."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Preposições e conjunções."},
+      {"title": "Porter, Stanley E. Idioms of the Greek New Testament. Tratamento de preposições e relações no enunciado. Discussão didática própria, sem reprodução de exemplos editoriais."}
+    ],
+    "discussionQuestions": [
+      "Que informação falta quando você conhece a glossa de uma preposição, mas não identifica o grupo que ela introduz?",
+      "Como distinguir a contribuição de um conector de uma relação que você inferiu pelo conteúdo das orações?"
+    ]
+  },
+  {
+    "id": "av-v-families",
+    "area": "vocabulary",
+    "level": 1,
+    "lessonId": "v-families",
+    "order": 6,
+    "title": "Famílias lexicais e etimologia: pistas de memória, hipóteses de sentido",
+    "summary": "Separe parentesco formal, formação de palavras e interpretação de uma ocorrência sem transformar a etimologia em tradução obrigatória.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "Reconhecer parentesco não resolve o uso",
+        "body": "Agrupar palavras relacionadas pode tornar o repertório menos fragmentado. Entretanto, um grupo de formas não funciona como uma definição coletiva. γράφω e γραφή permitem perceber uma ligação formal e uma aproximação de assunto, mas pertencem a classes diferentes e entram em construções diferentes. O verbo pode organizar uma oração; o substantivo recebe flexão nominal e participa de grupos nominais. Um bom registro de família conserva essas diferenças em vez de apagá-las. A semelhança ajuda a reconhecer um novo item, enquanto a identidade lexical e o uso precisam ser estabelecidos para cada palavra estudada."
+      },
+      {
+        "heading": "Uma decomposição pode ser correta e a tradução inadequada",
+        "body": "Reconhecer elementos de uma palavra composta e explicar seu uso são tarefas distintas. A formação histórica pode fornecer uma pista relevante, mas não obriga cada ocorrência a preservar uma soma transparente dos componentes. O mesmo cuidado vale quando um prefixo lembra uma preposição conhecida: não se deve acrescentar mecanicamente sua glossa à tradução do verbo simples. Primeiro confirme que a análise de formação é pertinente; depois examine os usos do composto. O fato de uma explicação ser fácil de memorizar não é evidência suficiente de que ela descreva a contribuição da palavra em determinado contexto."
+      },
+      {
+        "heading": "Três colunas para uma família",
+        "body": "Você pode organizar o estudo com três colunas: forma e classe, pista de parentesco, exemplo de uso. Na primeira, registre o item como unidade própria; na segunda, uma observação sobre o elemento compartilhado; na terceira, uma construção curta que mostre sua participação no enunciado. Esse arranjo permite perceber relações sem pressupor que todos os membros aceitem o mesmo equivalente. Também ajuda a distinguir derivação lexical de flexão. λόγος e λόγον oferecem duas formas do mesmo lema; um grupo formado por um verbo e um substantivo relacionado envolve vocábulos distintos, mesmo quando a ligação formal é reconhecível."
+      },
+      {
+        "heading": "Da associação pessoal à evidência pública",
+        "body": "Uma imagem mental, uma história curta ou uma semelhança sonora pode ajudar você a recordar uma palavra. Esse recurso pessoal não precisa ser apresentado como explicação histórica da língua. Ao justificar uma interpretação para outra pessoa, substitua a associação privada por evidências conferíveis: construção, usos comparáveis e descrição lexical pertinente. Se a etimologia tiver papel na análise, explique qual informação histórica foi consultada e por que ela seria relevante para aquele uso. Dessa maneira, a família lexical continua sendo um instrumento de aprendizagem e investigação, sem se transformar em argumento que dispensa o exame da passagem."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Vocabulário, classes e formação de palavras."},
+      {"title": "University of Cambridge, Faculty of Classics. Greek Lexicon Project: organização semântica e ambientes de uso.", "url": "https://www.classics.cam.ac.uk/research/projects/glp/methodology"}
+    ],
+    "discussionQuestions": [
+      "Por que reconhecer um prefixo não basta para decidir a tradução de um verbo composto?",
+      "Como você apresentaria uma associação pessoal de memória sem tratá-la como uma etimologia comprovada?"
+    ]
+  },
+  {
+    "id": "av-v-similar",
+    "area": "vocabulary",
+    "level": 2,
+    "lessonId": "v-similar",
+    "order": 7,
+    "title": "Quando a familiaridade engana: diagnosticar confusões entre formas parecidas",
+    "summary": "Aprenda a investigar se uma troca vem da leitura visual, da identificação morfológica ou da associação de sentido.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "Um erro de vocabulário pode começar na leitura",
+        "body": "Quando duas palavras se parecem, o estudante pode reconhecer uma forma que não está escrita. A resposta errada parece então um esquecimento de sentido, embora a dificuldade tenha surgido antes, na identificação visual. οἶκος e οἶνος oferecem um contraste didático útil: boa parte da sequência coincide, mas κ e ν distinguem os lemas. Se você lê οἶνος e responde “casa”, vale verificar se chegou a perceber a consoante central. Repetir a glossa correta sem localizar essa troca pode deixar a dificuldade intacta. O diagnóstico começa por ler a forma encontrada, não por supor automaticamente uma falha de memória semântica."
+      },
+      {
+        "heading": "Descrever a diferença antes de criar um recurso de memória",
+        "body": "Observe exatamente o ponto de contraste: letra, sinal, terminação ou combinação de elementos. Depois associe cada item a um uso breve. Em οἶκος, registre uma referência a casa; em οἶνος, uma referência a vinho. Esses exemplos não esgotam os verbetes, mas impedem que a comparação se torne apenas um exercício de desenho. Uma associação pessoal pode ajudar a recordar a diferença, desde que seja mantida como recurso de estudo. Não invente uma origem histórica para justificar por que as palavras se parecem, nem conclua que compartilham sentido porque suas grafias possuem muitos segmentos em comum."
+      },
+      {
+        "heading": "Sinais escritos e facilidades de pesquisa",
+        "body": "A busca sem acentos é uma escolha de interface, não uma descrição de como os sinais funcionam no grego. Compare τίς e τις como ponto de investigação: a acentuação participa da distinção entre formas que precisam ser interpretadas em construções concretas. Na leitura, não apague antecipadamente as informações que a edição fornece. Ao mesmo tempo, não atribua a um sinal isolado toda a interpretação da oração. Identifique a forma, observe sua construção e confira o contexto. Uma ferramenta pode reunir resultados para facilitar a busca e ainda exigir que o leitor distinga esses resultados antes de escolher o verbete ou a análise."
+      },
+      {
+        "heading": "Como avaliar se o contraste foi aprendido",
+        "body": "Depois de comparar um par, teste os itens separadamente e em ordem diferente. Inclua uma ocorrência flexionada quando já conhecer o paradigma correspondente. O contraste pode estar aprendido na forma de dicionário e continuar frágil em outras formas. Registre o tipo de erro que reapareceu: leitura de letras, identificação do lema ou recuperação de sentido. Essa informação orienta a revisão seguinte. O objetivo não é aumentar indefinidamente o tempo gasto olhando as duas palavras lado a lado, mas verificar se cada uma continua reconhecível quando as pistas do exercício comparativo deixam de estar disponíveis."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Alfabeto, acentuação, pronomes e estudo de vocabulário."},
+      {"title": "Repertório lexical deste projeto: entradas e formas de referência de οἶκος, οἶνος e pronomes."}
+    ],
+    "discussionQuestions": [
+      "Como você distinguiria uma confusão de leitura entre οἶκος e οἶνος de um esquecimento dos sentidos?",
+      "Por que acertar duas palavras lado a lado não prova que você as reconhecerá separadamente em um texto?"
+    ]
+  },
+  {
+    "id": "av-v-polysemy",
+    "area": "vocabulary",
+    "level": 2,
+    "lessonId": "v-polysemy",
+    "order": 8,
+    "title": "Polissemia e contexto: quando uma nova glossa é realmente necessária?",
+    "summary": "Examine a relação entre sentidos registrados, referências contextuais e escolhas de tradução sem multiplicar sentidos a cada ocorrência.",
+    "minutes": 11,
+    "sections": [
+      {
+        "heading": "Nem toda diferença de tradução cria um sentido novo",
+        "body": "Uma palavra grega pode receber equivalentes portugueses diferentes por razões distintas. Às vezes o uso lexical mudou; às vezes a tradução apenas se adapta ao referente ou ao estilo da oração. Se toda variação de português virar um sentido separado, o vocabulário se fragmentará numa lista difícil de explicar. Se toda variação for apagada, diferenças relevantes serão perdidas. A investigação precisa perguntar o que a nova distinção descreve. Ela corresponde a um padrão recorrente de uso, a uma combinação particular ou somente a uma preferência de formulação do tradutor naquela ocorrência? Essas hipóteses não devem ser tratadas como equivalentes."
+      },
+      {
+        "heading": "Categorias do verbete e dados da passagem",
+        "body": "O léxico organiza ocorrências para tornar relações de sentido consultáveis. Suas divisões ajudam a investigação, mas não aparecem como etiquetas dentro de cada oração grega. O leitor precisa justificar por que aproxima uma passagem de determinada categoria. Para isso, considere as palavras relacionadas, o referente e o assunto desenvolvido. Um rótulo amplo como “figurado” pode indicar um problema a examinar, mas raramente explica sozinho a contribuição da ocorrência. Também não basta citar várias glossas para mostrar que uma análise é possível. É preciso indicar qual delas responde aos dados e por que as alternativas são menos adequadas."
+      },
+      {
+        "heading": "Um contraste controlado com καρπός",
+        "body": "Num exemplo didático, καρπός designa o que uma árvore produz. Em outro, uma atividade humana apresenta καρπός depois de certo tempo. A mudança do referente abre uma investigação sobre “fruto” e “resultado”. Antes de construir uma oposição rígida, compare outros usos pertinentes e observe como o próprio português também permite falar em “frutos de um trabalho”. A tradução pode conservar a imagem ou preferir uma explicação mais direta. A escolha envolve uma proposta de sentido e uma decisão de expressão na língua de chegada. Separar essas decisões permite discutir a tradução sem reduzir toda divergência a desacordo sobre o vocabulário grego."
+      },
+      {
+        "heading": "Como ampliar o repertório de maneira justificável",
+        "body": "Acrescente um novo registro quando ele representar uma diferença que você consegue explicar com evidências. Guarde a ocorrência, a construção, o equivalente proposto e a razão da escolha. Não é necessário memorizar cada paráfrase como se fosse um novo lema. Você pode manter uma glossa inicial e associar a ela exemplos que mostrem extensões e restrições de uso. Quando dois léxicos dividirem o material de modos diferentes, compare o alcance de suas categorias. A quantidade de subdivisões não decide qual análise é melhor; a pergunta central é qual organização permite descrever adequadamente os usos relevantes para a passagem."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Vocabulário em construções e leitura contextual."},
+      {"title": "University of Cambridge, Faculty of Classics. Greek Lexicon Project: metodologia da organização de sentidos.", "url": "https://www.classics.cam.ac.uk/research/projects/glp/methodology"}
+    ],
+    "discussionQuestions": [
+      "Que evidência ajudaria a distinguir um novo padrão de sentido de uma simples mudança de tradução portuguesa?",
+      "Como você justificaria uma escolha entre “fruto” e “resultado” sem apenas reproduzir a lista do léxico?"
+    ]
+  },
+  {
+    "id": "av-v-text",
+    "area": "vocabulary",
+    "level": 2,
+    "lessonId": "v-text",
+    "order": 9,
+    "title": "Do cartão à leitura: investigar a transferência do vocabulário",
+    "summary": "Use uma pequena experiência de leitura para separar conhecimento lexical, reconhecimento de formas e compreensão da oração.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "A tarefa mudou, mesmo quando os lemas são os mesmos",
+        "body": "O cartão delimita a pergunta e oferece alternativas. A leitura exige identificar várias palavras, reconhecer suas formas e construir relações sem receber previamente a lista de análises possíveis. Por isso, um acerto isolado não demonstra transferência completa. Também não é inútil: ele mostra um componente que pode ser mobilizado no texto. A questão produtiva é descobrir quais apoios ainda são necessários quando a tarefa muda. Um estudante pode reconhecer o sentido de um lema e precisar de ajuda com sua flexão; outro pode analisar a forma, mas não perceber a relação que o grupo estabelece na oração."
+      },
+      {
+        "heading": "Uma experiência com uma oração curta",
+        "body": "Leia o exemplo didático ὁ μαθητὴς λαμβάνει τὸ βιβλίον καὶ ἀναγινώσκει. Antes de produzir uma tradução, identifique quais lemas você reconhece e quais formas consegue analisar. Depois explique quem participa das ações e como καί relaciona o material. Uma tradução didática possível é “O aluno recebe o livro e lê”. Essa formulação não substitui a investigação: ela permite conferir se a proposta construída respeita as relações reconhecidas. Se você chegou à tradução apenas porque já conhecia o exemplo, varie um elemento e tente novamente. O objetivo é observar o processo de leitura, não premiar a repetição de uma frase decorada."
+      },
+      {
+        "heading": "O erro precisa ser localizado",
+        "body": "Ao terminar, classifique as dificuldades sem transformá-las imediatamente num único rótulo de “falta de vocabulário”. Você desconhecia λαμβάνω? Não reconheceu λαμβάνει como forma verbal? Confundiu o grupo τὸ βιβλίον com quem realiza a ação? Cada problema sugere uma intervenção diferente. Rever a glossa pode ajudar no primeiro, mas não resolve automaticamente os demais. A classificação também impede uma conclusão inversa: se você conhece todos os lemas, a análise não está concluída. Relações de concordância, complementação e organização do enunciado continuam sendo tarefas que o repertório lexical, sozinho, não desempenha."
+      },
+      {
+        "heading": "Releitura com propósito e novo contexto",
+        "body": "Uma segunda leitura pode ter uma pergunta específica: reconhecer as formas antes difíceis, explicar uma relação ou recuperar o sentido sem consultar a tradução. Em seguida, procure outro exemplo adequado ao nível, para observar se a dificuldade reaparece. Guarde apenas os registros que acrescentem informação: uma flexão inesperada, uma combinação útil ou uma escolha contextual que você consiga justificar. Ler novamente e ler algo novo oferecem oportunidades diferentes de avaliação. Combinar as duas evita tanto abandonar cedo demais uma dificuldade quanto confundir familiaridade com uma única passagem com capacidade de interpretar qualquer ocorrência dos mesmos lemas."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Integração de vocabulário, morfologia e leitura."},
+      {"title": "Porter, Stanley E. Idioms of the Greek New Testament. Relações sintáticas e interpretação contextual. Exemplo grego deste artigo composto para o projeto."}
+    ],
+    "discussionQuestions": [
+      "Que dificuldades diferentes podem ficar escondidas sob a afirmação “não conheço o vocabulário desta oração”?",
+      "Como você alteraria a oração didática para testar o reconhecimento dos lemas sem apenas repetir a tradução memorizada?"
+    ]
+  },
+  {
+    "id": "av-v-lexicons",
+    "area": "vocabulary",
+    "level": 3,
+    "lessonId": "v-lexicons",
+    "order": 10,
+    "title": "Ler o léxico como uma análise: evidências, escopo e decisões editoriais",
+    "summary": "Compare propostas lexicográficas sem tratar o primeiro equivalente, a lista mais longa ou o rótulo mais familiar como resposta automática.",
+    "minutes": 11,
+    "sections": [
+      {
+        "heading": "O verbete apresenta uma organização de evidências",
+        "body": "Um léxico é mais do que uma coleção de traduções possíveis. A seleção de exemplos, o agrupamento de ocorrências e a descrição das construções apresentam uma proposta sobre os usos da palavra. Essa organização precisa ser lida com atenção ao escopo da obra. Um exemplo de outro autor ou período pode ser pertinente, mas sua pertinência deve ser argumentada. A presença de um equivalente no verbete mostra uma possibilidade documentada segundo aquela análise; não determina que ela seja adequada à passagem que você está estudando. O leitor utiliza a ferramenta para investigar uma ocorrência, e não apenas para encontrar uma formulação que confirme sua primeira impressão."
+      },
+      {
+        "heading": "Comparar obras exige perguntas equivalentes",
+        "body": "Antes de concluir que dois léxicos discordam, confira se estão organizando a mesma informação. Uma obra pode separar construções; outra pode reuni-las sob um sentido mais amplo e distinguir exemplos internamente. Uma diferença de quantidade de glossas não mede automaticamente a quantidade de sentidos reconhecidos. A documentação metodológica do Cambridge Greek Lexicon apresenta a consulta por semântica, combinações, ambiente sintático e uso por autor como possibilidades de organização da informação lexical. Esse horizonte mostra por que comparar apenas a linha de equivalentes deixa parte importante do trabalho lexicográfico fora da análise."
+      },
+      {
+        "heading": "Como registrar uma decisão lexical",
+        "body": "Um registro de consulta pode conter quatro elementos: a ocorrência investigada, as hipóteses consideradas, os exemplos pertinentes e a conclusão provisória. Para γινώσκω, por exemplo, não basta registrar que o léxico admite “conhecer” e “reconhecer”. Explique qual referência e qual construção motivam a escolha numa passagem concreta. Em seguida, examine se os exemplos citados realmente se aproximam desse uso ou apenas contêm o mesmo lema. A conclusão fica mais forte quando mostra por que uma alternativa foi rejeitada. Ela fica mais frágil quando se limita a colecionar autoridades sem explicar a relação entre seus dados e a pergunta formulada."
+      },
+      {
+        "heading": "O que o léxico não pode fazer sozinho",
+        "body": "Uma dúvida apresentada como lexical pode depender da identificação do referente, da estrutura da oração ou do desenvolvimento do argumento. Nesses casos, aumentar a lista de equivalentes não resolve o problema. Retome a morfologia e a sintaxe, explicite a hipótese contextual e volte ao verbete com uma pergunta mais delimitada. Também mantenha distintas a história de formação de uma palavra e a descrição de seus usos. A consulta se torna mais produtiva quando cada tipo de informação responde à tarefa adequada. O resultado esperado é uma interpretação justificável e revisável, com fontes identificadas, e não a impressão de que uma palavra isolada encerra toda a discussão da passagem."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Vocabulário e reconhecimento de formas."},
+      {"title": "University of Cambridge, Faculty of Classics. Greek Lexicon Project: Methodology and Future Use.", "url": "https://www.classics.cam.ac.uk/research/projects/glp/methodology"}
+    ],
+    "discussionQuestions": [
+      "Como duas obras podem apresentar números diferentes de subdivisões sem discordar necessariamente sobre os usos considerados?",
+      "Que informações tornariam sua anotação de uma consulta a γινώσκω verificável por outro leitor?"
+    ]
+  },
+  {
+    "id": "av-v-semantic",
+    "area": "vocabulary",
+    "level": 3,
+    "lessonId": "v-semantic",
+    "order": 11,
+    "title": "Sinônimos, distribuição e fronteiras: como testar um contraste lexical",
+    "summary": "Construa comparações entre vocábulos controlando contexto, construção e alcance das conclusões.",
+    "minutes": 11,
+    "sections": [
+      {
+        "heading": "Do contraste intuitivo à hipótese testável",
+        "body": "Dizer que duas palavras são diferentes é insuficiente para explicar em que consiste a diferença. A afirmação pode se referir ao sentido, à classe, à construção preferida, ao registro ou ao conjunto de textos em que cada item foi encontrado. Uma comparação precisa escolher uma pergunta que possa ser confrontada com ocorrências. Se λέγω e λαλέω recebem, em algumas traduções, “falar”, isso não prova identidade completa. Também não permite criar uma oposição rígida válida para todos os usos. Uma hipótese produtiva delimita o contraste proposto e admite que sua extensão seja revista quando novos dados forem examinados."
+      },
+      {
+        "heading": "A construção participa da distribuição",
+        "body": "Ao reunir exemplos, registre mais do que o lema e a tradução. Observe complementos, participantes, conteúdo comunicado e posição no desenvolvimento do texto. Dois verbos podem aparecer em ambientes parcialmente sobrepostos e ainda apresentar diferenças relevantes em determinados padrões. A análise precisa explicar a sobreposição e a diferença, sem escolher apenas os casos favoráveis à tese inicial. Também importa distinguir ausência de exemplo no conjunto consultado de impossibilidade na língua. Um corpus limitado pode mostrar onde um uso foi encontrado; uma afirmação de que ele jamais seria possível exige evidências e argumentação de alcance maior."
+      },
+      {
+        "heading": "Comparações precisam controlar diferenças entre textos",
+        "body": "Imagine que um levantamento encontra um verbo principalmente numa narrativa e outro principalmente em cartas. Antes de atribuir toda diferença à semântica dos lemas, examine gênero textual, autoria, assunto e construção. Esses fatores podem estar associados à distribuição observada. Um procedimento mais cuidadoso começa por ocorrências comparáveis e declara os limites da amostra. Se os conjuntos forem pequenos, uma descrição localizada pode ser mais defensável do que uma definição universal. O objetivo não é impedir conclusões, mas formular conclusões proporcionais à evidência. A explicação deve dizer o que foi comparado e quais diferenças ainda não puderam ser controladas."
+      },
+      {
+        "heading": "Dois erros simétricos na leitura",
+        "body": "O primeiro erro apaga toda distinção porque o português usa o mesmo equivalente. O segundo impõe uma fronteira absoluta porque os lemas têm grafias diferentes. Entre esses extremos, a comparação pode revelar aproximações, tendências e contrastes contextualizados. Ao apresentar uma conclusão, indique se ela descreve uma ocorrência, um padrão do conjunto examinado ou uma proposta mais ampla sobre a língua. Uma paráfrase como “neste contexto, a escolha destaca...” é diferente de “esta palavra sempre significa...”. A primeira também precisa de justificativa, mas deixa visível seu alcance. Esse cuidado permite discutir diferenças sem transformar o repertório de vocabulário numa coleção de oposições artificiais."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E. Idioms of the Greek New Testament. Análise de construções e relações entre níveis linguísticos."},
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Repertório e classes lexicais."},
+      {"title": "University of Cambridge, Faculty of Classics. Greek Lexicon Project: atenção a combinações, ambientes sintáticos e usos de autores.", "url": "https://www.classics.cam.ac.uk/research/projects/glp/methodology"}
+    ],
+    "discussionQuestions": [
+      "Que dados você reuniria para testar uma oposição proposta entre dois verbos traduzidos por “falar”?",
+      "Como a diferença de gênero textual pode limitar uma conclusão formulada a partir da distribuição de dois vocábulos?"
+    ]
+  },
+  {
+    "id": "av-v-independence",
+    "area": "vocabulary",
+    "level": 3,
+    "lessonId": "v-independence",
+    "order": 12,
+    "title": "Depois da lista: construir um programa pessoal de investigação lexical",
+    "summary": "Planeje a expansão do repertório a partir da leitura, combinando prioridades de frequência, dificuldades observadas e justificativas de interpretação.",
+    "minutes": 10,
+    "sections": [
+      {
+        "heading": "Concluir um repertório muda o problema",
+        "body": "Uma lista concluída oferece uma base para novas tarefas; não encerra o estudo dos vocábulos que ela contém. Uma palavra familiar pode participar de uma construção nova ou aparecer com um uso que você ainda não investigou. O próximo objetivo não precisa ser apenas aumentar o número de entradas marcadas. Pode ser reconhecer formas com maior segurança, ampliar os padrões de uso conhecidos ou justificar escolhas de tradução com evidências melhores. Essa mudança de objetivo evita que o painel se torne a única medida de avanço. A leitura fornece perguntas que uma lista de formas e glossas não conseguiria antecipar integralmente."
+      },
+      {
+        "heading": "Prioridade global e necessidade local",
+        "body": "A frequência global ajuda a distribuir esforço, enquanto uma passagem concreta pode tornar urgente um termo raro. As duas prioridades não precisam competir. Você pode manter uma rotina curta de revisão dos itens frequentes e reservar outra parte do estudo às dificuldades do texto atual. Registre por que um novo vocábulo entrou no seu programa: recorrência, importância para o argumento, confusão persistente ou relação com uma construção em estudo. Essa explicação torna a seleção revisável. Também impede tratar baixa frequência como sinal de pouca importância interpretativa, ou supor que um ranking de outro corpus continue produzindo a mesma ordem de prioridades em qualquer leitura."
+      },
+      {
+        "heading": "Um registro que acompanha a qualidade da leitura",
+        "body": "Para cada dificuldade relevante, guarde a forma, o lema, a passagem e a pergunta que motivou a consulta. Separe a resposta lexical da análise morfológica e da hipótese sintática. Anote ainda uma razão para a escolha de sentido e uma alternativa considerada. Esse registro permite avaliar algo diferente do volume de itens memorizados: a capacidade de formular e resolver problemas delimitados. Ao voltar ao texto, observe se a explicação continua funcionando sem copiar a tradução anterior. Se não funcionar, identifique qual apoio foi necessário. Uma revisão produtiva pode corrigir o próprio registro, em vez de apenas repetir mais vezes uma associação pouco precisa."
+      },
+      {
+        "heading": "Autonomia inclui saber consultar e mudar de ideia",
+        "body": "O leitor autônomo não é aquele que nunca abre uma fonte. É aquele que distingue o que reconhece, o que está propondo e o que ainda precisa conferir. Um plano pessoal pode alternar recordação, leitura de exemplos, consulta lexical e retorno à gramática. Ao avaliar o resultado, use tarefas adequadas ao objetivo: recordar uma glossa não mede tudo o que é exigido por uma interpretação, e conhecer uma discussão teórica não garante recuperação rápida do vocábulo. Compare esses desempenhos sem reduzi-los a um único percentual. A meta é tornar suas escolhas de leitura cada vez mais explícitas, fundamentadas e abertas à correção."
+      }
+    ],
+    "references": [
+      {"title": "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010. Vocabulário e progressão do estudo."},
+      {"title": "Porter, Stanley E. Idioms of the Greek New Testament. Consulta gramatical e interpretação de construções."},
+      {"title": "Nation, Paul. Recursos de aprendizagem e investigação de vocabulário disponibilizados pela Victoria University of Wellington.", "url": "https://www.wgtn.ac.nz/lals/resources/paul-nations-resources"}
+    ],
+    "discussionQuestions": [
+      "Que critérios, além da frequência global, justificariam incluir um novo vocábulo no seu programa de revisão?",
+      "Como seu registro de leitura distinguiria uma glossa lembrada de uma escolha contextual que você consegue justificar?"
+    ]
+  }
+]

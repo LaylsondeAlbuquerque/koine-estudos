@@ -23,3 +23,20 @@ for(const c of Object.values(counts))assert.equal(c.levels.size,4);
 for(const path of ['index.html','styles.css','app.js','core.js','assets/Manrope.ttf','assets/GFSDidot.ttf','assets/Manrope-OFL.txt','assets/GFSDidot-OFL.txt','LICENSE','CONTENT-LICENSE.md','THIRD_PARTY_NOTICES.md','.nojekyll'])assert(existsSync(new URL(path,root)),path);
 console.log(JSON.stringify(Object.fromEntries(Object.entries(counts).map(([a,c])=>[a,{lessons:c.lessons,questions:c.questions}]))));
 console.log(`${lessons.length} lessons and ${qids.size} questions validated.`);
+const articles=['articles-morphology','articles-syntax','articles-vocabulary'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
+const covered=new Set();
+for(const article of articles){
+ assert(!ids.has(article.id),`Duplicate reading ${article.id}`);ids.add(article.id);
+ const lesson=lessons.find(l=>l.id===article.lessonId);assert(lesson,`Unknown lesson for ${article.id}`);
+ assert(article.area===lesson.area&&article.level===lesson.level,`Wrong level/area for ${article.id}`);
+ assert(article.title&&article.title!==lesson.title&&article.summary&&article.minutes>0,article.id);
+ assert(article.sections?.length>=3&&article.references?.length>0,article.id);
+ assert(article.sections.every(s=>s.heading&&s.body),article.id);
+ if(article.discussionQuestions!==undefined)assert(Array.isArray(article.discussionQuestions)&&article.discussionQuestions.every(q=>typeof q==='string'&&q.trim().length>0),article.id);
+ const body=article.sections.map(s=>s.body).join(' ');assert(body.trim().split(/\s+/u).length>=280,`Article too short: ${article.id}`);
+ assert(body!==lesson.sections.map(s=>s.body).join(' '),`Article duplicates lesson: ${article.id}`);
+ for(const ref of article.references){assert(typeof ref==='string'||typeof ref.title==='string',article.id);if(ref.url)assert(/^https?:\/\//.test(ref.url),article.id);}
+ covered.add(article.lessonId);
+}
+assert.equal(covered.size,lessons.length,'Every lesson needs a separate deeper article');
+console.log(`${articles.length} distinct deeper articles cover all ${covered.size} lessons.`);

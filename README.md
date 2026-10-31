@@ -10,7 +10,8 @@ Aplicação estática em português, preparada para GitHub Pages. Não requer se
 - **Sintaxe:** compreensão de conceitos e relações nas orações; comparação de abordagens no nível avançado.
 - **Vocabulário:** repertório superior a 950 lemas, flashcards, associações e um núcleo prioritário de 300 palavras.
 - Cada área tem percurso, artigos, flashcards e prática, distribuídos em Fundamentos, Essencial, Aprofundamento e Avançado.
-- O repertório é pesquisável em grego ou português, inclusive sem acentos. Os artigos também têm busca.
+- **Percurso:** aulas progressivas com explicações básicas, exemplos e exercícios. **Artigos:** textos independentes de aprofundamento, ligados a cada assunto e nível, com discussão, fontes e perguntas de reflexão. Cada espaço tem sua própria marcação de leitura.
+- O repertório é pesquisável em grego ou português, inclusive sem acentos. A busca também distingue aulas do percurso e artigos de aprofundamento.
 - Tema noturno inicial com alternância para o claro e preferência salva no navegador. A home tem uma animação original de letras e palavras gregas, com pausa e respeito à preferência de movimento reduzido.
 - Os flashcards revelam o verso ao selecionar a resposta; a prática combina desafios de escolha com confirmação, associação de pares, parsing e ordenação de blocos. As sessões priorizam perguntas ainda não vistas e alternam assuntos e atividades; um filtro pequeno termina sem duplicar questões para completar a quantidade solicitada.
 - Os artigos atuais exibem discretamente “Texto produzido por IA”. Para futuros artigos de autoria humana, o campo opcional `author` identifica o autor no mesmo espaço.
@@ -49,9 +50,10 @@ GitHub Pages atende a aplicação estática sem serviços adicionais pagos. O na
 
 ## Editar o conteúdo
 
-- `data/morphology.json`: morfologia.
-- `data/syntax.json`: sintaxe.
-- `data/vocabulary-lessons.json`: artigos de vocabulário.
+- `data/morphology.json`: aulas e exercícios de morfologia.
+- `data/syntax.json`: aulas e exercícios de sintaxe.
+- `data/vocabulary-lessons.json`: aulas e exercícios de vocabulário.
+- `data/articles-morphology.json`, `data/articles-syntax.json` e `data/articles-vocabulary.json`: artigos de aprofundamento.
 - `data/vocabulary.json`: lemas, glossas, frequências e metadados.
 - `CONTRIBUTING-CONTENT.md`: formato das lições e questões.
 

@@ -1,0 +1,27 @@
+.area-purpose{font-size:14px;line-height:1.9;color:var(--muted);max-width:790px;margin:0 0 28px}
+.area-purpose a{color:var(--blue);text-decoration:underline;text-underline-offset:3px}
+.lesson-row-actions{flex-wrap:wrap;justify-content:flex-end;gap:12px 17px;max-width:265px}
+.lesson-row-actions .lesson-deep-link{font-size:11px;font-weight:450;color:var(--muted)}
+.deep-article-card{border-top-width:1px;border-radius:15px;padding:27px;min-height:320px}
+.deep-article-card h3{font-size:23px;line-height:1.4;letter-spacing:-.3px}
+.article-lesson-label{font-size:11px;line-height:1.8;color:var(--muted);margin:17px 0 12px;padding-top:14px;border-top:1px solid var(--line);width:100%}
+.deep-article-card>.text-link{margin-top:auto;padding-top:18px}
+.deep-article-card>.pill{margin:4px 0}
+.reading-purpose{display:flex;align-items:center;gap:10px;padding:14px 0;margin:-6px 0 26px;border-bottom:1px solid var(--line);color:var(--muted);font-size:12px;line-height:1.8}
+.reading-purpose>svg{flex-shrink:0}
+.lesson-deeper{margin:34px 0;padding:24px 25px;border:1px solid var(--line);border-left:3px solid var(--blue);border-radius:13px;background:var(--paper)}
+.lesson-deeper>a{display:block;margin-top:14px}
+.lesson-deeper h3{font-size:20px;font-weight:550;line-height:1.5;letter-spacing:-.2px}
+.lesson-deeper p{font-size:14px;line-height:1.9;color:var(--muted);margin:12px 0}
+.lesson-deeper .text-link{font-size:12px;margin-top:5px}
+.reading-aside-note{font-size:12px;line-height:1.85;color:var(--muted);margin:16px 0}
+.article-aside>a.button{display:flex;margin-bottom:12px}
+.discussion-questions{padding:25px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:32px 0}
+.discussion-questions h2{font-size:22px;font-weight:550;margin-bottom:17px}
+.discussion-questions ol{padding-left:22px;display:grid;gap:14px}
+.discussion-questions li{font-size:15px;line-height:1.9;padding-left:4px}
+.references a{color:var(--blue);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+html[data-theme=dark] .deep-article-card{background:var(--white);border-color:var(--line)}
+html[data-theme=dark] .lesson-deeper{background:#111a28;border-color:#30405a;border-left-color:#75adff}
+@media(max-width:900px){.lesson-row-actions{max-width:none}.deep-article-card h3{font-size:22px}}
+@media(max-width:600px){.area-purpose{font-size:13px;margin-bottom:24px}.lesson-row-actions{justify-content:flex-start;gap:16px}.lesson-row-actions .lesson-deep-link{font-size:12px}.deep-article-card{padding:23px;min-height:300px}.deep-article-card h3{font-size:21px}.article-lesson-label{font-size:11px}.reading-purpose{font-size:11px;padding:12px 0;margin-bottom:25px}.lesson-deeper{padding:22px 20px;margin:28px 0}.lesson-deeper h3{font-size:20px}.lesson-deeper p{font-size:13px}.discussion-questions{padding:23px 0}.discussion-questions h2{font-size:21px}.discussion-questions li{font-size:14px}.reading-aside-note{font-size:12px}}

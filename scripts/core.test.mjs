@@ -70,4 +70,6 @@ test('older backups remain valid and recent history is bounded',()=>{
  assert.equal(validProgress({...blank(),recentQuestions:['q1'],recentWords:['w1']}),true);
  assert.equal(validProgress({...blank(),recentQuestions:Array(201).fill('q1')}),false);
  assert.equal(validProgress({...blank(),recentWords:[null]}),false);
+ assert.equal(validProgress({...blank(),articles:{'am-m-alfabeto':true}}),true);
+ assert.equal(validProgress({...blank(),articles:{'am-m-alfabeto':'lido'}}),false);
 });

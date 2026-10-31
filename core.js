@@ -67,6 +67,7 @@ export function validProgress(value) {
   const integer=(x,max=Number.MAX_SAFE_INTEGER)=>Number.isSafeInteger(x)&&x>=0&&x<=max;
   const date=x=>typeof x==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(x)&&Number.isFinite(Date.parse(x))&&new Date(x).toISOString().slice(0,10)===x;
   if (!object(value)||value.version!==1||!object(value.vocab)||!object(value.lessons)||!object(value.levels)||!object(value.answers)||!integer(value.sessions))return false;
+  if(value.articles!==undefined&&(!object(value.articles)||!Object.values(value.articles).every(x=>typeof x==='boolean')))return false;
   if(value.recentQuestions!==undefined&&(!Array.isArray(value.recentQuestions)||value.recentQuestions.length>200||!value.recentQuestions.every(id=>typeof id==='string'&&id.length<=500)))return false;
   if(value.recentWords!==undefined&&(!Array.isArray(value.recentWords)||value.recentWords.length>200||!value.recentWords.every(id=>typeof id==='string'&&id.length<=500)))return false;
   if(!['morphology','syntax','vocabulary'].every(area=>integer(value.levels[area],3)))return false;
