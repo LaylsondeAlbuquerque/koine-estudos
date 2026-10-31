@@ -23,6 +23,11 @@ Transformações: contagens por lema, normalização NFC, correções linguísti
 
 ## Fontes tipográficas
 
+**Encode Sans** — Copyright 2020 The Encode Project Authors, com nome reservado Encode Sans. Distribuída sob SIL Open Font License 1.1. Arquivo original e aviso em `assets/EncodeSans.ttf` e `assets/EncodeSans-OFL.txt`.
+
+- Fonte: https://github.com/google/fonts/tree/main/ofl/encodesans
+
+
 **Manrope** — projeto Manrope, distribuído pelo repositório Google Fonts sob SIL Open Font License 1.1. Arquivo original e aviso em `assets/Manrope.ttf` e `assets/Manrope-OFL.txt`.
 
 - Fonte: https://github.com/google/fonts/tree/main/ofl/manrope
