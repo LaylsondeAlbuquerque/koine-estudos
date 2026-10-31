@@ -11,7 +11,7 @@ Aplicação estática em português, preparada para GitHub Pages. Não requer se
 - **Vocabulário:** repertório superior a 950 lemas, flashcards, associações e um núcleo prioritário de 300 palavras.
 - Cada área tem percurso, artigos, flashcards e prática, distribuídos em Fundamentos, Essencial, Aprofundamento e Avançado.
 - O repertório é pesquisável em grego ou português, inclusive sem acentos. Os artigos também têm busca.
-- Tema noturno inicial com alternância para o claro e preferência salva no navegador. A home tem uma animação original de partículas, com pausa e respeito à preferência de movimento reduzido.
+- Tema noturno inicial com alternância para o claro e preferência salva no navegador. A home tem uma animação original de letras e palavras gregas, com pausa e respeito à preferência de movimento reduzido.
 
 O progresso é salvo **somente no navegador**. Um vocábulo é registrado como memorizado depois de acertos em três dias diferentes; um erro o devolve à revisão. Repetições no mesmo dia não aceleram esse marcador. É possível exportar/importar o histórico em Meu progresso. Leituras concluídas não equivalem a uma certificação de domínio.
 

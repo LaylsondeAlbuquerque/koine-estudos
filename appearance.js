@@ -17,8 +17,11 @@ export function mountHomeMotion(){
  if(!stage||!canvas)return;
  const ctx=canvas.getContext('2d',{alpha:true});if(!ctx)return;
  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
- const toggle=stage.querySelector('[data-motion-toggle]');
- let width=0,height=0,particles=[],raf=0,last=0,time=0,visible=true,alive=true,mouseX=0,mouseY=0,tiltX=0,tiltY=0;
+ const toggle=stage.querySelector('[data-motion-toggle]'),copyElement=stage.querySelector('.hero-copy');
+ let width=0,height=0,letters=[],copyBounds=null,raf=0,last=0,time=0,visible=true,alive=true,mouseX=0,mouseY=0,tiltX=0,tiltY=0;
+ const alphabet=Array.from('αβγδεζηθικλμνξοπρστυφχψω');
+ const accented=['ἀ','ἑ','ἦ','ἰ','ὁ','ὑ','ὦ','ᾶ','ῆ','ῖ','ῦ','ῷ','᾿','῾','῀','ς'];
+ const words=['λόγος','χάρις','ἀγάπη','γραφή'];
  let seed=73421;
  const random=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};
  const paused=()=>manualPause??reduced.matches;
@@ -26,37 +29,39 @@ export function mountHomeMotion(){
  function resize(){
   const rect=stage.getBoundingClientRect();width=rect.width;height=rect.height;
   const ratio=Math.min(window.devicePixelRatio||1,2);canvas.width=Math.round(width*ratio);canvas.height=Math.round(height*ratio);ctx.setTransform(ratio,0,0,ratio,0,0);
-  seed=73421;const count=width<600?850:1800;particles=[];
-  for(let i=0;i<count;i++){
-   const y=1-(i/(count-1))*2,angle=i*Math.PI*(3-Math.sqrt(5)),radial=Math.sqrt(1-y*y),shell=i%4===0?.54+random()*.43:1;
-   particles.push({x:Math.cos(angle)*radial*shell,y:y*shell,z:Math.sin(angle)*radial*shell,angle,phase:random()*Math.PI*2,size:.65+random()*1.15,light:random()});
+  copyBounds=copyElement?{left:copyElement.offsetLeft-12,right:copyElement.offsetLeft+copyElement.offsetWidth+12,top:copyElement.offsetTop-8,bottom:copyElement.offsetTop+copyElement.offsetHeight+8}:null;
+  seed=73421;const counts=width<600?[16,12,4]:[24,16,5];letters=[];
+  for(let ring=0;ring<counts.length;ring++)for(let i=0;i<counts[ring];i++){
+   const collection=ring===0?alphabet:ring===1?accented:words;
+   letters.push({ring,angle:i/counts[ring]*Math.PI*2+ring*.61,phase:random()*Math.PI*2,glyph:collection[i%collection.length],size:17+random()*14,light:random()});
   }
   draw();
  }
  function draw(){
   if(!width||!height)return;
   ctx.clearRect(0,0,width,height);
-  const dark=getTheme()==='dark',radius=Math.min(width*.35,height*.43,263),centerX=width*.5,centerY=height*.49;
-  const turn=time*.115+tiltX*.26,rx=-.23+tiltY*.18,cy=Math.cos(turn),sy=Math.sin(turn),cx=Math.cos(rx),sx=Math.sin(rx);
-  const morph=(Math.sin(time*.19)-.2)*.12;
+  const dark=getTheme()==='dark',mobile=width<600,centerX=width*.5,centerY=height*.49;
+  const radiusX=mobile?width*.43:Math.min(width*.43,540),radiusY=Math.min(height*(mobile?.39:.38),300);
   const points=[];
-  for(const p of particles){
-   const pulse=1+.075*Math.sin(p.angle*3+time*.55+p.y*4)+.045*Math.cos(p.phase+time*.8);
-   const twist=.14*Math.sin(p.y*5+time*.38);
-   let x=(p.x*Math.cos(twist)-p.z*Math.sin(twist))*pulse;
-   let z=(p.x*Math.sin(twist)+p.z*Math.cos(twist))*pulse;
-   let y=p.y*(1+.05*Math.sin(time*.5+p.angle));
-   x+=morph*Math.sin(p.angle*2+p.phase);y+=morph*.6*Math.cos(p.angle*3+time*.2);
-   const xx=x*cy+z*sy,zz=-x*sy+z*cy,yy=y*cx-zz*sx,depth=y*sx+zz*cx,scale=1/(1+depth*.22);
-   const front=(1-depth)*.5,size=p.size*(.75+front*.9)*scale;
-   points.push({x:centerX+xx*radius*scale,y:centerY+yy*radius*scale,z:depth,size,alpha:(.1+front*.64)*(dark?1:.7),light:p.light});
+  for(const p of letters){
+   const angle=p.angle+time*(p.ring===1?-.055:.07),depth=Math.sin(angle+p.ring*.8),scale=.85+(depth+1)*.1;
+   const x=centerX+Math.cos(angle)*radiusX*(1-p.ring*.105)+Math.sin(time*.24+p.phase)*7+tiltX*14;
+   const y=centerY+Math.sin(angle)*radiusY*(1-p.ring*.07)+Math.cos(angle*2+p.phase)*18+tiltY*9;
+   points.push({...p,x,y,z:depth,size:(p.ring===2?22:p.size)*(mobile?.9:1)*scale,alpha:(.5+(depth+1)*.2)*(dark?1:.82)});
   }
   points.sort((a,b)=>b.z-a.z);
+  const occupied=[];ctx.textAlign='center';ctx.textBaseline='middle';
   for(const p of points){
-   const r=Math.round(69+p.light*72),g=Math.round(91+p.light*58),b=dark?255:225;
-   ctx.fillStyle=`rgba(${r},${g},${b},${p.alpha})`;
-   ctx.fillRect(p.x,p.y,p.size,p.size);
-   if(p.size>1.8){ctx.fillStyle=`rgba(153,170,255,${p.alpha*.38})`;ctx.fillRect(p.x,p.y,p.size,p.size*.3);}
+   ctx.font=`${p.size}px DidotGreek, Georgia, serif`;
+   const half=ctx.measureText(p.glyph).width*.5+7;
+   const x=Math.max(half+16,Math.min(width-half-16,p.x)),y=p.y;
+   const box={left:x-half,right:x+half,top:y-p.size*.85,bottom:y+p.size*.75};
+   const overlaps=(a,b)=>a.left<b.right&&a.right>b.left&&a.top<b.bottom&&a.bottom>b.top;
+   if(y<115||y>height-100||copyBounds&&overlaps(box,copyBounds)||occupied.some(other=>overlaps(box,other)))continue;
+   occupied.push(box);
+   const gap=copyBounds?Math.hypot(Math.max(copyBounds.left-box.right,box.left-copyBounds.right,0),Math.max(copyBounds.top-box.bottom,box.top-copyBounds.bottom,0)):40;
+   const r=dark?Math.round(132+p.light*53):65,g=dark?Math.round(155+p.light*38):81,b=dark?255:162;
+   ctx.fillStyle=`rgba(${r},${g},${b},${p.alpha*Math.min(gap/16,1)})`;ctx.fillText(p.glyph,x,y);
   }
  }
  function frame(now){
@@ -73,10 +78,11 @@ export function mountHomeMotion(){
  const handleVisibility=()=>{if(document.hidden)stop();else resume();};
  const handlePointer=event=>{const rect=stage.getBoundingClientRect();mouseX=(event.clientX-rect.left)/width-.5;mouseY=(event.clientY-rect.top)/height-.5;};
  const leave=()=>{mouseX=0;mouseY=0;};
- const observer=new ResizeObserver(resize);observer.observe(stage);
+ const observer=new ResizeObserver(resize);observer.observe(stage);if(copyElement)observer.observe(copyElement);
  const intersection=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;if(visible)resume();else stop();},{threshold:0});intersection.observe(stage);
  stage.addEventListener('pointermove',handlePointer,{passive:true});stage.addEventListener('pointerleave',leave);
  document.addEventListener('visibilitychange',handleVisibility);window.addEventListener('koine-theme-change',draw);reduced.addEventListener('change',handlePreference);toggle?.addEventListener('click',handleToggle);
  resize();syncButton();resume();
+ document.fonts.load('24px DidotGreek','ἀλφάβητος ᾶ ῷ').then(()=>{if(alive)draw();}).catch(()=>{});
  dispose=()=>{alive=false;stop();observer.disconnect();intersection.disconnect();stage.removeEventListener('pointermove',handlePointer);stage.removeEventListener('pointerleave',leave);document.removeEventListener('visibilitychange',handleVisibility);window.removeEventListener('koine-theme-change',draw);reduced.removeEventListener('change',handlePreference);toggle?.removeEventListener('click',handleToggle);};
 }
