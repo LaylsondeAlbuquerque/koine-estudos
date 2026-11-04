@@ -701,67 +701,292 @@
     "level": 0,
     "order": 4,
     "title": "Caso, gênero e número",
-    "summary": "Construa o vocabulário do parsing nominal.",
-    "minutes": 10,
+    "summary": "Entenda as categorias dos substantivos e aprenda a consultar os primeiros quadros de formas.",
+    "minutes": 18,
     "objectives": [
-      "Separar forma e função.",
-      "Identificar categorias nominais.",
-      "Usar lema e concordância."
+      "Explicar o que são masculino, feminino e neutro.",
+      "Distinguir singular e plural.",
+      "Reconhecer os nomes dos cinco casos e separá-los das funções sintáticas.",
+      "Consultar um paradigma para analisar uma forma.",
+      "Ler uma entrada com lema, genitivo singular e artigo."
     ],
     "sections": [
       {
-        "heading": "Três perguntas sobre a forma",
-        "body": "Ao analisar um substantivo, indique caso, gênero e número. Caso identifica uma forma do sistema nominal; gênero é uma propriedade gramatical do substantivo; número distingue singular e plural no repertório usual do Novo Testamento. O lema é a forma convencional de consulta. Essas informações são diferentes do significado e da função na oração: nominativo é caso; sujeito é função."
-      },
-      {
-        "heading": "Os cinco casos do estudo inicial",
-        "body": "Usaremos nominativo, genitivo, dativo, acusativo e vocativo. As terminações podem coincidir, especialmente no neutro. Uma forma isolada pode admitir mais de uma análise. Não memorize uma equivalência rígida entre cada caso e uma única tradução portuguesa: o caso é interpretado dentro de uma construção.",
+        "heading": "Antes do parsing: três informações diferentes",
+        "body": "Substantivos são palavras que nomeiam pessoas, seres, objetos, lugares ou ideias. λόγος pode significar “palavra”; τιμή, “honra”; δῶρον, “presente”. Na análise morfológica de um substantivo, chamada parsing, identificamos seu caso, gênero e número. Não é necessário conhecer esses termos de antemão: vamos aprender cada um e depois consultar os quadros.\n\nMudar a forma de uma palavra para expressar categorias gramaticais é flexioná-la. λόγος e λόγον são formas do mesmo substantivo. A forma usada para procurá-lo no léxico, isto é, no dicionário de grego, é chamada lema. Nesse exemplo, o lema é λόγος.",
         "table": {
           "headers": [
-            "Categoria",
-            "Pergunta",
+            "Informação",
+            "O que identifica",
             "Exemplo"
           ],
           "rows": [
             [
-              "Caso",
-              "Que forma do sistema nominal?",
-              "λόγον: acusativo"
-            ],
-            [
               "Gênero",
-              "Qual gênero gramatical?",
-              "λόγος: masculino"
+              "A classe gramatical do substantivo",
+              "λόγος é masculino"
             ],
             [
               "Número",
-              "Singular ou plural?",
-              "λόγοι: plural"
+              "A distinção gramatical entre singular e plural",
+              "λόγοι é plural"
+            ],
+            [
+              "Caso",
+              "Uma categoria do sistema de flexão nominal",
+              "λόγον é acusativo"
             ],
             [
               "Lema",
-              "Como procurar no léxico?",
-              "λόγου → λόγος"
+              "A forma usada para consulta no léxico",
+              "λόγος"
             ]
           ]
         }
       },
       {
-        "heading": "Gênero não é sexo",
-        "body": "Substantivos têm gênero gramatical, inclusive quando designam objetos e ideias. Memorize-os com artigo e genitivo. ὁδός é feminina apesar do final -ος; o artigo ἡ confirma esse gênero. No treino, reconheça a classe da palavra e associe cada categoria à sua evidência: terminação, paradigma, informação lexical ou concordância. Evite transformar uma pista frequente em regra universal."
+        "heading": "Gênero: masculino, feminino e neutro",
+        "body": "O grego organiza os substantivos em três gêneros gramaticais: masculino, feminino e neutro. São classes que orientam, por exemplo, a concordância do artigo com o substantivo. O artigo é uma palavra que pode acompanhar o substantivo; no nominativo singular, suas formas são ὁ para o masculino, ἡ para o feminino e τό para o neutro. Quando τό vem imediatamente antes de outra palavra, costuma ser escrito τὸ, como em τὸ δῶρον.\n\nMasculino não significa necessariamente “ser do sexo masculino”, nem feminino significa necessariamente “ser do sexo feminino”. Objetos e ideias também têm gênero. Neutro é a terceira classe gramatical: não significa “sem gênero” nem é uma categoria reservada a objetos. Por exemplo, παιδίον (“criança”) é neutro.\n\nO gênero em grego pode ser diferente do gênero da tradução portuguesa: λόγος é masculino, embora “palavra” seja feminino; ὁδός é feminino, embora “caminho” seja masculino. Aprenda o gênero de cada substantivo com a informação do léxico. A terminação, sozinha, nem sempre basta: ὁδός termina em -ος, mas é feminino.",
+        "table": {
+          "headers": [
+            "Gênero",
+            "Artigo no nominativo singular",
+            "Exemplo"
+          ],
+          "rows": [
+            [
+              "Masculino",
+              "ὁ",
+              "ὁ λόγος — a palavra"
+            ],
+            [
+              "Feminino",
+              "ἡ",
+              "ἡ τιμή — a honra"
+            ],
+            [
+              "Neutro",
+              "τό",
+              "τὸ δῶρον — o presente"
+            ],
+            [
+              "Feminino, apesar de -ος",
+              "ἡ",
+              "ἡ ὁδός — o caminho"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Número: singular e plural",
+        "body": "No grego do Novo Testamento, trabalharemos com singular e plural. Em geral, o singular apresenta uma entidade e o plural apresenta mais de uma. Compare as formas abaixo: λόγος e λόγοι pertencem ao mesmo substantivo, mas têm números diferentes.\n\nO gênero não muda nessa passagem: λόγοι continua sendo masculino, τιμαί continua sendo feminino e δῶρα continua sendo neutro. O final -α de δῶρα não o torna feminino. Nestes exemplos, todas as formas estão no nominativo; assim podemos observar a mudança de número mantendo o caso.",
+        "table": {
+          "headers": [
+            "Substantivo e gênero",
+            "Singular",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "λόγος — masculino",
+              "λόγος — palavra",
+              "λόγοι — palavras"
+            ],
+            [
+              "τιμή — feminino",
+              "τιμή — honra",
+              "τιμαί — honras"
+            ],
+            [
+              "δῶρον — neutro",
+              "δῶρον — presente",
+              "δῶρα — presentes"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Caso: nominativo, genitivo, dativo, acusativo e vocativo",
+        "body": "Caso é uma categoria da flexão nominal. Neste curso, distinguimos cinco casos: nominativo, genitivo, dativo, acusativo e vocativo. Suas formas ajudam a interpretar as relações entre as palavras na oração. Não existe, porém, uma terminação exclusiva para cada caso em todas as palavras: às vezes dois ou mais casos têm a mesma forma.\n\nO quadro dá uma primeira orientação para a leitura, com usos frequentes. Esses usos não esgotam cada caso e não são traduções automáticas. Os diferentes usos serão estudados na sintaxe.",
+        "table": {
+          "headers": [
+            "Caso",
+            "Primeira orientação de leitura",
+            "Exemplo de forma"
+          ],
+          "rows": [
+            [
+              "Nominativo",
+              "É frequente no termo que funciona como sujeito.",
+              "λόγος"
+            ],
+            [
+              "Genitivo",
+              "Pode relacionar um termo a outro, como numa expressão de posse.",
+              "λόγου"
+            ],
+            [
+              "Dativo",
+              "Pode marcar, por exemplo, o destinatário de algo.",
+              "λόγῳ"
+            ],
+            [
+              "Acusativo",
+              "É frequente no termo que funciona como objeto direto.",
+              "λόγον"
+            ],
+            [
+              "Vocativo",
+              "É usado no chamamento ou na interpelação.",
+              "λόγε"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Como consultar um paradigma: o singular",
+        "body": "Um paradigma é um quadro das formas de uma palavra. Nos quadros desta aula, cada linha corresponde a um caso e cada coluna apresenta um substantivo de um gênero. Primeiro escolha a palavra; depois procure a forma na coluna e leia o caso à esquerda. O título do quadro informa o número.\n\nNeste quadro, todas as formas são singulares. Para analisar λόγον, procure-o na coluna de λόγος: ele aparece na linha do acusativo. Portanto, λόγον é acusativo singular, de gênero masculino. O gênero vem do substantivo λόγος; não é deduzido apenas de -ον.\n\nUse estes quadros como apoio para entender a análise. A memorização sistemática das terminações será trabalhada nas aulas das declinações, que são os padrões de flexão.",
+        "table": {
+          "headers": [
+            "Caso — singular",
+            "Masculino: λόγος",
+            "Feminino: τιμή",
+            "Neutro: δῶρον"
+          ],
+          "rows": [
+            [
+              "Nominativo",
+              "λόγος",
+              "τιμή",
+              "δῶρον"
+            ],
+            [
+              "Genitivo",
+              "λόγου",
+              "τιμῆς",
+              "δώρου"
+            ],
+            [
+              "Dativo",
+              "λόγῳ",
+              "τιμῇ",
+              "δώρῳ"
+            ],
+            [
+              "Acusativo",
+              "λόγον",
+              "τιμήν",
+              "δῶρον"
+            ],
+            [
+              "Vocativo",
+              "λόγε",
+              "τιμή",
+              "δῶρον"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "As mesmas palavras no plural",
+        "body": "Agora todas as formas do quadro são plurais. Compare λόγοι, λόγοις e λόγους: são formas do mesmo substantivo masculino, todas no plural, mas pertencem a casos diferentes. λόγοι aparece tanto no nominativo quanto no vocativo plural.\n\nObserve também a coluna neutra. δῶρα aparece no nominativo, no acusativo e no vocativo plural. Essa coincidência de casos não elimina a distinção de número: neste paradigma, δῶρον é singular e δῶρα é plural.",
+        "table": {
+          "headers": [
+            "Caso — plural",
+            "Masculino: λόγος",
+            "Feminino: τιμή",
+            "Neutro: δῶρον"
+          ],
+          "rows": [
+            [
+              "Nominativo",
+              "λόγοι",
+              "τιμαί",
+              "δῶρα"
+            ],
+            [
+              "Genitivo",
+              "λόγων",
+              "τιμῶν",
+              "δώρων"
+            ],
+            [
+              "Dativo",
+              "λόγοις",
+              "τιμαῖς",
+              "δώροις"
+            ],
+            [
+              "Acusativo",
+              "λόγους",
+              "τιμάς",
+              "δῶρα"
+            ],
+            [
+              "Vocativo",
+              "λόγοι",
+              "τιμαί",
+              "δῶρα"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Por que δῶρον não indica um único caso?",
+        "body": "Volte à coluna neutra do singular: a mesma forma δῶρον aparece em três linhas, nominativo, acusativo e vocativo. Assim, ao encontrar δῶρον isoladamente, você pode identificar gênero neutro e número singular, mas não escolher apenas um desses três casos. A construção em que a palavra aparece fornece a informação para decidir entre as possibilidades.\n\nEssa é uma característica importante do neutro: nominativo, acusativo e vocativo têm formas iguais dentro de cada número. Neste modelo, os três casos usam δῶρον no singular e δῶρα no plural. Eles não se tornam um único caso; suas formas é que coincidem.\n\nCompare λόγον e δῶρον. Ambos terminam em -ον, mas λόγον pertence ao substantivo masculino λόγος e é acusativo singular. δῶρον pertence a um substantivo neutro e corresponde a três casos no singular. Por isso, consulte o lema e seu paradigma em vez de atribuir gênero e caso apenas pelas últimas letras."
+      },
+      {
+        "heading": "Como registrar uma palavra nova: lema, genitivo e artigo",
+        "body": "Ao aprender um substantivo, anote três informações: a forma de consulta (lema), sua forma no genitivo singular e o artigo no nominativo singular. Esse registro ajuda a reconhecer o padrão de flexão e a lembrar o gênero.\n\nPor exemplo, registre λόγος, λόγου, ὁ. Leia assim: “λόγος é a forma de consulta; λόγου é seu genitivo singular; ὁ indica que o substantivo é masculino”. Esse registro não é uma expressão para traduzir em sequência. Seus dois primeiros elementos são formas do substantivo; o terceiro é um artigo usado para indicar seu gênero.\n\nNo registro δῶρον, δώρου, τό, o artigo τό indica gênero neutro. Em ὁδός, ὁδοῦ, ἡ, o artigo ἡ informa gênero feminino. Você não precisa adivinhar essas informações: consulte o quadro da aula ou o léxico.",
+        "table": {
+          "headers": [
+            "Registro para estudo",
+            "Como ler"
+          ],
+          "rows": [
+            [
+              "λόγος, λόγου, ὁ",
+              "Lema λόγος; genitivo singular λόγου; gênero masculino."
+            ],
+            [
+              "τιμή, τιμῆς, ἡ",
+              "Lema τιμή; genitivo singular τιμῆς; gênero feminino."
+            ],
+            [
+              "δῶρον, δώρου, τό",
+              "Lema δῶρον; genitivo singular δώρου; gênero neutro."
+            ],
+            [
+              "ὁδός, ὁδοῦ, ἡ",
+              "Lema ὁδός; genitivo singular ὁδοῦ; gênero feminino."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Forma e função: o que a prática vai pedir",
+        "body": "Caso, gênero e número são categorias morfológicas. Sujeito, objeto direto e predicativo do sujeito são nomes de funções sintáticas, isto é, de papéis que um termo desempenha na oração. “Acusativo plural” informa caso e número; “sujeito da oração” informa uma função. Essas respostas não são intercambiáveis.\n\nFaça uma análise guiada antes da prática. Para λόγον: o lema é λόγος; o gênero é masculino; no quadro do singular, a forma está na linha do acusativo. Para δῶρον: o lema é δῶρον; o gênero é neutro; o número é singular; sem uma construção, permanecem possíveis nominativo, acusativo e vocativo.\n\nNa prática desta aula, use essas distinções para reconhecer o tipo de informação solicitado. Se houver mais de um caso possível para uma forma isolada, a resposta deve preservar essa possibilidade, em vez de escolher um caso sem evidência."
       }
     ],
     "examples": [
       {
-        "greek": "ἡ ὁδός",
-        "translation": "o caminho",
-        "note": "ὁδός é feminino da segunda declinação."
+        "greek": "λόγον",
+        "translation": "palavra (forma acusativa singular)",
+        "note": "Lema λόγος; gênero masculino; caso acusativo; número singular. Consulte a linha do acusativo no quadro do singular."
       },
       {
-        "greek": "τοὺς λόγους",
-        "translation": "as palavras",
-        "note": "O grupo está no acusativo masculino plural."
+        "greek": "ἡ ὁδός",
+        "translation": "o caminho",
+        "note": "ὁδός é feminino. O artigo ἡ mostra esse gênero, mesmo que a palavra termine em -ος."
+      },
+      {
+        "greek": "δῶρον / δῶρα",
+        "translation": "presente / presentes",
+        "note": "Ambas as formas são neutras. δῶρον é singular; δῶρα é plural. Em cada número, nominativo, acusativo e vocativo coincidem."
       }
+    ],
+    "references": [
+      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, §§ 2.3.6–2.3.7 (gênero e número), 2.4 (paradigmas), 3.3 (artigo) e Guide to Parsing. Explicações, seleção dos exemplos e organização dos quadros próprias."
     ],
     "questions": [
       {
@@ -802,7 +1027,7 @@
             ]
           }
         ],
-        "explanation": "No paradigma de λόγος, λόγον é acusativo singular. A análise parte do lema, não apenas do final -ον.",
+        "explanation": "Procure λόγον na coluna de λόγος no quadro do singular: a forma está na linha do acusativo. Portanto, é acusativo singular. Seu gênero é masculino, pois pertence ao substantivo λόγος.",
         "id": "m-caso-genero-numero-2"
       },
       {
@@ -833,21 +1058,21 @@
       },
       {
         "kind": "choice",
-        "prompt": "Sem uma oração, a forma neutra δῶρον determina um único caso?",
+        "prompt": "Quais casos têm a forma δῶρον (“presente”) no singular, conforme o paradigma estudado?",
         "greek": "δῶρον",
         "options": [
-          "Não: pode ser nominativo, acusativo ou vocativo singular",
-          "Sim: é somente nominativo singular",
-          "Sim: é somente acusativo singular",
-          "Não: pode ser singular ou plural"
+          "Nominativo, acusativo e vocativo",
+          "Somente nominativo",
+          "Somente acusativo",
+          "Genitivo e dativo"
         ],
         "answer": 0,
-        "explanation": "No paradigma de δῶρον, os três casos neutros coincidem no singular; o plural é δῶρα.",
+        "explanation": "Na coluna neutra do singular, δῶρον aparece nas linhas do nominativo, do acusativo e do vocativo. A forma isolada não distingue esses três casos. No plural, a forma correspondente é δῶρα.",
         "id": "m-caso-genero-numero-extra-2"
       },
       {
         "kind": "match",
-        "prompt": "Relacione cada informação ao tipo de dado que ela fornece.",
+        "prompt": "Relacione cada item ao tipo de informação indicado. Considere ὁδός como a forma de consulta no léxico.",
         "pairs": [
           {
             "left": "ὁδός",
@@ -869,9 +1094,6 @@
         "explanation": "Lema, gênero, caso e função são informações diferentes; identificar uma delas não determina automaticamente as demais.",
         "id": "m-caso-genero-numero-extra-3"
       }
-    ],
-    "references": [
-      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, caps. 2–3 e Guide to Parsing. Síntese, organização dos paradigmas e exercícios próprios."
     ]
   },
   {
