@@ -656,7 +656,7 @@
       },
       {
         "heading": "Comparar regularidade e variação com método",
-        "body": "Ao encontrar um padrão inesperado, confira primeiro o texto, o parsing e o núcleo relevante. Depois procure exemplos comparáveis na gramática, respeitando a diferença entre explicação semântica, uso recorrente e hipótese de transmissão textual. Nem toda dificuldade exige corrigir o texto, e nem toda divergência pode ser explicada por “concordância segundo o sentido”. Uma análise aprofundada indica quais categorias concordam, que padrão foi identificado e que efeito isso tem para a leitura. Assim a concordância continua sendo evidência valiosa, sem ser usada como prova automática de qualquer relação possível."
+        "body": "Ao encontrar um padrão inesperado, confira primeiro o texto, a análise morfológica e o núcleo relevante. Depois procure exemplos comparáveis na gramática, respeitando a diferença entre explicação semântica, uso recorrente e hipótese de transmissão textual. Nem toda dificuldade exige corrigir o texto, e nem toda divergência pode ser explicada por “concordância segundo o sentido”. Uma análise aprofundada indica quais categorias concordam, que padrão foi identificado e que efeito isso tem para a leitura. Assim a concordância continua sendo evidência valiosa, sem ser usada como prova automática de qualquer relação possível."
       }
     ],
     "references": [
@@ -796,7 +796,7 @@
     "sections": [
       {
         "heading": "Uma forma verbal pode funcionar em configurações nominais",
-        "body": "O particípio conserva propriedades verbais enquanto participa de construções que podem modificar um nome, apresentar um referente ou integrar uma predicação. Seu parsing não determina sozinho qual dessas relações ocorre. Uma forma no nominativo masculino singular, por exemplo, ainda precisa ser situada na oração. O aprofundamento começa justamente depois de identificar caso, gênero, número, série aspectual e voz: qual é seu núcleo, que complementos ela admite e que relação estabelece com o restante do enunciado?"
+        "body": "O particípio conserva propriedades verbais enquanto participa de construções que podem modificar um nome, apresentar um referente ou integrar uma predicação. Sua análise morfológica não determina sozinha qual dessas relações ocorre. Uma forma no nominativo masculino singular, por exemplo, ainda precisa ser situada na oração. O aprofundamento começa justamente depois de identificar caso, gênero, número, série aspectual e voz: qual é seu núcleo, que complementos ela admite e que relação estabelece com o restante do enunciado?"
       },
       {
         "heading": "Artigo e referente não se confundem com uma transformação lexical",
@@ -837,7 +837,7 @@
       },
       {
         "heading": "Aspecto não funciona como relógio automático",
-        "body": "Uma oposição entre particípios de séries diferentes não deve ser reduzida a uma tabela universal de acontecimentos anteriores, simultâneos e posteriores. Relações temporais podem resultar da combinação de aspecto, léxico e contexto. Na abordagem priorizada neste curso, preserve a distinção entre perspectiva e referência temporal. Uma tradução que emprega “depois que” faz uma decisão interpretativa específica; essa decisão precisa ser defendida pela sequência narrada ou por outros indícios, não apenas pela etiqueta “aoristo” no parsing da forma."
+        "body": "Uma oposição entre particípios de séries diferentes não deve ser reduzida a uma tabela universal de acontecimentos anteriores, simultâneos e posteriores. Relações temporais podem resultar da combinação de aspecto, léxico e contexto. Na abordagem priorizada neste curso, preserve a distinção entre perspectiva e referência temporal. Uma tradução que emprega “depois que” faz uma decisão interpretativa específica; essa decisão precisa ser defendida pela sequência narrada ou por outros indícios, não apenas pela etiqueta “aoristo” na análise morfológica da forma."
       },
       {
         "heading": "Em que sentido o genitivo é “absoluto”",
@@ -1353,7 +1353,7 @@
     "sections": [
       {
         "heading": "A interpretação precisa deixar um percurso",
-        "body": "Uma tradução pode ser elegante e esconder decisões importantes sobre referentes, dependências e relações entre acontecimentos. Para aprofundar a leitura, apresente o caminho que levou até ela. Registre o texto analisado, as formas cuja identificação é relevante e as ligações sintáticas que sustentam a proposta. Depois mostre onde a interpretação depende do léxico e do contexto. Essa organização permite distinguir um erro de parsing, uma escolha entre construções possíveis e uma divergência exegética que surge apenas depois das etapas gramaticais."
+        "body": "Uma tradução pode ser elegante e esconder decisões importantes sobre referentes, dependências e relações entre acontecimentos. Para aprofundar a leitura, apresente o caminho que levou até ela. Registre o texto analisado, as formas cuja identificação é relevante e as ligações sintáticas que sustentam a proposta. Depois mostre onde a interpretação depende do léxico e do contexto. Essa organização permite distinguir um erro de análise morfológica, uma escolha entre construções possíveis e uma divergência exegética que surge apenas depois das etapas gramaticais."
       },
       {
         "heading": "Uma hipótese deve ser confrontada com outra plausível",

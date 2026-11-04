@@ -549,7 +549,7 @@
       },
       {
         "heading": "Acentos e reconhecimento",
-        "body": "Agudo, grave e circunflexo são sinais diferentes: ά, ὰ e ᾶ. Na leitura erasmiana usual, o acento orienta a sílaba destacada. A tradição gráfica estabelece condições para a troca do agudo final por grave em contexto. Memorize o lema com seu acento, especialmente em contrastes como τίς e τις. No parsing, combine acento, terminação e contexto: um sinal sozinho nem sempre resolve a análise."
+        "body": "Agudo, grave e circunflexo são sinais diferentes: ά, ὰ e ᾶ. Na leitura erasmiana usual, o acento orienta a sílaba destacada. A tradição gráfica estabelece condições para a troca do agudo final por grave em contexto. Memorize o lema com seu acento, especialmente em contrastes como τίς e τις. Na análise morfológica, combine acento, terminação e contexto: um sinal sozinho nem sempre resolve a análise."
       },
       {
         "heading": "Pontuação em blocos de leitura",
@@ -702,7 +702,7 @@
     "order": 4,
     "title": "Caso, gênero e número",
     "summary": "Entenda as categorias dos substantivos e aprenda a consultar os primeiros quadros de formas.",
-    "minutes": 18,
+    "minutes": 20,
     "objectives": [
       "Explicar o que são masculino, feminino e neutro.",
       "Distinguir singular e plural.",
@@ -712,8 +712,12 @@
     ],
     "sections": [
       {
-        "heading": "Antes do parsing: três informações diferentes",
-        "body": "Substantivos são palavras que nomeiam pessoas, seres, objetos, lugares ou ideias. λόγος pode significar “palavra”; τιμή, “honra”; δῶρον, “presente”. Na análise morfológica de um substantivo, chamada parsing, identificamos seu caso, gênero e número. Não é necessário conhecer esses termos de antemão: vamos aprender cada um e depois consultar os quadros.\n\nMudar a forma de uma palavra para expressar categorias gramaticais é flexioná-la. λόγος e λόγον são formas do mesmo substantivo. A forma usada para procurá-lo no léxico, isto é, no dicionário de grego, é chamada lema. Nesse exemplo, o lema é λόγος.",
+        "heading": "Análise morfológica: o que significa parsing?",
+        "body": "Parsing é um termo inglês usado para a identificação das características gramaticais de uma palavra. Em português, chamaremos esse procedimento de análise morfológica. Na prática, você observa a forma grega e registra quais categorias gramaticais ela apresenta.\n\nPor exemplo, em λόγον, registramos: substantivo; lema λόγος; gênero masculino; caso acusativo; número singular. Responder apenas “palavra” fornece uma tradução; a análise morfológica informa as características da forma. Cada categoria desse exemplo será explicada nos quadros a seguir.\n\nO conjunto de informações depende do tipo de palavra. Por enquanto, vamos trabalhar com substantivos. Quando chegarmos aos verbos, aprenderemos as categorias usadas para analisá-los. Nas atividades do site, o comando “Faça a análise morfológica” pede que você selecione essas características nos campos indicados."
+      },
+      {
+        "heading": "Três informações sobre o substantivo",
+        "body": "Substantivos são palavras que nomeiam pessoas, seres, objetos, lugares ou ideias. λόγος pode significar “palavra”; τιμή, “honra”; δῶρον, “presente”. Ao analisar a forma de um substantivo, identificamos seu caso, gênero e número. Não é necessário conhecer esses termos de antemão: vamos aprender cada um e depois consultar os quadros.\n\nMudar a forma de uma palavra para expressar categorias gramaticais é flexioná-la. λόγος e λόγον são formas do mesmo substantivo. A forma usada para procurá-lo no léxico, isto é, no dicionário de grego, é chamada lema. Nesse exemplo, o lema é λόγος.",
         "table": {
           "headers": [
             "Informação",
@@ -2698,7 +2702,7 @@
     "objectives": [
       "Reconhecer o relativo.",
       "Distinguir reflexivo e recíproco.",
-      "Completar o parsing com contexto."
+      "Completar a análise morfológica com contexto."
     ],
     "sections": [
       {
@@ -2707,7 +2711,7 @@
       },
       {
         "heading": "Formas do relativo",
-        "body": "Espírito e acento são parte da identificação. Compare o relativo ἥ com o artigo ἡ. As formas compartilhadas entre gêneros exigem contexto para completar o parsing.",
+        "body": "Espírito e acento são parte da identificação. Compare o relativo ἥ com o artigo ἡ. As formas compartilhadas entre gêneros exigem contexto para completar a análise morfológica.",
         "table": {
           "headers": [
             "Caso",
@@ -2913,7 +2917,7 @@
     "summary": "Separe lema, tema, desinência e categorias antes de traduzir.",
     "minutes": 10,
     "objectives": [
-      "Aplicar uma sequência de parsing.",
+      "Aplicar uma sequência de análise morfológica.",
       "Separar lema e flexão.",
       "Relacionar morfologia e aspecto."
     ],
@@ -3042,7 +3046,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "No estudo do vocabulário e do parsing, o que se chama de lema?",
+        "prompt": "No estudo do vocabulário e da análise morfológica, o que se chama de lema?",
         "options": [
           "Uma função obrigatória",
           "A forma convencional de consulta lexical",
@@ -3055,7 +3059,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual informação de parsing deve ser acrescentada a um particípio, mas não a um infinitivo?",
+        "prompt": "Qual característica gramatical deve ser acrescentada a um particípio, mas não a um infinitivo?",
         "options": [
           "Caso, gênero e número",
           "Pessoa, sempre primeira",
@@ -3147,7 +3151,7 @@
             "right": "pessoa e número"
           }
         ],
-        "explanation": "Um parsing completo combina categorias; a forma de consulta λύω não substitui a análise de λύεις.",
+        "explanation": "Uma análise morfológica completa combina categorias; a forma de consulta λύω não substitui a análise de λύεις.",
         "id": "m-estrutura-verbal-extra-3"
       }
     ],
@@ -4320,7 +4324,7 @@
       },
       {
         "heading": "Reconheça também as palavras indeclináveis",
-        "body": "Preposições, conjunções e muitos advérbios não recebem caso, gênero, número ou pessoa como substantivos e verbos. Em ἐν τῷ οἴκῳ, ἐν é preposição; o dativo pertence a τῷ οἴκῳ. Em καὶ γράφει, καί é conjunção; γράφει é a forma finita. Reconhecer a classe evita tentar fazer parsing nominal de toda palavra. Advérbios como καλῶς podem se relacionar a adjetivos, mas sua ocorrência não deve receber automaticamente a flexão do adjetivo correspondente.",
+        "body": "Preposições, conjunções e muitos advérbios não recebem caso, gênero, número ou pessoa como substantivos e verbos. Em ἐν τῷ οἴκῳ, ἐν é preposição; o dativo pertence a τῷ οἴκῳ. Em καὶ γράφει, καί é conjunção; γράφει é a forma finita. Reconhecer a classe evita atribuir caso, gênero e número a toda palavra. Advérbios como καλῶς podem se relacionar a adjetivos, mas sua ocorrência não deve receber automaticamente a flexão do adjetivo correspondente.",
         "table": {
           "headers": [
             "Forma",
@@ -4506,7 +4510,7 @@
             "right": "substantivo flexionado"
           }
         ],
-        "explanation": "Em ἐν τῷ οἴκῳ, o caso dativo pertence ao artigo e ao substantivo; a preposição não recebe parsing nominal.",
+        "explanation": "Em ἐν τῷ οἴκῳ, o caso dativo pertence ao artigo e ao substantivo; a preposição não se flexiona em caso, gênero e número.",
         "id": "m-contratos-extra-3"
       }
     ],
@@ -4578,7 +4582,7 @@
       },
       {
         "heading": "Do reconhecimento à interpretação",
-        "body": "-σθαι ajuda a reconhecer a família média ou média/passiva; o tema distingue presente e aoristo. -ναι também aparece em mais de uma família. Treine contrastes como λύειν / λῦσαι e λύεσθαι / λύσασθαι. Observe o contraste aspectual, sem transformar o aoristo infinitivo em passado obrigatório. A relação temporal precisa ser examinada na oração completa e não apenas na forma temporal indicada no parsing."
+        "body": "-σθαι ajuda a reconhecer a família média ou média/passiva; o tema distingue presente e aoristo. -ναι também aparece em mais de uma família. Treine contrastes como λύειν / λῦσαι e λύεσθαι / λύσασθαι. Observe o contraste aspectual, sem transformar o aoristo infinitivo em passado obrigatório. A relação temporal precisa ser examinada na oração completa e não apenas na forma temporal indicada na análise morfológica."
       }
     ],
     "examples": [
@@ -4770,7 +4774,7 @@
     "sections": [
       {
         "heading": "Uma série compartilhada",
-        "body": "No presente e no imperfeito, média e passiva compartilham formas. λύεται pode receber interpretação média ou passiva conforme lema e construção. O parsing pode conservar “média ou passiva” até que o contexto permita maior precisão. Não traduza toda forma em -ομαι por “ser feito”: isso confunde flexão e interpretação. A voz precisa ser examinada junto ao comportamento lexical do verbo."
+        "body": "No presente e no imperfeito, média e passiva compartilham formas. λύεται pode receber interpretação média ou passiva conforme lema e construção. A análise morfológica pode conservar “média ou passiva” até que o contexto permita maior precisão. Não traduza toda forma em -ομαι por “ser feito”: isso confunde flexão e interpretação. A voz precisa ser examinada junto ao comportamento lexical do verbo."
       },
       {
         "heading": "Compare as terminações",
@@ -5113,7 +5117,7 @@
       },
       {
         "heading": "Segundos aoristos e futuros lexicais",
-        "body": "O segundo aoristo médio emprega seu tema, como ἐγενόμην de γίνομαι. Certos lemas com presente ativo têm futuro de flexão média: λαμβάνω / λήμψομαι. Não altere o parsing para fazê-lo coincidir com a tradução portuguesa. Na revisão, associe a forma ao lema e compare-a a uma passiva do modelo. Explique qual segmento sustenta a diferença e qual informação depende da memória lexical.\n\nCompare ἐλύσατο e ἐλύσαντο, mantendo aoristo médio e alterando o número. Depois compare λύσεται e λυθήσεται, mantendo futuro e alterando a série de voz. A comparação controlada torna o segmento distintivo mais fácil de recuperar durante a leitura."
+        "body": "O segundo aoristo médio emprega seu tema, como ἐγενόμην de γίνομαι. Certos lemas com presente ativo têm futuro de flexão média: λαμβάνω / λήμψομαι. Não altere a análise morfológica para fazê-la coincidir com a tradução portuguesa. Na revisão, associe a forma ao lema e compare-a a uma passiva do modelo. Explique qual segmento sustenta a diferença e qual informação depende da memória lexical.\n\nCompare ἐλύσατο e ἐλύσαντο, mantendo aoristo médio e alterando o número. Depois compare λύσεται e λυθήσεται, mantendo futuro e alterando a série de voz. A comparação controlada torna o segmento distintivo mais fácil de recuperar durante a leitura."
       }
     ],
     "examples": [
@@ -6293,7 +6297,7 @@
     ],
     "sections": [
       {
-        "heading": "Duas dimensões no parsing",
+        "heading": "Duas dimensões na análise morfológica",
         "body": "O particípio combina categorias verbais e nominais: indique lema, forma temporal, voz, caso, gênero e número. Não atribua pessoa como a um verbo finito. Sua função pode ser adjetiva, substantivada ou ligada à circunstância da oração. Essa escolha é sintática. Para reconhecer a forma, localize o tema verbal e depois a flexão nominal; confira a concordância na construção."
       },
       {
@@ -7229,7 +7233,7 @@
     "sections": [
       {
         "heading": "Uma formação diferente da ativa",
-        "body": "No perfeito médio/passivo regular, a reduplicação permanece, mas não aparece o mesmo -κα do perfeito ativo. Em λέλυμαι, a ligação das terminações ao tema produz uma estrutura diferente de λύομαι. A série pode receber interpretação média ou passiva conforme lema e construção; sem contexto suficiente, o parsing pode conservar a identificação compartilhada."
+        "body": "No perfeito médio/passivo regular, a reduplicação permanece, mas não aparece o mesmo -κα do perfeito ativo. Em λέλυμαι, a ligação das terminações ao tema produz uma estrutura diferente de λύομαι. A série pode receber interpretação média ou passiva conforme lema e construção; sem contexto suficiente, a análise morfológica pode conservar a identificação compartilhada."
       },
       {
         "heading": "Modelo e alterações consonantais",
@@ -7455,7 +7459,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Qual diferença entre λέλυκα e λέλυμαι deve ser registrada no parsing?",
+        "prompt": "Qual diferença entre λέλυκα e λέλυμαι deve ser registrada na análise morfológica?",
         "greek": "λέλυκα / λέλυμαι",
         "options": [
           "Ativa e média/passiva, respectivamente",
@@ -7551,7 +7555,7 @@
         }
       },
       {
-        "heading": "A categoria determina o parsing",
+        "heading": "A classe da palavra determina as categorias analisadas",
         "body": "Particípios e infinitivos perfeitos conservam o tema, mas usam terminações adequadas às suas categorias. λελυκώς exige caso, gênero e número; ᾔδει exige pessoa e número. Selecione primeiro a série verbal e depois as categorias compatíveis. Diante de uma forma rara, consulte formas principais antes de reconstruir a análise apenas por uma terminação familiar. Essa disciplina evita atribuir pessoa a um particípio ou caso a um verbo finito."
       },
       {
@@ -7700,7 +7704,7 @@
       },
       {
         "kind": "choice",
-        "prompt": "Que diferença de categorias de parsing separa a forma finita ᾔδει do particípio λελυκώς?",
+        "prompt": "Que diferença de categorias morfológicas separa a forma finita ᾔδει do particípio λελυκώς?",
         "options": [
           "ᾔδει tem caso; λελυκώς tem pessoa",
           "Ambas têm pessoa",
@@ -7812,7 +7816,7 @@
             "right": "verbo finito: pessoa e número"
           }
         ],
-        "explanation": "Infinitivo, particípio e verbo finito não recebem o mesmo conjunto de categorias de parsing.",
+        "explanation": "Infinitivo, particípio e verbo finito não recebem o mesmo conjunto de categorias morfológicas.",
         "id": "m-mais-que-perfeito-extra-3"
       }
     ],
@@ -8475,7 +8479,7 @@
       },
       {
         "heading": "Tema, acento e construção",
-        "body": "Aoristos optativos não levam aumento. Compare γένοιτο e ἐγένετο: mesmo lema e série aorista, mas modos e formação diferentes. Na revisão, justifique a análise por elementos da forma e pelo paradigma. Uma glossa como “que aconteça” ajuda a compreender, mas não substitui o parsing. Se a identificação depender de uma família irregular, registre essa dependência em vez de apresentar uma regra superficial que falhará em outra palavra."
+        "body": "Aoristos optativos não levam aumento. Compare γένοιτο e ἐγένετο: mesmo lema e série aorista, mas modos e formação diferentes. Na revisão, justifique a análise por elementos da forma e pelo paradigma. Uma glossa como “que aconteça” ajuda a compreender, mas não substitui a análise morfológica. Se a identificação depender de uma família irregular, registre essa dependência em vez de apresentar uma regra superficial que falhará em outra palavra."
       }
     ],
     "examples": [
@@ -9358,7 +9362,7 @@
     "sections": [
       {
         "heading": "Rigor também é admitir possibilidades",
-        "body": "Muitas formas isoladas não possuem uma única análise. ἔλυον pode ser primeira singular ou terceira plural do imperfeito; λύετε pode ser indicativo ou imperativo; λῦσαι pode ser infinitivo aoristo ativo ou imperativo aoristo médio de segunda singular. O bom parsing identifica as possibilidades e procura sujeito, concordância, conectores e estrutura para distingui-las. Não adivinha uma opção apenas por ser a mais frequente."
+        "body": "Muitas formas isoladas não possuem uma única análise. ἔλυον pode ser primeira singular ou terceira plural do imperfeito; λύετε pode ser indicativo ou imperativo; λῦσαι pode ser infinitivo aoristo ativo ou imperativo aoristo médio de segunda singular. Uma boa análise morfológica identifica as possibilidades e procura sujeito, concordância, conectores e estrutura para distingui-las. Não adivinha uma opção apenas por ser a mais frequente."
       },
       {
         "heading": "Analise palavras e depois a construção",

@@ -32,7 +32,7 @@ export class StudyLandingComponent {
   readonly description = computed(() => this.flash()
     ? 'Um conceito por cartão. Selecione a resposta para revelar o verso com a explicação; depois avance no seu ritmo.'
     : this.vocabulary() ? 'Associe palavras a seus sentidos e reconheça o vocábulo grego a partir do português. Cada desafio recebe uma explicação.'
-    : this.area() === 'morphology' ? 'Pratique parsing, associe formas aos seus traços e reconheça paradigmas. Todas as respostas são feitas por seleção.'
+    : this.area() === 'morphology' ? 'Identifique as características gramaticais das palavras, como caso, gênero e número. Selecione as respostas para fazer a análise morfológica.'
     : 'Identifique funções, relacione conceitos e organize traduções didáticas. O contexto e a explicação acompanham cada resposta.');
   readonly tips = computed(() => [
     {title: this.flash() ? 'Pense antes de selecionar' : 'Observe antes de responder', text: this.flash() ? 'Tente recordar o sentido ou a análise antes de olhar as alternativas.' : 'Leia o trecho inteiro. A mesma forma pode ter possibilidades diferentes.'},

@@ -1,7 +1,7 @@
 export type Area = 'morphology' | 'syntax' | 'vocabulary';
 export const AREA_KEYS: Area[] = ['morphology', 'syntax', 'vocabulary'];
 export const AREAS = {
-  morphology: {name:'Morfologia',symbol:'λ',number:'01',description:'Reconheça as formas. Aprenda os padrões que dão estrutura a cada palavra.',focus:'Padrões, paradigmas e parsing',short:'Formas que fazem sentido'},
+  morphology: {name:'Morfologia',symbol:'λ',number:'01',description:'Reconheça as formas. Aprenda os padrões que dão estrutura a cada palavra.',focus:'Padrões e análise morfológica',short:'Formas que fazem sentido'},
   syntax: {name:'Sintaxe',symbol:'σ',number:'02',description:'Conecte as palavras. Entenda como cada termo participa da construção do sentido.',focus:'Conceitos, relações e contexto',short:'Das palavras ao sentido'},
   vocabulary: {name:'Vocabulário',symbol:'ω',number:'03',description:'Amplie seu repertório. Memorize os vocábulos e encontre-os de novo no texto.',focus:'Memorização com revisão espaçada',short:'Um repertório para ler'}
 };

@@ -142,7 +142,7 @@
     "sections": [
       {
         "heading": "Categorias diferentes pedem evidências diferentes",
-        "body": "O parsing reúne categorias em uma mesma resposta, mas isso não significa que todas sejam recuperadas da mesma maneira. O número pode ser reconhecido por uma terminação; o caso pode exigir a comparação entre formas coincidentes; o gênero de um substantivo frequentemente depende de informação lexical e de concordância. Confundir essas fontes produz respostas que parecem explicações, mas apenas repetem expectativas. Dizer que uma palavra é masculina porque designa uma pessoa do sexo masculino pode descrever certos exemplos; não estabelece um método suficiente para todo o vocabulário nominal."
+        "body": "A análise morfológica reúne categorias em uma mesma resposta, mas isso não significa que todas sejam recuperadas da mesma maneira. O número pode ser reconhecido por uma terminação; o caso pode exigir a comparação entre formas coincidentes; o gênero de um substantivo frequentemente depende de informação lexical e de concordância. Confundir essas fontes produz respostas que parecem explicações, mas apenas repetem expectativas. Dizer que uma palavra é masculina porque designa uma pessoa do sexo masculino pode descrever certos exemplos; não estabelece um método suficiente para todo o vocabulário nominal."
       },
       {
         "heading": "O teste de ὁδός",
@@ -154,7 +154,7 @@
       },
       {
         "heading": "Como escrever uma justificativa melhor",
-        "body": "Ao explicar um parsing, indique de onde veio cada informação: paradigma, lema, concordância ou construção. Compare “é feminino porque termina assim” com “a entrada lexical é feminina e o artigo do grupo confirma essa leitura”. A segunda justificativa permite que outro leitor examine sua evidência. Também permite registrar incertezas com precisão. Você pode saber o número de uma forma e ainda não decidir seu caso. Reconhecer uma categoria com segurança e deixar outra provisória é mais informativo do que escolher uma análise completa sem apoio suficiente."
+        "body": "Ao explicar uma análise morfológica, indique de onde veio cada informação: paradigma, lema, concordância ou construção. Compare “é feminino porque termina assim” com “a entrada lexical é feminina e o artigo do grupo confirma essa leitura”. A segunda justificativa permite que outro leitor examine sua evidência. Também permite registrar incertezas com precisão. Você pode saber o número de uma forma e ainda não decidir seu caso. Reconhecer uma categoria com segurança e deixar outra provisória é mais informativo do que escolher uma análise completa sem apoio suficiente."
       }
     ],
     "references": [
@@ -164,7 +164,7 @@
     ],
     "discussionQuestions": [
       "Que evidências sustentam o gênero de ἡ ὁδός?",
-      "Como registrar um parsing quando a forma não decide entre nominativo e acusativo?"
+      "Como registrar uma análise morfológica quando a forma não decide entre nominativo e acusativo?"
     ]
   },
   {
@@ -298,7 +298,7 @@
       },
       {
         "heading": "Forma adjetival não determina função",
-        "body": "O mesmo repertório flexional pode participar de construções diferentes. Um adjetivo pode modificar um substantivo, funcionar predicativamente ou ser empregado substantivamente. Reconhecer o paradigma é indispensável, mas não basta para decidir qual dessas relações aparece no texto. A presença e a posição do artigo são pistas que devem ser analisadas dentro do grupo. Evite transformar a tradução portuguesa de um exemplo em propriedade permanente da forma. O parsing descreve as categorias da palavra; a análise sintática descreve a relação que ela estabelece naquele enunciado."
+        "body": "O mesmo repertório flexional pode participar de construções diferentes. Um adjetivo pode modificar um substantivo, funcionar predicativamente ou ser empregado substantivamente. Reconhecer o paradigma é indispensável, mas não basta para decidir qual dessas relações aparece no texto. A presença e a posição do artigo são pistas que devem ser analisadas dentro do grupo. Evite transformar a tradução portuguesa de um exemplo em propriedade permanente da forma. A análise morfológica descreve as categorias da palavra; a análise sintática descreve a relação que ela estabelece naquele enunciado."
       },
       {
         "heading": "Testar hipóteses de concordância",
@@ -312,7 +312,7 @@
     ],
     "discussionQuestions": [
       "Por que σῶμα e ἀγαθόν podem concordar apesar de terminarem de modo diferente?",
-      "Que informação falta depois de identificar o parsing de um adjetivo?"
+      "Que informação falta depois de identificar as categorias morfológicas de um adjetivo?"
     ]
   },
   {
@@ -358,7 +358,7 @@
     "level": 1,
     "lessonId": "m-pronomes-pessoais",
     "order": 10,
-    "title": "Pronomes expressos e formas fortes: por que o parsing não mede ênfase",
+    "title": "Pronomes expressos e formas fortes: por que a análise morfológica não mede ênfase",
     "summary": "Explore a diferença entre reconhecer uma forma pronominal e explicar sua presença no discurso.",
     "minutes": 7,
     "sections": [
@@ -409,7 +409,7 @@
       },
       {
         "heading": "O caso de αὐτός",
-        "body": "αὐτός merece atenção porque seu comportamento não cabe em uma única glossa portuguesa. Dependendo da construção, pode funcionar na referência pessoal, na identificação de identidade ou em uso intensivo. O parsing informa as categorias da forma, mas não escolhe sozinho uma dessas interpretações. A posição em relação ao artigo e ao substantivo oferece evidências importantes, que devem ser examinadas no grupo real. A análise perde precisão quando uma tradução aprendida num exemplo é transportada para todos os demais sem considerar a diferença entre as construções."
+        "body": "αὐτός merece atenção porque seu comportamento não cabe em uma única glossa portuguesa. Dependendo da construção, pode funcionar na referência pessoal, na identificação de identidade ou em uso intensivo. A análise morfológica informa as categorias da forma, mas não escolhe sozinha uma dessas interpretações. A posição em relação ao artigo e ao substantivo oferece evidências importantes, que devem ser examinadas no grupo real. A análise perde precisão quando uma tradução aprendida num exemplo é transportada para todos os demais sem considerar a diferença entre as construções."
       },
       {
         "heading": "Uma leitura que compara alternativas",
@@ -423,7 +423,7 @@
     ],
     "discussionQuestions": [
       "Em que situação uma busca sem acentos pode aproximar duas entradas diferentes?",
-      "Quais dados além do parsing ajudam a interpretar αὐτός?"
+      "Quais dados além da análise morfológica ajudam a interpretar αὐτός?"
     ]
   },
   {
@@ -557,7 +557,7 @@
       },
       {
         "heading": "A pessoa pode continuar em aberto",
-        "body": "ἔλαβον ilustra ainda uma coincidência entre primeira singular e terceira plural do indicativo aoristo ativo. Identificar corretamente o lema e o aoristo não obriga a inventar uma distinção de pessoa e número que a grafia não fornece. O contexto poderá mostrar qual leitura convém. Essa limitação deve acompanhar a resposta de um exercício sem contexto: há informação reconhecida com segurança e há informação que permanece alternativa. Um parsing parcial bem fundamentado é preferível a um parsing completo que apenas escolhe a primeira linha de uma tabela."
+        "body": "ἔλαβον ilustra ainda uma coincidência entre primeira singular e terceira plural do indicativo aoristo ativo. Identificar corretamente o lema e o aoristo não obriga a inventar uma distinção de pessoa e número que a grafia não fornece. O contexto poderá mostrar qual leitura convém. Essa limitação deve acompanhar a resposta de um exercício sem contexto: há informação reconhecida com segurança e há informação que permanece alternativa. Uma análise morfológica parcial bem fundamentada é preferível a uma análise morfológica completa que apenas escolhe a primeira linha de uma tabela."
       },
       {
         "heading": "Aprender nos dois sentidos",
@@ -691,7 +691,7 @@
     "level": 1,
     "lessonId": "m-infinitivos",
     "order": 19,
-    "title": "Sem pessoa não significa sem participantes: os limites do parsing do infinitivo",
+    "title": "Sem pessoa não significa sem participantes: os limites da análise morfológica do infinitivo",
     "summary": "Separe categorias morfológicas e relações sintáticas das formas não finitas.",
     "minutes": 8,
     "sections": [
@@ -886,7 +886,7 @@
       },
       {
         "heading": "A terceira pessoa exige uma solução portuguesa",
-        "body": "O paradigma grego inclui formas de terceira pessoa que não se encaixam de maneira simples na imagem de alguém falando diretamente “faça você”. Uma tradução portuguesa pode precisar recorrer a uma construção com “que”. Isso não altera o parsing da forma grega. O problema mostra por que não se deve usar a aparência da tradução para decidir quais pessoas existem no paradigma de outra língua. Primeiro descreva as categorias gregas; depois escolha os recursos portugueses capazes de representar adequadamente a relação pretendida no enunciado."
+        "body": "O paradigma grego inclui formas de terceira pessoa que não se encaixam de maneira simples na imagem de alguém falando diretamente “faça você”. Uma tradução portuguesa pode precisar recorrer a uma construção com “que”. Isso não altera a análise morfológica da forma grega. O problema mostra por que não se deve usar a aparência da tradução para decidir quais pessoas existem no paradigma de outra língua. Primeiro descreva as categorias gregas; depois escolha os recursos portugueses capazes de representar adequadamente a relação pretendida no enunciado."
       },
       {
         "heading": "Presente e aoristo não organizam duas datas",
@@ -931,7 +931,7 @@
       },
       {
         "heading": "Uma tradução que preserva relações",
-        "body": "Depois do parsing, identifique o referente provável e a relação com a predicação principal. Compare então soluções portuguesas: uma expressão adjetival, uma oração relativa ou uma construção adverbial podem tornar mais explícita a análise proposta. A comparação não deve ser um concurso de elegância independente do grego. Ela serve para testar se a tradução mantém as relações sustentadas pelas formas e pelo contexto. Quando mais de uma interpretação permanecer defensável, explique o ponto de divergência em vez de fazer do gerúndio escolhido uma prova de que o problema desapareceu."
+        "body": "Depois da análise morfológica, identifique o referente provável e a relação com a predicação principal. Compare então soluções portuguesas: uma expressão adjetival, uma oração relativa ou uma construção adverbial podem tornar mais explícita a análise proposta. A comparação não deve ser um concurso de elegância independente do grego. Ela serve para testar se a tradução mantém as relações sustentadas pelas formas e pelo contexto. Quando mais de uma interpretação permanecer defensável, explique o ponto de divergência em vez de fazer do gerúndio escolhido uma prova de que o problema desapareceu."
       }
     ],
     "references": [
@@ -1308,7 +1308,7 @@
         "body": "Separar um composto pode esclarecer sua formação e apoiar a memória, mas não garante recuperar todo o seu sentido em uso. A contribuição de um prefixo deve ser verificada no comportamento lexical da palavra completa. Uma soma literal de duas glossas portuguesas pode produzir uma tradução artificial ou equivocada. A mesma cautela vale quando se atribui ênfase especial a todo prefixo: essa interpretação exige evidência da ocorrência. A análise morfológica identifica relações formais; o estudo lexical e a construção determinam como essas relações participam do sentido do enunciado."
       },
       {
-        "heading": "Recuperar o lema não encerra o parsing",
+        "heading": "Recuperar o lema não encerra a análise morfológica",
         "body": "Depois de identificar ἐξέβαλον como forma de ἐκβάλλω, ainda permanece a coincidência entre primeira pessoa singular e terceira pessoa plural do aoristo ativo indicativo. O contexto deve fornecer os elementos pertinentes para a escolha. Esse exemplo separa duas conquistas frequentemente confundidas: reconhecer de qual verbo se trata e determinar todas as categorias da ocorrência. Uma análise avançada informa o que cada evidência resolve. Também registra o que continua aberto, impedindo que a satisfação de recuperar um lema difícil leve a acrescentar automaticamente pessoa, número ou função ainda não demonstrados."
       }
     ],
@@ -1355,7 +1355,7 @@
       }
     ],
     "discussionQuestions": [
-      "Como evitar que uma tradução escolhida seja usada como prova circular do próprio parsing?",
+      "Como evitar que uma tradução escolhida seja usada como prova circular da própria análise morfológica?",
       "Que evidência adicional você pediria antes de classificar εἰμί com particípio como perífrase?"
     ]
   }
