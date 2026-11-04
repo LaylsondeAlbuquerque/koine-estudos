@@ -24,14 +24,31 @@ export function reviewAnswer(previous, correct, day = localDate()) {
 }
 export const isMastered = review => Boolean(review?.mastered && new Set(review?.dates||[]).size>=3);
 export const isDue = (review, day = localDate()) => Boolean(review && review.nextReview <= day);
+const senseCache = new Map();
+function meaningSenses(value) {
+  const key=String(value ?? '');
+  if(senseCache.has(key))return senseCache.get(key);
+  const senses=normalize(key).replace(/\([^)]*\)/g,'').split(/[;,/]/).map(x=>x.trim().replace(/^(?:ato de |e |ser |estar |ter )/, '')).filter(Boolean);
+  // Keep the cache bounded if the repertoire is replaced during a long session.
+  if(senseCache.size>=4096)senseCache.clear();
+  senseCache.set(key,senses);
+  return senses;
+}
 export function meaningsOverlap(first, second) {
-  const senses=value=>normalize(value).replace(/\([^)]*\)/g,'').split(/[;,/]/).map(x=>x.trim().replace(/^(?:ato de |e |ser |estar |ter )/, '')).filter(Boolean);
-  return senses(first).some(term=>senses(second).some(other=>term===other || (Math.min(term.length,other.length)>3 && (term.startsWith(`${other} `)||other.startsWith(`${term} `)))));
+  const otherSenses=meaningSenses(second);
+  return meaningSenses(first).some(term=>otherSenses.some(other=>term===other || (Math.min(term.length,other.length)>3 && (term.startsWith(`${other} `)||other.startsWith(`${term} `)))));
 }
 export function vocabularyQuestion(word, entries, random = Math.random, reverse = false) {
-  const candidates = entries.filter(x=>x.id!==word.id && !meaningsOverlap(word.meaning,x.meaning));
-  const distinct = [...new Map(shuffle(candidates,random).map(x=>[x.meaning,x])).values()];
-  const distractors=reverse?[...new Map(distinct.filter(x=>x.lemma!==word.lemma).map(x=>[x.lemma,x])).values()]:distinct;
+  // Draw without replacement until three valid alternatives are found. A card
+  // normally inspects only a few words instead of parsing the entire repertoire.
+  const candidates=[...entries],distractors=[],labels=new Set();
+  while(candidates.length&&distractors.length<3){
+    const index=Math.floor(random()*candidates.length),candidate=candidates[index];
+    candidates[index]=candidates[candidates.length-1];candidates.pop();
+    const label=reverse?candidate.lemma:candidate.meaning;
+    if(candidate.id===word.id||(reverse&&candidate.lemma===word.lemma)||labels.has(label)||meaningsOverlap(word.meaning,candidate.meaning))continue;
+    labels.add(label);distractors.push(candidate);
+  }
   const correct=reverse?word.lemma:word.meaning;
   const options=shuffle([correct,...distractors.slice(0,3).map(x=>reverse?x.lemma:x.meaning)],random);
   return { id:`${reverse?'reverse':'word'}-${word.id}`,kind:'choice',wordId:word.id,greek:reverse?null:word.lemma,stimulus:reverse?word.meaning:null,optionsLang:reverse?'grc':null,audio:word.audio||null,prompt:reverse?'Qual palavra grega corresponde ao sentido apresentado em português?':'Qual alternativa apresenta um sentido em português para esta palavra grega?',options,answer:options.indexOf(correct),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Estes são sentidos de referência para memorizar; a tradução de uma passagem depende do contexto.`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
@@ -73,5 +90,5 @@ export function validProgress(value) {
   if(!['morphology','syntax','vocabulary'].every(area=>integer(value.levels[area],3)))return false;
   if(!Object.values(value.lessons).every(x=>typeof x==='boolean'))return false;
   if(!Object.values(value.answers).every(x=>object(x)&&typeof x.correct==='boolean'&&date(x.day)&&integer(x.attempts)))return false;
-  return Object.values(value.vocab).every(x=>object(x)&&Array.isArray(x.dates)&&x.dates.every(date)&&new Set(x.dates).size===x.dates.length&&integer(x.attempts)&&integer(x.correct,x.attempts)&&integer(x.box,5)&&date(x.nextReview)&&typeof x.mastered==='boolean'&&x.mastered===(x.dates.length>=3));
+  return Object.values(value.vocab).every(x=>object(x)&&Array.isArray(x.dates)&&x.dates.every(date)&&new Set(x.dates).size===x.dates.length&&integer(x.attempts)&&integer(x.correct,x.attempts)&&x.correct>=x.dates.length&&integer(x.box,5)&&x.box<=x.dates.length&&date(x.nextReview)&&typeof x.mastered==='boolean'&&x.mastered===(x.dates.length>=3));
 }

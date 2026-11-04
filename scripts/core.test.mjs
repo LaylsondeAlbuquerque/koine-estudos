@@ -18,6 +18,15 @@ test('backup validation rejects corrupted history instead of granting false mast
  value.vocab.a.dates=['2026-10-30','2026-10-30','2026-10-30'];value.vocab.a.mastered=true;assert.equal(validProgress(value),false);assert.equal(isMastered(value.vocab.a),false);
  for(const invalid of [{...blank(),answers:null},{...blank(),sessions:-1},{...blank(),levels:{morphology:9,syntax:0,vocabulary:0}}])assert.equal(validProgress(invalid),false);
 });
+test('backup validation rejects mastery and review boxes unsupported by actual successes',()=>{
+ let review;
+ for(const day of ['2026-10-20','2026-10-23','2026-10-30'])review=reviewAnswer(review,true,day);
+ assert.equal(validProgress({...blank(),vocab:{a:review}}),true);
+ assert.equal(validProgress({...blank(),vocab:{a:{...review,correct:1}}}),false);
+ const first=reviewAnswer(undefined,true,'2026-10-30');
+ assert.equal(validProgress({...blank(),vocab:{a:{...first,box:5}}}),false);
+ assert.equal(validProgress({...blank(),vocab:{a:reviewAnswer(review,false,'2026-10-31')}}),true);
+});
 test('review selection prioritizes due words, never duplicates and respects core filter',()=>{
  const example=words.slice(0,6),review={[example[1].id]:reviewAnswer(undefined,true,'2026-10-20')};
  const selected=selectWords(example,review,{limit:4,day:'2026-10-30',random:()=>.5});
@@ -64,6 +73,22 @@ test('reverse lexical challenges have one Greek answer and distinct alternatives
   assert.equal(q.options[q.answer],word.lemma);assert.equal(q.stimulus,word.meaning);
   assert.equal(new Set(q.options).size,4);assert.equal(q.greek,null);
  }
+});
+test('lexical sampling skips repeated labels and overlaps without changing the repertoire',()=>{
+ const target={id:'target',lemma:'λόγος',meaning:'palavra',pos:'substantivo'};
+ const pool=[target,{id:'overlap',lemma:'ῥῆμα',meaning:'palavra; dito'},
+  {id:'a',lemma:'λίθος',meaning:'pedra'},{id:'duplicate',lemma:'πέτρα',meaning:'pedra'},
+  {id:'b',lemma:'οἶκος',meaning:'casa'},{id:'c',lemma:'θεός',meaning:'Deus'}];
+ const before=structuredClone(pool);
+ for(const reverse of [false,true]){
+  const q=vocabularyQuestion(target,pool,()=>0,reverse);
+  assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);
+  assert.equal(q.options[q.answer],reverse?target.lemma:target.meaning);
+  assert.ok(!q.options.includes(reverse?'ῥῆμα':'palavra; dito'));
+ }
+ assert.deepEqual(pool,before);
+ const scarce=vocabularyQuestion(target,pool.slice(0,3),()=>0);
+ assert.deepEqual(new Set(scarce.options),new Set(['palavra','pedra']));
 });
 test('older backups remain valid and recent history is bounded',()=>{
  assert.equal(validProgress(blank()),true);

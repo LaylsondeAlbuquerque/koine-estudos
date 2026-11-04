@@ -22,13 +22,13 @@ O percentual do núcleo dos 300 é calculado das ocorrências no corpus identifi
 
 ## Executar localmente
 
-Com Python 3 instalado, na pasta deste projeto:
+Com Python 3.9 ou posterior instalado, na pasta deste projeto:
 
 ```sh
-python -m http.server 4173 --bind 127.0.0.1
+python scripts/dev-server.py
 ```
 
-Abra http://127.0.0.1:4173. Abrir `index.html` diretamente por `file://` não fornece o contexto HTTP necessário ao carregamento dos JSONs.
+Abra http://127.0.0.1:4173. Com Node.js, `npm run dev` inicia a mesma prévia. O servidor local disponibiliza somente os arquivos públicos; caches, PDFs e metadados do repositório ficam inacessíveis. Abrir `index.html` diretamente por `file://` não fornece o contexto HTTP necessário ao carregamento dos JSONs.
 
 Com Node.js instalado, valide os dados e a lógica de revisão:
 
@@ -37,7 +37,7 @@ npm run check
 python scripts/vocabulary-validate.py
 ```
 
-Nenhuma instalação de pacotes é necessária. Os comandos de desenvolvimento não são necessários para visitar o site publicado.
+Nenhuma instalação de pacotes é necessária. Os comandos de desenvolvimento não são necessários para visitar o site publicado. A revisão de bugs, otimizações e medições está registrada em [PERFORMANCE.md](PERFORMANCE.md).
 
 ## Publicar no GitHub Pages
 

@@ -20,7 +20,25 @@ for(const lesson of lessons){
  counts[lesson.area]??={lessons:0,questions:0,levels:new Set()};counts[lesson.area].lessons++;counts[lesson.area].questions+=lesson.questions.length;counts[lesson.area].levels.add(lesson.level);
 }
 for(const c of Object.values(counts))assert.equal(c.levels.size,4);
-for(const path of ['index.html','styles.css','app.js','core.js','assets/Manrope.ttf','assets/GFSDidot.ttf','assets/Manrope-OFL.txt','assets/GFSDidot-OFL.txt','LICENSE','CONTENT-LICENSE.md','THIRD_PARTY_NOTICES.md','.nojekyll'])assert(existsSync(new URL(path,root)),path);
+for(const path of ['index.html','styles.css','app.js','core.js','assets/EncodeSans.ttf','assets/GFSDidot.ttf','assets/EncodeSans-OFL.txt','assets/GFSDidot-OFL.txt','LICENSE','CONTENT-LICENSE.md','THIRD_PARTY_NOTICES.md','.nojekyll'])assert(existsSync(new URL(path,root)),path);
+// Follow actual runtime links so a newly imported module, stylesheet or font
+// cannot pass checks while missing from the site. Queries are cache versions.
+const checkedFiles=new Set();
+function checkRuntimeFile(file){
+ const key=file.href;if(checkedFiles.has(key))return;checkedFiles.add(key);
+ assert(existsSync(file),`Missing runtime file: ${file.pathname}`);
+ const path=file.pathname;
+ if(!/\.(?:html|css|js)$/u.test(path))return;
+ const text=readFileSync(file,'utf8');
+ const patterns=path.endsWith('.html')?[/\b(?:src|href)\s*=\s*["']([^"'<>]+)["']/gu]:path.endsWith('.css')?[/url\(\s*["']?([^"')\s]+)["']?\s*\)/gu]:[/^\s*(?:import|export)\s+[^\n]*?\bfrom\s*["']([^"']+)["']/gmu,/^\s*import\s*["']([^"']+)["']/gmu,/\bimport\(\s*["']([^"']+)["']\s*\)/gu];
+ for(const pattern of patterns)for(const match of text.matchAll(pattern)){
+  const ref=match[1];if(ref.startsWith('#')||/^[a-z][a-z\d+.-]*:/iu.test(ref))continue;
+  const target=new URL(ref,file);target.search='';target.hash='';
+  assert(target.href.startsWith(root.href),`Runtime path outside site: ${ref}`);
+  checkRuntimeFile(target);
+ }
+}
+checkRuntimeFile(new URL('index.html',root));
 console.log(JSON.stringify(Object.fromEntries(Object.entries(counts).map(([a,c])=>[a,{lessons:c.lessons,questions:c.questions}]))));
 console.log(`${lessons.length} lessons and ${qids.size} questions validated.`);
 const articles=['articles-morphology','articles-syntax','articles-vocabulary'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
