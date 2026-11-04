@@ -110,3 +110,5 @@ export function mountHomeMotion(){
  document.fonts.load('24px DidotGreek','ἀλφάβητος ᾶ ῷ').then(()=>{if(alive){glyphWidths.clear();measureGlyphs();draw();}}).catch(()=>{});
  dispose=()=>{alive=false;stop();observer.disconnect();intersection.disconnect();stage.removeEventListener('pointermove',handlePointer);stage.removeEventListener('pointerleave',leave);document.removeEventListener('visibilitychange',handleVisibility);window.removeEventListener('koine-theme-change',draw);reduced.removeEventListener('change',handlePreference);toggle?.removeEventListener('click',handleToggle);};
 }
+
+export function unmountHomeMotion(){dispose();dispose=()=>{};}

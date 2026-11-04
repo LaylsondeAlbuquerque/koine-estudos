@@ -1,5 +1,7 @@
 # Revisão de código — 3 de novembro de 2026
 
+> Registro da versão anterior à migração para Angular. As medições abaixo são daquela implementação; consulte README.md para a estrutura e os comandos atuais.
+
 A revisão abrangeu os módulos JavaScript, as seis folhas de estilo, o HTML e os scripts de manutenção. Os textos didáticos, IDs das aulas, questões e vocábulos foram preservados.
 
 ## Correções

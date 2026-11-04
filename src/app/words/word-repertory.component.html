@@ -1,0 +1,71 @@
+<section class="vocab-banner">
+  <div>
+    <div class="eyebrow" style="color:#b7cbaa">SEU NÚCLEO DE LEITURA</div>
+    <h2>300 palavras, muitos reencontros.</h2>
+    <p>Os 300 lemas mais frequentes deste repertório somam {{ percent(content.vocabulary.meta.core300?.coveragePercent || 0) }}% das ocorrências do corpus. Isso mede cobertura lexical; interpretar o texto também exige morfologia, sintaxe e contexto.</p>
+  </div>
+  <div class="core-count">{{ progress.coreMastered() }} <span>/ 300 memorizados</span></div>
+</section>
+<div class="level-summary">
+  <div>
+    <h2>Seu repertório completo</h2>
+    <p>{{ format(content.vocabulary.entries.length) }} vocábulos · lista independente por frequência, com consulta ao repertório de Porter.</p>
+  </div>
+  <button class="text-link" (click)="studyCore()">Estudar os 300<koine-icon name="arrow" [size]="13" /></button>
+</div>
+<div class="vocab-toolbar">
+  <label class="search-field">
+    <koine-icon name="search" [size]="16" />
+    <span class="sr-only">Buscar vocábulo ou tradução</span>
+    <input id="vocab-search" type="search" [value]="query()" (input)="changeQuery($event)" placeholder="Buscar em grego ou português, com ou sem acentos…">
+  </label>
+  <label>
+    <span class="sr-only">Filtrar repertório</span>
+    <select id="vocab-filter" [value]="filter()" (change)="changeFilter($event)">
+      @for (option of filters; track option[0]) {
+        <option [value]="option[0]">{{ option[1] }}</option>
+      }
+    </select>
+  </label>
+  <label>
+    <span class="sr-only">Classe gramatical</span>
+    <select id="vocab-class" [value]="wordClass()" (change)="changeClass($event)">
+      <option value="all">Todas as classes</option>
+      @for (pos of content.catalog.wordClasses; track pos) {
+        <option [value]="pos">{{ pos }}</option>
+      }
+    </select>
+  </label>
+</div>
+<div id="word-results">
+  @if (filtered().length) {
+    <p class="muted" style="font-size:9px;margin-bottom:13px">{{ format(filtered().length) }} {{ filtered().length === 1 ? 'vocábulo encontrado' : 'vocábulos encontrados' }}</p>
+    <div class="vocab-grid">
+      @for (word of visibleWords(); track word.id) {
+        <button class="word-card" (click)="studyWord(word)" [attr.aria-label]="'Estudar ' + word.lemma">
+          <span class="word-top">
+            <span class="word-rank">#{{ rank(word) }}</span>
+            @if (word.core300) { <span class="pill amber">Núcleo dos 300</span> }
+          </span>
+          <span class="greek" lang="grc">{{ word.lemma }}</span>
+          <span class="word-meaning">{{ word.meaning }}</span>
+          <span class="word-bottom">
+            <span>{{ word.pos }} · {{ format(word.frequency) }} ocorr.</span>
+            <span class="word-state" [attr.aria-label]="successfulDays(word) + ' de 3 dias com acertos'">
+              @for (day of days; track day) { <i [class.filled]="successfulDays(word) > day"></i> }
+            </span>
+          </span>
+        </button>
+      }
+    </div>
+  } @else {
+    <div class="empty-state"><h2>Nenhum vocábulo neste filtro</h2><p>Tente outro termo ou altere os filtros.</p></div>
+  }
+  @if (pages() > 1) {
+    <div class="pagination">
+      <button class="button button-outline button-small" (click)="changePage(currentPage() - 1)" [disabled]="currentPage() === 0"><koine-icon name="back" [size]="12" />Anterior</button>
+      <span>Página {{ currentPage() + 1 }} de {{ pages() }}</span>
+      <button class="button button-outline button-small" (click)="changePage(currentPage() + 1)" [disabled]="currentPage() + 1 >= pages()">Próxima<koine-icon name="arrow" [size]="12" /></button>
+    </div>
+  }
+</div>

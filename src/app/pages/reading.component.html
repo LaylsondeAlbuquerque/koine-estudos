@@ -1,0 +1,44 @@
+@let item = view();
+@if (item.reading; as reading) {
+  <a class="back-link" [routerLink]="['/', item.area, item.article ? 'articles' : 'path']"><koine-icon name="back" [size]="14"/>{{ item.article ? 'Voltar aos artigos de ' + levels[reading.level].toLowerCase() : 'Voltar ao percurso de ' + areas[item.area].name.toLowerCase() }}</a>
+  <div class="article-layout" [class.deep-reading]="item.article" [class.lesson-reading]="!item.article">
+    <article>
+      <header class="article-head"><span class="eyebrow">{{ item.article ? 'ARTIGO DE APROFUNDAMENTO' : 'AULA DO PERCURSO' }} · {{ levels[reading.level] }} · {{ reading.minutes }} min</span><h1>{{ reading.title }}</h1><p class="summary">{{ reading.summary }}</p></header>
+      <div class="reading-purpose"><koine-icon [name]="item.article ? 'book' : 'path'" [size]="17"/>{{ item.article ? 'Uma discussão além da explicação básica da aula.' : 'Aprenda o conceito, observe os exemplos e pratique.' }}</div>
+      <koine-reading-body [sections]="reading.sections"/>
+      @if (!item.article && item.lesson; as lesson) {
+        @if (lesson.examples?.length) {
+          <section class="article-section"><h2>Observe no exemplo</h2>@for (example of lesson.examples; track $index) {<div class="example-box"><span class="greek" lang="grc">{{ example.greek }}</span><p class="translation">{{ example.translation }}</p><p class="note">{{ example.note }}</p></div>}</section>
+        }
+        @if (item.related.length) {
+          <section class="lesson-deeper"><span class="eyebrow">PARA APROFUNDAR</span>@for (article of item.related; track article.id) {<a [routerLink]="['/', item.area, 'article', article.id]"><h3>{{ article.title }}</h3><p>{{ article.summary }}</p><span class="text-link">Ler artigo<koine-icon name="arrow" [size]="14"/></span></a>}</section>
+        }
+      }
+      @if (item.article?.discussionQuestions?.length) {
+        <section class="discussion-questions"><h2>Para refletir</h2><ol>@for (question of item.article?.discussionQuestions; track $index) {<li>{{ question }}</li>}</ol></section>
+      }
+      <koine-reading-references [references]="reading.references"/>
+      @if (item.article) {<p class="article-authorship">{{ item.article.author ? 'Texto de ' + item.article.author + '.' : 'Texto produzido por IA.' }}</p>}
+      @else if (item.lesson?.author) {<p class="article-authorship">Texto de {{ item.lesson?.author }}.</p>}
+      <div class="session-actions">
+        @if (item.article) {
+          <button class="button button-outline" (click)="progress.toggleArticle(item.article.id)" [attr.aria-pressed]="!!progress.state().articles[item.article.id]"><koine-icon [name]="progress.state().articles[item.article.id] ? 'check' : 'book'" [size]="14"/>{{ progress.state().articles[item.article.id] ? 'Artigo lido' : 'Marcar artigo como lido' }}</button>
+        } @else if (item.lesson) {
+          <button class="button button-primary" (click)="study.start({area: item.area, mode: 'practice', lessonId: item.lesson.id})">Praticar esta aula<koine-icon name="practice" [size]="14"/></button>
+        }
+        @if (item.next; as next) {<a class="text-link" [routerLink]="['/', item.area, item.article ? 'article' : 'lesson', next.id]">{{ item.article ? 'Próximo artigo' : 'Próxima aula' }}<koine-icon name="arrow" [size]="13"/></a>}
+      </div>
+    </article>
+    @if (item.lesson; as lesson) {
+      <aside class="article-aside">
+        @if (item.article) {
+          <span class="eyebrow">CONEXÃO COM O PERCURSO</span><h3 style="margin-top:14px">{{ lesson.title }}</h3><p class="reading-aside-note">Reveja a explicação básica antes de explorar as distinções e discussões deste artigo.</p><a class="button button-primary" [routerLink]="['/', item.area, 'lesson', lesson.id]">Estudar a aula<koine-icon name="arrow" [size]="14"/></a><button class="button button-outline" (click)="study.start({area: item.area, mode: 'practice', lessonId: lesson.id})">Praticar a base<koine-icon name="practice" [size]="14"/></button><p class="reading-aside-note">A leitura deste artigo é acompanhada separadamente da conclusão da aula.</p>
+        } @else {
+          <span class="eyebrow">AULA DO PERCURSO</span><h3 style="margin-top:14px">Ao final, você poderá</h3><ul>@for (objective of lesson.objectives; track $index) {<li>{{ objective }}</li>}</ul><h3>{{ lesson.questions.length }} exercícios de fixação</h3><button class="button button-primary" (click)="study.start({area: item.area, mode: 'practice', lessonId: lesson.id})">Praticar<koine-icon name="practice" [size]="13"/></button><button class="button button-outline" (click)="progress.toggleLesson(lesson.id)" [attr.aria-pressed]="!!progress.state().lessons[lesson.id]"><koine-icon [name]="progress.state().lessons[lesson.id] ? 'check' : 'book'" [size]="13"/>{{ progress.state().lessons[lesson.id] ? 'Aula concluída' : 'Concluir aula' }}</button><p class="reading-aside-note">Esta aula apresenta a base. O artigo relacionado investiga o assunto com mais detalhe.</p>
+        }
+      </aside>
+    }
+  </div>
+} @else {
+  <div class="empty-state"><h2>{{ item.requestedArticle ? 'Artigo não encontrado' : 'Aula não encontrada' }}</h2><p>{{ item.requestedArticle ? 'Escolha um aprofundamento na aba Artigos.' : 'Escolha uma aula no percurso.' }}</p></div>
+}

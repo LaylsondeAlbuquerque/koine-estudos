@@ -1,0 +1,14 @@
+import type {Progress, Review, Word, Question} from './src/app/models';
+export function normalize(value:unknown):string;
+export function shuffle<T>(items:readonly T[],random?:()=>number):T[];
+export function localDate(date?:Date):string;
+export function addDays(day:string,amount:number):string;
+export function reviewAnswer(previous:Partial<Review>|undefined,correct:boolean,day?:string):Review;
+export function isMastered(review:Partial<Review>|undefined):boolean;
+export function isDue(review:Partial<Review>|undefined,day?:string):boolean;
+export function meaningsOverlap(first:string,second:string):boolean;
+export function vocabularyQuestion(word:Word,entries:Word[],random?:()=>number,reverse?:boolean):Question;
+export function selectWords(entries:Word[],reviews:Record<string,Review>,options?:{limit?:number;filter?:string;level?:number|null;day?:string;random?:()=>number;recent?:string[]}):Word[];
+export function selectStudyQuestions<T extends Question>(questions:T[],answers?:Progress['answers'],options?:{limit?:number;recent?:string[];random?:()=>number}):T[];
+export function coverage(words:Word[],reviews:Record<string,Review>,tokenCount:number):number;
+export function validProgress(value:unknown):value is Progress;

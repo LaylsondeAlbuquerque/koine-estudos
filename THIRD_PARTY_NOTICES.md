@@ -49,3 +49,7 @@ As obras protegidas são referências para explicações e atividades próprias.
 ## Áudio
 
 Esta versão não distribui gravações de terceiros. Futuras gravações exigem autorização ou licença de redistribuição compatível; seus autores e condições devem ser registrados aqui. A existência de acesso gratuito a uma gravação não é tratada como permissão de cópia.
+
+## Dependências Angular
+
+A aplicação usa Angular (MIT), RxJS (Apache-2.0) e tslib (0BSD). O build de produção inclui os avisos extraídos das dependências em `3rdpartylicenses.txt`, junto ao site compilado. As dependências de desenvolvimento e suas versões estão registradas em `package-lock.json`.

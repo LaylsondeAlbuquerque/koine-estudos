@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "newProjectRoot": "projects",
+  "cli": {
+    "analytics": false
+  },
+  "projects": {
+    "koine": {
+      "projectType": "application",
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "koine",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "outputPath": "dist/koine",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "assets",
+                "output": "assets"
+              },
+              {
+                "glob": "*.json",
+                "input": "data",
+                "output": "data"
+              },
+              {
+                "glob": "LICENSE",
+                "input": ".",
+                "output": "."
+              },
+              {
+                "glob": "CONTENT-LICENSE.md",
+                "input": ".",
+                "output": "."
+              },
+              {
+                "glob": "THIRD_PARTY_NOTICES.md",
+                "input": ".",
+                "output": "."
+              },
+              {
+                "glob": ".nojekyll",
+                "input": ".",
+                "output": "."
+              }
+            ],
+            "styles": [
+              "styles.css",
+              "study.css",
+              "home.css",
+              "theme.css",
+              "learning.css",
+              "readings.css",
+              "src/angular.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "800kB",
+                  "maximumError": "1MB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "koine:build:production"
+            },
+            "development": {
+              "buildTarget": "koine:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "tsconfig.spec.json"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import {normalize, isMastered, isDue, localDate} from './core.js?v=9';
+import {normalize, isMastered, isDue, localDate} from './core.js';
 
 // Content is immutable during a visit. Build relationships once; normalize the
 // larger search texts only when the student first uses each search.

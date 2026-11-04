@@ -14,3 +14,8 @@ Thumbs.db
 *.docx
 *.zip
 screenshots/
+
+.angular/
+dist/
+out-tsc/
+coverage/

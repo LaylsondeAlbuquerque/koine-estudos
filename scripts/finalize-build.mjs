@@ -1,0 +1,10 @@
+import {copyFileSync,existsSync,readFileSync} from 'node:fs';
+import assert from 'node:assert/strict';
+const output=new URL('../dist/koine/',import.meta.url);
+const browser=new URL('browser/',output);
+assert(existsSync(new URL('index.html',browser)),'Angular build is missing');
+copyFileSync(new URL('3rdpartylicenses.txt',output),new URL('3rdpartylicenses.txt',browser));
+const html=readFileSync(new URL('index.html',browser),'utf8');
+assert(html.includes('koine-app'),'Build does not bootstrap the Angular component');
+assert(!html.includes('./app.js'),'Build still references the legacy renderer');
+console.log('Angular production artifact and dependency licenses verified.');

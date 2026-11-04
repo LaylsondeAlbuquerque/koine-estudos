@@ -1,0 +1,20 @@
+@for (section of sections(); track $index) {
+  <section class="article-section">
+    <h2>{{ section.heading }}</h2>
+    @for (paragraph of paragraphs(section.body); track $index) {
+      <p style="white-space:pre-line">{{ paragraph }}</p>
+    }
+    @if (section.table; as table) {
+      <div class="table-wrap">
+        <table>
+          <thead><tr>@for (heading of table.headers; track $index) {<th scope="col">{{ heading }}</th>}</tr></thead>
+          <tbody>
+            @for (row of table.rows; track $index) {
+              <tr>@for (cell of row; track $index) {<td [class.greek]="greek(cell)" [attr.lang]="greek(cell) ? 'grc' : null">{{ cell }}</td>}</tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+  </section>
+}

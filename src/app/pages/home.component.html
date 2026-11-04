@@ -1,0 +1,56 @@
+<div class="home-flow">
+  @if (first(); as firstLesson) {
+    <section class="home-hero" aria-labelledby="home-title">
+      <canvas id="home-motion" aria-hidden="true"></canvas><div class="hero-atmosphere" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="hero-kicker">GREGO KOINÉ · ESTUDO ABERTO</p>
+        <h1 id="home-title">Aprenda grego.<br><span>Leia o Novo Testamento.</span></h1>
+        <p class="hero-description">Morfologia, sintaxe e vocabulário.<br>Um percurso do alfabeto à análise do texto.</p>
+        <div class="hero-actions">
+          <a class="button hero-start" [routerLink]="['/morphology/lesson', firstLesson.id]">{{ completed() ? 'Continuar estudando' : 'Começar a estudar' }}<span><koine-icon name="arrow" [size]="19"/></span></a>
+          <button class="hero-explore" (click)="explore()">Conhecer as formações<koine-icon name="arrow" [size]="16"/></button>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span>{{ content.lessons.length }} aulas <i></i>{{ content.articles.length }} artigos <i></i>{{ exerciseCount() }} exercícios <i></i>{{ number.format(content.vocabulary.entries.length) }} vocábulos</span>
+        <button class="motion-toggle" data-motion-toggle aria-label="Pausar animação" aria-pressed="false"><span aria-hidden="true">Ⅱ</span><span>Pausar animação</span></button>
+      </div>
+    </section>
+  }
+  <section class="home-section home-formations" id="formacoes">
+    <div class="section-heading"><div><p class="section-kicker">ESCOLHA SEU PERCURSO</p><h2>Três formas de avançar<br>na mesma língua.</h2></div><p class="section-intro">Comece pelos fundamentos ou vá direto ao seu nível. Cada formação reúne explicações e atividades para praticar.</p></div>
+    <div class="formation-grid">
+      @for (area of areaKeys; track area) {
+        <a class="formation-card" [class]="'formation-card ' + area" [routerLink]="['/', area, 'path']">
+          <div class="formation-cover"><koine-artwork [area]="area"/></div>
+          <div class="formation-body"><span class="formation-type">FORMAÇÃO</span><h3>{{ areas[area].name }}</h3><p>{{ descriptions[area] }}</p>
+            <div class="course-meta"><koine-icon name="book" [size]="14"/>{{ content.lessonsFor(area).length }} aulas<span>·</span>{{ content.articlesFor(area).length }} artigos<span>·</span>{{ area === 'vocabulary' ? number.format(total(area)) + ' vocábulos' : '4 níveis' }}</div>
+            <div class="formation-progress-label"><span>{{ area === 'vocabulary' ? 'Memorização' : 'Leitura do conteúdo' }}</span><strong>{{ percentage(area) }}%</strong></div>
+            <koine-progress-bar [value]="count(area)" [max]="total(area)"/>
+          </div>
+          <div class="formation-footer"><span>Ver formação</span><koine-icon name="arrow" [size]="16"/></div>
+        </a>
+      }
+    </div>
+  </section>
+  @if (first(); as firstLesson) {
+    <section class="home-section"><div class="study-resume"><div class="resume-label">{{ completed() ? 'SEU PRÓXIMO PASSO' : 'PRIMEIRA AULA' }}</div><div class="resume-main"><span>{{ areas[firstLesson.area].name }} · {{ levels[firstLesson.level] }} · {{ firstLesson.minutes }} min</span><h2>{{ firstLesson.title }}</h2><p>{{ firstLesson.summary }}</p></div><a class="button button-primary" [routerLink]="['/', firstLesson.area, 'lesson', firstLesson.id]">{{ completed() ? 'Continuar aula' : 'Estudar agora' }}<koine-icon name="arrow" [size]="17"/></a></div></section>
+  }
+  <section class="home-section home-practice">
+    <div class="section-heading"><div><p class="section-kicker">DA LEITURA À PRÁTICA</p><h2>Aprenda. Experimente.<br>Volte ao texto.</h2></div><p class="section-intro">Reconheça uma forma, entenda uma relação, recorde uma palavra. Pratique com respostas e explicações imediatas.</p></div>
+    <div class="quick-grid">
+      <a class="quick-card morphology" routerLink="/morphology/practice"><span class="quick-icon"><koine-icon name="morphology" [size]="26"/></span><span><strong>Parsing e paradigmas</strong><small>Identifique as formas das palavras</small></span><koine-icon name="arrow" [size]="18"/></a>
+      <a class="quick-card syntax" routerLink="/syntax/practice"><span class="quick-icon"><koine-icon name="syntax" [size]="26"/></span><span><strong>Funções na oração</strong><small>Relacione os termos e suas funções</small></span><koine-icon name="arrow" [size]="18"/></a>
+      <a class="quick-card vocabulary" routerLink="/vocabulary/practice"><span class="quick-icon"><koine-icon name="cards" [size]="26"/></span><span><strong>Palavras e traduções</strong><small>Associe vocábulos aos seus sentidos</small></span><koine-icon name="arrow" [size]="18"/></a>
+    </div>
+  </section>
+  <section class="home-section home-library">
+    <div class="section-heading"><div><p class="section-kicker">PARA EXPLORAR</p><h2>Entre no assunto.</h2></div><a class="text-link" routerLink="/morphology/articles">Todos os artigos<koine-icon name="arrow" [size]="16"/></a></div>
+    <div class="discovery-grid">
+      @for (article of picks(); track article.id) {
+        <a [class]="'discovery-card ' + article.area" [routerLink]="['/', article.area, 'article', article.id]"><div class="discovery-top"><koine-icon [name]="article.area" [size]="24"/><span>{{ areas[article.area].name }}</span></div><h3>{{ article.title }}</h3><p>{{ levels[article.level] }}</p><div class="discovery-meta"><koine-icon name="clock" [size]="13"/>{{ article.minutes }} min de leitura<koine-icon name="arrow" [size]="15"/></div></a>
+      }
+    </div>
+  </section>
+  <section class="home-section"><div class="home-priority"><div><p class="section-kicker">SEU NÚCLEO DE VOCABULÁRIO</p><h2>As 300 palavras<br>que mais aparecem.</h2><p>{{ progress.coreMastered() }} de 300 memorizadas · {{ percent.format(content.vocabulary.meta.core300?.coveragePercent || 0) }}% das ocorrências no corpus utilizado.</p></div><div class="priority-action"><a class="button hero-start" routerLink="/vocabulary/words">Explorar vocabulário<span><koine-icon name="arrow" [size]="18"/></span></a><p>{{ progress.dueCount() ? progress.dueCount() + ' vocábulos para revisar hoje.' : 'Memorização com revisão em dias diferentes.' }}</p></div></div></section>
+</div>

@@ -1,0 +1,25 @@
+<div class="study-landing">
+  <section class="study-start">
+    <div class="study-glyph" lang="grc">{{ vocabulary() ? 'λέξις' : area() === 'morphology' ? 'λύω' : 'σύν' }}</div>
+    <span class="eyebrow">{{ levels[progress.level(area())] }} · {{ flash() ? 'Reconhecer e recordar' : 'Aplicar o que você aprendeu' }}</span>
+    <h2 style="margin-top: 12px">{{ title() }}</h2>
+    <p>{{ description() }}</p>
+    <div class="study-settings">
+      <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="10">10 exercícios</option><option value="5">5 exercícios</option><option value="20">20 exercícios</option></select></label>
+      @if (vocabulary()) {
+        <label class="field">Escolher vocábulos<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
+          <option value="level">Deste nível · {{ count() }} vocábulos</option><option value="core">Núcleo dos 300 · todos os níveis</option><option value="due">Revisões de hoje · todos os níveis</option><option value="all">Repertório completo</option><option value="new">Ainda não estudados · todos os níveis</option>
+        </select></label>
+      } @else {
+        <label class="field">Assunto<select id="session-lesson" [value]="lessonId()" (change)="lessonId.set(value($event))">
+          <option value="">Todos os assuntos deste nível</option>@for (lesson of lessons(); track lesson.id) {<option [value]="lesson.id">{{ lesson.title }}</option>}
+        </select></label>
+      }
+    </div>
+    <button class="button button-primary" (click)="start()">Começar sessão<koine-icon name="arrow" [size]="15" /></button>
+  </section>
+  <aside class="study-tips"><span class="eyebrow">Um jeito de estudar melhor</span>
+    @for (tip of tips(); track $index; let i = $index) {<div class="tip-row"><span class="tip-num">0{{ i + 1 }}</span><div><strong>{{ tip.title }}</strong>{{ tip.text }}</div></div>}
+    <div class="notice">{{ vocabulary() ? 'As glossas são apoios de memória. O contexto da passagem determina a tradução adequada.' : count() + ' exercícios disponíveis neste nível. As sessões priorizam perguntas ainda não vistas e alternam os assuntos.' }}</div>
+  </aside>
+</div>

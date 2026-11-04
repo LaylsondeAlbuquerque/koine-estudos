@@ -1,0 +1,133 @@
+@if (study.session(); as s) {
+  @if (study.finished()) {
+    <div class="session-wrap">
+      <section class="session-result">
+        <div class="result-glyph" lang="grc">{{ study.errors().length ? 'μελέτη' : 'καλῶς' }}</div>
+        <span class="eyebrow">Sessão concluída</span>
+        <h1>{{ study.errors().length ? 'Revise os pontos de atenção.' : 'Sessão concluída.' }}</h1>
+        <div class="result-count">{{ s.correct }}<span> / {{ s.questions.length }} acertos</span></div>
+        <p>{{ s.area === 'vocabulary' ? 'Seu histórico de revisão foi atualizado. Volte em dias diferentes para consolidar a memória.' : 'Use os comentários das questões para decidir o que reler. A leitura e a prática se completam.' }}</p>
+        @if (study.errors().length) {
+          <div class="session-error-list">
+            <h3>Pontos para reencontrar</h3>
+            @for (error of study.errors().slice(0, 5); track error.id) {
+              <p>@if (error.lessonTitle) {<strong>{{ error.lessonTitle }}:</strong> }{{ error.explanation }}</p>
+            }
+          </div>
+        }
+        <div class="result-actions">
+          @if (study.errors().length) {
+            <button class="button button-primary" (click)="study.retryErrors()">Revisar as questões</button>
+          }
+          <button class="button" [class.button-outline]="study.errors().length > 0" [class.button-primary]="!study.errors().length" (click)="study.exit()">Voltar ao estudo<koine-icon name="arrow" [size]="13" /></button>
+        </div>
+      </section>
+    </div>
+  } @else if (study.current(); as q) {
+    <div class="session-wrap" [class.flash-session]="s.mode === 'flashcards'" [class.practice-session]="s.mode === 'practice'">
+      <div class="session-top">
+        <button class="icon-button" (click)="study.exit()" aria-label="Encerrar sessão"><koine-icon name="close" [size]="18" /></button>
+        <koine-progress [value]="s.index + (s.answered ? 1 : 0)" [max]="s.questions.length" />
+        <span>{{ s.index + 1 }} de {{ s.questions.length }}</span>
+      </div>
+      <div class="session-mode-label">
+        <koine-icon [name]="s.mode === 'flashcards' ? 'cards' : 'practice'" [size]="15" />
+        {{ s.mode === 'flashcards' ? 'Baralho de revisão' : 'Prática guiada' }}<span>{{ areas[s.area].name }}</span>
+      </div>
+      @if (s.mode === 'flashcards') {
+        <div class="deck-frame">
+          <section class="study-card" [class.card-back]="back()" [class.card-front]="!back()" [attr.aria-label]="back() ? 'Verso do cartão' : 'Frente do cartão'">
+            <div class="card-edge"><span>{{ back() ? 'VERSO' : 'FRENTE' }}</span><span>{{ q.label || levels[progressLevel(s.area)] }}</span></div>
+            @if (back()) {
+              <div class="recall-status" [class.recall-error]="!s.lastCorrect"><koine-icon [name]="s.lastCorrect ? 'check' : 'info'" [size]="18" />{{ s.lastCorrect ? 'Acertou.' : 'Vamos revisar.' }}</div>
+              <h2 class="card-answer" [attr.lang]="q.optionsLang === 'grc' || isGreek(answerText(q)) ? 'grc' : null">{{ answerText(q) }}</h2>
+              <p class="card-explanation">{{ q.explanation }}</p>
+              @if (q.lessonId) {<a class="text-link" [routerLink]="['/', s.area, 'lesson', q.lessonId]">Revisar a aula<koine-icon name="arrow" [size]="14" /></a>}
+            } @else {
+              @if (q.greek) {<div class="card-greek" [class.long]="q.greek.length > 30" lang="grc">{{ q.greek }}</div>}
+              @if (q.stimulus) {<div class="card-stimulus">{{ q.stimulus }}</div>}
+              <h2>{{ q.prompt }}</h2>
+              @if (audioSource(q); as audio) {
+                <audio controls preload="none" aria-label="Ouvir vocábulo" style="display: block; margin: 0 auto 18px; max-width: 100%"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>
+              }
+              <p class="card-instruction">{{ s.answered ? 'Você já respondeu a este cartão.' : 'Pense na resposta. Depois selecione uma alternativa abaixo.' }}</p>
+            }
+            <div class="card-bottom-mark">κ.</div>
+          </section>
+        </div>
+        @if (s.answered) {
+          <div class="card-review-actions"><button class="text-link" (click)="study.flip()"><koine-icon name="cards" [size]="15" />{{ back() ? 'Ver frente do cartão' : 'Ver verso do cartão' }}</button><span>{{ q.wordIds ? 'Revisão registrada neste navegador.' : 'Resposta registrada.' }}</span></div>
+        }
+        @if (!back()) {<ng-container [ngTemplateOutlet]="answers" [ngTemplateOutletContext]="{q: q, s: s, flash: true}" />}
+        <div class="session-actions flash-navigation"><span>{{ s.answered ? 'Avance quando terminar de revisar.' : 'Ao responder, o cartão revela o verso com a explicação.' }}</span>@if (s.answered) {<button class="button button-primary" data-action="next" (click)="study.next()">{{ nextText() }}<koine-icon name="arrow" [size]="17" /></button>}</div>
+      } @else {
+        <section class="practice-question" aria-labelledby="practice-prompt">
+          <div class="challenge-meta"><span>{{ types[q.kind][0] }}</span><span>{{ q.label || levels[progressLevel(s.area)] }}</span></div>
+          <h2 id="practice-prompt">{{ q.prompt }}</h2><p class="challenge-instruction">{{ types[q.kind][1] }}</p>
+          @if (q.greek) {<div class="question-greek" [class.long]="q.greek.length > 30" lang="grc">{{ q.greek }}</div>}
+          @if (q.stimulus) {<div class="practice-stimulus">{{ q.stimulus }}</div>}
+          @if (audioSource(q); as audio) {<audio controls preload="none" aria-label="Ouvir vocábulo" style="display: block; margin: 0 auto 18px; max-width: 100%"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>}
+          <div class="practice-exercise">
+            @switch (q.kind) {
+              @case ('choice') {<ng-container [ngTemplateOutlet]="answers" [ngTemplateOutletContext]="{q: q, s: s, flash: false}" />}
+              @case ('parse') {
+                <div class="parse-grid">
+                  @for (field of q.fields || []; track $index; let i = $index) {
+                    <label class="field">{{ field.label }}<select [attr.data-parse-field]="i" [disabled]="s.answered" [value]="s.parseValues[i] || ''" (change)="study.setParse(i, selectValue($event))">
+                      <option value="">Selecionar…</option>@for (option of field.options; track option) {<option [value]="option">{{ option }}</option>}
+                    </select>
+                    @if (s.answered) {<span class="parse-mark" [class.is-correct]="s.parseValues[i] === field.answer" [class.is-wrong]="s.parseValues[i] !== field.answer">{{ s.parseValues[i] === field.answer ? 'Correto' : 'Resposta: ' + field.answer }}</span>}
+                    </label>
+                  }
+                </div>
+              }
+              @case ('match') {
+                <div class="match-grid" [class.alphabet-match]="alphabetMatch(q)">
+                  <div class="match-column">
+                    @for (pair of q.pairs || []; track $index; let i = $index) {
+                      <button class="match-button left" [attr.lang]="hasGreek(pair.left) ? 'grc' : null" [style.grid-column]="1" [style.grid-row]="i + 1" [class.matched]="s.matched.includes(i)" [class.selected]="s.matchLeft === i" [disabled]="s.matched.includes(i) || s.answered" [attr.aria-pressed]="s.matchLeft === i" (click)="study.selectLeft(i)">{{ pair.left }}@if (s.matched.includes(i)) {<koine-icon name="check" [size]="14" />}</button>
+                    }
+                  </div>
+                  <div class="match-column">
+                    @for (i of q.rightOrder || []; track i; let row = $index) {
+                      <button class="match-button" [style.grid-column]="2" [style.grid-row]="row + 1" [class.matched]="s.matched.includes(i)" [disabled]="s.matched.includes(i) || s.answered" (click)="study.selectRight(i)">{{ q.pairs![i].right }}</button>
+                    }
+                  </div>
+                </div>
+                <p class="match-hint" role="status">{{ s.matchHint || 'Selecione um item à esquerda e depois seu correspondente à direita.' }}</p>
+              }
+              @case ('order') {
+                <div class="order-target" aria-label="Sua sequência">
+                  @for (index of s.order; track index; let position = $index) {<button class="token" [disabled]="s.answered" [attr.aria-label]="'Retirar ' + q.tokens![index]" (click)="study.removeToken(position)">{{ q.tokens![index] }}</button>}
+                  @empty {<span class="muted">Monte aqui a sequência solicitada.</span>}
+                </div>
+                <div class="order-options">@for (index of q.tokenOrder || []; track index) {@if (!s.order.includes(index)) {<button class="token" [disabled]="s.answered" (click)="study.addToken(index)">{{ q.tokens![index] }}</button>}}</div>
+                <p class="match-hint">Para retirar um bloco, selecione-o na sequência montada.</p>
+              }
+            }
+          </div>
+        </section>
+        <div class="practice-bottom" [class.has-feedback]="s.answered" [class.has-error]="s.answered && !s.lastCorrect">
+          @if (s.answered) {
+            <div class="feedback practice-feedback" [class.error]="!s.lastCorrect" role="status">
+              <div class="feedback-title"><koine-icon [name]="s.lastCorrect ? 'check' : 'info'" [size]="20" />{{ s.lastCorrect ? 'Muito bem!' : q.kind === 'match' ? 'Pares concluídos. Algumas associações precisaram de nova tentativa.' : 'Veja a explicação e tente novamente na revisão.' }}</div><p>{{ q.explanation }}</p>
+              @if (q.lessonId) {<a class="text-link" [routerLink]="['/', s.area, 'lesson', q.lessonId]">Revisar a aula<koine-icon name="arrow" [size]="13" /></a>}
+            </div>
+          }
+          <div class="practice-controls"><span>{{ s.answered ? 'Resposta registrada.' : q.kind === 'match' ? s.matched.length + ' de ' + q.pairs!.length + ' pares completos' : 'Você pode mudar sua seleção antes de verificar.' }}</span>
+            @if (s.answered) {<button class="button button-primary" data-action="next" (click)="study.next()">{{ nextText() }}<koine-icon name="arrow" [size]="17" /></button>}
+            @else if (q.kind !== 'match') {<button class="button button-primary" [disabled]="!study.canVerify()" (click)="study.verify()">{{ q.kind === 'parse' ? 'Verificar análise' : q.kind === 'order' ? 'Verificar sequência' : 'Verificar' }}<koine-icon name="check" [size]="17" /></button>}
+          </div>
+        </div>
+      }
+    </div>
+  }
+}
+
+<ng-template #answers let-q="q" let-s="s" let-flash="flash">
+  <div class="answers" [class.flash-options]="flash" [class.short-options]="flash && shortOptions(q)" [class.long-options]="flash && !shortOptions(q)">
+    @for (option of q.options || []; track $index; let i = $index) {
+      <button class="answer" [class.correct]="s.answered && i === q.answer" [class.wrong]="s.answered && i === s.selected && i !== q.answer" [class.chosen]="!s.answered && s.draftAnswer === i" [disabled]="s.answered" [attr.aria-pressed]="s.answered ? i === s.selected : s.draftAnswer === i" (click)="study.choose(i)"><span class="answer-letter">{{ letter(i) }}</span><span [attr.lang]="q.optionsLang === 'grc' || isGreek(option) ? 'grc' : null">{{ option }}</span>@if (s.answered && i === q.answer) {<koine-icon name="check" [size]="17" />}</button>
+    }
+  </div>
+</ng-template>

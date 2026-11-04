@@ -2,6 +2,7 @@
 <html lang="pt-BR" data-theme="dark">
 <head>
   <meta charset="utf-8">
+  <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#0c1018">
   <meta name="color-scheme" content="dark light">
@@ -11,18 +12,10 @@
   <meta name="description" content="Um espaço aberto para aprender grego koiné: morfologia, sintaxe e vocabulário, do primeiro contato à leitura crítica.">
   <title>Koiné — formações em grego do Novo Testamento</title>
   <link rel="icon" href="./assets/favicon.svg?v=2" type="image/svg+xml">
-  <link rel="preload" href="./assets/EncodeSans.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="./styles.css?v=3">
-  <link rel="stylesheet" href="./study.css?v=3">
-  <link rel="stylesheet" href="./home.css?v=9">
-  <link rel="stylesheet" href="./theme.css?v=3">
-  <link rel="stylesheet" href="./learning.css?v=6">
-  <link rel="stylesheet" href="./readings.css?v=8">
-  <script type="module" src="./app.js?v=9"></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Ir para o conteúdo</a>
-  <div id="app"><main class="loading"><span class="brand-mark">κ.</span><p>Abrindo seu espaço de estudo…</p></main></div>
+  
+  <koine-app id="app"><main class="loading"><span class="brand-mark">κ.</span><p>Abrindo seu espaço de estudo…</p></main></koine-app>
   <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
   <noscript><p>Ative o JavaScript para usar os exercícios e salvar seu progresso neste navegador.</p></noscript>
 </body>

@@ -1,6 +1,6 @@
 # Contrato de conteúdo
 
-Aplicação estática em português, sem dependências de execução, compatível com GitHub Pages em subdiretório. As bases protegidas ficam fora do repositório. Artigos e exercícios têm redação original; referências bibliográficas não significam reprodução nem endosso.
+Aplicação Angular em português, compilada para hospedagem estática no GitHub Pages em subdiretório. As bases protegidas ficam fora do repositório. Artigos e exercícios têm redação original; referências bibliográficas não significam reprodução nem endosso.
 
 Cada arquivo data/morphology.json, data/syntax.json e data/vocabulary-lessons.json contém uma lista de lições:
 
@@ -29,3 +29,7 @@ Os arquivos `morphology.json`, `syntax.json` e `vocabulary-lessons.json` guardam
 Os arquivos `articles-morphology.json`, `articles-syntax.json` e `articles-vocabulary.json` guardam os aprofundamentos da aba Artigos. Cada registro tem `id` próprio, `area`, `level`, `lessonId`, `order`, `title`, `summary`, `minutes`, `sections`, `references` e `discussionQuestions`. O `lessonId` deve apontar para uma aula da mesma área e nível. O texto precisa desenvolver uma discussão diferente da explicação básica; não copie o corpo da aula. As perguntas de reflexão não geram nota ou tentativas no histórico de exercícios.
 
 As referências de aprofundamentos aceitam `{ "title": "Título da fonte", "url": "https://..." }`; a URL é opcional para referências bibliográficas impressas. Atribuições de posições a autores precisam de fonte identificável. Marcar um artigo como lido não conclui a aula correspondente. O aviso de IA fica no fim dos artigos de aprofundamento.
+
+## Verificar e publicar
+
+Depois de alterar os dados, execute `npm run check`. Os assets públicos são declarados em `angular.json`. O workflow de Pages compila a aplicação e publica apenas `dist/koine/browser`; os PDFs e a pasta privada `tmp/` não participam do build.

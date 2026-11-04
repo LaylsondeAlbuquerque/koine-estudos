@@ -1,0 +1,32 @@
+<div class="page-intro"><div><span class="eyebrow">Acompanhamento do estudo</span><h1>Meu progresso</h1><p>Acompanhe suas leituras e revisões. Os dados ficam somente neste navegador, sem cadastro.</p></div></div>
+<div class="progress-grid">
+  <section class="progress-card"><h3>Aulas concluídas</h3><strong>{{ completedLessons() }}</strong><p>de {{ content.lessons.length }} aulas do percurso</p></section>
+  <section class="progress-card"><h3>Vocábulos memorizados</h3><strong>{{ progress.masteredCount() }}</strong><p>acertos em pelo menos três dias diferentes</p></section>
+  <section class="progress-card"><h3>Cobertura lexical</h3><strong>{{ percent(progress.coverage()) }}%</strong><p>ocorrências dos lemas memorizados no corpus</p></section>
+</div>
+<section class="core-box">
+  <div class="core-box-top">
+    <div><span class="eyebrow">Núcleo dos 300</span><h3 style="margin-top:8px">{{ progress.coreMastered() === 300 ? 'Você consolidou os 300 vocábulos prioritários.' : 'Reencontre as palavras que mais aparecem.' }}</h3></div>
+    <span class="core-count">{{ progress.coreMastered() }} <span>/ 300</span></span>
+  </div>
+  <koine-progress [value]="progress.coreMastered()" [max]="300" />
+  <p>Este conjunto representa {{ percent(content.vocabulary.meta.core300?.coveragePercent || 0) }}% das ocorrências do corpus. É cobertura de vocabulário, não uma medida de compreensão.</p>
+</section>
+<section class="progress-detail">
+  <h2>Suas aulas por área</h2>
+  @for (area of areaKeys; track area) {
+    <div class="progress-line">
+      <span>{{ areas[area].name }}</span>
+      <koine-progress [value]="progress.completed(area)" [max]="content.lessonsFor(area).length" />
+      <span>{{ progress.completed(area) }} / {{ content.lessonsFor(area).length }}</span>
+    </div>
+  }
+</section>
+<section class="progress-detail"><h2>Artigos de aprofundamento</h2><p class="muted">{{ readArticles() }} de {{ content.articles.length }} artigos marcados como lidos. Essa leitura é independente da conclusão das aulas.</p></section>
+<div class="backup-panel">
+  <div><h3>Leve seu histórico com você</h3><p>Limpar os dados do navegador pode apagar o progresso. Exporte uma cópia e importe-a depois, inclusive em outro aparelho. A importação substitui o histórico deste navegador.</p></div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap">
+    <button class="button button-outline button-small" (click)="progress.exportProgress()"><koine-icon name="download" [size]="13" />Exportar</button>
+    <label class="button button-outline button-small" style="cursor:pointer">Importar<input class="sr-only" type="file" id="import-progress" accept="application/json,.json" (change)="importFile($event)"></label>
+  </div>
+</div>

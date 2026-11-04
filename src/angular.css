@@ -1,0 +1,10 @@
+koine-app{display:block}koine-home,koine-area,koine-reading,koine-progress-page,koine-about,koine-word-repertory,koine-study-landing,koine-study-session{display:contents}
+/* Angular icon hosts do not change the SVG boxes, but direct-child selectors
+   from the original stylesheet need to account for the component host. */
+.quick-card>koine-icon:last-child>svg{width:14px;color:#687e96}
+.discovery-meta>koine-icon:last-child>svg{margin-left:auto}
+.area-home .quick-card>koine-icon:last-child>svg{display:block;margin-left:auto}
+.reading-purpose>koine-icon>svg{flex-shrink:0}
+html[data-theme=dark] .quick-card>koine-icon:last-child>svg{color:#a0b8d5}
+@media(max-width:500px){.quick-card>koine-icon:last-child>svg{width:15px}.discovery-meta>koine-icon:last-child>svg{width:12px}}
+@media(max-width:600px){.area-home .quick-card>koine-icon:last-child>svg{width:16px}}

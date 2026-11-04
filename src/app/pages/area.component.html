@@ -1,0 +1,45 @@
+<header [class]="'formation-heading ' + area()">
+  <div class="formation-heading-icon"><koine-icon [name]="area()" [size]="32"/></div>
+  <div><div class="eyebrow">FORMAÇÃO · GREGO KOINÉ</div><h1>{{ areas[area()].name }}</h1><p>{{ areas[area()].focus }}</p>
+    <div class="formation-info"><span><koine-icon name="path" [size]="14"/>{{ allLessons().length }} aulas</span><span><koine-icon name="book" [size]="14"/>{{ content.articlesFor(area()).length }} artigos</span><span><koine-icon name="path" [size]="14"/>4 níveis</span><span><koine-icon name="practice" [size]="14"/>{{ questionCount() }} exercícios</span>@if (area() === 'vocabulary') {<span>{{ number.format(content.vocabulary.entries.length) }} vocábulos</span>}</div>
+  </div>
+</header>
+<div class="level-bar"><span>Selecione seu nível</span><div class="level-buttons" aria-label="Escolher nível">
+  @for (name of levels; track $index) {
+    <button class="level-button" [class.active]="level() === $index" (click)="progress.setLevel(area(), $index)" [attr.aria-pressed]="level() === $index"><span class="level-no">{{ $index + 1 }}</span>{{ name }}</button>
+  }
+</div></div>
+<nav class="tabs" aria-label="Modos de estudo">
+  @for (item of tabs(); track item.key) {
+    <a class="tab" [class.active]="tab() === item.key" [routerLink]="['/', area(), item.key]" [attr.aria-current]="tab() === item.key ? 'page' : null"><koine-icon [name]="item.icon" [size]="17"/>{{ item.title }}</a>
+  }
+</nav>
+@switch (tab()) {
+  @case ('path') {
+    <div class="level-summary"><div><h2>Seu percurso · {{ levels[level()] }}</h2><p>{{ levelDescriptions[level()] }}</p></div><span class="pill">{{ current().length }} aulas</span></div>
+    <p class="area-purpose">Aulas em sequência para aprender a base de cada assunto. Estude a explicação, observe os exemplos e pratique; os aprofundamentos ficam na aba Artigos.</p>
+    <div class="lesson-list">
+      @for (lesson of current(); track lesson.id) {
+        <article class="lesson-row">
+          <div class="lesson-step" [class.done]="progress.state().lessons[lesson.id]">@if (progress.state().lessons[lesson.id]) {<koine-icon name="check" [size]="15"/>} @else { {{ step($index) }} }</div>
+          <div><h3><a [routerLink]="['/', area(), 'lesson', lesson.id]">{{ lesson.title }}</a></h3><p>{{ lesson.summary }}</p><div class="lesson-row-meta"><koine-icon name="clock" [size]="11"/>{{ lesson.minutes }} min<span>·</span>{{ lesson.questions.length }} exercícios@if (progress.state().lessons[lesson.id]) {<span>· Aula concluída</span>}</div></div>
+          <div class="lesson-row-actions"><a class="button button-outline button-small" [routerLink]="['/', area(), 'lesson', lesson.id]">Estudar aula<koine-icon name="arrow" [size]="12"/></a><button class="text-link" (click)="study.start({area: area(), mode: 'practice', lessonId: lesson.id})">Praticar</button>@if (articleFor(lesson.id); as article) {<a class="text-link lesson-deep-link" [routerLink]="['/', area(), 'article', article.id]">Aprofundar<koine-icon name="book" [size]="12"/></a>}</div>
+        </article>
+      }
+    </div>
+    @if (level() < 3) {<div class="notice">Todos os níveis ficam disponíveis desde o início. Quando estiver confortável com a base, siga para <button class="text-link" (click)="progress.setLevel(area(), level() + 1)">{{ levels[level() + 1] }}<koine-icon name="arrow" [size]="12"/></button>.</div>}
+  }
+  @case ('articles') {
+    <div class="level-summary"><div><h2>Aprofundamentos · {{ levels[level()] }}</h2><p>Perspectivas, evidências e decisões de leitura além das aulas do percurso.</p></div><span class="pill">{{ deeper().length }} artigos</span></div>
+    <p class="area-purpose">Cada artigo se conecta a uma aula deste nível e desenvolve uma discussão própria. Para a explicação inicial e os exercícios, volte ao <a [routerLink]="['/', area(), 'path']">Percurso</a>.</p>
+    <div class="article-grid">
+      @for (article of deeper(); track article.id) {
+        <a class="article-card deep-article-card" [routerLink]="['/', area(), 'article', article.id]"><span class="eyebrow">{{ levels[level()] }} · {{ article.minutes }} min de leitura</span><h3>{{ article.title }}</h3><p>{{ article.summary }}</p><span class="article-lesson-label">Relacionado à aula: {{ lessonTitle(article.lessonId) }}</span>@if (progress.state().articles[article.id]) {<span class="pill">Artigo lido</span>}<span class="text-link">Ler aprofundamento<koine-icon name="arrow" [size]="13"/></span></a>
+      }
+    </div>
+  }
+  @case ('words') {
+    @if (area() === 'vocabulary') {<koine-word-repertory/>} @else {<koine-study-landing [area]="area()" [mode]="mode()"/>}
+  }
+  @default {<koine-study-landing [area]="area()" [mode]="mode()"/>}
+}

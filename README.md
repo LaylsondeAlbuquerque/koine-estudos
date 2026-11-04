@@ -1,8 +1,10 @@
 # Koiné
 
-Um espaço aberto de estudo do grego do Novo Testamento, de **Laylson de Albuquerque** ([GitHub](https://github.com/LaylsondeAlbuquerque)).
+Plataforma de estudo do grego do Novo Testamento, de **Laylson de Albuquerque** ([GitHub](https://github.com/LaylsondeAlbuquerque)).
 
-Aplicação estática em português, preparada para GitHub Pages. Não requer servidor de aplicação, banco de dados, chave de API, assinatura ou cadastro de alunos. Não há dependências de execução nem etapa de build.
+Projeto **Angular 21 + TypeScript**, com componentes standalone, signals, detecção de mudanças OnPush e rotas carregadas sob demanda. As telas usam templates e eventos Angular. A lógica de revisão e busca permanece em módulos puros testáveis.
+
+O resultado da compilação é um site estático para GitHub Pages: não há backend, banco de dados, chave de API, assinatura ou cadastro de alunos. O conteúdo e a hospedagem continuam gratuitos.
 
 ## Estudar
 
@@ -20,33 +22,53 @@ O progresso é salvo **somente no navegador**. Um vocábulo é registrado como m
 
 O percentual do núcleo dos 300 é calculado das ocorrências no corpus identificado nos metadados. Trata-se de cobertura lexical por lema, não de compreensão de passagens. Consulte `data/vocabulary.json` para os números, a seleção independente e a conferência com o repertório bibliográfico.
 
-## Executar localmente
+## Desenvolver
 
-Com Python 3.9 ou posterior instalado, na pasta deste projeto:
+Use uma versão de Node compatível: 20.19+, 22.12+ ou 24.x. O lockfile fixa as dependências.
 
 ```sh
-python scripts/dev-server.py
+npm ci
+npm start
 ```
 
-Abra http://127.0.0.1:4173. Com Node.js, `npm run dev` inicia a mesma prévia. O servidor local disponibiliza somente os arquivos públicos; caches, PDFs e metadados do repositório ficam inacessíveis. Abrir `index.html` diretamente por `file://` não fornece o contexto HTTP necessário ao carregamento dos JSONs.
-
-Com Node.js instalado, valide os dados e a lógica de revisão:
+Abra http://127.0.0.1:4200. Angular CLI compila e atualiza a prévia durante o desenvolvimento.
 
 ```sh
 npm run check
-python scripts/vocabulary-validate.py
 ```
 
-Nenhuma instalação de pacotes é necessária. Os comandos de desenvolvimento não são necessários para visitar o site publicado. A revisão de bugs, otimizações e medições está registrada em [PERFORMANCE.md](PERFORMANCE.md).
+Esse comando valida o conteúdo, executa os testes de lógica e os testes Angular com Vitest/jsdom, e gera o build de produção para Pages. Não exige instalação global de Angular CLI.
+
+Para conferir exatamente o build publicado, com Python 3.9 ou posterior:
+
+```sh
+npm run build:pages
+npm run preview
+```
+
+Abra http://127.0.0.1:4181/koine-estudos/. Essa prévia serve somente o diretório compilado.
+
+## Estrutura
+
+- `src/main.ts`: bootstrap do Angular e roteador por hash.
+- `src/app/app.component.*`: navegação, busca global, tema e layout.
+- `src/app/pages/`: início, percursos, aulas, artigos, progresso e apresentação.
+- `src/app/study/`: serviço de sessões e componentes de flashcards/prática.
+- `src/app/words/`: repertório com busca, filtros e paginação.
+- `src/app/content.service.ts` e `progress.service.ts`: conteúdo e persistência.
+- `src/app/models.ts`: tipos e definições do curso.
+- `core.js` e `catalog.js`: lógica pura de revisão, seleção e indexação, com declarações TypeScript.
+- `appearance.js`: canvas com ciclo de vida integrado ao componente de início.
+- `angular.json`: build, estilos e lista explícita dos arquivos públicos.
+- `src/index.html`: documento de entrada; a saída compilada fica em `dist/koine/browser/`.
 
 ## Publicar no GitHub Pages
 
-1. Coloque os arquivos públicos deste projeto em um repositório. **Não envie `tmp/`**, a biblioteca de PDFs nem outros arquivos pessoais.
-2. Em **Settings → Pages → Build and deployment**, escolha **Deploy from a branch**.
-3. Selecione **main / (root)** e salve. O arquivo `.nojekyll` acompanha a aplicação.
-4. Aguarde a implantação informada pelo GitHub. A aplicação usa caminhos relativos e rotas por hash, funcionando também em `https://usuario.github.io/nome-do-repositorio/`.
+O workflow `.github/workflows/pages.yml` instala pelo lockfile, executa `npm run check` e publica **somente `dist/koine/browser`**. Em Settings → Pages, a origem é **GitHub Actions**. Pushes para `main` e execuções manuais pelo Actions publicam a aplicação após as verificações.
 
-GitHub Pages atende a aplicação estática sem serviços adicionais pagos. O navegador precisa conseguir baixar inicialmente os arquivos do site; não há implementação de cache offline completo nesta versão.
+O build usa `--base-href /koine-estudos/`. Se o repositório mudar de nome, ajuste `build:pages` no package.json. As rotas por hash preservam os endereços anteriores, inclusive os links antigos de aulas, sem exigir regras de servidor. A chave do localStorage continua vinculada ao mesmo caminho, preservando o progresso anterior no mesmo navegador/origem.
+
+Não envie `tmp/`, a biblioteca de PDFs, `node_modules/`, caches Angular ou arquivos pessoais. Esses diretórios não integram os assets do build nem o artefato publicado. Os arquivos compilados não precisam ser adicionados ao Git.
 
 ## Editar o conteúdo
 
@@ -57,7 +79,7 @@ GitHub Pages atende a aplicação estática sem serviços adicionais pagos. O na
 - `data/vocabulary.json`: lemas, glossas, frequências e metadados.
 - `CONTRIBUTING-CONTENT.md`: formato das lições e questões.
 
-IDs estáveis preservam o vínculo com o histórico local. Campos `kind` suportados: `choice`, `parse`, `match` e `order`. As respostas sempre são escolhidas pela interface. Conteúdo novo não exige reconstruir o aplicativo.
+IDs estáveis preservam o vínculo com o histórico local. Campos `kind` suportados: `choice`, `parse`, `match` e `order`. As respostas sempre são escolhidas pela interface. Após editar conteúdo, execute as verificações e publique o novo build. O workflow faz isso automaticamente nos pushes para main.
 
 Os scripts `vocabulary-fetch.py` e `vocabulary-build.py` reproduzem a seleção independente usando dados abertos fixados por commit e checksum. A comparação bibliográfica privada não é requisito para executar o site ou reproduzir a seleção. A pasta `tmp/` é excluída do Git; ali ficam caches e materiais de conferência que **não devem ser publicados**.
 

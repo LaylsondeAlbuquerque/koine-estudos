@@ -1,0 +1,43 @@
+<a class="skip-link" href="#main" (click)="skip($event)">Ir para o conteúdo</a>
+@if(content.ready()) {
+ <div class="layout" [attr.data-area]="study.session()?.area || active()">
+  <header class="site-header"><div class="header-inner">
+   <a class="wordmark" routerLink="/home" aria-label="Koiné, início"><span class="brand-name">koiné<span class="brand-dot">.</span></span></a>
+   <div class="nav-container" [class.open]="menuOpen()"><nav class="main-nav" aria-label="Navegação principal">
+    <a routerLink="/home" [class.active]="displayActive()==='home'" [attr.aria-current]="displayActive()==='home'?'page':null">Início</a>
+    @for(area of areaKeys;track area){<a [routerLink]="['/',area,'path']" [class.active]="displayActive()===area" [attr.aria-current]="displayActive()===area?'page':null">{{areas[area].name}}</a>}
+    <a class="nav-about" routerLink="/about" [class.active]="displayActive()==='about'">O projeto</a><a class="mobile-progress" routerLink="/progress">Meu progresso</a>
+   </nav></div>
+   <div class="header-tools">
+    <button class="header-search search-toggle header-tool" (click)="openSearch()" aria-label="Buscar no conteúdo" title="Buscar no conteúdo"><koine-icon name="search" [size]="19"/></button>
+    <button class="theme-toggle header-tool" (click)="toggleTheme()" [attr.aria-label]="themeLabel()" [title]="themeLabel()"><koine-icon [name]="theme()==='dark'?'sun':'moon'" [size]="19"/></button>
+    <a class="header-progress header-tool" routerLink="/progress" [class.active]="displayActive()==='progress'" aria-label="Meu progresso" title="Meu progresso"><koine-icon name="progress" [size]="19"/></a>
+    <button class="menu-toggle header-tool" (click)="toggleMenu()" aria-label="Abrir navegação" [attr.aria-expanded]="menuOpen()"><koine-icon [name]="menuOpen()?'close':'menu'" [size]="23"/></button>
+   </div>
+  </div></header>
+  @if(menuOpen()){<button class="nav-backdrop" (click)="closeMenu()" aria-label="Fechar navegação"></button>}
+  <div class="workspace">
+   @if(!study.session()){<div class="topbar"><div class="breadcrumbs"><a routerLink="/home">Início</a><span>/</span><strong>{{crumb()}}</strong></div><span class="local-tag"><koine-icon name="check" [size]="13"/>{{progress.storageAvailable()?'Seu progresso é salvo neste navegador':'Salvamento indisponível'}}</span></div>}
+   <main id="main" [class]="'content area-'+(study.session()?.area || active())" tabindex="-1">
+    @if(study.session()){<koine-study-session/>}@else{<router-outlet/>}
+   </main>
+   <footer class="page-footer"><a class="footer-wordmark" routerLink="/home">koiné.</a><span>Projeto de <a href="https://github.com/LaylsondeAlbuquerque" target="_blank" rel="noopener">Laylson de Albuquerque</a></span><a routerLink="/about">Fontes, licenças e metodologia</a><span class="footer-note">Estudo aberto e gratuito</span></footer>
+  </div>
+ </div>
+ @if(searchOpen()){
+  <div class="search-overlay" (click)="overlayClick($event)"><section class="search-dialog" role="dialog" aria-modal="true" aria-label="Buscar no conteúdo">
+   <div class="search-dialog-top"><label class="search-field"><koine-icon name="search" [size]="17"/><span class="sr-only">Buscar em aulas, artigos e vocabulário</span><input id="global-search" type="search" [value]="query()" (input)="query.set($any($event.target).value)" placeholder="Um conceito, uma palavra, uma dúvida…" autocomplete="off"></label><button class="icon-button" (click)="closeSearch()" aria-label="Fechar busca"><koine-icon name="close" [size]="17"/></button></div>
+   <div id="search-results">
+    @if(searchTerm().length<2){<p class="muted" style="font-size:11px">Digite pelo menos duas letras. Busque em português ou grego, com ou sem acentos.</p>}
+    @else{<div class="search-results">
+     @for(reading of readings();track reading.id){<a class="search-result" [routerLink]="['/',reading.area,reading.readingType,reading.id]">{{reading.title}}<span>{{reading.readingType==='lesson'?'Aula':'Artigo'}} · {{areas[reading.area].name}} · {{levels[reading.level]}}</span></a>}
+     @for(word of words();track word.id){<button class="search-result" (click)="searchWord(word)"><strong class="greek" lang="grc">{{word.lemma}}</strong><span>{{word.meaning}}</span></button>}
+     @if(!readings().length&&!words().length){<p class="muted" style="font-size:11px">Nenhum resultado. Tente um termo mais curto.</p>}
+    </div>}
+   </div>
+  </section></div>
+ }
+} @else {
+ <main class="loading"><span class="brand-mark">κ.</span>@if(content.error()){<h1 style="font-size:32px">O estudo ainda não abriu.</h1><p>{{content.error()}} Recarregue a página ou confira a conexão.</p><button class="button button-primary" (click)="reload()">Tentar novamente</button>}@else{<p>Abrindo seu espaço de estudo…</p>}</main>
+}
+@if(progress.message()){<div class="toast" role="status">{{progress.message()}}</div>}
