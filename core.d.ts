@@ -1,6 +1,7 @@
 import type {Progress, Review, Word, Question} from './src/app/models';
 export function normalize(value:unknown):string;
 export function shuffle<T>(items:readonly T[],random?:()=>number):T[];
+export function shufflePairOrder(count:number,random?:()=>number):number[];
 export function localDate(date?:Date):string;
 export function addDays(day:string,amount:number):string;
 export function reviewAnswer(previous:Partial<Review>|undefined,correct:boolean,day?:string):Review;

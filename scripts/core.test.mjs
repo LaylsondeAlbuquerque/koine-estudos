@@ -1,9 +1,46 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {reviewAnswer,isMastered,validProgress,vocabularyQuestion,selectWords,meaningsOverlap,coverage,selectStudyQuestions} from '../core.js';
+import {reviewAnswer,isMastered,validProgress,vocabularyQuestion,selectWords,meaningsOverlap,coverage,selectStudyQuestions,shufflePairOrder} from '../core.js';
 const words=JSON.parse(readFileSync(new URL('../data/vocabulary.json',import.meta.url))).entries;
 const blank=()=>({version:1,levels:{morphology:0,syntax:0,vocabulary:0},lessons:{},vocab:{},answers:{},sessions:0});
+
+test('matching order never leaves a correct pair on the same row',()=>{
+ let seed=87231;
+ const random=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};
+ for(let count=2;count<=12;count++)for(let sample=0;sample<250;sample++){
+  const order=shufflePairOrder(count,random);
+  assert.deepEqual([...order].sort((a,b)=>a-b),Array.from({length:count},(_,i)=>i));
+  assert.ok(order.every((value,row)=>value!==row),`Fixed pair in ${order}`);
+ }
+});
+
+test('matching order handles small sets and constant random boundaries without retries',()=>{
+ assert.deepEqual(shufflePairOrder(0),[]);
+ assert.deepEqual(shufflePairOrder(1),[0]);
+ for(const value of [0,1-Number.EPSILON])for(const count of [2,3,4,12]){
+  let draws=0;
+  const order=shufflePairOrder(count,()=>{draws++;return value;});
+  assert.equal(draws,count-1);
+  assert.ok(order.every((item,row)=>item!==row));
+  assert.equal(new Set(order).size,count);
+ }
+ assert.deepEqual(shufflePairOrder(2,()=>0),[1,0]);
+ assert.throws(()=>shufflePairOrder(-1),RangeError);
+ assert.throws(()=>shufflePairOrder(2.5),RangeError);
+});
+
+test('matching order remains deterministic, varied and independent between calls',()=>{
+ const generator=()=>{let seed=12345;return()=>{seed=(seed*16807)%2147483647;return(seed-1)/2147483646;};};
+ const firstRandom=generator(),secondRandom=generator(),variations=new Set();
+ for(let sample=0;sample<100;sample++){
+  const first=shufflePairOrder(4,firstRandom),second=shufflePairOrder(4,secondRandom);
+  assert.deepEqual(first,second);variations.add(first.join(','));
+ }
+ assert.ok(variations.size>=4);
+ const changed=shufflePairOrder(3,()=>0);changed[0]=999;
+ assert.deepEqual(shufflePairOrder(3,()=>0),[1,2,0]);
+});
 test('memorization requires three distinct days and mistakes return the word to review',()=>{
  let entry=reviewAnswer(undefined,true,'2026-10-30');
  for(let i=0;i<10;i++)entry=reviewAnswer(entry,true,'2026-10-30');

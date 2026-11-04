@@ -195,4 +195,100 @@ describe('Angular study sessions', () => {
     expect(verify.disabled).toBe(false);
     expect(host.querySelector('.answer.chosen')).not.toBeNull();
   });
+
+  const finishChoice = (study: StudySessionService, correct = true) => {
+    const question = study.current()!;
+    const answer = correct ? question.answer as number : ((question.answer as number) + 1) % question.options!.length;
+    study.choose(answer);
+    if (study.session()!.mode === 'practice') study.verify();
+    study.next();
+  };
+
+  it('never places an authored or generated matching answer beside its corresponding item', () => {
+    study.start({area: 'morphology', mode: 'practice', lessonId: 'match'});
+    expect(study.current()!.rightOrder).toEqual([1, 0]);
+    study.start({area: 'vocabulary', mode: 'practice', filter: 'all', limit: 5});
+    const matching = study.session()!.questions.filter(question => question.kind === 'match');
+    expect(matching.length).toBeGreaterThan(0);
+    for (const question of matching) {
+      expect(question.rightOrder!.every((answer, row) => answer !== row)).toBe(true);
+      expect(new Set(question.rightOrder).size).toBe(question.pairs!.length);
+    }
+  });
+
+  it('returns to the originating lesson only after the result and without completing it', () => {
+    study.start({area: 'morphology', mode: 'practice', lessonId: 'choice'});
+    study.returnToLesson(); study.completeLessonAndContinue();
+    expect(navigate).not.toHaveBeenCalled();
+    expect(progress.state().lessons['choice']).toBeUndefined();
+    finishChoice(study);
+    expect(study.originLesson()?.id).toBe('choice');
+    study.returnToLesson();
+    expect(navigate).toHaveBeenCalledWith(['/', 'morphology', 'lesson', 'choice']);
+    expect(progress.state().lessons['choice']).toBeUndefined();
+    expect(study.session()).toBeNull();
+  });
+
+  it('completes the current lesson idempotently and advances across levels', () => {
+    content.lessons[1].level = 1;
+    progress.mutate(state => {state.lessons['choice'] = true; state.articles['an-article'] = true;});
+    study.start({area: 'morphology', mode: 'practice', lessonId: 'choice'});
+    finishChoice(study);
+    expect(study.nextLesson()?.id).toBe('parse');
+    study.completeLessonAndContinue();
+    expect(progress.state().lessons['choice']).toBe(true);
+    expect(progress.state().lessons['parse']).toBeUndefined();
+    expect(progress.state().articles).toEqual({'an-article': true});
+    expect(navigate).toHaveBeenCalledWith(['/', 'morphology', 'lesson', 'parse']);
+    expect(study.session()).toBeNull();
+  });
+
+  it('completes the last lesson and returns to its learning path', () => {
+    study.start({area: 'morphology', mode: 'practice', lessonId: 'many', limit: 1});
+    finishChoice(study);
+    expect(study.nextLesson()).toBeNull();
+    study.completeLessonAndContinue();
+    expect(progress.state().lessons['many']).toBe(true);
+    expect(navigate).toHaveBeenCalledWith(['/', 'morphology', 'path']);
+  });
+
+  it('retains the original lesson and continuation when retrying failed questions', () => {
+    study.start({area: 'morphology', mode: 'practice', lessonId: 'choice'});
+    finishChoice(study, false);
+    study.retryErrors();
+    expect(study.originLesson()?.id).toBe('choice');
+    expect(progress.state().lessons['choice']).toBeUndefined();
+    finishChoice(study);
+    study.completeLessonAndContinue();
+    expect(progress.state().lessons['choice']).toBe(true);
+    expect(navigate).toHaveBeenCalledWith(['/', 'morphology', 'lesson', 'parse']);
+  });
+
+  it('does not infer a lesson from a general session or add completion to flashcards', () => {
+    content.lessonsFor = () => [content.lessons[0]];
+    study.start({area: 'morphology', mode: 'practice', limit: 1});
+    finishChoice(study);
+    expect(study.originLesson()).toBeNull();
+    study.completeLessonAndContinue();
+    expect(progress.state().lessons).toEqual({});
+    expect(navigate).not.toHaveBeenCalled();
+    study.start({area: 'morphology', mode: 'flashcards', lessonId: 'choice'});
+    finishChoice(study);
+    expect(study.originLesson()).toBeNull();
+    study.completeLessonAndContinue();
+    expect(progress.state().lessons).toEqual({});
+  });
+
+  it('renders both lesson-result buttons and wires completion to the next lesson', () => {
+    study.start({area: 'morphology', mode: 'practice', lessonId: 'choice'});
+    finishChoice(study);
+    const fixture = TestBed.createComponent(StudySessionComponent);
+    fixture.detectChanges();
+    const buttons = [...fixture.nativeElement.querySelectorAll('.result-actions button')] as HTMLButtonElement[];
+    expect(buttons.some(button => button.textContent?.includes('Voltar à aula'))).toBe(true);
+    const next = buttons.find(button => button.textContent?.includes('Concluir aula e ir à próxima'))!;
+    expect(next).toBeTruthy(); next.click();
+    expect(progress.state().lessons['choice']).toBe(true);
+    expect(navigate).toHaveBeenCalledWith(['/', 'morphology', 'lesson', 'parse']);
+  });
 });

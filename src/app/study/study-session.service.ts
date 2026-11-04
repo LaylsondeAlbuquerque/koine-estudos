@@ -1,6 +1,6 @@
 import {afterNextRender, computed, inject, Injectable, Injector, signal} from '@angular/core';
 import {Router} from '@angular/router';
-import {localDate, meaningsOverlap, reviewAnswer, selectStudyQuestions, selectWords, shuffle, vocabularyQuestion} from '../../../core.js';
+import {localDate, meaningsOverlap, reviewAnswer, selectStudyQuestions, selectWords, shuffle, shufflePairOrder, vocabularyQuestion} from '../../../core.js';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {Area, Lesson, Word} from '../models';
@@ -48,6 +48,7 @@ export interface StudyResult {
 export interface StudySession {
   area: Area;
   mode: StudyMode;
+  originLessonId?: string;
   questions: StudyQuestion[];
   index: number;
   correct: number;
@@ -90,6 +91,19 @@ export class StudySessionService {
     return !!session && session.index >= session.questions.length;
   });
   readonly errors = computed(() => this.session()?.results.filter(result => !result.correct) ?? []);
+  readonly originLesson = computed(() => {
+    const session = this.session();
+    if (session?.mode !== 'practice' || !session.originLessonId) return null;
+    const lesson = this.content.catalog.lessonById.get(session.originLessonId);
+    return lesson?.area === session.area ? lesson : null;
+  });
+  readonly nextLesson = computed(() => {
+    const lesson = this.originLesson();
+    if (!lesson) return null;
+    const lessons = this.content.lessonsFor(lesson.area);
+    const index = lessons.findIndex(item => item.id === lesson.id);
+    return index >= 0 ? lessons[index + 1] ?? null : null;
+  });
   readonly canVerify = computed(() => {
     const session = this.session(), question = this.current();
     if (!session || !question || session.answered) return false;
@@ -158,7 +172,9 @@ export class StudySessionService {
       this.progress.toast('Não há exercícios neste filtro. Escolha outro assunto ou repertório.');
       return;
     }
-    this.session.set({area, mode, questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
+    const origin = mode === 'practice' && lessonId ? this.content.catalog.lessonById.get(lessonId) : undefined;
+    this.session.set({area, mode, originLessonId: origin?.area === area ? origin.id : undefined,
+      questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
     this.present();
     this.afterRender(() => window.scrollTo(0, 0));
   }
@@ -169,6 +185,22 @@ export class StudySessionService {
     const previous = this.session();
     this.clear();
     if (previous) void this.router.navigate(['/', previous.area, previous.mode]);
+  }
+
+  returnToLesson(): void {
+    const lesson = this.originLesson();
+    if (!this.finished() || !lesson) return;
+    this.clear();
+    void this.router.navigate(['/', lesson.area, 'lesson', lesson.id]);
+  }
+
+  completeLessonAndContinue(): void {
+    const lesson = this.originLesson();
+    if (!this.finished() || !lesson) return;
+    const next = this.nextLesson();
+    this.progress.mutate(state => state.lessons[lesson.id] = true);
+    this.clear();
+    void this.router.navigate(next ? ['/', next.area, 'lesson', next.id] : ['/', lesson.area, 'path']);
   }
 
   choose(index: number): void {
@@ -291,7 +323,7 @@ export class StudySessionService {
       prepared.options = options.map((option: {text: string}) => option.text);
       prepared.answer = options.findIndex((option: {index: number}) => option.index === question.answer);
     }
-    if (prepared.kind === 'match') prepared.rightOrder = shuffle(prepared.pairs!.map((_pair, index) => index));
+    if (prepared.kind === 'match') prepared.rightOrder = shufflePairOrder(prepared.pairs!.length);
     if (prepared.kind === 'order') prepared.tokenOrder = shuffle(prepared.tokens!.map((_token, index) => index));
     return prepared;
   }

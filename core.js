@@ -4,6 +4,18 @@ export function shuffle(items, random = Math.random) {
   for (let i = result.length - 1; i > 0; i--) { const j = Math.floor(random() * (i + 1)); [result[i], result[j]] = [result[j], result[i]]; }
   return result;
 }
+export function shufflePairOrder(count, random = Math.random) {
+  if (!Number.isInteger(count) || count < 0) throw new RangeError('Pair count must be a non-negative integer.');
+  const order = Array.from({length: count}, (_, index) => index);
+  // Sattolo's shuffle forms one cycle: for two or more pairs, no answer can
+  // remain beside its matching item. It always takes count - 1 draws, even
+  // with a constant random source; no rejection loop or retry is needed.
+  for (let i = order.length - 1; i > 0; i--) {
+    const j = Math.floor(random() * i);
+    [order[i], order[j]] = [order[j], order[i]];
+  }
+  return order;
+}
 export function localDate(date = new Date()) {
   return `${date.getFullYear()}-${String(date.getMonth()+1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`;
 }

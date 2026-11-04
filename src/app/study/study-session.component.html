@@ -15,11 +15,19 @@
             }
           </div>
         }
-        <div class="result-actions">
+        @if (study.originLesson(); as lesson) {
+          <p class="lesson-result-context">{{ lesson.title }}@if (study.nextLesson(); as next) {<span>Próxima aula: {{ next.title }}</span>}</p>
+        }
+        <div class="result-actions" [class.lesson-result-actions]="study.originLesson()">
           @if (study.errors().length) {
-            <button class="button button-primary" (click)="study.retryErrors()">Revisar as questões</button>
+            <button class="button" [class.button-outline]="study.originLesson()" [class.button-primary]="!study.originLesson()" (click)="study.retryErrors()">Revisar as questões</button>
           }
-          <button class="button" [class.button-outline]="study.errors().length > 0" [class.button-primary]="!study.errors().length" (click)="study.exit()">Voltar ao estudo<koine-icon name="arrow" [size]="13" /></button>
+          @if (study.originLesson()) {
+            <button class="button button-outline" (click)="study.returnToLesson()"><koine-icon name="back" [size]="13" />Voltar à aula</button>
+            <button class="button button-primary" (click)="study.completeLessonAndContinue()">{{ study.nextLesson() ? 'Concluir aula e ir à próxima' : 'Concluir aula e voltar ao percurso' }}<koine-icon name="arrow" [size]="13" /></button>
+          } @else {
+            <button class="button" [class.button-outline]="study.errors().length > 0" [class.button-primary]="!study.errors().length" (click)="study.exit()">Voltar ao estudo<koine-icon name="arrow" [size]="13" /></button>
+          }
         </div>
       </section>
     </div>
