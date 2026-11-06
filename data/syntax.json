@@ -1054,25 +1054,683 @@
     "area": "syntax",
     "level": 1,
     "order": 9,
-    "title": "Nominativo: sujeito, predicativo e aposto",
-    "summary": "Distinga três funções frequentes de uma mesma forma nominal.",
-    "minutes": 10,
+    "title": "O nominativo: funções, texto e análise",
+    "summary": "Estude todos os usos apresentados por Porter com trechos gregos, tradução, análise de cada palavra e explicação sintática.",
+    "minutes": 38,
     "objectives": [
-      "Justificar o sujeito de uma oração",
-      "Reconhecer predicativo e aposição"
+      "Separar a forma nominativa de suas funções sintáticas e discursivas",
+      "Distinguir sujeito, predicativo e aposição com base na construção",
+      "Interpretar oração nominal, nominativo pendente, tratamento direto, nomes e referência temporal",
+      "Analisar todas as palavras de um trecho antes de justificar sua tradução"
     ],
     "sections": [
       {
-        "heading": "O nominativo em uma predicação",
-        "body": "O nominativo é frequentemente encontrado no sujeito, mas Porter também descreve outros usos. Em uma oração verbal, compare o termo com a pessoa e o número do verbo e observe a construção. Na passiva, o sujeito pode ser quem recebe o efeito do acontecimento. A função gramatical não se define pela capacidade de agir nem pela posição inicial."
+        "heading": "Como estudar o nominativo",
+        "body": "Leia primeiro o trecho e sua tradução. Percorra a tabela para reconhecer o lema, o sentido local e a forma de cada palavra. Só depois leia o comentário sintático: ele explica como essas formas se relacionam. Lema é a forma de dicionário; a tradução local mostra o sentido necessário naquela ocorrência.\n\nA exposição segue Porter, Idioms, cap. 4, §§2.1–2.1.7. Cada exemplo reúne texto, tradução, análise morfológica e leitura sintática. Trecho e recorte indicam que não se está reproduzindo o versículo inteiro; reticências marcam uma retirada dentro do texto."
       },
       {
-        "heading": "Predicativo do sujeito",
-        "body": "Com um verbo de ligação, um segundo nominativo pode atribuir uma identidade ou qualidade ao sujeito. Em ὁ μαθητὴς διδάσκαλός ἐστιν, διδάσκαλος é o predicativo. O artigo e o caráter pronominal ou próprio de um termo podem ajudar a distinguir sujeito de predicativo, mas construções específicas precisam ser analisadas em seu conjunto. Ausência de artigo não produz automaticamente indefinição."
+        "heading": "O caso que designa: forma, função e discurso",
+        "body": "Porter descreve o nominativo como caso puramente nominal ou não marcado: sua função básica de designar permite usos diversos. Não marcado não significa sem importância nem sem terminação. Significa que sua descrição não deve conter uma relação específica que só aparece em parte das ocorrências.\n\nNominativo é uma descrição morfológica. Sujeito, predicativo e aposto descrevem relações sintáticas. Tópico descreve a organização de uma referência no discurso. Essas categorias podem coincidir, mas não são sinônimas. A posição inicial, o artigo ou a tradução portuguesa, isoladamente, não resolvem a análise."
       },
       {
-        "heading": "Aposição explica uma referência",
-        "body": "Na aposição, um grupo nominal identifica ou reformula outro referente, sem que isso exija um novo verbo. Παῦλος ὁ διδάσκαλος pode designar “Paulo, o professor”. A concordância de caso é uma pista de integração, mas a tradução e a pontuação devem refletir a relação real. Para testar a análise, pergunte se há uma nova predicação ou se o segundo termo apenas apresenta outra designação da mesma pessoa ou entidade."
+        "heading": "1. Sujeito: quem participa da predicação",
+        "body": "O uso mais frequente do nominativo é o sujeito de uma oração com verbo finito. Compare pessoa e número do verbo com o grupo nominal e confira o sentido da construção. O sujeito pode agir, receber uma ação ou apresentar um estado; por isso, não o defina apenas como quem pratica a ação. Nem precisa ser a primeira palavra da oração.\n\nPorter também lembra que sujeito e nominativo não são equivalentes universais: outras construções empregam outros casos, como o acusativo com infinitivo. Aqui estamos examinando uma oração com verbo finito. Referência: Porter, §2.1.1.",
+        "example": {
+          "greek": "Τότε παραγίνεται ὁ Ἰησοῦς ἀπὸ τῆς Γαλιλαίας.",
+          "translation": "Então Jesus chega da Galileia.",
+          "reference": "Mateus 3.13, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "Τότε",
+              "τότε",
+              "então",
+              "Advérbio temporal; invariável"
+            ],
+            [
+              "παραγίνεται",
+              "παραγίνομαι",
+              "chega",
+              "Verbo; presente do indicativo, voz média, 3ª pessoa do singular"
+            ],
+            [
+              "ὁ",
+              "ὁ, ἡ, τό",
+              "o",
+              "Artigo; nominativo masculino singular"
+            ],
+            [
+              "Ἰησοῦς",
+              "Ἰησοῦς",
+              "Jesus",
+              "Nome próprio; nominativo masculino singular"
+            ],
+            [
+              "ἀπὸ",
+              "ἀπό",
+              "de, a partir de",
+              "Preposição; neste uso rege genitivo"
+            ],
+            [
+              "τῆς",
+              "ὁ, ἡ, τό",
+              "a",
+              "Artigo; genitivo feminino singular"
+            ],
+            [
+              "Γαλιλαίας",
+              "Γαλιλαία",
+              "Galileia",
+              "Nome próprio; genitivo feminino singular"
+            ]
+          ]
+        },
+        "analysis": "παραγίνεται apresenta a chegada; ὁ Ἰησοῦς identifica o participante que chega e funciona como sujeito. O verbo está na terceira pessoa do singular, compatível com esse grupo. O artigo acompanha o nome e concorda com ele em caso, gênero e número. Τότε situa a cena na sequência narrativa. ἀπὸ τῆς Γαλιλαίας expressa procedência: o genitivo é exigido por ἀπό e não concorre com Ἰησοῦς pela função de sujeito."
+      },
+      {
+        "heading": "O sujeito expresso e a identificação por aposição",
+        "body": "A flexão verbal pode indicar pessoa e número sem que apareça um pronome separado. Quando o autor escreve o pronome, observe como ele se relaciona com o contexto: pode explicitar um participante, estabelecer um contraste ou acompanhar uma identificação. Não atribua a todo pronome expresso a mesma intensidade de ênfase.\n\nEste exemplo permite ver sujeito e aposição na mesma construção, preservando a distinção entre as duas funções.",
+        "example": {
+          "greek": "Παρακαλῶ οὖν ὑμᾶς ἐγὼ ὁ δέσμιος ἐν κυρίῳ.",
+          "translation": "Portanto, eu, o prisioneiro no Senhor, exorto vocês.",
+          "reference": "Efésios 4.1, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "Παρακαλῶ",
+              "παρακαλέω",
+              "exorto",
+              "Verbo; presente do indicativo, voz ativa, 1ª pessoa do singular"
+            ],
+            [
+              "οὖν",
+              "οὖν",
+              "portanto",
+              "Conjunção conclusiva; invariável, pospositiva"
+            ],
+            [
+              "ὑμᾶς",
+              "σύ",
+              "vocês",
+              "Pronome pessoal; acusativo plural, 2ª pessoa; sem gênero marcado"
+            ],
+            [
+              "ἐγὼ",
+              "ἐγώ",
+              "eu",
+              "Pronome pessoal; nominativo singular, 1ª pessoa; sem gênero marcado"
+            ],
+            [
+              "ὁ",
+              "ὁ, ἡ, τό",
+              "o",
+              "Artigo; nominativo masculino singular"
+            ],
+            [
+              "δέσμιος",
+              "δέσμιος",
+              "prisioneiro",
+              "Substantivo; nominativo masculino singular"
+            ],
+            [
+              "ἐν",
+              "ἐν",
+              "em",
+              "Preposição; rege dativo"
+            ],
+            [
+              "κυρίῳ",
+              "κύριος",
+              "Senhor",
+              "Substantivo; dativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "Παρακαλῶ já apresenta a primeira pessoa do singular; ἐγώ torna esse sujeito expresso. ὑμᾶς é o objeto: são as pessoas exortadas. ὁ δέσμιος identifica a mesma pessoa indicada por ἐγώ e está em aposição a esse pronome. Não há dois participantes exercendo dois sujeitos independentes. ἐν κυρίῳ se liga à identificação do prisioneiro e integra uma expressão preposicional. A força discursiva da identificação deve ser avaliada no desenvolvimento da carta."
+      },
+      {
+        "heading": "2. Predicativo: o que se afirma sobre o sujeito",
+        "body": "Com verbos como εἰμί, γίνομαι e ὑπάρχω, um termo pode atribuir ao sujeito identidade, condição ou caracterização. Quando substantivo, esse predicativo pode estar no nominativo, assim como o sujeito. A análise precisa distinguir os dois papéis mesmo quando as duas formas pertencem ao mesmo caso. Referência: Porter, §2.1.2.\n\nDois substantivos relacionados por predicação não precisam ter o mesmo gênero gramatical. Cada substantivo conserva o gênero que lhe pertence; isso difere da concordância de um adjetivo com seu núcleo.",
+        "example": {
+          "greek": "ὁ λόγος σὰρξ ἐγένετο.",
+          "translation": "A Palavra tornou-se carne.",
+          "reference": "João 1.14, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ, ἡ, τό",
+              "a",
+              "Artigo; nominativo masculino singular"
+            ],
+            [
+              "λόγος",
+              "λόγος",
+              "Palavra",
+              "Substantivo; nominativo masculino singular"
+            ],
+            [
+              "σὰρξ",
+              "σάρξ",
+              "carne",
+              "Substantivo; nominativo feminino singular"
+            ],
+            [
+              "ἐγένετο",
+              "γίνομαι",
+              "tornou-se",
+              "Verbo; aoristo do indicativo, voz média, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "ὁ λόγος é o sujeito; σάρξ é o predicativo ligado a ele por ἐγένετο. O artigo que acompanha λόγος é uma pista para distinguir os termos nesta construção. σάρξ não é objeto direto: completa a predicação de tornar-se. O feminino de σάρξ e o masculino de λόγος pertencem aos respectivos substantivos. O artigo grego é masculino porque acompanha λόγος; sua tradução portuguesa acompanha Palavra, que é feminina."
+      },
+      {
+        "heading": "Como distinguir sujeito e predicativo",
+        "body": "Em construções de ligação na terceira pessoa, examine primeiro se há um pronome que identifique o sujeito; depois considere artigo, nome próprio e contexto. Um termo com artigo diante de outro sem artigo pode oferecer uma pista decisiva, como em João 1.14. Porém, o artigo não supera automaticamente um sujeito pronominal e sua ausência não torna um predicativo necessariamente indefinido.\n\nO material de apoio compara critérios de identificação por pronome, artigo e nome próprio. Use-os dentro da construção para a qual foram propostos. A ordem dos termos pode ajudar quando outras pistas não distinguem os papéis; ela não deve virar a regra geral de que a primeira palavra de qualquer oração é o sujeito.",
+        "example": {
+          "greek": "αὕτη δέ ἐστιν ἡ αἰώνιος ζωή.",
+          "translation": "E esta é a vida eterna.",
+          "reference": "João 17.3, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "αὕτη",
+              "οὗτος",
+              "esta",
+              "Pronome demonstrativo; nominativo feminino singular"
+            ],
+            [
+              "δέ",
+              "δέ",
+              "e, ora",
+              "Conjunção; invariável, pospositiva"
+            ],
+            [
+              "ἐστιν",
+              "εἰμί",
+              "é",
+              "Verbo; presente do indicativo, voz ativa, 3ª pessoa do singular"
+            ],
+            [
+              "ἡ",
+              "ὁ, ἡ, τό",
+              "a",
+              "Artigo; nominativo feminino singular"
+            ],
+            [
+              "αἰώνιος",
+              "αἰώνιος",
+              "eterna",
+              "Adjetivo; nominativo feminino singular, grau positivo"
+            ],
+            [
+              "ζωή",
+              "ζωή",
+              "vida",
+              "Substantivo; nominativo feminino singular"
+            ]
+          ]
+        },
+        "analysis": "αὕτη funciona como sujeito. ἡ αἰώνιος ζωή é o grupo predicativo, embora tenha artigo. Dentro desse grupo, artigo e adjetivo concordam com ζωή em caso, gênero e número. A terminação -ος de αἰώνιος não o torna masculino neste contexto: o adjetivo tem aqui forma feminina. δέ participa da ligação com o contexto anterior e, por ser pospositivo, não precisa ocupar a primeira posição para ser traduzido por E no início."
+      },
+      {
+        "heading": "Treino: sujeito e predicativo em uma frase curta",
+        "body": "O exemplo didático abaixo retoma a distinção central com vocabulário conhecido. Observe a relação de cada nominativo com o verbo de ligação.",
+        "example": {
+          "greek": "ὁ μαθητὴς διδάσκαλός ἐστιν.",
+          "translation": "O aluno é professor.",
+          "reference": "Exemplo didático criado para esta aula"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ, ἡ, τό",
+              "o",
+              "Artigo; nominativo masculino singular"
+            ],
+            [
+              "μαθητὴς",
+              "μαθητής",
+              "aluno",
+              "Substantivo; nominativo masculino singular"
+            ],
+            [
+              "διδάσκαλός",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo; nominativo masculino singular"
+            ],
+            [
+              "ἐστιν",
+              "εἰμί",
+              "é",
+              "Verbo; presente do indicativo, voz ativa, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "ὁ μαθητής é o sujeito; διδάσκαλος atribui a ele a identidade de professor e funciona como predicativo. O artigo e a construção apoiam essa distinção. A oração apresenta uma predicação, em vez de apenas acrescentar um segundo título ao nome. O acento adicional de διδάσκαλός se explica pela palavra enclítica seguinte; não indica outro caso."
+      },
+      {
+        "heading": "3. Aposição: outra designação do mesmo referente",
+        "body": "Na aposição, um grupo nominal especifica, identifica ou reformula outro referente. As duas expressões designam a mesma pessoa ou entidade, sem que seja necessário um verbo de ligação entre elas. Aposição não é função exclusiva do nominativo: pode ocorrer em outros casos. Nesta aula, observamos a aposição nominativa. Referência: Porter, §2.1.3.\n\nCompare a pergunta de cada análise: o aposto oferece outra designação para alguém; o predicativo apresenta algo que se afirma desse alguém dentro de uma predicação. A presença ou ausência de verbo ajuda, mas o conjunto da construção continua decisivo.",
+        "example": {
+          "greek": "Παῦλος ἀπόστολος Χριστοῦ Ἰησοῦ.",
+          "translation": "Paulo, apóstolo de Cristo Jesus.",
+          "reference": "2 Coríntios 1.1, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "Παῦλος",
+              "Παῦλος",
+              "Paulo",
+              "Nome próprio; nominativo masculino singular"
+            ],
+            [
+              "ἀπόστολος",
+              "ἀπόστολος",
+              "apóstolo",
+              "Substantivo; nominativo masculino singular"
+            ],
+            [
+              "Χριστοῦ",
+              "Χριστός",
+              "de Cristo",
+              "Título usado como nome; genitivo masculino singular"
+            ],
+            [
+              "Ἰησοῦ",
+              "Ἰησοῦς",
+              "Jesus",
+              "Nome próprio; genitivo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "ἀπόστολος está em aposição a Παῦλος: identifica Paulo por sua função. O grupo Χριστοῦ Ἰησοῦ depende de ἀπόστολος e expressa a relação do apóstolo com Cristo Jesus. Seus dois termos estão no genitivo; o português emprega um só de para o grupo inteiro. O recorte pertence à abertura da carta e não exige que se invente um segundo sujeito ou um verbo entre Paulo e apóstolo."
+      },
+      {
+        "heading": "Treino: aposição em uma oração com verbo",
+        "body": "Uma aposição também pode integrar uma oração que tenha verbo. A pergunta relevante é se o segundo nome reformula o primeiro ou se constitui a informação atribuída a ele por um verbo de ligação.",
+        "example": {
+          "greek": "Παῦλος ὁ διδάσκαλος γράφει.",
+          "translation": "Paulo, o professor, escreve.",
+          "reference": "Exemplo didático criado para esta aula"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "Παῦλος",
+              "Παῦλος",
+              "Paulo",
+              "Nome próprio; nominativo masculino singular"
+            ],
+            [
+              "ὁ",
+              "ὁ, ἡ, τό",
+              "o",
+              "Artigo; nominativo masculino singular"
+            ],
+            [
+              "διδάσκαλος",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo; nominativo masculino singular"
+            ],
+            [
+              "γράφει",
+              "γράφω",
+              "escreve",
+              "Verbo; presente do indicativo, voz ativa, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "Παῦλος é o núcleo da identificação do sujeito de γράφει; ὁ διδάσκαλος explica de qual Paulo se fala ou acrescenta seu título, conforme o contexto. A aposição se refere à mesma pessoa. γράφει apresenta a ação de escrever; não é verbo de ligação entre Παῦλος e διδάσκαλος."
+      },
+      {
+        "heading": "4. Oração nominal: enunciado sem verbo expresso",
+        "body": "Porter chama este uso de nominal clause (absolute): um nominativo pode participar de um enunciado nominal sem verbo expresso. Saudações e expressões de desejo oferecem exemplos. A tradução pode acrescentar seja, haja ou outra formulação natural, mas essa escolha não prova que um verbo grego específico tenha sido apagado. Referência: Porter, §2.1.4.\n\nOutras descrições recorrem à elipse em determinados exemplos. Registre a diferença entre observar que não existe verbo expresso e propor que algum verbo foi omitido. Absoluto, aqui, faz parte da denominação de Porter para a oração nominal; não deve ser confundido com a construção pendente da próxima seção.",
+        "example": {
+          "greek": "χάρις ὑμῖν καὶ εἰρήνη.",
+          "translation": "Graça e paz a vocês.",
+          "reference": "Romanos 1.7, trecho da saudação"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "χάρις",
+              "χάρις",
+              "graça",
+              "Substantivo; nominativo feminino singular"
+            ],
+            [
+              "ὑμῖν",
+              "σύ",
+              "a vocês",
+              "Pronome pessoal; dativo plural, 2ª pessoa; sem gênero marcado"
+            ],
+            [
+              "καὶ",
+              "καί",
+              "e",
+              "Conjunção coordenativa; invariável"
+            ],
+            [
+              "εἰρήνη",
+              "εἰρήνη",
+              "paz",
+              "Substantivo; nominativo feminino singular"
+            ]
+          ]
+        },
+        "analysis": "χάρις e εἰρήνη são os núcleos nominativos coordenados por καί. ὑμῖν apresenta os destinatários da saudação e pode ser entendido com os dois nomes. Não há verbo no trecho. A leitura como saudação é sustentada pela abertura da carta. Se o português disser Que haja graça e paz a vocês, Que haja será um recurso de tradução; não uma nova palavra grega identificada pela morfologia."
+      },
+      {
+        "heading": "5. Nominativo pendente: um referente e sua retomada",
+        "body": "Porter chama a construção de independent clause (hanging). Um grupo nominativo introduz um referente que mantém ligação de sentido com outra oração, mas não se integra nela pela concordância ou pelo caso que sua função interna exigiria. O referente pode reaparecer por um pronome em outro caso. Referência: Porter, §2.1.5.\n\nPergunte separadamente qual é o referente apresentado e qual é a função do termo que o retoma. A identidade da pessoa não exige identidade de caso. A construção pode orientar a atenção para um tópico; não é necessário explicar toda ocorrência como erro, distração ou influência semítica.",
+        "example": {
+          "greek": "ὁ γὰρ Μωϋσῆς οὗτος … οὐκ οἴδαμεν τί ἐγένετο αὐτῷ.",
+          "translation": "Pois este Moisés… não sabemos o que aconteceu com ele.",
+          "reference": "Atos 7.40, recorte; foi retirada a oração relativa sobre Moisés"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ, ἡ, τό",
+              "o",
+              "Artigo; nominativo masculino singular"
+            ],
+            [
+              "γὰρ",
+              "γάρ",
+              "pois",
+              "Conjunção explicativa; invariável, pospositiva"
+            ],
+            [
+              "Μωϋσῆς",
+              "Μωϋσῆς",
+              "Moisés",
+              "Nome próprio; nominativo masculino singular"
+            ],
+            [
+              "οὗτος",
+              "οὗτος",
+              "este",
+              "Pronome demonstrativo; nominativo masculino singular"
+            ],
+            [
+              "οὐκ",
+              "οὐ",
+              "não",
+              "Advérbio de negação; forma οὐκ antes de vogal"
+            ],
+            [
+              "οἴδαμεν",
+              "οἶδα",
+              "sabemos",
+              "Verbo; perfeito do indicativo, voz ativa, 1ª pessoa do plural; sentido presente"
+            ],
+            [
+              "τί",
+              "τίς",
+              "o que",
+              "Pronome interrogativo; nominativo neutro singular nesta análise"
+            ],
+            [
+              "ἐγένετο",
+              "γίνομαι",
+              "aconteceu",
+              "Verbo; aoristo do indicativo, voz média, 3ª pessoa do singular"
+            ],
+            [
+              "αὐτῷ",
+              "αὐτός",
+              "com ele",
+              "Pronome pessoal; dativo masculino singular, 3ª pessoa"
+            ]
+          ]
+        },
+        "analysis": "ὁ Μωϋσῆς οὗτος introduz Moisés como referente. O sujeito de οἴδαμεν é nós, indicado pela primeira pessoa do plural; Moisés não pode ser tratado como sujeito desse verbo. A pergunta indireta τί ἐγένετο αὐτῷ significa o que aconteceu com ele: τί é seu sujeito, enquanto αὐτῷ retoma Moisés no dativo como pessoa afetada. O grupo inicial fica pendente em relação a essa organização. As reticências não escondem um verbo de ligação; assinalam uma oração relativa retirada para tornar a relação principal mais visível."
+      },
+      {
+        "heading": "Quando a forma não distingue nominativo e acusativo",
+        "body": "No neutro, nominativo e acusativo podem ter exatamente a mesma forma. Porter analisa o início de Mateus 12.36 como nominativo pendente. Isso é uma interpretação da construção, não uma distinção visível nas terminações. O exemplo ajuda a manter separados o dado morfológico e a proposta sintática.",
+        "example": {
+          "greek": "πᾶν ῥῆμα ἀργὸν … ἀποδώσουσιν περὶ αὐτοῦ λόγον.",
+          "translation": "Toda palavra inútil… prestarão contas a respeito dela.",
+          "reference": "Mateus 12.36, recorte; análise de Porter, §2.1.5"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "πᾶν",
+              "πᾶς",
+              "toda",
+              "Adjetivo; neutro singular; forma comum ao nominativo e ao acusativo"
+            ],
+            [
+              "ῥῆμα",
+              "ῥῆμα",
+              "palavra",
+              "Substantivo; neutro singular; forma comum ao nominativo e ao acusativo"
+            ],
+            [
+              "ἀργὸν",
+              "ἀργός",
+              "inútil",
+              "Adjetivo; neutro singular, grau positivo; forma comum ao nominativo e ao acusativo"
+            ],
+            [
+              "ἀποδώσουσιν",
+              "ἀποδίδωμι",
+              "prestarão",
+              "Verbo; futuro do indicativo, voz ativa, 3ª pessoa do plural"
+            ],
+            [
+              "περὶ",
+              "περί",
+              "a respeito de",
+              "Preposição; neste uso rege genitivo"
+            ],
+            [
+              "αὐτοῦ",
+              "αὐτός",
+              "dela",
+              "Pronome pessoal; genitivo neutro singular, 3ª pessoa"
+            ],
+            [
+              "λόγον",
+              "λόγος",
+              "conta",
+              "Substantivo; acusativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "Na análise de Porter, πᾶν ῥῆμα ἀργόν estabelece o tópico, retomado por περὶ αὐτοῦ. O pronome é neutro porque retoma ῥῆμα e genitivo porque depende de περί. λόγον é objeto de ἀποδώσουσιν; o português prestar contas traduz a combinação verbal. A concordância neutra inicial permite tanto nominativo quanto acusativo na forma. Outras análises podem classificá-la como acusativo pendente; o rótulo deve ser atribuído à análise adotada. Esta aula não usa a passagem para exigir que uma terminação neutra ambígua demonstre sozinha um caso único."
+      },
+      {
+        "heading": "6a. Tratamento direto com forma nominativa",
+        "body": "Uma expressão no nominativo pode identificar a pessoa a quem se dirige uma ordem ou outro enunciado. Isso é tratamento direto, função também desempenhada pelo vocativo. Porter discute diferentes maneiras de descrever a sobreposição: nominativo em lugar de vocativo, formas compartilhadas e uso não marcado para o endereçamento. Referência: Porter, §2.1.6a.\n\nDescreva a forma efetiva e depois a função. Uma expressão usada para chamar alguém não se torna, por isso, sujeito de terceira pessoa de um imperativo de segunda pessoa. A aula do vocativo amplia esse contraste.",
+        "example": {
+          "greek": "ἡ παῖς, ἔγειρε.",
+          "translation": "Menina, levanta-te.",
+          "reference": "Lucas 8.54, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ἡ",
+              "ὁ, ἡ, τό",
+              "a",
+              "Artigo; nominativo feminino singular"
+            ],
+            [
+              "παῖς",
+              "παῖς",
+              "menina",
+              "Substantivo; nominativo feminino singular nesta construção; o gênero é determinado pelo referente e pelo artigo"
+            ],
+            [
+              "ἔγειρε",
+              "ἐγείρω",
+              "levanta-te",
+              "Verbo; presente do imperativo, voz ativa, 2ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "ἡ παῖς tem forma nominativa e função de tratamento direto. O artigo oferece uma indicação formal clara do nominativo. ἔγειρε dirige a ordem à segunda pessoa do singular; seu sujeito é o interlocutor, não um sujeito de terceira pessoa criado a partir de ἡ παῖς. A vírgula representa a leitura editorial do chamamento; a pessoa verbal e a situação narrativa sustentam a análise."
+      },
+      {
+        "heading": "6b. Nomes e títulos conservados no nominativo",
+        "body": "Porter também reúne em §2.1.6b expressões nas quais um nome aparece no nominativo para identificar seu portador, mesmo quando se poderia esperar outra integração de caso. O uso de nomear deve ser distinguido do chamamento: informar o nome de alguém não é necessariamente falar com essa pessoa.\n\nO exemplo abaixo pode ser descrito como apresentação nominal. Uma análise com verbo subentendido é possível em outras abordagens; o que se observa diretamente é a ausência de verbo expresso neste recorte e a presença do nome no nominativo.",
+        "example": {
+          "greek": "ὄνομα αὐτῷ Ἰωάννης.",
+          "translation": "Seu nome era João.",
+          "reference": "João 1.6, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ὄνομα",
+              "ὄνομα",
+              "nome",
+              "Substantivo; nominativo neutro singular nesta construção; forma neutra comum ao acusativo"
+            ],
+            [
+              "αὐτῷ",
+              "αὐτός",
+              "a ele, dele",
+              "Pronome pessoal; dativo masculino singular, 3ª pessoa"
+            ],
+            [
+              "Ἰωάννης",
+              "Ἰωάννης",
+              "João",
+              "Nome próprio; nominativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "Ἰωάννης apresenta o nome do homem mencionado no contexto. αὐτῷ relaciona o nome ao seu portador e não obriga o nome próprio a aparecer no dativo. A tradução Seu nome era João organiza a expressão em português; era não corresponde a um verbo escrito neste recorte. Não há chamamento dirigido a João. Na abordagem com elipse de era, ὄνομα pode ser descrito como sujeito e Ἰωάννης como predicativo; Porter inclui o exemplo no uso nominativo de nomes."
+      },
+      {
+        "heading": "7. Tempo: uma referência nominativa rara",
+        "body": "Porter reconhece um uso temporal raro do nominativo, próximo em sentido ao acusativo de extensão de tempo. A expressão fica menos integrada à estrutura sintática e sua delimitação temporal é menos precisa do que a de construções acusativas mais regulares. Essa observação descreve o padrão; não torna todo nome temporal nominativo nem elimina a necessidade de ler o contexto. Referência: Porter, §2.1.7.",
+        "example": {
+          "greek": "ἡμέραι τρεῖς προσμένουσιν.",
+          "translation": "Faz três dias que permanecem.",
+          "reference": "Marcos 8.2, trecho; referência temporal segundo Porter"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ἡμέραι",
+              "ἡμέρα",
+              "dias",
+              "Substantivo; nominativo feminino plural"
+            ],
+            [
+              "τρεῖς",
+              "τρεῖς",
+              "três",
+              "Numeral cardinal; nominativo feminino plural nesta construção"
+            ],
+            [
+              "προσμένουσιν",
+              "προσμένω",
+              "permanecem",
+              "Verbo; presente do indicativo, voz ativa, 3ª pessoa do plural"
+            ]
+          ]
+        },
+        "analysis": "O contexto fala das pessoas da multidão que permanecem com Jesus. ἡμέραι τρεῖς situa temporalmente essa permanência: não são os dias que permanecem como participantes do acontecimento. O plural do verbo e o plural de dias não bastam para estabelecer concordância de sujeito. A paráfrase portuguesa Faz três dias explicita a leitura temporal, sem introduzir um verbo grego que estivesse escrito no trecho."
+      },
+      {
+        "heading": "Roteiro de revisão e aprofundamento",
+        "body": "Comece pela morfologia: localize o nominativo e registre ambiguidades de forma. Procure a predicação e identifique o sujeito com base em pessoa, número, construção e contexto. Se houver outro nominativo, teste predicativo, aposição, tratamento direto ou nomeação; não escolha pela posição isolada.\n\nSem verbo expresso, considere a oração nominal e diferencie essa observação da hipótese de elipse. Com um referente inicial retomado em outra função, examine o nominativo pendente. Em uma expressão temporal rara, confirme quem são os participantes reais do acontecimento.\n\nA aula Leitura aplicada: orações nominais e termos pendentes aprofunda a comparação entre enunciado sem verbo e tópico retomado. Ela funciona como prática complementar desta exposição. Ao comparar autores, registre o fenômeno e a subseção, pois palavras como absoluto e independente podem designar construções diferentes."
       }
     ],
     "examples": [
@@ -1184,19 +1842,3106 @@
         ],
         "explanation": "O aluno é o sujeito identificado neste exemplo; “professor” apresenta a identidade atribuída a ele.",
         "id": "s-nominative-extra-3"
+      },
+      {
+        "id": "s-nominative-detail-1",
+        "kind": "match",
+        "prompt": "Relacione cada exemplo ao uso indicado nesta aula.",
+        "pairs": [
+          {
+            "left": "χάρις ὑμῖν καὶ εἰρήνη",
+            "right": "Oração nominal sem verbo expresso"
+          },
+          {
+            "left": "ὄνομα αὐτῷ Ἰωάννης",
+            "right": "Apresentação de um nome"
+          },
+          {
+            "left": "ἡ παῖς, ἔγειρε",
+            "right": "Tratamento direto com forma nominativa"
+          }
+        ],
+        "explanation": "As três expressões contêm nominativos, mas realizam construções diferentes. A forma do caso não fornece uma única função."
+      },
+      {
+        "id": "s-nominative-detail-2",
+        "kind": "choice",
+        "prompt": "No recorte de Atos 7.40, como αὐτῷ se relaciona com o grupo inicial sobre Moisés?",
+        "greek": "ὁ γὰρ Μωϋσῆς οὗτος … οὐκ οἴδαμεν τί ἐγένετο αὐτῷ.",
+        "options": [
+          "Retoma o mesmo referente no dativo, com função dentro da pergunta indireta.",
+          "Concorda com Moisés no nominativo e se torna sujeito de οἴδαμεν.",
+          "Muda o referente para outra pessoa porque mudou o caso."
+        ],
+        "answer": 0,
+        "explanation": "O nominativo inicial introduz o referente; αὐτῷ o retoma como pessoa afetada pelo acontecimento. O sujeito de οἴδαμεν é nós."
+      },
+      {
+        "id": "s-nominative-detail-3",
+        "kind": "order",
+        "prompt": "Organize a tradução na sequência solicitada: termos da saudação → destinatários.",
+        "greek": "χάρις ὑμῖν καὶ εἰρήνη.",
+        "tokens": [
+          "Graça",
+          "e paz",
+          "a vocês."
+        ],
+        "answer": [
+          "Graça",
+          "e paz",
+          "a vocês."
+        ],
+        "explanation": "χάρις e εἰρήνη são os dois núcleos nominativos da saudação; ὑμῖν identifica os destinatários. O trecho não contém verbo expresso."
+      },
+      {
+        "id": "s-nominative-detail-4",
+        "kind": "choice",
+        "prompt": "Na leitura temporal de Marcos 8.2 apresentada por Porter, por que ἡμέραι τρεῖς não é analisado como sujeito de προσμένουσιν?",
+        "greek": "ἡμέραι τρεῖς προσμένουσιν.",
+        "options": [
+          "Porque toda forma nominativa plural é objeto direto.",
+          "Porque o contexto identifica a multidão como quem permanece, e o grupo indica tempo.",
+          "Porque o verbo está no singular e os nomes estão no plural."
+        ],
+        "answer": 1,
+        "explanation": "A identificação do sujeito exige contexto e sentido da construção. A coincidência do plural não basta; o exemplo é classificado por Porter como referência temporal rara."
+      },
+      {
+        "id": "s-nominative-detail-5",
+        "kind": "choice",
+        "prompt": "Qual descrição mantém separados o texto grego e o acréscimo necessário à tradução deste recorte?",
+        "greek": "ὄνομα αὐτῷ Ἰωάννης.",
+        "options": [
+          "Ἰωάννης está no dativo porque αὐτῷ também está.",
+          "O verbo era aparece escrito entre ὄνομα e αὐτῷ.",
+          "Ἰωάννης está no nominativo; era pertence à formulação portuguesa, sem verbo expresso neste recorte."
+        ],
+        "answer": 2,
+        "explanation": "A expressão relaciona o nome ao seu portador por αὐτῷ. A análise de Porter destaca a nomeação; a possibilidade de elipse é uma interpretação, não uma palavra observável no recorte."
+      },
+      {
+        "id": "s-nominative-detail-6",
+        "kind": "choice",
+        "prompt": "Na análise apresentada para João 17.3, que relação existe entre αὕτη e ἡ αἰώνιος ζωή?",
+        "greek": "αὕτη δέ ἐστιν ἡ αἰώνιος ζωή.",
+        "options": [
+          "αὕτη é sujeito; ἡ αἰώνιος ζωή funciona como predicativo.",
+          "O grupo com artigo é necessariamente sujeito, e o pronome é objeto.",
+          "São dois objetos de ἐστιν porque ambos estão no nominativo."
+        ],
+        "answer": 0,
+        "explanation": "O pronome demonstra o referente sobre o qual se faz a afirmação. O artigo do grupo predicativo não elimina o sujeito pronominal nem transforma o predicativo em objeto."
       }
     ],
     "references": [
-      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.1–2.1.3. Síntese didática original; exemplos criados para esta lição."
+      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, §§2.1–2.1.7: significado nominal, sujeito, predicativo, aposição, oração nominal, construção pendente, tratamento direto, nomes e tempo.",
+      "Material de apoio O nominativo — estudo detalhado: referência para a sequência texto, tradução, morfologia e sintaxe e para as comparações ali apresentadas. As menções a Mathewson e Emig se limitam ao excerto incluído nesse material.",
+      "Trechos do Novo Testamento com traduções portuguesas e análises morfológicas e sintáticas redigidas para esta aula. As passagens com análise alternativa são identificadas no comentário."
+    ]
+  },
+  {
+    "id": "s-vocative",
+    "area": "syntax",
+    "level": 1,
+    "order": 10,
+    "title": "O vocativo: formas e tratamento direto",
+    "summary": "Reconheça a quem se fala, compare vocativo e nominativo e analise exemplos palavra por palavra.",
+    "minutes": 20,
+    "objectives": [
+      "Reconhecer o tratamento direto e distingui-lo de sujeito e objeto",
+      "Identificar formas vocativas próprias no singular e formas compartilhadas com o nominativo",
+      "Analisar ὦ e os adjetivos que acompanham o chamamento",
+      "Usar contexto, pessoa verbal e forma nominal para justificar a leitura"
+    ],
+    "sections": [
+      {
+        "heading": "O vocativo identifica o interlocutor",
+        "body": "O vocativo é usado para dirigir a fala a alguém: chamamento, pedido, ordem, resposta ou oração. Ele identifica o destinatário do enunciado. Isso difere de apresentar essa pessoa como sujeito ou objeto da predicação. A mesma pessoa pode ser interlocutora e participante da situação, mas cada expressão deve ser analisada pela função que exerce.\n\nA exposição segue Porter, Idioms, cap. 4, §2.2, em comparação com o nominativo de tratamento direto, §2.1.6a. Cada exemplo apresenta trecho grego, tradução, tabela de todas as palavras e comentário da construção. Lema é a forma de dicionário; o sentido local não substitui a análise morfológica."
+      },
+      {
+        "heading": "1. Chamamento e estrutura da oração",
+        "body": "No exemplo didático, o professor é chamado e recebe uma orientação. O verbo está na segunda pessoa do singular; o objeto indica o que ele deve escrever. A expressão de tratamento não se torna objeto da escrita nem sujeito nominal de terceira pessoa.\n\nO vocativo não depende de um imperativo para existir. Pode acompanhar perguntas, afirmações e outros tipos de enunciado. O que o define aqui é o endereçamento da fala.",
+        "example": {
+          "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+          "translation": "Professor, escreva a palavra.",
+          "reference": "Exemplo didático criado para esta aula"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "διδάσκαλε",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo; vocativo masculino singular"
+            ],
+            [
+              "γράφε",
+              "γράφω",
+              "escreva",
+              "Verbo; presente do imperativo, voz ativa, 2ª pessoa do singular"
+            ],
+            [
+              "τὸν",
+              "ὁ, ἡ, τό",
+              "a",
+              "Artigo; acusativo masculino singular"
+            ],
+            [
+              "λόγον",
+              "λόγος",
+              "palavra",
+              "Substantivo; acusativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "διδάσκαλε identifica a pessoa a quem se dirige a orientação. γράφε apresenta o comando com sujeito de segunda pessoa, recuperado da própria forma verbal e da situação de fala. τὸν λόγον é o objeto do verbo. Artigo e substantivo estão no acusativo masculino singular; em português, o artigo fica feminino por acompanhar palavra. O chamamento aparece separado por vírgula, mas sua identificação se apoia também na forma vocativa e no contexto."
+      },
+      {
+        "heading": "2. Formas próprias no singular",
+        "body": "Alguns nomes têm um vocativo singular diferente do nominativo: uma mudança de terminação ou de forma permite reconhecer o chamamento com clareza. Não basta procurar uma única desinência vocativa universal. A forma depende da classe de flexão e do vocábulo.\n\nPorter observa que as formas distintivas se concentram em grupos de substantivos singulares; não há uma forma plural distinta do nominativo. Essa limitação formal motiva a discussão sobre como o vocativo se relaciona com o sistema de casos. Para a leitura, registre tanto a forma observada quanto sua função de tratamento.",
+        "example": {
+          "greek": "κύριε, σῶσόν με.",
+          "translation": "Senhor, salva-me.",
+          "reference": "Mateus 14.30, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "κύριε",
+              "κύριος",
+              "Senhor",
+              "Substantivo; vocativo masculino singular"
+            ],
+            [
+              "σῶσόν",
+              "σῴζω",
+              "salva",
+              "Verbo; aoristo do imperativo, voz ativa, 2ª pessoa do singular"
+            ],
+            [
+              "με",
+              "ἐγώ",
+              "me",
+              "Pronome pessoal; acusativo singular, 1ª pessoa; sem gênero marcado"
+            ]
+          ]
+        },
+        "analysis": "κύριε tem forma vocativa distinta de κύριος, o nominativo registrado no dicionário. O falante se dirige ao Senhor e pede que ele o salve. σῶσον é segunda pessoa; με indica a pessoa a ser salva, como objeto. O acento adicional de σῶσόν está ligado ao pronome enclítico seguinte e não altera o modo ou a pessoa do verbo."
+      },
+      {
+        "heading": "Contrastes para reconhecer, sem decorar uma terminação única",
+        "body": "A tabela reúne comparações de paradigma, não um recorte bíblico contínuo. O nominativo serve como forma de dicionário; a coluna seguinte mostra a forma usada no chamamento singular. Todas as formas da segunda coluna são vocativos. As diferenças precisam ser aprendidas com o léxico e a flexão do nome.",
+        "table": {
+          "headers": [
+            "Lema / nominativo singular",
+            "Vocativo singular",
+            "Sentido",
+            "Análise das formas comparadas"
+          ],
+          "rows": [
+            [
+              "διδάσκαλος",
+              "διδάσκαλε",
+              "professor",
+              "Substantivo masculino; nominativo singular em -ος e vocativo singular em -ε"
+            ],
+            [
+              "ἄνθρωπος",
+              "ἄνθρωπε",
+              "pessoa, homem",
+              "Substantivo masculino; nominativo singular em -ος e vocativo singular em -ε"
+            ],
+            [
+              "πατήρ",
+              "πάτερ",
+              "pai",
+              "Substantivo masculino; nominativo e vocativo singulares com alteração da forma do radical"
+            ],
+            [
+              "γυνή",
+              "γύναι",
+              "mulher",
+              "Substantivo feminino; vocativo singular próprio, diferente do nominativo"
+            ],
+            [
+              "Ἰησοῦς",
+              "Ἰησοῦ",
+              "Jesus",
+              "Nome próprio masculino; nominativo e vocativo singulares distintos"
+            ]
+          ]
+        },
+        "analysis": "A comparação permite reconhecer vários padrões, mas não autoriza transformar qualquer palavra terminada em -ε em vocativo. Por exemplo, a classe da palavra e a construção continuam necessárias: uma forma verbal pode terminar da mesma maneira. O vocativo também não é identificado por gênero masculino; γύναι mostra uma forma feminina própria."
+      },
+      {
+        "heading": "3. No plural, a forma pode ser a mesma do nominativo",
+        "body": "No plural, o vocativo não tem uma forma distinta da forma nominativa. Isso é uma sobreposição de forma, não uma proibição de chamar várias pessoas. O contexto de fala e a estrutura da oração mostram quando a expressão funciona como tratamento.\n\nAo descrever um plural como o do exemplo, é adequado indicar vocativo pelo uso de chamamento e registrar que sua forma é compartilhada com o nominativo. A aparência isolada da palavra não demonstra que ela seja sujeito.",
+        "example": {
+          "greek": "ἀδελφοί, προσεύχεσθε.",
+          "translation": "Irmãos, orem.",
+          "reference": "1 Tessalonicenses 5.25, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ἀδελφοί",
+              "ἀδελφός",
+              "irmãos",
+              "Substantivo; vocativo masculino plural pelo uso; forma compartilhada com o nominativo plural"
+            ],
+            [
+              "προσεύχεσθε",
+              "προσεύχομαι",
+              "orem",
+              "Verbo; presente do imperativo, voz média/passiva na forma, 2ª pessoa do plural; sentido de orar"
+            ]
+          ]
+        },
+        "analysis": "ἀδελφοί chama os destinatários da orientação. προσεύχεσθε dirige o pedido à segunda pessoa do plural. O fato de ἀδελφοί ter a mesma forma do nominativo plural não o torna sujeito nominal de terceira pessoa desse verbo. O recorte destaca apenas o chamamento e o verbo; o versículo prossegue identificando aqueles em favor de quem se pede oração."
+      },
+      {
+        "heading": "4. A partícula ὦ pode acompanhar o vocativo",
+        "body": "A partícula ὦ pode introduzir um chamamento, mas não é obrigatória: os exemplos anteriores já apresentam tratamento direto sem ela. Sua presença tampouco decide, sozinha, se a fala exprime surpresa, censura, carinho ou intensidade. Essas nuances exigem o enunciado e a situação de fala.\n\nUma tradução pode empregar Ó, manter somente o nome de tratamento ou escolher outra solução natural. A tradução da partícula não deve substituir a análise do nome que ela acompanha.",
+        "example": {
+          "greek": "ὦ γύναι.",
+          "translation": "Ó mulher!",
+          "reference": "Mateus 15.28, trecho do tratamento dirigido à mulher"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ὦ",
+              "ὦ",
+              "ó",
+              "Partícula de chamamento; invariável"
+            ],
+            [
+              "γύναι",
+              "γυνή",
+              "mulher",
+              "Substantivo; vocativo feminino singular"
+            ]
+          ]
+        },
+        "analysis": "ὦ acompanha γύναι, cuja própria forma já é vocativa. A partícula não produz o caso por flexão nem transforma γύναι em sujeito. No versículo, Jesus responde à mulher e elogia sua fé; essa informação contextual impede que se atribua à partícula um valor automático de censura. O ponto de exclamação na tradução é uma escolha de apresentação do chamamento, não um traço morfológico da palavra."
+      },
+      {
+        "heading": "5. Um adjetivo pode qualificar o vocativo",
+        "body": "O tratamento direto pode conter mais de uma palavra. Um adjetivo que qualifica o nome chamado participa de sua expressão e pode apresentar flexão vocativa. Analise a concordância em caso, gênero e número, distinguindo-a de uma oração que atribua uma qualidade por meio de um verbo.\n\nO exemplo também mostra que o vocativo não exige ὦ. A oração em que o tratamento se insere prossegue no versículo, mas o recorte abaixo destaca apenas o grupo de endereçamento.",
+        "example": {
+          "greek": "πάτερ δίκαιε.",
+          "translation": "Pai justo!",
+          "reference": "João 17.25, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "πάτερ",
+              "πατήρ",
+              "Pai",
+              "Substantivo; vocativo masculino singular"
+            ],
+            [
+              "δίκαιε",
+              "δίκαιος",
+              "justo",
+              "Adjetivo; vocativo masculino singular, grau positivo"
+            ]
+          ]
+        },
+        "analysis": "πάτερ é o nome de tratamento; δίκαιε o qualifica e concorda com ele no vocativo masculino singular. As duas palavras formam um único grupo dirigido ao interlocutor. δίκαιε não é um nominativo usado como predicativo de um verbo escrito no recorte. A forma adjetival acompanha o tratamento, e a relação não exige acrescentar um verbo ao texto grego."
+      },
+      {
+        "heading": "6. O nominativo também pode servir ao tratamento direto",
+        "body": "Porter examina esse uso em §2.1.6a e o compara ao vocativo em §2.2. Não confunda forma morfológica com função comunicativa: uma expressão nominativa, inclusive com artigo, pode ser empregada para se dirigir a alguém.\n\nAs descrições gramaticais podem falar em nominativo em lugar de vocativo ou em uso não marcado de tratamento. Para a leitura desta aula, o primeiro passo é registrar a forma efetiva e depois explicar o endereçamento. O artigo ajuda a reconhecer o nominativo no exemplo.",
+        "example": {
+          "greek": "ἡ παῖς, ἔγειρε.",
+          "translation": "Menina, levanta-te.",
+          "reference": "Lucas 8.54, trecho"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Sentido no trecho",
+            "Morfologia"
+          ],
+          "rows": [
+            [
+              "ἡ",
+              "ὁ, ἡ, τό",
+              "a",
+              "Artigo; nominativo feminino singular"
+            ],
+            [
+              "παῖς",
+              "παῖς",
+              "menina",
+              "Substantivo; nominativo feminino singular nesta construção; gênero indicado pelo artigo e pelo referente"
+            ],
+            [
+              "ἔγειρε",
+              "ἐγείρω",
+              "levanta-te",
+              "Verbo; presente do imperativo, voz ativa, 2ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "ἡ παῖς está no nominativo e exerce função de tratamento direto. O sujeito do imperativo está na segunda pessoa: a menina é chamada e recebe a ordem. A tradução portuguesa pode chamar esse grupo de vocativo pela função de chamamento, mas a descrição da forma grega deve continuar indicando nominativo. Isso permite comparar o exemplo com διδάσκαλε sem apagar a diferença de forma."
+      },
+      {
+        "heading": "Contexto, pessoa verbal e pontuação",
+        "body": "Para reconhecer o endereçamento, identifique quem fala, a quem se fala e o que se afirma ou solicita. A segunda pessoa verbal pode ser uma pista útil, mas o tratamento direto também pode acompanhar uma oração sobre outra pessoa. Uma terminação compartilhada, uma posição inicial ou uma vírgula isolada não basta.\n\nA pontuação das edições modernas expressa uma análise do texto. Use-a como apoio e confira formas, concordância e situação de fala. Evite equiparar destinatário a objeto indireto: destinatário do enunciado é a pessoa a quem se fala; objeto indireto é uma relação sintática dentro de uma construção verbal."
+      },
+      {
+        "heading": "Roteiro de revisão",
+        "body": "Localize o grupo de tratamento e descreva cada palavra. Veja se existe forma vocativa própria ou se a expressão compartilha a forma do nominativo; se houver artigo nominativo, registre-o. Identifique os adjetivos e sua concordância. A presença de ὦ é facultativa e precisa ser interpretada com o contexto.\n\nDepois analise a oração: pessoa e número do verbo, sujeito e complementos. Separe o chamamento dessa estrutura sem perder a ligação com o interlocutor. A aula do nominativo permite retomar a comparação entre tratamento direto, apresentação de nomes e sujeito; essas três funções não são equivalentes."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "translation": "Professor, escreva a palavra.",
+        "note": "διδάσκαλε é tratamento direto; o verbo está na segunda pessoa singular."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Que função διδάσκαλε exerce?",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "options": [
+          "Tratamento direto.",
+          "Objeto escrito.",
+          "Genitivo de posse."
+        ],
+        "answer": 0,
+        "explanation": "O termo identifica a pessoa a quem o comando é dirigido.",
+        "id": "s-vocative-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "A partícula ὦ é obrigatória para haver tratamento no vocativo?",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "options": [
+          "Sim; a ausência de ὦ obriga a analisar διδάσκαλε como sujeito.",
+          "Sim; somente ὦ fornece a função de chamamento.",
+          "Não; διδάσκαλε já funciona como tratamento direto sem ὦ."
+        ],
+        "answer": 2,
+        "explanation": "A função de chamamento pode ocorrer sem a partícula.",
+        "id": "s-vocative-2"
+      },
+      {
+        "kind": "order",
+        "prompt": "Organize os blocos na ordem portuguesa solicitada: chamamento → verbo → objeto.",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "tokens": [
+          "Professor,",
+          "escreva",
+          "a palavra."
+        ],
+        "answer": [
+          "Professor,",
+          "escreva",
+          "a palavra."
+        ],
+        "explanation": "O vocativo aparece como chamamento, separado da predicação do imperativo. O exercício verifica essa sequência didática; outras formulações portuguesas podem ser naturais.",
+        "id": "s-vocative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na orientação dirigida ao professor, qual termo é o objeto de γράφε?",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "options": [
+          "διδάσκαλε.",
+          "τὸν λόγον.",
+          "O interlocutor, necessariamente no nominativo."
+        ],
+        "answer": 1,
+        "explanation": "O professor é a pessoa chamada; τὸν λόγον identifica aquilo que deve ser escrito.",
+        "id": "s-vocative-extra-1"
+      },
+      {
+        "kind": "match",
+        "prompt": "Associe cada expressão à sua contribuição para a orientação.",
+        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
+        "pairs": [
+          {
+            "left": "διδάσκαλε",
+            "right": "Pessoa a quem se dirige o chamamento"
+          },
+          {
+            "left": "γράφε",
+            "right": "Forma verbal que apresenta a orientação"
+          },
+          {
+            "left": "τὸν λόγον",
+            "right": "Aquilo que se deve escrever"
+          }
+        ],
+        "explanation": "O vocativo pertence ao tratamento direto e não deve ser confundido com o objeto da predicação.",
+        "id": "s-vocative-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual mudança preserva a função de chamamento de διδάσκαλε?",
+        "greek": "διδάσκαλε, γράφε.",
+        "options": [
+          "Acrescentar ὦ: ὦ διδάσκαλε, γράφε.",
+          "Trocar o vocativo por τὸν διδάσκαλον e tratá-lo como objeto.",
+          "Analisar διδάσκαλε como sujeito de terceira pessoa de γράφε."
+        ],
+        "answer": 0,
+        "explanation": "A partícula ὦ pode acompanhar o vocativo, mas não é obrigatória para a função de tratamento direto.",
+        "id": "s-vocative-extra-3"
+      },
+      {
+        "id": "s-vocative-detail-1",
+        "kind": "choice",
+        "prompt": "Qual descrição distingue corretamente forma grega e função no tratamento de Lucas 8.54?",
+        "greek": "ἡ παῖς, ἔγειρε.",
+        "options": [
+          "ἡ παῖς tem forma nominativa e função de tratamento direto.",
+          "ἡ παῖς é objeto acusativo de ἔγειρε.",
+          "ἡ παῖς é sujeito nominal de terceira pessoa de um verbo também na terceira pessoa."
+        ],
+        "answer": 0,
+        "explanation": "O artigo indica nominativo feminino singular. O grupo chama a menina; ἔγειρε é um imperativo de segunda pessoa do singular."
+      },
+      {
+        "id": "s-vocative-detail-2",
+        "kind": "match",
+        "prompt": "Associe cada forma vocativa singular ao seu lema.",
+        "pairs": [
+          {
+            "left": "διδάσκαλε",
+            "right": "διδάσκαλος — professor"
+          },
+          {
+            "left": "πάτερ",
+            "right": "πατήρ — pai"
+          },
+          {
+            "left": "γύναι",
+            "right": "γυνή — mulher"
+          }
+        ],
+        "explanation": "O vocativo singular não tem uma terminação única para todos os nomes. O lema é a forma usada para consultar o vocábulo no dicionário."
+      },
+      {
+        "id": "s-vocative-detail-3",
+        "kind": "choice",
+        "prompt": "O que permite reconhecer ἀδελφοί como tratamento direto no exemplo, mesmo tendo forma compartilhada com o nominativo plural?",
+        "greek": "ἀδελφοί, προσεύχεσθε.",
+        "options": [
+          "A regra de que toda palavra plural é vocativa.",
+          "O contexto do pedido dirigido aos irmãos e a forma verbal de segunda pessoa do plural.",
+          "A presença obrigatória de ὦ antes de ἀδελφοί."
+        ],
+        "answer": 1,
+        "explanation": "Não há ὦ no exemplo. A forma nominal é compartilhada; a construção e a situação de fala mostram o uso de chamamento."
+      },
+      {
+        "id": "s-vocative-detail-4",
+        "kind": "choice",
+        "prompt": "Qual é a relação de δίκαιε com πάτερ no grupo de tratamento?",
+        "greek": "πάτερ δίκαιε.",
+        "options": [
+          "É um verbo no imperativo que ordena ao Pai que seja justo.",
+          "É um substantivo no acusativo que funciona como objeto.",
+          "É um adjetivo no vocativo masculino singular que qualifica o nome de tratamento."
+        ],
+        "answer": 2,
+        "explanation": "δίκαιε concorda com πάτερ em caso, gênero e número. O recorte apresenta um grupo de tratamento, sem verbo expresso."
+      },
+      {
+        "id": "s-vocative-detail-5",
+        "kind": "order",
+        "prompt": "Organize a tradução na ordem solicitada: chamamento → pedido.",
+        "greek": "ἀδελφοί, προσεύχεσθε.",
+        "tokens": [
+          "Irmãos,",
+          "orem."
+        ],
+        "answer": [
+          "Irmãos,",
+          "orem."
+        ],
+        "explanation": "ἀδελφοί chama os interlocutores; προσεύχεσθε apresenta o pedido de oração na segunda pessoa do plural. O recorte não inclui o complemento que vem depois no versículo."
+      },
+      {
+        "id": "s-vocative-detail-6",
+        "kind": "match",
+        "prompt": "Relacione cada forma do pedido à sua função.",
+        "greek": "κύριε, σῶσόν με.",
+        "pairs": [
+          {
+            "left": "κύριε",
+            "right": "Chamamento dirigido ao Senhor"
+          },
+          {
+            "left": "σῶσόν",
+            "right": "Verbo que expressa o pedido na segunda pessoa"
+          },
+          {
+            "left": "με",
+            "right": "Pronome que indica a pessoa a ser salva"
+          }
+        ],
+        "explanation": "O vocativo identifica o interlocutor, a forma verbal apresenta o pedido e o acusativo indica seu objeto. Essas relações não devem ser confundidas."
+      }
+    ],
+    "references": [
+      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, §2.2, com remissão a §2.1.6a: tratamento direto, formas vocativas, sobreposição com o nominativo, partícula ὦ e adjetivos.",
+      "Material de apoio O nominativo — estudo detalhado: referência para a sequência texto, tradução, morfologia e sintaxe e para as comparações ali apresentadas. As menções a Mathewson e Emig se limitam ao excerto incluído nesse material.",
+      "Trechos do Novo Testamento com tradução portuguesa e análise redigidas para esta aula. As comparações de paradigma e o exemplo com διδάσκαλε são materiais didáticos próprios."
+    ]
+  },
+  {
+    "id": "s-accusative",
+    "area": "syntax",
+    "level": 1,
+    "order": 11,
+    "title": "Acusativo: objeto, respeito e extensão",
+    "summary": "Estude os seis grupos de usos descritos por Porter, com exemplos analisados e atenção às construções discutidas.",
+    "minutes": 35,
+    "objectives": [
+      "Distinguir forma acusativa e função sintática.",
+      "Reconhecer objeto, cognato e os dois padrões de duplo acusativo.",
+      "Interpretar respeito, modo, duração e distância na construção inteira.",
+      "Distinguir sujeito e objeto de um infinitivo.",
+      "Entender a aposição independente e os limites da identificação do acusativo absoluto."
+    ],
+    "sections": [
+      {
+        "heading": "Antes de classificar: forma, relação e contexto",
+        "body": "Na morfologia, você identifica o caso de uma forma. Na sintaxe, pergunta a que termo ela se liga e o que faz na oração. Por exemplo, λόγον é acusativo masculino singular; em γράφω τὸν λόγον, funciona como objeto. Essa função não pertence automaticamente a toda palavra no acusativo.\n\nPorter apresenta o acusativo como o caso oblíquo de caráter menos específico em comparação aos demais casos oblíquos. “Oblíquo” designa aqui os casos diferentes do nominativo usados nas relações de complementação. “Não marcado” não significa sem sentido: significa que o caso, sozinho, não define uma relação tão específica quanto os rótulos dos diferentes usos podem sugerir. A construção e o contexto particularizam a leitura.\n\nEstudaremos os seis grupos de Idioms, cap. 4, §§2.3.1–2.3.6. O cognato fica dentro de objeto; modo e usos adverbiais aparecem no grupo de respeito. Acrescentamos uma introdução ao sujeito do infinitivo, construção mencionada por Porter com remissão ao cap. 11, §4. Nas tabelas, os termos verbais identificam as formas; a tarefa central desta aula é reconhecer as relações dos acusativos."
+      },
+      {
+        "heading": "1. Objeto de um verbo",
+        "body": "Um verbo transitivo pode apresentar uma ação dirigida a um objeto: aquilo que se escreve, vê, ama ou procura. O acusativo é frequente nessa função. Para reconhecê-la, encontre o verbo e seu sentido local antes de examinar o complemento.\n\nObjetos também podem depender de infinitivos e particípios, não apenas de verbos finitos. Além disso, certos verbos selecionam genitivo ou dativo: “objeto” é uma função, enquanto “acusativo” é um caso.",
+        "example": {
+          "greek": "γράφω τὸν λόγον.",
+          "translation": "Escrevo a palavra.",
+          "reference": "Exemplo didático; Porter, §2.3.1."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "γράφω",
+              "γράφω",
+              "escrevo",
+              "Verbo: presente, indicativo, voz ativa, 1ª pessoa singular"
+            ],
+            [
+              "τὸν",
+              "ὁ",
+              "a",
+              "Artigo: acusativo masculino singular"
+            ],
+            [
+              "λόγον",
+              "λόγος",
+              "palavra",
+              "Substantivo: acusativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "O sujeito “eu” é identificado pela forma γράφω. τὸν λόγον constitui o objeto: apresenta aquilo que escrevo. O artigo concorda com λόγον em caso, gênero e número. O masculino grego permanece mesmo quando a tradução portuguesa “palavra” é feminina."
+      },
+      {
+        "heading": "1a. Objeto cognato: verbo e nome da mesma raiz",
+        "body": "Cognato significa, neste uso, que o nome e o verbo compartilham a raiz: “combater o combate”. Porter inclui esse padrão no grupo de objeto. A combinação pode desenvolver ou qualificar a ação, sem exigir que a tradução portuguesa repita sempre a mesma raiz.",
+        "example": {
+          "greek": "τὸν καλὸν ἀγῶνα ἠγώνισμαι.",
+          "translation": "Combati o bom combate.",
+          "reference": "2 Timóteo 4.7, trecho; exemplo discutido por Porter, §2.3.1. Tradução própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τὸν",
+              "ὁ",
+              "o",
+              "Artigo: acusativo masculino singular"
+            ],
+            [
+              "καλὸν",
+              "καλός",
+              "bom",
+              "Adjetivo: acusativo masculino singular, grau positivo"
+            ],
+            [
+              "ἀγῶνα",
+              "ἀγών",
+              "combate",
+              "Substantivo: acusativo masculino singular"
+            ],
+            [
+              "ἠγώνισμαι",
+              "ἀγωνίζομαι",
+              "combati",
+              "Verbo: perfeito, indicativo, voz média, 1ª pessoa singular"
+            ]
+          ]
+        },
+        "analysis": "ἀγῶνα é o núcleo do grupo acusativo τὸν καλὸν ἀγῶνα e compartilha a raiz com ἠγώνισμαι. O objeto foi colocado antes do verbo; isso não o transforma em sujeito. καλόν qualifica o combate e concorda com ἀγῶνα."
+      },
+      {
+        "heading": "2. Duplo acusativo: objeto e predicativo",
+        "body": "No primeiro padrão, um acusativo apresenta o objeto e o outro atribui a ele uma identidade, função ou qualidade. Predicativo do objeto é o termo que faz essa atribuição. Os dois dizem respeito ao mesmo referente: o aluno é considerado professor.\n\nPorter oferece pistas para reconhecer o objeto, como pronome, artigo e nome próprio. São orientações para a construção, não uma regra de que o primeiro acusativo seja sempre o objeto.",
+        "example": {
+          "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
+          "translation": "Considero o aluno professor.",
+          "reference": "Exemplo didático; Porter, §2.3.2."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "νομίζω",
+              "νομίζω",
+              "considero",
+              "Verbo: presente, indicativo, voz ativa, 1ª pessoa singular"
+            ],
+            [
+              "τὸν",
+              "ὁ",
+              "o",
+              "Artigo: acusativo masculino singular"
+            ],
+            [
+              "μαθητὴν",
+              "μαθητής",
+              "aluno",
+              "Substantivo: acusativo masculino singular"
+            ],
+            [
+              "διδάσκαλον",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: acusativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "τὸν μαθητήν é o objeto sobre o qual recai a avaliação. διδάσκαλον é o predicativo: a identificação atribuída a esse aluno. Não há dois indivíduos, um aluno e outro professor, recebendo separadamente a ação."
+      },
+      {
+        "heading": "2a. Duplo acusativo: dois objetos distintos",
+        "body": "O segundo padrão apresenta dois complementos distintos, frequentemente uma pessoa e uma coisa. Dar alguém como exemplo é diferente de dar a alguém algo para beber: no primeiro há identificação; no segundo, dois participantes. O sentido do verbo e a relação entre os referentes decidem a análise.",
+        "example": {
+          "greek": "ποτίσῃ ὑμᾶς ποτήριον ὕδατος",
+          "translation": "dê a vocês um copo de água para beber",
+          "reference": "Marcos 9.41, recorte da oração relativa; Porter, §2.3.2. Tradução própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ποτίσῃ",
+              "ποτίζω",
+              "dê para beber",
+              "Verbo: aoristo, subjuntivo, voz ativa, 3ª pessoa singular"
+            ],
+            [
+              "ὑμᾶς",
+              "σύ",
+              "a vocês",
+              "Pronome pessoal: acusativo plural, 2ª pessoa, sem gênero marcado"
+            ],
+            [
+              "ποτήριον",
+              "ποτήριον",
+              "um copo",
+              "Substantivo: acusativo neutro singular nesta construção"
+            ],
+            [
+              "ὕδατος",
+              "ὕδωρ",
+              "de água",
+              "Substantivo: genitivo neutro singular"
+            ]
+          ]
+        },
+        "analysis": "ὑμᾶς apresenta as pessoas que recebem a bebida; ποτήριον apresenta aquilo que lhes é dado para beber. “Vocês” e “copo” não designam o mesmo referente. O português traduz ὑμᾶς com “a vocês”, embora o caso grego seja acusativo. ὕδατος depende de ποτήριον: não é um terceiro acusativo."
+      },
+      {
+        "heading": "3. Respeito, referência e usos adverbiais",
+        "body": "Um acusativo de respeito delimita em que aspecto vale uma afirmação. A pergunta útil é “quanto a quê?” ou “em que aspecto?”. Porter trata respeito como um grupo amplo, que inclui construções chamadas de modo ou adverbiais em outras gramáticas. Esses nomes não são terminações diferentes.\n\nNão confunda toda expressão preposicional no acusativo com um acusativo de respeito sem preposição. Quando houver preposição, examine sua regência e o sentido do grupo.",
+        "example": {
+          "greek": "αὐξήσωμεν εἰς αὐτὸν τὰ πάντα",
+          "translation": "cresçamos em direção a ele em todos os aspectos",
+          "reference": "Efésios 4.15, trecho; Porter, §2.3.3. Tradução própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "αὐξήσωμεν",
+              "αὐξάνω",
+              "cresçamos",
+              "Verbo: aoristo, subjuntivo, voz ativa, 1ª pessoa plural"
+            ],
+            [
+              "εἰς",
+              "εἰς",
+              "em direção a",
+              "Preposição invariável; rege acusativo"
+            ],
+            [
+              "αὐτὸν",
+              "αὐτός",
+              "ele",
+              "Pronome pessoal de 3ª pessoa: acusativo masculino singular"
+            ],
+            [
+              "τὰ",
+              "ὁ",
+              "os",
+              "Artigo: acusativo neutro plural nesta construção"
+            ],
+            [
+              "πάντα",
+              "πᾶς",
+              "todos os aspectos",
+              "Adjetivo substantivado: acusativo neutro plural nesta construção"
+            ]
+          ]
+        },
+        "analysis": "εἰς αὐτόν é um grupo preposicional; αὐτόν está no caso exigido por εἰς. τὰ πάντα delimita a amplitude do crescimento: “em todos os aspectos”. Assim, há dois grupos com acusativo, mas suas relações sintáticas são diferentes. A tradução explicita “aspectos”, palavra que não está escrita como substantivo separado no grego."
+      },
+      {
+        "heading": "3a. Acusativo junto de uma forma passiva",
+        "body": "Uma forma passiva não impede a presença de um acusativo. Porter considera que certos exemplos são mais bem compreendidos no grupo de respeito; outras gramáticas usam o nome objeto retido para algumas dessas construções. Observe a descrição efetiva antes de comparar os rótulos.",
+        "example": {
+          "greek": "βαπτισθέντες τὸ βάπτισμα",
+          "translation": "tendo sido batizados com o batismo",
+          "reference": "Lucas 7.29, trecho; Porter, §2.3.3. Tradução própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "βαπτισθέντες",
+              "βαπτίζω",
+              "tendo sido batizados",
+              "Particípio: aoristo, voz passiva, nominativo masculino plural"
+            ],
+            [
+              "τὸ",
+              "ὁ",
+              "o",
+              "Artigo: acusativo neutro singular nesta construção"
+            ],
+            [
+              "βάπτισμα",
+              "βάπτισμα",
+              "batismo",
+              "Substantivo: acusativo neutro singular nesta construção"
+            ]
+          ]
+        },
+        "analysis": "O particípio apresenta pessoas que receberam o batismo; τὸ βάπτισμα especifica o batismo em relação ao qual isso se afirma. O grupo neutro tem forma comum ao nominativo e ao acusativo, mas Porter o analisa como acusativo nesta construção. O grupo τὸ βάπτισμα não é o termo nominativo masculino plural com o qual o particípio concorda. A análise segue a construção, não apenas a aparência da terminação."
+      },
+      {
+        "heading": "4. Tempo: por quanto tempo?",
+        "body": "O acusativo pode medir a duração de uma situação. Nesse uso, o grupo não apresenta o objeto do verbo: informa a extensão temporal. Numerais e quantificadores aparecem com frequência nessas expressões. Porter reserva a elas o grupo tempo ou espaço e observa sua relação com respeito.",
+        "example": {
+          "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
+          "translation": "O aluno permanece dois dias.",
+          "reference": "Exemplo didático; Porter, §2.3.4."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ",
+              "o",
+              "Artigo: nominativo masculino singular"
+            ],
+            [
+              "μαθητὴς",
+              "μαθητής",
+              "aluno",
+              "Substantivo: nominativo masculino singular"
+            ],
+            [
+              "μένει",
+              "μένω",
+              "permanece",
+              "Verbo: presente, indicativo, voz ativa, 3ª pessoa singular"
+            ],
+            [
+              "δύο",
+              "δύο",
+              "dois",
+              "Numeral cardinal invariável; quantifica ἡμέρας"
+            ],
+            [
+              "ἡμέρας",
+              "ἡμέρα",
+              "dias",
+              "Substantivo: acusativo feminino plural nesta construção"
+            ]
+          ]
+        },
+        "analysis": "ὁ μαθητής é o sujeito. δύο ἡμέρας responde a “por quanto tempo ele permanece?”. A forma ἡμέρας poderia ter outra análise isoladamente, mas δύο e a construção de duração selecionam o acusativo plural neste exemplo. O aluno não “permanece os dias” como objeto direto."
+      },
+      {
+        "heading": "4a. Espaço: por qual distância?",
+        "body": "Um grupo acusativo também pode medir distância. O contexto de movimento permite distinguir extensão espacial de outras leituras. Às vezes a medida é expressa por um adjetivo neutro empregado adverbialmente, sem um substantivo escrito.",
+        "example": {
+          "greek": "προελθὼν μικρόν",
+          "translation": "tendo avançado um pouco",
+          "reference": "Mateus 26.39, trecho; Porter, §2.3.4. Tradução própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "προελθὼν",
+              "προέρχομαι",
+              "tendo avançado",
+              "Particípio: aoristo, voz ativa, nominativo masculino singular"
+            ],
+            [
+              "μικρόν",
+              "μικρός",
+              "um pouco",
+              "Adjetivo: acusativo neutro singular, empregado adverbialmente nesta construção"
+            ]
+          ]
+        },
+        "analysis": "μικρόν delimita a distância do avanço. Não é uma pessoa ou coisa que o sujeito faz avançar: traduz-se “um pouco adiante”. O acusativo possui força adverbial no exemplo. Em outros contextos, uma palavra de medida pode ter referência temporal; o verbo e a situação orientam a interpretação."
+      },
+      {
+        "heading": "Uma construção relacionada: sujeito de infinitivo",
+        "body": "Infinitivo é uma forma verbal que não marca pessoa como um indicativo: γράφειν significa “escrever”. Na construção abaixo, o sujeito de γράφειν é diferente do sujeito do verbo principal e aparece no acusativo. Um acusativo pode, portanto, ser sujeito de uma predicação infinitiva sem ser o sujeito nominativo do verbo principal.\n\nPorter menciona a classificação de sujeito do infinitivo por alguns gramáticos dentro de respeito e remete ao cap. 11, §4. A menção não autoriza afirmar que ele rejeite a função de sujeito nem que imponha um único rótulo a todas as ocorrências.",
+        "example": {
+          "greek": "βούλομαι τὸν μαθητὴν γράφειν τὸν λόγον.",
+          "translation": "Quero que o aluno escreva a palavra.",
+          "reference": "Exemplo didático introdutório; cf. Porter, cap. 4, §2.3.3, remissão ao cap. 11, §4."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "βούλομαι",
+              "βούλομαι",
+              "quero",
+              "Verbo: presente, indicativo, forma média/passiva, 1ª pessoa singular"
+            ],
+            [
+              "τὸν",
+              "ὁ",
+              "o",
+              "Artigo: acusativo masculino singular; acompanha μαθητήν"
+            ],
+            [
+              "μαθητὴν",
+              "μαθητής",
+              "aluno",
+              "Substantivo: acusativo masculino singular"
+            ],
+            [
+              "γράφειν",
+              "γράφω",
+              "escrever",
+              "Verbo: presente, infinitivo, voz ativa; sem pessoa ou número"
+            ],
+            [
+              "τὸν",
+              "ὁ",
+              "a",
+              "Artigo: acusativo masculino singular; acompanha λόγον"
+            ],
+            [
+              "λόγον",
+              "λόγος",
+              "palavra",
+              "Substantivo: acusativo masculino singular"
+            ]
+          ]
+        },
+        "analysis": "O sujeito de βούλομαι é “eu”. τὸν μαθητήν identifica quem escreve e é o sujeito do infinitivo γράφειν. τὸν λόγον identifica o que o aluno escreve e é o objeto desse infinitivo. Artigo e caso são iguais nos dois grupos; isso não os torna funcionalmente iguais. O português emprega “que o aluno escreva” para traduzir a construção infinitiva grega."
+      },
+      {
+        "heading": "5. Aposição independente",
+        "body": "Porter descreve um acusativo que reapresenta ou define uma oração ou um elemento dela, sem estar integrado como um objeto comum do verbo. É uma construção mais difícil do que a simples aposição de dois nomes lado a lado. O contexto completo deve ser lido antes de escolher a análise.\n\nO exemplo abaixo é um recorte: os pontos indicam palavras retiradas, não uma frase grega contínua inventada. A interpretação apresentada é a de Porter; a análise de construções independentes pode variar entre gramáticas.",
+        "example": {
+          "greek": "τὸ γὰρ ἀδύνατον τοῦ νόμου … ὁ θεὸς … κατέκρινεν τὴν ἁμαρτίαν",
+          "translation": "Pois, quanto àquilo que era impossível à lei… Deus… condenou o pecado.",
+          "reference": "Romanos 8.3, recorte; Porter, §2.3.5. Tradução explicativa própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τὸ",
+              "ὁ",
+              "aquilo",
+              "Artigo: acusativo neutro singular na análise seguida"
+            ],
+            [
+              "γὰρ",
+              "γάρ",
+              "pois",
+              "Conjunção explicativa invariável, pospositiva"
+            ],
+            [
+              "ἀδύνατον",
+              "ἀδύνατος",
+              "impossível",
+              "Adjetivo substantivado: acusativo neutro singular na análise seguida"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "à / da",
+              "Artigo: genitivo masculino singular"
+            ],
+            [
+              "νόμου",
+              "νόμος",
+              "lei",
+              "Substantivo: genitivo masculino singular"
+            ],
+            [
+              "ὁ",
+              "ὁ",
+              "—",
+              "Artigo: nominativo masculino singular"
+            ],
+            [
+              "θεὸς",
+              "θεός",
+              "Deus",
+              "Substantivo: nominativo masculino singular"
+            ],
+            [
+              "κατέκρινεν",
+              "κατακρίνω",
+              "condenou",
+              "Verbo: aoristo, indicativo, voz ativa, 3ª pessoa singular"
+            ],
+            [
+              "τὴν",
+              "ὁ",
+              "o",
+              "Artigo: acusativo feminino singular"
+            ],
+            [
+              "ἁμαρτίαν",
+              "ἁμαρτία",
+              "pecado",
+              "Substantivo: acusativo feminino singular"
+            ]
+          ]
+        },
+        "analysis": "O sujeito expresso do verbo é ὁ θεός, e seu objeto é τὴν ἁμαρτίαν. O grupo inicial τὸ ἀδύνατον τοῦ νόμου coloca em foco aquilo que a lei não podia realizar; a ação de Deus explicita o contraste. Porter inclui esse grupo na aposição independente. Não o identifique como segundo objeto de κατέκρινεν apenas por compartilhar o acusativo com ἁμαρτίαν. A forma neutra inicial não distingue visualmente nominativo de acusativo: a classificação apresentada depende da interpretação da construção."
+      },
+      {
+        "heading": "6. Acusativo absoluto: uma identificação discutida",
+        "body": "Uma construção absoluta estabelece uma predicação sem integrar seus termos à sintaxe da oração principal da maneira habitual. Na descrição de Porter, o acusativo absoluto pode reunir um particípio e um termo nominal no acusativo, ligados entre si. “Absoluto” descreve essa relativa independência sintática; não significa ausência de relação de sentido com o contexto.\n\nPorter registra desacordo sobre quantos exemplos genuínos existem no Novo Testamento. Em Atos 26.3, alguns gramáticos falam em acusativo absoluto; outros, em anacoluto, isto é, uma construção iniciada e continuada de modo diferente do esperado. A aula apresenta o debate, sem transformar uma análise discutida em resposta obrigatória.",
+        "example": {
+          "greek": "μάλιστα γνώστην ὄντα σε",
+          "translation": "sobretudo por seres conhecedor",
+          "reference": "Atos 26.3, recorte; Porter, §2.3.6. Tradução explicativa própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "μάλιστα",
+              "μάλιστα",
+              "sobretudo",
+              "Advérbio invariável, grau superlativo"
+            ],
+            [
+              "γνώστην",
+              "γνώστης",
+              "conhecedor",
+              "Substantivo: acusativo masculino singular"
+            ],
+            [
+              "ὄντα",
+              "εἰμί",
+              "sendo",
+              "Particípio: presente, voz ativa, acusativo masculino singular"
+            ],
+            [
+              "σε",
+              "σύ",
+              "tu / você",
+              "Pronome pessoal: acusativo singular, 2ª pessoa, sem gênero marcado"
+            ]
+          ]
+        },
+        "analysis": "No contexto, Paulo se dirige a Agripa e fundamenta seu pedido de audiência paciente no conhecimento que ele possui dos costumes e questões judaicas. σε identifica o interlocutor; γνώστην atribui-lhe a qualidade de conhecedor; ὄντα conecta esses elementos. A concordância acusativa existe dentro do grupo. Para decidir como ele se liga ao restante da fala, é necessário examinar o período completo e a análise defendida por cada autor."
+      },
+      {
+        "heading": "6a. Uma forma com valor de “talvez”",
+        "body": "Ao tratar construções impessoais associadas ao acusativo absoluto, Porter menciona τυχόν. Embora tenha origem e forma participiais, pode funcionar adverbialmente como “talvez”. Reconhecer a forma não exige traduzir mecanicamente “tendo acontecido” em toda ocorrência.",
+        "example": {
+          "greek": "πρὸς ὑμᾶς δὲ τυχὸν παραμενῶ",
+          "translation": "Talvez eu permaneça com vocês.",
+          "reference": "1 Coríntios 16.6, trecho; Porter, §2.3.6. Tradução própria."
+        },
+        "table": {
+          "headers": [
+            "Forma",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "πρὸς",
+              "πρός",
+              "com / junto de",
+              "Preposição invariável; rege acusativo neste uso"
+            ],
+            [
+              "ὑμᾶς",
+              "σύ",
+              "vocês",
+              "Pronome pessoal: acusativo plural, 2ª pessoa, sem gênero marcado"
+            ],
+            [
+              "δὲ",
+              "δέ",
+              "ora / e",
+              "Conjunção invariável, pospositiva"
+            ],
+            [
+              "τυχὸν",
+              "τυγχάνω",
+              "talvez",
+              "Particípio: aoristo, voz ativa, acusativo neutro singular; uso adverbial"
+            ],
+            [
+              "παραμενῶ",
+              "παραμένω",
+              "permanecerei",
+              "Verbo: futuro, indicativo, voz ativa, 1ª pessoa singular"
+            ]
+          ]
+        },
+        "analysis": "O sujeito é identificado pela primeira pessoa de παραμενῶ. πρὸς ὑμᾶς expressa a permanência junto dos destinatários. τυχόν modifica a afirmação com valor de possibilidade: “talvez”. Esse emprego não torna ὑμᾶς sujeito do verbo nem transforma cada particípio neutro isolado em acusativo absoluto."
+      },
+      {
+        "heading": "Roteiro para analisar e revisar",
+        "body": "1. Identifique a forma e mantenha possíveis ambiguidades, sobretudo no neutro.\n2. Encontre o verbo ou outro elemento de que o grupo depende. Se houver preposição, examine primeiro esse grupo.\n3. Pergunte se o termo apresenta um objeto, uma identificação atribuída ao objeto, um aspecto, uma duração ou uma distância.\n4. Se houver infinitivo, identifique separadamente quem participa de cada predicação.\n5. Em construções independentes, leia o período completo e indique o autor da análise quando ela for discutida.\n\nA prática retoma os exemplos explicados. As construções raras servem também para aprender a reconhecer os limites de uma classificação, não apenas para decorar nomes.",
+        "table": {
+          "headers": [
+            "Grupo em Porter",
+            "Pergunta ou contraste de leitura"
+          ],
+          "rows": [
+            [
+              "Objeto (§2.3.1), incluindo cognato",
+              "O que completa o verbo? O nome compartilha sua raiz?"
+            ],
+            [
+              "Duplo (§2.3.2)",
+              "Há atribuição ao mesmo referente ou dois objetos distintos?"
+            ],
+            [
+              "Respeito (§2.3.3)",
+              "Em que aspecto ou de que modo vale a afirmação?"
+            ],
+            [
+              "Tempo ou espaço (§2.3.4)",
+              "Por quanto tempo ou por qual distância?"
+            ],
+            [
+              "Aposição independente (§2.3.5)",
+              "Que elemento ou enunciado o grupo reapresenta ou define?"
+            ],
+            [
+              "Absoluto (§2.3.6)",
+              "Há predicação relativamente independente? A identificação é discutida?"
+            ]
+          ]
+        }
+      }
+    ],
+    "examples": [],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Na construção com νομίζω, que função exerce διδάσκαλον em relação a τὸν μαθητήν?",
+        "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
+        "options": [
+          "Destinatário da ação de considerar.",
+          "Predicativo do objeto.",
+          "Sujeito da oração principal."
+        ],
+        "answer": 1,
+        "explanation": "A expressão atribui ao aluno uma identificação dentro da construção de considerar.",
+        "id": "s-accusative-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na oração apresentada, que informação δύο ἡμέρας acrescenta à permanência?",
+        "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
+        "options": [
+          "Sua duração: dois dias.",
+          "Seu lugar: duas casas.",
+          "Seu destinatário: dois alunos."
+        ],
+        "answer": 0,
+        "explanation": "O acusativo mede a extensão temporal do acontecimento.",
+        "id": "s-accusative-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione os acusativos aos usos dos exemplos.",
+        "pairs": [
+          {
+            "left": "τὸν λόγον em γράφω τὸν λόγον",
+            "right": "Objeto verbal"
+          },
+          {
+            "left": "διδάσκαλον em νομίζω τὸν μαθητὴν διδάσκαλον",
+            "right": "Predicativo do objeto"
+          },
+          {
+            "left": "δύο ἡμέρας em μένει δύο ἡμέρας",
+            "right": "Extensão temporal"
+          }
+        ],
+        "explanation": "As mesmas marcas de caso participam de relações sintáticas diferentes.",
+        "id": "s-accusative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Na construção apresentada, qual grupo é o objeto ao qual se atribui a identidade de professor?",
+        "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
+        "options": [
+          "διδάσκαλον.",
+          "τὸν μαθητήν.",
+          "Um nominativo não expresso depois de διδάσκαλον."
+        ],
+        "answer": 1,
+        "explanation": "τὸν μαθητήν é o objeto da construção de considerar; διδάσκαλον é seu predicativo.",
+        "id": "s-accusative-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito → verbo → duração.",
+        "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
+        "tokens": [
+          "O aluno",
+          "permanece",
+          "dois dias."
+        ],
+        "answer": [
+          "O aluno",
+          "permanece",
+          "dois dias."
+        ],
+        "explanation": "δύο ἡμέρας mede a duração. O exemplo não apresenta “dois dias” como objeto sobre o qual recai a ação.",
+        "id": "s-accusative-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença sintática existe entre os dois acusativos destacados?",
+        "greek": "γράφω τὸν λόγον. / μένω δύο ἡμέρας.",
+        "options": [
+          "τὸν λόγον e δύο ἡμέρας são ambos sujeitos.",
+          "τὸν λόγον é duração; δύο ἡμέρας é destinatário.",
+          "τὸν λόγον é objeto; δύο ἡμέρας expressa duração."
+        ],
+        "answer": 2,
+        "explanation": "O mesmo caso pode servir ao objeto de um verbo ou à extensão temporal; a construção inteira permite distinguir os usos.",
+        "id": "s-accusative-extra-3"
+      },
+      {
+        "id": "s-accusative-cognato",
+        "kind": "choice",
+        "prompt": "Que relação torna ἀγῶνα um objeto cognato no exemplo?",
+        "greek": "τὸν καλὸν ἀγῶνα ἠγώνισμαι.",
+        "options": [
+          "O nome ἀγῶνα e o verbo ἠγώνισμαι compartilham a raiz.",
+          "ἀγῶνα é um vocativo que chama o combatente.",
+          "καλόν transforma ἀγῶνα em sujeito do verbo."
+        ],
+        "answer": 0,
+        "explanation": "Porter inclui o cognato entre os usos de objeto. O nome do combate e o verbo de combater compartilham a raiz."
+      },
+      {
+        "id": "s-accusative-dois-objetos",
+        "kind": "choice",
+        "prompt": "No recorte, ὑμᾶς e ποτήριον são dois objetos distintos. Que relação expressam?",
+        "greek": "ποτίσῃ ὑμᾶς ποτήριον ὕδατος",
+        "options": [
+          "ποτήριον atribui a identidade de copo às pessoas.",
+          "ὑμᾶς apresenta quem recebe a bebida; ποτήριον apresenta o que é dado para beber.",
+          "ὑμᾶς e ποτήριον são os dois sujeitos do verbo."
+        ],
+        "answer": 1,
+        "explanation": "As pessoas e o copo não são o mesmo referente; não há relação de objeto e predicativo entre esses dois acusativos."
+      },
+      {
+        "id": "s-accusative-respeito",
+        "kind": "choice",
+        "prompt": "Na análise apresentada por Porter, que informação τὰ πάντα acrescenta ao crescimento?",
+        "greek": "αὐξήσωμεν εἰς αὐτὸν τὰ πάντα",
+        "options": [
+          "Quem é o sujeito de cresçamos.",
+          "Quantos dias dura o crescimento.",
+          "Em que amplitude ele ocorre: em todos os aspectos."
+        ],
+        "answer": 2,
+        "explanation": "τὰ πάντα tem valor de respeito ou referência. εἰς αὐτόν é outro grupo, cujo acusativo é regido pela preposição."
+      },
+      {
+        "id": "s-accusative-passiva",
+        "kind": "choice",
+        "prompt": "Qual afirmação descreve a análise seguida na aula para τὸ βάπτισμα?",
+        "greek": "βαπτισθέντες τὸ βάπτισμα",
+        "options": [
+          "É acusativo que especifica o batismo, incluído por Porter no grupo de respeito.",
+          "É o sujeito masculino plural que determina a concordância do particípio.",
+          "É uma forma dativa porque a tradução usa “com”."
+        ],
+        "answer": 0,
+        "explanation": "A tradução “com o batismo” não muda o caso grego. Porter considera esse acusativo junto de forma passiva no grupo de respeito."
+      },
+      {
+        "id": "s-accusative-espaco",
+        "kind": "choice",
+        "prompt": "Em Mateus 26.39, pequeno avanço é a situação descrita. O que μικρόν mede nesse recorte?",
+        "greek": "προελθὼν μικρόν",
+        "options": [
+          "O destinatário do avanço.",
+          "A distância do avanço: um pouco adiante.",
+          "A pessoa que avançou."
+        ],
+        "answer": 1,
+        "explanation": "O contexto de movimento seleciona a extensão espacial, com μικρόν empregado adverbialmente."
+      },
+      {
+        "id": "s-accusative-infinitivo-sujeito",
+        "kind": "choice",
+        "prompt": "Quem realiza a ação de γράφειν, escrever, na construção apresentada?",
+        "greek": "βούλομαι τὸν μαθητὴν γράφειν τὸν λόγον.",
+        "options": [
+          "τὸν λόγον, porque todo acusativo é sujeito de infinitivo.",
+          "O sujeito de βούλομαι obrigatoriamente, pois os sujeitos nunca diferem.",
+          "τὸν μαθητήν, sujeito acusativo do infinitivo."
+        ],
+        "answer": 2,
+        "explanation": "O aluno é quem escreve; a palavra é o objeto de γράφειν. O sujeito de βούλομαι, eu, é diferente do sujeito da predicação infinitiva."
+      },
+      {
+        "id": "s-accusative-contrastes",
+        "kind": "match",
+        "prompt": "Relacione cada grupo à função que exerce no exemplo indicado.",
+        "pairs": [
+          {
+            "left": "τὸν λόγον em γράφω τὸν λόγον",
+            "right": "Objeto do verbo de escrever"
+          },
+          {
+            "left": "διδάσκαλον em νομίζω τὸν μαθητὴν διδάσκαλον",
+            "right": "Identificação atribuída ao objeto"
+          },
+          {
+            "left": "δύο ἡμέρας em μένει δύο ἡμέρας",
+            "right": "Duração da permanência"
+          },
+          {
+            "left": "τὸν μαθητήν em βούλομαι τὸν μαθητὴν γράφειν",
+            "right": "Sujeito da predicação infinitiva"
+          }
+        ],
+        "explanation": "O caso acusativo aparece em quatro relações diferentes. O verbo, a construção e os referentes permitem distingui-las."
+      },
+      {
+        "id": "s-accusative-absoluto-limites",
+        "kind": "choice",
+        "prompt": "Como apresentar o recorte de Atos 26.3 com rigor, segundo a discussão registrada por Porter?",
+        "greek": "μάλιστα γνώστην ὄντα σε",
+        "options": [
+          "Como acusativo absoluto indiscutível, aceito por todos os gramáticos.",
+          "Como construção discutida: alguns a analisam como acusativo absoluto e outros como anacoluto.",
+          "Como prova de que não existem particípios no acusativo."
+        ],
+        "answer": 1,
+        "explanation": "Porter registra divergência sobre os exemplos genuínos de acusativo absoluto. A concordância interna no acusativo não elimina a discussão sobre a ligação ao período."
+      }
+    ],
+    "references": [
+      "Stanley E. Porter. Idioms of the Greek New Testament. JSOT, 1999, cap. 4, §§2.3–2.3.6. Fonte principal: trecho fornecido sobre o acusativo. Organização dos usos conferida no material; redação, tabelas de análise e exercícios próprios.",
+      "Porter, cap. 4, §2.3.3: remissão ao cap. 11, §4, para o acusativo associado ao infinitivo. Nesta aula, a construção é introduzida com exemplo didático próprio.",
+      "Exemplos do Novo Testamento: 2Tm 4.7; Mc 9.41; Ef 4.15; Lc 7.29; Mt 26.39; Rm 8.3; At 26.3; 1Co 16.6. Recortes identificados e traduções portuguesas próprias; exemplos didáticos marcados como tais."
+    ]
+  },
+  {
+    "id": "s-dative",
+    "area": "syntax",
+    "level": 1,
+    "order": 12,
+    "title": "Dativo: relações e construções",
+    "summary": "Leia o dativo nos cinco grupos de Porter: referência, pessoas afetadas, recursos da ação, tempo e espaço e regência.",
+    "minutes": 28,
+    "objectives": [
+      "Reconhecer destinatário e instrumento em contextos claros.",
+      "Distinguir os cinco grupos de usos de Porter sem impor uma preposição portuguesa fixa.",
+      "Explicar respeito, associação, posse e esfera de referência a partir da construção.",
+      "Reconhecer o grupo instrumento, agente, causa, meio e modo, preservando suas diferenças contextuais.",
+      "Diferenciar um complemento verbal de um grupo introduzido por preposição."
+    ],
+    "sections": [
+      {
+        "heading": "Como estudar o dativo",
+        "body": "Dativo é um dos casos da flexão nominal. Caso é uma categoria gramatical expressa pelas formas da palavra. Ele participa de construções diferentes. A tradução pode usar “a”, “para”, “com”, “em”, “por” ou outra expressão; nenhuma dessas palavras portuguesas é uma tradução automática do caso.\n\nLema é a forma de dicionário. Morfologia descreve a classe e a forma da palavra; sintaxe explica sua relação com os outros termos. Regente é a palavra que organiza a construção e pode selecionar o caso de um complemento.\n\nSeguiremos os cinco grupos de Porter, Idioms, cap. 4, §§2.5.1–2.5.5. As divisões internas ajudam a descrever o contexto. Em especial, instrumento, agente, causa, meio e modo pertencem a um único grupo de Porter; não serão apresentados como cinco grupos independentes da sua taxonomia."
+      },
+      {
+        "heading": "1. Respeito e esfera de referência",
+        "body": "Um dativo de respeito delimita em relação a quê uma afirmação é feita. “Esfera” indica o âmbito em que a relação é considerada. Porter inclui essas leituras, junto de associação e posse, em §2.5.1.\n\nO exemplo é uma afirmação metafórica de Paulo; compreender seu alcance exige ler o contexto de Romanos.",
+        "example": {
+          "greek": "ἀπεθάνομεν τῇ ἁμαρτίᾳ",
+          "translation": "morremos para o pecado",
+          "reference": "Romanos 6.2, trecho citado por Porter §2.5.1; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἀπεθάνομεν",
+              "ἀποθνῄσκω",
+              "morremos",
+              "Verbo: aoristo do indicativo ativo, 1ª pessoa do plural"
+            ],
+            [
+              "τῇ",
+              "ὁ",
+              "para o",
+              "Artigo: dativo, feminino, singular"
+            ],
+            [
+              "ἁμαρτίᾳ",
+              "ἁμαρτία",
+              "pecado",
+              "Substantivo: dativo, feminino, singular"
+            ]
+          ]
+        },
+        "analysis": "O grupo τῇ ἁμαρτίᾳ delimita a relação em que se fala de morrer: em relação ao pecado. O gênero feminino é o de ἁμαρτία, embora a tradução portuguesa use “o pecado”. A função da expressão inteira orienta “para”; o artigo τῇ não equivale isoladamente a essa preposição."
+      },
+      {
+        "heading": "1. O mesmo grupo: relação possessiva",
+        "body": "Com uma expressão de existência ou de identificação, um dativo pode indicar a pessoa a quem algo está relacionado ou pertence. A língua portuguesa pode formular a relação com “ter” ou com um possessivo.",
+        "example": {
+          "greek": "ὄνομα αὐτῷ Ἰωάννης",
+          "translation": "seu nome era João",
+          "reference": "João 1.6, trecho citado por Porter §2.5.1; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ὄνομα",
+              "ὄνομα",
+              "nome",
+              "Substantivo: nominativo, neutro, singular"
+            ],
+            [
+              "αὐτῷ",
+              "αὐτός",
+              "dele; seu",
+              "Pronome pessoal: dativo, masculino, singular"
+            ],
+            [
+              "Ἰωάννης",
+              "Ἰωάννης",
+              "João",
+              "Nome próprio: nominativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "αὐτῷ indica a pessoa em relação a quem se afirma o nome. Porter apresenta o exemplo no grupo de respeito, associação e posse (§2.5.1). O trecho não expressa um verbo; a tradução “era” acompanha o contexto narrativo. Os dois nomes no nominativo participam da identificação, e αὐτῷ estabelece a relação com a pessoa."
+      },
+      {
+        "heading": "1. O mesmo grupo: associação",
+        "body": "Um dativo também pode indicar uma entidade associada à relação expressa por outra palavra. A interpretação precisa considerar o nome ou verbo que organiza o grupo. No exemplo, κοινωνία expressa comunhão ou participação compartilhada.",
+        "example": {
+          "greek": "τίς κοινωνία φωτὶ πρὸς σκότος;",
+          "translation": "Que comunhão há entre luz e trevas?",
+          "reference": "2 Coríntios 6.14, trecho citado por Porter §2.5.1; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τίς",
+              "τίς",
+              "que",
+              "Pronome interrogativo: nominativo, feminino, singular"
+            ],
+            [
+              "κοινωνία",
+              "κοινωνία",
+              "comunhão",
+              "Substantivo: nominativo, feminino, singular"
+            ],
+            [
+              "φωτὶ",
+              "φῶς",
+              "com a luz",
+              "Substantivo: dativo, neutro, singular"
+            ],
+            [
+              "πρὸς",
+              "πρός",
+              "em relação a",
+              "Preposição: neste uso, com acusativo"
+            ],
+            [
+              "σκότος",
+              "σκότος",
+              "trevas",
+              "Substantivo: acusativo, neutro, singular"
+            ]
+          ]
+        },
+        "analysis": "φωτί se relaciona a κοινωνία na construção de associação; πρὸς σκότος apresenta a outra parte da relação por meio de uma preposição. A tradução portuguesa reformula o conjunto com “entre ... e ...”. Porter inclui o exemplo em §2.5.1. O trecho não tem verbo expresso; “há” foi acrescentado na tradução para formular a pergunta."
+      },
+      {
+        "heading": "2. Vantagem, desvantagem e destinatário",
+        "body": "Porter reúne neste grupo pessoas ou entidades em cujo benefício, prejuízo ou interesse algo ocorre (§2.5.2). Inclui também o destinatário, muitas vezes chamado objeto indireto. Reconheça a relação concreta: receber uma mensagem, beneficiar-se de uma ação e ser prejudicado por ela são situações diferentes.\n\nNo exemplo didático, o amigo é quem recebe a mensagem escrita.",
+        "example": {
+          "greek": "γράφω τῷ φίλῳ.",
+          "translation": "Escrevo ao amigo.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "γράφω",
+              "γράφω",
+              "escrevo",
+              "Verbo: presente do indicativo ativo, 1ª pessoa do singular"
+            ],
+            [
+              "τῷ",
+              "ὁ",
+              "ao",
+              "Artigo: dativo, masculino, singular"
+            ],
+            [
+              "φίλῳ",
+              "φίλος",
+              "amigo",
+              "Substantivo: dativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "τῷ φίλῳ se liga diretamente a γράφω e apresenta o destinatário. Não há preposição grega expressa nesse grupo. O amigo pode receber boas ou más notícias; identificar o destinatário, por si só, não prova que a ação lhe traz vantagem."
+      },
+      {
+        "heading": "2. O mesmo grupo: uma pessoa prejudicada",
+        "body": "A leitura de desvantagem é apropriada quando o contexto mostra que a ação se volta contra a pessoa. Ela depende do sentido do acontecimento, e não de uma terminação diferente no dativo.",
+        "example": {
+          "greek": "μαρτυρεῖτε ἑαυτοῖς",
+          "translation": "vocês testemunham contra si mesmos",
+          "reference": "Mateus 23.31, trecho; exemplo complementar de desvantagem, tradução e análise próprias"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "μαρτυρεῖτε",
+              "μαρτυρέω",
+              "vocês testemunham",
+              "Verbo: presente do indicativo ativo, 2ª pessoa do plural"
+            ],
+            [
+              "ἑαυτοῖς",
+              "ἑαυτοῦ",
+              "contra si mesmos",
+              "Pronome reflexivo: dativo, masculino, plural; aqui retoma a 2ª pessoa"
+            ]
+          ]
+        },
+        "analysis": "No contexto da crítica de Mateus 23.31, o testemunho dos interlocutores os compromete. A tradução “contra si mesmos” explicita essa leitura de desvantagem. A forma μαρτυρεῖτε também pode ser imperativo em outra construção; aqui a leitura é indicativa. Este exemplo complementar ilustra a distinção contextual dentro do grupo §2.5.2."
+      },
+      {
+        "heading": "3. Instrumento, agente, causa, meio e modo: instrumento",
+        "body": "Porter reúne essas cinco relações em §2.5.3. Elas descrevem participantes ou circunstâncias envolvidos em como a ação ocorre, mas o papel concreto varia. Instrumento é o recurso material usado para realizar a ação.\n\nNo exemplo didático, cálamo é uma haste usada como instrumento de escrita.",
+        "example": {
+          "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
+          "translation": "O aluno escreve com um cálamo.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ",
+              "o",
+              "Artigo: nominativo, masculino, singular"
+            ],
+            [
+              "μαθητὴς",
+              "μαθητής",
+              "aluno",
+              "Substantivo: nominativo, masculino, singular"
+            ],
+            [
+              "γράφει",
+              "γράφω",
+              "escreve",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ],
+            [
+              "καλάμῳ",
+              "κάλαμος",
+              "com um cálamo",
+              "Substantivo: dativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "ὁ μαθητής é sujeito de γράφει. καλάμῳ indica o objeto com que a escrita é realizada: o instrumento. Seu dativo não o torna destinatário da mensagem. A tradução “com um cálamo” descreve a relação instrumental da construção."
+      },
+      {
+        "heading": "3. O mesmo grupo: meio",
+        "body": "Meio é o recurso pelo qual a ação se realiza. A fronteira entre meio e instrumento pode variar conforme a descrição gramatical. Um veículo, por exemplo, pode ser descrito como meio de deslocamento.",
+        "example": {
+          "greek": "τῷ πλοιαρίῳ ἦλθον",
+          "translation": "eles vieram no pequeno barco",
+          "reference": "João 21.8, trecho citado por Porter §2.5.3; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τῷ",
+              "ὁ",
+              "no",
+              "Artigo: dativo, neutro, singular"
+            ],
+            [
+              "πλοιαρίῳ",
+              "πλοιάριον",
+              "pequeno barco",
+              "Substantivo: dativo, neutro, singular"
+            ],
+            [
+              "ἦλθον",
+              "ἔρχομαι",
+              "vieram",
+              "Verbo: aoristo do indicativo ativo, aqui, 3ª pessoa do plural"
+            ]
+          ]
+        },
+        "analysis": "Em João 21.8, τῷ πλοιαρίῳ apresenta o recurso de transporte dos discípulos. Porter o inclui no conjunto de §2.5.3. O contexto identifica o sujeito plural de ἦλθον; essa forma, isolada, também pode ser 1ª pessoa do singular. A tradução com “no” não introduz uma preposição grega que esteja escrita no trecho."
+      },
+      {
+        "heading": "3. O mesmo grupo: causa",
+        "body": "A causa apresenta aquilo em razão de que a situação ocorre. Ela pode ser expressa por um dativo, conforme a construção. Diferencie a razão do acontecimento do recurso utilizado para realizá-lo.",
+        "example": {
+          "greek": "λιμῷ ὧδε ἀπόλλυμαι",
+          "translation": "aqui estou morrendo de fome",
+          "reference": "Lucas 15.17, trecho citado por Porter §2.5.3; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "λιμῷ",
+              "λιμός",
+              "de fome",
+              "Substantivo: dativo, feminino, singular neste contexto"
+            ],
+            [
+              "ὧδε",
+              "ὧδε",
+              "aqui",
+              "Advérbio de lugar: invariável"
+            ],
+            [
+              "ἀπόλλυμαι",
+              "ἀπόλλυμι",
+              "estou morrendo",
+              "Verbo: presente do indicativo, forma média/passiva, 1ª pessoa do singular; aqui, sentido médio intransitivo"
+            ]
+          ]
+        },
+        "analysis": "λιμῷ expressa a causa da situação descrita: a fome. ὧδε situa a fala no lugar em que o personagem está. Porter apresenta o exemplo entre as relações do grupo §2.5.3. O substantivo λιμός admite variação de gênero; aqui a análise segue o feminino usado nesta narrativa e registrado para Lucas 15.17 na interlinear do SBLGNT. A tradução portuguesa “de fome” não transforma λιμῷ em genitivo."
+      },
+      {
+        "heading": "3. O mesmo grupo: modo",
+        "body": "Modo descreve a maneira como a ação se realiza. No exemplo didático, o contexto descreve uma pessoa escrevendo de maneira alegre. Em outras situações, um sentimento pode também ser relacionado à causa de uma ação; a classificação depende da leitura do contexto.",
+        "example": {
+          "greek": "χαρᾷ γράφει.",
+          "translation": "Escreve com alegria.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "χαρᾷ",
+              "χαρά",
+              "com alegria",
+              "Substantivo: dativo, feminino, singular"
+            ],
+            [
+              "γράφει",
+              "γράφω",
+              "escreve",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "A leitura proposta destaca a maneira de escrever. χαρᾷ é descrito como dativo de modo, dentro do grupo de Porter §2.5.3. A pessoa que escreve é recuperada pelo contexto; a forma verbal está na 3ª pessoa do singular."
+      },
+      {
+        "heading": "3. O mesmo grupo: agente em construção passiva",
+        "body": "Agente é quem realiza a ação. Um dativo pode ter essa função em certas construções passivas, sobretudo no contexto de formas perfeitas, mas esse uso é raro no Novo Testamento. A simples presença de uma pessoa no dativo não basta para identificá-la como agente.\n\nO exemplo abaixo é apresentado por Porter em §2.5.3; outras análises podem discutir os limites entre agência e relações próximas.",
+        "example": {
+          "greek": "οὐδὲν ἄξιον θανάτου ἐστὶν πεπραγμένον αὐτῷ",
+          "translation": "nada digno de morte foi praticado por ele",
+          "reference": "Lucas 23.15, trecho citado por Porter §2.5.3; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "οὐδὲν",
+              "οὐδείς",
+              "nada",
+              "Pronome indefinido negativo: nominativo, neutro, singular"
+            ],
+            [
+              "ἄξιον",
+              "ἄξιος",
+              "digno",
+              "Adjetivo: nominativo, neutro, singular"
+            ],
+            [
+              "θανάτου",
+              "θάνατος",
+              "de morte",
+              "Substantivo: genitivo, masculino, singular"
+            ],
+            [
+              "ἐστὶν",
+              "εἰμί",
+              "é; está",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ],
+            [
+              "πεπραγμένον",
+              "πράσσω",
+              "praticado",
+              "Particípio: perfeito, passivo, nominativo, neutro, singular"
+            ],
+            [
+              "αὐτῷ",
+              "αὐτός",
+              "por ele",
+              "Pronome pessoal: dativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "ἐστίν e o particípio πεπραγμένον formam uma expressão verbal passiva. οὐδέν é o sujeito; ἄξιον o caracteriza, e θανάτου completa a ideia de “digno”. Na leitura de agência apresentada por Porter, αὐτῷ identifica quem teria praticado a ação. O texto nega que algo digno de morte tenha sido praticado por ele."
+      },
+      {
+        "heading": "4. Tempo",
+        "body": "O dativo pode situar uma ação em um momento ou período determinado. Porter reúne tempo e espaço em §2.5.4. Observe a expressão concreta e o contexto, em vez de decorar uma oposição temporal rígida entre os casos.",
+        "example": {
+          "greek": "τῇ τρίτῃ ἡμέρᾳ ἐγερθήσεται",
+          "translation": "no terceiro dia, ele será ressuscitado",
+          "reference": "Mateus 20.19, trecho citado por Porter §2.5.4; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τῇ",
+              "ὁ",
+              "no",
+              "Artigo: dativo, feminino, singular"
+            ],
+            [
+              "τρίτῃ",
+              "τρίτος",
+              "terceiro",
+              "Adjetivo numeral ordinal: dativo, feminino, singular"
+            ],
+            [
+              "ἡμέρᾳ",
+              "ἡμέρα",
+              "dia",
+              "Substantivo: dativo, feminino, singular"
+            ],
+            [
+              "ἐγερθήσεται",
+              "ἐγείρω",
+              "será ressuscitado",
+              "Verbo: futuro do indicativo passivo, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "O grupo τῇ τρίτῃ ἡμέρᾳ situa temporalmente a ação de ἐγερθήσεται. Artigo, numeral e substantivo concordam em dativo feminino singular. A tradução “no terceiro dia” resulta da função temporal do grupo."
+      },
+      {
+        "heading": "4. Espaço e a presença de preposição",
+        "body": "O grupo tempo e espaço também inclui a localização. No Novo Testamento, o dativo espacial sem preposição é limitado. Com frequência, uma preposição como ἐν introduz o grupo e precisa entrar na análise.\n\nO exemplo didático permite comparar a construção com γράφω τῷ φίλῳ.",
+        "example": {
+          "greek": "μένω ἐν τῷ οἴκῳ.",
+          "translation": "Permaneço na casa.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "μένω",
+              "μένω",
+              "permaneço",
+              "Verbo: presente do indicativo ativo, 1ª pessoa do singular"
+            ],
+            [
+              "ἐν",
+              "ἐν",
+              "em",
+              "Preposição: com dativo"
+            ],
+            [
+              "τῷ",
+              "ὁ",
+              "a",
+              "Artigo: dativo, masculino, singular"
+            ],
+            [
+              "οἴκῳ",
+              "οἶκος",
+              "casa",
+              "Substantivo: dativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "ἐν rege τῷ οἴκῳ e o grupo completo localiza a permanência. O dativo integra uma expressão preposicional. Em γράφω τῷ φίλῳ, o grupo dativo se liga diretamente ao verbo, sem preposição expressa. A tradução “na casa” reúne a preposição e o artigo em português."
+      },
+      {
+        "heading": "4. Uma expressão espacial fixada pelo uso",
+        "body": "Porter observa a limitação dos usos espaciais e inclui expressões de forma dativa empregadas como advérbios. Elas não autorizam atribuir valor de lugar a qualquer dativo.",
+        "example": {
+          "greek": "κύκλῳ",
+          "translation": "ao redor",
+          "reference": "Romanos 15.19, palavra citada por Porter §2.5.4; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "κύκλῳ",
+              "κύκλῳ",
+              "ao redor",
+              "Advérbio de origem dativa, relacionado a κύκλος; invariável neste uso"
+            ]
+          ]
+        },
+        "analysis": "Em Romanos 15.19, κύκλῳ ajuda a descrever a abrangência espacial do percurso. A expressão conserva uma forma de origem dativa, mas funciona adverbialmente. Este caso reforça a necessidade de analisar a expressão em seu uso concreto, conforme o grupo de Porter §2.5.4."
+      },
+      {
+        "heading": "5. Objeto e regência",
+        "body": "Certos verbos e outras palavras selecionam um complemento em dativo. A forma do complemento faz parte da construção que deve ser aprendida com o vocábulo. Porter trata esse conjunto em §2.5.5.\n\nNo exemplo didático, πιστεύω expressa confiança na pessoa indicada pelo dativo.",
+        "example": {
+          "greek": "πιστεύω τῷ θεῷ.",
+          "translation": "Confio em Deus.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "πιστεύω",
+              "πιστεύω",
+              "confio",
+              "Verbo: presente do indicativo ativo, 1ª pessoa do singular"
+            ],
+            [
+              "τῷ",
+              "ὁ",
+              "em",
+              "Artigo: dativo, masculino, singular"
+            ],
+            [
+              "θεῷ",
+              "θεός",
+              "Deus",
+              "Substantivo: dativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "τῷ θεῷ completa πιστεύω nessa construção. A tradução portuguesa usa “em”, mas não há uma preposição grega expressa no trecho. O sentido lexical do verbo e sua regência orientam a análise; classificar todo dativo como destinatário deixaria de explicar essa relação."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "γράφω τῷ φίλῳ.",
+        "translation": "Escrevo ao amigo.",
+        "note": "Exemplo didático analisado integralmente no quadro de destinatário, dentro do grupo vantagem e desvantagem de Porter."
+      },
+      {
+        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
+        "translation": "O aluno escreve com um cálamo.",
+        "note": "Exemplo didático analisado integralmente no quadro de instrumento, dentro do grupo instrumento, agente, causa, meio e modo de Porter."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Que relação τῷ φίλῳ expressa?",
+        "greek": "γράφω τῷ φίλῳ.",
+        "options": [
+          "Predicativo do sujeito.",
+          "Destinatário.",
+          "Objeto que está sendo escrito."
+        ],
+        "answer": 1,
+        "explanation": "O amigo é a pessoa a quem se escreve.",
+        "id": "s-dative-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que relação καλάμῳ expressa na leitura proposta?",
+        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
+        "options": [
+          "Instrumento.",
+          "Sujeito agente.",
+          "Conjunto partitivo."
+        ],
+        "answer": 0,
+        "explanation": "O cálamo é o meio material usado para escrever.",
+        "id": "s-dative-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione os exemplos à descrição contextual.",
+        "pairs": [
+          {
+            "left": "τῷ φίλῳ em γράφω τῷ φίλῳ",
+            "right": "Pessoa destinatária"
+          },
+          {
+            "left": "καλάμῳ em γράφει καλάμῳ",
+            "right": "Meio instrumental"
+          },
+          {
+            "left": "ἐν τῷ οἴκῳ",
+            "right": "Complemento de preposição"
+          }
+        ],
+        "explanation": "O dativo integra construções diferentes, que precisam ser interpretadas em conjunto.",
+        "id": "s-dative-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual é o regente verbal do dativo τῷ φίλῳ no exemplo?",
+        "greek": "γράφω τῷ φίλῳ.",
+        "options": [
+          "φίλῳ.",
+          "γράφω.",
+          "Uma preposição necessariamente omitida."
+        ],
+        "answer": 1,
+        "explanation": "O dativo se relaciona ao verbo de escrever como destinatário. Não há preposição expressa no grupo.",
+        "id": "s-dative-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Traduza na sequência sujeito → verbo → instrumento.",
+        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
+        "tokens": [
+          "com um cálamo.",
+          "escreve",
+          "O aluno"
+        ],
+        "answer": [
+          "O aluno",
+          "escreve",
+          "com um cálamo."
+        ],
+        "explanation": "A tradução com “com” representa o instrumento usado para escrever neste exemplo; não é equivalente obrigatório de todo dativo.",
+        "id": "s-dative-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Que diferença de construção deve ser preservada ao analisar estes dativos?",
+        "greek": "γράφω τῷ φίλῳ. / μένω ἐν τῷ οἴκῳ.",
+        "options": [
+          "τῷ φίλῳ liga-se diretamente ao verbo; τῷ οἴκῳ é complemento de ἐν.",
+          "Ambos são complementos de uma preposição expressa.",
+          "Ambos devem ser classificados como destinatário apenas por serem dativos."
+        ],
+        "answer": 0,
+        "explanation": "O caso é compartilhado, mas a presença de ἐν modifica a organização da expressão e precisa entrar na análise.",
+        "id": "s-dative-extra-3"
+      },
+      {
+        "id": "s-dative-respect-new",
+        "kind": "choice",
+        "greek": "ἀπεθάνομεν τῇ ἁμαρτίᾳ",
+        "prompt": "Na leitura de Romanos 6.2 apresentada na lição, qual pergunta ajuda a explicar τῇ ἁμαρτίᾳ?",
+        "options": [
+          "Em relação a quê se afirma “morremos”?",
+          "Com qual ferramenta física se realizou a ação?",
+          "A quem se enviou uma carta?"
+        ],
+        "answer": 0,
+        "explanation": "O grupo delimita o âmbito da afirmação: morrer em relação ao pecado. Porter o inclui no grupo de respeito, associação, posse e esfera."
+      },
+      {
+        "id": "s-dative-possession-new",
+        "kind": "choice",
+        "greek": "ὄνομα αὐτῷ Ἰωάννης",
+        "prompt": "Qual relação αὐτῷ estabelece no trecho de João 1.6?",
+        "options": [
+          "A data em que João nasceu.",
+          "A pessoa em relação a quem se afirma o nome.",
+          "O instrumento usado para escrever o nome."
+        ],
+        "answer": 1,
+        "explanation": "A expressão identifica o nome da pessoa. A tradução pode usar um possessivo: “seu nome era João”. O dativo não exige a tradução “ao” neste contexto."
+      },
+      {
+        "id": "s-dative-association-new",
+        "kind": "choice",
+        "greek": "τίς κοινωνία φωτὶ πρὸς σκότος;",
+        "prompt": "Qual análise preserva a organização do trecho de 2 Coríntios 6.14?",
+        "options": [
+          "φωτί está no dativo e se relaciona a κοινωνία; σκότος está no acusativo depois de πρός.",
+          "φωτί e σκότος estão ambos no dativo depois da mesma preposição.",
+          "Todo o trecho descreve o instrumento de uma ação de escrever."
+        ],
+        "answer": 0,
+        "explanation": "A associação com a luz é apresentada por φωτί; a relação com as trevas, por πρὸς σκότος. A tradução com “entre ... e ...” reformula a construção grega."
+      },
+      {
+        "id": "s-dative-group-three-new",
+        "kind": "match",
+        "prompt": "Relacione as expressões às leituras propostas nos exemplos da lição. Todas pertencem ao mesmo grupo de Porter §2.5.3.",
+        "pairs": [
+          {
+            "left": "καλάμῳ em γράφει καλάμῳ",
+            "right": "Instrumento de escrita"
+          },
+          {
+            "left": "τῷ πλοιαρίῳ em João 21.8",
+            "right": "Meio de deslocamento"
+          },
+          {
+            "left": "λιμῷ em Lucas 15.17",
+            "right": "Causa da situação"
+          },
+          {
+            "left": "χαρᾷ no exemplo de escrita alegre",
+            "right": "Modo de realizar a ação"
+          }
+        ],
+        "explanation": "Instrumento, meio, causa e modo descrevem relações diferentes no contexto, mas integram o grupo maior que Porter reúne com agência em §2.5.3."
+      },
+      {
+        "id": "s-dative-agent-new",
+        "kind": "choice",
+        "greek": "οὐδὲν ἄξιον θανάτου ἐστὶν πεπραγμένον αὐτῷ",
+        "prompt": "Na análise de Lucas 23.15 apresentada por Porter, que evidência sustenta a leitura de agente para αὐτῷ?",
+        "options": [
+          "O pronome está no dativo, o que sempre basta para identificar agente.",
+          "A expressão passiva com particípio perfeito permite relacionar αὐτῷ a quem praticaria a ação.",
+          "Todo dativo de pessoa exprime o remetente de uma carta."
+        ],
+        "answer": 1,
+        "explanation": "A leitura se apoia na construção passiva e no contexto. Porter apresenta esse exemplo de agência, mas o uso é raro; o caso isolado não basta."
+      },
+      {
+        "id": "s-dative-time-new",
+        "kind": "choice",
+        "greek": "τῇ τρίτῃ ἡμέρᾳ ἐγερθήσεται",
+        "prompt": "Que informação o grupo τῇ τρίτῃ ἡμέρᾳ acrescenta em Mateus 20.19?",
+        "options": [
+          "O momento em que a ação é situada.",
+          "A ferramenta utilizada para escrever.",
+          "A pessoa que recebe uma carta."
+        ],
+        "answer": 0,
+        "explanation": "O grupo situa a ação no terceiro dia. Artigo, numeral e substantivo concordam em dativo feminino singular."
+      },
+      {
+        "id": "s-dative-regency-new",
+        "kind": "choice",
+        "greek": "πιστεύω τῷ θεῷ.",
+        "prompt": "Qual procedimento explica melhor o dativo neste exemplo de confiança?",
+        "options": [
+          "Traduzir τῷ sempre por “ao”, independentemente da frase.",
+          "Verificar a construção πιστεύω com complemento dativo e seu sentido no contexto.",
+          "Acrescentar uma preposição grega que não está escrita."
+        ],
+        "answer": 1,
+        "explanation": "O complemento τῷ θεῷ é selecionado nessa construção de πιστεύω. A tradução “confio em Deus” descreve a relação em português."
+      },
+      {
+        "id": "s-dative-location-order-new",
+        "kind": "order",
+        "greek": "μένω ἐν τῷ οἴκῳ.",
+        "prompt": "Organize a tradução na sequência verbo → localização.",
+        "tokens": [
+          "na casa.",
+          "Permaneço"
+        ],
+        "answer": [
+          "Permaneço",
+          "na casa."
+        ],
+        "explanation": "O grupo ἐν τῷ οἴκῳ localiza a permanência. τῷ οἴκῳ é complemento da preposição ἐν, que rege dativo."
+      }
+    ],
+    "references": [
+      "Porter, Stanley E. Idioms of the Greek New Testament. Sheffield: JSOT, 1999, cap. 4, §§2.5.1–2.5.5. Fonte principal e organização dos cinco grupos de usos; instrumento, agente, causa, meio e modo preservados como grupo único.",
+      "Trechos de Romanos 6.2, João 1.6, 2 Coríntios 6.14, João 21.8, Lucas 15.17, Lucas 23.15, Mateus 20.19 e Romanos 15.19 conferidos nos exemplos do material de Porter fornecido. Traduções e comentários próprios.",
+      "Mateus 23.31: trecho complementar conferido em The Greek New Testament: SBL Edition. https://biblia.com/bible/sblgnt/matthew/23/31-38 . Tradução e aplicação didática de desvantagem próprias.",
+      "The Greek New Testament: SBL Edition, interlinear de Lucas, Lucas 15.14 e 15.17: conferência do gênero feminino de λιμός/λιμῷ neste contexto. https://sblgnt.com/download/revint/63-Luke.pdf .",
+      "Exemplos identificados como didáticos, análise morfológica, quadros e exercícios elaborados para esta lição. As classificações descrevem leituras contextualizadas; a terminologia e os limites podem variar entre gramáticas."
+    ]
+  },
+  {
+    "id": "s-genitive-nouns",
+    "area": "syntax",
+    "level": 1,
+    "order": 13,
+    "title": "Genitivo: relações e construções",
+    "summary": "Estude os usos do genitivo na organização de Porter, com exemplos, análise palavra por palavra e justificativas.",
+    "minutes": 32,
+    "objectives": [
+      "Localizar o nome, verbo ou outra expressão a que o genitivo se liga.",
+      "Distinguir os dez grupos de usos apresentados por Porter sem transformar as etiquetas em traduções fixas.",
+      "Comparar leituras subjetiva e objetiva e justificar uma interpretação pelo contexto.",
+      "Reconhecer a estrutura básica do genitivo absoluto e aprofundá-la na lição de particípios."
+    ],
+    "sections": [
+      {
+        "heading": "Como estudar o genitivo",
+        "body": "Genitivo é um dos casos da flexão nominal. Caso é uma categoria gramatical expressa pelas formas da palavra. Sua função concreta depende da construção. Um genitivo pode acompanhar um nome, um verbo, um comparativo ou uma preposição; a tradução portuguesa com “de” não explica todas essas relações.\n\nMorfologia identifica classe e forma: substantivo, genitivo, masculino, singular, por exemplo. Sintaxe explica a relação com os outros termos. Lema é a forma de dicionário. Regente é a palavra que organiza a construção e pode selecionar o caso de um complemento.\n\nEsta lição acompanha os dez grupos de Porter, Idioms, cap. 4, §§2.4.1–2.4.10. Em cada exemplo, leia a tradução própria, confira todas as palavras na tabela e depois acompanhe o comentário sintático. Fragmentos sem verbo também podem mostrar uma relação nominal. Os exemplos criados para ensinar vêm identificados como didáticos."
+      },
+      {
+        "heading": "1. Qualidade, definição e descrição",
+        "body": "Um genitivo pode caracterizar o nome a que se liga. Nesse grupo, Porter reúne relações que descrevem uma qualidade ou delimitam a referência do nome. Uma paráfrase com um adjetivo pode ajudar, mas precisa conservar o sentido do contexto.\n\nNo exemplo didático, imagine uma pessoa conhecida por promover a paz.",
+        "example": {
+          "greek": "ἄνθρωπος εἰρήνης",
+          "translation": "uma pessoa pacífica",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἄνθρωπος",
+              "ἄνθρωπος",
+              "pessoa",
+              "Substantivo: nominativo, masculino, singular"
+            ],
+            [
+              "εἰρήνης",
+              "εἰρήνη",
+              "de paz",
+              "Substantivo: genitivo, feminino, singular"
+            ]
+          ]
+        },
+        "analysis": "εἰρήνης caracteriza ἄνθρωπος: a pessoa é descrita por sua relação com a paz. O contexto proposto favorece qualidade ou descrição, dentro do grupo de Porter §2.4.1. Não estamos dizendo que a pessoa possui a paz como possui um objeto."
+      },
+      {
+        "heading": "2. Parte de um conjunto",
+        "body": "O genitivo partitivo apresenta o todo do qual se destaca uma parte. Essa parte pode ser um indivíduo, um grupo menor ou uma quantidade. A pergunta útil é: “um dentre qual conjunto?”.",
+        "example": {
+          "greek": "εἷς τῶν μαθητῶν γράφει.",
+          "translation": "Um dos alunos escreve.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "εἷς",
+              "εἷς",
+              "um",
+              "Numeral: nominativo, masculino, singular"
+            ],
+            [
+              "τῶν",
+              "ὁ",
+              "dos",
+              "Artigo: genitivo, masculino, plural"
+            ],
+            [
+              "μαθητῶν",
+              "μαθητής",
+              "alunos",
+              "Substantivo: genitivo, masculino, plural"
+            ],
+            [
+              "γράφει",
+              "γράφω",
+              "escreve",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "εἷς funciona como sujeito de γράφει. O grupo τῶν μαθητῶν apresenta o conjunto dos alunos; εἷς destaca um membro desse conjunto. Essa é a relação partitiva de Porter §2.4.2. O gênero e o número do artigo são identificados pela concordância com μαθητῶν."
+      },
+      {
+        "heading": "3. Posse, propriedade, origem e fonte: posse",
+        "body": "Porter reúne posse, propriedade, origem e fonte em um mesmo grupo (§2.4.3). A leitura possessiva é adequada quando o contexto estabelece pertencimento.\n\nNeste exemplo didático, o aluno é o proprietário da casa.",
+        "example": {
+          "greek": "ὁ οἶκος τοῦ μαθητοῦ μένει.",
+          "translation": "A casa do aluno permanece.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ",
+              "a",
+              "Artigo: nominativo, masculino, singular"
+            ],
+            [
+              "οἶκος",
+              "οἶκος",
+              "casa",
+              "Substantivo: nominativo, masculino, singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "do",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "μαθητοῦ",
+              "μαθητής",
+              "aluno",
+              "Substantivo: genitivo, masculino, singular"
+            ],
+            [
+              "μένει",
+              "μένω",
+              "permanece",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "ὁ οἶκος é sujeito de μένει. τοῦ μαθητοῦ depende do núcleo οἶκος e, no contexto proposto, informa a quem a casa pertence. O artigo grego é masculino porque οἶκος é masculino; a tradução portuguesa usa “a casa”. Sem o contexto de propriedade, “casa do aluno” também poderia indicar moradia ou outra associação."
+      },
+      {
+        "heading": "3. O mesmo grupo: origem e fonte",
+        "body": "No mesmo grupo de Porter, o genitivo também pode indicar de onde algo provém. Origem ou fonte não se reduz a posse material. A relação entre as palavras e a situação apresentada orienta a leitura.\n\nImagine que alguém identifica a voz que acaba de ouvir.",
+        "example": {
+          "greek": "ἡ φωνὴ τοῦ διδασκάλου",
+          "translation": "a voz do professor",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἡ",
+              "ὁ",
+              "a",
+              "Artigo: nominativo, feminino, singular"
+            ],
+            [
+              "φωνὴ",
+              "φωνή",
+              "voz",
+              "Substantivo: nominativo, feminino, singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "do",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "διδασκάλου",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: genitivo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "O grupo τοῦ διδασκάλου depende de φωνή e identifica, no contexto proposto, a pessoa de quem a voz procede. A leitura de fonte é compatível com a relação possessiva mais ampla. As etiquetas descrevem aspectos da relação; não precisam funcionar como compartimentos sem sobreposição."
+      },
+      {
+        "heading": "4. Aposição: um termo explica o outro",
+        "body": "Em uma relação apositiva, uma expressão esclarece a identidade ou o conteúdo de outra. A pergunta é se o segundo nome explica o que o primeiro designa. Nem todo grupo “nome + genitivo” tem essa relação.",
+        "example": {
+          "greek": "περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ",
+          "translation": "a respeito do templo de seu corpo",
+          "reference": "João 2.21, trecho citado por Porter §2.4.4; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "περὶ",
+              "περί",
+              "a respeito de",
+              "Preposição: neste uso, com genitivo"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "o",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "ναοῦ",
+              "ναός",
+              "templo",
+              "Substantivo: genitivo, masculino, singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "do",
+              "Artigo: genitivo, neutro, singular"
+            ],
+            [
+              "σώματος",
+              "σῶμα",
+              "corpo",
+              "Substantivo: genitivo, neutro, singular"
+            ],
+            [
+              "αὐτοῦ",
+              "αὐτός",
+              "dele; seu",
+              "Pronome pessoal: genitivo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "περί rege o grupo τοῦ ναοῦ. No contexto de João 2.21, τοῦ σώματος explica que “templo” se refere ao corpo de Jesus; αὐτοῦ se liga a σώματος e indica de quem é o corpo. Porter apresenta a relação explicativa entre templo e corpo em §2.4.4. É uma identificação metafórica contextual, não a ideia de um edifício pertencente a um corpo."
+      },
+      {
+        "heading": "5. Objetivo: quem recebe a ação implícita",
+        "body": "Alguns substantivos apresentam uma ação ou uma relação: amor, ensino, julgamento. Um genitivo objetivo identifica o alvo ou o objeto dessa ação implícita. “Objetivo” aqui é uma classificação sintática; não significa imparcial.\n\nNo contexto didático desta seção, os alunos amam o professor.",
+        "example": {
+          "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+          "translation": "o amor dirigido ao professor",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἡ",
+              "ὁ",
+              "o",
+              "Artigo: nominativo, feminino, singular"
+            ],
+            [
+              "ἀγάπη",
+              "ἀγάπη",
+              "amor",
+              "Substantivo: nominativo, feminino, singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "ao; do",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "διδασκάλου",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: genitivo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "O professor recebe o amor: na paráfrase “os alunos amam o professor”, ele ocupa a posição de objeto. Essa paráfrase sustenta a leitura objetiva de τοῦ διδασκάλου, conforme Porter §2.4.5. O caso genitivo permanece, embora a tradução portuguesa use “ao”."
+      },
+      {
+        "heading": "6. Subjetivo: quem exerce a ação implícita",
+        "body": "Um genitivo subjetivo identifica quem exerce a ação ou vive a relação expressa pelo nome. Compare com a seção anterior: as formas gregas podem permanecer iguais, e o contexto altera a interpretação.\n\nAgora, no contexto didático, o professor demonstra amor pelos alunos.",
+        "example": {
+          "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+          "translation": "o amor que o professor demonstra",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἡ",
+              "ὁ",
+              "o",
+              "Artigo: nominativo, feminino, singular"
+            ],
+            [
+              "ἀγάπη",
+              "ἀγάπη",
+              "amor",
+              "Substantivo: nominativo, feminino, singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "do",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "διδασκάλου",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: genitivo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "Na paráfrase “o professor ama os alunos”, o professor é sujeito de “ama”. Por isso, o contexto proposto sustenta a leitura subjetiva de τοῦ διδασκάλου, conforme Porter §2.4.6. A forma isolada não decide entre essa leitura e a objetiva. A lição “Leitura aplicada: genitivos e nomes de ação” retoma essa comparação com mais prática."
+      },
+      {
+        "heading": "7. Comparação",
+        "body": "Um genitivo pode apresentar o termo com que alguém ou algo é comparado. Procure uma expressão comparativa, como “maior”, e identifique os dois termos da comparação. A tradução portuguesa frequentemente usa “que” ou “do que”.\n\nEste exemplo didático trata apenas de uma comparação de tamanho.",
+        "example": {
+          "greek": "ὁ μαθητὴς μείζων τοῦ διδασκάλου ἐστίν.",
+          "translation": "O aluno é maior que o professor.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ὁ",
+              "ὁ",
+              "o",
+              "Artigo: nominativo, masculino, singular"
+            ],
+            [
+              "μαθητὴς",
+              "μαθητής",
+              "aluno",
+              "Substantivo: nominativo, masculino, singular"
+            ],
+            [
+              "μείζων",
+              "μέγας",
+              "maior",
+              "Adjetivo comparativo: nominativo, masculino, singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "que o",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "διδασκάλου",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: genitivo, masculino, singular"
+            ],
+            [
+              "ἐστίν",
+              "εἰμί",
+              "é",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ]
+          ]
+        },
+        "analysis": "ὁ μαθητής é sujeito; μείζων apresenta a qualidade comparativa. O grupo τοῦ διδασκάλου fornece o padrão de comparação: o professor. A relação corresponde a Porter §2.4.7. O artigo não significa “que o” por si só; essa tradução resulta da construção comparativa inteira."
+      },
+      {
+        "heading": "8. Valor ou preço",
+        "body": "Com expressões de valor, compra ou venda, um genitivo pode indicar o preço atribuído a algo. Verifique se a quantidade informa quanto algo custa, em vez de supor posse.\n\nNo exemplo didático, o grupo identifica um livro pelo seu preço.",
+        "example": {
+          "greek": "τὸ βιβλίον δέκα δηναρίων",
+          "translation": "o livro que custa dez denários",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τὸ",
+              "ὁ",
+              "o",
+              "Artigo: nominativo, neutro, singular"
+            ],
+            [
+              "βιβλίον",
+              "βιβλίον",
+              "livro",
+              "Substantivo: nominativo, neutro, singular"
+            ],
+            [
+              "δέκα",
+              "δέκα",
+              "dez",
+              "Numeral cardinal: invariável"
+            ],
+            [
+              "δηναρίων",
+              "δηνάριον",
+              "denários",
+              "Substantivo: genitivo, neutro, plural"
+            ]
+          ]
+        },
+        "analysis": "O grupo δέκα δηναρίων informa o valor atribuído ao livro no contexto proposto, ilustrando Porter §2.4.8. O fragmento é apresentado como grupo nominal no nominativo; τὸ βιβλίον tem a mesma forma no acusativo, que uma frase completa poderia exigir."
+      },
+      {
+        "heading": "9. Tempo",
+        "body": "O genitivo também pode situar uma ação em um período. Sua interpretação temporal depende do contexto e da expressão escolhida. Não transforme a diferença entre genitivo, dativo e acusativo em uma oposição temporal rígida válida para todo texto.",
+        "example": {
+          "greek": "ἡμέρας καὶ νυκτός",
+          "translation": "de dia e de noite",
+          "reference": "Lucas 18.7, trecho citado por Porter §2.4.9; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἡμέρας",
+              "ἡμέρα",
+              "de dia",
+              "Substantivo: genitivo, feminino, singular"
+            ],
+            [
+              "καὶ",
+              "καί",
+              "e",
+              "Conjunção coordenativa: invariável"
+            ],
+            [
+              "νυκτός",
+              "νύξ",
+              "de noite",
+              "Substantivo: genitivo, feminino, singular"
+            ]
+          ]
+        },
+        "analysis": "Em Lucas 18.7, esses genitivos situam temporalmente o clamor dos escolhidos. Porter os inclui em tempo e espaço, §2.4.9. ἡμέρας é aqui genitivo singular por sua função no trecho; a mesma forma gráfica também pode ser acusativo plural em outra construção."
+      },
+      {
+        "heading": "9. O mesmo grupo: referência espacial",
+        "body": "Porter inclui também usos espaciais no grupo tempo e espaço. Eles exigem atenção à construção concreta; não são uma tradução espacial disponível para qualquer genitivo. O exemplo abaixo é menos comum e serve para reconhecer o alcance da categoria.",
+        "example": {
+          "greek": "ἐκείνης ἤμελλεν διέρχεσθαι",
+          "translation": "ele estava para passar por ali",
+          "reference": "Lucas 19.4, trecho citado por Porter §2.4.9; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἐκείνης",
+              "ἐκεῖνος",
+              "por ali",
+              "Pronome demonstrativo: genitivo, feminino, singular"
+            ],
+            [
+              "ἤμελλεν",
+              "μέλλω",
+              "estava para",
+              "Verbo: imperfeito do indicativo ativo, 3ª pessoa do singular"
+            ],
+            [
+              "διέρχεσθαι",
+              "διέρχομαι",
+              "passar",
+              "Verbo: presente do infinitivo médio; forma sem pessoa"
+            ]
+          ]
+        },
+        "analysis": "Em Lucas 19.4, ἐκείνης aponta para o percurso ou lugar por onde Jesus passaria; Porter apresenta essa leitura espacial em §2.4.9. O infinitivo διέρχεσθαι completa ἤμελλεν. A tradução “por ali” representa a função do demonstrativo na frase, e não uma preposição grega expressa."
+      },
+      {
+        "heading": "10. Objeto e regência",
+        "body": "Certos verbos e outras palavras selecionam um complemento em genitivo. Regência é essa relação de seleção. A construção grega deve ser aprendida com o verbo, sem ser deduzida apenas da tradução portuguesa.\n\nNo exemplo didático, a pessoa escuta o professor falando.",
+        "example": {
+          "greek": "ἀκούω τοῦ διδασκάλου.",
+          "translation": "Ouço o professor.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ἀκούω",
+              "ἀκούω",
+              "ouço",
+              "Verbo: presente do indicativo ativo, 1ª pessoa do singular"
+            ],
+            [
+              "τοῦ",
+              "ὁ",
+              "o",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "διδασκάλου",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: genitivo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "τοῦ διδασκάλου completa ἀκούω na construção de ouvir uma pessoa. O grupo não modifica um substantivo anterior e não precisa receber uma tradução com “de”. Esse é o tipo de relação tratado por Porter em §2.4.10. O mesmo verbo pode participar de outras construções, conforme o sentido e o complemento."
+      },
+      {
+        "heading": "Complemento de estudo: conteúdo em Wallace",
+        "body": "Wallace distingue explicitamente o genitivo de conteúdo: a expressão informa o que um recipiente ou outra entidade contém. Essa é uma comparação com outra organização gramatical, não um décimo primeiro subtítulo da lista de Porter.\n\nNo exemplo didático, o copo está cheio de água. A água é seu conteúdo, e não o material de que o copo é feito.",
+        "example": {
+          "greek": "ποτήριον ὕδατος",
+          "translation": "um copo de água",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ποτήριον",
+              "ποτήριον",
+              "copo",
+              "Substantivo: nominativo, neutro, singular"
+            ],
+            [
+              "ὕδατος",
+              "ὕδωρ",
+              "de água",
+              "Substantivo: genitivo, neutro, singular"
+            ]
+          ]
+        },
+        "analysis": "A paráfrase “um copo contendo água” explicita a leitura proposta. A identificação de conteúdo depende também do sentido lexical de ποτήριον e da situação. O fragmento foi apresentado no nominativo; ποτήριον tem a mesma forma no acusativo. Wallace separa conteúdo e material em sua própria taxonomia."
+      },
+      {
+        "heading": "Introdução ao genitivo absoluto",
+        "body": "O genitivo absoluto é uma construção com particípio e, frequentemente, um sujeito próprio no genitivo. Particípio é uma forma verbal que também possui caso, gênero e número. O grupo acrescenta uma circunstância à oração principal e não depende de um nome dela como os genitivos adnominais.\n\nNesta primeira apresentação, leia a circunstância como temporal. A relação exata — tempo, causa, condição ou outra — precisa de contexto. Porter trata a construção no capítulo 10, §2.1.",
+        "example": {
+          "greek": "τοῦ διδασκάλου λέγοντος, οἱ μαθηταὶ ἀκούουσιν.",
+          "translation": "Enquanto o professor fala, os alunos escutam.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "τοῦ",
+              "ὁ",
+              "o",
+              "Artigo: genitivo, masculino, singular"
+            ],
+            [
+              "διδασκάλου",
+              "διδάσκαλος",
+              "professor",
+              "Substantivo: genitivo, masculino, singular"
+            ],
+            [
+              "λέγοντος",
+              "λέγω",
+              "falando; enquanto fala",
+              "Particípio: presente, ativo, genitivo, masculino, singular"
+            ],
+            [
+              "οἱ",
+              "ὁ",
+              "os",
+              "Artigo: nominativo, masculino, plural"
+            ],
+            [
+              "μαθηταὶ",
+              "μαθητής",
+              "alunos",
+              "Substantivo: nominativo, masculino, plural"
+            ],
+            [
+              "ἀκούουσιν",
+              "ἀκούω",
+              "escutam",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do plural"
+            ]
+          ]
+        },
+        "analysis": "τοῦ διδασκάλου é o sujeito do particípio λέγοντος, com que concorda em genitivo masculino singular. O sujeito da oração principal é οἱ μαθηταί. O contexto didático favorece “enquanto”; o particípio sozinho não contém essa conjunção portuguesa. A lição sobre particípios circunstanciais e genitivo absoluto desenvolve a construção e suas ressalvas."
+      }
+    ],
+    "examples": [
+      {
+        "greek": "εἷς τῶν μαθητῶν γράφει.",
+        "translation": "Um dos alunos escreve.",
+        "note": "Exemplo didático analisado integralmente no quadro do genitivo partitivo."
+      },
+      {
+        "greek": "ὁ οἶκος τοῦ μαθητοῦ μένει.",
+        "translation": "A casa do aluno permanece.",
+        "note": "Exemplo didático analisado integralmente no quadro de posse; o contexto estabelece propriedade."
+      }
+    ],
+    "questions": [
+      {
+        "kind": "choice",
+        "prompt": "Que relação o genitivo τῶν μαθητῶν estabelece com εἷς neste grupo?",
+        "greek": "εἷς τῶν μαθητῶν",
+        "options": [
+          "O agente de uma ação passiva.",
+          "O destinatário de uma ação de dar.",
+          "O conjunto do qual um membro é destacado."
+        ],
+        "answer": 2,
+        "explanation": "εἷς destaca um elemento do conjunto expresso pelo genitivo plural.",
+        "id": "s-genitive-nouns-1"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Qual é o núcleo modificado por τοῦ μαθητοῦ?",
+        "greek": "ὁ οἶκος τοῦ μαθητοῦ",
+        "options": [
+          "μαθητοῦ",
+          "οἶκος",
+          "τοῦ"
+        ],
+        "answer": 1,
+        "explanation": "O grupo genitivo restringe a referência do substantivo οἶκος.",
+        "id": "s-genitive-nouns-2"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada paráfrase à relação que ela explicita.",
+        "pairs": [
+          {
+            "left": "Um dentre os alunos",
+            "right": "Parte e todo"
+          },
+          {
+            "left": "A casa pertencente ao aluno",
+            "right": "Posse"
+          },
+          {
+            "left": "Um recipiente cheio de água",
+            "right": "Conteúdo"
+          }
+        ],
+        "explanation": "As paráfrases explicitam parte e todo, posse e conteúdo. “Conteúdo” aparece aqui como termo da comparação com Wallace, sem ser acrescentado à lista numerada de Porter.",
+        "id": "s-genitive-nouns-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "No contexto em que a casa pertence ao aluno, que relação τοῦ μαθητοῦ estabelece com οἶκος?",
+        "greek": "ὁ οἶκος τοῦ μαθητοῦ μένει.",
+        "options": [
+          "Posse.",
+          "Comparação.",
+          "Parte retirada de um conjunto."
+        ],
+        "answer": 0,
+        "explanation": "O contexto de pertencimento sustenta a leitura possessiva. A terminação genitiva não determina essa relação em toda ocorrência.",
+        "id": "s-genitive-nouns-extra-1"
+      },
+      {
+        "kind": "order",
+        "prompt": "Organize a tradução do grupo na sequência membro destacado → conjunto.",
+        "greek": "εἷς τῶν μαθητῶν",
+        "tokens": [
+          "dos alunos.",
+          "Um"
+        ],
+        "answer": [
+          "Um",
+          "dos alunos."
+        ],
+        "explanation": "εἷς destaca um indivíduo; o genitivo plural apresenta o conjunto ao qual ele pertence.",
+        "id": "s-genitive-nouns-extra-2"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Ao ler “o amor do professor”, por que o português “de” não basta para classificar a relação grega?",
+        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+        "options": [
+          "Porque todo genitivo expressa apenas conteúdo.",
+          "Porque “de” pode representar relações diferentes, que precisam de contexto.",
+          "Porque o português “de” determina sempre posse material."
+        ],
+        "answer": 1,
+        "explanation": "A relação nominal pode ser mais específica que seu equivalente português. Identifique os termos e as informações fornecidas pelo contexto.",
+        "id": "s-genitive-nouns-extra-3"
+      },
+      {
+        "id": "s-genitive-nouns-quality-new",
+        "kind": "choice",
+        "greek": "ἄνθρωπος εἰρήνης",
+        "prompt": "No contexto de uma pessoa conhecida por promover a paz, que leitura de εἰρήνης é favorecida?",
+        "options": [
+          "Qualidade ou descrição da pessoa.",
+          "Preço pago pela pessoa.",
+          "Período em que a pessoa escreve."
+        ],
+        "answer": 0,
+        "explanation": "A paráfrase “pessoa pacífica” explicita uma característica no contexto proposto, dentro do grupo qualidade, definição e descrição de Porter."
+      },
+      {
+        "id": "s-genitive-nouns-apposition-new",
+        "kind": "choice",
+        "greek": "περὶ τοῦ ναοῦ τοῦ σώματος αὐτοῦ",
+        "prompt": "Em João 2.21, o templo mencionado é o corpo de Jesus. Como τοῦ σώματος se relaciona a ναοῦ na análise apresentada?",
+        "options": [
+          "Indica o preço de um edifício.",
+          "Explica a identidade do templo em uma relação apositiva.",
+          "Apresenta um membro retirado de um grupo de corpos."
+        ],
+        "answer": 1,
+        "explanation": "O contexto identifica o corpo como o templo de que Jesus falava. É a relação explicativa apresentada por Porter como aposição; αὐτοῦ se liga a σώματος."
+      },
+      {
+        "id": "s-genitive-nouns-subjective-new",
+        "kind": "choice",
+        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+        "prompt": "O contexto afirma que o professor ama seus alunos. Qual paráfrase justifica a leitura subjetiva de τοῦ διδασκάλου?",
+        "options": [
+          "O professor recebe o amor.",
+          "O amor custa o valor de um professor.",
+          "O professor é quem ama."
+        ],
+        "answer": 2,
+        "explanation": "Na paráfrase verbal, o professor é o sujeito de “ama”. Isso sustenta a leitura subjetiva do genitivo nesse contexto."
+      },
+      {
+        "id": "s-genitive-nouns-objective-new",
+        "kind": "choice",
+        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
+        "prompt": "Agora o contexto afirma que os alunos amam o professor. Que leitura de τοῦ διδασκάλου é sustentada?",
+        "options": [
+          "Objetiva: o professor é o alvo do amor.",
+          "Subjetiva: o professor é necessariamente quem ama.",
+          "Temporal: o professor indica quando ocorre o amor."
+        ],
+        "answer": 0,
+        "explanation": "O professor recebe o amor. Na paráfrase “os alunos amam o professor”, ele ocupa a posição de objeto."
+      },
+      {
+        "id": "s-genitive-nouns-functions-new",
+        "kind": "match",
+        "prompt": "Relacione os grupos, nos contextos da lição, à relação que eles expressam.",
+        "pairs": [
+          {
+            "left": "τοῦ διδασκάλου com μείζων",
+            "right": "Termo de comparação"
+          },
+          {
+            "left": "δέκα δηναρίων como valor do livro",
+            "right": "Preço"
+          },
+          {
+            "left": "ἡμέρας καὶ νυκτός em Lucas 18.7",
+            "right": "Tempo"
+          },
+          {
+            "left": "τοῦ διδασκάλου com ἀκούω",
+            "right": "Complemento selecionado pelo verbo"
+          }
+        ],
+        "explanation": "A relação com o comparativo, o contexto de preço, a expressão temporal e a regência verbal fornecem evidências diferentes. A forma genitiva não impõe uma única tradução."
+      },
+      {
+        "id": "s-genitive-nouns-comparison-order-new",
+        "kind": "order",
+        "greek": "ὁ μαθητὴς μείζων τοῦ διδασκάλου ἐστίν.",
+        "prompt": "Organize a tradução do exemplo de tamanho na sequência sujeito → verbo → comparação.",
+        "tokens": [
+          "que o professor.",
+          "O aluno",
+          "é maior"
+        ],
+        "answer": [
+          "O aluno",
+          "é maior",
+          "que o professor."
+        ],
+        "explanation": "O aluno é o sujeito, e o professor é o termo de comparação expresso no genitivo."
+      },
+      {
+        "id": "s-genitive-nouns-absolute-new",
+        "kind": "choice",
+        "greek": "τοῦ διδασκάλου λέγοντος, οἱ μαθηταὶ ἀκούουσιν.",
+        "prompt": "Que observação sustenta a identificação do genitivo absoluto neste exemplo didático?",
+        "options": [
+          "Todo genitivo indica propriedade material.",
+          "διδασκάλου é sujeito de λέγοντος no genitivo; μαθηταί é sujeito da oração principal.",
+          "λέγοντος é um verbo no indicativo com sujeito no nominativo."
+        ],
+        "answer": 1,
+        "explanation": "O grupo genitivo contém seu próprio sujeito e um particípio concordante. Na leitura temporal proposta, ele acrescenta a circunstância “enquanto o professor fala”."
+      },
+      {
+        "id": "s-genitive-nouns-spatial-new",
+        "kind": "choice",
+        "greek": "ἐκείνης ἤμελλεν διέρχεσθαι",
+        "prompt": "Na leitura de Lucas 19.4 apresentada por Porter, o que ἐκείνης informa?",
+        "options": [
+          "Quem é dono de uma casa.",
+          "O lugar ou percurso por onde Jesus passaria.",
+          "O preço de uma viagem."
+        ],
+        "answer": 1,
+        "explanation": "Porter apresenta ἐκείνης como referência espacial no grupo tempo e espaço. Essa leitura depende da construção e do contexto, não de uma tradução espacial universal do genitivo."
+      }
+    ],
+    "references": [
+      "Porter, Stanley E. Idioms of the Greek New Testament. Sheffield: JSOT, 1999, cap. 4, §§2.4.1–2.4.10; cap. 10, §2.1 para genitivo absoluto. Fonte principal e organização dos grupos de usos.",
+      "Wallace, Daniel B. Gramática Grega: uma sintaxe exegética do Novo Testamento, seção Genitivo de Conteúdo, pp. 92–93 na edição de consulta fornecida. Comparação complementar explicitamente identificada, sem alterar a taxonomia de Porter.",
+      "Trechos de João 2.21, Lucas 18.7 e Lucas 19.4 conferidos nos exemplos do material de Porter fornecido. Traduções, explicações, quadros e exercícios próprios. Os demais exemplos gregos são construções didáticas identificadas como tais."
     ]
   },
   {
     "id": "s-nominal-hanging",
     "area": "syntax",
     "level": 1,
-    "order": 10,
-    "title": "Orações nominais e nominativo pendente",
-    "summary": "Reconheça predicações sem verbo expresso e tópicos retomados.",
+    "order": 14,
+    "title": "Leitura aplicada: orações nominais e termos pendentes",
+    "summary": "Aplique a aula do nominativo: compare um enunciado sem verbo com um tópico retomado em outra função.",
     "minutes": 10,
     "objectives": [
       "Distinguir oração nominal de nominativo pendente",
@@ -1324,405 +5069,12 @@
     ]
   },
   {
-    "id": "s-vocative",
-    "area": "syntax",
-    "level": 1,
-    "order": 11,
-    "title": "Vocativo e tratamento direto",
-    "summary": "Distingua a pessoa a quem se fala da pessoa sobre quem se fala.",
-    "minutes": 10,
-    "objectives": [
-      "Reconhecer chamamento",
-      "Entender a sobreposição funcional entre vocativo e nominativo"
-    ],
-    "sections": [
-      {
-        "heading": "A quem o enunciado se dirige",
-        "body": "O vocativo é empregado no tratamento direto. Em διδάσκαλε, γράφε, o professor é a pessoa a quem a ordem é dirigida. Ele não deve ser classificado como sujeito do imperativo apenas por ser o destinatário: a segunda pessoa pertence à flexão verbal. A análise distingue a expressão de chamamento da estrutura predicativa do comando."
-      },
-      {
-        "heading": "Forma e função não coincidem sempre",
-        "body": "Nem todos os nomes apresentam uma forma vocativa exclusiva. No plural, a forma frequentemente coincide com o nominativo. Além disso, o nominativo com artigo pode ser usado para dirigir-se a alguém. Porter discute essa sobreposição e questiona a necessidade de tratar o vocativo exatamente como os demais casos. Para a leitura, o essencial é reconhecer a função de endereçamento e registrar a forma que efetivamente ocorre."
-      },
-      {
-        "heading": "Pistas além da terminação",
-        "body": "Considere a situação de fala, a pessoa do verbo e a relação com o restante do enunciado. A partícula ὦ pode acompanhar um vocativo, mas não é obrigatória nem transforma automaticamente uma expressão em exclamação intensa. As vírgulas de uma edição moderna representam uma análise. Em textos sem marcas claras, o contexto pode ser necessário para decidir se um grupo nomeia um participante ou chama um interlocutor."
-      }
-    ],
-    "examples": [
-      {
-        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
-        "translation": "Professor, escreva a palavra.",
-        "note": "διδάσκαλε é tratamento direto; o verbo está na segunda pessoa singular."
-      }
-    ],
-    "questions": [
-      {
-        "kind": "choice",
-        "prompt": "Que função διδάσκαλε exerce?",
-        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
-        "options": [
-          "Tratamento direto.",
-          "Objeto escrito.",
-          "Genitivo de posse."
-        ],
-        "answer": 0,
-        "explanation": "O termo identifica a pessoa a quem o comando é dirigido.",
-        "id": "s-vocative-1"
-      },
-      {
-        "kind": "choice",
-        "prompt": "A partícula ὦ é obrigatória para haver tratamento no vocativo?",
-        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
-        "options": [
-          "Sim; a ausência de ὦ obriga a analisar διδάσκαλε como sujeito.",
-          "Sim; somente ὦ fornece a função de chamamento.",
-          "Não; διδάσκαλε já funciona como tratamento direto sem ὦ."
-        ],
-        "answer": 2,
-        "explanation": "A função de chamamento pode ocorrer sem a partícula.",
-        "id": "s-vocative-2"
-      },
-      {
-        "kind": "order",
-        "prompt": "Organize os blocos na ordem portuguesa solicitada: chamamento → verbo → objeto.",
-        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
-        "tokens": [
-          "Professor,",
-          "escreva",
-          "a palavra."
-        ],
-        "answer": [
-          "Professor,",
-          "escreva",
-          "a palavra."
-        ],
-        "explanation": "O vocativo aparece como chamamento, separado da predicação do imperativo. O exercício verifica essa sequência didática; outras formulações portuguesas podem ser naturais.",
-        "id": "s-vocative-3"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Na orientação dirigida ao professor, qual termo é o objeto de γράφε?",
-        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
-        "options": [
-          "διδάσκαλε.",
-          "τὸν λόγον.",
-          "O interlocutor, necessariamente no nominativo."
-        ],
-        "answer": 1,
-        "explanation": "O professor é a pessoa chamada; τὸν λόγον identifica aquilo que deve ser escrito.",
-        "id": "s-vocative-extra-1"
-      },
-      {
-        "kind": "match",
-        "prompt": "Associe cada expressão à sua contribuição para a orientação.",
-        "greek": "διδάσκαλε, γράφε τὸν λόγον.",
-        "pairs": [
-          {
-            "left": "διδάσκαλε",
-            "right": "Pessoa a quem se dirige o chamamento"
-          },
-          {
-            "left": "γράφε",
-            "right": "Forma verbal que apresenta a orientação"
-          },
-          {
-            "left": "τὸν λόγον",
-            "right": "Aquilo que se deve escrever"
-          }
-        ],
-        "explanation": "O vocativo pertence ao tratamento direto e não deve ser confundido com o objeto da predicação.",
-        "id": "s-vocative-extra-2"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Qual mudança preserva a função de chamamento de διδάσκαλε?",
-        "greek": "διδάσκαλε, γράφε.",
-        "options": [
-          "Acrescentar ὦ: ὦ διδάσκαλε, γράφε.",
-          "Trocar o vocativo por τὸν διδάσκαλον e tratá-lo como objeto.",
-          "Analisar διδάσκαλε como sujeito de terceira pessoa de γράφε."
-        ],
-        "answer": 0,
-        "explanation": "A partícula ὦ pode acompanhar o vocativo, mas não é obrigatória para a função de tratamento direto.",
-        "id": "s-vocative-extra-3"
-      }
-    ],
-    "references": [
-      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.6 e 2.2. Síntese didática original; exemplos criados para esta lição."
-    ]
-  },
-  {
-    "id": "s-accusative",
-    "area": "syntax",
-    "level": 1,
-    "order": 12,
-    "title": "Acusativo: objeto, predicação e extensão",
-    "summary": "Aprenda a perguntar que relação o acusativo estabelece.",
-    "minutes": 10,
-    "objectives": [
-      "Distinguir objeto e predicativo do objeto",
-      "Reconhecer extensão temporal e duplo acusativo"
-    ],
-    "sections": [
-      {
-        "heading": "Um objeto frequente, não exclusivo",
-        "body": "O acusativo é usado com frequência para o objeto de um verbo transitivo. Entretanto, nem todo acusativo é objeto e nem todo objeto verbal aparece no acusativo. A regência do verbo continua decisiva. Porter descreve a versatilidade do acusativo e reúne usos como objeto, duplo acusativo, referência e extensão. A diversidade dos usos não significa que cada terminação carregue todas essas ideias."
-      },
-      {
-        "heading": "Dois acusativos na mesma construção",
-        "body": "Em νομίζω τὸν μαθητὴν διδάσκαλον, o aluno é o objeto avaliado e “professor” é a identificação atribuída a ele: predicativo do objeto. Isso difere de construções em que um verbo toma uma pessoa e uma coisa como complementos, sem que uma seja identidade da outra. É a relação predicativa ou não predicativa que distingue os padrões."
-      },
-      {
-        "heading": "Extensão e referência",
-        "body": "Uma expressão no acusativo pode indicar por quanto tempo ou por qual distância uma situação se estende. Em μένει δύο ἡμέρας, “dois dias” mede a duração, não aquilo que alguém permanece. Em outros contextos, um acusativo delimita o aspecto em relação ao qual se faz uma afirmação. Analise a construção antes de escolher a etiqueta. Quando houver preposição, examine primeiro a regência e o sentido da expressão inteira."
-      }
-    ],
-    "examples": [
-      {
-        "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
-        "translation": "Considero o aluno professor.",
-        "note": "O segundo acusativo é predicativo do objeto."
-      },
-      {
-        "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
-        "translation": "O aluno permanece dois dias.",
-        "note": "δύο ἡμέρας indica extensão temporal."
-      }
-    ],
-    "questions": [
-      {
-        "kind": "choice",
-        "prompt": "Na construção com νομίζω, que função exerce διδάσκαλον em relação a τὸν μαθητήν?",
-        "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
-        "options": [
-          "Destinatário da ação de considerar.",
-          "Predicativo do objeto.",
-          "Sujeito da oração principal."
-        ],
-        "answer": 1,
-        "explanation": "A expressão atribui ao aluno uma identificação dentro da construção de considerar.",
-        "id": "s-accusative-1"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Na oração apresentada, que informação δύο ἡμέρας acrescenta à permanência?",
-        "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
-        "options": [
-          "Sua duração: dois dias.",
-          "Seu lugar: duas casas.",
-          "Seu destinatário: dois alunos."
-        ],
-        "answer": 0,
-        "explanation": "O acusativo mede a extensão temporal do acontecimento.",
-        "id": "s-accusative-2"
-      },
-      {
-        "kind": "match",
-        "prompt": "Relacione os acusativos aos usos dos exemplos.",
-        "pairs": [
-          {
-            "left": "τὸν λόγον em γράφω τὸν λόγον",
-            "right": "Objeto verbal"
-          },
-          {
-            "left": "διδάσκαλον em νομίζω τὸν μαθητὴν διδάσκαλον",
-            "right": "Predicativo do objeto"
-          },
-          {
-            "left": "δύο ἡμέρας em μένει δύο ἡμέρας",
-            "right": "Extensão temporal"
-          }
-        ],
-        "explanation": "As mesmas marcas de caso participam de relações sintáticas diferentes.",
-        "id": "s-accusative-3"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Na construção apresentada, qual grupo é o objeto ao qual se atribui a identidade de professor?",
-        "greek": "νομίζω τὸν μαθητὴν διδάσκαλον.",
-        "options": [
-          "διδάσκαλον.",
-          "τὸν μαθητήν.",
-          "Um nominativo não expresso depois de διδάσκαλον."
-        ],
-        "answer": 1,
-        "explanation": "τὸν μαθητήν é o objeto da construção de considerar; διδάσκαλον é seu predicativo.",
-        "id": "s-accusative-extra-1"
-      },
-      {
-        "kind": "order",
-        "prompt": "Traduza na sequência sujeito → verbo → duração.",
-        "greek": "ὁ μαθητὴς μένει δύο ἡμέρας.",
-        "tokens": [
-          "O aluno",
-          "permanece",
-          "dois dias."
-        ],
-        "answer": [
-          "O aluno",
-          "permanece",
-          "dois dias."
-        ],
-        "explanation": "δύο ἡμέρας mede a duração. O exemplo não apresenta “dois dias” como objeto sobre o qual recai a ação.",
-        "id": "s-accusative-extra-2"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Que diferença sintática existe entre os dois acusativos destacados?",
-        "greek": "γράφω τὸν λόγον. / μένω δύο ἡμέρας.",
-        "options": [
-          "τὸν λόγον e δύο ἡμέρας são ambos sujeitos.",
-          "τὸν λόγον é duração; δύο ἡμέρας é destinatário.",
-          "τὸν λόγον é objeto; δύο ἡμέρας expressa duração."
-        ],
-        "answer": 2,
-        "explanation": "O mesmo caso pode servir ao objeto de um verbo ou à extensão temporal; a construção inteira permite distinguir os usos.",
-        "id": "s-accusative-extra-3"
-      }
-    ],
-    "references": [
-      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.3. Síntese didática original; exemplos criados para esta lição."
-    ]
-  },
-  {
-    "id": "s-genitive-nouns",
-    "area": "syntax",
-    "level": 1,
-    "order": 13,
-    "title": "Genitivo: relações entre nomes",
-    "summary": "Investigue posse, caracterização, conteúdo e relação entre parte e todo.",
-    "minutes": 11,
-    "objectives": [
-      "Localizar o núcleo modificado por um genitivo",
-      "Justificar relações adnominais sem depender apenas de “de”"
-    ],
-    "sections": [
-      {
-        "heading": "Dependência de um núcleo",
-        "body": "Um genitivo pode modificar um substantivo, restringindo ou caracterizando sua referência. Em ὁ οἶκος τοῦ μαθητοῦ, o grupo τοῦ μαθητοῦ depende de οἶκος. Se o contexto informa que o aluno é dono da casa, a relação é possessiva. Sem esse contexto, relações como moradia ou associação também podem ser pertinentes. O caso estabelece a dependência, mas o detalhe da relação é contextual."
-      },
-      {
-        "heading": "Relações diferentes sob a mesma forma",
-        "body": "Um genitivo pode especificar o conteúdo de um recipiente, o todo do qual se destaca uma parte, uma qualidade ou a origem de algo. Traduzir todos esses exemplos com “de” pode funcionar em português, mas não distingue as relações. Em εἷς τῶν μαθητῶν, o numeral seleciona um membro do conjunto dos alunos; não se trata de propriedade de uma pessoa sobre outra."
-      },
-      {
-        "heading": "Como verificar uma interpretação",
-        "body": "Pergunte o que o núcleo significa e que informação o genitivo acrescenta. Experimente uma paráfrase explícita: “um dentre”, “um recipiente cheio de”, “algo pertencente a” ou “algo caracterizado por”. Compare essa paráfrase com o contexto. Uma etiqueta só é útil se puder ser defendida com evidência. Em textos reais, categorias podem se sobrepor, e a tradução não precisa anunciar toda a classificação técnica."
-      }
-    ],
-    "examples": [
-      {
-        "greek": "εἷς τῶν μαθητῶν γράφει.",
-        "translation": "Um dos alunos escreve.",
-        "note": "τῶν μαθητῶν apresenta o conjunto do qual um membro é destacado."
-      },
-      {
-        "greek": "ὁ οἶκος τοῦ μαθητοῦ μένει.",
-        "translation": "A casa do aluno permanece.",
-        "note": "A leitura possessiva depende da relação estabelecida no contexto."
-      }
-    ],
-    "questions": [
-      {
-        "kind": "choice",
-        "prompt": "Que relação o genitivo τῶν μαθητῶν estabelece com εἷς neste grupo?",
-        "greek": "εἷς τῶν μαθητῶν",
-        "options": [
-          "O agente de uma ação passiva.",
-          "O destinatário de uma ação de dar.",
-          "O conjunto do qual um membro é destacado."
-        ],
-        "answer": 2,
-        "explanation": "εἷς destaca um elemento do conjunto expresso pelo genitivo plural.",
-        "id": "s-genitive-nouns-1"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Qual é o núcleo modificado por τοῦ μαθητοῦ?",
-        "greek": "ὁ οἶκος τοῦ μαθητοῦ",
-        "options": [
-          "μαθητοῦ",
-          "οἶκος",
-          "τοῦ"
-        ],
-        "answer": 1,
-        "explanation": "O grupo genitivo restringe a referência do substantivo οἶκος.",
-        "id": "s-genitive-nouns-2"
-      },
-      {
-        "kind": "match",
-        "prompt": "Relacione cada paráfrase à relação que ela explicita.",
-        "pairs": [
-          {
-            "left": "Um dentre os alunos",
-            "right": "Parte e todo"
-          },
-          {
-            "left": "A casa pertencente ao aluno",
-            "right": "Posse"
-          },
-          {
-            "left": "Um recipiente cheio de água",
-            "right": "Conteúdo"
-          }
-        ],
-        "explanation": "Paráfrases tornam visível uma relação que a tradução com “de” pode deixar aberta.",
-        "id": "s-genitive-nouns-3"
-      },
-      {
-        "kind": "choice",
-        "prompt": "No contexto em que a casa pertence ao aluno, que relação τοῦ μαθητοῦ estabelece com οἶκος?",
-        "greek": "ὁ οἶκος τοῦ μαθητοῦ μένει.",
-        "options": [
-          "Posse.",
-          "Comparação.",
-          "Parte retirada de um conjunto."
-        ],
-        "answer": 0,
-        "explanation": "O contexto de pertencimento sustenta a leitura possessiva. A terminação genitiva não determina essa relação em toda ocorrência.",
-        "id": "s-genitive-nouns-extra-1"
-      },
-      {
-        "kind": "order",
-        "prompt": "Organize a tradução do grupo na sequência membro destacado → conjunto.",
-        "greek": "εἷς τῶν μαθητῶν",
-        "tokens": [
-          "Um",
-          "dos alunos."
-        ],
-        "answer": [
-          "Um",
-          "dos alunos."
-        ],
-        "explanation": "εἷς destaca um indivíduo; o genitivo plural apresenta o conjunto ao qual ele pertence.",
-        "id": "s-genitive-nouns-extra-2"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Ao ler “o amor do professor”, por que o português “de” não basta para classificar a relação grega?",
-        "greek": "ἡ ἀγάπη τοῦ διδασκάλου",
-        "options": [
-          "Porque todo genitivo expressa apenas conteúdo.",
-          "Porque “de” pode representar relações diferentes, que precisam de contexto.",
-          "Porque o português “de” determina sempre posse material."
-        ],
-        "answer": 1,
-        "explanation": "A relação nominal pode ser mais específica que seu equivalente português. Identifique os termos e as informações fornecidas pelo contexto.",
-        "id": "s-genitive-nouns-extra-3"
-      }
-    ],
-    "references": [
-      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.4. Síntese didática original; exemplos criados para esta lição."
-    ]
-  },
-  {
     "id": "s-genitive-complements",
     "area": "syntax",
     "level": 1,
-    "order": 14,
-    "title": "Genitivo: ação nominal e regência",
-    "summary": "Distinga genitivo subjetivo e objetivo e reconheça complementos selecionados.",
+    "order": 15,
+    "title": "Leitura aplicada: genitivos e nomes de ação",
+    "summary": "Aplique a aula do genitivo: justifique leituras subjetivas e objetivas e compare-as com a regência verbal.",
     "minutes": 11,
     "objectives": [
       "Interpretar nomes de ação em contexto",
@@ -1851,139 +5203,6 @@
     ],
     "references": [
       "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.4, especialmente 2.4.5–2.4.6. Síntese didática original; exemplos criados para esta lição."
-    ]
-  },
-  {
-    "id": "s-dative",
-    "area": "syntax",
-    "level": 1,
-    "order": 15,
-    "title": "Dativo: destinatário, meio e referência",
-    "summary": "Observe como a construção determina a relação expressa no dativo.",
-    "minutes": 11,
-    "objectives": [
-      "Reconhecer destinatário e instrumento em contextos claros",
-      "Analisar o dativo sem impor uma preposição portuguesa fixa"
-    ],
-    "sections": [
-      {
-        "heading": "Quem recebe ou é beneficiado",
-        "body": "Em construções de dar, dizer ou escrever, um dativo pode apresentar o destinatário. Em γράφω τῷ φίλῳ, o amigo é aquele a quem escrevo. Isso não significa que todo dativo seja objeto indireto no mesmo sentido usado pelas gramáticas do português. A organização lexical e sintática dos verbos não coincide perfeitamente entre as duas línguas."
-      },
-      {
-        "heading": "Meio, associação e localização",
-        "body": "Outros contextos favorecem relações de meio, modo, associação, referência ou localização temporal. Em γράφει καλάμῳ, o cálamo é apresentado como instrumento. Com uma preposição como ἐν, o dativo integra uma construção preposicional, e seu sentido deve ser avaliado em conjunto. Não traduza automaticamente todo dativo por “a”, “com” ou “em”: essas escolhas pertencem à formulação portuguesa da relação."
-      },
-      {
-        "heading": "Concentre-se na evidência",
-        "body": "Localize o regente e pergunte que papel o referente desempenha na situação. Diferencie uma pessoa destinatária de um objeto usado como meio; em contextos menos claros, avalie alternativas. Certos verbos selecionam um dativo como complemento, de modo que a classificação precisa incluir a regência. Ao estudar usos mais específicos, registre a justificativa e não só o nome técnico. Isso evita inventar agência, vantagem ou locação quando o contexto não as sustenta."
-      }
-    ],
-    "examples": [
-      {
-        "greek": "γράφω τῷ φίλῳ.",
-        "translation": "Escrevo ao amigo.",
-        "note": "τῷ φίλῳ expressa o destinatário neste exemplo."
-      },
-      {
-        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
-        "translation": "O aluno escreve com um cálamo.",
-        "note": "καλάμῳ expressa o instrumento usado para escrever."
-      }
-    ],
-    "questions": [
-      {
-        "kind": "choice",
-        "prompt": "Que relação τῷ φίλῳ expressa?",
-        "greek": "γράφω τῷ φίλῳ.",
-        "options": [
-          "Predicativo do sujeito.",
-          "Destinatário.",
-          "Objeto que está sendo escrito."
-        ],
-        "answer": 1,
-        "explanation": "O amigo é a pessoa a quem se escreve.",
-        "id": "s-dative-1"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Que relação καλάμῳ expressa na leitura proposta?",
-        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
-        "options": [
-          "Instrumento.",
-          "Sujeito agente.",
-          "Conjunto partitivo."
-        ],
-        "answer": 0,
-        "explanation": "O cálamo é o meio material usado para escrever.",
-        "id": "s-dative-2"
-      },
-      {
-        "kind": "match",
-        "prompt": "Relacione os exemplos à descrição contextual.",
-        "pairs": [
-          {
-            "left": "τῷ φίλῳ em γράφω τῷ φίλῳ",
-            "right": "Pessoa destinatária"
-          },
-          {
-            "left": "καλάμῳ em γράφει καλάμῳ",
-            "right": "Meio instrumental"
-          },
-          {
-            "left": "ἐν τῷ οἴκῳ",
-            "right": "Complemento de preposição"
-          }
-        ],
-        "explanation": "O dativo integra construções diferentes, que precisam ser interpretadas em conjunto.",
-        "id": "s-dative-3"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Qual é o regente verbal do dativo τῷ φίλῳ no exemplo?",
-        "greek": "γράφω τῷ φίλῳ.",
-        "options": [
-          "φίλῳ.",
-          "γράφω.",
-          "Uma preposição necessariamente omitida."
-        ],
-        "answer": 1,
-        "explanation": "O dativo se relaciona ao verbo de escrever como destinatário. Não há preposição expressa no grupo.",
-        "id": "s-dative-extra-1"
-      },
-      {
-        "kind": "order",
-        "prompt": "Traduza na sequência sujeito → verbo → instrumento.",
-        "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
-        "tokens": [
-          "O aluno",
-          "escreve",
-          "com um cálamo."
-        ],
-        "answer": [
-          "O aluno",
-          "escreve",
-          "com um cálamo."
-        ],
-        "explanation": "A tradução com “com” representa o instrumento usado para escrever neste exemplo; não é equivalente obrigatório de todo dativo.",
-        "id": "s-dative-extra-2"
-      },
-      {
-        "kind": "choice",
-        "prompt": "Que diferença de construção deve ser preservada ao analisar estes dativos?",
-        "greek": "γράφω τῷ φίλῳ. / μένω ἐν τῷ οἴκῳ.",
-        "options": [
-          "τῷ φίλῳ liga-se diretamente ao verbo; τῷ οἴκῳ é complemento de ἐν.",
-          "Ambos são complementos de uma preposição expressa.",
-          "Ambos devem ser classificados como destinatário apenas por serem dativos."
-        ],
-        "answer": 0,
-        "explanation": "O caso é compartilhado, mas a presença de ἐν modifica a organização da expressão e precisa entrar na análise.",
-        "id": "s-dative-extra-3"
-      }
-    ],
-    "references": [
-      "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.5. Síntese didática original; exemplos criados para esta lição."
     ]
   },
   {

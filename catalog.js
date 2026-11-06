@@ -51,7 +51,12 @@ export function createCatalog(lessons, articles, words) {
         ...(related.get(lesson.id) || []).map(item => ({item, type: 'article'}))
       ]).map(({item, type}) => ({
         value: {...item, readingType: type},
-        text: normalize(`${item.title} ${item.summary} ${item.sections.map(section => section.body).join(' ')}`)
+        text: normalize([item.title, item.summary, ...item.sections.flatMap(section => [
+          section.heading, section.body,
+          section.example?.greek, section.example?.translation, section.example?.reference,
+          ...(section.table?.headers || []), ...(section.table?.rows.flat() || []),
+          section.analysis
+        ])].filter(Boolean).join(' '))
       }));
       return search(readingIndex, term, limit);
     },

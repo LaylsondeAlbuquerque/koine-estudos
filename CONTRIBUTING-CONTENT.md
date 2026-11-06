@@ -10,6 +10,27 @@ Cada arquivo data/morphology.json, data/syntax.json e data/vocabulary-lessons.js
 
 Níveis: 0 = Fundamentos; 1 = Essencial; 2 = Aprofundamento; 3 = Avançado. Áreas: morphology, syntax, vocabulary.
 
+Para exemplos analisados dentro de uma seção, use os campos opcionais `example` e `analysis`. A apresentação segue explicação → texto grego e tradução → tabela de palavras → leitura sintática. A tabela continua opcional; os demais conteúdos não precisam desses campos.
+
+```json
+{
+  "heading": "Predicativo do sujeito",
+  "body": "Explique o conceito antes de apresentar o exemplo.",
+  "example": {
+    "greek": "ὁ λόγος σὰρξ ἐγένετο",
+    "translation": "A Palavra tornou-se carne.",
+    "reference": "João 1.14, trecho; tradução própria."
+  },
+  "table": {
+    "headers": ["Forma", "Lema", "Tradução local", "Morfologia"],
+    "rows": [["λόγος", "λόγος", "Palavra", "Nominativo masculino singular"]]
+  },
+  "analysis": "Explique como cada grupo participa da construção."
+}
+```
+
+O exemplo de estrutura acima abrevia a tabela. Nas aulas de casos, analise todas as palavras do trecho destacado, inclusive artigos e conectivos. `example.greek`, `example.translation` e `analysis` devem ser textos não vazios quando presentes. `example.reference` é opcional. Identifique trechos bíblicos, traduções próprias, exemplos didáticos e recortes com palavras retiradas. Quando uma identificação sintática for discutida, atribua a análise ao autor consultado e não a transforme em gabarito indiscutível.
+
 Outras questões suportadas:
 
 * `kind: "match"`, `pairs: [{"left":"λόγος","right":"palavra"}, ...]`, `prompt`, `explanation`.

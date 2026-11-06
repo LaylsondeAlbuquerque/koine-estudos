@@ -3,12 +3,22 @@ import assert from 'node:assert/strict';
 const root=new URL('../',import.meta.url);
 const lessons=['morphology','syntax','vocabulary-lessons'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
 const ids=new Set(),qids=new Set(),counts={};
+function validateSection(section,readingId){
+ assert(section.heading&&section.body,readingId);
+ if(section.table){assert(section.table.headers.length>0);for(const row of section.table.rows)assert(row.length===section.table.headers.length,`${readingId}: uneven table`);}
+ if(section.example!==undefined){
+  assert(section.example&&typeof section.example==='object'&&!Array.isArray(section.example),`${readingId}: invalid example`);
+  for(const field of ['greek','translation'])assert(typeof section.example[field]==='string'&&section.example[field].trim().length>0,`${readingId}: empty or invalid example ${field}`);
+  if(section.example.reference!==undefined)assert(typeof section.example.reference==='string'&&section.example.reference.trim().length>0,`${readingId}: empty or invalid example reference`);
+ }
+ if(section.analysis!==undefined)assert(typeof section.analysis==='string'&&section.analysis.trim().length>0,`${readingId}: empty or invalid analysis`);
+}
 for(const lesson of lessons){
  assert(!ids.has(lesson.id),`Duplicate lesson ${lesson.id}`);ids.add(lesson.id);
  assert(['morphology','syntax','vocabulary'].includes(lesson.area));assert(Number.isInteger(lesson.level)&&lesson.level>=0&&lesson.level<=3);
  assert(lesson.title&&lesson.summary&&lesson.objectives?.length&&lesson.references?.length,lesson.id);
  assert(lesson.sections?.length>=3&&lesson.questions?.length>=3,lesson.id);
- for(const section of lesson.sections){assert(section.heading&&section.body,lesson.id);if(section.table){assert(section.table.headers.length>0);for(const row of section.table.rows)assert(row.length===section.table.headers.length,`${lesson.id}: uneven table`);}}
+ for(const section of lesson.sections)validateSection(section,lesson.id);
  for(const q of lesson.questions){
   assert(!qids.has(q.id),q.id);qids.add(q.id);assert(q.prompt&&q.explanation,q.id);
   if(q.kind==='choice'){assert(q.options.length>=3&&new Set(q.options).size===q.options.length,q.id);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<q.options.length,q.id);}
@@ -54,7 +64,7 @@ for(const article of articles){
  assert(article.area===lesson.area&&article.level===lesson.level,`Wrong level/area for ${article.id}`);
  assert(article.title&&article.title!==lesson.title&&article.summary&&article.minutes>0,article.id);
  assert(article.sections?.length>=3&&article.references?.length>0,article.id);
- assert(article.sections.every(s=>s.heading&&s.body),article.id);
+ for(const section of article.sections)validateSection(section,article.id);
  if(article.discussionQuestions!==undefined)assert(Array.isArray(article.discussionQuestions)&&article.discussionQuestions.every(q=>typeof q==='string'&&q.trim().length>0),article.id);
  const body=article.sections.map(s=>s.body).join(' ');assert(body.trim().split(/\s+/u).length>=280,`Article too short: ${article.id}`);
  assert(body!==lesson.sections.map(s=>s.body).join(' '),`Article duplicates lesson: ${article.id}`);

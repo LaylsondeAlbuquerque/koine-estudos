@@ -21,7 +21,15 @@
 .discussion-questions ol{padding-left:22px;display:grid;gap:14px}
 .discussion-questions li{font-size:15px;line-height:1.9;padding-left:4px}
 .references a{color:var(--blue);text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+.reading-example{margin:24px 0;padding:18px 0 18px 20px;border-left:3px solid var(--blue)}
+.article-section .reading-example>.greek{font-family:var(--greek);font-size:29px;font-weight:400;line-height:1.8;letter-spacing:0;overflow-wrap:anywhere}
+.reading-example figcaption{margin-top:10px}
+.article-section .reading-example-translation{font-size:15px;line-height:1.8}
+.article-section .reading-example-reference{font-size:12px;line-height:1.8;color:var(--muted);margin-top:6px}
+.reading-analysis{margin-top:22px}
+.reading-analysis h3{font-size:17px;line-height:1.6;margin-bottom:10px}
 html[data-theme=dark] .deep-article-card{background:var(--white);border-color:var(--line)}
 html[data-theme=dark] .lesson-deeper{background:#111a28;border-color:#30405a;border-left-color:#75adff}
 @media(max-width:900px){.lesson-row-actions{max-width:none}.deep-article-card h3{font-size:22px}}
+@media(max-width:600px){.reading-example{margin:20px 0;padding:14px 0 14px 15px}.article-section .reading-example>.greek{font-size:26px}.article-section .reading-example-translation{font-size:14px}.reading-analysis h3{font-size:16px}}
 @media(max-width:600px){.area-purpose{font-size:13px;margin-bottom:24px}.lesson-row-actions{justify-content:flex-start;gap:16px}.lesson-row-actions .lesson-deep-link{font-size:12px}.deep-article-card{padding:23px;min-height:300px}.deep-article-card h3{font-size:21px}.article-lesson-label{font-size:11px}.reading-purpose{font-size:11px;padding:12px 0;margin-bottom:25px}.lesson-deeper{padding:22px 20px;margin:28px 0}.lesson-deeper h3{font-size:20px}.lesson-deeper p{font-size:13px}.discussion-questions{padding:23px 0}.discussion-questions h2{font-size:21px}.discussion-questions li{font-size:14px}.reading-aside-note{font-size:12px}}

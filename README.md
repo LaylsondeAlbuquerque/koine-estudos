@@ -4,14 +4,14 @@
 
 Aplicação **Angular 21 + TypeScript** para estudar grego do Novo Testamento. O projeto organiza aulas, artigos, exercícios e revisão de vocabulário em um único ambiente, com busca em grego e português e acompanhamento do estudo no navegador.
 
-O acervo atual reúne **84 aulas, 84 artigos, 506 questões e 1.158 vocábulos**. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
+O acervo atual reúne **84 aulas, 84 artigos, 548 questões e 1.158 vocábulos**. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
 
 Projeto idealizado e conduzido por **Laylson de Albuquerque** ([GitHub](https://github.com/LaylsondeAlbuquerque)), com assistência de IA na implementação e na redação didática. As revisões e os ajustes foram realizados de forma iterativa, conforme solicitações do responsável.
 
 ## Funcionalidades
 
 - **Morfologia:** padrões, paradigmas e análise morfológica com respostas selecionadas.
-- **Sintaxe:** compreensão de conceitos e relações nas orações; comparação de abordagens no nível avançado.
+- **Sintaxe:** compreensão de conceitos e relações nas orações; no Essencial, uma aula por caso seguindo os grupos de Porter, com trechos traduzidos, análise palavra por palavra e comentários sintáticos. As leituras aplicadas retomam construções e ambiguidades; o nível avançado compara abordagens.
 - **Vocabulário:** repertório de 1.158 lemas, flashcards, associações e um núcleo prioritário de 300 palavras.
 - Cada área tem percurso, artigos, flashcards e prática, distribuídos em Fundamentos, Essencial, Aprofundamento e Avançado.
 - **Percurso:** aulas progressivas com explicações básicas, exemplos e exercícios. **Artigos:** textos independentes de aprofundamento, ligados a cada assunto e nível, com discussão, fontes e perguntas de reflexão. Cada espaço tem sua própria marcação de leitura.

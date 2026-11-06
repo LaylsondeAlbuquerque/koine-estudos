@@ -8,7 +8,13 @@ export const AREAS = {
 export const LEVELS = ['Fundamentos','Essencial','Aprofundamento','Avançado'];
 export const LEVEL_DESCRIPTIONS = ['Seu primeiro contato, com conceitos e exemplos guiados.','Consolide os padrões e relações mais frequentes.','Reconheça construções mais complexas e amplie sua autonomia.','Compare análises, enfrente ambiguidades e leia criticamente.'];
 export interface Table {headers:string[];rows:string[][];}
-export interface Section {heading:string;body:string;table?:Table;}
+export interface Section {
+  heading:string;
+  body:string;
+  example?:{greek:string;translation:string;reference?:string};
+  table?:Table;
+  analysis?:string;
+}
 export type Reference = string | {title:string;url?:string};
 export interface Question {
   id:string;kind:'choice'|'parse'|'match'|'order';prompt:string;explanation:string;

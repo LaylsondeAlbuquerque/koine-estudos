@@ -337,48 +337,11 @@
     ]
   },
   {
-    "id": "as-s-nominal-hanging",
-    "area": "syntax",
-    "level": 1,
-    "lessonId": "s-nominal-hanging",
-    "order": 10,
-    "title": "Uma palavra fora da construção? Entendendo o nominativo pendente",
-    "summary": "Examine o tópico inicial, a retomada pronominal e os limites da ideia de “frase incompleta”.",
-    "minutes": 7,
-    "sections": [
-      {
-        "heading": "O problema aparece quando procuramos só concordância",
-        "body": "Alguns enunciados apresentam primeiro um referente e depois constroem uma oração na qual ele é retomado de outra maneira. O nominativo inicial pode não exercer a função de sujeito do verbo seguinte. Em vez de corrigir imediatamente a sequência como se fosse um erro, pergunte que participante ela introduz e como esse participante se conecta ao restante da mensagem. A construção pode organizar o discurso por um tópico destacado, mesmo quando a oração subsequente usa outra pessoa verbal ou outro caso para retomá-lo."
-      },
-      {
-        "heading": "Uma retomada pode ter caso diferente",
-        "body": "No exemplo didático ὁ μαθητής, γράφω αὐτῷ, a primeira expressão introduz “o aluno”; a oração seguinte informa “escrevo a ele”. O dativo αὐτῷ participa da regência de γράφω, enquanto o nominativo inicial apresenta o referente. Uma paráfrase portuguesa com “quanto ao aluno” torna explícita essa organização, mas não significa que haja no original uma preposição omitida que precise ser reconstruída. A diferença de caso é justamente uma pista de que introdução do tópico e função na oração não devem ser confundidas."
-      },
-      {
-        "heading": "Distinguir de uma oração nominal",
-        "body": "Uma sequência sem verbo escrito também pode apresentar uma predicação completa: ἡ ἐλπὶς ἀγαθή, “a esperança é boa”. Nesse caso, não basta chamar o nominativo de pendente porque ele aparece sem εἰμί expresso. É preciso descobrir se o enunciado atribui uma propriedade ao referente ou se o apresenta como tópico de uma oração posterior. Observe a relação semântica, a possibilidade de retomada e a continuidade do parágrafo. A ausência de verbo não constitui um diagnóstico único para estruturas diferentes."
-      },
-      {
-        "heading": "Tradução, pontuação e continuidade",
-        "body": "Uma tradução pode reproduzir o destaque, inserir uma expressão como “quanto a” ou reorganizar a mensagem numa frase mais usual em português. Cada escolha tem um custo: algumas preservam a progressão discursiva, outras facilitam a leitura e disfarçam a mudança de construção. O aprofundamento consiste em reconhecer esse custo e justificá-lo. Antes de falar em desvio ou irregularidade, descreva como o leitor acompanha o referente. Uma sintaxe que leva o discurso em conta pode explicar uma sequência que pareceria inadequada se fosse avaliada apenas pela ordem esperada no português."
-      }
-    ],
-    "references": [
-      {
-        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.4–2.1.5."
-      }
-    ],
-    "discussionQuestions": [
-      "Em ὁ μαθητής, γράφω αὐτῷ, que função o nominativo inicial desempenha e como o dativo retoma o mesmo referente dentro da oração?",
-      "Por que a ausência de εἰμί não basta para classificar uma expressão como nominativo pendente? Como você a distinguiria de uma oração nominal?"
-    ]
-  },
-  {
     "id": "as-s-vocative",
     "area": "syntax",
     "level": 1,
     "lessonId": "s-vocative",
-    "order": 11,
+    "order": 10,
     "title": "O vocativo entre a gramática e a relação com o interlocutor",
     "summary": "Investigue o tratamento direto, as formas coincidentes e a força pragmática do chamamento.",
     "minutes": 7,
@@ -415,7 +378,7 @@
     "area": "syntax",
     "level": 1,
     "lessonId": "s-accusative",
-    "order": 12,
+    "order": 11,
     "title": "Dois acusativos, relações diferentes: objeto e predicativo",
     "summary": "Compare construções de objeto, caracterização e extensão para evitar uma tradução automática do caso.",
     "minutes": 7,
@@ -445,6 +408,43 @@
     "discussionQuestions": [
       "Numa construção com dois acusativos, como você verificaria se um caracteriza o objeto em vez de representar um segundo objeto independente?",
       "Que diferença você explicaria entre um acusativo que identifica o participante afetado e outro que delimita extensão ou duração?"
+    ]
+  },
+  {
+    "id": "as-s-dative",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-dative",
+    "order": 12,
+    "title": "O dativo e os limites das perguntas “a quem?” e “com quê?”",
+    "summary": "Investigue destinatário, meio e referência sem reduzir o caso a três equivalentes de tradução.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "Perguntas didáticas precisam de uma construção",
+        "body": "Perguntar “a quem?” ajuda a identificar destinatários em vários exemplos, mas não define o dativo. A mesma forma pode indicar o meio pelo qual uma ação ocorre ou delimitar a referência de uma afirmação. A decisão depende do predicado, do significado lexical e do contexto. Um método mais rigoroso começa identificando qual relação está em jogo e só depois escolhe a pergunta portuguesa que a torna compreensível. Assim evitamos tratar qualquer pessoa no dativo como destinatário e qualquer objeto material como instrumento."
+      },
+      {
+        "heading": "O destinatário participa de uma organização de participantes",
+        "body": "No exemplo didático γράφω τῷ φίλῳ, “escrevo ao amigo”, o amigo é o destinatário da escrita. Em outras construções, um dativo pode apresentar o beneficiário ou o participante interessado, e essas relações não precisam ser idênticas. Uma pessoa pode receber uma carta sem ser beneficiada pelo seu conteúdo. Observe o que o verbo seleciona e o que o enunciado acrescenta. A semelhança entre as traduções com “a” ou “para” não prova que as descrições sintáticas devam ser fundidas."
+      },
+      {
+        "heading": "Meio e agente não são a mesma coisa",
+        "body": "Um instrumento participa de um acontecimento de maneira diferente daquela de quem o realiza. Quando uma expressão dativa é interpretada como meio, explique que aspecto do predicado ela ajuda a executar. Não deduza automaticamente agência de uma tradução com “por”, nem passividade de toda relação que envolva um paciente. A forma verbal e as construções de agente precisam ser examinadas independentemente. Se houver dúvida entre uma leitura instrumental e uma leitura de modo, explicite as paráfrases e mostre o dado que permitiria distingui-las."
+      },
+      {
+        "heading": "Referência delimita o alcance da afirmação",
+        "body": "Certas expressões indicam sob que aspecto uma qualidade ou situação é avaliada. Nesse caso, a tarefa não é encontrar um destinatário imaginário, mas descobrir o alcance da predicação. O aprofundamento melhora quando a análise nomeia essa limitação com linguagem comum antes de recorrer à terminologia especializada. Consulte categorias de Porter e, quando necessário, classificações mais detalhadas de outras gramáticas, comparando os mesmos exemplos. A classificação escolhida deve ser consequência de uma relação demonstrada, sempre com atenção ao que a tradução portuguesa torna explícito ou deixa implícito."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.5."
+      }
+    ],
+    "discussionQuestions": [
+      "Por que identificar um meio usado na ação não equivale a identificar o agente? Como você justificaria essa distinção na construção examinada?",
+      "Quando um dativo delimita a referência de uma afirmação, o que uma tradução apenas com “a quem?” deixaria de explicar?"
     ]
   },
   {
@@ -485,11 +485,48 @@
     ]
   },
   {
+    "id": "as-s-nominal-hanging",
+    "area": "syntax",
+    "level": 1,
+    "lessonId": "s-nominal-hanging",
+    "order": 14,
+    "title": "Uma palavra fora da construção? Entendendo o nominativo pendente",
+    "summary": "Examine o tópico inicial, a retomada pronominal e os limites da ideia de “frase incompleta”.",
+    "minutes": 7,
+    "sections": [
+      {
+        "heading": "O problema aparece quando procuramos só concordância",
+        "body": "Alguns enunciados apresentam primeiro um referente e depois constroem uma oração na qual ele é retomado de outra maneira. O nominativo inicial pode não exercer a função de sujeito do verbo seguinte. Em vez de corrigir imediatamente a sequência como se fosse um erro, pergunte que participante ela introduz e como esse participante se conecta ao restante da mensagem. A construção pode organizar o discurso por um tópico destacado, mesmo quando a oração subsequente usa outra pessoa verbal ou outro caso para retomá-lo."
+      },
+      {
+        "heading": "Uma retomada pode ter caso diferente",
+        "body": "No exemplo didático ὁ μαθητής, γράφω αὐτῷ, a primeira expressão introduz “o aluno”; a oração seguinte informa “escrevo a ele”. O dativo αὐτῷ participa da regência de γράφω, enquanto o nominativo inicial apresenta o referente. Uma paráfrase portuguesa com “quanto ao aluno” torna explícita essa organização, mas não significa que haja no original uma preposição omitida que precise ser reconstruída. A diferença de caso é justamente uma pista de que introdução do tópico e função na oração não devem ser confundidas."
+      },
+      {
+        "heading": "Distinguir de uma oração nominal",
+        "body": "Uma sequência sem verbo escrito também pode apresentar uma predicação completa: ἡ ἐλπὶς ἀγαθή, “a esperança é boa”. Nesse caso, não basta chamar o nominativo de pendente porque ele aparece sem εἰμί expresso. É preciso descobrir se o enunciado atribui uma propriedade ao referente ou se o apresenta como tópico de uma oração posterior. Observe a relação semântica, a possibilidade de retomada e a continuidade do parágrafo. A ausência de verbo não constitui um diagnóstico único para estruturas diferentes."
+      },
+      {
+        "heading": "Tradução, pontuação e continuidade",
+        "body": "Uma tradução pode reproduzir o destaque, inserir uma expressão como “quanto a” ou reorganizar a mensagem numa frase mais usual em português. Cada escolha tem um custo: algumas preservam a progressão discursiva, outras facilitam a leitura e disfarçam a mudança de construção. O aprofundamento consiste em reconhecer esse custo e justificá-lo. Antes de falar em desvio ou irregularidade, descreva como o leitor acompanha o referente. Uma sintaxe que leva o discurso em conta pode explicar uma sequência que pareceria inadequada se fosse avaliada apenas pela ordem esperada no português."
+      }
+    ],
+    "references": [
+      {
+        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seções 2.1.4–2.1.5."
+      }
+    ],
+    "discussionQuestions": [
+      "Em ὁ μαθητής, γράφω αὐτῷ, que função o nominativo inicial desempenha e como o dativo retoma o mesmo referente dentro da oração?",
+      "Por que a ausência de εἰμί não basta para classificar uma expressão como nominativo pendente? Como você a distinguiria de uma oração nominal?"
+    ]
+  },
+  {
     "id": "as-s-genitive-complements",
     "area": "syntax",
     "level": 1,
     "lessonId": "s-genitive-complements",
-    "order": 14,
+    "order": 15,
     "title": "Quem ama quem? Genitivos ligados a nomes de ação",
     "summary": "Aprofunde as leituras subjetiva e objetiva e diferencie ambiguidades de sentido de regras de regência.",
     "minutes": 7,
@@ -519,43 +556,6 @@
     "discussionQuestions": [
       "Como você formularia duas paráfrases que deixem claro quem realiza e quem recebe a ação expressa por um nome como “amor”?",
       "Se o contexto não decidir entre leituras subjetiva e objetiva de um genitivo, como você apresentaria a ambiguidade sem afirmar que o autor necessariamente quis os dois sentidos?"
-    ]
-  },
-  {
-    "id": "as-s-dative",
-    "area": "syntax",
-    "level": 1,
-    "lessonId": "s-dative",
-    "order": 15,
-    "title": "O dativo e os limites das perguntas “a quem?” e “com quê?”",
-    "summary": "Investigue destinatário, meio e referência sem reduzir o caso a três equivalentes de tradução.",
-    "minutes": 7,
-    "sections": [
-      {
-        "heading": "Perguntas didáticas precisam de uma construção",
-        "body": "Perguntar “a quem?” ajuda a identificar destinatários em vários exemplos, mas não define o dativo. A mesma forma pode indicar o meio pelo qual uma ação ocorre ou delimitar a referência de uma afirmação. A decisão depende do predicado, do significado lexical e do contexto. Um método mais rigoroso começa identificando qual relação está em jogo e só depois escolhe a pergunta portuguesa que a torna compreensível. Assim evitamos tratar qualquer pessoa no dativo como destinatário e qualquer objeto material como instrumento."
-      },
-      {
-        "heading": "O destinatário participa de uma organização de participantes",
-        "body": "No exemplo didático γράφω τῷ φίλῳ, “escrevo ao amigo”, o amigo é o destinatário da escrita. Em outras construções, um dativo pode apresentar o beneficiário ou o participante interessado, e essas relações não precisam ser idênticas. Uma pessoa pode receber uma carta sem ser beneficiada pelo seu conteúdo. Observe o que o verbo seleciona e o que o enunciado acrescenta. A semelhança entre as traduções com “a” ou “para” não prova que as descrições sintáticas devam ser fundidas."
-      },
-      {
-        "heading": "Meio e agente não são a mesma coisa",
-        "body": "Um instrumento participa de um acontecimento de maneira diferente daquela de quem o realiza. Quando uma expressão dativa é interpretada como meio, explique que aspecto do predicado ela ajuda a executar. Não deduza automaticamente agência de uma tradução com “por”, nem passividade de toda relação que envolva um paciente. A forma verbal e as construções de agente precisam ser examinadas independentemente. Se houver dúvida entre uma leitura instrumental e uma leitura de modo, explicite as paráfrases e mostre o dado que permitiria distingui-las."
-      },
-      {
-        "heading": "Referência delimita o alcance da afirmação",
-        "body": "Certas expressões indicam sob que aspecto uma qualidade ou situação é avaliada. Nesse caso, a tarefa não é encontrar um destinatário imaginário, mas descobrir o alcance da predicação. O aprofundamento melhora quando a análise nomeia essa limitação com linguagem comum antes de recorrer à terminologia especializada. Consulte categorias de Porter e, quando necessário, classificações mais detalhadas de outras gramáticas, comparando os mesmos exemplos. A classificação escolhida deve ser consequência de uma relação demonstrada, sempre com atenção ao que a tradução portuguesa torna explícito ou deixa implícito."
-      }
-    ],
-    "references": [
-      {
-        "title": "Stanley E. Porter, Idioms of the Greek New Testament, cap. 4, seção 2.5."
-      }
-    ],
-    "discussionQuestions": [
-      "Por que identificar um meio usado na ação não equivale a identificar o agente? Como você justificaria essa distinção na construção examinada?",
-      "Quando um dativo delimita a referência de uma afirmação, o que uma tradução apenas com “a quem?” deixaria de explicar?"
     ]
   },
   {

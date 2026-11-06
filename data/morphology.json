@@ -5,12 +5,13 @@
     "level": 0,
     "order": 1,
     "title": "O alfabeto: reconhecer e nomear",
-    "summary": "Reconheça as 24 letras e as formas que costumam causar confusão.",
-    "minutes": 10,
+    "summary": "Reconheça as 24 letras, seus nomes e sua representação em letras latinas.",
+    "minutes": 12,
     "objectives": [
       "Reconhecer as 24 letras.",
       "Distinguir sigma comum e final.",
-      "Separar letras parecidas."
+      "Separar letras parecidas.",
+      "Entender o que é transliteração e consultar os equivalentes latinos."
     ],
     "sections": [
       {
@@ -20,131 +21,160 @@
           "headers": [
             "Maiúscula",
             "Minúscula",
-            "Nome"
+            "Nome",
+            "Transliteração"
           ],
           "rows": [
             [
               "Α",
               "α",
-              "alfa"
+              "alfa",
+              "a"
             ],
             [
               "Β",
               "β",
-              "beta"
+              "beta",
+              "b"
             ],
             [
               "Γ",
               "γ",
-              "gama"
+              "gama",
+              "g"
             ],
             [
               "Δ",
               "δ",
-              "delta"
+              "delta",
+              "d"
             ],
             [
               "Ε",
               "ε",
-              "épsilon"
+              "épsilon",
+              "e"
             ],
             [
               "Ζ",
               "ζ",
-              "zeta"
+              "zeta",
+              "z"
             ],
             [
               "Η",
               "η",
-              "eta"
+              "eta",
+              "ē"
             ],
             [
               "Θ",
               "θ",
-              "teta"
+              "teta",
+              "th"
             ],
             [
               "Ι",
               "ι",
-              "iota"
+              "iota",
+              "i"
             ],
             [
               "Κ",
               "κ",
-              "capa"
+              "capa",
+              "k"
             ],
             [
               "Λ",
               "λ",
-              "lambda"
+              "lambda",
+              "l"
             ],
             [
               "Μ",
               "μ",
-              "mi"
+              "mi",
+              "m"
             ],
             [
               "Ν",
               "ν",
-              "ni"
+              "ni",
+              "n"
             ],
             [
               "Ξ",
               "ξ",
-              "xi"
+              "xi",
+              "x"
             ],
             [
               "Ο",
               "ο",
-              "ômicron"
+              "ômicron",
+              "o"
             ],
             [
               "Π",
               "π",
-              "pi"
+              "pi",
+              "p"
             ],
             [
               "Ρ",
               "ρ",
-              "rô"
+              "rô",
+              "r"
             ],
             [
               "Σ",
               "σ / ς",
-              "sigma"
+              "sigma",
+              "s"
             ],
             [
               "Τ",
               "τ",
-              "tau"
+              "tau",
+              "t"
             ],
             [
               "Υ",
               "υ",
-              "ípsilon"
+              "ípsilon",
+              "y"
             ],
             [
               "Φ",
               "φ",
-              "fi"
+              "fi",
+              "ph"
             ],
             [
               "Χ",
               "χ",
-              "qui"
+              "qui",
+              "ch"
             ],
             [
               "Ψ",
               "ψ",
-              "psi"
+              "psi",
+              "ps"
             ],
             [
               "Ω",
               "ω",
-              "ômega"
+              "ômega",
+              "ō"
             ]
           ]
         }
+      },
+      {
+        "heading": "O que significa transliterar?",
+        "body": "Transliterar é representar uma escrita por letras de outro alfabeto. Na última coluna, cada letra grega recebe um equivalente latino: λόγος pode ser representado por logos. Isso ajuda a reconhecer a grafia em livros e pesquisas; não é a tradução da palavra nem uma descrição completa da pronúncia erasmiana.\n\nSeguimos a convenção apresentada por Porter, Reed e O’Donnell: η → ē e ω → ō. O traço sobre ē e ō é chamado mácron e distingue essas letras de ε → e e ο → o; não é um acento tônico. σ e ς têm o mesmo equivalente, s.\n\nA tabela apresenta letras isoladas. Em combinações, há ajustes: γ é representado por n antes de γ, κ, ξ e χ, como em ἄγγελος → angelos. Para υ, usamos y como equivalente básico, mas u quando é o segundo elemento de um ditongo, como αυ → au e ου → ou. Para χ, adotamos ch; outros materiais podem usar kh. A aula de pronúncia explicará os sons."
       },
       {
         "heading": "Sigma no começo e no fim",
@@ -275,7 +305,7 @@
       }
     ],
     "references": [
-      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1. Síntese, organização dos paradigmas e exercícios próprios."
+      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 1, §1.3.1. Convenção de transliteração consultada no trecho fornecido; explicações e exercícios próprios."
     ]
   },
   {
@@ -810,39 +840,39 @@
         }
       },
       {
-        "heading": "Caso: nominativo, genitivo, dativo, acusativo e vocativo",
-        "body": "Caso é uma categoria da flexão nominal. Neste curso, distinguimos cinco casos: nominativo, genitivo, dativo, acusativo e vocativo. Suas formas ajudam a interpretar as relações entre as palavras na oração. Não existe, porém, uma terminação exclusiva para cada caso em todas as palavras: às vezes dois ou mais casos têm a mesma forma.\n\nO quadro dá uma primeira orientação para a leitura, com usos frequentes. Esses usos não esgotam cada caso e não são traduções automáticas. Os diferentes usos serão estudados na sintaxe.",
+        "heading": "Os cinco casos: significado básico e usos",
+        "body": "Caso é uma categoria da flexão nominal. Neste curso, distinguimos cinco casos: nominativo, vocativo, genitivo, dativo e acusativo. As abreviações e as letras entre colchetes ajudam a ler tabelas e análises.\n\nO quadro adapta as definições do material de estudo: designação, endereçamento, restrição, relação e extensão ou limitação. Essas expressões oferecem uma orientação inicial; não substituem a análise da oração. Um caso pode participar de várias funções, e formas diferentes podem coincidir na escrita. Os usos detalhados serão estudados na sintaxe.\n\nO vocativo também é usado para dirigir-se a várias pessoas. O que se restringe ao singular são as terminações próprias que o distinguem do nominativo; no plural, a forma coincide com a do nominativo. Compare κύριε, “ó senhor”, e κύριοι, “ó senhores”.",
         "table": {
           "headers": [
-            "Caso",
-            "Primeira orientação de leitura",
-            "Exemplo de forma"
+            "Caso e abreviação",
+            "Significado básico e usos frequentes",
+            "Exemplo"
           ],
           "rows": [
             [
-              "Nominativo",
-              "É frequente no termo que funciona como sujeito.",
-              "λόγος"
+              "Nominativo (nom.) [N]",
+              "Caso de designação: nomeia ou apresenta um referente. Geralmente marca o sujeito; também pode ser predicativo com um verbo de ligação.",
+              "ὁ δοῦλος — o escravo, como sujeito; οὗτός ἐστιν ὁ δοῦλος — este é o escravo."
             ],
             [
-              "Genitivo",
-              "Pode relacionar um termo a outro, como numa expressão de posse.",
-              "λόγου"
+              "Vocativo (voc.) [V]",
+              "Caso de endereçamento direto: chama ou interpela o interlocutor. No plural, compartilha a forma do nominativo.",
+              "κύριε — ó senhor!; κύριοι — ó senhores!"
             ],
             [
-              "Dativo",
-              "Pode marcar, por exemplo, o destinatário de algo.",
-              "λόγῳ"
+              "Genitivo (gen.) [G]",
+              "Caso de restrição: define ou descreve outro termo; pode expressar posse, propriedade, origem ou fonte, conforme a construção.",
+              "τοῦ δούλου — do escravo."
             ],
             [
-              "Acusativo",
-              "É frequente no termo que funciona como objeto direto.",
-              "λόγον"
+              "Dativo (dat.) [D]",
+              "Caso de relação: pode indicar objeto indireto ou a pessoa que recebe vantagem ou desvantagem de uma ação. Também tem outros usos.",
+              "τῷ δούλῳ — ao escravo ou para o escravo, conforme a frase."
             ],
             [
-              "Vocativo",
-              "É usado no chamamento ou na interpelação.",
-              "λόγε"
+              "Acusativo (ac.) [A]",
+              "Pode delimitar uma ação ou sua extensão. É frequente como objeto direto; também pode indicar duração ou distância.",
+              "τὸν δοῦλον — o escravo, como objeto direto."
             ]
           ]
         }
@@ -1578,78 +1608,268 @@
     "level": 0,
     "order": 7,
     "title": "Primeira declinação: alfa e eta",
-    "summary": "Aprenda padrões femininos e os masculinos em -της.",
-    "minutes": 10,
+    "summary": "Reconheça as terminações, compare três padrões femininos e aprenda o masculino προφήτης.",
+    "minutes": 23,
     "objectives": [
-      "Reconhecer séries em alfa e eta.",
-      "Memorizar as terminações.",
-      "Analisar masculinos em -της."
+      "Entender o que são declinação, tema e terminação.",
+      "Reconhecer as terminações dos cinco casos no singular e no plural.",
+      "Distinguir os padrões de τιμή, χώρα e δόξα.",
+      "Analisar formas de προφήτης sem confundir gênero e declinação.",
+      "Reconhecer formas que admitem mais de uma análise e usar o contexto."
     ],
     "sections": [
       {
-        "heading": "Uma declinação, mais de um padrão",
-        "body": "A primeira declinação inclui femininos em -η e em -α. Algumas palavras conservam alfa no singular, como χώρα; outras alternam alfa e eta, como δόξα. Aprenda o genitivo ao lado do nominativo: χώρα, χώρας; δόξα, δόξης; τιμή, τιμῆς. No plural, muitas diferenças desaparecem. Estude grupos de flexão em vez de deduzir tudo da última letra."
+        "heading": "O que significa declinar?",
+        "body": "Declinar é variar a forma de uma palavra para indicar caso e número. Uma declinação é uma família de palavras que seguem padrões de flexão semelhantes. Aqui estudaremos a primeira declinação.\n\nNúmero distingue singular e plural. Caso ajuda a indicar a função da palavra na frase: o nominativo frequentemente apresenta o sujeito; o genitivo pode relacionar um nome a outro; o dativo pode indicar destinatário, meio ou localização; o acusativo frequentemente apresenta o objeto direto; o vocativo serve para chamar alguém. Esses são usos iniciais, e o contexto determina a tradução.\n\nO gênero do substantivo deve ser aprendido com ele: τιμή é feminino; προφήτης é masculino. Pertencer à mesma declinação não significa ter o mesmo gênero."
       },
       {
-        "heading": "A série de τιμή",
-        "body": "Observe -ης e -ῃ no singular e as terminações plurais -αι, -ῶν, -αις e -ας. Os acentos fazem parte da escrita. Primeiro reconheça caso e número; depois refine a reprodução das marcas.",
+        "heading": "Tema, terminação e lema",
+        "body": "Tema é a base sobre a qual se formam as flexões. Na primeira declinação, a vogal α ou η faz parte dessa formação. Para começar a ler, observe a parte que se repete e compare os finais: em τιμή, τιμῆς e τιμῇ, reconhecemos τιμ- e os finais -η, -ης e -ῃ.\n\nChamaremos esses finais completos de terminações nesta aula: eles incluem a vogal do tema e ajudam a reconhecer caso e número. Essa é uma divisão prática para estudar as formas.\n\nLema é a forma usada para consultar a palavra no dicionário. Aprenda o nominativo singular, o genitivo singular e o artigo juntos: τιμή, τιμῆς, ἡ; χώρα, χώρας, ἡ; δόξα, δόξης, ἡ. O genitivo revela diferenças que o nominativo sozinho pode esconder; o artigo informa o gênero."
+      },
+      {
+        "heading": "Tabela de terminações femininas",
+        "body": "Leia cada coluna do singular de cima para baixo. Depois observe o plural: os três padrões usam as mesmas terminações plurais. O hífen indica que mostramos apenas o final da palavra.\n\nOs acentos das palavras completas variam. A tabela marca -ῶν porque o genitivo plural dos substantivos regulares aqui estudados recebe circunflexo nesse final. Nos demais casos, confira o acento no paradigma da palavra.\n\nEm telas pequenas, deslize a tabela para os lados para ver todas as colunas.",
         "table": {
           "headers": [
             "Caso",
-            "τιμή sg.",
-            "τιμή pl.",
-            "χώρα sg."
+            "η: singular",
+            "α conservado: singular",
+            "α/η: singular",
+            "Plural comum"
           ],
           "rows": [
             [
               "Nominativo",
-              "τιμή",
-              "τιμαί",
-              "χώρα"
+              "-η",
+              "-α",
+              "-α",
+              "-αι"
             ],
             [
               "Genitivo",
-              "τιμῆς",
-              "τιμῶν",
-              "χώρας"
+              "-ης",
+              "-ας",
+              "-ης",
+              "-ῶν"
             ],
             [
               "Dativo",
-              "τιμῇ",
-              "τιμαῖς",
-              "χώρᾳ"
+              "-ῃ",
+              "-ᾳ",
+              "-ῃ",
+              "-αις"
             ],
             [
               "Acusativo",
-              "τιμήν",
-              "τιμάς",
-              "χώραν"
+              "-ην",
+              "-αν",
+              "-αν",
+              "-ας"
+            ],
+            [
+              "Vocativo",
+              "-η",
+              "-α",
+              "-α",
+              "-αι"
             ]
           ]
         }
       },
       {
-        "heading": "Masculinos da primeira declinação",
-        "body": "προφήτης é masculino e pertence à primeira declinação. Seu genitivo προφήτου lembra a segunda declinação, mas isso não significa que a palavra mudou de família. Declinação e gênero são categorias diferentes. Compare ἡ τιμή e ὁ προφήτης, cada qual com artigo e genitivo. Use os plurais para consolidar o padrão e os singulares para reconhecer diferenças entre grupos. Não substitua informação lexical por adivinhação baseada em uma terminação.\n\nUma boa revisão muda apenas uma categoria de cada vez: mantenha o caso e altere o número; depois mantenha o número e altere o caso. Assim fica mais fácil localizar a origem de uma confusão."
+        "heading": "Por que há alfa e eta?",
+        "body": "A primeira declinação reúne padrões com as vogais α e η. As três colunas do singular representam três maneiras regulares de flexionar os femininos desta aula.\n\n1. Série η: τιμή conserva η em todos os casos do singular: τιμή, τιμῆς, τιμῇ, τιμήν, τιμή.\n\n2. Alfa conservado: χώρα conserva α no singular, inclusive no genitivo χώρας e no dativo χώρᾳ. Nos femininos regulares que têm -α no nominativo, a presença de ε, ι ou ρ imediatamente antes desse alfa costuma acompanhar sua conservação: em χώρα, a letra anterior é ρ.\n\n3. Alternância α/η: δόξα tem α no nominativo e vocativo, e -αν no acusativo; usa η no genitivo δόξης e no dativo δόξῃ.\n\nA regra de ε, ι ou ρ é uma orientação, não uma maneira de deduzir toda palavra pela última letra. Há exceções, e palavras que já apresentam -η no nominativo devem ser aprendidas com seu próprio paradigma. Por isso, conserve juntos o nominativo, o genitivo e o artigo."
+      },
+      {
+        "heading": "Paradigmas femininos no singular",
+        "body": "Agora leia as palavras completas. τιμή significa honra; χώρα, região ou país; δόξα, glória. Compare especialmente as linhas do genitivo e do dativo: nelas aparece a diferença entre χώρα e δόξα.\n\nO vocativo dos três femininos tem a mesma forma do nominativo. A forma sozinha, nesses casos, não distingue os dois usos.",
+        "table": {
+          "headers": [
+            "Caso",
+            "τιμή: honra",
+            "χώρα: região",
+            "δόξα: glória"
+          ],
+          "rows": [
+            [
+              "Nominativo",
+              "τιμή",
+              "χώρα",
+              "δόξα"
+            ],
+            [
+              "Genitivo",
+              "τιμῆς",
+              "χώρας",
+              "δόξης"
+            ],
+            [
+              "Dativo",
+              "τιμῇ",
+              "χώρᾳ",
+              "δόξῃ"
+            ],
+            [
+              "Acusativo",
+              "τιμήν",
+              "χώραν",
+              "δόξαν"
+            ],
+            [
+              "Vocativo",
+              "τιμή",
+              "χώρα",
+              "δόξα"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Paradigmas femininos no plural",
+        "body": "As três palavras agora seguem os mesmos finais: -αι, -ῶν, -αις, -ας e -αι. A diferença entre η, α conservado e α/η no singular não cria três séries de terminações no plural.\n\nO nominativo e o vocativo plural coincidem. Repare também que o acento de χώρα muda em χῶραι e χωρῶν; aprender uma terminação não dispensa observar a escrita da palavra completa.",
+        "table": {
+          "headers": [
+            "Caso",
+            "τιμή: plural",
+            "χώρα: plural",
+            "δόξα: plural"
+          ],
+          "rows": [
+            [
+              "Nominativo",
+              "τιμαί",
+              "χῶραι",
+              "δόξαι"
+            ],
+            [
+              "Genitivo",
+              "τιμῶν",
+              "χωρῶν",
+              "δοξῶν"
+            ],
+            [
+              "Dativo",
+              "τιμαῖς",
+              "χώραις",
+              "δόξαις"
+            ],
+            [
+              "Acusativo",
+              "τιμάς",
+              "χώρας",
+              "δόξας"
+            ],
+            [
+              "Vocativo",
+              "τιμαί",
+              "χῶραι",
+              "δόξαι"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Um masculino: προφήτης",
+        "body": "Aprenda o conjunto προφήτης, προφήτου, ὁ: profeta. O artigo ὁ indica masculino, e a palavra segue a primeira declinação. Há também masculinos em -ας, mas aqui vamos praticar apenas προφήτης.\n\nNo singular, observe o nominativo em -ης, o genitivo em -ου e o vocativo προφῆτα. No plural, as terminações são as mesmas que você estudou nos femininos. O gênero continua masculino em todas as formas.\n\nO final -αις indica dativo plural neste padrão, mas não determina o gênero: τιμαῖς é feminino por pertencer a τιμή; προφήταις é masculino por pertencer a προφήτης.",
+        "table": {
+          "headers": [
+            "Caso",
+            "Singular",
+            "Plural"
+          ],
+          "rows": [
+            [
+              "Nominativo",
+              "προφήτης",
+              "προφῆται"
+            ],
+            [
+              "Genitivo",
+              "προφήτου",
+              "προφητῶν"
+            ],
+            [
+              "Dativo",
+              "προφήτῃ",
+              "προφήταις"
+            ],
+            [
+              "Acusativo",
+              "προφήτην",
+              "προφήτας"
+            ],
+            [
+              "Vocativo",
+              "προφῆτα",
+              "προφῆται"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Leia o iota e os acentos",
+        "body": "O pequeno traço sob α ou η é chamado iota subscrito: ᾳ e ῃ. Ele faz parte da escrita dessas formas dativas singulares. Compare χώρα com χώρᾳ e δόξα com δόξῃ. No plural, o dativo tem -αις, com as letras escritas na linha: χώραις, δόξαις, τιμαῖς.\n\nAcentos também fazem parte da palavra: τιμή passa a τιμῆς e τιμῇ; προφήτης tem vocativo προφῆτα e nominativo plural προφῆται. Nesta etapa, use os paradigmas como apoio. Primeiro localize o final e compare as formas; depois confira todas as marcas ao escrever."
+      },
+      {
+        "heading": "Uma forma pode ter duas análises",
+        "body": "A terminação nem sempre fornece uma resposta única. Quando duas posições do paradigma têm a mesma forma, mantenha as duas possibilidades até observar a frase.\n\nEm τῆς χώρας, o artigo τῆς ajuda a reconhecer genitivo feminino singular: da região. Em τὰς χώρας, τὰς indica acusativo feminino plural: as regiões, em uma função que pede acusativo. Em τιμαί, o contexto mostra se há nominativo plural ou um chamado no vocativo plural.\n\nUse a palavra completa, o lema, o artigo quando houver e a função na frase. Um vocativo de chamamento normalmente aparece sem artigo; a palavra ὦ pode introduzir o chamado.",
+        "table": {
+          "headers": [
+            "Forma isolada",
+            "Análises possíveis"
+          ],
+          "rows": [
+            [
+              "τιμή",
+              "Nominativo ou vocativo feminino singular"
+            ],
+            [
+              "τιμαί",
+              "Nominativo ou vocativo feminino plural"
+            ],
+            [
+              "χώρας",
+              "Genitivo feminino singular ou acusativo feminino plural"
+            ],
+            [
+              "προφῆται",
+              "Nominativo ou vocativo masculino plural"
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Como analisar uma forma, passo a passo",
+        "body": "Use uma sequência curta: 1. identifique a palavra pelo lema; 2. compare seu final com o paradigma; 3. determine caso e número, mantendo possíveis coincidências; 4. obtenha o gênero do lema e confira a concordância com o artigo e o contexto.\n\nExemplo: δόξῃ. O lema é δόξα, δόξης, ἡ. No padrão α/η, -ῃ aparece no dativo singular. O artigo do lema indica feminino. A análise é dativo feminino singular; a tradução dependerá da frase.\n\nExemplo: προφήτου. O lema é προφήτης, προφήτου, ὁ. A tabela apresenta -ου no genitivo singular dessa palavra. O lema é masculino. A análise é genitivo masculino singular da primeira declinação.\n\nPara revisar, mantenha o caso e mude o número: δόξῃ → δόξαις. Depois mantenha o número e mude o caso: δόξῃ → δόξης. Explique em voz alta o que mudou antes de responder às questões."
       }
     ],
     "examples": [
       {
         "greek": "τῆς τιμῆς",
         "translation": "da honra",
-        "note": "Genitivo feminino singular."
+        "note": "1. Lema: τιμή, τιμῆς, ἡ. 2. -ης pertence ao genitivo singular da série η. 3. O lema indica feminino. 4. τῆς concorda com τιμῆς em genitivo feminino singular."
+      },
+      {
+        "greek": "τῇ δόξῃ",
+        "translation": "à glória",
+        "note": "1. Lema: δόξα, δόξης, ἡ. 2. A série α/η usa -ῃ no dativo singular. 3. O lema indica feminino. 4. τῇ e δόξῃ concordam em dativo feminino singular. A frase completa determina o sentido do dativo."
       },
       {
         "greek": "τοῦ προφήτου",
         "translation": "do profeta",
-        "note": "Genitivo de um masculino da primeira declinação."
+        "note": "1. Lema: προφήτης, προφήτου, ὁ. 2. προφήτου é genitivo singular. 3. O lema indica masculino e primeira declinação. 4. τοῦ concorda com προφήτου em genitivo masculino singular."
+      },
+      {
+        "greek": "ταῖς τιμαῖς",
+        "translation": "às honras",
+        "note": "1. Lema: τιμή, τιμῆς, ἡ. 2. -αις identifica dativo plural neste padrão. 3. O gênero feminino vem do lema. 4. ταῖς concorda com τιμαῖς em dativo feminino plural. A tradução exata depende da frase."
       }
     ],
     "questions": [
       {
         "kind": "parse",
         "greek": "τιμαῖς",
-        "prompt": "Analise τιμαῖς: identifique as categorias morfológicas solicitadas.",
+        "prompt": "Analise τιμαῖς, do lema τιμή, τιμῆς, ἡ (honra). Indique caso, gênero e número.",
         "fields": [
           {
             "label": "Caso",
@@ -1680,12 +1900,12 @@
             ]
           }
         ],
-        "explanation": "-αις identifica dativo plural nesta declinação.",
+        "explanation": "O final -αις identifica dativo plural neste padrão. O gênero feminino vem do lema τιμή, τιμῆς, ἡ, e não apenas da terminação.",
         "id": "m-primeira-declinacao-1"
       },
       {
         "kind": "choice",
-        "prompt": "Qual alternativa identifica corretamente o gênero e a declinação de προφήτης?",
+        "prompt": "O lema é προφήτης, προφήτου, ὁ (profeta). Qual alternativa identifica corretamente seu gênero e sua declinação?",
         "options": [
           "Feminino porque é da primeira declinação",
           "Masculino da primeira declinação",
@@ -1693,12 +1913,12 @@
           "Não possui genitivo"
         ],
         "answer": 1,
-        "explanation": "O lema é ὁ προφήτης; gênero e declinação não são a mesma categoria.",
+        "explanation": "O artigo ὁ indica masculino, e προφήτης pertence à primeira declinação. Gênero e declinação são informações diferentes.",
         "id": "m-primeira-declinacao-2"
       },
       {
         "kind": "match",
-        "prompt": "Relacione cada forma grega à análise morfológica compatível com seu paradigma.",
+        "prompt": "Relacione as formas de τιμή e χώρα à análise indicada pelos paradigmas. Quando nominativo e vocativo coincidem, conserve as duas possibilidades.",
         "pairs": [
           {
             "left": "τιμῆς",
@@ -1717,12 +1937,12 @@
             "right": "nominativo ou vocativo plural"
           }
         ],
-        "explanation": "τιμαί pode ser nominativo ou vocativo plural sem contexto; as demais formas apresentadas identificam os casos indicados. Preserve as coincidências do paradigma.",
+        "explanation": "τιμῆς é genitivo singular; τιμάς, acusativo plural; χώραν, acusativo singular. τιμαί coincide no nominativo e no vocativo plural: a frase distingue os dois usos.",
         "id": "m-primeira-declinacao-3"
       },
       {
         "kind": "parse",
-        "prompt": "Analise τιμήν, do substantivo feminino τιμή.",
+        "prompt": "Analise τιμήν, do lema τιμή, τιμῆς, ἡ (honra). Indique caso, gênero e número.",
         "greek": "τιμήν",
         "fields": [
           {
@@ -1754,12 +1974,12 @@
             ]
           }
         ],
-        "explanation": "τιμήν apresenta -ην, acusativo singular no paradigma de τιμή.",
+        "explanation": "No paradigma de τιμή, -ην é o final do acusativo singular. O gênero feminino é informado pelo lema.",
         "id": "m-primeira-declinacao-extra-1"
       },
       {
         "kind": "choice",
-        "prompt": "Qual genitivo singular deve ser aprendido com o lema feminino δόξα?",
+        "prompt": "Qual forma completa o conjunto δόξα, _____, ἡ com o genitivo singular correto?",
         "options": [
           "δόξης",
           "δόξας",
@@ -1767,26 +1987,165 @@
           "δόξαι"
         ],
         "answer": 0,
-        "explanation": "O par lexical é δόξα, δόξης: este grupo alterna alfa e eta no singular. Não se deve transferir a conservação de alfa de χώρα para todas as palavras.",
+        "explanation": "O conjunto é δόξα, δόξης, ἡ. Esse padrão usa α no nominativo singular e η no genitivo singular.",
         "id": "m-primeira-declinacao-extra-2"
       },
       {
         "kind": "order",
-        "prompt": "Monte o grupo “às honras” na ordem artigo–substantivo, com as formas dativas plurais fornecidas.",
+        "prompt": "Organize as duas formas dativas plurais para escrever “às honras”, colocando o artigo antes do substantivo.",
         "tokens": [
-          "ταῖς",
-          "τιμαῖς"
+          "τιμαῖς",
+          "ταῖς"
         ],
         "answer": [
           "ταῖς",
           "τιμαῖς"
         ],
-        "explanation": "ταῖς e τιμαῖς concordam em dativo feminino plural.",
+        "explanation": "O grupo é ταῖς τιμαῖς. Artigo e substantivo concordam em dativo feminino plural; o lema τιμή informa o gênero do substantivo.",
         "id": "m-primeira-declinacao-extra-3"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Compare χώρα, χώρας, ἡ e δόξα, δόξης, ἡ. O que acontece no genitivo e no dativo singular?",
+        "options": [
+          "χώρα conserva α; δόξα usa η: χώρας/χώρᾳ e δόξης/δόξῃ.",
+          "As duas conservam α: χώρας/χώρᾳ e δόξας/δόξᾳ.",
+          "As duas usam η: χώρης/χώρῃ e δόξης/δόξῃ.",
+          "A diferença entre α e η aparece apenas no plural."
+        ],
+        "answer": 0,
+        "explanation": "χώρα segue o padrão de alfa conservado; δόξα alterna α e η no singular. No genitivo e no dativo temos, respectivamente, χώρας/χώρᾳ e δόξης/δόξῃ.",
+        "id": "m-primeira-declinacao-alpha-eta"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise δόξῃ, do lema δόξα, δόξης, ἡ (glória). Indique caso, gênero e número.",
+        "greek": "δόξῃ",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Dativo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Feminino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "δόξα segue o padrão α/η, com -ῃ no dativo singular. O lema informa que o substantivo é feminino.",
+        "id": "m-primeira-declinacao-dativo-doxa"
+      },
+      {
+        "kind": "parse",
+        "prompt": "Analise προφήτου, do lema προφήτης, προφήτου, ὁ (profeta). Indique caso, gênero e número.",
+        "greek": "προφήτου",
+        "fields": [
+          {
+            "label": "Caso",
+            "answer": "Genitivo",
+            "options": [
+              "Nominativo",
+              "Genitivo",
+              "Dativo",
+              "Acusativo",
+              "Vocativo"
+            ]
+          },
+          {
+            "label": "Gênero",
+            "answer": "Masculino",
+            "options": [
+              "Masculino",
+              "Feminino",
+              "Neutro"
+            ]
+          },
+          {
+            "label": "Número",
+            "answer": "Singular",
+            "options": [
+              "Singular",
+              "Plural"
+            ]
+          }
+        ],
+        "explanation": "προφήτου é o genitivo singular de προφήτης, substantivo masculino da primeira declinação. O final -ου não muda a declinação nem o gênero da palavra.",
+        "id": "m-primeira-declinacao-genitivo-prophetes"
+      },
+      {
+        "kind": "match",
+        "prompt": "Relacione cada mudança de forma à comparação correta. Em cada par, o caso é mantido e o número muda.",
+        "pairs": [
+          {
+            "left": "τιμῇ → τιμαῖς",
+            "right": "dativo: singular → plural"
+          },
+          {
+            "left": "δόξαν → δόξας",
+            "right": "acusativo: singular → plural"
+          },
+          {
+            "left": "προφητῶν → προφήτου",
+            "right": "genitivo: plural → singular"
+          },
+          {
+            "left": "χῶραι → χώρα",
+            "right": "nominativo ou vocativo: plural → singular"
+          }
+        ],
+        "explanation": "As terminações indicam a mudança de número sem mudar o caso em cada par. χῶραι e χώρα coincidem, respectivamente, no nominativo/vocativo plural e no nominativo/vocativo singular.",
+        "id": "m-primeira-declinacao-comparar-numeros"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Sem artigo nem frase, quais análises são possíveis para χώρας, do lema χώρα, χώρας, ἡ?",
+        "options": [
+          "Somente genitivo feminino singular.",
+          "Genitivo feminino singular ou acusativo feminino plural.",
+          "Nominativo ou vocativo feminino plural.",
+          "Dativo feminino singular ou dativo feminino plural."
+        ],
+        "answer": 1,
+        "explanation": "χώρας ocupa duas posições do paradigma: genitivo singular e acusativo plural. O artigo e a função na frase ajudam a decidir: τῆς χώρας é genitivo singular; τὰς χώρας é acusativo plural.",
+        "id": "m-primeira-declinacao-ambiguidade-chora"
+      },
+      {
+        "kind": "choice",
+        "prompt": "Você chama um profeta diretamente. Qual é o vocativo singular de προφήτης no paradigma estudado?",
+        "options": [
+          "προφήτης",
+          "προφήτου",
+          "προφῆτα",
+          "προφήτην"
+        ],
+        "answer": 2,
+        "explanation": "O vocativo singular é προφῆτα. Compare o nominativo προφήτης, o genitivo προφήτου e o acusativo προφήτην. A chamada pode ser introduzida por ὦ: ὦ προφῆτα.",
+        "id": "m-primeira-declinacao-vocativo-prophetes"
       }
     ],
     "references": [
-      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 5. Síntese, organização dos paradigmas e exercícios próprios."
+      "Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. Fundamentals of New Testament Greek. Eerdmans, 2010, cap. 5, especialmente §§5.3.1–5.3.2 e 5.5.1. Fonte principal; síntese, organização dos quadros, explicações e exercícios próprios.",
+      "unfoldingWord. Greek Grammar, seção Paradigms: First Declension. Consulta complementar para formas e acentuação de δόξα e προφήτης. https://greek-grammar.readthedocs.io/en/latest/paradigms.html#first-declension",
+      "Smyth, Herbert Weir. Greek Grammar, §§216–219 e 222–226. Consulta complementar para χώρα e os limites da regra de conservação de alfa. https://ccel.org/s/smyth/grammar/html/smyth_2b_uni.htm"
     ]
   },
   {

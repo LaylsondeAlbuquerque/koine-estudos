@@ -1,10 +1,5 @@
 import {ChangeDetectionStrategy, Component, computed, input} from '@angular/core';
-
-interface ReadingSection {
-  heading: string;
-  body: string;
-  table?: {headers: string[]; rows: string[][]};
-}
+import {Section} from '../models';
 type Reference = string | {title: string; url?: string};
 
 @Component({
@@ -15,7 +10,7 @@ type Reference = string | {title: string; url?: string};
   templateUrl: './reading-body.component.html'
 })
 export class ReadingBodyComponent {
-  readonly sections = input.required<ReadingSection[]>();
+  readonly sections = input.required<Section[]>();
   paragraphs(body: string): string[] { return body.split(/\n\s*\n/).filter(Boolean); }
   greek(cell: string): boolean { return /[\u0370-\u03ff\u1f00-\u1fff]/.test(cell) && !/[a-zA-ZÀ-ÿ]/.test(cell); }
 }

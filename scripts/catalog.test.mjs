@@ -10,17 +10,46 @@ const articles = ['articles-morphology', 'articles-syntax', 'articles-vocabulary
 const words = read('vocabulary').entries;
 const catalog = createCatalog(lessons, articles, words);
 
-test('indexed searches preserve full-body, accent-insensitive results and their ordering', () => {
+test('indexed searches retain full-body matches, accent-insensitive results and their ordering', () => {
   const original = lessons.flatMap(lesson => [{...lesson, readingType: 'lesson'},
     ...articles.filter(article => article.lessonId === lesson.id).map(article => ({...article, readingType: 'article'}))]);
   for (const query of ['pronúncia', 'λογος', 'GENITIVO', 'referência temporal', 'χθές', 'não existe xyz']) {
     const term = normalize(query);
-    const expected = original.filter(item => normalize(`${item.title} ${item.summary} ${item.sections.map(section => section.body).join(' ')}`).includes(term)).slice(0, 12);
-    assert.deepEqual(catalog.searchReadings(query), expected);
+    const expected = original.filter(item => normalize(`${item.title} ${item.summary} ${item.sections.map(section => section.body).join(' ')}`).includes(term));
+    const complete = catalog.searchReadings(query, Infinity);
+    const existingMatches = new Set(expected.map(item => item.id));
+    assert.deepEqual(complete.filter(item => existingMatches.has(item.id)), expected);
+    assert.deepEqual(catalog.searchReadings(query), complete.slice(0, 12));
     assert.deepEqual(catalog.searchWords(query), words.filter(word => normalize(`${word.lemma} ${word.meaning} ${(word.aliases || []).join(' ')}`).includes(term)).slice(0, 8));
   }
   assert.deepEqual(catalog.searchReadings(''), []);
   assert.deepEqual(catalog.searchWords('λόγος', 0), []);
+});
+
+test('reading search includes worked examples, analysis and tables with the correct reading types', () => {
+  const lesson = {id: 'lesson-example', area: 'syntax', level: 1, order: 2, title: 'Aula', summary: 'Introdução', sections: [{
+    heading: 'Aposição', body: 'Uma explicação básica.',
+    example: {greek: 'δῶρον', translation: 'Dádiva', reference: 'Trecho-modelo'},
+    table: {headers: ['Flexão', 'Relação'], rows: [['φωτί', 'associativa']]},
+    analysis: 'Uma retomada anafórica. Termo comum.'
+  }]};
+  const nextLesson = {id: 'lesson-next', area: 'syntax', level: 1, order: 1, title: 'Outra aula', summary: 'Continuação', sections: [{heading: 'Revisão', body: 'Termo comum.'}]};
+  const article = {id: 'article-example', lessonId: lesson.id, area: 'syntax', level: 1, order: 2, title: 'Artigo', summary: 'Discussão', sections: [{
+    heading: 'Comparação', body: 'Outra explicação.',
+    example: {greek: 'δῶρον', translation: 'Oferta'},
+    analysis: 'Leitura aprofundada. Termo comum.'
+  }]};
+  const readings = createCatalog([lesson, nextLesson], [article], []);
+  const result = query => readings.searchReadings(query).map(item => [item.id, item.readingType]);
+  const lessonResult = [[lesson.id, 'lesson']];
+  for (const query of ['aposicao', 'dadiva', 'trecho-modelo', 'anaforica', 'flexao', 'φωτι', 'associativa']) {
+    assert.deepEqual(result(query), lessonResult, query);
+  }
+  assert.deepEqual(result('δωρον'), [[lesson.id, 'lesson'], [article.id, 'article']]);
+  assert.deepEqual(result('aprofundada'), [[article.id, 'article']]);
+  assert.deepEqual(result('termo comum'), [[lesson.id, 'lesson'], [article.id, 'article'], [nextLesson.id, 'lesson']]);
+  assert.deepEqual(readings.searchReadings('termo comum', 2).map(item => item.id), [lesson.id, article.id]);
+  assert.deepEqual(readings.searchReadings('termo comum', 0), []);
 });
 
 test('catalog relationships preserve every area, level and legacy ID without changing source order', () => {

@@ -4,6 +4,15 @@
     @for (paragraph of paragraphs(section.body); track $index) {
       <p style="white-space:pre-line">{{ paragraph }}</p>
     }
+    @if (section.example; as example) {
+      <figure class="reading-example">
+        <p class="greek" lang="grc">{{ example.greek }}</p>
+        <figcaption>
+          <p class="reading-example-translation">{{ example.translation }}</p>
+          @if (example.reference) {<p class="reading-example-reference">{{ example.reference }}</p>}
+        </figcaption>
+      </figure>
+    }
     @if (section.table; as table) {
       <div class="table-wrap">
         <table>
@@ -14,6 +23,14 @@
             }
           </tbody>
         </table>
+      </div>
+    }
+    @if (section.analysis; as analysis) {
+      <div class="reading-analysis">
+        <h3>Leitura sintática</h3>
+        @for (paragraph of paragraphs(analysis); track $index) {
+          <p style="white-space:pre-line">{{ paragraph }}</p>
+        }
       </div>
     }
   </section>

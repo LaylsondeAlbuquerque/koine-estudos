@@ -8,7 +8,7 @@ Michael W. Holmes, editor. *The Greek New Testament: SBL Edition*. © 2010 Socie
 - Licença vigente informada pelo titular: https://www.sblgnt.com/license/
 - CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 
-O repertório utiliza lemas e contagens do corpus MACULA baseado no SBLGNT. O texto bíblico corrido não é redistribuído no repertório. Os exemplos didáticos dos artigos são identificados como próprios; traduções portuguesas foram redigidas para as lições.
+O repertório utiliza lemas e contagens do corpus MACULA baseado no SBLGNT. O texto bíblico corrido não é redistribuído no repertório. Nas aulas, recortes bíblicos curtos são identificados por referência; exemplos didáticos são identificados como tais. As traduções portuguesas e as tabelas de análise foram redigidas para o projeto.
 
 ## MACULA Greek Linguistic Datasets
 
