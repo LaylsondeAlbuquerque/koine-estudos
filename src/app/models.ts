@@ -26,6 +26,7 @@ export interface Question {
 export interface Lesson {id:string;area:Area;level:number;order:number;module?:number;moduleTitle?:string;title:string;summary:string;minutes:number;objectives:string[];sections:Section[];examples?:{greek:string;translation:string;note:string}[];questions:Question[];references:Reference[];author?:string;}
 export interface Article {id:string;area:Area;level:number;order:number;module?:number;moduleTitle?:string;lessonId:string;title:string;summary:string;minutes:number;sections:Section[];discussionQuestions?:string[];references:Reference[];author?:string;}
 export interface Word {id:string;lemma:string;meaning:string;pos:string;rank:number;frequency:number;level:number;core300:boolean;aliases?:string[];audio?:string;}
-export interface Review {attempts:number;correct:number;dates:string[];box:number;nextReview:string;mastered:boolean;lastSeen?:string;}
+export type ManualWordState = 'review' | 'learned';
+export interface Review {attempts:number;correct:number;dates:string[];box:number;nextReview:string;mastered:boolean;lastSeen?:string;manualState?:ManualWordState;}
 export interface Progress {version:1;levels:Record<Area,number>;lessons:Record<string,boolean>;articles:Record<string,boolean>;vocab:Record<string,Review>;answers:Record<string,{correct:boolean;day:string;attempts:number}>;sessions:number;recentQuestions:string[];recentWords:string[];}
 export const blankProgress = ():Progress => ({version:1,levels:{morphology:0,syntax:0,vocabulary:0,semantics:0},lessons:{},articles:{},vocab:{},answers:{},sessions:0,recentQuestions:[],recentWords:[]});

@@ -27,6 +27,16 @@ class MockProgress {
   readonly toast = vi.fn();
   level(area: Area) { return this.state().levels[area]; }
   mutate(update: (state: Progress) => void) { const next = structuredClone(this.state()); update(next); this.state.set(next); }
+  wordState(id: string) { return this.state().vocab[id]?.manualState ?? null; }
+  wordLearned(id: string) { return isMastered(this.state().vocab[id]); }
+  readonly setWordState = vi.fn((id: string, manualState: 'review' | 'learned' | null) => {
+    this.mutate(state => {
+      const entry = state.vocab[id] ?? {attempts: 0, correct: 0, dates: [], box: 0, nextReview: '2026-11-07', mastered: false};
+      if (manualState === null) delete entry.manualState;
+      else entry.manualState = manualState;
+      state.vocab[id] = entry;
+    });
+  });
 }
 
 describe('Angular study sessions', () => {
@@ -237,6 +247,41 @@ describe('Angular study sessions', () => {
     fixture.detectChanges();
     expect(verify.disabled).toBe(false);
     expect(host.querySelector('.answer.chosen')).not.toBeNull();
+    expect(host.querySelector('.word-mark-actions')).toBeNull();
+  });
+
+  it('marks the actual vocabulary word on the card front and back without answering or advancing', () => {
+    study.start({area: 'vocabulary', mode: 'flashcards', wordId: 'word-0'});
+    const fixture = TestBed.createComponent(StudySessionComponent);fixture.detectChanges();
+    const host: HTMLElement = fixture.nativeElement;
+    const review = host.querySelector<HTMLButtonElement>('.word-mark-button.review')!;
+    const learned = host.querySelector<HTMLButtonElement>('.word-mark-button.learned')!;
+    expect(review.getAttribute('aria-label')).toContain('λέξις0');
+    review.click();fixture.detectChanges();
+    expect(progress.setWordState).toHaveBeenLastCalledWith('word-0', 'review');
+    expect(review.getAttribute('aria-pressed')).toBe('true');
+    expect(host.querySelector('.word-learning-label')?.textContent).toContain('Marcada para revisar');
+    expect(study.session()!.answered).toBe(false);expect(study.session()!.index).toBe(0);
+    expect(progress.state().answers).toEqual({});
+    expect(progress.state().vocab['word-0'].attempts).toBe(0);
+    expect(progress.state().vocab['word-0'].dates).toEqual([]);
+
+    learned.click();fixture.detectChanges();
+    expect(progress.setWordState).toHaveBeenLastCalledWith('word-0', 'learned');
+    expect(learned.getAttribute('aria-pressed')).toBe('true');
+    expect(review.getAttribute('aria-pressed')).toBe('false');
+    expect(study.session()!.answered).toBe(false);
+    study.choose(study.current()!.answer as number);fixture.detectChanges();
+    expect(host.querySelector('.study-card.card-back')).not.toBeNull();
+    const attempts = progress.state().vocab['word-0'].attempts;
+    review.click();fixture.detectChanges();
+    expect(study.session()!.index).toBe(0);expect(study.session()!.answered).toBe(true);
+    expect(progress.state().vocab['word-0'].attempts).toBe(attempts);
+    expect(progress.state().vocab['word-0'].manualState).toBe('review');
+    review.click();fixture.detectChanges();
+    expect(progress.setWordState).toHaveBeenLastCalledWith('word-0', null);
+    expect(review.getAttribute('aria-pressed')).toBe('false');
+    expect(study.session()!.index).toBe(0);
   });
 
   const finishChoice = (study: StudySessionService, correct = true) => {

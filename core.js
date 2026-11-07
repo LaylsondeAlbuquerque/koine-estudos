@@ -27,15 +27,22 @@ export function reviewAnswer(previous, correct, day = localDate()) {
   const entry = { attempts:0, correct:0, dates:[], box:0, nextReview:day, ...previous };
   entry.attempts++;
   entry.lastSeen = day;
-  if (!correct) { entry.dates=[]; entry.box=0; entry.nextReview=addDays(day,1); entry.mastered=false; return entry; }
+  if (!correct) { entry.dates=[]; entry.box=0; entry.nextReview=addDays(day,1); entry.mastered=false; if(entry.manualState==='learned')entry.manualState='review'; return entry; }
   entry.correct++;
   if (!entry.dates.includes(day)) { entry.dates=[...entry.dates,day]; entry.box=Math.min(entry.box+1,5); }
   entry.mastered=entry.dates.length>=3;
   entry.nextReview=addDays(day,[1,1,3,7,14,30][entry.box]);
   return entry;
 }
-export const isMastered = review => Boolean(review?.mastered && new Set(review?.dates||[]).size>=3);
-export const isDue = (review, day = localDate()) => Boolean(review && review.nextReview <= day);
+export const isMastered = review => review?.manualState==='learned' || (review?.manualState!=='review' && Boolean(review?.mastered && new Set(review?.dates||[]).size>=3));
+export const isDue = (review, day = localDate()) => review?.manualState==='review' || (review?.manualState!=='learned' && Boolean(review && review.nextReview <= day));
+export function matchesWordState(review, state='all') {
+  if(state==='all')return true;
+  if(state==='marked')return review?.manualState==='review';
+  if(state==='mastered')return isMastered(review);
+  if(state==='unlearned')return !isMastered(review);
+  return false;
+}
 const senseCache = new Map();
 function meaningSenses(value) {
   const key=String(value ?? '');
@@ -65,13 +72,13 @@ export function vocabularyQuestion(word, entries, random = Math.random, reverse 
   const options=shuffle([correct,...distractors.slice(0,3).map(x=>reverse?x.lemma:x.meaning)],random);
   return { id:`${reverse?'reverse':'word'}-${word.id}`,kind:'choice',wordId:word.id,greek:reverse?null:word.lemma,stimulus:reverse?word.meaning:null,optionsLang:reverse?'grc':null,audio:word.audio||null,prompt:reverse?'Qual palavra grega corresponde ao sentido apresentado em português?':'Qual alternativa apresenta um sentido em português para esta palavra grega?',options,answer:options.indexOf(correct),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Estes são sentidos de referência para memorizar; a tradução de uma passagem depende do contexto.`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
 }
-export function selectWords(entries, reviews, {limit=10, filter='all',level=null,day=localDate(),random=Math.random,recent=[]}={}) {
+export function selectWords(entries, reviews, {limit=10, filter='all',state='all',level=null,day=localDate(),random=Math.random,recent=[]}={}) {
   const frequencyGroup=/^top-(10|50|100|200|300)$/.exec(filter);
   const maxRank=frequencyGroup?Number(frequencyGroup[1]):null;
-  const pool=entries.filter(word => (level===null || word.level===level) && (maxRank===null || (Number.isInteger(word.rank)&&word.rank>0&&word.rank<=maxRank)) && (filter!=='core' || word.core300) && (filter!=='mastered' || isMastered(reviews[word.id])) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id]));
+  const pool=entries.filter(word => (level===null || word.level===level) && (maxRank===null || (Number.isInteger(word.rank)&&word.rank>0&&word.rank<=maxRank)) && (filter!=='core' || word.core300) && matchesWordState(reviews[word.id],state) && (!['mastered','marked','unlearned'].includes(filter) || matchesWordState(reviews[word.id],filter)) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id] || reviews[word.id].attempts===0));
   const due=shuffle(pool.filter(w=>isDue(reviews[w.id],day)),random);
-  const fresh=shuffle(pool.filter(w=>!reviews[w.id]),random);
-  const remaining=shuffle(pool.filter(w=>reviews[w.id]&&!isDue(reviews[w.id],day)),random);
+  const fresh=shuffle(pool.filter(w=>!isDue(reviews[w.id],day)&&!isMastered(reviews[w.id])&&(!reviews[w.id]||reviews[w.id].attempts===0)),random);
+  const remaining=shuffle(pool.filter(w=>reviews[w.id]&&!isDue(reviews[w.id],day)&&(reviews[w.id].attempts!==0||isMastered(reviews[w.id]))),random);
   const seen=new Set(recent),byRecency=group=>[...group.filter(w=>!seen.has(w.id)),...group.filter(w=>seen.has(w.id))];
   return [...byRecency(due),...byRecency(fresh),...byRecency(remaining)].slice(0,limit);
 }
@@ -105,5 +112,5 @@ export function validProgress(value) {
   if(value.levels.semantics!==undefined&&!integer(value.levels.semantics,3))return false;
   if(!Object.values(value.lessons).every(x=>typeof x==='boolean'))return false;
   if(!Object.values(value.answers).every(x=>object(x)&&typeof x.correct==='boolean'&&date(x.day)&&integer(x.attempts)))return false;
-  return Object.values(value.vocab).every(x=>object(x)&&Array.isArray(x.dates)&&x.dates.every(date)&&new Set(x.dates).size===x.dates.length&&integer(x.attempts)&&integer(x.correct,x.attempts)&&x.correct>=x.dates.length&&integer(x.box,5)&&x.box<=x.dates.length&&date(x.nextReview)&&typeof x.mastered==='boolean'&&x.mastered===(x.dates.length>=3));
+  return Object.values(value.vocab).every(x=>object(x)&&(x.manualState===undefined||['review','learned'].includes(x.manualState))&&Array.isArray(x.dates)&&x.dates.every(date)&&new Set(x.dates).size===x.dates.length&&integer(x.attempts)&&integer(x.correct,x.attempts)&&x.correct>=x.dates.length&&integer(x.box,5)&&x.box<=x.dates.length&&date(x.nextReview)&&typeof x.mastered==='boolean'&&x.mastered===(x.dates.length>=3));
 }

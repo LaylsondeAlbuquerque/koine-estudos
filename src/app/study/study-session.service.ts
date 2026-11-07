@@ -12,6 +12,7 @@ export interface StartSessionOptions {
   lessonId?: string;
   wordId?: string;
   filter?: string;
+  wordState?: string;
   limit?: number;
 }
 
@@ -123,6 +124,7 @@ export class StudySessionService {
       let words: Word[] = selectWords(this.content.vocabulary.entries, state.vocab, {
         limit: mode === 'practice' ? limit * 3 : limit,
         filter: filter === 'level' ? 'all' : filter,
+        state: options.wordState || 'all',
         level: filter === 'level' ? this.progress.level(area) : null,
         recent: state.recentWords || []
       });

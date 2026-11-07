@@ -6,7 +6,7 @@
         <span class="eyebrow">Sessão concluída</span>
         <h1>{{ study.errors().length ? 'Revise os pontos de atenção.' : 'Sessão concluída.' }}</h1>
         <div class="result-count">{{ s.correct }}<span> / {{ s.questions.length }} acertos</span></div>
-        <p>{{ s.area === 'vocabulary' ? 'Seu histórico de revisão foi atualizado. Volte em dias diferentes para consolidar a memória.' : 'Use os comentários das questões para decidir o que reler. A leitura e a prática se completam.' }}</p>
+        <p>{{ s.area === 'vocabulary' ? 'Seu histórico de revisão foi atualizado. Use as marcações para organizar o estudo e volte em dias diferentes para consolidar a memória.' : 'Use os comentários das questões para decidir o que reler. A leitura e a prática se completam.' }}</p>
         @if (study.errors().length) {
           <div class="session-error-list">
             <h3>Pontos para reencontrar</h3>
@@ -63,6 +63,16 @@
             <div class="card-bottom-mark">κ.</div>
           </section>
         </div>
+        @if (currentWord(); as word) {
+          <div class="flash-word-marks">
+            <p class="word-learning-label" [class.is-review]="progress.wordState(word.id) === 'review'" [class.is-learned]="progress.wordLearned(word.id)">{{ wordStateLabel(word.id) }}</p>
+            <div class="word-mark-actions" [attr.aria-label]="'Organizar revisão de ' + word.lemma">
+              <button class="word-mark-button review" [attr.aria-pressed]="progress.wordState(word.id) === 'review'" [attr.aria-label]="'Revisar ' + word.lemma" (click)="markWord(word.id, 'review')"><koine-icon name="cards" [size]="14"/>Revisar</button>
+              <button class="word-mark-button learned" [attr.aria-pressed]="progress.wordState(word.id) === 'learned'" [attr.aria-label]="'Já aprendida: ' + word.lemma" (click)="markWord(word.id, 'learned')"><koine-icon name="check" [size]="14"/>Já aprendida</button>
+            </div>
+            <p class="word-mark-note">Clique novamente na marcação selecionada para removê-la. Marcar uma palavra não responde ao cartão.</p>
+          </div>
+        }
         @if (s.answered) {
           <div class="card-review-actions"><button class="text-link" (click)="study.flip()"><koine-icon name="cards" [size]="15" />{{ back() ? 'Ver frente do cartão' : 'Ver verso do cartão' }}</button><span>{{ q.wordIds ? 'Revisão registrada neste navegador.' : 'Resposta registrada.' }}</span></div>
         }

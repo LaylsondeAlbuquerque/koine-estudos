@@ -102,4 +102,68 @@ describe('WordRepertoryComponent', () => {
     expect(component.currentPage()).toBe(0);
     expect(component.visibleWords()).toHaveLength(48);
   });
+
+  it('marks words from separate controls without opening a card or fabricating successful days', () => {
+    const fixture = TestBed.createComponent(WordRepertoryComponent), component = fixture.componentInstance;
+    fixture.detectChanges();
+    const root = fixture.nativeElement as HTMLElement;
+    const word = () => root.querySelector('[data-word-id="word-0"]') as HTMLElement;
+    expect(word().querySelector('button button')).toBeNull();
+    (word().querySelector('.word-mark-button.learned') as HTMLButtonElement).click();
+    fixture.detectChanges();
+    expect(start).not.toHaveBeenCalled();
+    expect(progress.wordLearned('word-0')).toBe(true);
+    expect(word().querySelector('.word-learning-label')!.textContent).toContain('Já aprendida');
+    expect(word().querySelector('.word-mark-button.learned')!.getAttribute('aria-pressed')).toBe('true');
+    expect(word().querySelectorAll('.word-state .filled')).toHaveLength(0);
+    expect(progress.state().vocab['word-0'].attempts).toBe(0);
+    expect(JSON.parse(localStorage.getItem(progress.storageKey)!).vocab['word-0'].manualState).toBe('learned');
+    expect(root.querySelector('.core-count')!.textContent).toContain('1');
+
+    component.changeFilter(change('mastered'));
+    fixture.detectChanges();
+    expect(component.filtered().map(word => word.id)).toEqual(['word-0']);
+    (word().querySelector('.word-mark-button.review') as HTMLButtonElement).click();
+    fixture.detectChanges();
+    expect(progress.wordLearned('word-0')).toBe(false);
+    expect(root.querySelectorAll('.word-entry')).toHaveLength(0);
+    expect(root.querySelector('.empty-state')!.textContent).toContain('Nenhum vocábulo');
+    component.changeFilter(change('marked'));
+    fixture.detectChanges();
+    expect(component.filtered().map(word => word.id)).toEqual(['word-0']);
+    expect(word().querySelector('.word-mark-button.review')!.getAttribute('aria-pressed')).toBe('true');
+    expect(word().querySelector('.word-learning-label')!.textContent).toContain('Marcada para revisar');
+    (word().querySelector('.word-mark-button.review') as HTMLButtonElement).click();
+    fixture.detectChanges();
+    expect(progress.wordState('word-0')).toBeNull();
+    expect(component.filtered()).toEqual([]);
+    expect(start).not.toHaveBeenCalled();
+  });
+
+  it('selects learned and unlearned groups through the repertoire filter, including manual and automatic knowledge', () => {
+    const fixture = TestBed.createComponent(WordRepertoryComponent);
+    progress.setWordState('word-0', 'review');
+    progress.setWordState('word-1', 'learned');
+    progress.mutate(state => state.vocab['word-2'] = {
+      attempts: 3, correct: 3, dates: ['2000-01-01', '2000-01-02', '2000-01-03'],
+      box: 3, nextReview: '2000-01-10', mastered: true
+    });
+    fixture.detectChanges();
+    const root = fixture.nativeElement as HTMLElement;
+    const filter = root.querySelector('#vocab-filter') as HTMLSelectElement;
+    const select = (value: string) => {filter.value = value; filter.dispatchEvent(new Event('change')); fixture.detectChanges();};
+    const ids = () => fixture.componentInstance.filtered().map(word => word.id);
+    select('mastered');
+    expect(ids()).toEqual(['word-1', 'word-2']);
+    select('unlearned');
+    expect(ids()).toContain('word-0');
+    expect(ids()).toContain('word-3');
+    expect(ids()).not.toContain('word-1');
+    expect(ids()).not.toContain('word-2');
+    select('marked');
+    expect(ids()).toEqual(['word-0']);
+    select('all');
+    expect(ids()).toHaveLength(words.length);
+    expect(Array.from(filter.options).map(option => option.value)).toEqual(expect.arrayContaining(['all', 'marked', 'mastered', 'unlearned']));
+  });
 });

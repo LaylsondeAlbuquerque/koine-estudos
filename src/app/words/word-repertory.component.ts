@@ -33,8 +33,9 @@ export class WordRepertoryComponent {
   readonly wordClass = this.view.wordClass;
   readonly page = this.view.page;
   readonly filters = [
-    ['all', 'Todos os vocábulos'], ['core', 'Núcleo dos 300'],
-    ['new', 'Ainda não estudados'], ['due', 'Para revisar hoje'], ['mastered', 'Memorizados']
+    ['all', 'Todos os vocábulos'], ['marked', 'Marcadas para revisar'],
+    ['mastered', 'Já aprendidas'], ['unlearned', 'Ainda não aprendidas'],
+    ['core', 'Núcleo dos 300'], ['due', 'Revisões de hoje'], ['new', 'Ainda não estudadas']
   ] as const;
   readonly days = [0, 1, 2];
   readonly filtered = computed<Word[]>(() => this.content.catalog.filterWords({
@@ -50,6 +51,14 @@ export class WordRepertoryComponent {
   percent(value: number): string { return this.percentFormat.format(value); }
   rank(word: Word): string { return String(word.rank).padStart(3, '0'); }
   successfulDays(word: Word): number { return Math.min(this.progress.state().vocab[word.id]?.dates?.length || 0, 3); }
+  learningLabel(word: Word): string {
+    if (this.progress.wordState(word.id) === 'review') return 'Marcada para revisar';
+    if (this.progress.wordLearned(word.id)) return 'Já aprendida';
+    return 'Ainda não aprendida';
+  }
+  markWord(word: Word, state: 'review' | 'learned'): void {
+    this.progress.setWordState(word.id, this.progress.wordState(word.id) === state ? null : state);
+  }
 
   changeQuery(event: Event): void { this.query.set((event.target as HTMLInputElement).value); this.page.set(0); }
   changeFilter(event: Event): void { this.filter.set((event.target as HTMLSelectElement).value); this.page.set(0); }

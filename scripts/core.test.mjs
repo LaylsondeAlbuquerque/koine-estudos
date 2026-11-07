@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
-import {reviewAnswer,isMastered,validProgress,vocabularyQuestion,selectWords,meaningsOverlap,coverage,selectStudyQuestions,shufflePairOrder} from '../core.js';
+import {reviewAnswer,isMastered,isDue,validProgress,vocabularyQuestion,selectWords,meaningsOverlap,coverage,selectStudyQuestions,shufflePairOrder} from '../core.js';
 const words=JSON.parse(readFileSync(new URL('../data/vocabulary.json',import.meta.url))).entries;
 const blank=()=>({version:1,levels:{morphology:0,syntax:0,vocabulary:0},lessons:{},vocab:{},answers:{},sessions:0});
 
@@ -49,6 +49,40 @@ test('memorization requires three distinct days and mistakes return the word to 
  entry=reviewAnswer(entry,true,'2026-11-03');assert.equal(isMastered(entry),true);assert.equal(entry.nextReview,'2026-11-10');
  entry=reviewAnswer(entry,false,'2026-11-10');assert.equal(isMastered(entry),false);assert.deepEqual(entry.dates,[]);assert.equal(entry.nextReview,'2026-11-11');
 });
+test('manual learned and review states override scheduling without manufacturing successful days',()=>{
+ const untouched={attempts:0,correct:0,dates:[],box:0,nextReview:'2099-01-01',mastered:false};
+ const learned={...untouched,manualState:'learned'};
+ assert.equal(isMastered(learned),true);assert.equal(isDue(learned,'2099-02-01'),false);
+ assert.equal(validProgress({...blank(),vocab:{a:learned}}),true);
+ let automatic;
+ for(const day of ['2026-10-20','2026-10-23','2026-10-30'])automatic=reviewAnswer(automatic,true,day);
+ const marked={...automatic,nextReview:'2099-01-01',manualState:'review'};
+ assert.equal(isMastered(marked),false);assert.equal(isDue(marked,'2026-11-03'),true);
+ assert.equal(marked.mastered,true);assert.deepEqual(marked.dates,automatic.dates);
+ assert.equal(validProgress({...blank(),vocab:{a:marked}}),true);
+ const sample=[{id:'learned',frequency:20},{id:'marked',frequency:30}];
+ assert.equal(coverage(sample,{learned,marked},100),20);
+});
+test('answers preserve manual review choices and mistakes return manually learned words to review',()=>{
+ const learned={attempts:0,correct:0,dates:[],box:0,nextReview:'2099-01-01',mastered:false,manualState:'learned'};
+ const correct=reviewAnswer(learned,true,'2026-11-03');
+ assert.equal(correct.manualState,'learned');assert.equal(correct.attempts,1);assert.deepEqual(correct.dates,['2026-11-03']);
+ assert.equal(isMastered(correct),true);
+ const mistake=reviewAnswer(correct,false,'2026-11-04');
+ assert.equal(mistake.manualState,'review');assert.equal(isMastered(mistake),false);
+ assert.equal(isDue(mistake,'2026-11-04'),true);assert.deepEqual(mistake.dates,[]);
+ let marked={...learned,manualState:'review'};
+ for(const day of ['2026-11-05','2026-11-06','2026-11-07'])marked=reviewAnswer(marked,true,day);
+ assert.equal(marked.mastered,true);assert.equal(marked.manualState,'review');assert.equal(isMastered(marked),false);
+ assert.equal(validProgress({...blank(),vocab:{a:marked,b:mistake}}),true);
+});
+test('backup validation accepts manual-only records but rejects invalid states and invented automatic mastery',()=>{
+ const entry={attempts:0,correct:0,dates:[],box:0,nextReview:'2026-11-03',mastered:false};
+ for(const manualState of [undefined,'review','learned'])assert.equal(validProgress({...blank(),vocab:{a:{...entry,manualState}}}),true);
+ for(const manualState of [null,false,0,'mastered','',{},[]])assert.equal(validProgress({...blank(),vocab:{a:{...entry,manualState}}}),false);
+ assert.equal(validProgress({...blank(),vocab:{a:{...entry,manualState:'learned',mastered:true}}}),false);
+ assert.equal(validProgress({...blank(),vocab:{a:{...entry,manualState:'learned',dates:['2026-11-01']}}}),false);
+});
 test('backup validation rejects corrupted history instead of granting false mastery',()=>{
  const value=blank();assert.equal(validProgress(value),true);
  value.vocab.a=reviewAnswer(undefined,true,'2026-10-30');assert.equal(validProgress(value),true);
@@ -95,6 +129,24 @@ test('frequency groups retain review and recent-word priorities inside the selec
  assert.equal(selected.some(word=>word.id==='rank-1'),false);
  assert.equal(new Set(selected.map(word=>word.level)).size>1,true);
  assert.equal(selectWords([...example,{id:'missing-rank',level:0,core300:true}],{}, {filter:'top-10',limit:100}).length,10);
+});
+test('vocabulary state groups intersect frequency groups and never duplicate manual-only reviews',()=>{
+ const pool=Array.from({length:12},(_,index)=>({id:`w${index+1}`,rank:index+1,level:0,core300:index<10}));
+ const empty={attempts:0,correct:0,dates:[],box:0,nextReview:'2099-01-01',mastered:false};
+ let automatic;
+ for(const day of ['2026-10-20','2026-10-23','2026-10-30'])automatic=reviewAnswer(automatic,true,day);
+ const reviews={w1:{...empty,manualState:'learned'},w2:{...empty,manualState:'review'},w3:automatic,
+  w4:reviewAnswer(undefined,true,'2026-11-03'),w11:{...empty,manualState:'review'},w12:{...empty,manualState:'learned'}};
+ const ids=options=>selectWords(pool,reviews,{filter:'top-10',limit:50,day:'2026-11-03',random:()=>.5,...options}).map(word=>word.id);
+ assert.deepEqual(new Set(ids({state:'mastered'})),new Set(['w1','w3']));
+ assert.deepEqual(ids({state:'marked'}),['w2']);
+ assert.deepEqual(new Set(ids({state:'unlearned'})),new Set(['w2','w4','w5','w6','w7','w8','w9','w10']));
+ const all=ids({state:'all'});assert.equal(all.length,10);assert.equal(new Set(all).size,10);
+ const newIds=ids({filter:'new'});assert(newIds.includes('w1'));assert(newIds.includes('w2'));
+ assert(!newIds.includes('w3'));assert(!newIds.includes('w4'));assert.equal(new Set(newIds).size,newIds.length);
+ assert.deepEqual(new Set(ids({filter:'marked'})),new Set(['w2','w11']));
+ assert.deepEqual(new Set(ids({filter:'mastered'})),new Set(['w1','w3','w12']));
+ assert.deepEqual(new Set(ids({filter:'unlearned'})),new Set(['w2','w4','w5','w6','w7','w8','w9','w10','w11']));
 });
 test('negation gloss qualifiers cannot become a second valid answer',()=>{
  const word={id:'a',lemma:'οὐ',meaning:'não',pos:'advérbio'};

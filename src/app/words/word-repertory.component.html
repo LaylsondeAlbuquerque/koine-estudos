@@ -4,7 +4,7 @@
     <h2>300 palavras, muitos reencontros.</h2>
     <p>Os 300 lemas mais frequentes deste repertório somam {{ percent(content.vocabulary.meta.core300?.coveragePercent || 0) }}% das ocorrências do corpus. Isso mede cobertura lexical; interpretar o texto também exige morfologia, sintaxe e contexto.</p>
   </div>
-  <div class="core-count">{{ progress.coreMastered() }} <span>/ 300 memorizados</span></div>
+  <div class="core-count">{{ progress.coreMastered() }} <span>/ 300 aprendidas</span></div>
 </section>
 <div class="level-summary">
   <div>
@@ -37,12 +37,14 @@
     </select>
   </label>
 </div>
+<p class="word-mark-help">Marque uma palavra para revisar ou como já aprendida. Para remover uma marcação, selecione o mesmo botão novamente. Os pontos continuam mostrando seus dias com acertos.</p>
 <div id="word-results">
   @if (filtered().length) {
     <p class="muted" style="font-size:9px;margin-bottom:13px">{{ format(filtered().length) }} {{ filtered().length === 1 ? 'vocábulo encontrado' : 'vocábulos encontrados' }}</p>
     <div class="vocab-grid">
       @for (word of visibleWords(); track word.id) {
-        <button class="word-card" (click)="studyWord(word)" [attr.aria-label]="'Estudar ' + word.lemma">
+        <article class="word-card word-entry" [attr.data-word-id]="word.id">
+          <button class="word-study" (click)="studyWord(word)" [attr.aria-label]="'Estudar ' + word.lemma">
           <span class="word-top">
             <span class="word-rank">#{{ rank(word) }}</span>
             @if (word.core300) { <span class="pill amber">Núcleo dos 300</span> }
@@ -55,7 +57,15 @@
               @for (day of days; track day) { <i [class.filled]="successfulDays(word) > day"></i> }
             </span>
           </span>
-        </button>
+          </button>
+          <div class="word-mark-panel">
+            <p class="word-learning-label" [class.is-review]="progress.wordState(word.id) === 'review'" [class.is-learned]="progress.wordLearned(word.id)">{{ learningLabel(word) }}</p>
+            <div class="word-mark-actions">
+              <button class="word-mark-button review" (click)="markWord(word, 'review')" [attr.aria-pressed]="progress.wordState(word.id) === 'review'" [attr.aria-label]="'Marcar ' + word.lemma + ' para revisar'" [title]="progress.wordState(word.id) === 'review' ? 'Remover marcação de revisão' : 'Marcar para revisar'"><koine-icon name="clock" [size]="13" />Revisar</button>
+              <button class="word-mark-button learned" (click)="markWord(word, 'learned')" [attr.aria-pressed]="progress.wordState(word.id) === 'learned'" [attr.aria-label]="'Marcar ' + word.lemma + ' como já aprendida'" [title]="progress.wordState(word.id) === 'learned' ? 'Remover marcação de já aprendida' : 'Marcar como já aprendida'"><koine-icon name="check" [size]="13" />Já aprendida</button>
+            </div>
+          </div>
+        </article>
       }
     </div>
   } @else {

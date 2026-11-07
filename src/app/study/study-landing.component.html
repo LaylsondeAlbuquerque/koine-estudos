@@ -5,12 +5,15 @@
     <h2 style="margin-top: 12px">{{ title() }}</h2>
     <p>{{ description() }}</p>
     <div class="study-settings">
-      <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option></select></label>
+      <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option></select></label>
       @if (vocabulary()) {
-        <label class="field">Escolher vocábulos<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
+        <label class="field">Conjunto de vocábulos<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
           <option value="level">Deste nível · {{ count() }} vocábulos</option>
           @for (amount of frequencyGroups; track amount) {<option [value]="'top-' + amount">{{ amount }} mais frequentes · todos os níveis</option>}
           <option value="due">Revisões de hoje · todos os níveis</option><option value="all">Repertório completo</option><option value="new">Ainda não estudados · todos os níveis</option>
+        </select></label>
+        <label class="field">Estado de aprendizado<select id="session-state" [value]="wordState()" (change)="wordState.set(value($event))">
+          <option value="all">Todos os vocábulos</option><option value="marked">Marcadas para revisar</option><option value="mastered">Já aprendidas</option><option value="unlearned">Ainda não aprendidas</option>
         </select></label>
       } @else {
         <label class="field">Assunto<select id="session-lesson" [value]="lessonId()" (change)="lessonId.set(value($event))">
@@ -18,7 +21,7 @@
         </select></label>
       }
     </div>
-    @if (vocabulary()) {<p class="study-selection-note">O conjunto define quais vocábulos podem aparecer; o tamanho da sessão define quantos {{ flash() ? 'cartões' : 'exercícios' }} você fará por vez. Os grupos de frequência incluem todos os níveis e priorizam as revisões e os vocábulos ainda não vistos.</p>}
+    @if (vocabulary()) {<p class="study-selection-note">O conjunto e a situação definem quais vocábulos podem aparecer; o tamanho da sessão define quantos {{ flash() ? 'cartões' : 'exercícios' }} você fará por vez. Para incluir palavras de qualquer nível, escolha “Repertório completo” ou um grupo de frequência. As marcações feitas durante uma sessão valem para as próximas seleções, sem interromper os cartões atuais.</p>}
     @if (area() === 'semantics') {<p class="study-selection-note">Use também as oficinas das aulas para redigir suas próprias análises. Acertar uma questão objetiva não substitui justificar uma interpretação com fontes e evidências.</p>}
     <button class="button button-primary" (click)="start()">Começar sessão<koine-icon name="arrow" [size]="15" /></button>
   </section>

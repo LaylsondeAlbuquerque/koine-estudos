@@ -101,3 +101,30 @@ test('indexed repertoire combines current reviews with text and class filters', 
   assert.deepEqual(catalog.filterWords({pos}), words.filter(word => word.pos === pos));
   for (const level of [0, 1, 2, 3]) assert.deepEqual(catalog.wordsForLevel(level), words.filter(word => word.level === level));
 });
+
+test('repertoire state filters combine with text, class and core filters while preserving untouched words', () => {
+  const pool = [
+    {id: 'a', lemma: 'λόγος', meaning: 'palavra', pos: 'substantivo', core300: true},
+    {id: 'b', lemma: 'ῥῆμα', meaning: 'palavra; declaração', pos: 'substantivo', core300: false},
+    {id: 'c', lemma: 'λέγω', meaning: 'dizer', pos: 'verbo', core300: true},
+    {id: 'd', lemma: 'θεός', meaning: 'Deus', pos: 'substantivo', core300: true}
+  ];
+  const empty = {attempts: 0, correct: 0, dates: [], box: 0, nextReview: '2099-01-01', mastered: false};
+  const reviews = {
+    a: {...empty, manualState: 'learned'},
+    b: {...empty, manualState: 'review'},
+    c: reviewAnswer(undefined, true, '2026-11-03')
+  };
+  const repertoire = createCatalog([], [], pool);
+  const ids = options => repertoire.filterWords({reviews, day: '2026-11-03', ...options}).map(word => word.id);
+  assert.deepEqual(ids({state: 'all'}), ['a', 'b', 'c', 'd']);
+  assert.deepEqual(ids({state: 'mastered', query: 'λογος', pos: 'substantivo'}), ['a']);
+  assert.deepEqual(ids({state: 'marked', query: 'palavra', pos: 'substantivo'}), ['b']);
+  assert.deepEqual(ids({state: 'marked', filter: 'core'}), []);
+  assert.deepEqual(ids({state: 'unlearned'}), ['b', 'c', 'd']);
+  assert.deepEqual(ids({state: 'unlearned', pos: 'verbo'}), ['c']);
+  assert.deepEqual(ids({filter: 'new'}), ['a', 'b', 'd']);
+  assert.deepEqual(ids({filter: 'marked'}), ['b']);
+  assert.deepEqual(ids({filter: 'mastered'}), ['a']);
+  assert.deepEqual(ids({filter: 'unlearned'}), ['b', 'c', 'd']);
+});

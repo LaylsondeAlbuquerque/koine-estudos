@@ -1,6 +1,6 @@
 import {Injectable,computed,inject,signal} from '@angular/core';
 import {coverage,isMastered,isDue,localDate,validProgress} from '../../core.js';
-import {Area,Progress,blankProgress} from './models';
+import {Area,Progress,ManualWordState,blankProgress} from './models';
 import {ContentService} from './content.service';
 
 @Injectable({providedIn:'root'})
@@ -32,6 +32,16 @@ export class ProgressService {
   toggleLesson(id:string){this.mutate(state=>state.lessons[id]=!state.lessons[id]);this.toast(this.state().lessons[id]?'Aula concluída. Pratique para aplicar o conceito.':'A aula voltou a ficar em aberto.');}
   toggleArticle(id:string){this.mutate(state=>state.articles[id]=!state.articles[id]);}
   completed(area:Area){const state=this.state();return this.content.lessonsFor(area).filter(lesson=>state.lessons[lesson.id]).length;}
+  wordState(id:string):ManualWordState|null{return this.state().vocab[id]?.manualState??null;}
+  wordLearned(id:string){return isMastered(this.state().vocab[id]);}
+  setWordState(id:string,value:ManualWordState|null){
+    if(!this.content.vocabulary.entries.some(word=>word.id===id)||![null,'review','learned'].includes(value)||this.wordState(id)===value)return;
+    this.mutate(state=>{
+      const entry=state.vocab[id]??={attempts:0,correct:0,dates:[],box:0,nextReview:localDate(),mastered:false};
+      if(value===null)delete entry.manualState;else entry.manualState=value;
+    });
+    this.toast(value==='review'?'Palavra marcada para revisar.':value==='learned'?'Palavra marcada como já aprendida.':'Marcação removida. O acompanhamento automático foi retomado.');
+  }
   masteredCount(){const state=this.state();return this.content.vocabulary.entries.filter(word=>isMastered(state.vocab[word.id])).length;}
   coreMastered(){const state=this.state();return this.content.vocabulary.entries.filter(word=>word.core300&&isMastered(state.vocab[word.id])).length;}
   coverage(){return coverage(this.content.vocabulary.entries,this.state().vocab,this.content.tokenCount());}

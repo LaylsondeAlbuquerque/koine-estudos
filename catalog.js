@@ -1,4 +1,4 @@
-import {normalize, isMastered, isDue, localDate} from './core.js';
+import {normalize, matchesWordState, isDue, localDate} from './core.js';
 
 // Content is immutable during a visit. Build relationships once; normalize the
 // larger search texts only when the student first uses each search.
@@ -64,14 +64,15 @@ export function createCatalog(lessons, articles, words) {
       const term = normalize(query.trim());
       return term && limit > 0 ? search(getWordIndex(), term, limit) : [];
     },
-    filterWords({query = '', pos = 'all', filter = 'all', reviews = {}, day = localDate()} = {}) {
+    filterWords({query = '', pos = 'all', filter = 'all', state = 'all', reviews = {}, day = localDate()} = {}) {
       const term = normalize(query);
       return getWordIndex().filter(({value: word, text}) =>
         (!term || text.includes(term)) && (pos === 'all' || word.pos === pos) &&
         (filter !== 'core' || word.core300) &&
-        (filter !== 'mastered' || isMastered(reviews[word.id])) &&
+        matchesWordState(reviews[word.id], state) &&
+        (!['mastered', 'marked', 'unlearned'].includes(filter) || matchesWordState(reviews[word.id], filter)) &&
         (filter !== 'due' || isDue(reviews[word.id], day)) &&
-        (filter !== 'new' || !reviews[word.id])
+        (filter !== 'new' || !reviews[word.id] || reviews[word.id].attempts === 0)
       ).map(item => item.value);
     }
   };

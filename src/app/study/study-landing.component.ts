@@ -21,7 +21,8 @@ export class StudyLandingComponent {
   readonly levels = LEVELS;
   readonly frequencyGroups = [10, 50, 100, 200, 300];
   readonly size = signal(10);
-  readonly filter = signal('level');
+  readonly filter = signal('all');
+  readonly wordState = signal('all');
   readonly lessonId = signal('');
   readonly flash = computed(() => this.mode() === 'flashcards');
   readonly vocabulary = computed(() => this.area() === 'vocabulary');
@@ -39,13 +40,13 @@ export class StudyLandingComponent {
   readonly tips = computed(() => [
     {title: this.flash() ? 'Pense antes de selecionar' : 'Observe antes de responder', text: this.flash() ? 'Tente recordar o sentido ou a análise antes de olhar as alternativas.' : this.area() === 'semantics' ? 'Distinga o que o texto informa, o que a construção favorece e o que seria apenas uma suposição.' : 'Leia o trecho inteiro. A mesma forma pode ter possibilidades diferentes.'},
     {title: 'Use a explicação', text: 'Um erro é uma pista: volte ao padrão ou conceito que ainda precisa de atenção.'},
-    {title: this.vocabulary() ? 'Volte em dias diferentes' : 'Conecte teoria e prática', text: this.vocabulary() ? 'A memorização é registrada após acertos em três dias diferentes. Erros devolvem o vocábulo à revisão.' : 'Reveja a aula quando precisar. O percurso permanece aberto para você retornar.'}
+    {title: this.vocabulary() ? 'Acompanhe sua aprendizagem' : 'Conecte teoria e prática', text: this.vocabulary() ? 'Acertos em três dias diferentes registram a aprendizagem automaticamente. Você também pode marcar a palavra como já aprendida ou para revisar.' : 'Reveja a aula quando precisar. O percurso permanece aberto para você retornar.'}
   ]);
   value(event: Event): string { return (event.target as HTMLSelectElement).value; }
   start(): void {
     // An input may remain mounted while the selected level changes. Ignore a
     // previous level's lesson instead of leaking that filter into this session.
     const selected = this.lessons().some(lesson => lesson.id === this.lessonId()) ? this.lessonId() : undefined;
-    this.study.start({area: this.area(), mode: this.mode(), limit: this.size(), filter: this.filter(), lessonId: this.vocabulary() ? undefined : selected});
+    this.study.start({area: this.area(), mode: this.mode(), limit: this.size(), filter: this.filter(), ...(this.vocabulary() ? {wordState: this.wordState()} : {}), lessonId: this.vocabulary() ? undefined : selected});
   }
 }
