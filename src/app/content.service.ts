@@ -16,13 +16,13 @@ export class ContentService {
   }
   private async fetchContent():Promise<void> {
     try {
-      const names=['morphology','syntax','vocabulary-lessons','vocabulary','articles-morphology','articles-syntax','articles-vocabulary'];
-      const [m,s,v,words,am,as,av]=await Promise.all(names.map(async name=>{
+      const names=['morphology','syntax','vocabulary-lessons','vocabulary','articles-morphology','articles-syntax','articles-vocabulary','semantics','articles-semantics'];
+      const [m,s,v,words,am,as,av,sem,asem]=await Promise.all(names.map(async name=>{
         const response=await fetch(new URL(`data/${name}.json`,document.baseURI));
         if(!response.ok)throw Error(`Não foi possível carregar ${name}.`);
         return response.json();
       }));
-      this.lessons=[...m,...s,...v];this.articles=[...am,...as,...av];this.vocabulary=words;
+      this.lessons=[...m,...s,...v,...sem];this.articles=[...am,...as,...av,...asem];this.vocabulary=words;
       this.catalog=createCatalog(this.lessons,this.articles,this.vocabulary.entries);
       this.ready.set(true);
     }catch(error){this.error.set(error instanceof Error?error.message:'Não foi possível carregar o conteúdo.');}

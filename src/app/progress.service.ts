@@ -13,8 +13,12 @@ export class ProgressService {
   readonly message=signal('');
   private toastTimer?:ReturnType<typeof setTimeout>;
   constructor(){
-    try {const stored=JSON.parse(localStorage.getItem(this.storageKey)||'null');if(validProgress(stored))this.state.set({...blankProgress(),...stored});}
+    try {const stored=JSON.parse(localStorage.getItem(this.storageKey)||'null');if(validProgress(stored))this.state.set(this.restore(stored));}
     catch {this.storageAvailable.set(false);}
+  }
+  private restore(value:Progress):Progress {
+    const defaults=blankProgress();
+    return {...defaults,...value,levels:{...defaults.levels,...value.levels}};
   }
   mutate(update:(state:Progress)=>void){
     const next=structuredClone(this.state());update(next);this.state.set(next);this.save();
@@ -43,7 +47,7 @@ export class ProgressService {
       const value:unknown=JSON.parse(await file.text());
       if(!validProgress(value))throw Error('Este arquivo não contém um histórico válido do Koiné.');
       if(!confirm('Importar este arquivo substituirá o progresso salvo neste navegador. Continuar?'))return;
-      this.state.set({...blankProgress(),...value});this.save();this.toast('Seu histórico foi importado.');
+      this.state.set(this.restore(value as Progress));this.save();this.toast('Seu histórico foi importado.');
     }catch(error){this.toast(error instanceof Error?error.message:'Não foi possível importar o arquivo.');}
   }
 }

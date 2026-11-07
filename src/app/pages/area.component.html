@@ -1,9 +1,19 @@
 <header [class]="'formation-heading ' + area()">
   <div class="formation-heading-icon"><koine-icon [name]="area()" [size]="32"/></div>
   <div><div class="eyebrow">FORMAÇÃO · GREGO KOINÉ</div><h1>{{ areas[area()].name }}</h1><p>{{ areas[area()].focus }}</p>
-    <div class="formation-info"><span><koine-icon name="path" [size]="14"/>{{ allLessons().length }} aulas</span><span><koine-icon name="book" [size]="14"/>{{ content.articlesFor(area()).length }} artigos</span><span><koine-icon name="path" [size]="14"/>4 níveis</span><span><koine-icon name="practice" [size]="14"/>{{ questionCount() }} exercícios</span>@if (area() === 'vocabulary') {<span>{{ number.format(content.vocabulary.entries.length) }} vocábulos</span>}</div>
+    <div class="formation-info"><span><koine-icon name="path" [size]="14"/>{{ allLessons().length }} aulas</span><span><koine-icon name="book" [size]="14"/>{{ content.articlesFor(area()).length }} artigos</span><span><koine-icon name="path" [size]="14"/>4 níveis</span>@if (moduleCount()) {<span>{{ moduleCount() }} módulos</span>}<span><koine-icon name="practice" [size]="14"/>{{ questionCount() }} exercícios</span>@if (area() === 'vocabulary') {<span>{{ number.format(content.vocabulary.entries.length) }} vocábulos</span>}</div>
   </div>
 </header>
+@if (area() === 'semantics') {
+  <section class="course-guide" aria-label="Como estudar semântica">
+    <p>Da pergunta sobre uma palavra à defesa de uma interpretação: estude o método de Juan Mateos em diálogo com Jesús Peláez, Stanley E. Porter e os controles críticos de D. A. Carson. Os exemplos do Novo Testamento mostram o que a evidência permite afirmar e o que permanece em aberto.</p>
+    <details><summary>Como seguir os 12 módulos</summary><div>
+      <p>É útil já reconhecer o alfabeto, consultar um lema e identificar relações básicas de uma oração. Você pode rever esses assuntos nas outras formações. Cada nível reúne três módulos de quatro aulas, com explicações, análises comentadas e uma oficina para aplicar o procedimento.</p>
+      <p>No Percurso, acompanhe as etapas da pesquisa; nos Artigos, examine problemas e alternativas com mais profundidade. Flashcards ajudam a recordar conceitos. A Prática verifica escolhas de análise, mas o trabalho acadêmico exige também escrever suas justificativas, registrar as fontes e discutir contraexemplos.</p>
+      <p>Nas oficinas, mantenha uma ficha com passagem, lema, pergunta, corpus, construção, hipóteses, definição contextual e tradução própria. O último módulo orienta a revisão e a apresentação desse estudo. Não é necessário resolver uma controvérsia para concluir uma análise bem documentada.</p>
+    </div></details>
+  </section>
+}
 <div class="level-bar"><span>Selecione seu nível</span><div class="level-buttons" aria-label="Escolher nível">
   @for (name of levels; track $index) {
     <button class="level-button" [class.active]="level() === $index" (click)="progress.setLevel(area(), $index)" [attr.aria-pressed]="level() === $index"><span class="level-no">{{ $index + 1 }}</span>{{ name }}</button>
@@ -16,10 +26,13 @@
 </nav>
 @switch (tab()) {
   @case ('path') {
-    <div class="level-summary"><div><h2>Seu percurso · {{ levels[level()] }}</h2><p>{{ levelDescriptions[level()] }}</p></div><span class="pill">{{ current().length }} aulas</span></div>
+    <div class="level-summary"><div><h2>Seu percurso · {{ levels[level()] }}</h2><p>{{ levelDescriptions()[level()] }}</p></div><span class="pill">{{ current().length }} aulas</span></div>
     <p class="area-purpose">Aulas em sequência para aprender a base de cada assunto. Estude a explicação, observe os exemplos e pratique; os aprofundamentos ficam na aba Artigos.</p>
     <div class="lesson-list">
       @for (lesson of current(); track lesson.id) {
+        @if (lesson.module && ($first || current()[$index - 1].module !== lesson.module)) {
+          <header class="course-module"><span class="eyebrow">Módulo {{ lesson.module }}</span><h3>{{ lesson.moduleTitle }}</h3></header>
+        }
         <article class="lesson-row">
           <div class="lesson-step" [class.done]="progress.state().lessons[lesson.id]">@if (progress.state().lessons[lesson.id]) {<koine-icon name="check" [size]="15"/>} @else { {{ step($index) }} }</div>
           <div><h3><a [routerLink]="['/', area(), 'lesson', lesson.id]">{{ lesson.title }}</a></h3><p>{{ lesson.summary }}</p><div class="lesson-row-meta"><koine-icon name="clock" [size]="11"/>{{ lesson.minutes }} min<span>·</span>{{ lesson.questions.length }} exercícios@if (progress.state().lessons[lesson.id]) {<span>· Aula concluída</span>}</div></div>

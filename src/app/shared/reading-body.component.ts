@@ -11,6 +11,7 @@ type Reference = string | {title: string; url?: string};
 })
 export class ReadingBodyComponent {
   readonly sections = input.required<Section[]>();
+  readonly analysisHeading = input('Leitura sintática');
   paragraphs(body: string): string[] { return body.split(/\n\s*\n/).filter(Boolean); }
   greek(cell: string): boolean { return /[\u0370-\u03ff\u1f00-\u1fff]/.test(cell) && !/[a-zA-ZÀ-ÿ]/.test(cell); }
 }

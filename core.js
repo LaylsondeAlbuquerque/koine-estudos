@@ -102,6 +102,7 @@ export function validProgress(value) {
   if(value.recentQuestions!==undefined&&(!Array.isArray(value.recentQuestions)||value.recentQuestions.length>200||!value.recentQuestions.every(id=>typeof id==='string'&&id.length<=500)))return false;
   if(value.recentWords!==undefined&&(!Array.isArray(value.recentWords)||value.recentWords.length>200||!value.recentWords.every(id=>typeof id==='string'&&id.length<=500)))return false;
   if(!['morphology','syntax','vocabulary'].every(area=>integer(value.levels[area],3)))return false;
+  if(value.levels.semantics!==undefined&&!integer(value.levels.semantics,3))return false;
   if(!Object.values(value.lessons).every(x=>typeof x==='boolean'))return false;
   if(!Object.values(value.answers).every(x=>object(x)&&typeof x.correct==='boolean'&&date(x.day)&&integer(x.attempts)))return false;
   return Object.values(value.vocab).every(x=>object(x)&&Array.isArray(x.dates)&&x.dates.every(date)&&new Set(x.dates).size===x.dates.length&&integer(x.attempts)&&integer(x.correct,x.attempts)&&x.correct>=x.dates.length&&integer(x.box,5)&&x.box<=x.dates.length&&date(x.nextReview)&&typeof x.mastered==='boolean'&&x.mastered===(x.dates.length>=3));

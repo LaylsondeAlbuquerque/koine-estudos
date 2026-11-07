@@ -1,6 +1,6 @@
 <div class="study-landing">
   <section class="study-start">
-    <div class="study-glyph" lang="grc">{{ vocabulary() ? 'λέξις' : area() === 'morphology' ? 'λύω' : 'σύν' }}</div>
+    <div class="study-glyph" lang="grc">{{ vocabulary() ? 'λέξις' : area() === 'morphology' ? 'λύω' : area() === 'semantics' ? 'σῆμα' : 'σύν' }}</div>
     <span class="eyebrow">{{ levels[progress.level(area())] }} · {{ flash() ? 'Reconhecer e recordar' : 'Aplicar o que você aprendeu' }}</span>
     <h2 style="margin-top: 12px">{{ title() }}</h2>
     <p>{{ description() }}</p>
@@ -19,6 +19,7 @@
       }
     </div>
     @if (vocabulary()) {<p class="study-selection-note">O conjunto define quais vocábulos podem aparecer; o tamanho da sessão define quantos {{ flash() ? 'cartões' : 'exercícios' }} você fará por vez. Os grupos de frequência incluem todos os níveis e priorizam as revisões e os vocábulos ainda não vistos.</p>}
+    @if (area() === 'semantics') {<p class="study-selection-note">Use também as oficinas das aulas para redigir suas próprias análises. Acertar uma questão objetiva não substitui justificar uma interpretação com fontes e evidências.</p>}
     <button class="button button-primary" (click)="start()">Começar sessão<koine-icon name="arrow" [size]="15" /></button>
   </section>
   <aside class="study-tips"><span class="eyebrow">Um jeito de estudar melhor</span>

@@ -160,3 +160,10 @@ test('older backups remain valid and recent history is bounded',()=>{
  assert.equal(validProgress({...blank(),articles:{'am-m-alfabeto':true}}),true);
  assert.equal(validProgress({...blank(),articles:{'am-m-alfabeto':'lido'}}),false);
 });
+
+
+test('new semantic levels validate without rejecting older backups',()=>{
+ const old=blank();assert.equal(validProgress(old),true);
+ for(const semantics of [0,1,2,3])assert.equal(validProgress({...old,levels:{...old.levels,semantics}}),true);
+ for(const semantics of [-1,4,'2',null])assert.equal(validProgress({...old,levels:{...old.levels,semantics}}),false);
+});

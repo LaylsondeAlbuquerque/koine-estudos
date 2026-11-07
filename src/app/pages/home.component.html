@@ -5,7 +5,7 @@
       <div class="hero-copy">
         <p class="hero-kicker">GREGO KOINÉ · ESTUDO ABERTO</p>
         <h1 id="home-title">Aprenda grego.<br><span>Leia o Novo Testamento.</span></h1>
-        <p class="hero-description">Morfologia, sintaxe e vocabulário.<br>Um percurso do alfabeto à análise do texto.</p>
+        <p class="hero-description">Morfologia, sintaxe, vocabulário e semântica.<br>Um percurso do alfabeto à interpretação do texto.</p>
         <div class="hero-actions">
           <a class="button hero-start" [routerLink]="['/morphology/lesson', firstLesson.id]">{{ completed() ? 'Continuar estudando' : 'Começar a estudar' }}<span><koine-icon name="arrow" [size]="19"/></span></a>
           <button class="hero-explore" (click)="explore()">Conhecer as formações<koine-icon name="arrow" [size]="16"/></button>
@@ -18,7 +18,7 @@
     </section>
   }
   <section class="home-section home-formations" id="formacoes">
-    <div class="section-heading"><div><p class="section-kicker">ESCOLHA SEU PERCURSO</p><h2>Três formas de avançar<br>na mesma língua.</h2></div><p class="section-intro">Comece pelos fundamentos ou vá direto ao seu nível. Cada formação reúne explicações e atividades para praticar.</p></div>
+    <div class="section-heading"><div><p class="section-kicker">ESCOLHA SEU PERCURSO</p><h2>Quatro formas de avançar<br>na mesma língua.</h2></div><p class="section-intro">Comece pelos fundamentos ou vá direto ao seu nível. Cada formação reúne explicações e atividades para praticar.</p></div>
     <div class="formation-grid">
       @for (area of areaKeys; track area) {
         <a class="formation-card" [class]="'formation-card ' + area" [routerLink]="['/', area, 'path']">
@@ -42,6 +42,7 @@
       <a class="quick-card morphology" routerLink="/morphology/practice"><span class="quick-icon"><koine-icon name="morphology" [size]="26"/></span><span><strong>Análise morfológica</strong><small>Identifique as formas das palavras</small></span><koine-icon name="arrow" [size]="18"/></a>
       <a class="quick-card syntax" routerLink="/syntax/practice"><span class="quick-icon"><koine-icon name="syntax" [size]="26"/></span><span><strong>Funções na oração</strong><small>Relacione os termos e suas funções</small></span><koine-icon name="arrow" [size]="18"/></a>
       <a class="quick-card vocabulary" routerLink="/vocabulary/practice"><span class="quick-icon"><koine-icon name="cards" [size]="26"/></span><span><strong>Palavras e traduções</strong><small>Associe vocábulos aos seus sentidos</small></span><koine-icon name="arrow" [size]="18"/></a>
+      <a class="quick-card semantics" routerLink="/semantics/practice"><span class="quick-icon"><koine-icon name="semantics" [size]="26"/></span><span><strong>Sentido em contexto</strong><small>Compare evidências e decisões exegéticas</small></span><koine-icon name="arrow" [size]="18"/></a>
     </div>
   </section>
   <section class="home-section home-library">

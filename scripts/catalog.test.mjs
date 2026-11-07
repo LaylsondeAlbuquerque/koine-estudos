@@ -5,10 +5,28 @@ import {createCatalog} from '../catalog.js';
 import {normalize, reviewAnswer, isDue, isMastered} from '../core.js';
 
 const read = name => JSON.parse(readFileSync(new URL(`../data/${name}.json`, import.meta.url)));
-const lessons = ['morphology', 'syntax', 'vocabulary-lessons'].flatMap(read);
-const articles = ['articles-morphology', 'articles-syntax', 'articles-vocabulary'].flatMap(read);
+const lessons = ['morphology', 'syntax', 'vocabulary-lessons', 'semantics'].flatMap(read);
+const articles = ['articles-morphology', 'articles-syntax', 'articles-vocabulary', 'articles-semantics'].flatMap(read);
 const words = read('vocabulary').entries;
 const catalog = createCatalog(lessons, articles, words);
+
+test('semantics offers a complete progression with deeper reading and varied practice in every module', () => {
+  const course = catalog.lessonsFor('semantics');
+  assert.deepEqual(course.map(lesson => lesson.id), Array.from({length: 48}, (_, i) => `sem-${String(i + 1).padStart(2, '0')}`));
+  for (let module = 1; module <= 12; module++) {
+    const group = course.filter(lesson => lesson.module === module);
+    assert.equal(group.length, 4, `Module ${module} must have four lessons`);
+    assert.equal(new Set(group.map(lesson => lesson.moduleTitle)).size, 1, `Module ${module} needs one title`);
+    for (const lesson of group) {
+      assert.equal(lesson.level, Math.floor((module - 1) / 3));
+      assert.equal(catalog.articlesForLesson(lesson.id).length, 1, `${lesson.id}: deeper reading`);
+      assert(lesson.sections.some(section => section.example), `${lesson.id}: worked biblical example`);
+      assert(lesson.questions.filter(question => question.kind === 'choice').length >= 3, `${lesson.id}: recall cards`);
+      assert(new Set(lesson.questions.map(question => question.kind)).size >= 2, `${lesson.id}: varied practice`);
+    }
+  }
+  assert(catalog.searchReadings('semema', Infinity).some(reading => reading.area === 'semantics'));
+});
 
 test('indexed searches retain full-body matches, accent-insensitive results and their ordering', () => {
   const original = lessons.flatMap(lesson => [{...lesson, readingType: 'lesson'},
@@ -54,7 +72,7 @@ test('reading search includes worked examples, analysis and tables with the corr
 
 test('catalog relationships preserve every area, level and legacy ID without changing source order', () => {
   const before = lessons.map(lesson => lesson.id);
-  for (const area of ['morphology', 'syntax', 'vocabulary']) {
+  for (const area of ['morphology', 'syntax', 'vocabulary', 'semantics']) {
     for (const level of [null, 0, 1, 2, 3]) {
       const expected = items => items.filter(item => item.area === area && (level === null || item.level === level)).sort((a, b) => a.order - b.order);
       assert.deepEqual(catalog.lessonsFor(area, level), expected(lessons));

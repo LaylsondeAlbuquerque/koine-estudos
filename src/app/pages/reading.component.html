@@ -3,9 +3,9 @@
   <a class="back-link" [routerLink]="['/', item.area, item.article ? 'articles' : 'path']"><koine-icon name="back" [size]="14"/>{{ item.article ? 'Voltar aos artigos de ' + levels[reading.level].toLowerCase() : 'Voltar ao percurso de ' + areas[item.area].name.toLowerCase() }}</a>
   <div class="article-layout" [class.deep-reading]="item.article" [class.lesson-reading]="!item.article">
     <article>
-      <header class="article-head"><span class="eyebrow">{{ item.article ? 'ARTIGO DE APROFUNDAMENTO' : 'AULA DO PERCURSO' }} · {{ levels[reading.level] }} · {{ reading.minutes }} min</span><h1>{{ reading.title }}</h1><p class="summary">{{ reading.summary }}</p></header>
+      <header class="article-head"><span class="eyebrow">{{ item.article ? 'ARTIGO DE APROFUNDAMENTO' : 'AULA DO PERCURSO' }} · {{ levels[reading.level] }} · {{ reading.minutes }} min</span>@if (reading.module) {<p class="reading-module">Módulo {{ reading.module }} · {{ reading.moduleTitle }}</p>}<h1>{{ reading.title }}</h1><p class="summary">{{ reading.summary }}</p></header>
       <div class="reading-purpose"><koine-icon [name]="item.article ? 'book' : 'path'" [size]="17"/>{{ item.article ? 'Uma discussão além da explicação básica da aula.' : 'Aprenda o conceito, observe os exemplos e pratique.' }}</div>
-      <koine-reading-body [sections]="reading.sections"/>
+      <koine-reading-body [sections]="reading.sections" [analysisHeading]="item.area === 'semantics' ? 'Análise semântica e exegética' : 'Leitura sintática'"/>
       @if (!item.article && item.lesson; as lesson) {
         @if (lesson.examples?.length) {
           <section class="article-section"><h2>Observe no exemplo</h2>@for (example of lesson.examples; track $index) {<div class="example-box"><span class="greek" lang="grc">{{ example.greek }}</span><p class="translation">{{ example.translation }}</p><p class="note">{{ example.note }}</p></div>}</section>

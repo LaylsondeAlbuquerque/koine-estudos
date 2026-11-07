@@ -27,7 +27,7 @@
     }
     @if (section.analysis; as analysis) {
       <div class="reading-analysis">
-        <h3>Leitura sintática</h3>
+        <h3>{{ analysisHeading() }}</h3>
         @for (paragraph of paragraphs(analysis); track $index) {
           <p style="white-space:pre-line">{{ paragraph }}</p>
         }

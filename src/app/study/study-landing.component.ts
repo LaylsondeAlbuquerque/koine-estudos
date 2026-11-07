@@ -29,14 +29,15 @@ export class StudyLandingComponent {
   readonly count = computed(() => this.vocabulary()
     ? this.content.catalog.wordsForLevel(this.progress.level(this.area())).length
     : this.lessons().reduce((sum, lesson) => sum + lesson.questions.filter(question => !this.flash() || ['choice', 'parse'].includes(question.kind)).length, 0));
-  readonly title = computed(() => this.flash() ? 'Flashcards' : this.vocabulary() ? 'Prática de vocabulário' : this.area() === 'morphology' ? 'Prática de morfologia' : 'Prática de sintaxe');
+  readonly title = computed(() => this.flash() ? 'Flashcards' : this.vocabulary() ? 'Prática de vocabulário' : this.area() === 'morphology' ? 'Prática de morfologia' : this.area() === 'semantics' ? 'Prática de semântica' : 'Prática de sintaxe');
   readonly description = computed(() => this.flash()
     ? 'Um conceito por cartão. Selecione a resposta para revelar o verso com a explicação; depois avance no seu ritmo.'
     : this.vocabulary() ? 'Associe palavras a seus sentidos e reconheça o vocábulo grego a partir do português. Cada desafio recebe uma explicação.'
     : this.area() === 'morphology' ? 'Identifique as características gramaticais das palavras, como caso, gênero e número. Selecione as respostas para fazer a análise morfológica.'
+    : this.area() === 'semantics' ? 'Compare hipóteses com os dados da passagem, relacione conceitos e avalie argumentos exegéticos. Cada resposta mostra qual evidência sustenta a análise.'
     : 'Identifique funções, relacione conceitos e organize traduções didáticas. O contexto e a explicação acompanham cada resposta.');
   readonly tips = computed(() => [
-    {title: this.flash() ? 'Pense antes de selecionar' : 'Observe antes de responder', text: this.flash() ? 'Tente recordar o sentido ou a análise antes de olhar as alternativas.' : 'Leia o trecho inteiro. A mesma forma pode ter possibilidades diferentes.'},
+    {title: this.flash() ? 'Pense antes de selecionar' : 'Observe antes de responder', text: this.flash() ? 'Tente recordar o sentido ou a análise antes de olhar as alternativas.' : this.area() === 'semantics' ? 'Distinga o que o texto informa, o que a construção favorece e o que seria apenas uma suposição.' : 'Leia o trecho inteiro. A mesma forma pode ter possibilidades diferentes.'},
     {title: 'Use a explicação', text: 'Um erro é uma pista: volte ao padrão ou conceito que ainda precisa de atenção.'},
     {title: this.vocabulary() ? 'Volte em dias diferentes' : 'Conecte teoria e prática', text: this.vocabulary() ? 'A memorização é registrada após acertos em três dias diferentes. Erros devolvem o vocábulo à revisão.' : 'Reveja a aula quando precisar. O percurso permanece aberto para você retornar.'}
   ]);

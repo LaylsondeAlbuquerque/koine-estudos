@@ -3,7 +3,7 @@ import {toSignal} from '@angular/core/rxjs-interop';
 import {ActivatedRoute, RouterLink} from '@angular/router';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
-import {Area, AREAS, AREA_KEYS, LEVELS, LEVEL_DESCRIPTIONS} from '../models';
+import {Area, AREAS, AREA_KEYS, LEVELS, LEVEL_DESCRIPTIONS, SEMANTICS_LEVEL_DESCRIPTIONS} from '../models';
 import {IconComponent} from '../shared/icon.component';
 import {StudyLandingComponent} from '../study/study-landing.component';
 import {StudySessionService} from '../study/study-session.service';
@@ -25,7 +25,7 @@ export class AreaComponent {
   private readonly params = toSignal(this.route.paramMap, {initialValue: this.route.snapshot.paramMap});
   readonly areas = AREAS;
   readonly levels = LEVELS;
-  readonly levelDescriptions = LEVEL_DESCRIPTIONS;
+  readonly levelDescriptions = computed(() => this.area() === 'semantics' ? SEMANTICS_LEVEL_DESCRIPTIONS : LEVEL_DESCRIPTIONS);
   readonly number = new Intl.NumberFormat('pt-BR');
   readonly area = computed<Area>(() => {
     const area = this.params().get('area') as Area;
@@ -41,6 +41,7 @@ export class AreaComponent {
   readonly current = computed(() => this.content.lessonsFor(this.area(), this.level()));
   readonly deeper = computed(() => this.content.articlesFor(this.area(), this.level()));
   readonly questionCount = computed(() => this.allLessons().reduce((count, lesson) => count + lesson.questions.length, 0));
+  readonly moduleCount = computed(() => new Set(this.allLessons().map(lesson => lesson.module).filter(Boolean)).size);
   readonly tabs = computed(() => [
     {key: 'path', title: 'Percurso', icon: 'path'}, {key: 'articles', title: 'Artigos', icon: 'book'},
     {key: 'flashcards', title: 'Flashcards', icon: 'cards'}, {key: 'practice', title: 'Prática', icon: 'practice'},

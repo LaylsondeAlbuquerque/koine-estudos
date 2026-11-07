@@ -30,6 +30,13 @@ import {Area} from '../models';
           <path d="M53 91h139m36 0h81M122 92v13h145V92" stroke="var(--art-accent)" stroke-width="2"/>
           <g fill="var(--art-muted)" font-family="BeVietnam,Arial,sans-serif" font-size="10"><text x="100" y="136">SUJEITO</text><text x="250" y="136">VERBO</text></g>
         }
+        @case ('semantics') {
+          <path d="M22 36h316M22 123h316" stroke="var(--art-accent)"/>
+          <g stroke="var(--art-accent)"><rect x="18" y="50" width="94" height="49"/><rect x="133" y="50" width="94" height="49"/><rect x="248" y="50" width="94" height="49"/><path d="M115 74h14m-5-5 5 5-5 5M230 74h14m-5-5 5 5-5 5"/></g>
+          <text x="65" y="83" text-anchor="middle" fill="var(--art-ink)" font-family="DidotGreek,Georgia,serif" letter-spacing="0" font-size="26">λόγος</text>
+          <g fill="var(--art-ink)" font-family="BeVietnam,Arial,sans-serif" font-size="12" text-anchor="middle"><text x="180" y="80">contexto</text><text x="295" y="80">sentido</text></g>
+          <text x="180" y="144" text-anchor="middle" fill="var(--art-muted)" font-family="BeVietnam,Arial,sans-serif" font-size="10">EVIDÊNCIA · HIPÓTESE · TRADUÇÃO</text>
+        }
         @default {
           <rect x="47" y="29" width="266" height="102" rx="0" stroke="var(--art-accent)"/>
           <path d="M47 91h266" stroke="var(--art-accent)"/>

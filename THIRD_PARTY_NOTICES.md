@@ -51,6 +51,10 @@ Os arquivos de fontes não foram modificados. Os ícones, a marca tipográfica e
 - Porter, Stanley E.; Reed, Jeffrey T.; O’Donnell, Matthew Brook. *Fundamentals of New Testament Greek*. Eerdmans, 2010.
 - Porter, Stanley E. *Idioms of the Greek New Testament*. Sheffield Academic Press, 2ª edição.
 - Wallace, Daniel B. *Greek Grammar Beyond the Basics*; edição portuguesa de sintaxe exegética consultada quando identificada nas lições.
+- Mateos, Juan. *Método de análisis semántico aplicado al griego del Nuevo Testamento*. El Almendro, 1989.
+- Peláez, Jesús. *Significado, traducción y definición de las palabras en el Diccionario Griego-Español del Nuevo Testamento (DGENT)*.
+- Porter, Stanley E. *Linguistic Analysis of the Greek New Testament*, especialmente os trechos sobre semântica, lexicografia e contexto disponibilizados para consulta.
+- Carson, D. A. *Falacias exegéticas*. Edição espanhola CLIE, 2013, tradução de Beatriz Fernández; especialmente o capítulo sobre estudos de palavras.
 
 As obras protegidas são referências para explicações e atividades próprias. PDFs, extrações, traduções integrais, páginas escaneadas e exercícios dos livros não integram o site nem o repositório. A referência não representa licença para redistribuição de uma obra, vínculo institucional ou endosso de seus autores.
 
@@ -67,3 +71,10 @@ A aplicação usa Angular (MIT), RxJS (Apache-2.0) e tslib (0BSD). O build de pr
 A adaptação visual em `ourforms.css` usa como referência os layouts e estilos de [Our Forms](https://github.com/LaylsondeAlbuquerque/our-forms), de Laylson de Albuquerque, no commit `b8a5c922f5f1dffd5722b08502e0f5f0f6f79b38`. O tema claro conserva sua paleta e linguagem de bordas e tipografia; a versão escura foi elaborada para o Koiné. A animação de grego permanece própria do projeto Koiné.
 
 Código de referência sob MIT, copyright 2025 Laylson de Albuquerque. Aviso integral em `assets/OurForms-MIT.txt`.
+
+## Excerto grego de Nestle 1904
+
+Alguns exemplos de Semântica identificam expressamente a edição de Eberhard Nestle (1904), em transcrição de Diego Renato dos Santos, disponibilizada no diretório `xhtml` do projeto Biblical Humanities. O aviso desse componente informa domínio público; não se presume a mesma condição para outras camadas do repositório. Usam-se apenas trechos do texto, sem importar morfologia, glossas ou anotações de outras camadas. As traduções portuguesas são próprias.
+
+- Texto e créditos: https://github.com/biblicalhumanities/Nestle1904/tree/master/xhtml
+- Condições do componente consultado: https://github.com/biblicalhumanities/Nestle1904/blob/master/xhtml/README.md

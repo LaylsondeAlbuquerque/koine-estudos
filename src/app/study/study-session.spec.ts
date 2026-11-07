@@ -49,6 +49,22 @@ describe('Angular study sessions', () => {
   });
   afterEach(() => { vi.useRealTimers(); TestBed.resetTestingModule(); });
 
+  it('studies semantic concepts without changing lexical memorization and returns to the next lesson', () => {
+    const semantic: Lesson = {...lesson('sem-test', [choice('sem-test-q')]), area: 'semantics'};
+    const following: Lesson = {...semantic, id: 'sem-next', order: 2};
+    content.lessons.push(semantic, following);content.catalog = createCatalog(content.lessons, [], content.vocabulary.entries);
+    content.lessonsFor = (area: Area, level: number) => content.catalog.lessonsFor(area, level);
+    study.start({area: 'semantics', mode: 'flashcards', lessonId: semantic.id});
+    expect(study.current()!.lessonId).toBe(semantic.id);
+    study.choose(study.current()!.answer as number);
+    expect(study.session()!.answered).toBe(true);expect(progress.state().vocab).toEqual({});
+    study.clear();study.start({area: 'semantics', mode: 'practice', lessonId: semantic.id});
+    study.choose(study.current()!.answer as number);study.verify();study.next();
+    expect(study.finished()).toBe(true);study.completeLessonAndContinue();
+    expect(progress.state().lessons[semantic.id]).toBe(true);
+    expect(navigate).toHaveBeenCalledWith(['/', 'semantics', 'lesson', following.id]);
+  });
+
   it('waits for confirmation, records an error, then retries only the failed question', () => {
     study.start({area: 'morphology', mode: 'practice', lessonId: 'choice'});
     const question = study.current()!;
@@ -165,7 +181,7 @@ describe('Angular study sessions', () => {
     }));
     content.vocabulary.entries = words;
     content.catalog = createCatalog(content.lessons, [], words);
-    progress.state.set({...blankProgress(), levels: {morphology: 0, syntax: 0, vocabulary: 3}});
+    progress.state.set({...blankProgress(), levels: {morphology: 0, syntax: 0, vocabulary: 3, semantics: 0}});
     const random = vi.spyOn(Math, 'random').mockReturnValue(.5);
     try {
       for (const amount of [10, 50, 100, 200, 300]) {

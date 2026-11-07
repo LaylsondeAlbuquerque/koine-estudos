@@ -1,7 +1,7 @@
 import {readFileSync,existsSync} from 'node:fs';
 import assert from 'node:assert/strict';
 const root=new URL('../',import.meta.url);
-const lessons=['morphology','syntax','vocabulary-lessons'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
+const lessons=['morphology','syntax','vocabulary-lessons','semantics'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
 const ids=new Set(),qids=new Set(),counts={};
 function validateSection(section,readingId){
  assert(section.heading&&section.body,readingId);
@@ -15,9 +15,15 @@ function validateSection(section,readingId){
 }
 for(const lesson of lessons){
  assert(!ids.has(lesson.id),`Duplicate lesson ${lesson.id}`);ids.add(lesson.id);
- assert(['morphology','syntax','vocabulary'].includes(lesson.area));assert(Number.isInteger(lesson.level)&&lesson.level>=0&&lesson.level<=3);
+ assert(['morphology','syntax','vocabulary','semantics'].includes(lesson.area));assert(Number.isInteger(lesson.level)&&lesson.level>=0&&lesson.level<=3);
  assert(lesson.title&&lesson.summary&&lesson.objectives?.length&&lesson.references?.length,lesson.id);
  assert(lesson.sections?.length>=3&&lesson.questions?.length>=3,lesson.id);
+ if(lesson.area==='semantics'){
+  assert(Number.isInteger(lesson.module)&&lesson.module>=1&&lesson.module<=12&&lesson.moduleTitle,`${lesson.id}: missing module`);
+  assert.equal(lesson.level,Math.floor((lesson.module-1)/3),`${lesson.id}: wrong module level`);
+  assert(lesson.sections.length>=5&&lesson.questions.length>=6,`${lesson.id}: incomplete study material`);
+  assert(lesson.questions.filter(q=>q.kind==='choice').length>=3,`${lesson.id}: insufficient recall cards`);
+ }
  for(const section of lesson.sections)validateSection(section,lesson.id);
  for(const q of lesson.questions){
   assert(!qids.has(q.id),q.id);qids.add(q.id);assert(q.prompt&&q.explanation,q.id);
@@ -56,7 +62,7 @@ for(const style of build.styles)checkRuntimeFile(new URL(style,root));
 for(const asset of build.assets){assert(!/tmp|node_modules|\.git(?:\/|$)/u.test(asset.input),'Private directory in build assets');assert(existsSync(new URL(asset.input+'/',root)),asset.input);}
 console.log(JSON.stringify(Object.fromEntries(Object.entries(counts).map(([a,c])=>[a,{lessons:c.lessons,questions:c.questions}]))));
 console.log(`${lessons.length} lessons and ${qids.size} questions validated.`);
-const articles=['articles-morphology','articles-syntax','articles-vocabulary'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
+const articles=['articles-morphology','articles-syntax','articles-vocabulary','articles-semantics'].flatMap(name=>JSON.parse(readFileSync(new URL(`data/${name}.json`,root),'utf8')));
 const covered=new Set();
 for(const article of articles){
  assert(!ids.has(article.id),`Duplicate reading ${article.id}`);ids.add(article.id);

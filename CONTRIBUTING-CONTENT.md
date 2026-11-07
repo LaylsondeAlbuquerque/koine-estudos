@@ -2,13 +2,13 @@
 
 Aplicação Angular em português, compilada para hospedagem estática no GitHub Pages em subdiretório. As bases protegidas ficam fora do repositório. Artigos e exercícios têm redação original; referências bibliográficas não significam reprodução nem endosso.
 
-Cada arquivo data/morphology.json, data/syntax.json e data/vocabulary-lessons.json contém uma lista de lições:
+Cada arquivo data/morphology.json, data/syntax.json, data/vocabulary-lessons.json e data/semantics.json contém uma lista de lições:
 
 ```json
 {"id":"m-alphabet","area":"morphology","level":0,"order":1,"title":"Alfabeto grego","summary":"Descrição breve.","minutes":8,"objectives":["Objetivo"],"sections":[{"heading":"Título","body":"Texto em português. Parágrafos separados por \\n\\n.","table":{"headers":["Forma","Análise"],"rows":[["λόγος","nominativo singular"]]}}],"examples":[{"greek":"ὁ λόγος","translation":"a palavra","note":"Comentário próprio; exemplo didático."}],"questions":[{"id":"m-alphabet-1","kind":"choice","prompt":"Qual é a resposta?","greek":"λόγος","options":["Alternativa correta","Outra","Outra ainda"],"answer":0,"explanation":"Explicação didática do gabarito."}],"references":["Porter, Reed e O’Donnell, Fundamentals of New Testament Greek: seção sobre o assunto (síntese didática original)."]}
 ```
 
-Níveis: 0 = Fundamentos; 1 = Essencial; 2 = Aprofundamento; 3 = Avançado. Áreas: morphology, syntax, vocabulary.
+Níveis: 0 = Fundamentos; 1 = Essencial; 2 = Aprofundamento; 3 = Avançado. Áreas: morphology, syntax, vocabulary, semantics.
 
 Para exemplos analisados dentro de uma seção, use os campos opcionais `example` e `analysis`. A apresentação segue explicação → texto grego e tradução → tabela de palavras → leitura sintática. A tabela continua opcional; os demais conteúdos não precisam desses campos.
 
@@ -45,12 +45,19 @@ Os artigos atuais mostram “Texto produzido por IA”. O campo opcional `author
 
 ## Aulas e aprofundamentos
 
-Os arquivos `morphology.json`, `syntax.json` e `vocabulary-lessons.json` guardam as aulas do Percurso e os exercícios avaliados. Seus IDs continuam vinculados ao progresso anterior. A rota principal de uma aula é `#/area/lesson/id`; os antigos links `#/area/article/id-da-aula` continuam abrindo a aula.
+Os arquivos `morphology.json`, `syntax.json`, `vocabulary-lessons.json` e `semantics.json` guardam as aulas do Percurso e os exercícios avaliados. Seus IDs continuam vinculados ao progresso anterior. A rota principal de uma aula é `#/area/lesson/id`; os antigos links `#/area/article/id-da-aula` continuam abrindo a aula.
 
-Os arquivos `articles-morphology.json`, `articles-syntax.json` e `articles-vocabulary.json` guardam os aprofundamentos da aba Artigos. Cada registro tem `id` próprio, `area`, `level`, `lessonId`, `order`, `title`, `summary`, `minutes`, `sections`, `references` e `discussionQuestions`. O `lessonId` deve apontar para uma aula da mesma área e nível. O texto precisa desenvolver uma discussão diferente da explicação básica; não copie o corpo da aula. As perguntas de reflexão não geram nota ou tentativas no histórico de exercícios.
+Os arquivos `articles-morphology.json`, `articles-syntax.json`, `articles-vocabulary.json` e `articles-semantics.json` guardam os aprofundamentos da aba Artigos. Cada registro tem `id` próprio, `area`, `level`, `lessonId`, `order`, `title`, `summary`, `minutes`, `sections`, `references` e `discussionQuestions`. O `lessonId` deve apontar para uma aula da mesma área e nível. O texto precisa desenvolver uma discussão diferente da explicação básica; não copie o corpo da aula. As perguntas de reflexão não geram nota ou tentativas no histórico de exercícios.
 
 As referências de aprofundamentos aceitam `{ "title": "Título da fonte", "url": "https://..." }`; a URL é opcional para referências bibliográficas impressas. Atribuições de posições a autores precisam de fonte identificável. Marcar um artigo como lido não conclui a aula correspondente. O aviso de IA fica no fim dos artigos de aprofundamento.
 
 ## Verificar e publicar
 
 Depois de alterar os dados, execute `npm run check`. Os assets públicos são declarados em `angular.json`. O workflow de Pages compila a aplicação e publica apenas `dist/koine/browser`; os PDFs e a pasta privada `tmp/` não participam do build.
+
+
+## Semântica e aplicações exegéticas
+
+A formação `semantics` segue 48 aulas em 12 módulos, com três módulos por nível. Os campos opcionais `module` (número de 1 a 12) e `moduleTitle` identificam o agrupamento na navegação. Cada aula tem ao menos seis questões, das quais três de escolha permitem revisão por flashcards; as demais podem relacionar conceitos, analisar campos ou ordenar um procedimento claramente pedido. Discussões abertas e oficinas não devem ter um gabarito que imponha uma interpretação controversa.
+
+Diferencie conteúdo lexical, contribuição da construção e inferência contextual. Identifique a passagem e a edição quando reproduzir um trecho grego; redija sua própria tradução portuguesa. Uma categoria do modelo de Mateos não deve ser apresentada como classificação consensual nem fundida sem explicação à abordagem de Porter. Os artigos aprofundam um problema distinto da aula, mantendo o aviso de autoria apenas no espaço já reservado ao fim do artigo. PDFs, OCR e caches privados não integram o conteúdo público.
