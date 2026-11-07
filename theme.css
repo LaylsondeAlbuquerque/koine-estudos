@@ -107,7 +107,7 @@ html[data-theme="dark"] .lesson-step.done{background:#1b3b30;border-color:#447c6
 html[data-theme="dark"] .lesson-row h3 a:hover{color:#a7d0ff}
 
 /* Reading surfaces and morphology tables. */
-html[data-theme="dark"] :is(.article-card,.article-layout>article,.article-aside,.study-start,.question-card,.session-result,.word-card,.progress-card,.progress-detail,.legal-content,.empty-state){background:var(--white);border-color:var(--line)}
+html[data-theme="dark"] :is(.article-card,.article-layout>:where(article),.article-aside,.study-start,.question-card,.session-result,.word-card,.progress-card,.progress-detail,.legal-content,.empty-state){background:var(--white);border-color:var(--line)}
 html[data-theme="dark"] :is(.article-card,.article-aside,.study-start,.session-result){border-top-color:#6fa3ec}
 html[data-theme="dark"] .article-card:hover{border-color:#58749a}
 html[data-theme="dark"] :is(.article-card .text-link,.article-section a,.legal-content a){color:#9cc8ff}

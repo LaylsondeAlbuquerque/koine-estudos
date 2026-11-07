@@ -6,12 +6,12 @@
    <div class="nav-container" [class.open]="menuOpen()"><nav class="main-nav" aria-label="Navegação principal">
     <a routerLink="/home" [class.active]="displayActive()==='home'" [attr.aria-current]="displayActive()==='home'?'page':null">Início</a>
     @for(area of areaKeys;track area){<a [routerLink]="['/',area,'path']" [class.active]="displayActive()===area" [attr.aria-current]="displayActive()===area?'page':null">{{areas[area].name}}</a>}
-    <a class="nav-about" routerLink="/about" [class.active]="displayActive()==='about'">O projeto</a><a class="mobile-progress" routerLink="/progress">Meu progresso</a>
+    <a class="nav-about" routerLink="/about" [class.active]="displayActive()==='about'" [attr.aria-current]="displayActive()==='about'?'page':null">O projeto</a><a class="mobile-progress" routerLink="/progress" [class.active]="displayActive()==='progress'" [attr.aria-current]="displayActive()==='progress'?'page':null">Meu progresso</a>
    </nav></div>
    <div class="header-tools">
     <button class="header-search search-toggle header-tool" (click)="openSearch()" aria-label="Buscar no conteúdo" title="Buscar no conteúdo"><koine-icon name="search" [size]="19"/></button>
     <button class="theme-toggle header-tool" (click)="toggleTheme()" [attr.aria-label]="themeLabel()" [title]="themeLabel()"><koine-icon [name]="theme()==='dark'?'sun':'moon'" [size]="19"/></button>
-    <a class="header-progress header-tool" routerLink="/progress" [class.active]="displayActive()==='progress'" aria-label="Meu progresso" title="Meu progresso"><koine-icon name="progress" [size]="19"/></a>
+    <a class="header-progress header-tool" routerLink="/progress" [class.active]="displayActive()==='progress'" [attr.aria-current]="displayActive()==='progress'?'page':null" aria-label="Meu progresso" title="Meu progresso"><koine-icon name="progress" [size]="19"/></a>
     <button class="menu-toggle header-tool" (click)="toggleMenu()" aria-label="Abrir navegação" [attr.aria-expanded]="menuOpen()"><koine-icon [name]="menuOpen()?'close':'menu'" [size]="23"/></button>
    </div>
   </div></header>

@@ -4,7 +4,7 @@
 @font-face{font-family:BeVietnam;src:url('./assets/BeVietnamPro-Regular.ttf') format('truetype');font-weight:400;font-display:swap}
 @font-face{font-family:BeVietnam;src:url('./assets/BeVietnamPro-SemiBold.ttf') format('truetype');font-weight:600;font-display:swap}
 :root,html[data-theme=light]{color-scheme:light;--paper:#fdfbf7;--white:#fffefa;--ink:#242422;--muted:#626159;--line:#c7c3b5;--soft:#f3f0e5;--blue:#155dfc;--green:#08783e;--navy:#242422;--lime:#f6edb8;--orange:#b84205;--red:#b91c2d;--morph:#08783e;--syntax:#155dfc;--vocab:#9810fa;--purple:#9810fa;--yellow:#ffdf20;--rule-green:#00a63e;--rule-orange:#ff6900;--rule-red:#e7000b;--action:#155dfc;--surface-hover:#f1eee1;--hero-bg:var(--paper);--hero-ink:var(--ink);--hero-muted:var(--muted);--round-bg:transparent;--round-ink:var(--ink);--soft-shadow:none;--sans:BeVietnam,DidotGreek,Arial,sans-serif;--display:MomoTrust,DidotGreek,Arial,sans-serif;--serif:var(--sans);--success-bg:#edf6e9;--success-ink:#185b2f;--success-line:#3a8650;--error-bg:#fff0ee;--error-ink:#9a2635;--error-line:#b64b56;--selected-bg:#ece7fc;--selected-line:#7843b7;--selected-ink:#4e2378}
-html[data-theme=dark]{color-scheme:dark;--paper:#191b18;--white:#232620;--ink:#f5f2e5;--muted:#c1c2b5;--line:#646b5b;--soft:#2c3027;--blue:#a7beff;--green:#99d8ac;--navy:#f5f2e5;--lime:#3a3a20;--orange:#ffb285;--red:#ffacaf;--morph:#99d8ac;--syntax:#a7beff;--vocab:#d5a7ff;--purple:#d5a7ff;--action:#ffdf20;--surface-hover:#30352b;--success-bg:#233f2a;--success-ink:#b7e9c5;--success-line:#82bd93;--error-bg:#48282d;--error-ink:#ffc6cb;--error-line:#d68590;--selected-bg:#382d49;--selected-line:#c294ed;--selected-ink:#ebd5ff}
+html[data-theme=dark]{color-scheme:dark;--paper:#000;--white:#000;--ink:#f4f4f5;--muted:#aaaab2;--line:#35353b;--soft:#101012;--blue:#a7beff;--green:#99d8ac;--navy:#f4f4f5;--lime:#25200b;--orange:#ffb285;--red:#ffacaf;--morph:#99d8ac;--syntax:#a7beff;--vocab:#d5a7ff;--purple:#d5a7ff;--action:#ffdf20;--surface-hover:#111113;--rule-green:#72d99a;--rule-orange:#ffad76;--rule-red:#ff858c;--success-bg:#233f2a;--success-ink:#b7e9c5;--success-line:#82bd93;--error-bg:#48282d;--error-ink:#ffc6cb;--error-line:#d68590;--selected-bg:#382d49;--selected-line:#c294ed;--selected-ink:#ebd5ff}
 html[data-theme] body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.75}
 html[data-theme] ::selection{background:#ffdf20;color:#242422}
 html[data-theme] :is(h1,h2,h3,.brand-name,.footer-wordmark,.brand-mark,.main-nav a,.button,.hero-explore,.level-button,.tab){font-family:var(--display);font-weight:400;font-synthesis:none;letter-spacing:0}
@@ -13,19 +13,19 @@ html[data-theme] :is(a,button,input,select,textarea):focus-visible{outline:3px s
 html[data-theme] :is(input,select,textarea){font-family:var(--sans);color:var(--ink);background:var(--white);border-color:var(--line);border-radius:0;color-scheme:inherit}
 html[data-theme] ::placeholder{color:var(--muted);opacity:1}
 html[data-theme] .eyebrow{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.7px;color:var(--muted)}
-/* Solid yellow in the reference; a muted olive surface for night reading. */
-:root{--header-bg:#ffdf20;--header-ink:#242422;--header-blue:#155dfc;--header-green:#08783e;--header-purple:#9810fa;--header-active:#ff6900;--header-rule:#00a63e}
-html[data-theme=dark]{--header-bg:#303520;--header-ink:#f9f4d5;--header-blue:#a7beff;--header-green:#99d8ac;--header-purple:#d5a7ff;--header-active:#ffb285;--header-rule:#899e58}
-html[data-theme] .site-header,html[data-theme] .layout[data-area=home] .site-header{position:relative;inset:auto;width:100%;background:var(--yellow);color:#242422;border-bottom:2px solid #00a63e;z-index:30}
+/* Reference yellow in light mode; a true black canvas in dark mode. */
+:root{--logo-ink:#000;--header-bg:#ffdf20;--header-ink:#242422;--header-blue:#155dfc;--header-green:#08783e;--header-purple:#9810fa;--header-active:#ff6900;--header-rule:#00a63e}
+html[data-theme=dark]{--logo-ink:#fff;--header-bg:#000;--header-ink:#f4f4f5;--header-blue:#a7beff;--header-green:#99d8ac;--header-purple:#d5a7ff;--header-active:#ffb285;--header-rule:#35353b}
+html[data-theme] .site-header,html[data-theme] .layout[data-area=home] .site-header{position:relative;inset:auto;width:100%;background:var(--yellow);color:#242422;border-bottom:0;z-index:30}
 html[data-theme] .site-header .header-inner,html[data-theme] .layout:has(.session-wrap) .site-header .header-inner{max-width:1280px;min-height:96px;height:auto;padding:20px 32px;gap:24px;justify-content:space-between;align-items:center}
 html[data-theme] .site-header .brand-name{font-size:38px;line-height:1.2;color:#155dfc;letter-spacing:-1px}
 html[data-theme] .brand-suffix{color:#08783e}
 html[data-theme] .site-header .brand-dot{color:#9810fa}
 html[data-theme] .site-header .nav-container{display:block;position:static;flex:0 1 auto;margin:0;background:transparent;border:0;border-radius:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}
 html[data-theme] .site-header .main-nav{max-width:none;height:auto;padding:0;gap:22px;flex-direction:row;align-items:center}
-html[data-theme] .site-header .main-nav a{padding:8px 0 6px;border:0;border-top:2px solid transparent;border-bottom:2px solid transparent;border-radius:0;background:transparent;box-shadow:none;color:#242422;font-size:17px;line-height:1.5;text-transform:lowercase;white-space:nowrap}
-html[data-theme] .site-header .main-nav a:hover{background:transparent;color:#242422;border-top-color:#00a63e}
-html[data-theme] .site-header .main-nav a.active{background:transparent;color:#242422;border-bottom-color:#ff6900;box-shadow:none;font-weight:400}
+html[data-theme] .site-header .main-nav a{padding:4px 0;border:0;border-top:2px solid transparent;border-bottom:0;border-radius:0;background:transparent;box-shadow:none;color:#242422;font-size:17px;line-height:1.5;text-transform:lowercase;white-space:nowrap;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:2px;text-underline-offset:4px;transition:all 300ms cubic-bezier(.4,0,.2,1)}
+@media(hover:hover){html[data-theme] .site-header .main-nav a:hover:not(.active){background:transparent;color:var(--header-ink);border-top-color:var(--header-green);padding-left:8px;padding-right:8px}}
+html[data-theme] .site-header .main-nav a.active{background:transparent;color:#242422;border:0;border-top:2px solid transparent;box-shadow:none;font-weight:400;text-transform:capitalize;text-decoration-color:var(--header-active)}
 html[data-theme] .site-header .main-nav .nav-about{margin:0;font-size:17px}
 html[data-theme] .site-header .main-nav .mobile-progress{display:none}
 html[data-theme] .header-tools{gap:8px}
@@ -46,21 +46,21 @@ html[data-theme] .footer-wordmark{font-size:28px;color:var(--blue)}
 html[data-theme] :is(.button,.button-small,.hero-start,.icon-button,.level-button,.pill,.answer,.match-button,.token,.feedback,.order-target,.study-card,.study-glyph,.tip-num,.parse-grid select,.progress-track,.progress-fill){border-radius:0;box-shadow:none}
 html[data-theme] .button{font-size:16px;line-height:1.5;min-height:44px;padding:10px 18px;border-width:2px;font-weight:400;transition:background .15s,color .15s}
 html[data-theme] :is(.button-primary,.button-lime,.hero-start){background:transparent;border:2px solid var(--rule-red);color:var(--ink)}
-html[data-theme] :is(.button-primary,.button-lime,.hero-start):hover{background:var(--yellow);color:#242422;border-color:#e7000b;transform:none}
+html[data-theme] :is(.button-primary,.button-lime,.hero-start):hover{background:transparent;color:var(--ink);border-color:var(--rule-red);transform:none}
 html[data-theme] .button-outline{background:transparent;border-color:var(--blue);color:var(--ink)}
-html[data-theme] .button-outline:hover{background:var(--soft);border-color:var(--green);color:var(--ink)}
+html[data-theme] .button-outline:hover{background:transparent;border-color:var(--blue);color:var(--ink)}
 html[data-theme] .button-small{font-size:13px;min-height:36px;padding:6px 12px}
 html[data-theme] :is(.text-link,.back-link,.summary-link,.references a,.article-section a){color:var(--blue)}
 html[data-theme] .text-link:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--rule-orange);text-decoration-thickness:2px}
 html[data-theme] .icon-button{background:var(--white);border:1px solid var(--line);color:var(--ink)}
-html[data-theme] .pill{background:var(--soft);border:1px solid var(--green);color:var(--green)}
+html[data-theme] .pill{white-space:nowrap;flex-shrink:0;background:var(--soft);border:1px solid var(--green);color:var(--green)}
 html[data-theme] .pill.lilac{border-color:var(--purple);color:var(--purple);background:var(--soft)}
 html[data-theme] .pill.amber{border-color:var(--orange);color:var(--orange);background:var(--soft)}
 html[data-theme] .progress-track{background:var(--soft);border:1px solid var(--line)}
 html[data-theme] .progress-fill{background:var(--green)}
 html[data-theme] .toast{background:var(--white);color:var(--ink);border:2px solid var(--green);border-radius:0;box-shadow:none}
-html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.formation-heading,.level-bar,.lesson-list,.article-card,.article-layout>article,.article-aside,.study-start,.question-card,.session-result,.vocab-banner,.word-card,.progress-card,.progress-detail,.backup-panel,.legal-content,.search-dialog,.study-summary,.continue-card){background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:0;box-shadow:none}
-html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.article-card,.word-card):hover{transform:none;box-shadow:none;border-color:var(--purple)}
+html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.formation-heading,.level-bar,.lesson-list,.article-card,.article-aside,.study-start,.question-card,.session-result,.vocab-banner,.word-card,.progress-card,.progress-detail,.backup-panel,.legal-content,.search-dialog,.study-summary,.continue-card),html[data-theme] .article-layout>article{background:var(--white);color:var(--ink);border:1px solid var(--line);border-radius:0;box-shadow:none}
+html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.article-card,.word-card):hover{transform:none;box-shadow:none}
 html[data-theme] :is(.formation-body>p,.course-meta,.formation-progress-label,.quick-card small,.discovery-card>p,.discovery-meta,.formation-heading p,.formation-info,.lesson-row p,.lesson-row-meta,.summary-line,.vocab-banner p,.word-meaning){color:var(--muted)}
 /* Keep the Greek canvas, give its surrounding page the Our Forms typography. */
 html[data-theme] .home-flow{padding-bottom:72px}
@@ -85,8 +85,8 @@ html[data-theme] .home-section .section-heading h2{font-size:clamp(28px,3.2vw,40
 html[data-theme] .section-kicker{font-size:11px;letter-spacing:.7px;color:var(--muted);font-weight:600;margin-bottom:12px}
 html[data-theme] .home-section .section-intro{font-size:14px;line-height:1.9;max-width:380px;color:var(--muted)}
 html[data-theme] .area-home .formation-grid{gap:24px}
-html[data-theme] .area-home .formation-card{border:1px dashed var(--purple);border-radius:0;box-shadow:none;transition:border-color .15s}
-html[data-theme] .area-home .formation-card:hover{transform:none;border-style:solid;box-shadow:none}
+html[data-theme] .area-home .formation-card{border:1px dashed var(--purple);border-radius:0;box-shadow:none;transition:none}
+html[data-theme] .area-home .formation-card:hover{transform:none;border-style:dashed;box-shadow:none}
 html[data-theme] .area-home .formation-cover{height:146px;background:var(--soft);border-bottom:2px solid var(--green)}
 html[data-theme] .area-home .syntax .formation-cover{border-color:var(--blue)}
 html[data-theme] .area-home .vocabulary .formation-cover{border-color:var(--purple)}
@@ -100,16 +100,16 @@ html[data-theme] .area-home .formation-footer,html[data-theme] .area-home .forma
 html[data-theme] .study-resume{border-top:2px solid var(--blue);border-bottom:2px solid var(--green);padding:28px 0}
 html[data-theme] .resume-main h2{font-size:24px;letter-spacing:0;font-weight:400}
 html[data-theme] .study-resume>.button{border-radius:0;font-size:15px}
-html[data-theme] .area-home .quick-card{padding:24px 20px;border:1px dashed var(--purple);border-radius:0;box-shadow:none;transition:border-color .15s}
-html[data-theme] .area-home .quick-card:hover{transform:none;border-style:solid}
+html[data-theme] .area-home .quick-card{padding:24px 20px;border:1px dashed var(--purple);border-radius:0;box-shadow:none;transition:none}
+html[data-theme] .area-home .quick-card:hover{transform:none;border-style:dashed}
 html[data-theme] :is(.quick-icon,.quick-card.syntax .quick-icon,.quick-card.vocabulary .quick-icon){background:transparent;border-radius:0;color:var(--green);padding:4px}
 html[data-theme] .quick-card.syntax .quick-icon{color:var(--blue)}
 html[data-theme] .quick-card.vocabulary .quick-icon{color:var(--purple)}
 html[data-theme] .area-home .quick-card strong{font-family:var(--display);font-weight:400;font-size:17px}
 html[data-theme] .area-home .quick-card small{font-size:12px}
 html[data-theme] .area-home .discovery-grid{gap:22px}
-html[data-theme] .area-home .discovery-card{padding:24px 22px 0;border:1px dashed var(--purple);border-top:2px solid var(--green);border-radius:0;box-shadow:none;transition:border-color .15s}
-html[data-theme] .area-home .discovery-card:hover{transform:none;border-style:solid}
+html[data-theme] .area-home .discovery-card{padding:24px 22px 0;border:1px dashed var(--purple);border-top:2px solid var(--green);border-radius:0;box-shadow:none;transition:none}
+html[data-theme] .area-home .discovery-card:hover{transform:none;border-style:dashed}
 html[data-theme] .area-home .discovery-card.syntax{border-top-color:var(--blue)}
 html[data-theme] .area-home .discovery-card.vocabulary{border-top-color:var(--purple)}
 html[data-theme] .area-home .discovery-top{color:var(--green);font-size:11px;margin-bottom:18px}
@@ -120,15 +120,15 @@ html[data-theme] .discovery-meta{border-color:var(--line);color:var(--muted)}
 html[data-theme] .home-priority{padding:40px;border:2px solid var(--green);border-radius:0;background:var(--soft)}
 html[data-theme] .home-priority h2{font-size:38px;font-weight:400;letter-spacing:0}
 /* Learning navigation and reading retain their structure and content. */
-html[data-theme] .formation-heading{background:transparent;border:0;border-bottom:2px solid var(--green);padding:18px 0 30px;margin-bottom:28px}
+html[data-theme] .formation-heading{background:transparent;border:0;border-bottom:2px solid var(--green);padding:24px 24px 32px;margin-bottom:32px;gap:24px}
 html[data-theme] .formation-heading.syntax{border-color:var(--blue)}
 html[data-theme] .formation-heading.vocabulary{border-color:var(--purple)}
-html[data-theme] :is(.formation-heading-icon,.syntax .formation-heading-icon,.vocabulary .formation-heading-icon){width:66px;height:66px;border:1px dashed currentColor;border-radius:0;background:transparent;color:var(--green)}
+html[data-theme] :is(.formation-heading-icon,.syntax .formation-heading-icon,.vocabulary .formation-heading-icon){width:56px;height:56px;border:0;border-radius:0;background:transparent;color:var(--green)}
 html[data-theme] .syntax .formation-heading-icon{color:var(--blue)}
 html[data-theme] .vocabulary .formation-heading-icon{color:var(--purple)}
 html[data-theme] .formation-heading h1{font-size:38px;font-weight:400}
 html[data-theme] .formation-heading .eyebrow{color:var(--muted)}
-html[data-theme] .level-bar{background:transparent;border:0;border-bottom:1px solid var(--line);padding:12px 0 18px}
+html[data-theme] .level-bar{background:transparent;border:0;border-bottom:1px solid var(--line);padding:20px 24px 24px}
 html[data-theme] .level-button{font-size:14px;padding:9px 11px;border:0;border-bottom:2px solid transparent;color:var(--muted);background:transparent}
 html[data-theme] .level-button:hover{background:var(--soft);color:var(--ink)}
 html[data-theme] .level-button.active{border-bottom-color:var(--rule-orange);color:var(--ink);background:transparent;font-weight:400}
@@ -140,7 +140,7 @@ html[data-theme] .tabs .tab.active{color:var(--ink);border-bottom-color:var(--ru
 html[data-theme] .tabs .tab:hover{color:var(--ink)}
 html[data-theme] .level-summary h2{font-size:25px}
 html[data-theme] .lesson-list{background:transparent;border:0;border-top:1px solid var(--line)}
-html[data-theme] .lesson-row{padding:24px 0;gap:20px;border-bottom:1px solid var(--line);background:transparent}
+html[data-theme] .lesson-row{padding:28px 24px;gap:24px;border-bottom:1px solid var(--line);background:transparent}
 html[data-theme] .lesson-row+.lesson-row{border-top:0}
 html[data-theme] .lesson-row:hover{background:var(--soft)}
 html[data-theme] .lesson-step{border:1px solid var(--blue);background:transparent;color:var(--blue);border-radius:0}
@@ -219,8 +219,8 @@ html[data-theme] .site-header .brand-name{color:var(--header-blue)}
 html[data-theme] .site-header .brand-suffix{color:var(--header-green)}
 html[data-theme] .site-header .brand-dot{color:var(--header-purple)}
 html[data-theme] .site-header .main-nav a,html[data-theme] .site-header .main-nav a:hover,html[data-theme] .site-header .main-nav a.active,html[data-theme] .header-tools .header-tool{color:var(--header-ink)}
-html[data-theme] .site-header .main-nav a:hover{border-top-color:var(--header-green)}
-html[data-theme] .site-header .main-nav a.active{border-bottom-color:var(--header-active)}
+@media(hover:hover){html[data-theme] .site-header .main-nav a:hover:not(.active){border-top-color:var(--header-green)}}
+html[data-theme] .site-header .main-nav a.active{border:0;border-top:2px solid transparent;text-decoration-line:underline;text-decoration-color:var(--header-active);text-decoration-thickness:2px;text-underline-offset:4px;text-transform:capitalize}
 html[data-theme] .header-tools .header-tool:hover,html[data-theme] .header-tools .header-tool.active{background:transparent;border-color:var(--header-ink);color:var(--header-ink)}
 html[data-theme] .site-header :is(a,button):focus-visible{outline-color:var(--header-blue)}
 .formation-cover svg{--art-accent:var(--green);--art-ink:var(--ink);--art-muted:var(--muted)}
@@ -229,5 +229,38 @@ html[data-theme] .site-header :is(a,button):focus-visible{outline-color:var(--he
 @media(min-width:961px) and (max-width:1100px){html[data-theme] .site-header .header-inner{padding-left:24px;padding-right:24px;gap:18px}html[data-theme] .site-header .main-nav{gap:15px}html[data-theme] .site-header .main-nav a,html[data-theme] .site-header .main-nav .nav-about{font-size:15px}}
 @media(max-width:960px){html[data-theme] .site-header .header-inner{min-height:84px;padding:18px 24px;gap:15px}html[data-theme] .site-header .brand-name{font-size:34px}html[data-theme] .header-tools .header-progress{display:none}html[data-theme] .header-tools .menu-toggle{display:grid}html[data-theme] .site-header .nav-container{display:none}html[data-theme] .site-header .nav-container.open{display:block;position:absolute;left:20px;right:20px;top:100%;margin:0;padding:16px 24px;background:var(--header-bg);border:2px solid var(--header-rule);z-index:40;box-shadow:none}html[data-theme] .site-header .main-nav{flex-direction:column;align-items:stretch;gap:3px}html[data-theme] .site-header .main-nav a{font-size:18px;padding:10px 0}html[data-theme] .site-header .main-nav .mobile-progress{display:flex}html[data-theme] .nav-backdrop{display:block;position:fixed;inset:84px 0 0;z-index:25}html[data-theme] .home-hero{height:auto;min-height:620px}html[data-theme] .area-home .formation-grid{gap:18px}html[data-theme] .area-home .formation-body{padding:20px 18px 10px}html[data-theme] .area-home .formation-body h3{font-size:25px}html[data-theme] .area-home .formation-footer{padding-left:18px;padding-right:18px}html[data-theme] .area-home .formation-cover{height:125px}html[data-theme] .level-bar{align-items:flex-start;flex-direction:column;gap:12px}html[data-theme] .level-buttons{width:100%;flex-wrap:wrap;gap:8px}html[data-theme] .lesson-row-actions{max-width:220px;gap:12px}html[data-theme] .home-priority{padding:32px}}
 @media(max-width:700px){html[data-theme] .home-section .section-heading{align-items:flex-start;flex-direction:column;gap:18px}html[data-theme] .home-section .section-intro{max-width:100%}html[data-theme] .area-home .formation-grid{grid-template-columns:1fr}html[data-theme] .area-home .formation-cover{height:148px}html[data-theme] .area-home .formation-body>p{min-height:0}html[data-theme] .area-home .formation-body{padding:24px 24px 12px}html[data-theme] .area-home .formation-footer{padding:14px 24px 24px}html[data-theme] .study-landing{grid-template-columns:1fr}html[data-theme] .home-priority{flex-direction:column;align-items:stretch;gap:28px}html[data-theme] .priority-action{max-width:none}html[data-theme] .hero-bottom{align-items:center;flex-direction:column;gap:14px}html[data-theme] .hero-bottom>span{flex-wrap:wrap;justify-content:center;gap:8px}html[data-theme] .study-resume{align-items:flex-start;flex-direction:column;gap:18px}html[data-theme] .resume-label{max-width:none}html[data-theme] .page-footer{flex-wrap:wrap}}
-@media(max-width:600px){html[data-theme] .site-header .header-inner,html[data-theme] .layout:has(.session-wrap) .site-header .header-inner{padding:16px 18px;min-height:80px;gap:10px}html[data-theme] .site-header .brand-name{font-size:32px}html[data-theme] .header-tools{gap:3px}html[data-theme] .header-tools .header-tool{width:35px;min-width:35px;height:35px}html[data-theme] .nav-backdrop{top:80px}html[data-theme] .site-header .nav-container.open{left:14px;right:14px}html[data-theme] .content{padding:28px 20px 44px}html[data-theme] .area-home{padding:0}html[data-theme] .home-hero{min-height:660px;padding:80px 22px 130px}html[data-theme] .hero-copy h1{font-size:clamp(33px,8.8vw,48px);line-height:1.25;letter-spacing:-.5px}html[data-theme] .hero-kicker{font-size:9px;letter-spacing:.8px;margin-bottom:20px}html[data-theme] .hero-description{font-size:14px;line-height:1.9;margin-top:22px}html[data-theme] .hero-actions{flex-direction:column;gap:12px;margin-top:26px}html[data-theme] .hero-start{font-size:16px;min-height:48px}html[data-theme] .hero-explore{font-size:14px}html[data-theme] .hero-bottom{padding:0 20px;font-size:9px;bottom:18px}html[data-theme] .home-section{margin-top:52px;padding:0 20px}html[data-theme] .home-section .section-heading h2{font-size:29px}html[data-theme] .home-section .section-intro{font-size:13px}html[data-theme] .area-home .discovery-card h3{font-size:18px;min-height:0}html[data-theme] .home-priority{padding:28px 24px}html[data-theme] .home-priority h2{font-size:30px}html[data-theme] .formation-heading{gap:16px;padding:8px 0 24px}html[data-theme] .formation-heading h1{font-size:32px}html[data-theme] .formation-heading-icon{width:50px;height:50px}html[data-theme] .level-button{font-size:13px;padding:8px}html[data-theme] .tabs{gap:24px}html[data-theme] .tabs .tab{font-size:15px}html[data-theme] .lesson-row{grid-template-columns:30px minmax(0,1fr);gap:14px}html[data-theme] .lesson-step{width:28px;height:28px}html[data-theme] .lesson-row-actions{grid-column:2;max-width:none;justify-content:flex-start;flex-wrap:wrap;padding-left:0}html[data-theme] .article-layout>article{padding:24px 0}html[data-theme] .article-head h1{font-size:29px}html[data-theme] .article-section h2{font-size:23px}html[data-theme] .article-section p{font-size:15px}html[data-theme] .study-start{padding:24px 20px}html[data-theme] .study-start h2{font-size:27px}html[data-theme] .practice-question h2{font-size:21px}html[data-theme] .practice-session .match-button:not([lang=grc]){font-size:16px}html[data-theme] .practice-session .alphabet-match .match-button:not([lang=grc]){font-size:20px}html[data-theme] .page-footer{margin-left:20px;margin-right:20px;gap:18px}.footer-note{margin-left:0}}
+@media(max-width:600px){html[data-theme] .site-header .header-inner,html[data-theme] .layout:has(.session-wrap) .site-header .header-inner{padding:16px 18px;min-height:80px;gap:10px}html[data-theme] .site-header .brand-name{font-size:32px}html[data-theme] .header-tools{gap:3px}html[data-theme] .header-tools .header-tool{width:35px;min-width:35px;height:35px}html[data-theme] .nav-backdrop{top:80px}html[data-theme] .site-header .nav-container.open{left:14px;right:14px}html[data-theme] .content{padding:28px 20px 44px}html[data-theme] .area-home{padding:0}html[data-theme] .home-hero{min-height:660px;padding:80px 22px 130px}html[data-theme] .hero-copy h1{font-size:clamp(33px,8.8vw,48px);line-height:1.25;letter-spacing:-.5px}html[data-theme] .hero-kicker{font-size:9px;letter-spacing:.8px;margin-bottom:20px}html[data-theme] .hero-description{font-size:14px;line-height:1.9;margin-top:22px}html[data-theme] .hero-actions{flex-direction:column;gap:12px;margin-top:26px}html[data-theme] .hero-start{font-size:16px;min-height:48px}html[data-theme] .hero-explore{font-size:14px}html[data-theme] .hero-bottom{padding:0 20px;font-size:9px;bottom:18px}html[data-theme] .home-section{margin-top:52px;padding:0 20px}html[data-theme] .home-section .section-heading h2{font-size:29px}html[data-theme] .home-section .section-intro{font-size:13px}html[data-theme] .area-home .discovery-card h3{font-size:18px;min-height:0}html[data-theme] .home-priority{padding:28px 24px}html[data-theme] .home-priority h2{font-size:30px}html[data-theme] .formation-heading{gap:16px;padding:20px 0 28px}html[data-theme] .formation-heading h1{font-size:32px}html[data-theme] .formation-heading-icon{width:50px;height:50px}html[data-theme] .level-bar{padding:20px 16px}.level-button{font-size:13px;padding:10px 8px}html[data-theme] .tabs{gap:24px}html[data-theme] .tabs .tab{font-size:15px}html[data-theme] .lesson-row{grid-template-columns:30px minmax(0,1fr);gap:16px;padding:24px 16px}html[data-theme] .lesson-step{width:28px;height:28px}html[data-theme] .lesson-row-actions{grid-column:2;max-width:none;justify-content:flex-start;flex-wrap:wrap;padding-left:0}html[data-theme] .article-layout>article{padding:24px 0}html[data-theme] .article-head h1{font-size:29px}html[data-theme] .article-section h2{font-size:23px}html[data-theme] .article-section p{font-size:15px}html[data-theme] .study-start{padding:24px 20px}html[data-theme] .study-start h2{font-size:27px}html[data-theme] .practice-question h2{font-size:21px}html[data-theme] .practice-session .match-button:not([lang=grc]){font-size:16px}html[data-theme] .practice-session .alphabet-match .match-button:not([lang=grc]){font-size:20px}html[data-theme] .page-footer{margin-left:20px;margin-right:20px;gap:18px}.footer-note{margin-left:0}}
 @media(prefers-reduced-motion:reduce){html[data-theme] body{transition:none}}
+
+/* Shared surfaces must not inherit the former blue theme or change their outline on hover. */
+html[data-theme] .site-header :is(.brand-name,.brand-suffix,.brand-dot),html[data-theme] .footer-wordmark{color:var(--logo-ink)}
+html[data-theme] .site-header .wordmark:hover{text-decoration:none;opacity:1}
+html[data-theme] .level-bar>span{color:var(--muted);margin:0}
+html[data-theme] .formation-heading>div:last-child{min-width:0}
+html[data-theme] .formation-heading p{margin-top:12px;line-height:1.8}
+html[data-theme] .formation-info{gap:16px 24px;margin-top:20px;line-height:1.8}
+html[data-theme] .level-bar{margin-bottom:28px}
+html[data-theme] .tabs{padding:12px 0 20px;gap:32px}
+html[data-theme] .tabs .tab{border-top:2px solid transparent;border-bottom:0;padding:4px 0;text-transform:lowercase;text-decoration:underline;text-decoration-color:transparent;text-decoration-thickness:2px;text-underline-offset:4px;transition:all 300ms cubic-bezier(.4,0,.2,1)}
+html[data-theme] .tabs .tab.active{text-transform:capitalize;text-decoration-color:var(--header-active)}
+@media(hover:hover){html[data-theme] .tabs .tab:hover:not(.active){border-top-color:var(--rule-green);padding-left:8px;padding-right:8px}}
+html[data-theme] .lesson-row h3{margin-bottom:10px;line-height:1.6}
+html[data-theme] .lesson-row p{line-height:1.85}
+html[data-theme] .lesson-row-actions{gap:16px 20px}
+html[data-theme] :is(.article-card,.word-card):hover{border-color:var(--purple);border-style:dashed}
+html[data-theme] .core-box{padding:32px;border:1px solid var(--line);border-radius:0;background:var(--white)}
+html[data-theme] .core-box-top{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-bottom:24px}
+html[data-theme] .core-box .core-count{font-size:30px;color:var(--blue);white-space:nowrap}
+html[data-theme] .core-box .core-count span{font-size:14px;color:var(--muted)}
+html[data-theme] .core-box>p{margin-top:20px;font-size:13px;color:var(--muted);line-height:1.9}
+html[data-theme] .vocab-banner .eyebrow{color:var(--muted)!important}
+html[data-theme] .vocab-banner .core-count span{color:var(--muted)}
+html[data-theme] tbody tr:nth-child(even){background:var(--soft)}
+html[data-theme] :is(select,input[type=search],input[type=text],textarea),html[data-theme] select option{background:var(--white);border-color:var(--line);color:var(--ink)}
+html[data-theme] :is(select,input[type=search],input[type=text],textarea):hover{border-color:var(--blue)}
+html[data-theme] .practice-controls .button{border:2px solid var(--rule-red);border-radius:0}
+html[data-theme] .practice-controls .button:disabled{background:var(--soft);border-color:var(--line);color:var(--muted)}
+html[data-theme] .practice-session :is(.match-button,.token):hover:not(:disabled):not(.selected):not(.matched):not(.mistake){background:var(--soft);border-color:var(--purple);color:var(--ink);transform:none}
+html[data-theme] .search-dialog-top .icon-button{background:var(--white);border-color:var(--line);color:var(--ink)}
+@media(max-width:600px){html[data-theme] .core-box{padding:24px 20px}html[data-theme] .core-box-top{align-items:flex-start;gap:20px;flex-direction:column}html[data-theme] .core-box .core-count{font-size:26px}html[data-theme] .tabs{gap:24px}html[data-theme] .formation-info{gap:12px 16px}html[data-theme] .formation-heading{align-items:flex-start}}
+@media(prefers-reduced-motion:reduce){html[data-theme] .site-header .main-nav a,html[data-theme] .tabs .tab{transition:none}}
