@@ -44,15 +44,15 @@ html[data-theme] .page-footer{border-top:2px solid var(--rule-green);gap:24px;pa
 html[data-theme] .footer-wordmark{font-size:28px;color:var(--blue)}
 /* Shared control and panel language. */
 html[data-theme] :is(.button,.button-small,.hero-start,.icon-button,.level-button,.pill,.answer,.match-button,.token,.feedback,.order-target,.study-card,.study-glyph,.tip-num,.parse-grid select,.progress-track,.progress-fill){border-radius:0;box-shadow:none}
-html[data-theme] .button{font-size:16px;line-height:1.5;min-height:44px;padding:10px 18px;border-width:2px;font-weight:400;transition:background .15s,color .15s}
-html[data-theme] :is(.button-primary,.button-lime,.hero-start){background:transparent;border:2px solid var(--rule-red);color:var(--ink)}
+html[data-theme] .button{border-style:dashed;font-size:16px;line-height:1.5;min-height:44px;padding:10px 18px;border-width:2px;font-weight:400;transition:background .15s,color .15s}
+html[data-theme] :is(.button-primary,.button-lime,.hero-start){background:transparent;border:2px dashed var(--rule-red);color:var(--ink)}
 html[data-theme] :is(.button-primary,.button-lime,.hero-start):hover{background:transparent;color:var(--ink);border-color:var(--rule-red);transform:none}
 html[data-theme] .button-outline{background:transparent;border-color:var(--blue);color:var(--ink)}
 html[data-theme] .button-outline:hover{background:transparent;border-color:var(--blue);color:var(--ink)}
 html[data-theme] .button-small{font-size:13px;min-height:36px;padding:6px 12px}
 html[data-theme] :is(.text-link,.back-link,.summary-link,.references a,.article-section a){color:var(--blue)}
 html[data-theme] .text-link:hover{color:var(--ink);text-decoration:underline;text-decoration-color:var(--rule-orange);text-decoration-thickness:2px}
-html[data-theme] .icon-button{background:var(--white);border:1px solid var(--line);color:var(--ink)}
+html[data-theme] .icon-button{background:var(--white);border:1px dashed var(--line);color:var(--ink)}
 html[data-theme] .pill{white-space:nowrap;flex-shrink:0;background:var(--soft);border:1px solid var(--green);color:var(--green)}
 html[data-theme] .pill.lilac{border-color:var(--purple);color:var(--purple);background:var(--soft)}
 html[data-theme] .pill.amber{border-color:var(--orange);color:var(--orange);background:var(--soft)}
@@ -77,7 +77,7 @@ html[data-theme] .hero-start{gap:18px;padding:12px 18px;font-size:17px}
 html[data-theme] .hero-start>span{background:transparent;color:inherit;width:auto;height:auto;border-radius:0}
 html[data-theme] .hero-explore{font-size:16px;color:var(--ink)}
 html[data-theme] .hero-bottom{color:var(--muted);bottom:22px;padding:0 32px;font-size:11px}
-html[data-theme] .motion-toggle{border:1px solid var(--line);border-radius:0;color:var(--muted);padding:8px 12px}
+html[data-theme] .motion-toggle{border:1px dashed var(--line);border-radius:0;color:var(--muted);padding:8px 12px}
 html[data-theme] .motion-toggle:hover{color:var(--ink);border-color:var(--green)}
 html[data-theme] .home-section{max-width:1200px;margin-top:76px;padding:0 32px}
 html[data-theme] .home-section .section-heading{gap:40px;margin-bottom:32px}
@@ -86,7 +86,7 @@ html[data-theme] .section-kicker{font-size:11px;letter-spacing:.7px;color:var(--
 html[data-theme] .home-section .section-intro{font-size:14px;line-height:1.9;max-width:380px;color:var(--muted)}
 html[data-theme] .area-home .formation-grid{gap:24px}
 html[data-theme] .area-home .formation-card{border:1px dashed var(--purple);border-radius:0;box-shadow:none;transition:none}
-html[data-theme] .area-home .formation-card:hover{transform:none;border-style:dashed;box-shadow:none}
+html[data-theme] .area-home .formation-card:hover{transform:none;box-shadow:none}
 html[data-theme] .area-home .formation-cover{height:146px;background:var(--soft);border-bottom:2px solid var(--green)}
 html[data-theme] .area-home .syntax .formation-cover{border-color:var(--blue)}
 html[data-theme] .area-home .vocabulary .formation-cover{border-color:var(--purple)}
@@ -101,15 +101,15 @@ html[data-theme] .study-resume{border-top:2px solid var(--blue);border-bottom:2p
 html[data-theme] .resume-main h2{font-size:24px;letter-spacing:0;font-weight:400}
 html[data-theme] .study-resume>.button{border-radius:0;font-size:15px}
 html[data-theme] .area-home .quick-card{padding:24px 20px;border:1px dashed var(--purple);border-radius:0;box-shadow:none;transition:none}
-html[data-theme] .area-home .quick-card:hover{transform:none;border-style:dashed}
+html[data-theme] .area-home .quick-card:hover{transform:none}
 html[data-theme] :is(.quick-icon,.quick-card.syntax .quick-icon,.quick-card.vocabulary .quick-icon){background:transparent;border-radius:0;color:var(--green);padding:4px}
 html[data-theme] .quick-card.syntax .quick-icon{color:var(--blue)}
 html[data-theme] .quick-card.vocabulary .quick-icon{color:var(--purple)}
 html[data-theme] .area-home .quick-card strong{font-family:var(--display);font-weight:400;font-size:17px}
 html[data-theme] .area-home .quick-card small{font-size:12px}
 html[data-theme] .area-home .discovery-grid{gap:22px}
-html[data-theme] .area-home .discovery-card{padding:24px 22px 0;border:1px dashed var(--purple);border-top:2px solid var(--green);border-radius:0;box-shadow:none;transition:none}
-html[data-theme] .area-home .discovery-card:hover{transform:none;border-style:dashed}
+html[data-theme] .area-home .discovery-card{padding:24px 22px 0;border:1px dashed var(--purple);border-top:2px dashed var(--green);border-radius:0;box-shadow:none;transition:none}
+html[data-theme] .area-home .discovery-card:hover{transform:none}
 html[data-theme] .area-home .discovery-card.syntax{border-top-color:var(--blue)}
 html[data-theme] .area-home .discovery-card.vocabulary{border-top-color:var(--purple)}
 html[data-theme] .area-home .discovery-top{color:var(--green);font-size:11px;margin-bottom:18px}
@@ -247,7 +247,7 @@ html[data-theme] .tabs .tab.active{text-transform:capitalize;text-decoration-col
 html[data-theme] .lesson-row h3{margin-bottom:10px;line-height:1.6}
 html[data-theme] .lesson-row p{line-height:1.85}
 html[data-theme] .lesson-row-actions{gap:16px 20px}
-html[data-theme] :is(.article-card,.word-card):hover{border-color:var(--purple);border-style:dashed}
+html[data-theme] :is(.article-card,.word-card):hover{border-color:var(--purple)}
 html[data-theme] .core-box{padding:32px;border:1px solid var(--line);border-radius:0;background:var(--white)}
 html[data-theme] .core-box-top{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-bottom:24px}
 html[data-theme] .core-box .core-count{font-size:30px;color:var(--blue);white-space:nowrap}
@@ -264,3 +264,11 @@ html[data-theme] .practice-session :is(.match-button,.token):hover:not(:disabled
 html[data-theme] .search-dialog-top .icon-button{background:var(--white);border-color:var(--line);color:var(--ink)}
 @media(max-width:600px){html[data-theme] .core-box{padding:24px 20px}html[data-theme] .core-box-top{align-items:flex-start;gap:20px;flex-direction:column}html[data-theme] .core-box .core-count{font-size:26px}html[data-theme] .tabs{gap:24px}html[data-theme] .formation-info{gap:12px 16px}html[data-theme] .formation-heading{align-items:flex-start}}
 @media(prefers-reduced-motion:reduce){html[data-theme] .site-header .main-nav a,html[data-theme] .tabs .tab{transition:none}}
+
+/* Outlined actions and dashed panels become solid without changing their dimensions. */
+@media(hover:hover){
+ html[data-theme] :is(.button,.hero-start,.icon-button,.motion-toggle):hover:not(:disabled):not([aria-disabled=true]){border-style:solid}
+ html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.article-card,.article-aside,.study-start,.notice,.session-result,.word-card,.progress-card,.order-target):hover{border-style:solid}
+}
+html[data-theme] :is(.button,.hero-start,.icon-button,.motion-toggle):focus-visible,html[data-theme] .button:has(input:focus-visible){border-style:solid}
+html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.article-card,.article-aside,.study-start,.notice,.session-result,.word-card,.progress-card,.order-target):focus-within{border-style:solid}
