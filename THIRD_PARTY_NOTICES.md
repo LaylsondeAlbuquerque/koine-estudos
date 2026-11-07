@@ -23,6 +23,14 @@ Transformações: contagens por lema, normalização NFC, correções linguísti
 
 ## Fontes tipográficas
 
+**Momo Trust Display** — Copyright 2024 The MoMo Trust Display Project Authors. Distribuída sob SIL OFL 1.1. Fonte regular local em `assets/MomoTrustDisplay-Regular.ttf`; licença em `assets/MomoTrustDisplay-OFL.txt`.
+
+- Fonte: https://github.com/google/fonts/tree/main/ofl/momotrustdisplay
+
+**Be Vietnam Pro** — Copyright 2021 The Be Vietnam Pro Project Authors. Distribuída sob SIL OFL 1.1. Fontes regular e semibold locais em `assets/BeVietnamPro-Regular.ttf` e `assets/BeVietnamPro-SemiBold.ttf`; licença em `assets/BeVietnamPro-OFL.txt`.
+
+- Fonte: https://github.com/google/fonts/tree/main/ofl/bevietnampro
+
 **Encode Sans** — Copyright 2020 The Encode Project Authors, com nome reservado Encode Sans. Distribuída sob SIL Open Font License 1.1. Arquivo original e aviso em `assets/EncodeSans.ttf` e `assets/EncodeSans-OFL.txt`.
 
 - Fonte: https://github.com/google/fonts/tree/main/ofl/encodesans
@@ -53,3 +61,9 @@ Esta versão não distribui gravações de terceiros. Futuras gravações exigem
 ## Dependências Angular
 
 A aplicação usa Angular (MIT), RxJS (Apache-2.0) e tslib (0BSD). O build de produção inclui os avisos extraídos das dependências em `3rdpartylicenses.txt`, junto ao site compilado. As dependências de desenvolvimento e suas versões estão registradas em `package-lock.json`.
+
+## Identidade visual Our Forms
+
+A adaptação visual em `ourforms.css` usa como referência os layouts e estilos de [Our Forms](https://github.com/LaylsondeAlbuquerque/our-forms), de Laylson de Albuquerque, no commit `b8a5c922f5f1dffd5722b08502e0f5f0f6f79b38`. O tema claro conserva sua paleta e linguagem de bordas e tipografia; a versão escura foi elaborada para o Koiné. A animação de grego permanece própria do projeto Koiné.
+
+Código de referência sob MIT, copyright 2025 Laylson de Albuquerque. Aviso integral em `assets/OurForms-MIT.txt`.

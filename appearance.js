@@ -3,7 +3,7 @@ export const getTheme=()=>document.documentElement.dataset.theme==='light'?'ligh
 export function toggleTheme(){
  const next=getTheme()==='dark'?'light':'dark';
  document.documentElement.dataset.theme=next;
- document.querySelector('meta[name="theme-color"]')?.setAttribute('content',next==='dark'?'#0c1018':'#f5f7f9');
+ document.querySelector('meta[name="theme-color"]')?.setAttribute('content',next==='dark'?'#191b18':'#fdfbf7');
  try{localStorage.setItem(THEME_KEY,next);}catch{}
  window.dispatchEvent(new Event('koine-theme-change'));
  return next;

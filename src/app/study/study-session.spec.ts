@@ -158,6 +158,33 @@ describe('Angular study sessions', () => {
     expect(study.session()!.questions.map(question => question.wordId)).toEqual(['word-14']);
   });
 
+  it('uses global rank groups independently of the selected level and keeps the session size bounded', () => {
+    const words: Word[] = Array.from({length: 350}, (_, index) => ({
+      id: `ranked-${index + 1}`, lemma: `λέξις${index + 1}`, meaning: `sentido ${index + 1}`, pos: 'substantivo',
+      rank: index + 1, frequency: 500 - index, level: index % 4, core300: index < 300
+    }));
+    content.vocabulary.entries = words;
+    content.catalog = createCatalog(content.lessons, [], words);
+    progress.state.set({...blankProgress(), levels: {morphology: 0, syntax: 0, vocabulary: 3}});
+    const random = vi.spyOn(Math, 'random').mockReturnValue(.5);
+    try {
+      for (const amount of [10, 50, 100, 200, 300]) {
+        study.start({area: 'vocabulary', mode: 'flashcards', filter: `top-${amount}`, limit: 20});
+        const questions = study.session()!.questions;
+        expect(questions.length).toBe(Math.min(20, amount));
+        expect(questions.every(question => content.catalog.wordById.get(question.wordId).rank <= amount)).toBe(true);
+        expect(questions.some(question => content.catalog.wordById.get(question.wordId).level !== 3)).toBe(true);
+        expect(new Set(questions.map(question => question.wordId)).size).toBe(questions.length);
+      }
+      study.start({area: 'vocabulary', mode: 'flashcards', filter: 'top-300', limit: 5});
+      expect(study.session()!.questions.length).toBe(5);
+      study.start({area: 'vocabulary', mode: 'flashcards', filter: 'level', limit: 20});
+      expect(study.session()!.questions.every(question => content.catalog.wordById.get(question.wordId).level === 3)).toBe(true);
+    } finally {
+      random.mockRestore();
+    }
+  });
+
   it('requires successful lexical reviews on three distinct days for mastery', () => {
     vi.useFakeTimers({toFake: ['Date']});
     const review = (day: string) => {

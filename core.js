@@ -66,7 +66,9 @@ export function vocabularyQuestion(word, entries, random = Math.random, reverse 
   return { id:`${reverse?'reverse':'word'}-${word.id}`,kind:'choice',wordId:word.id,greek:reverse?null:word.lemma,stimulus:reverse?word.meaning:null,optionsLang:reverse?'grc':null,audio:word.audio||null,prompt:reverse?'Qual palavra grega corresponde ao sentido apresentado em português?':'Qual alternativa apresenta um sentido em português para esta palavra grega?',options,answer:options.indexOf(correct),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Estes são sentidos de referência para memorizar; a tradução de uma passagem depende do contexto.`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
 }
 export function selectWords(entries, reviews, {limit=10, filter='all',level=null,day=localDate(),random=Math.random,recent=[]}={}) {
-  let pool=entries.filter(word => (level===null || word.level===level) && (filter!=='core' || word.core300) && (filter!=='mastered' || isMastered(reviews[word.id])) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id]));
+  const frequencyGroup=/^top-(10|50|100|200|300)$/.exec(filter);
+  const maxRank=frequencyGroup?Number(frequencyGroup[1]):null;
+  const pool=entries.filter(word => (level===null || word.level===level) && (maxRank===null || (Number.isInteger(word.rank)&&word.rank>0&&word.rank<=maxRank)) && (filter!=='core' || word.core300) && (filter!=='mastered' || isMastered(reviews[word.id])) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id]));
   const due=shuffle(pool.filter(w=>isDue(reviews[w.id],day)),random);
   const fresh=shuffle(pool.filter(w=>!reviews[w.id]),random);
   const remaining=shuffle(pool.filter(w=>reviews[w.id]&&!isDue(reviews[w.id],day)),random);

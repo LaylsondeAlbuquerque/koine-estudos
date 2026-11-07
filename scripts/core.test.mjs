@@ -71,6 +71,31 @@ test('review selection prioritizes due words, never duplicates and respects core
  assert.equal(selectWords(example,review,{filter:'due',day:'2026-10-30'}).length,1);
  assert.equal(selectWords(words,{}, {filter:'core',limit:2000}).length,300);
 });
+
+test('frequency groups include exactly the ranked 10, 50, 100, 200 or 300 words',()=>{
+ const before=JSON.stringify(words);
+ for(const amount of [10,50,100,200,300]){
+  const selected=selectWords(words,{}, {filter:`top-${amount}`,limit:2000,random:()=>.5});
+  assert.equal(selected.length,amount);
+  assert.deepEqual(new Set(selected.map(word=>word.id)),new Set(words.filter(word=>word.rank<=amount).map(word=>word.id)));
+  assert.equal(new Set(selected.map(word=>word.id)).size,amount);
+ }
+ assert.equal(JSON.stringify(words),before);
+});
+
+test('frequency groups retain review and recent-word priorities inside the selected group',()=>{
+ const example=Array.from({length:12},(_,index)=>({id:`rank-${index+1}`,rank:index+1,level:index%4,core300:true}));
+ const reviews={
+  'rank-2':reviewAnswer(undefined,true,'2026-10-20'),
+  'rank-11':reviewAnswer(undefined,true,'2026-10-20')
+ };
+ const selected=selectWords(example,reviews,{filter:'top-10',limit:5,day:'2026-10-30',recent:['rank-1'],random:()=>.5});
+ assert.equal(selected[0].id,'rank-2');
+ assert.ok(selected.every(word=>word.rank<=10));
+ assert.equal(selected.some(word=>word.id==='rank-1'),false);
+ assert.equal(new Set(selected.map(word=>word.level)).size>1,true);
+ assert.equal(selectWords([...example,{id:'missing-rank',level:0,core300:true}],{}, {filter:'top-10',limit:100}).length,10);
+});
 test('negation gloss qualifiers cannot become a second valid answer',()=>{
  const word={id:'a',lemma:'οὐ',meaning:'não',pos:'advérbio'};
  const other=[{id:'b',meaning:'não (negação não assertiva)'},{id:'c',meaning:'pedra'},{id:'d',meaning:'céu'},{id:'e',meaning:'escrever'}];

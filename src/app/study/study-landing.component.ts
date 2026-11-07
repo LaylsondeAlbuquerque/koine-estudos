@@ -19,6 +19,7 @@ export class StudyLandingComponent {
   readonly progress = inject(ProgressService);
   private readonly study = inject(StudySessionService);
   readonly levels = LEVELS;
+  readonly frequencyGroups = [10, 50, 100, 200, 300];
   readonly size = signal(10);
   readonly filter = signal('level');
   readonly lessonId = signal('');

@@ -2,7 +2,7 @@
 @if(content.ready()) {
  <div class="layout" [attr.data-area]="study.session()?.area || active()">
   <header class="site-header"><div class="header-inner">
-   <a class="wordmark" routerLink="/home" aria-label="Koiné, início"><span class="brand-name">koiné<span class="brand-dot">.</span></span></a>
+   <a class="wordmark" routerLink="/home" aria-label="Koiné, início"><span class="brand-name">koi<span class="brand-suffix">né</span><span class="brand-dot">.</span></span></a>
    <div class="nav-container" [class.open]="menuOpen()"><nav class="main-nav" aria-label="Navegação principal">
     <a routerLink="/home" [class.active]="displayActive()==='home'" [attr.aria-current]="displayActive()==='home'?'page':null">Início</a>
     @for(area of areaKeys;track area){<a [routerLink]="['/',area,'path']" [class.active]="displayActive()===area" [attr.aria-current]="displayActive()===area?'page':null">{{areas[area].name}}</a>}

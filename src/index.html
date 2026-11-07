@@ -1,13 +1,13 @@
 <!doctype html>
-<html lang="pt-BR" data-theme="dark">
+<html lang="pt-BR" data-theme="light">
 <head>
   <meta charset="utf-8">
   <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0c1018">
+  <meta name="theme-color" content="#fdfbf7">
   <meta name="color-scheme" content="dark light">
   <script>
-    try { const saved=localStorage.getItem('koine-theme-v1'); document.documentElement.dataset.theme=saved==='light'?'light':'dark'; if(saved==='light') document.querySelector('meta[name="theme-color"]').setAttribute('content','#f5f7f9'); } catch {}
+    try { const saved=localStorage.getItem('koine-theme-v1'); const theme=saved==='dark'?'dark':'light'; document.documentElement.dataset.theme=theme; document.querySelector('meta[name="theme-color"]').setAttribute('content',theme==='dark'?'#191b18':'#fdfbf7'); } catch {}
   </script>
   <meta name="description" content="Um espaço aberto para aprender grego koiné: morfologia, sintaxe e vocabulário, do primeiro contato à leitura crítica.">
   <title>Koiné — formações em grego do Novo Testamento</title>

@@ -57,7 +57,8 @@
               "theme.css",
               "learning.css",
               "readings.css",
-              "src/angular.css"
+              "src/angular.css",
+              "ourforms.css"
             ]
           },
           "configurations": {

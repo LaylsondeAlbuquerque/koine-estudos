@@ -15,8 +15,9 @@ Projeto idealizado e conduzido por **Laylson de Albuquerque** ([GitHub](https://
 - **Vocabulário:** repertório de 1.158 lemas, flashcards, associações e um núcleo prioritário de 300 palavras.
 - Cada área tem percurso, artigos, flashcards e prática, distribuídos em Fundamentos, Essencial, Aprofundamento e Avançado.
 - **Percurso:** aulas progressivas com explicações básicas, exemplos e exercícios. **Artigos:** textos independentes de aprofundamento, ligados a cada assunto e nível, com discussão, fontes e perguntas de reflexão. Cada espaço tem sua própria marcação de leitura.
+- Os flashcards e a prática de vocabulário oferecem os recortes globais dos 10, 50, 100, 200 e 300 lemas mais frequentes. O conjunto de vocábulos e o tamanho da sessão (5, 10 ou 20 itens) são selecionados separadamente.
 - O repertório é pesquisável em grego ou português, inclusive sem acentos, com filtros e paginação. A busca global também distingue aulas do percurso e artigos de aprofundamento.
-- Tema noturno inicial com alternância para o claro e preferência salva no navegador. A home tem uma animação de letras e palavras gregas, com pausa e respeito à preferência de movimento reduzido.
+- Identidade visual do Our Forms no tema claro, com fundo creme, cabeçalho amarelo, bordas retas e acentos coloridos; tema escuro adaptado e preferência salva no navegador. A home tem uma animação de letras e palavras gregas, com pausa e respeito à preferência de movimento reduzido.
 - Os flashcards revelam o verso ao selecionar a resposta; a prática combina desafios de escolha com confirmação, associação de pares, análise morfológica e ordenação de blocos. As sessões priorizam perguntas ainda não vistas e alternam assuntos e atividades; um filtro pequeno termina sem duplicar questões para completar a quantidade solicitada.
 
 O progresso é salvo **somente no navegador**. Um vocábulo é registrado como memorizado depois de acertos em três dias diferentes; um erro o devolve à revisão. Repetições no mesmo dia não aceleram esse marcador. É possível exportar/importar o histórico em Meu progresso. Leituras concluídas não equivalem a uma certificação de domínio.
@@ -85,6 +86,7 @@ Abra [http://127.0.0.1:4181/koine-estudos/](http://127.0.0.1:4181/koine-estudos/
 - [src/app/models.ts](src/app/models.ts): tipos e definições do curso.
 - [core.js](core.js) e [catalog.js](catalog.js): lógica pura de revisão, seleção e indexação, com declarações TypeScript.
 - [appearance.js](appearance.js): canvas com ciclo de vida integrado ao componente de início.
+- [ourforms.css](ourforms.css): identidade visual, tipografia e adaptação dos temas claro/escuro, com fontes locais.
 - [angular.json](angular.json): build, estilos e lista explícita dos arquivos públicos.
 - [src/index.html](src/index.html): documento de entrada; a saída compilada fica em `dist/koine/browser/`.
 
