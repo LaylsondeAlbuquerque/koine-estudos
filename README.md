@@ -4,6 +4,8 @@
 
 Aplicação **Angular 21 + TypeScript** para estudar grego do Novo Testamento. O projeto organiza aulas, artigos, exercícios e revisão de vocabulário em um único ambiente, com busca em grego e português e acompanhamento do estudo no navegador.
 
+**Código proprietário:** a reutilização do código original publicado sob os termos atuais exige autorização prévia e por escrito de Laylson de Albuquerque, observadas as permissões e ressalvas em [LICENSE](LICENSE). O acesso ao site para estudar é gratuito.
+
 O acervo atual reúne **132 aulas, 132 artigos, 836 questões e 1.158 vocábulos**. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
 
 Projeto idealizado e conduzido por **Laylson de Albuquerque** ([GitHub](https://github.com/LaylsondeAlbuquerque)), com assistência de IA na implementação e na redação didática. As revisões e os ajustes foram realizados de forma iterativa, conforme solicitações do responsável.
@@ -121,9 +123,13 @@ O reprodutor aceita um campo opcional, por exemplo `"audio": "./assets/audio/log
 
 Porter, Reed e O’Donnell orientam a morfologia; *Idioms*, de Porter, orienta a sintaxe. Wallace é identificado como complemento/comparação. Os artigos e exercícios têm redação produzida para este projeto com assistência de IA, exemplos didáticos próprios e referências específicas.
 
-- Código original: **MIT**, em [LICENSE](LICENSE).
+- Código original publicado sob os termos atuais: **direitos reservados; reutilização mediante autorização**, em [LICENSE](LICENSE).
 - Materiais didáticos originais e dados identificados: **CC BY 4.0**, em [CONTENT-LICENSE.md](CONTENT-LICENSE.md).
 - Fontes: **SIL OFL 1.1**.
 - Dados MACULA e texto SBLGNT subjacente: **CC BY 4.0**, com atribuições e transformações em [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
+Enquanto o repositório for público, os [Termos de Serviço do GitHub](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#5-license-grant-to-other-users) permitem visualizar e fazer fork dentro da plataforma. A reserva de direitos não bloqueia essa funcionalidade nem concede, por si, autorização para reutilizar o código em outros projetos ou publicar cópias do site.
+
+A mudança não revoga as permissões validamente concedidas às versões anteriores sob MIT, nem as licenças próprias dos conteúdos e componentes identificados. Essas permissões continuam aplicáveis ao material assim licenciado, inclusive quando reutilizado posteriormente. A última versão antes da mudança está no commit [e8fd843](https://github.com/LaylsondeAlbuquerque/koine-estudos/tree/e8fd84392a5ae7182336a48f6d66b8997612e4b5).
 
 As gramáticas e os léxicos consultados não são redistribuídos. Não há PDFs, extrações dos livros, exercícios editoriais, segredos ou dados de alunos no projeto público. Os textos e análises podem ser revisados conforme novas fontes forem conferidas.

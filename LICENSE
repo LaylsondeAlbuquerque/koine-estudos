@@ -1,25 +1,77 @@
-MIT License
+Koiné — termos de uso do código e reserva de direitos
 
-Copyright (c) 2026 Laylson de Albuquerque
+Copyright (c) 2026 Laylson de Albuquerque.
+Todos os direitos reservados, observadas as permissões e ressalvas abaixo.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Abrangência
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Estes termos abrangem o código original do projeto Koiné sobre o qual
+Laylson de Albuquerque detenha direitos, quando publicado sob este aviso.
+Não é concedida uma licença de código aberto para esse código.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+2. Uso do site pelos estudantes
 
-This license covers the original application code. Educational prose and
-datasets are covered separately by CONTENT-LICENSE.md. Third-party fonts and
-data retain the conditions identified in THIRD_PARTY_NOTICES.md.
+É permitido acessar e utilizar gratuitamente o site oficial
+https://laylsondealbuquerque.github.io/koine-estudos/ para estudar, inclusive
+executar a aplicação no navegador e realizar as cópias técnicas necessárias
+a esse acesso, ao cache e ao armazenamento do próprio progresso.
+Essa permissão não concede autorização geral de reutilização do código.
+
+3. Autorização para reutilização
+
+Salvo as permissões expressas neste documento, direitos já concedidos e
+exceções previstas na legislação aplicável, é necessária autorização prévia
+e por escrito de Laylson de Albuquerque para copiar, reutilizar, modificar,
+criar obras derivadas, distribuir, sublicenciar, comercializar ou publicar
+o código abrangido por estes termos, integralmente ou em parte.
+
+Isso inclui incorporar o código em outro projeto, disponibilizar uma cópia
+do site em outro endereço ou distribuir versões modificadas, com ou sem
+finalidade comercial. A mera disponibilidade pública do código não concede
+essas permissões. Forks e outras cópias estão sujeitos às ressalvas dos
+itens 4 a 6.
+
+4. Conteúdos e componentes com condições próprias
+
+Os materiais didáticos e dados identificados em CONTENT-LICENSE.md seguem
+suas próprias condições. Dependências, fontes, dados, código de referência
+do Our Forms e demais componentes de terceiros conservam suas licenças e
+atribuições, conforme THIRD_PARTY_NOTICES.md, os avisos em assets e
+3rdpartylicenses.txt no site compilado. Esta reserva de direitos não reduz
+as permissões concedidas pelos respectivos titulares nem abrange elementos
+em domínio público.
+
+5. Repositório público no GitHub
+
+Enquanto o repositório estiver público no GitHub, permanecem as permissões
+de acesso, visualização e reprodução por fork dentro do serviço previstas
+nos Termos de Serviço do GitHub. Este aviso não impede esses forks nem
+substitui os termos da plataforma. Fora das permissões da plataforma,
+aplicam-se as condições de reutilização pertinentes a cada componente.
+
+https://docs.github.com/en/site-policy/github-terms/github-terms-of-service
+
+6. Versões e permissões anteriores
+
+Esta mudança não revoga direitos validamente concedidos em publicações
+anteriores sob MIT, CC BY 4.0 ou outras licenças. As cópias e os elementos
+obtidos sob essas licenças continuam sujeitos às respectivas condições;
+este aviso não converte retroativamente esse material em código exclusivo.
+As novas contribuições originais publicadas sob este aviso seguem estes
+termos. Consulte o histórico do repositório para identificar cada versão.
+
+Referência da última versão anterior a esta mudança:
+https://github.com/LaylsondeAlbuquerque/koine-estudos/blob/e8fd84392a5ae7182336a48f6d66b8997612e4b5/LICENSE
+
+7. Pedidos de autorização
+
+Solicite autorização ao responsável pelo projeto por meio dos contatos
+disponibilizados no perfil https://github.com/LaylsondeAlbuquerque.
+Uma autorização específica vale apenas nos limites acordados por escrito.
+
+8. Ausência de garantias
+
+O software é disponibilizado no estado em que se encontra, sem garantias
+expressas ou implícitas, na medida permitida pela legislação aplicável.
+Na mesma medida, o titular não assume responsabilidade por danos decorrentes
+do uso ou da impossibilidade de uso do software.

@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "description": "Plataforma Angular de estudo do grego koiné, compatível com GitHub Pages.",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "author": "Laylson de Albuquerque (https://github.com/LaylsondeAlbuquerque)",
   "scripts": {
     "start": "ng serve --host 127.0.0.1",
