@@ -6,7 +6,7 @@ Aplicação **Angular 21 + TypeScript** para estudar grego do Novo Testamento. O
 
 **Código proprietário:** a reutilização do código original publicado sob os termos atuais exige autorização prévia e por escrito de Laylson de Albuquerque, observadas as permissões e ressalvas em [LICENSE](LICENSE). O acesso ao site para estudar é gratuito.
 
-O acervo atual reúne **132 aulas, 132 artigos, 836 questões e 5.474 entradas de vocabulário**. O repertório cobre todos os 5.468 lemas do corpus MACULA SBLGNT fixado, mais seis bases didáticas. As 4.316 novas glosas portuguesas são identificadas como glosas em revisão. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
+O acervo atual reúne **132 aulas, 132 artigos, 837 questões e 5.474 entradas de vocabulário**. O repertório cobre todos os 5.468 lemas do corpus MACULA SBLGNT fixado, mais seis bases didáticas. As 4.316 novas glosas portuguesas são identificadas como glosas em revisão. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
 
 Projeto idealizado e conduzido por **Laylson de Albuquerque** ([GitHub](https://github.com/LaylsondeAlbuquerque)), com assistência de IA na implementação e na redação didática. As revisões e os ajustes foram realizados de forma iterativa, conforme solicitações do responsável.
 

@@ -3274,23 +3274,137 @@
     "level": 1,
     "order": 12,
     "title": "Dativo: relações e construções",
-    "summary": "Leia o dativo nos cinco grupos de Porter: referência, pessoas afetadas, recursos da ação, tempo e espaço e regência.",
-    "minutes": 28,
+    "summary": "Aprenda a reconhecer destinatário, referência, associação, instrumento, tempo, espaço e regência, relacionando Porter a Mathewson e Emig.",
+    "minutes": 35,
     "objectives": [
-      "Reconhecer destinatário e instrumento em contextos claros.",
-      "Distinguir os cinco grupos de usos de Porter sem impor uma preposição portuguesa fixa.",
-      "Explicar respeito, associação, posse e esfera de referência a partir da construção.",
-      "Reconhecer o grupo instrumento, agente, causa, meio e modo, preservando suas diferenças contextuais.",
-      "Diferenciar um complemento verbal de um grupo introduzido por preposição."
+      "Distinguir a forma dativa da função que ela exerce em cada construção.",
+      "Reconhecer destinatário, benefício e prejuízo sem confundir essas relações.",
+      "Explicar referência, posse, associação e esfera com apoio do contexto.",
+      "Diferenciar instrumento, meio, causa, modo e agente em exemplos claros, reconhecendo sobreposições.",
+      "Analisar tempo, espaço e complementos de verbos, preposições e adjetivos.",
+      "Relacionar as classificações de Porter e Mathewson e Emig sem impor equivalência rígida."
     ],
     "sections": [
       {
-        "heading": "Como estudar o dativo",
-        "body": "Dativo é um dos casos da flexão nominal. Caso é uma categoria gramatical expressa pelas formas da palavra. Ele participa de construções diferentes. A tradução pode usar “a”, “para”, “com”, “em”, “por” ou outra expressão; nenhuma dessas palavras portuguesas é uma tradução automática do caso.\n\nLema é a forma de dicionário. Morfologia descreve a classe e a forma da palavra; sintaxe explica sua relação com os outros termos. Regente é a palavra que organiza a construção e pode selecionar o caso de um complemento.\n\nSeguiremos os cinco grupos de Porter, Idioms, cap. 4, §§2.5.1–2.5.5. As divisões internas ajudam a descrever o contexto. Em especial, instrumento, agente, causa, meio e modo pertencem a um único grupo de Porter; não serão apresentados como cinco grupos independentes da sua taxonomia."
+        "heading": "O que o dativo informa — e o que o contexto decide",
+        "body": "Dativo é um caso da flexão nominal: reconhecemos sua forma em substantivos, pronomes, artigos e adjetivos. Reconhecer a forma ainda não explica sua função na oração. Porter descreve o dativo pela noção de relação; Mathewson e Emig também adotam essa orientação (§1.25). O destinatário é um uso frequente, mas não define todos os dativos.\n\nNesta aula, começaremos pelas pessoas envolvidas na ação, passaremos às relações de referência e aos recursos da ação e terminaremos com tempo, espaço e regência. Regente é a palavra que organiza a construção e pode exigir determinado caso de seu complemento. Lema é a forma usada para procurar uma palavra no dicionário.\n\nAs traduções “a”, “para”, “com”, “em” e “por” são soluções portuguesas para relações concretas. Nenhuma é uma tradução automática do dativo. Primeiro identifique a construção grega; depois explique a relação e escolha a tradução."
       },
       {
-        "heading": "1. Respeito e esfera de referência",
-        "body": "Um dativo de respeito delimita em relação a quê uma afirmação é feita. “Esfera” indica o âmbito em que a relação é considerada. Porter inclui essas leituras, junto de associação e posse, em §2.5.1.\n\nO exemplo é uma afirmação metafórica de Paulo; compreender seu alcance exige ler o contexto de Romanos.",
+        "heading": "Mapa de leitura: como as duas gramáticas se relacionam",
+        "body": "Use o quadro como orientação e consulta. A sequência dos exemplos foi organizada para o aprendizado; os números abaixo identificam seções das fontes, não etapas que você precisa decorar. Porter permanece a referência principal. Mathewson e Emig ajudam a comparar a descrição de construções próximas.",
+        "table": {
+          "headers": [
+            "Família em Porter",
+            "Correspondência em Mathewson e Emig",
+            "O que observar"
+          ],
+          "rows": [
+            [
+              "Referência, associação, posse e esfera (§2.5.1)",
+              "Referência e posse (§1.27); associação (§1.29); esfera na localização (§1.30)",
+              "Aspecto delimitado, pertencimento ou participação compartilhada."
+            ],
+            [
+              "Vantagem e desvantagem (§2.5.2)",
+              "Objeto indireto, vantagem e desvantagem (§1.26)",
+              "Diferenciar destinatário de benefício ou prejuízo contextual."
+            ],
+            [
+              "Instrumento, agente, causa, meio e modo (§2.5.3)",
+              "Família instrumental (§1.28)",
+              "Explicar a relação sem forçar limites entre rótulos próximos."
+            ],
+            [
+              "Tempo ou espaço (§2.5.4)",
+              "Localização (§1.30) e tempo (§1.31)",
+              "Distinguir lugar, esfera e momento; observar preposições."
+            ],
+            [
+              "Objeto (§2.5.5)",
+              "Objeto direto no dativo (§1.32)",
+              "Verificar o verbo e a construção que seleciona o complemento."
+            ],
+            [
+              "A organização dos cinco grupos não tem seção autônoma para este tópico",
+              "Complementos de certos adjetivos (§1.33)",
+              "Examinar também o adjetivo regente, sem atribuir a Porter uma sexta família."
+            ]
+          ]
+        }
+      },
+      {
+        "heading": "Destinatário: a quem se dirige a ação?",
+        "body": "O destinatário é a pessoa ou entidade a quem algo é dado, dito, mostrado ou escrito. Em “escrevo ao amigo”, o amigo recebe a comunicação; ele não é aquilo que está sendo escrito. Esse participante é frequentemente chamado objeto indireto.\n\nPorter trata essa relação junto de vantagem e desvantagem (§2.5.2). Mathewson e Emig começam por objeto indireto (§1.26), com exemplos de dizer, dar e mostrar. João 17.2 distingue quem recebe a autoridade da própria autoridade concedida.\n\nDestinatário e beneficiário podem coincidir, mas não são sinônimos. Receber uma mensagem não garante benefício. Em Apocalipse 21.2, a noiva adornada para seu marido ilustra, em Mathewson e Emig, a orientação favorável da ação. Benefício e prejuízo precisam de evidência contextual.",
+        "example": {
+          "greek": "γράφω τῷ φίλῳ.",
+          "translation": "Escrevo ao amigo.",
+          "reference": "Exemplo didático; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "γράφω",
+              "γράφω",
+              "escrevo",
+              "Verbo: presente do indicativo ativo, 1ª pessoa do singular"
+            ],
+            [
+              "τῷ",
+              "ὁ",
+              "ao",
+              "Artigo: dativo, masculino, singular"
+            ],
+            [
+              "φίλῳ",
+              "φίλος",
+              "amigo",
+              "Substantivo: dativo, masculino, singular"
+            ]
+          ]
+        },
+        "analysis": "τῷ φίλῳ se liga diretamente a γράφω e apresenta o destinatário. Não há preposição grega expressa nesse grupo. O amigo pode receber boas ou más notícias; identificar o destinatário, por si só, não prova que a ação lhe traz vantagem."
+      },
+      {
+        "heading": "Desvantagem: quando a ação se volta contra alguém",
+        "body": "O dativo de desvantagem identifica alguém prejudicado ou comprometido pela situação. A pergunta é “contra quem?” ou “em prejuízo de quem?”. A forma do dativo não muda: é o acontecimento e seu contexto que sustentam essa leitura.\n\nPorter (§2.5.2) e Mathewson e Emig (§1.26) citam Mateus 23.31. Na crítica de Jesus, o testemunho dos interlocutores contribui para comprometê-los. Não se deve aplicar a tradução “contra” a qualquer pronome reflexivo no dativo.",
+        "example": {
+          "greek": "μαρτυρεῖτε ἑαυτοῖς",
+          "translation": "vocês testemunham contra si mesmos",
+          "reference": "Mateus 23.31, trecho citado por Porter §2.5.2 e Mathewson e Emig §1.26; tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "μαρτυρεῖτε",
+              "μαρτυρέω",
+              "vocês testemunham",
+              "Verbo: presente do indicativo ativo, 2ª pessoa do plural"
+            ],
+            [
+              "ἑαυτοῖς",
+              "ἑαυτοῦ",
+              "contra si mesmos",
+              "Pronome reflexivo: dativo, masculino, plural; aqui retoma a 2ª pessoa"
+            ]
+          ]
+        },
+        "analysis": "No contexto da crítica de Mateus 23.31, o testemunho dos interlocutores os compromete. A tradução “contra si mesmos” explicita a leitura de desvantagem. A forma μαρτυρεῖτε pode ser indicativo ou imperativo isoladamente; aqui a leitura é indicativa. A interpretação se apoia no contexto, e não numa terminação especial de prejuízo."
+      },
+      {
+        "heading": "Referência: em relação a quê se faz a afirmação?",
+        "body": "O dativo de referência ou respeito delimita o aspecto sob o qual uma afirmação vale. A pergunta útil é “em relação a quê?”, e não necessariamente “a quem?”. Em Romanos 6.2, Paulo não descreve uma ferramenta nem uma pessoa que recebe algo: relaciona o morrer ao pecado. O alcance dessa afirmação deve ser lido no argumento de Romanos 6.\n\nPorter trata esse uso em §2.5.1; Mathewson e Emig o apresentam em §1.27 e citam a mesma passagem. Estes também mostram que um dativo pode limitar um adjetivo, como na expressão “pobres em espírito” de Mateus 5.3. Não é necessário haver um verbo de dar ou enviar para existir dativo.",
         "example": {
           "greek": "ἀπεθάνομεν τῇ ἁμαρτίᾳ",
           "translation": "morremos para o pecado",
@@ -3327,8 +3441,8 @@
         "analysis": "O grupo τῇ ἁμαρτίᾳ delimita a relação em que se fala de morrer: em relação ao pecado. O gênero feminino é o de ἁμαρτία, embora a tradução portuguesa use “o pecado”. A função da expressão inteira orienta “para”; o artigo τῇ não equivale isoladamente a essa preposição."
       },
       {
-        "heading": "1. O mesmo grupo: relação possessiva",
-        "body": "Com uma expressão de existência ou de identificação, um dativo pode indicar a pessoa a quem algo está relacionado ou pertence. A língua portuguesa pode formular a relação com “ter” ou com um possessivo.",
+        "heading": "Posse: a quem algo pertence ou se relaciona?",
+        "body": "Com uma expressão de existência ou identificação, o dativo pode apresentar o possuidor ou o portador de uma característica. O português frequentemente reorganiza a frase com “ter” ou um possessivo. Não se trata de alguém recebendo o nome naquele momento.\n\nPorter reúne posse e referência em §2.5.1. Mathewson e Emig também incluem a posse na referência (§1.27), ilustrando-a com João 17.6: aqueles que “eram teus”. A convergência está na relação de pertencimento; a tradução portuguesa não exige transformar a forma grega em genitivo.",
         "example": {
           "greek": "ὄνομα αὐτῷ Ἰωάννης",
           "translation": "seu nome era João",
@@ -3365,8 +3479,8 @@
         "analysis": "αὐτῷ indica a pessoa em relação a quem se afirma o nome. Porter apresenta o exemplo no grupo de respeito, associação e posse (§2.5.1). O trecho não expressa um verbo; a tradução “era” acompanha o contexto narrativo. Os dois nomes no nominativo participam da identificação, e αὐτῷ estabelece a relação com a pessoa."
       },
       {
-        "heading": "1. O mesmo grupo: associação",
-        "body": "Um dativo também pode indicar uma entidade associada à relação expressa por outra palavra. A interpretação precisa considerar o nome ou verbo que organiza o grupo. No exemplo, κοινωνία expressa comunhão ou participação compartilhada.",
+        "heading": "Associação: com quem ou com o quê há participação?",
+        "body": "Associação apresenta alguém ou algo que participa da relação expressa pelo verbo ou nome. Procure uma ideia de comunhão, convivência ou participação compartilhada. No exemplo, essa pista vem de κοινωνία, “comunhão”.\n\nPorter inclui associação na família da referência (§2.5.1). Mathewson e Emig lhe dão uma seção própria (§1.29), com exemplos como os que estavam à mesa com Jesus e seus discípulos em Marcos 2.15. Eles reconhecem proximidade com referência e instrumental. A diferença de organização não significa que as gramáticas identifiquem casos morfológicos diferentes.",
         "example": {
           "greek": "τίς κοινωνία φωτὶ πρὸς σκότος;",
           "translation": "Que comunhão há entre luz e trevas?",
@@ -3415,78 +3529,8 @@
         "analysis": "φωτί se relaciona a κοινωνία na construção de associação; πρὸς σκότος apresenta a outra parte da relação por meio de uma preposição. A tradução portuguesa reformula o conjunto com “entre ... e ...”. Porter inclui o exemplo em §2.5.1. O trecho não tem verbo expresso; “há” foi acrescentado na tradução para formular a pergunta."
       },
       {
-        "heading": "2. Vantagem, desvantagem e destinatário",
-        "body": "Porter reúne neste grupo pessoas ou entidades em cujo benefício, prejuízo ou interesse algo ocorre (§2.5.2). Inclui também o destinatário, muitas vezes chamado objeto indireto. Reconheça a relação concreta: receber uma mensagem, beneficiar-se de uma ação e ser prejudicado por ela são situações diferentes.\n\nNo exemplo didático, o amigo é quem recebe a mensagem escrita.",
-        "example": {
-          "greek": "γράφω τῷ φίλῳ.",
-          "translation": "Escrevo ao amigo.",
-          "reference": "Exemplo didático; tradução própria"
-        },
-        "table": {
-          "headers": [
-            "Forma no texto",
-            "Lema",
-            "Tradução local",
-            "Análise morfológica"
-          ],
-          "rows": [
-            [
-              "γράφω",
-              "γράφω",
-              "escrevo",
-              "Verbo: presente do indicativo ativo, 1ª pessoa do singular"
-            ],
-            [
-              "τῷ",
-              "ὁ",
-              "ao",
-              "Artigo: dativo, masculino, singular"
-            ],
-            [
-              "φίλῳ",
-              "φίλος",
-              "amigo",
-              "Substantivo: dativo, masculino, singular"
-            ]
-          ]
-        },
-        "analysis": "τῷ φίλῳ se liga diretamente a γράφω e apresenta o destinatário. Não há preposição grega expressa nesse grupo. O amigo pode receber boas ou más notícias; identificar o destinatário, por si só, não prova que a ação lhe traz vantagem."
-      },
-      {
-        "heading": "2. O mesmo grupo: uma pessoa prejudicada",
-        "body": "A leitura de desvantagem é apropriada quando o contexto mostra que a ação se volta contra a pessoa. Ela depende do sentido do acontecimento, e não de uma terminação diferente no dativo.",
-        "example": {
-          "greek": "μαρτυρεῖτε ἑαυτοῖς",
-          "translation": "vocês testemunham contra si mesmos",
-          "reference": "Mateus 23.31, trecho; exemplo complementar de desvantagem, tradução e análise próprias"
-        },
-        "table": {
-          "headers": [
-            "Forma no texto",
-            "Lema",
-            "Tradução local",
-            "Análise morfológica"
-          ],
-          "rows": [
-            [
-              "μαρτυρεῖτε",
-              "μαρτυρέω",
-              "vocês testemunham",
-              "Verbo: presente do indicativo ativo, 2ª pessoa do plural"
-            ],
-            [
-              "ἑαυτοῖς",
-              "ἑαυτοῦ",
-              "contra si mesmos",
-              "Pronome reflexivo: dativo, masculino, plural; aqui retoma a 2ª pessoa"
-            ]
-          ]
-        },
-        "analysis": "No contexto da crítica de Mateus 23.31, o testemunho dos interlocutores os compromete. A tradução “contra si mesmos” explicita essa leitura de desvantagem. A forma μαρτυρεῖτε também pode ser imperativo em outra construção; aqui a leitura é indicativa. Este exemplo complementar ilustra a distinção contextual dentro do grupo §2.5.2."
-      },
-      {
-        "heading": "3. Instrumento, agente, causa, meio e modo: instrumento",
-        "body": "Porter reúne essas cinco relações em §2.5.3. Elas descrevem participantes ou circunstâncias envolvidos em como a ação ocorre, mas o papel concreto varia. Instrumento é o recurso material usado para realizar a ação.\n\nNo exemplo didático, cálamo é uma haste usada como instrumento de escrita.",
+        "heading": "Instrumento: com que recurso material a ação é realizada?",
+        "body": "Instrumento é o recurso empregado para realizar uma ação. No exemplo didático, o cálamo é uma haste usada para escrever: o aluno escreve, enquanto o cálamo é utilizado na escrita. Uma ferramenta não se torna o agente da ação só porque aparece na tradução com “com”.\n\nPorter reúne instrumento, agente, causa, meio e modo em §2.5.3. Mathewson e Emig também os discutem em uma família instrumental (§1.28). As distinções a seguir ajudam a explicar exemplos claros, mas não constituem fronteiras rígidas aplicáveis a toda ocorrência.",
         "example": {
           "greek": "ὁ μαθητὴς γράφει καλάμῳ.",
           "translation": "O aluno escreve com um cálamo.",
@@ -3529,8 +3573,8 @@
         "analysis": "ὁ μαθητής é sujeito de γράφει. καλάμῳ indica o objeto com que a escrita é realizada: o instrumento. Seu dativo não o torna destinatário da mensagem. A tradução “com um cálamo” descreve a relação instrumental da construção."
       },
       {
-        "heading": "3. O mesmo grupo: meio",
-        "body": "Meio é o recurso pelo qual a ação se realiza. A fronteira entre meio e instrumento pode variar conforme a descrição gramatical. Um veículo, por exemplo, pode ser descrito como meio de deslocamento.",
+        "heading": "Meio: por qual recurso a ação se realiza?",
+        "body": "Meio destaca o recurso pelo qual se chega ao resultado. Em João 21.8, o barco é o recurso de transporte dos discípulos. A tradução “no barco” não transforma automaticamente o dativo em localização: aqui ele participa da descrição de como vieram.\n\nMeio e instrumento podem se sobrepor. Porter (§2.5.3) e Mathewson e Emig (§1.28) evitam tratar essa separação como obrigatória. Quando dois rótulos descrevem a mesma relação contextual, explique a relação antes de disputar o nome.",
         "example": {
           "greek": "τῷ πλοιαρίῳ ἦλθον",
           "translation": "eles vieram no pequeno barco",
@@ -3567,8 +3611,8 @@
         "analysis": "Em João 21.8, τῷ πλοιαρίῳ apresenta o recurso de transporte dos discípulos. Porter o inclui no conjunto de §2.5.3. O contexto identifica o sujeito plural de ἦλθον; essa forma, isolada, também pode ser 1ª pessoa do singular. A tradução com “no” não introduz uma preposição grega que esteja escrita no trecho."
       },
       {
-        "heading": "3. O mesmo grupo: causa",
-        "body": "A causa apresenta aquilo em razão de que a situação ocorre. Ela pode ser expressa por um dativo, conforme a construção. Diferencie a razão do acontecimento do recurso utilizado para realizá-lo.",
+        "heading": "Causa: por que a situação ocorre?",
+        "body": "Causa é a razão pela qual uma situação ocorre; instrumento é um recurso utilizado para realizá-la. No trecho de Lucas 15.17, a fome explica a situação de morrer, não uma ferramenta empregada pelo personagem.\n\nPorter inclui o exemplo em §2.5.3. Mathewson e Emig também incluem causa na família instrumental (§1.28) e usam Romanos 11.20 para mostrar a relação entre incredulidade e exclusão. Em português, “por”, “de” ou “por causa de” podem expressar essa relação; a escolha não altera o caso grego.",
         "example": {
           "greek": "λιμῷ ὧδε ἀπόλλυμαι",
           "translation": "aqui estou morrendo de fome",
@@ -3605,8 +3649,8 @@
         "analysis": "λιμῷ expressa a causa da situação descrita: a fome. ὧδε situa a fala no lugar em que o personagem está. Porter apresenta o exemplo entre as relações do grupo §2.5.3. O substantivo λιμός admite variação de gênero; aqui a análise segue o feminino usado nesta narrativa e registrado para Lucas 15.17 na interlinear do SBLGNT. A tradução portuguesa “de fome” não transforma λιμῷ em genitivo."
       },
       {
-        "heading": "3. O mesmo grupo: modo",
-        "body": "Modo descreve a maneira como a ação se realiza. No exemplo didático, o contexto descreve uma pessoa escrevendo de maneira alegre. Em outras situações, um sentimento pode também ser relacionado à causa de uma ação; a classificação depende da leitura do contexto.",
+        "heading": "Modo: de que maneira a ação acontece?",
+        "body": "Modo caracteriza a maneira como a ação se realiza. Imagine uma pessoa que escreve alegremente: “com alegria” descreve a escrita nessa situação. Em outro contexto, a alegria poderia motivar a ação, favorecendo uma explicação causal. O substantivo isolado não decide entre essas leituras.\n\nPorter e Mathewson e Emig aproximam modo de instrumento e meio (§2.5.3 e §1.28). Estes últimos discutem João 17.5 justamente para mostrar como pode ser difícil impor uma divisão absoluta entre instrumento e modo.",
         "example": {
           "greek": "χαρᾷ γράφει.",
           "translation": "Escreve com alegria.",
@@ -3637,8 +3681,8 @@
         "analysis": "A leitura proposta destaca a maneira de escrever. χαρᾷ é descrito como dativo de modo, dentro do grupo de Porter §2.5.3. A pessoa que escreve é recuperada pelo contexto; a forma verbal está na 3ª pessoa do singular."
       },
       {
-        "heading": "3. O mesmo grupo: agente em construção passiva",
-        "body": "Agente é quem realiza a ação. Um dativo pode ter essa função em certas construções passivas, sobretudo no contexto de formas perfeitas, mas esse uso é raro no Novo Testamento. A simples presença de uma pessoa no dativo não basta para identificá-la como agente.\n\nO exemplo abaixo é apresentado por Porter em §2.5.3; outras análises podem discutir os limites entre agência e relações próximas.",
+        "heading": "Agente: quem realiza a ação numa construção passiva?",
+        "body": "Agente é o participante que realiza a ação. Em uma oração passiva, o sujeito recebe a ação, enquanto outro termo pode identificar quem a pratica. Há dativos analisados como agente, especialmente associados a formas perfeitas; esse uso é raro no Novo Testamento. A presença de pessoa no dativo, sozinha, não basta.\n\nPorter inclui Lucas 23.15 em §2.5.3. Mathewson e Emig incluem agência na família instrumental (§1.28), mas isso não torna todo exemplo uma interpretação obrigatória compartilhada por ambos. A análise abaixo é a de Porter; devem-se considerar a construção passiva e o contexto.",
         "example": {
           "greek": "οὐδὲν ἄξιον θανάτου ἐστὶν πεπραγμένον αὐτῷ",
           "translation": "nada digno de morte foi praticado por ele",
@@ -3693,8 +3737,8 @@
         "analysis": "ἐστίν e o particípio πεπραγμένον formam uma expressão verbal passiva. οὐδέν é o sujeito; ἄξιον o caracteriza, e θανάτου completa a ideia de “digno”. Na leitura de agência apresentada por Porter, αὐτῷ identifica quem teria praticado a ação. O texto nega que algo digno de morte tenha sido praticado por ele."
       },
       {
-        "heading": "4. Tempo",
-        "body": "O dativo pode situar uma ação em um momento ou período determinado. Porter reúne tempo e espaço em §2.5.4. Observe a expressão concreta e o contexto, em vez de decorar uma oposição temporal rígida entre os casos.",
+        "heading": "Tempo: quando a ação ocorre?",
+        "body": "O dativo temporal situa a ação num momento ou período determinado. Pergunte “quando?”. A referência pode ter duração real: dizer “numa hora” não significa que todo dativo temporal indique um instante sem extensão.\n\nPorter reúne tempo e espaço em §2.5.4. Mathewson e Emig apresentam tempo em §1.31 como extensão da localização e também usam a expressão “no terceiro dia”, em Mateus 16.21. O exemplo abaixo é Mateus 20.19, citado por Porter. Não transforme as diferenças entre dativo, genitivo e acusativo de tempo em uma fórmula rígida.",
         "example": {
           "greek": "τῇ τρίτῃ ἡμέρᾳ ἐγερθήσεται",
           "translation": "no terceiro dia, ele será ressuscitado",
@@ -3737,8 +3781,8 @@
         "analysis": "O grupo τῇ τρίτῃ ἡμέρᾳ situa temporalmente a ação de ἐγερθήσεται. Artigo, numeral e substantivo concordam em dativo feminino singular. A tradução “no terceiro dia” resulta da função temporal do grupo."
       },
       {
-        "heading": "4. Espaço e a presença de preposição",
-        "body": "O grupo tempo e espaço também inclui a localização. No Novo Testamento, o dativo espacial sem preposição é limitado. Com frequência, uma preposição como ἐν introduz o grupo e precisa entrar na análise.\n\nO exemplo didático permite comparar a construção com γράφω τῷ φίλῳ.",
+        "heading": "Localização e esfera: onde ou em que âmbito?",
+        "body": "Localização pode ser física, como uma casa, ou metafórica, como o âmbito em que uma situação é considerada. Mathewson e Emig reúnem lugar e esfera em §1.30 e observam que esfera pode aproximar-se de referência. Em Colossenses 1.23, por exemplo, apresentam a permanência na fé como esfera.\n\nPorter observa que o dativo espacial sem preposição é limitado (§2.5.4); também relaciona esfera à referência em §2.5.1. As duas descrições se comunicam, mas não distribuem todos os exemplos em compartimentos idênticos.\n\nNo exemplo didático abaixo há uma preposição expressa: ἐν. Portanto, a localização deve ser atribuída à construção inteira, e τῷ οἴκῳ deve ser identificado como complemento dessa preposição. O exemplo não comprova um dativo espacial independente.",
         "example": {
           "greek": "μένω ἐν τῷ οἴκῳ.",
           "translation": "Permaneço na casa.",
@@ -3781,8 +3825,8 @@
         "analysis": "ἐν rege τῷ οἴκῳ e o grupo completo localiza a permanência. O dativo integra uma expressão preposicional. Em γράφω τῷ φίλῳ, o grupo dativo se liga diretamente ao verbo, sem preposição expressa. A tradução “na casa” reúne a preposição e o artigo em português."
       },
       {
-        "heading": "4. Uma expressão espacial fixada pelo uso",
-        "body": "Porter observa a limitação dos usos espaciais e inclui expressões de forma dativa empregadas como advérbios. Elas não autorizam atribuir valor de lugar a qualquer dativo.",
+        "heading": "Uma expressão fixada: “ao redor”",
+        "body": "Algumas formas de origem dativa funcionam como advérbios. Porter inclui κύκλῳ na discussão espacial (§2.5.4). Aprender a expressão em uso evita analisar qualquer forma parecida com dativo como um participante nominal da oração.\n\nAqui o objetivo é reconhecer uma expressão adverbial; não acrescentar um novo caso nem uma tradução automática à lista de terminações.",
         "example": {
           "greek": "κύκλῳ",
           "translation": "ao redor",
@@ -3807,8 +3851,8 @@
         "analysis": "Em Romanos 15.19, κύκλῳ ajuda a descrever a abrangência espacial do percurso. A expressão conserva uma forma de origem dativa, mas funciona adverbialmente. Este caso reforça a necessidade de analisar a expressão em seu uso concreto, conforme o grupo de Porter §2.5.4."
       },
       {
-        "heading": "5. Objeto e regência",
-        "body": "Certos verbos e outras palavras selecionam um complemento em dativo. A forma do complemento faz parte da construção que deve ser aprendida com o vocábulo. Porter trata esse conjunto em §2.5.5.\n\nNo exemplo didático, πιστεύω expressa confiança na pessoa indicada pelo dativo.",
+        "heading": "Regência verbal: o dativo exigido pelo verbo",
+        "body": "Alguns verbos completam seu sentido com um termo no dativo. Aprenda a construção com o vocábulo: o caso do complemento não pode ser previsto apenas pela tradução portuguesa. Objeto é uma função sintática; acusativo e dativo são casos. Um complemento pode estar no dativo sem ser destinatário, instrumento ou lugar.\n\nPorter trata esses objetos em §2.5.5. Mathewson e Emig os apresentam como objeto direto no dativo (§1.32), por exemplo com “seguir” e “servir”. A terminologia não é uma ordem para classificar o complemento pela regência do verbo português.\n\nNo exemplo didático, πιστεύω com dativo expressa confiança ou crédito dado a alguém. A tradução “confio em Deus” usa “em”, mas não há preposição grega expressa nessa frase. Confira sempre o sentido e a construção do verbo no contexto.",
         "example": {
           "greek": "πιστεύω τῷ θεῷ.",
           "translation": "Confio em Deus.",
@@ -3843,6 +3887,54 @@
           ]
         },
         "analysis": "τῷ θεῷ completa πιστεύω nessa construção. A tradução portuguesa usa “em”, mas não há uma preposição grega expressa no trecho. O sentido lexical do verbo e sua regência orientam a análise; classificar todo dativo como destinatário deixaria de explicar essa relação."
+      },
+      {
+        "heading": "Complemento de adjetivo: semelhante a quê?",
+        "body": "Nem todo dativo depende de um verbo. Certos adjetivos pedem ou admitem um complemento que especifica a relação. Com ὅμοιος, “semelhante”, o dativo pode indicar aquilo com que se compara. Mathewson e Emig destacam essa construção em §1.33, além dos usos anteriores.\n\nO exemplo foi abreviado para destacar o adjetivo e seu complemento. O sujeito, no contexto de Mateus 13.31, é o reino dos céus. Não há um ato de entregar algo ao grão.",
+        "example": {
+          "greek": "ὁμοία ἐστὶν κόκκῳ σινάπεως",
+          "translation": "é semelhante a um grão de mostarda",
+          "reference": "Mateus 13.31, recorte com o sujeito retirado; exemplo de Mathewson e Emig §1.33, tradução própria"
+        },
+        "table": {
+          "headers": [
+            "Forma no texto",
+            "Lema",
+            "Tradução local",
+            "Análise morfológica"
+          ],
+          "rows": [
+            [
+              "ὁμοία",
+              "ὅμοιος",
+              "semelhante",
+              "Adjetivo: nominativo, feminino, singular; concorda com βασιλεία no contexto"
+            ],
+            [
+              "ἐστὶν",
+              "εἰμί",
+              "é",
+              "Verbo: presente do indicativo ativo, 3ª pessoa do singular"
+            ],
+            [
+              "κόκκῳ",
+              "κόκκος",
+              "a um grão",
+              "Substantivo: dativo, masculino, singular"
+            ],
+            [
+              "σινάπεως",
+              "σίναπι",
+              "de mostarda",
+              "Substantivo: genitivo, neutro, singular"
+            ]
+          ]
+        },
+        "analysis": "κόκκῳ completa a relação de semelhança expressa por ὁμοία; σινάπεως especifica o grão. O sujeito e o adjetivo predicativo estão no nominativo, enquanto o termo de comparação está no dativo. A preposição portuguesa “a” resulta da construção “semelhante a”, sem uma preposição grega expressa. Descrever a relação de semelhança é mais informativo do que classificar κόκκῳ como objeto indireto só porque a tradução contém “a”."
+      },
+      {
+        "heading": "Como analisar um dativo numa passagem do Novo Testamento",
+        "body": "1. Reconheça a forma e o grupo completo: artigo, substantivo, pronome e possíveis modificadores. Dativo singular e dativo plural continuam sendo a mesma categoria de caso.\n\n2. Localize o regente. Há preposição expressa? O termo depende de verbo, adjetivo ou nome? Um verbo exige aquele complemento ou o grupo acrescenta uma circunstância?\n\n3. Explique a relação em palavras comuns: destinatário, pessoa favorecida, aspecto delimitado, participação, recurso, causa, maneira, momento ou lugar. As perguntas portuguesas são auxiliares, não provas isoladas.\n\n4. Leia o contexto e compare hipóteses. Se um dativo puder ser explicado como referência ou esfera, registre a evidência e o que permanece discutível. Mathewson e Emig usam 1 Pedro 3.18 para mostrar a proximidade entre esfera e outras análises; não transforme esse exemplo controverso em questão de resposta única.\n\n5. Escolha uma tradução que preserve a relação. Depois compare os rótulos das gramáticas. Rótulos diferentes podem descrever a mesma construção; uma discordância real precisa mostrar o que muda na interpretação.\n\nNa exegese, isso impede concluir benefício apenas porque alguém recebe algo, identificar um agente só porque há uma pessoa no dativo ou extrair uma interpretação teológica da terminação isolada."
       }
     ],
     "examples": [
@@ -3989,7 +4081,7 @@
       {
         "id": "s-dative-group-three-new",
         "kind": "match",
-        "prompt": "Relacione as expressões às leituras propostas nos exemplos da lição. Todas pertencem ao mesmo grupo de Porter §2.5.3.",
+        "prompt": "Relacione cada expressão à relação contextual indicada. Nos exemplos didáticos, o cálamo é usado para escrever e a escrita com alegria é descrita como alegre.",
         "pairs": [
           {
             "left": "καλάμῳ em γράφει καλάμῳ",
@@ -4008,7 +4100,7 @@
             "right": "Modo de realizar a ação"
           }
         ],
-        "explanation": "Instrumento, meio, causa e modo descrevem relações diferentes no contexto, mas integram o grupo maior que Porter reúne com agência em §2.5.3."
+        "explanation": "O cálamo é instrumento de escrita; o barco, meio de deslocamento; a fome, causa da situação; e a alegria, modo na situação proposta. Porter (§2.5.3) e Mathewson e Emig (§1.28) aproximam essas relações, sem exigir fronteiras rígidas em todos os textos."
       },
       {
         "id": "s-dative-agent-new",
@@ -4063,10 +4155,24 @@
           "na casa."
         ],
         "explanation": "O grupo ἐν τῷ οἴκῳ localiza a permanência. τῷ οἴκῳ é complemento da preposição ἐν, que rege dativo."
+      },
+      {
+        "id": "s-dative-adjective-complement",
+        "kind": "choice",
+        "greek": "ὁμοία ἐστὶν κόκκῳ σινάπεως",
+        "prompt": "No recorte de Mateus 13.31, ὁμοία significa “semelhante”. O que o dativo κόκκῳ especifica?",
+        "options": [
+          "Aquilo a que o sujeito é comparado: um grão.",
+          "A pessoa que recebe uma carta.",
+          "O sujeito nominativo do verbo."
+        ],
+        "answer": 0,
+        "explanation": "κόκκῳ completa a relação de semelhança expressa pelo adjetivo ὁμοία. σινάπεως especifica o grão. A tradução “semelhante a” não exige uma preposição grega expressa."
       }
     ],
     "references": [
       "Porter, Stanley E. Idioms of the Greek New Testament. Sheffield: JSOT, 1999, cap. 4, §§2.5.1–2.5.5. Fonte principal e organização dos cinco grupos de usos; instrumento, agente, causa, meio e modo preservados como grupo único.",
+      "Mathewson, David L., e Elodie Ballantine Emig. Excerto fornecido pelo responsável, “The Dative Case”, §§1.25–1.34: relação; objeto indireto; referência e posse; instrumental; associação; localização; tempo; objeto direto no dativo; complementos de adjetivos. Correlação didática com Porter; síntese e traduções próprias, sem reprodução integral do excerto.",
       "Trechos de Romanos 6.2, João 1.6, 2 Coríntios 6.14, João 21.8, Lucas 15.17, Lucas 23.15, Mateus 20.19 e Romanos 15.19 conferidos nos exemplos do material de Porter fornecido. Traduções e comentários próprios.",
       "Mateus 23.31: trecho complementar conferido em The Greek New Testament: SBL Edition. https://biblia.com/bible/sblgnt/matthew/23/31-38 . Tradução e aplicação didática de desvantagem próprias.",
       "The Greek New Testament: SBL Edition, interlinear de Lucas, Lucas 15.14 e 15.17: conferência do gênero feminino de λιμός/λιμῷ neste contexto. https://sblgnt.com/download/revint/63-Luke.pdf .",
