@@ -8,11 +8,20 @@
 </section>
 <div class="level-summary">
   <div>
-    <h2>Seu repertório completo</h2>
+    <h2>{{selectedBook()?'Vocabulário de '+selectedBook()!.name:'Seu repertório completo'}}</h2>
     <p>{{ format(content.vocabulary.entries.length) }} vocábulos · lista independente por frequência, com consulta ao repertório de Porter.</p>
   </div>
   <button class="text-link" (click)="studyCore()">Estudar os 300<koine-icon name="arrow" [size]="13" /></button>
 </div>
+<div class="vocab-book-toolbar">
+  <label class="field">Livro do Novo Testamento<select id="vocab-book" [value]="bookId()" (change)="changeBook($event)" [disabled]="bookVocabulary.loading()||!!bookVocabulary.error()"><option value="">Todos os livros</option>@for(book of bookStats();track book.id){<option [value]="book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
+  @if(bookId()){
+    <label class="field">Ordem dos vocábulos<select id="vocab-book-order" [value]="bookOrder()" (change)="changeBookOrder($event)"><option value="frequency">Mais frequentes neste livro</option><option value="appearance">Primeira aparição no livro</option></select></label>
+  }
+</div>
+@if(bookVocabulary.loading()){<p role="status">Carregando vocabulário dos livros…</p>}
+@else if(bookVocabulary.error()){<div role="alert"><p>{{bookVocabulary.error()}}</p><button class="button button-outline button-small" (click)="bookVocabulary.load()">Tentar novamente</button></div>}
+@if(selectedBook();as book){<p class="word-mark-help" aria-live="polite">{{book.name}}: {{book.learned}} de {{book.total}} vocábulos já aprendidos; faltam {{book.remaining}}. Cada lema conta uma vez, incluindo nomes próprios. As marcações valem em todos os livros.</p>}
 <div class="vocab-toolbar">
   <label class="search-field">
     <koine-icon name="search" [size]="16" />
@@ -53,7 +62,7 @@
           <span class="word-meaning">{{ word.meaning }}</span>
           @if(word.glossStatus==='draft'){<span class="muted" style="font-size:11px">Glosa em revisão</span>}
           <span class="word-bottom">
-            <span>{{ word.pos }} · {{ format(word.frequency) }} ocorr.</span>
+            <span>{{ word.pos }} · @if(selectedBook()){{{format(bookOccurrences().get(word.id)||0)}} neste livro · {{format(word.frequency)}} no NT}@else{{{format(word.frequency)}} ocorr.}</span>
             <span class="word-state" [attr.aria-label]="successfulDays(word) + ' de 3 dias com acertos'">
               @for (day of days; track day) { <i [class.filled]="successfulDays(word) > day"></i> }
             </span>
@@ -69,7 +78,7 @@
         </article>
       }
     </div>
-  } @else {
+  } @else if(!bookId()||(!bookVocabulary.loading()&&!bookVocabulary.error())) {
     <div class="empty-state"><h2>Nenhum vocábulo neste filtro</h2><p>Tente outro termo ou altere os filtros.</p></div>
   }
   @if (pages() > 1) {

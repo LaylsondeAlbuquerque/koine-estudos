@@ -8,7 +8,7 @@
       <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option></select></label>
       @if (vocabulary()) {
         <label class="field">Vocabulário<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
-          <option value="all">Todo o Novo Testamento</option><option value="book">Por livro</option><option value="frequent">Mais frequentes</option><option value="level">Nível selecionado · {{ count() }} vocábulos</option>
+          <option value="all">Todo o Novo Testamento</option><option value="book">Vocabulário de um livro</option><option value="frequent">Mais frequentes</option><option value="level">Nível selecionado · {{ count() }} vocábulos</option>
         </select></label>
         <label class="field">Estado de aprendizado<select id="session-state" [value]="wordState()" (change)="wordState.set(value($event))">
           <option value="all">Todas</option><option value="unlearned">Ainda não aprendidas</option><option value="mastered">Já aprendidas</option><option value="marked">Marcadas para revisar</option><option value="due">Revisões de hoje</option><option value="new">Ainda não praticadas</option>
@@ -16,11 +16,11 @@
         @if(filter()==='frequent'){
           <label class="field">Faixa de frequência<select id="session-frequency" [value]="topAmount()" (change)="topAmount.set(+$any($event.target).value)">@for(amount of frequencyGroups;track amount){<option [value]="amount">{{amount}} mais frequentes no NT</option>}</select></label>
         }
-        @if(filter()==='book'){
+        @if(filter()==='all'||filter()==='book'){
+          <label class="field">Livro do Novo Testamento<select id="session-book" [value]="filter()==='book'?bookId():''" (change)="selectBook($event)" [disabled]="bookVocabulary.loading()||!!bookVocabulary.error()"><option value="">Todos os livros</option>@for(book of bookStats();track book.id){<option [value]="book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
           @if(bookVocabulary.loading()){<p role="status">Carregando vocabulário dos livros…</p>}
           @else if(bookVocabulary.error()){<div role="alert"><p>{{bookVocabulary.error()}}</p><button class="button button-outline" (click)="bookVocabulary.load()">Tentar novamente</button></div>}
-          @else{
-            <label class="field">Livro<select id="session-book" [value]="bookId()" (change)="bookId.set(value($event))">@for(book of bookStats();track book.id){<option [value]="book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
+          @if(filter()==='book'&&selectedBook()){
             <label class="field">Ordem dos vocábulos<select id="session-book-order" [value]="bookOrder()" (change)="bookOrder.set($any(value($event)))"><option value="frequency">Mais frequentes neste livro</option><option value="appearance">Primeira aparição no livro</option></select></label>
           }
         }

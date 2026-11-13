@@ -1,6 +1,6 @@
 import {signal} from '@angular/core';
 import {TestBed} from '@angular/core/testing';
-import {afterEach, describe, expect, it, vi} from 'vitest';
+import {afterEach, beforeEach, describe, expect, it, vi} from 'vitest';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {StudyLandingComponent} from './study-landing.component';
@@ -8,6 +8,7 @@ import {StudySessionService} from './study-session.service';
 import {BookVocabularyService} from '../book-vocabulary.service';
 
 describe('Seleção dos conjuntos de vocabulário', () => {
+  beforeEach(()=>TestBed.configureTestingModule({providers:[{provide:BookVocabularyService,useValue:{books:signal([]),loading:signal(false),error:signal(''),load:vi.fn()}}]}));
   afterEach(() => TestBed.resetTestingModule());
 
   it('combines the frequency group and learning state independently from size and selected level', () => {
@@ -47,7 +48,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
     expect(wordState.value).toBe('marked');
   });
 
-  it('shows distinct missing words per book, reacts to progress and sends the chosen order',()=>{
+  it.each(['flashcards','practice'] as const)('shows a direct book selector, remaining words and chosen order in %s',mode=>{
     const learned=signal(new Set(['w1'])),start=vi.fn();
     TestBed.configureTestingModule({providers:[
       {provide:ContentService,useValue:{lessonsFor:()=>[],catalog:{wordsForLevel:()=>[]}}},
@@ -56,14 +57,21 @@ describe('Seleção dos conjuntos de vocabulário', () => {
       {provide:BookVocabularyService,useValue:{books:signal([{id:'MAT',name:'Mateus',words:[{id:'w1',frequency:20,first:1},{id:'w2',frequency:1,first:2}]}]),loading:signal(false),error:signal(''),load:vi.fn()}}
     ]});
     const fixture=TestBed.createComponent(StudyLandingComponent);
-    fixture.componentRef.setInput('area','vocabulary');fixture.componentRef.setInput('mode','flashcards');
-    fixture.componentInstance.filter.set('book');fixture.detectChanges();
+    fixture.componentRef.setInput('area','vocabulary');fixture.componentRef.setInput('mode',mode);fixture.detectChanges();
     const page:HTMLElement=fixture.nativeElement;
+    const selector=page.querySelector<HTMLSelectElement>('#session-book')!;
+    expect(selector.value).toBe('');
+    selector.value='MAT';selector.dispatchEvent(new Event('change'));fixture.detectChanges();
+    expect(fixture.componentInstance.filter()).toBe('book');
     expect(page.querySelector('#session-book')?.textContent).toContain('Mateus · faltam 1 de 2');
     learned.set(new Set(['w1','w2']));fixture.detectChanges();
     expect(page.querySelector('.book-vocabulary-progress')?.textContent).toContain('faltam 0 vocábulos');
     fixture.componentInstance.bookOrder.set('appearance');fixture.componentInstance.wordState.set('unlearned');fixture.componentInstance.start();
-    expect(start).toHaveBeenCalledWith(expect.objectContaining({bookId:'MAT',bookOrder:'appearance',wordState:'unlearned',filter:'all'}));
+    expect(start).toHaveBeenCalledWith(expect.objectContaining({mode,bookId:'MAT',bookOrder:'appearance',wordState:'unlearned',filter:'all'}));
+    selector.value='';selector.dispatchEvent(new Event('change'));fixture.detectChanges();
+    fixture.componentInstance.start();
+    expect(start).toHaveBeenLastCalledWith(expect.not.objectContaining({bookId:expect.anything()}));
+    expect(page.querySelector('#session-book-order')).toBeNull();
   });
 
   it.each(['flashcards', 'practice'] as const)('presents session sizes in ascending order for %s', mode => {

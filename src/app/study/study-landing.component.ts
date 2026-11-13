@@ -52,8 +52,13 @@ export class StudyLandingComponent {
     {title: 'Use a explicação', text: 'Um erro é uma pista: volte ao padrão ou conceito que ainda precisa de atenção.'},
     {title: this.vocabulary() ? 'Acompanhe sua aprendizagem' : 'Conecte teoria e prática', text: this.vocabulary() ? 'Acertos em três dias diferentes registram a aprendizagem automaticamente. Você também pode marcar a palavra como já aprendida ou para revisar.' : 'Reveja a aula quando precisar. O percurso permanece aberto para você retornar.'}
   ]);
-  constructor(){effect(()=>{if(this.filter()==='book')void this.bookVocabulary.load();});}
+  constructor(){effect(()=>{if(this.vocabulary())void this.bookVocabulary.load();});}
   value(event: Event): string { return (event.target as HTMLSelectElement).value; }
+  selectBook(event:Event):void{
+    const id=this.value(event);
+    if(id)this.bookId.set(id);
+    this.filter.set(id?'book':'all');
+  }
   start(): void {
     // An input may remain mounted while the selected level changes. Ignore a
     // previous level's lesson instead of leaking that filter into this session.

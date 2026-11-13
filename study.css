@@ -127,6 +127,9 @@ select{cursor:pointer}
 .vocab-banner .core-count{flex-shrink:0;font-family:var(--sans);font-size:34px;font-weight:700;line-height:1.4;color:white;white-space:nowrap}
 .vocab-banner .core-count span{display:block;font-size:12px;font-weight:400;color:#d8e3f1;white-space:normal}
 .vocab-toolbar{display:flex;align-items:center;gap:14px;margin:22px 0}
+.vocab-book-toolbar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:24px 0;max-width:780px}
+.vocab-book-toolbar .field{min-width:0}
+@media(max-width:600px){.vocab-book-toolbar{grid-template-columns:1fr;gap:16px}}
 .search-field{position:relative;flex:1;min-width:0}
 .search-field input{width:100%;padding-left:43px;font-size:14px;min-height:46px}
 .search-field svg{position:absolute;left:15px;top:15px;color:#617085;pointer-events:none}

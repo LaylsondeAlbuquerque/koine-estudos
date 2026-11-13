@@ -6,10 +6,12 @@ import {ProgressService} from '../progress.service';
 import {Word} from '../models';
 import {StudySessionService} from '../study/study-session.service';
 import {WordRepertoryComponent} from './word-repertory.component';
+import {BookVocabularyService} from '../book-vocabulary.service';
 
 describe('WordRepertoryComponent', () => {
   let content: ContentService;
   let progress: ProgressService;
+  let books:BookVocabularyService;
   const start = vi.fn();
   const words: Word[] = Array.from({length: 60}, (_, index) => ({
     id: `word-${index}`, lemma: index === 0 ? 'λόγος' : `λέμμα${index}`,
@@ -30,11 +32,64 @@ describe('WordRepertoryComponent', () => {
     content.catalog = createCatalog([], [], words);
     content.ready.set(true);
     progress = TestBed.inject(ProgressService);
+    books=TestBed.inject(BookVocabularyService);
+    vi.spyOn(books,'load').mockResolvedValue();
   });
 
   afterEach(() => { vi.restoreAllMocks(); TestBed.resetTestingModule(); });
 
   const change = (value: string) => ({target: {value}} as unknown as Event);
+
+  const setBooks=()=>books.books.set([
+    {id:'MAT',name:'Mateus',words:[{id:'word-5',frequency:8,first:3},{id:'word-0',frequency:2,first:1},{id:'word-2',frequency:1,first:2}]},
+    {id:'JHN',name:'João',words:[{id:'word-0',frequency:9,first:1},{id:'word-3',frequency:1,first:2}]}
+  ]);
+
+  it('filters by book and its own frequency or first appearance, preserves selection and restores the whole repertoire',()=>{
+    setBooks();let fixture=TestBed.createComponent(WordRepertoryComponent);fixture.detectChanges();
+    let component=fixture.componentInstance;component.page.set(1);
+    const selector=fixture.nativeElement.querySelector('#vocab-book') as HTMLSelectElement;
+    selector.value='MAT';selector.dispatchEvent(new Event('change'));fixture.detectChanges();
+    expect(component.page()).toBe(0);
+    expect(component.filtered().map(w=>w.id)).toEqual(['word-5','word-0','word-2']);
+    expect(fixture.nativeElement.querySelector('.word-bottom')?.textContent).toContain('8 neste livro');
+    const order=fixture.nativeElement.querySelector('#vocab-book-order') as HTMLSelectElement;
+    order.value='appearance';order.dispatchEvent(new Event('change'));fixture.detectChanges();
+    expect(component.filtered().map(w=>w.id)).toEqual(['word-0','word-2','word-5']);
+    fixture.destroy();fixture=TestBed.createComponent(WordRepertoryComponent);component=fixture.componentInstance;
+    expect(component.bookId()).toBe('MAT');expect(component.bookOrder()).toBe('appearance');
+    component.changeBook(change(''));
+    expect(component.filtered()).toHaveLength(60);
+  });
+
+  it('combines book, search, class and learning state and shares learned counts across books',()=>{
+    setBooks();const fixture=TestBed.createComponent(WordRepertoryComponent),component=fixture.componentInstance;
+    component.changeBook(change('MAT'));progress.setWordState('word-0','learned');
+    component.changeFilter(change('unlearned'));component.changeClass(change('verbo'));component.changeQuery(change('sentido'));
+    fixture.detectChanges();
+    expect(component.filtered().map(w=>w.id)).toEqual(['word-5']);
+    expect(component.selectedBook()?.remaining).toBe(2);
+    expect(fixture.nativeElement.querySelector('#vocab-book').textContent).toContain('João · faltam 1 de 2');
+    component.markWord(words[5],'review');component.changeFilter(change('marked'));
+    expect(component.filtered().map(w=>w.id)).toEqual(['word-5']);
+    component.markWord(words[5],'learned');fixture.detectChanges();
+    expect(component.filtered()).toEqual([]);expect(component.selectedBook()?.remaining).toBe(1);
+    component.changeQuery(change('λογος'));component.changeClass(change('all'));component.changeFilter(change('mastered'));
+    expect(component.filtered().map(w=>w.id)).toEqual(['word-0']);
+  });
+
+  it('shows loading and retry states without replacing a selected book with the whole NT',()=>{
+    const fixture=TestBed.createComponent(WordRepertoryComponent),component=fixture.componentInstance;
+    component.changeBook(change('MAT'));books.loading.set(true);fixture.detectChanges();
+    expect(component.filtered()).toEqual([]);
+    expect(fixture.nativeElement.querySelector('[role=status]')?.textContent).toContain('Carregando');
+    expect(fixture.nativeElement.querySelector('.empty-state')).toBeNull();
+    books.loading.set(false);books.error.set('Falha de conexão');fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('[role=alert]')?.textContent).toContain('Falha de conexão');
+    expect(fixture.nativeElement.querySelector('.empty-state')).toBeNull();
+    fixture.nativeElement.querySelector('[role=alert] button').click();
+    expect(books.load).toHaveBeenCalledTimes(2);
+  });
 
   it('combines accent-insensitive text, class and review filters and resets pagination', () => {
     const fixture = TestBed.createComponent(WordRepertoryComponent), component = fixture.componentInstance;
