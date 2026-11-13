@@ -1,6 +1,7 @@
 import {describe,it,expect} from 'vitest';
 import {readFileSync} from 'node:fs';
 import {eligible,validateIndex,validateBook,VerseIndex} from './nt-reading.service';
+import {VocabularyMismatchError} from './content.service';
 
 const verse:VerseIndex={chapter:1,verse:1,tokens:1,requires:['v-a'],external:[],aligned:true};
 describe('Leitura conservadora do NT',()=>{
@@ -45,5 +46,16 @@ describe('Leitura conservadora do NT',()=>{
     expect(()=>validateBook({...data,id:'MRK'},book)).toThrow();
     expect(()=>validateBook({...data,verses:[{chapter:1,verse:2,text:'λόγος'}]},book)).toThrow();
     expect(()=>validateBook({...data,verses:[{chapter:1,verse:1,text:''}]},book)).toThrow();
+  });
+  it('identifica o repertório antigo como incompatível, sem liberar dependências desconhecidas',()=>{
+    const vocab=JSON.parse(readFileSync(`${process.cwd()}/data/vocabulary.json`,'utf8'));
+    const raw=JSON.parse(readFileSync(`${process.cwd()}/data/reading/index.json`,'utf8'));
+    const old=new Set<string>(vocab.entries.filter((w:{glossStatus?:string})=>!w.glossStatus).map((w:{id:string})=>w.id));
+    expect(old.size).toBeLessThan(vocab.entries.length);
+    expect(()=>validateIndex(raw,old)).toThrow(VocabularyMismatchError);
+    const current=new Set<string>(vocab.entries.map((w:{id:string})=>w.id));
+    expect(validateIndex(raw,current).books).toHaveLength(27);
+    raw.books[0].verses[0].requires.push('missing-after-refresh');
+    expect(()=>validateIndex(raw,current)).toThrow(VocabularyMismatchError);
   });
 });

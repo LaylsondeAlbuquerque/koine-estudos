@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+import {VocabularyMismatchError} from './content.service';
 
 export interface VerseIndex {chapter:number; verse:number; tokens:number; requires:string[]; external:string[]; aligned:boolean}
 export interface ReadingBook {id:string; name:string; verses:VerseIndex[]}
@@ -18,7 +19,8 @@ export function validateIndex(value:unknown, valid:ReadonlySet<string>):ReadingI
     let previous=0;
     for(const v of book.verses){
       const order=v.chapter*1000+v.verse;
-      if(!positive(v.tokens)||!positive(v.chapter)||!positive(v.verse)||v.verse>=1000||order<=previous||typeof v.aligned!=='boolean'||!Array.isArray(v.requires)||!Array.isArray(v.external)||v.requires.some(id=>typeof id!=='string'||!valid.has(id))||v.external.some(id=>typeof id!=='string'||!id.startsWith('lemma:'))) throw Error('Dependências inválidas no índice.');
+      if(!positive(v.tokens)||!positive(v.chapter)||!positive(v.verse)||v.verse>=1000||order<=previous||typeof v.aligned!=='boolean'||!Array.isArray(v.requires)||!Array.isArray(v.external)||v.requires.some(id=>typeof id!=='string')||v.external.some(id=>typeof id!=='string'||!id.startsWith('lemma:'))) throw Error('Dependências inválidas no índice.');
+      if(v.requires.some(id=>!valid.has(id)))throw new VocabularyMismatchError();
       previous=order;
     }
   }
@@ -34,7 +36,7 @@ export function validateBook(value:unknown, book:ReadingBook):VerseText[]{
 export class NtReadingService {
   private readonly cache=new Map<string,Promise<VerseText[]>>();
   private async json(file:string):Promise<unknown>{
-    const response=await fetch(new URL(`data/reading/${file}.json`,document.baseURI));
+    const response=await fetch(new URL(`data/reading/${file}.json`,document.baseURI),{cache:'no-cache'});
     if(!response.ok) throw Error('Não foi possível carregar a leitura. Confira sua conexão e tente novamente.');
     return response.json();
   }

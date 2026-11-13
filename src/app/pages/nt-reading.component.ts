@@ -1,6 +1,6 @@
 import {ChangeDetectionStrategy,Component,computed,effect,inject,signal} from '@angular/core';
 import {RouterLink} from '@angular/router';
-import {ContentService} from '../content.service';
+import {ContentService,VocabularyMismatchError} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {eligible,NtReadingService,ReadingIndex,VerseText} from '../nt-reading.service';
 
@@ -47,7 +47,24 @@ export class NtReadingComponent {
     });
     void this.load();
   }
-  async load(){this.error.set('');this.loading.set(true);try{this.index.set(await this.source.load(new Set(this.content.vocabulary.entries.map(w=>w.id))));}catch{this.error.set('Não foi possível carregar o índice da leitura. Confira sua conexão ou tente novamente.');}finally{this.loading.set(false);}}
+  async load(){
+    this.error.set('');this.loading.set(true);
+    const valid=()=>new Set(this.content.vocabulary.entries.map(w=>w.id));
+    try{
+      let index:ReadingIndex;
+      try{index=await this.source.load(valid());}
+      catch(error){
+        if(!(error instanceof VocabularyMismatchError))throw error;
+        await this.content.refreshVocabulary();
+        index=await this.source.load(valid());
+      }
+      this.index.set(index);
+    }catch(error){
+      this.error.set(error instanceof VocabularyMismatchError
+        ?'O conteúdo do site foi atualizado. Recarregue a página para abrir a leitura; seu progresso será preservado.'
+        :'Não foi possível carregar o índice da leitura. Confira sua conexão ou tente novamente.');
+    }finally{this.loading.set(false);}
+  }
   selectBook(value:string){this.bookId.set(value);this.chapter.set(0);this.page.set(0);}
   selectChapter(value:string){this.chapter.set(Number(value));this.page.set(0);}
   resize(delta:number){this.font.update(v=>Math.max(22,Math.min(44,v+delta)));try{localStorage.setItem(this.fontKey,String(this.font()));}catch{}}

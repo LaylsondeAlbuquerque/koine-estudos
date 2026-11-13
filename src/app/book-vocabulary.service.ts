@@ -1,5 +1,5 @@
 import {Injectable,inject,signal} from '@angular/core';
-import {ContentService} from './content.service';
+import {ContentService,VocabularyMismatchError} from './content.service';
 import {Word} from './models';
 
 export type BookWordOrder='frequency'|'appearance';
@@ -16,7 +16,8 @@ export function validateBookVocabulary(value:unknown,valid:ReadonlySet<string>):
     if(!/^[A-Z0-9]{3}$/.test(book.id)||codes.has(book.id)||typeof book.name!=='string'||!book.name||!Array.isArray(book.words)||!book.words.length)throw Error('Livro inválido.');
     codes.add(book.id);const ids=new Set<string>(),positions=new Set<number>();
     for(const word of book.words){
-      if(!valid.has(word.id)||ids.has(word.id)||!Number.isSafeInteger(word.frequency)||word.frequency<1||!Number.isSafeInteger(word.first)||word.first<1||positions.has(word.first))throw Error('Vocábulo inválido no livro.');
+      if(typeof word.id!=='string'||ids.has(word.id)||!Number.isSafeInteger(word.frequency)||word.frequency<1||!Number.isSafeInteger(word.first)||word.first<1||positions.has(word.first))throw Error('Vocábulo inválido no livro.');
+      if(!valid.has(word.id))throw new VocabularyMismatchError();
       ids.add(word.id);positions.add(word.first);
     }
   }
@@ -36,9 +37,17 @@ export class BookVocabularyService {
   private async fetchBooks(){
     this.loading.set(true);this.error.set('');
     try{
-      const response=await fetch(new URL('data/reading/vocabulary-books.json',document.baseURI));
+      const response=await fetch(new URL('data/reading/vocabulary-books.json',document.baseURI),{cache:'no-cache'});
       if(!response.ok)throw Error('Falha ao carregar os livros.');
-      this.books.set(validateBookVocabulary(await response.json(),new Set(this.content.vocabulary.entries.map(w=>w.id))));
+      const data=await response.json();
+      const valid=()=>new Set(this.content.vocabulary.entries.map(w=>w.id));
+      let books:VocabularyBook[];
+      try{books=validateBookVocabulary(data,valid());}
+      catch(error){
+        if(!(error instanceof VocabularyMismatchError))throw error;
+        await this.content.refreshVocabulary();books=validateBookVocabulary(data,valid());
+      }
+      this.books.set(books);
     }catch{this.error.set('Não foi possível carregar o vocabulário por livro. Confira a conexão e tente novamente.');}
     finally{this.loading.set(false);this.request=undefined;}
   }

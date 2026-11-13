@@ -42,6 +42,8 @@ Os artigos atuais exibem “Texto produzido por IA”. Para futuros artigos de a
 
 O TypeScript e os templates Angular usam verificações estritas. A interface inclui foco visível, link para o conteúdo principal, rótulos de controles e gestão de foco na busca.
 
+Os JSON públicos são revalidados no servidor antes da reutilização do cache. Se o índice de leitura ou o filtro por livro encontrar IDs ausentes no repertório carregado, a aplicação atualiza o repertório uma vez e valida novamente. Essa recuperação não altera o histórico local nem dispensa a validação das dependências.
+
 ## Qualidade e verificações
 
 O comando `npm run check` valida o conteúdo, executa os testes de lógica em Node e os testes Angular com Vitest/jsdom, e gera o build de produção para Pages. A suíte cobre comportamentos como:
