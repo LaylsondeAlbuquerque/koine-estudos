@@ -5,6 +5,20 @@ import {reviewAnswer,isMastered,isDue,validProgress,vocabularyQuestion,selectWor
 const words=JSON.parse(readFileSync(new URL('../data/vocabulary.json',import.meta.url))).entries;
 const blank=()=>({version:1,levels:{morphology:0,syntax:0,vocabulary:0},lessons:{},vocab:{},answers:{},sessions:0});
 
+test('due and never-practiced learning states intersect frequency groups without duplicate scope options',()=>{
+ const sample=words.slice(0,12),reviews={
+  [sample[0].id]:{attempts:1,nextReview:'2026-03-19'},
+  [sample[1].id]:{attempts:1,nextReview:'2026-03-21'},
+  [sample[2].id]:{attempts:0,manualState:'review',nextReview:'2027-01-01'},
+  [sample[3].id]:{attempts:0,manualState:'learned',nextReview:'2026-01-01'}
+ };
+ const due=selectWords(sample,reviews,{filter:'top-10',state:'due',day:'2026-03-20',limit:20});
+ assert.deepEqual(new Set(due.map(w=>w.id)),new Set([sample[0].id,sample[2].id]));
+ const fresh=selectWords(sample,reviews,{filter:'top-10',state:'new',limit:20});
+ assert(fresh.every(w=>w.rank<=10&&(!reviews[w.id]||reviews[w.id].attempts===0)));
+ assert.equal(fresh.length,8);
+});
+
 test('matching order never leaves a correct pair on the same row',()=>{
  let seed=87231;
  const random=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};

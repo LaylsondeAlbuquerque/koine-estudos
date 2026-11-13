@@ -7,23 +7,35 @@
     <div class="study-settings">
       <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option></select></label>
       @if (vocabulary()) {
-        <label class="field">Conjunto de vocábulos<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
-          <option value="level">Deste nível · {{ count() }} vocábulos</option>
-          @for (amount of frequencyGroups; track amount) {<option [value]="'top-' + amount">{{ amount }} mais frequentes · todos os níveis</option>}
-          <option value="due">Revisões de hoje · todos os níveis</option><option value="all">Repertório completo</option><option value="new">Ainda não estudados · todos os níveis</option>
+        <label class="field">Vocabulário<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
+          <option value="all">Todo o Novo Testamento</option><option value="book">Por livro</option><option value="frequent">Mais frequentes</option><option value="level">Nível selecionado · {{ count() }} vocábulos</option>
         </select></label>
         <label class="field">Estado de aprendizado<select id="session-state" [value]="wordState()" (change)="wordState.set(value($event))">
-          <option value="all">Todos os vocábulos</option><option value="marked">Marcadas para revisar</option><option value="mastered">Já aprendidas</option><option value="unlearned">Ainda não aprendidas</option>
+          <option value="all">Todas</option><option value="unlearned">Ainda não aprendidas</option><option value="mastered">Já aprendidas</option><option value="marked">Marcadas para revisar</option><option value="due">Revisões de hoje</option><option value="new">Ainda não praticadas</option>
         </select></label>
+        @if(filter()==='frequent'){
+          <label class="field">Faixa de frequência<select id="session-frequency" [value]="topAmount()" (change)="topAmount.set(+$any($event.target).value)">@for(amount of frequencyGroups;track amount){<option [value]="amount">{{amount}} mais frequentes no NT</option>}</select></label>
+        }
+        @if(filter()==='book'){
+          @if(bookVocabulary.loading()){<p role="status">Carregando vocabulário dos livros…</p>}
+          @else if(bookVocabulary.error()){<div role="alert"><p>{{bookVocabulary.error()}}</p><button class="button button-outline" (click)="bookVocabulary.load()">Tentar novamente</button></div>}
+          @else{
+            <label class="field">Livro<select id="session-book" [value]="bookId()" (change)="bookId.set(value($event))">@for(book of bookStats();track book.id){<option [value]="book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
+            <label class="field">Ordem dos vocábulos<select id="session-book-order" [value]="bookOrder()" (change)="bookOrder.set($any(value($event)))"><option value="frequency">Mais frequentes neste livro</option><option value="appearance">Primeira aparição no livro</option></select></label>
+          }
+        }
       } @else {
         <label class="field">Assunto<select id="session-lesson" [value]="lessonId()" (change)="lessonId.set(value($event))">
           <option value="">Todos os assuntos deste nível</option>@for (lesson of lessons(); track lesson.id) {<option [value]="lesson.id">{{ lesson.title }}</option>}
         </select></label>
       }
     </div>
-    @if (vocabulary()) {<p class="study-selection-note">O conjunto e a situação definem quais vocábulos podem aparecer; o tamanho da sessão define quantos {{ flash() ? 'cartões' : 'exercícios' }} você fará por vez. Para incluir palavras de qualquer nível, escolha “Repertório completo” ou um grupo de frequência. As marcações feitas durante uma sessão valem para as próximas seleções, sem interromper os cartões atuais.</p>}
+    @if (vocabulary()) {
+      @if(filter()==='book'&&selectedBook();as book){<div class="notice book-vocabulary-progress" aria-live="polite"><strong>{{book.name}}: faltam {{book.remaining}} vocábulos para aprender.</strong><br>{{book.learned}} de {{book.total}} já aprendidos. Cada lema conta uma vez, incluindo nomes próprios; formas flexionadas não contam como vocábulos novos.<br>Para avançar pela ordem escolhida, selecione “Ainda não aprendidas”. As palavras aprendidas em outros livros também contam aqui.</div>}
+      <p class="study-selection-note">O tamanho da sessão define quantos {{ flash() ? 'cartões' : 'exercícios' }} você fará. O filtro de aprendizado pode ser combinado com qualquer conjunto. Suas marcações valem para a próxima sessão.</p>
+    }
     @if (area() === 'semantics') {<p class="study-selection-note">Use também as oficinas das aulas para redigir suas próprias análises. Acertar uma questão objetiva não substitui justificar uma interpretação com fontes e evidências.</p>}
-    <button class="button button-primary" (click)="start()">Começar sessão<koine-icon name="arrow" [size]="15" /></button>
+    <button class="button button-primary" (click)="start()" [disabled]="vocabulary()&&filter()==='book'&&(!selectedBook()||bookVocabulary.loading()||!!bookVocabulary.error())">Começar sessão<koine-icon name="arrow" [size]="15" /></button>
   </section>
   <aside class="study-tips"><span class="eyebrow">Um jeito de estudar melhor</span>
     @for (tip of tips(); track $index; let i = $index) {<div class="tip-row"><span class="tip-num">0{{ i + 1 }}</span><div><strong>{{ tip.title }}</strong>{{ tip.text }}</div></div>}

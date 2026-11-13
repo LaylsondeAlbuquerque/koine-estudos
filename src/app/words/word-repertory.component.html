@@ -51,6 +51,7 @@
           </span>
           <span class="greek" lang="grc">{{ word.lemma }}</span>
           <span class="word-meaning">{{ word.meaning }}</span>
+          @if(word.glossStatus==='draft'){<span class="muted" style="font-size:11px">Glosa em revisão</span>}
           <span class="word-bottom">
             <span>{{ word.pos }} · {{ format(word.frequency) }} ocorr.</span>
             <span class="word-state" [attr.aria-label]="successfulDays(word) + ' de 3 dias com acertos'">

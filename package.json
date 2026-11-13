@@ -7,14 +7,16 @@
   "license": "SEE LICENSE IN LICENSE",
   "author": "Laylson de Albuquerque (https://github.com/LaylsondeAlbuquerque)",
   "scripts": {
+    "reading:build": "python scripts/reading-build.py",
+    "test:reading": "python scripts/reading-build.test.py",
     "start": "ng serve --host 127.0.0.1",
     "dev": "npm start",
     "build": "ng build && node scripts/finalize-build.mjs",
     "build:pages": "ng build --base-href /koine-estudos/ && node scripts/finalize-build.mjs",
     "validate": "node scripts/validate.mjs",
-    "test:logic": "node --test scripts/core.test.mjs scripts/catalog.test.mjs",
+    "test:logic": "node --test scripts/core.test.mjs scripts/catalog.test.mjs scripts/vocabulary-full.test.mjs",
     "test": "ng test --watch=false",
-    "check": "npm run validate && npm run test:logic && npm test && npm run build:pages",
+    "check": "npm run validate && npm run test:reading && npm run test:logic && npm test && npm run build:pages",
     "preview": "python scripts/preview-build.py"
   },
   "engines": {

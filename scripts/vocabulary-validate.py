@@ -11,7 +11,9 @@ sys.dont_write_bytecode=True
 ROOT=Path(__file__).resolve().parents[1]
 data=json.loads((ROOT/'data/vocabulary.json').read_text(encoding='utf-8'))
 entries=data['entries']; meta=data['meta']
-assert len(entries)==meta['entryCount']==1158
+assert len(entries)==meta['entryCount']
+assert meta['coverageAll']['percent']==100
+assert sum(e['frequency'] for e in entries)==meta['frequency']['tokens']
 assert meta['bibliographicAudit']['normalizedHeadwordsChecked']==958
 assert meta['bibliographicAudit']['representedInDataset']==958
 assert meta['bibliographicAudit']['additionalIndependentCorpusLemmas']==len(entries)-958
@@ -52,7 +54,7 @@ if cache.exists():
         recovered={unicodedata.normalize('NFC',lemma) for lemma in json.loads(audit_path.read_text(encoding='utf-8'))['normalized']}
         assert len(recovered)==958
         assert recovered<={e['lemma'] for e in entries}
-        assert len({e['lemma'] for e in entries}-recovered)==200
-        print('All 958 privately recovered headwords remain represented; 200 independent additions.')
+        assert len({e['lemma'] for e in entries}-recovered)==len(entries)-958
+        print('All 958 privately recovered headwords remain represented.')
     print('Corrected source counts, 105 token corrections and all frequency>=10 headwords verified.')
 print(f'{len(entries)} entries verified; core 300 covers {meta["coverage300"]}% of {meta["frequency"]["tokens"]} tokens.')

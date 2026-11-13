@@ -36,11 +36,13 @@ export function reviewAnswer(previous, correct, day = localDate()) {
 }
 export const isMastered = review => review?.manualState==='learned' || (review?.manualState!=='review' && Boolean(review?.mastered && new Set(review?.dates||[]).size>=3));
 export const isDue = (review, day = localDate()) => review?.manualState==='review' || (review?.manualState!=='learned' && Boolean(review && review.nextReview <= day));
-export function matchesWordState(review, state='all') {
+export function matchesWordState(review, state='all', day=localDate()) {
   if(state==='all')return true;
   if(state==='marked')return review?.manualState==='review';
   if(state==='mastered')return isMastered(review);
   if(state==='unlearned')return !isMastered(review);
+  if(state==='due')return isDue(review,day);
+  if(state==='new')return !review||review.attempts===0;
   return false;
 }
 const senseCache = new Map();
@@ -70,12 +72,12 @@ export function vocabularyQuestion(word, entries, random = Math.random, reverse 
   }
   const correct=reverse?word.lemma:word.meaning;
   const options=shuffle([correct,...distractors.slice(0,3).map(x=>reverse?x.lemma:x.meaning)],random);
-  return { id:`${reverse?'reverse':'word'}-${word.id}`,kind:'choice',wordId:word.id,greek:reverse?null:word.lemma,stimulus:reverse?word.meaning:null,optionsLang:reverse?'grc':null,audio:word.audio||null,prompt:reverse?'Qual palavra grega corresponde ao sentido apresentado em português?':'Qual alternativa apresenta um sentido em português para esta palavra grega?',options,answer:options.indexOf(correct),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Estes são sentidos de referência para memorizar; a tradução de uma passagem depende do contexto.`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
+  return { id:`${reverse?'reverse':'word'}-${word.id}`,kind:'choice',wordId:word.id,greek:reverse?null:word.lemma,stimulus:reverse?word.meaning:null,optionsLang:reverse?'grc':null,audio:word.audio||null,prompt:reverse?'Qual palavra grega corresponde ao sentido apresentado em português?':'Qual alternativa apresenta um sentido em português para esta palavra grega?',options,answer:options.indexOf(correct),explanation:`${word.lemma}: ${word.meaning}. Classe: ${word.pos}. Estes são sentidos de referência para memorizar; a tradução de uma passagem depende do contexto.${word.glossStatus==='draft'?' Glosa do repertório ampliado em revisão lexical.':''}`,label:word.core300?'Núcleo dos 300':'Vocabulário',wordIds:[word.id] };
 }
 export function selectWords(entries, reviews, {limit=10, filter='all',state='all',level=null,day=localDate(),random=Math.random,recent=[]}={}) {
   const frequencyGroup=/^top-(10|50|100|200|300)$/.exec(filter);
   const maxRank=frequencyGroup?Number(frequencyGroup[1]):null;
-  const pool=entries.filter(word => (level===null || word.level===level) && (maxRank===null || (Number.isInteger(word.rank)&&word.rank>0&&word.rank<=maxRank)) && (filter!=='core' || word.core300) && matchesWordState(reviews[word.id],state) && (!['mastered','marked','unlearned'].includes(filter) || matchesWordState(reviews[word.id],filter)) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id] || reviews[word.id].attempts===0));
+  const pool=entries.filter(word => (level===null || word.level===level) && (maxRank===null || (Number.isInteger(word.rank)&&word.rank>0&&word.rank<=maxRank)) && (filter!=='core' || word.core300) && matchesWordState(reviews[word.id],state,day) && (!['mastered','marked','unlearned'].includes(filter) || matchesWordState(reviews[word.id],filter,day)) && (filter!=='due' || isDue(reviews[word.id],day)) && (filter!=='new' || !reviews[word.id] || reviews[word.id].attempts===0));
   const due=shuffle(pool.filter(w=>isDue(reviews[w.id],day)),random);
   const fresh=shuffle(pool.filter(w=>!isDue(reviews[w.id],day)&&!isMastered(reviews[w.id])&&(!reviews[w.id]||reviews[w.id].attempts===0)),random);
   const remaining=shuffle(pool.filter(w=>reviews[w.id]&&!isDue(reviews[w.id],day)&&(reviews[w.id].attempts!==0||isMastered(reviews[w.id]))),random);

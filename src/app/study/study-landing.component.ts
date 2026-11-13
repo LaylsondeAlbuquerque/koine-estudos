@@ -1,9 +1,10 @@
-import {ChangeDetectionStrategy, Component, computed, inject, input, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, effect, inject, input, signal} from '@angular/core';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {Area, LEVELS} from '../models';
 import {IconComponent} from '../shared/icon.component';
 import {StudyMode, StudySessionService} from './study-session.service';
+import {BookVocabularyService,BookWordOrder} from '../book-vocabulary.service';
 
 @Component({
   selector: 'koine-study-landing',
@@ -18,10 +19,19 @@ export class StudyLandingComponent {
   readonly content = inject(ContentService);
   readonly progress = inject(ProgressService);
   private readonly study = inject(StudySessionService);
+  readonly bookVocabulary = inject(BookVocabularyService);
   readonly levels = LEVELS;
   readonly frequencyGroups = [10, 50, 100, 200, 300];
   readonly size = signal(10);
   readonly filter = signal('all');
+  readonly topAmount = signal(300);
+  readonly bookId = signal('MAT');
+  readonly bookOrder = signal<BookWordOrder>('frequency');
+  readonly bookStats = computed(() => this.bookVocabulary.books().map(book=>{
+    const learned=book.words.filter(word=>this.progress.wordLearned(word.id)).length;
+    return {...book,total:book.words.length,learned,remaining:book.words.length-learned};
+  }));
+  readonly selectedBook = computed(()=>this.bookStats().find(book=>book.id===this.bookId()));
   readonly wordState = signal('all');
   readonly lessonId = signal('');
   readonly flash = computed(() => this.mode() === 'flashcards');
@@ -42,11 +52,12 @@ export class StudyLandingComponent {
     {title: 'Use a explicação', text: 'Um erro é uma pista: volte ao padrão ou conceito que ainda precisa de atenção.'},
     {title: this.vocabulary() ? 'Acompanhe sua aprendizagem' : 'Conecte teoria e prática', text: this.vocabulary() ? 'Acertos em três dias diferentes registram a aprendizagem automaticamente. Você também pode marcar a palavra como já aprendida ou para revisar.' : 'Reveja a aula quando precisar. O percurso permanece aberto para você retornar.'}
   ]);
+  constructor(){effect(()=>{if(this.filter()==='book')void this.bookVocabulary.load();});}
   value(event: Event): string { return (event.target as HTMLSelectElement).value; }
   start(): void {
     // An input may remain mounted while the selected level changes. Ignore a
     // previous level's lesson instead of leaking that filter into this session.
     const selected = this.lessons().some(lesson => lesson.id === this.lessonId()) ? this.lessonId() : undefined;
-    this.study.start({area: this.area(), mode: this.mode(), limit: this.size(), filter: this.filter(), ...(this.vocabulary() ? {wordState: this.wordState()} : {}), lessonId: this.vocabulary() ? undefined : selected});
+    this.study.start({area: this.area(), mode: this.mode(), limit: this.size(), filter: this.filter()==='frequent'?`top-${this.topAmount()}`:this.filter()==='book'?'all':this.filter(), ...(this.vocabulary() ? {wordState: this.wordState(), ...(this.filter()==='book'?{bookId:this.bookId(),bookOrder:this.bookOrder()}: {})} : {}), lessonId: this.vocabulary() ? undefined : selected});
   }
 }

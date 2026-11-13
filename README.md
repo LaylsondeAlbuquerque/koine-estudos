@@ -6,7 +6,7 @@ Aplicação **Angular 21 + TypeScript** para estudar grego do Novo Testamento. O
 
 **Código proprietário:** a reutilização do código original publicado sob os termos atuais exige autorização prévia e por escrito de Laylson de Albuquerque, observadas as permissões e ressalvas em [LICENSE](LICENSE). O acesso ao site para estudar é gratuito.
 
-O acervo atual reúne **132 aulas, 132 artigos, 836 questões e 1.158 vocábulos**. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
+O acervo atual reúne **132 aulas, 132 artigos, 836 questões e 5.474 entradas de vocabulário**. O repertório cobre todos os 5.468 lemas do corpus MACULA SBLGNT fixado, mais seis bases didáticas. As 4.316 novas glosas portuguesas são identificadas como glosas em revisão. Para experimentar, escolha uma área, abra uma aula, pratique os exercícios e consulte Meu progresso.
 
 Projeto idealizado e conduzido por **Laylson de Albuquerque** ([GitHub](https://github.com/LaylsondeAlbuquerque)), com assistência de IA na implementação e na redação didática. As revisões e os ajustes foram realizados de forma iterativa, conforme solicitações do responsável.
 
@@ -14,7 +14,7 @@ Projeto idealizado e conduzido por **Laylson de Albuquerque** ([GitHub](https://
 
 - **Morfologia:** padrões, paradigmas e análise morfológica com respostas selecionadas.
 - **Sintaxe:** compreensão de conceitos e relações nas orações; no Essencial, uma aula por caso seguindo os grupos de Porter, com trechos traduzidos, análise palavra por palavra e comentários sintáticos. As leituras aplicadas retomam construções e ambiguidades; o nível avançado compara abordagens.
-- **Vocabulário:** repertório de 1.158 lemas, flashcards, associações e um núcleo prioritário de 300 palavras.
+- **Vocabulário:** repertório integral do corpus MACULA SBLGNT, flashcards, associações e um núcleo prioritário de 300 palavras. Os IDs e glosas das 1.158 entradas anteriores foram preservados.
 - **Semântica:** 48 aulas em 12 módulos, com pesquisa lexical, espécies e componentes semânticos, hipóteses contextuais, falácias e tradução comentada. Mateos dialoga com Peláez, Porter e Carson em exemplos aplicados à exegese do Novo Testamento.
 - Cada área tem percurso, artigos, flashcards e prática, distribuídos em Fundamentos, Essencial, Aprofundamento e Avançado.
 - **Percurso:** aulas progressivas com explicações básicas, exemplos e exercícios. **Artigos:** textos independentes de aprofundamento, ligados a cada assunto e nível, com discussão, fontes e perguntas de reflexão. Cada espaço tem sua própria marcação de leitura.
@@ -134,3 +134,16 @@ Enquanto o repositório for público, os [Termos de Serviço do GitHub](https://
 A mudança não revoga as permissões validamente concedidas às versões anteriores sob MIT, nem as licenças próprias dos conteúdos e componentes identificados. Essas permissões continuam aplicáveis ao material assim licenciado, inclusive quando reutilizado posteriormente. A última versão antes da mudança está no commit [e8fd843](https://github.com/LaylsondeAlbuquerque/koine-estudos/tree/e8fd84392a5ae7182336a48f6d66b8997612e4b5).
 
 As gramáticas e os léxicos consultados não são redistribuídos. Não há PDFs, extrações dos livros, exercícios editoriais, segredos ou dados de alunos no projeto público. Os textos e análises podem ser revisados conforme novas fontes forem conferidas.
+# Leitura do Novo Testamento
+
+A rota `#/reading` filtra versículos do SBLGNT por todos os lemas aprendidos no progresso existente. O índice é carregado ao abrir a aba; textos são carregados por livro, com páginas de até 30 versículos. Revisão manual bloqueia a palavra conforme a regra existente. Não há alteração de progresso ao ler.
+
+Os flashcards e a prática de vocabulário também oferecem seleção por livro. O seletor mostra quantos lemas distintos faltam aprender em cada livro, incluindo nomes próprios, conforme o progresso real. A ordem pode seguir frequência dentro do livro (desempate por primeira aparição) ou primeira aparição no texto. O estado de aprendizado é aplicado depois da seleção do livro; a sessão usa a ordem escolhida. O conjunto principal tem apenas quatro opções: NT completo, livro, mais frequentes e nível selecionado. Revisões agendadas e palavras nunca praticadas ficam no seletor de estado, sem duplicar opções de conjunto. Os dados `data/reading/vocabulary-books.json` são gerados junto com a leitura e carregados somente quando o aluno escolhe estudar por livro. Frequências são de ocorrências; progresso conta lemas únicos, sem contar cada flexão separadamente.
+
+Para regenerar os dados: `npm run reading:build`. O script aceita `--text-dir`, `--tsv`, `--vocab`, `--out` e `--audit` quando executado diretamente com Python. As fontes padrão ficam em `fontes-locais/sblgnt/sblgnt-text-fonte/data/sblgnt/text` e `fontes-locais/macula-greek/SBLGNT/tsv/macula-greek-SBLGNT.tsv`. São arquivos locais, não distribuídos no build. O TSV deve coincidir com o checksum fixado no vocabulário. O site publicado utiliza somente os derivados `data/reading/*.json`, gerados previamente; não requer Python nem acesso às fontes originais durante a navegação.
+
+O relatório local `tmp/reading-audit/report.json` contém checksums dos 27 livros e vocabulário, variantes aceitas, amostras e medições. Nesta versão: 7.939 versículos, 137.741 palavras, nenhum versículo excluído por alinhamento e teto de 7.939 versículos (100%) com o repertório completo aprendido. A comparação de formas ignora caixa e acentos, mas mantém os lemas exatos e registra a variante pontual de Moisés. Duas correções ortográficas na exibição e a pesquisa das divergências estão em `docs/reading-orthography.md`. Não se eliminam segundos acentos corretos antes de enclíticas. Não há dependências lexicais externas após a ampliação. Nomes próprios classificados por ocorrência são dispensados; numerais seguem o aprendizado. Isso mede vocabulário, não compreensão. Colchetes editoriais são preservados na exibição.
+
+Para regenerar o repertório, execute `python scripts/vocabulary-build.py` e `python scripts/vocabulary-validate.py`, usando o cache MACULA fixado em `tmp/`. As glosas ampliadas e as correções delimitadas estão versionadas em `scripts/vocabulary-glosses-full.json` e `scripts/vocabulary-expansion-overrides.json`; a procedência inglesa está em `scripts/vocabulary-expansion-sources.json`. A geração normal é local. `vocabulary-expand.py --translate` é uma preparação opcional das glosas, exige rede e os arquivos Dodson fixados em `tmp/vocabulary-expansion`, e não faz parte do build publicado.
+
+Os dados SBLGNT e MACULA mantêm CC BY 4.0 e atribuições em `THIRD_PARTY_NOTICES.md`, independentemente das restrições do código da aplicação. A geração mantém a forma SBLGNT; não importa glossas nem domínios MARBLE. Para verificar: `npm run check` (inclui testes de dados reais, filtros reativos e integridade do artefato).

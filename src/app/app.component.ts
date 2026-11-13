@@ -34,9 +34,9 @@ export class AppComponent {
    if(event instanceof NavigationEnd){
     const parts=event.urlAfterRedirects.split('?')[0].split('/').filter(Boolean),key=parts[0];
     const area=AREA_KEYS.includes(key as Area)?key as Area:null;
-    this.active.set(area||(['about','progress'].includes(key)?key:'home'));
-    this.crumb.set(area?`${AREAS[area].name}${parts[1]==='lesson'?' / Aula':parts[1]==='article'?' / Artigo':''}`:key==='progress'?'Meu progresso':key==='about'?'Sobre o projeto':'Meus estudos');
-    this.pageTitle.set(area?AREAS[area].name:key==='progress'?'Meu progresso':key==='about'?'Sobre o projeto':'Seu espaço de estudo');
+    this.active.set(area||(['about','progress','reading'].includes(key)?key:'home'));
+    this.crumb.set(area?`${AREAS[area].name}${parts[1]==='lesson'?' / Aula':parts[1]==='article'?' / Artigo':''}`:key==='reading'?'Leitura do Novo Testamento':key==='progress'?'Meu progresso':key==='about'?'Sobre o projeto':'Meus estudos');
+    this.pageTitle.set(area?AREAS[area].name:key==='reading'?'Leitura do Novo Testamento':key==='progress'?'Meu progresso':key==='about'?'Sobre o projeto':'Seu espaço de estudo');
    }
   });
  }

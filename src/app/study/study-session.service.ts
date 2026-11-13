@@ -1,6 +1,7 @@
 import {afterNextRender, computed, inject, Injectable, Injector, signal} from '@angular/core';
 import {Router} from '@angular/router';
-import {localDate, meaningsOverlap, reviewAnswer, selectStudyQuestions, selectWords, shuffle, shufflePairOrder, vocabularyQuestion} from '../../../core.js';
+import {localDate, matchesWordState, meaningsOverlap, reviewAnswer, selectStudyQuestions, selectWords, shuffle, shufflePairOrder, vocabularyQuestion} from '../../../core.js';
+import {BookVocabularyService,BookWordOrder} from '../book-vocabulary.service';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {Area, Lesson, Word} from '../models';
@@ -14,6 +15,8 @@ export interface StartSessionOptions {
   filter?: string;
   wordState?: string;
   limit?: number;
+  bookId?:string;
+  bookOrder?:BookWordOrder;
 }
 
 export interface StudyQuestion {
@@ -81,6 +84,7 @@ export class StudySessionService {
   private readonly progress = inject(ProgressService);
   private readonly router = inject(Router);
   private readonly injector = inject(Injector);
+  private readonly books = inject(BookVocabularyService);
 
   readonly session = signal<StudySession | null>(null);
   readonly current = computed(() => {
@@ -121,13 +125,19 @@ export class StudySessionService {
     let questions: StudyQuestion[] = [];
     if (area === 'vocabulary' && !lessonId) {
       const filter = options.filter || 'level';
-      let words: Word[] = selectWords(this.content.vocabulary.entries, state.vocab, {
+      let words: Word[] = options.bookId ? [] : selectWords(this.content.vocabulary.entries, state.vocab, {
         limit: mode === 'practice' ? limit * 3 : limit,
         filter: filter === 'level' ? 'all' : filter,
         state: options.wordState || 'all',
         level: filter === 'level' ? this.progress.level(area) : null,
         recent: state.recentWords || []
       });
+      if(options.bookId){
+        if(this.books.loading()||this.books.error()||!this.books.books().length){this.progress.toast('Carregue o vocabulário do livro antes de começar.');return;}
+        words=this.books.words(options.bookId,options.bookOrder==='appearance'?'appearance':'frequency')
+          .filter(word=>matchesWordState(state.vocab[word.id],options.wordState||'all'))
+          .slice(0,mode==='practice'?limit*3:limit);
+      }
       if (wordId) {
         const word = this.content.catalog.wordById.get(wordId);
         words = word ? [word] : [];

@@ -20,6 +20,11 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               {
+                "glob": "*.json",
+                "input": "data/reading",
+                "output": "data/reading"
+              },
+              {
                 "glob": "**/*",
                 "input": "assets",
                 "output": "assets"

@@ -7,7 +7,7 @@ export function addDays(day:string,amount:number):string;
 export function reviewAnswer(previous:Partial<Review>|undefined,correct:boolean,day?:string):Review;
 export function isMastered(review:Partial<Review>|undefined):boolean;
 export function isDue(review:Partial<Review>|undefined,day?:string):boolean;
-export function matchesWordState(review:Partial<Review>|undefined,state?:string):boolean;
+export function matchesWordState(review:Partial<Review>|undefined,state?:string,day?:string):boolean;
 export function meaningsOverlap(first:string,second:string):boolean;
 export function vocabularyQuestion(word:Word,entries:Word[],random?:()=>number,reverse?:boolean):Question;
 export function selectWords(entries:Word[],reviews:Record<string,Review>,options?:{limit?:number;filter?:string;state?:string;level?:number|null;day?:string;random?:()=>number;recent?:string[]}):Word[];

@@ -9,6 +9,7 @@ import {ProgressService} from '../progress.service';
 import {Area, blankProgress, Lesson, Progress, Question, Word} from '../models';
 import {StudySessionService} from './study-session.service';
 import {StudySessionComponent} from './study-session.component';
+import {BookVocabularyService} from '../book-vocabulary.service';
 
 const lesson = (id: string, questions: Question[]): Lesson => ({
   id, area: 'morphology', level: 0, order: 1, title: id, summary: 'Uma aula.', minutes: 5,
@@ -291,6 +292,20 @@ describe('Angular study sessions', () => {
     if (study.session()!.mode === 'practice') study.verify();
     study.next();
   };
+
+  it('keeps book frequency and appearance order, intersects learning state and never falls back to the whole NT',()=>{
+    const books=TestBed.inject(BookVocabularyService);
+    books.books.set([{id:'MAT',name:'Mateus',words:[{id:'word-3',frequency:2,first:1},{id:'word-5',frequency:2,first:3},{id:'word-7',frequency:8,first:2}]}]);
+    study.start({area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'frequency',limit:5});
+    expect(study.session()!.questions.map(q=>q.wordId)).toEqual(['word-7','word-3','word-5']);
+    study.start({area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'appearance',limit:5});
+    expect(study.session()!.questions.map(q=>q.wordId)).toEqual(['word-3','word-7','word-5']);
+    progress.mutate(s=>{s.vocab['word-3']={attempts:0,correct:0,dates:[],box:0,nextReview:'2026-01-01',mastered:false,manualState:'learned'};});
+    study.start({area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'appearance',wordState:'unlearned',limit:5});
+    expect(study.session()!.questions.map(q=>q.wordId)).toEqual(['word-7','word-5']);
+    study.clear();study.start({area:'vocabulary',mode:'flashcards',bookId:'UNKNOWN',limit:5});
+    expect(study.session()).toBeNull();
+  });
 
   it('never places an authored or generated matching answer beside its corresponding item', () => {
     study.start({area: 'morphology', mode: 'practice', lessonId: 'match'});

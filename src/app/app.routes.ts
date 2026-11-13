@@ -4,6 +4,7 @@ export const routes:Routes=[
  {path:'home',loadComponent:()=>import('./pages/home.component').then(m=>m.HomeComponent)},
  {path:'progress',loadComponent:()=>import('./pages/progress.component').then(m=>m.ProgressComponent)},
  {path:'about',loadComponent:()=>import('./pages/about.component').then(m=>m.AboutComponent)},
+ {path:'reading',loadComponent:()=>import('./pages/nt-reading.component').then(m=>m.NtReadingComponent)},
  {path:':area/lesson/:id',data:{kind:'lesson'},loadComponent:()=>import('./pages/reading.component').then(m=>m.ReadingComponent)},
  {path:':area/article/:id',data:{kind:'article'},loadComponent:()=>import('./pages/reading.component').then(m=>m.ReadingComponent)},
  {path:':area/:tab',loadComponent:()=>import('./pages/area.component').then(m=>m.AreaComponent)},

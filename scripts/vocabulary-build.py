@@ -66,7 +66,7 @@ def load_selection():
     counts=Counter(N(row['lemma']) for row in working)
     poses=defaultdict(Counter)
     for row in working: poses[N(row['lemma'])][row['pos']]+=1
-    selected={lemma for lemma,count in counts.items() if count>=10}|{N(s) for s in SUPPLEMENT}
+    selected=set(counts)|{N(s) for s in SUPPLEMENT}
     ordered=sorted(selected,key=lambda lemma:(-counts[lemma],lemma))
     return corpus,counts,poses,ordered
 
@@ -77,6 +77,10 @@ def main():
         for lemma,meaning in json.loads(path.read_text(encoding='utf-8')).items():
             if N(lemma) in glosses: raise ValueError(f'Duplicate gloss {lemma}')
             glosses[N(lemma)]=meaning
+    expansion=json.loads((ROOT/'scripts/vocabulary-glosses-full.json').read_text(encoding='utf-8'))
+    overrides=json.loads((ROOT/'scripts/vocabulary-expansion-overrides.json').read_text(encoding='utf-8'))
+    if not set(overrides)<=set(expansion):raise ValueError('Expansion overrides must not replace existing authored glosses.')
+    glosses.update(overrides)
     missing=[lemma for lemma in ordered if not glosses.get(lemma,'').strip()]
     if missing: raise ValueError(f'Missing {len(missing)} glosses: '+', '.join(missing))
     entries=[]
@@ -85,6 +89,9 @@ def main():
         entry={'id':'v-'+hashlib.sha256(lemma.encode()).hexdigest()[:12],'lemma':lemma,'meaning':glosses[lemma],'pos':POS_OVERRIDES.get(lemma,POS[rawpos]),'frequency':counts[lemma],'rank':rank,'level':0 if rank<=100 else 1 if rank<=300 else 2 if rank<=700 else 3,'core300':rank<=300}
         if lemma in POS_OVERRIDES: entry['corpusPos']=POS[rawpos]
         if lemma in ALIASES: entry['aliases']=ALIASES[lemma]
+        if lemma in expansion:
+            entry['glossStatus']='draft'
+            entry['glossSource']='expanded-lexicon'
         entries.append(entry)
     total=len(corpus['rows']); core=sum(e['frequency'] for e in entries[:300])
     meta={'title':'Vocabulário grego do Novo Testamento','language':'pt-BR','version':'1.0.0','entryCount':len(entries),'selection':'Todos os lemas com pelo menos dez ocorrências no corpus MACULA SBLGNT, acrescidos de um suplemento didático independente de palavras básicas. Ordem por frequência calculada, com desempate pela forma Unicode NFC.','selectionIsExactPorterList':False,'frequency':{'corpus':'MACULA Greek SBLGNT','tokens':total,'corpusLemmas':len(counts),'method':'Contagem de tokens por lema NFC em todo o TSV, usando a lematização do corpus. Variantes, crases e homógrafos seguem as decisões do MACULA. Frequência zero significa que o lema didático não ocorre como lema independente neste corpus.','cutoff':10,'commit':corpus['commit'],'sourceSha256':corpus['sha256']},'core300':{'count':300,'tokens':core,'coverage':round(core/total,6),'coveragePercent':round(core/total*100,2),'denominator':'Todos os tokens do mesmo corpus; mede reconhecimento por lema, não compreensão ou tradução.'},'coverage300':round(core/total*100,2),'coverageAll':{'tokens':sum(e['frequency'] for e in entries),'percent':round(sum(e['frequency'] for e in entries)/total*100,2)},'methodology':['Lemas e classes gramaticais validados contra MACULA; classe exibida corresponde à análise mais frequente do lema.','Glossas portuguesas breves e originais, próprias para estudo inicial; o contexto pode exigir outra tradução. Não são verbetes reproduzidos de BDAG ou de gramáticas.','O repertório principal é definido por frequência e não copia seleção, sequência de capítulos, traduções ou exercícios de um livro.','Os índices de cobertura são calculados deste corpus e desta versão; não são percentuais atribuídos a Porter.','Lemas variantes e plurais pronominais podem ser agrupados de maneira distinta na bibliografia. Aliases indicam correspondências de estudo sem duplicar contagens.','O confronto bibliográfico utiliza apenas formas lexicais: não transfere glossas, estrutura, exercícios ou organização editorial.'],'sources':[{'title':'SBL Greek New Testament','authors':'Michael W. Holmes; Society of Biblical Literature e Logos Bible Software','url':'https://github.com/Faithlife/SBLGNT','license':'CC BY 4.0','licenseUrl':'https://creativecommons.org/licenses/by/4.0/','copyright':'© 2010 Society of Biblical Literature e Logos Bible Software','usage':'Texto subjacente ao corpus; não há texto corrido do NT neste arquivo.'},{'title':'MACULA Greek Linguistic Datasets','authors':'Biblica, Inc.; Clear Bible, Inc.','url':'https://github.com/Clear-Bible/macula-greek','license':'CC BY 4.0','licenseUrl':'https://creativecommons.org/licenses/by/4.0/','copyright':'© 2022–2024 Biblica, Inc.','requiredAttribution':'MACULA Greek Linguistic Datasets, available at https://github.com/Clear-Bible/macula-greek/','source':corpus['source'],'usage':'Lema, classe gramatical e contagens calculadas. Campos MARBLE ln/domain, glossas e árvores não foram reutilizados.'},{'title':'Fundamentals of New Testament Greek','authors':'Stanley E. Porter, Jeffrey T. Reed e Matthew Brook O’Donnell','year':2010,'usage':'Referência pedagógica e confronto privado de formas lexicais. Obra protegida; nenhum PDF, tradução editorial ou exercício foi incorporado.'}],'originalGlosses':{'license':'CC BY 4.0','licenseUrl':'https://creativecommons.org/licenses/by/4.0/','attribution':'Projeto Koiné — glossas didáticas originais em português.'}}
@@ -99,6 +106,16 @@ def main():
     meta['frequency']['lemmaCountChanges']=[{'lemma':lemma,'original':original[lemma],'corrected':counts[lemma]} for lemma in sorted(changed)]
     meta['frequency']['boundedHomographAudit']=HOMOGRAPH_AUDIT
     meta['methodology'][0]='Lemas e classes partem de MACULA, com correções explícitas de 105 tokens de δέω/δεῖ/δέομαι e ῥέω/λέγω. Substantivações e numerais recebem rótulo pedagógico, com a classe original em corpusPos. A conferência contra o corpus não é garantia de que todas as análises de origem estejam corretas.'
+    meta['version']='2.0.0'
+    meta['selection']='Todos os lemas do corpus MACULA SBLGNT após as correções documentadas, mais seis bases didáticas sem ocorrência independente. Ordem por frequência calculada e forma Unicode NFC.'
+    meta['frequency']['cutoff']=1
+    meta['bibliographicAudit']=dict(meta['bibliographicAudit'])
+    meta['bibliographicAudit']['additionalIndependentCorpusLemmas']=len(entries)-958
+    meta['bibliographicAudit']['publicNote']='O repertório cobre todos os lemas do corpus MACULA SBLGNT fixado, incluindo nomes próprios e lemas raros. Mantém os 958 cabeçalhos reconciliados com Porter e as seis bases didáticas sem ocorrência; a ampliação segue o corpus, não a organização de um livro.'
+    provenance=json.loads((ROOT/'scripts/vocabulary-expansion-sources.json').read_text(encoding='utf-8'))
+    meta['expandedGlosses']={'count':len(expansion),'status':'draft','language':'pt-BR','method':provenance['method'],'source':provenance['source'],'dodsonSha256':provenance['dodsonSha256'],'notice':'Glosas novas traduzidas automaticamente, com revisão lexical pendente. São auxílios de memorização, não definições exegéticas completas.'}
+    meta['sources'].append({'title':'Jeffrey Dodson Greek Lexicon','license':'CC0 1.0','url':provenance['source']['url'],'usage':'Glosas inglesas breves como base das novas traduções portuguesas. Casos sem entrada usam Cherith/MACULA, CC BY 4.0. As glosas antigas foram preservadas.'})
+    meta['methodology'].append('A ampliação usa glosas de Dodson (domínio público/CC0), com fallback Cherith (Andi Wu/Cherith Analytics, CC BY 4.0). Tradução automática em português e revisão delimitada; cada nova entrada é identificada como glosa em revisão.')
     (ROOT/'data'/'vocabulary.json').write_text(json.dumps({'meta':meta,'entries':entries},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print(json.dumps({'entries':len(entries),'core300CoveragePercent':meta['coverage300'],'allCoveragePercent':meta['coverageAll']['percent']},ensure_ascii=False))
 

@@ -1,0 +1,23 @@
+<header class="nt-head"><span class="eyebrow">DO VOCABULÁRIO AO TEXTO</span><h1>Leia o Novo Testamento</h1><p>Encontre versículos com os lemas que você já aprendeu.</p></header>
+<p class="nt-notice">O filtro acompanha seu vocabulário, sem avaliar domínio da gramática ou compreensão da passagem. Nomes próprios identificados na fonte são dispensados como convenção didática. Numerais seguem seu aprendizado.</p>
+@if(loading()){<p role="status">Preparando a leitura…</p>}
+@else if(error()){<div role="alert"><p>{{error()}}</p><button class="button button-outline" (click)="load()">Tentar novamente</button></div>}
+@else {
+  <div class="nt-controls">
+    <label>Livro<select [value]="bookId()" (change)="selectBook($any($event.target).value)"><option value="">Todos os livros</option>@for(book of available();track book.id){<option [value]="book.id">{{book.name}} · {{book.eligible.length}} versículos</option>}</select></label>
+    <label>Capítulo<select [value]="chapter()" [disabled]="!bookId()" (change)="selectChapter($any($event.target).value)"><option value="0">Todos os capítulos</option>@for(c of chapters();track c){<option [value]="c">{{c}}</option>}</select></label>
+    <div class="nt-font" role="group" aria-label="Tamanho do texto grego"><button class="button button-outline" aria-label="Diminuir texto grego" (click)="resize(-2)" [disabled]="font()<=22">A−</button><button class="button button-outline" aria-label="Aumentar texto grego" (click)="resize(2)" [disabled]="font()>=44">A+</button></div>
+  </div>
+  <div id="reading-results" tabindex="-1" [attr.aria-busy]="textLoading()">
+    <p role="status">{{filtered().length}} versículos disponíveis nesta seleção.</p>
+    @if(!filtered().length){<div class="empty-state"><h2>Sua leitura começa com o vocabulário</h2><p>Ainda não há versículos em que todas as palavras necessárias estejam aprendidas. Pratique ou confira suas marcações no repertório.</p><a class="button button-primary" routerLink="/vocabulary/words">Abrir vocabulário</a></div>}
+    @else if(textError()){<p role="alert">{{textError()}}</p><button class="button button-outline" (click)="retryText()">Tentar novamente</button>}
+    @else if(textLoading()){<p role="status">Abrindo o texto grego…</p>}
+    @else {<div class="nt-verses" [style.--nt-font]="font()+'px'">@for(row of visible();track row.key){
+      @if(row.hidden||row.excluded){<p class="nt-gap">@if(row.hidden){{{row.hidden}} versículo(s) anterior(es) deste capítulo oculto(s) pelo filtro. }@if(row.excluded){{{row.excluded}} fora da leitura por revisão das fontes.}</p>}
+      <article class="nt-verse"><h2>{{row.name}} {{row.chapter}}:{{row.verse}}</h2><p lang="grc" class="greek">{{text().get(row.key)?.text}}</p></article>
+    }</div>}
+  </div>
+  @if(pages()>1){<nav class="nt-pagination" aria-label="Páginas da leitura"><button class="button button-outline" (click)="turn(-1)" [disabled]="page()===0">Anterior</button><span>Página {{page()+1}} de {{pages()}}</span><button class="button button-outline" (click)="turn(1)" [disabled]="page()+1>=pages()">Próxima</button></nav>}
+}
+<footer class="nt-credits"><p>Texto: Michael W. Holmes (ed.), <em>The Greek New Testament: SBL Edition</em>, © 2010 Society of Biblical Literature e Logos Bible Software. Numeração e colchetes editoriais da edição preservados; marcadores do aparato removidos. Duas correções ortográficas pontuais estão documentadas nos créditos.</p><p>Lemas e classificação: <a href="https://github.com/Clear-Bible/macula-greek/">MACULA Greek Linguistic Datasets</a>, © 2022–2024 Biblica, Inc. Texto e dados utilizados sob <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. <a href="THIRD_PARTY_NOTICES.md">Fontes e transformações</a>.</p><p>Lacunas na numeração da edição não são contadas como palavras desconhecidas.</p></footer>
