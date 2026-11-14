@@ -1,10 +1,11 @@
-import {ChangeDetectionStrategy, Component, computed, effect, inject, input, signal} from '@angular/core';
+import {ChangeDetectionStrategy, Component, computed, effect, inject, input, signal, untracked} from '@angular/core';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {Area, LEVELS} from '../models';
 import {IconComponent} from '../shared/icon.component';
 import {StudyMode, StudySessionService} from './study-session.service';
 import {BookVocabularyService,BookWordOrder} from '../book-vocabulary.service';
+import {StudySettingsService} from './study-settings.service';
 
 @Component({
   selector: 'koine-study-landing',
@@ -19,6 +20,7 @@ export class StudyLandingComponent {
   readonly content = inject(ContentService);
   readonly progress = inject(ProgressService);
   private readonly study = inject(StudySessionService);
+  private readonly settings = inject(StudySettingsService);
   readonly bookVocabulary = inject(BookVocabularyService);
   readonly levels = LEVELS;
   readonly frequencyGroups = [10, 50, 100, 200, 300];
@@ -52,7 +54,22 @@ export class StudyLandingComponent {
     {title: 'Use a explicação', text: 'Um erro é uma pista: volte ao padrão ou conceito que ainda precisa de atenção.'},
     {title: this.vocabulary() ? 'Acompanhe sua aprendizagem' : 'Conecte teoria e prática', text: this.vocabulary() ? 'Acertos em três dias diferentes registram a aprendizagem automaticamente. Você também pode marcar a palavra como já aprendida ou para revisar.' : 'Reveja a aula quando precisar. O percurso permanece aberto para você retornar.'}
   ]);
-  constructor(){effect(()=>{if(this.vocabulary())void this.bookVocabulary.load();});}
+  constructor(){
+    effect(()=>{if(this.vocabulary())void this.bookVocabulary.load();});
+    effect(() => {
+      const area = this.area(), mode = this.mode();
+      untracked(() => {
+        const saved = this.settings.load(area, mode);
+        this.size.set(saved.size); this.filter.set(saved.filter); this.topAmount.set(saved.topAmount);
+        this.bookId.set(saved.bookId); this.bookOrder.set(saved.bookOrder);
+        this.wordState.set(saved.wordState); this.lessonId.set(saved.lessonId);
+      });
+    });
+    effect(() => this.settings.save(this.area(), this.mode(), {
+      size: this.size(), filter: this.filter(), topAmount: this.topAmount(), bookId: this.bookId(),
+      bookOrder: this.bookOrder(), wordState: this.wordState(), lessonId: this.lessonId()
+    }));
+  }
   value(event: Event): string { return (event.target as HTMLSelectElement).value; }
   selectBook(event:Event):void{
     const id=this.value(event);

@@ -60,6 +60,34 @@ describe('Angular study sessions', () => {
   });
   afterEach(() => { vi.useRealTimers(); TestBed.resetTestingModule(); });
 
+  it.each(['practice', 'flashcards'] as const)('replays the full %s session after reviewing errors without erasing history', mode => {
+    study.start({area: 'morphology', mode, lessonId: 'many', limit: 5});
+    const originalIds = study.session()!.questions.map(question => question.id);
+    const answer = (correct: boolean) => {
+      const q = study.current()!;
+      study.choose(correct ? q.answer as number : ((q.answer as number) + 1) % q.options!.length);
+      if (mode === 'practice') study.verify();
+      study.next();
+    };
+    study.restart(); // An active session cannot be discarded by replay.
+    expect(study.session()!.index).toBe(0);
+    answer(false); for (let i = 1; i < 5; i++) answer(true);
+    study.retryErrors(); answer(true);
+    expect(study.session()!.questions).toHaveLength(1);
+    const history = structuredClone(progress.state());
+    const fixture = TestBed.createComponent(StudySessionComponent); fixture.detectChanges();
+    const button = [...fixture.nativeElement.querySelectorAll('button')].find((item: any) => item.textContent.includes(mode === 'practice' ? 'Refazer prática' : 'Refazer flashcards')) as HTMLButtonElement;
+    expect(button).toBeTruthy(); button.click();
+    expect(study.session()!.questions.map(question => question.id)).toEqual(originalIds);
+    expect(study.finished()).toBe(false); expect(study.session()!.results).toEqual([]);
+    expect(study.session()!.correct).toBe(0); expect(study.session()!.answered).toBe(false);
+    expect(study.originLesson()?.id).toBe(mode === 'practice' ? 'many' : undefined);
+    expect(progress.state().answers).toEqual(history.answers);
+    expect(progress.state().sessions).toBe(history.sessions);
+    answer(true);
+    expect(study.session()!.correct).toBe(1);
+  });
+
   it('studies semantic concepts without changing lexical memorization and returns to the next lesson', () => {
     const semantic: Lesson = {...lesson('sem-test', [choice('sem-test-q')]), area: 'semantics'};
     const following: Lesson = {...semantic, id: 'sem-next', order: 2};

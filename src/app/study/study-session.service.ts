@@ -87,6 +87,7 @@ export class StudySessionService {
   private readonly books = inject(BookVocabularyService);
 
   readonly session = signal<StudySession | null>(null);
+  private originalSession: StudySession | null = null;
   readonly current = computed(() => {
     const session = this.session();
     return session?.questions[session.index] ?? null;
@@ -187,11 +188,22 @@ export class StudySessionService {
     const origin = mode === 'practice' && lessonId ? this.content.catalog.lessonById.get(lessonId) : undefined;
     this.session.set({area, mode, originLessonId: origin?.area === area ? origin.id : undefined,
       questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
+    this.originalSession = this.session();
     this.present();
     this.afterRender(() => window.scrollTo(0, 0));
   }
 
-  clear(): void { this.session.set(null); }
+  clear(): void { this.session.set(null); this.originalSession = null; }
+
+  restart(): void {
+    if (!this.finished() || !this.originalSession) return;
+    const original = this.originalSession;
+    const questions = original.questions.map(question => this.prepare(question,
+      question.lessonId ? this.content.catalog.lessonById.get(question.lessonId) : undefined));
+    this.session.set({...original, questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
+    this.present();
+    this.afterRender(() => window.scrollTo(0, 0));
+  }
 
   exit(): void {
     const previous = this.session();

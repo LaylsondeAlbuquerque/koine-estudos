@@ -8,8 +8,42 @@ import {StudySessionService} from './study-session.service';
 import {BookVocabularyService} from '../book-vocabulary.service';
 
 describe('Seleção dos conjuntos de vocabulário', () => {
-  beforeEach(()=>TestBed.configureTestingModule({providers:[{provide:BookVocabularyService,useValue:{books:signal([]),loading:signal(false),error:signal(''),load:vi.fn()}}]}));
+  beforeEach(()=>{localStorage.clear();TestBed.configureTestingModule({providers:[{provide:BookVocabularyService,useValue:{books:signal([]),loading:signal(false),error:signal(''),load:vi.fn()}}]});});
   afterEach(() => TestBed.resetTestingModule());
+
+  it('restores settings after remounting and keeps areas and modes independent', () => {
+    TestBed.configureTestingModule({providers: [
+      {provide: ContentService, useValue: {lessonsFor: () => [], catalog: {wordsForLevel: () => []}}},
+      {provide: ProgressService, useValue: {level: () => 0}},
+      {provide: StudySessionService, useValue: {start: vi.fn()}}
+    ]});
+    const mount = () => {
+      const fixture = TestBed.createComponent(StudyLandingComponent);
+      fixture.componentRef.setInput('area', 'vocabulary');
+      fixture.componentRef.setInput('mode', 'flashcards'); fixture.detectChanges();
+      return fixture;
+    };
+    const first = mount();
+    const component = first.componentInstance;
+    component.size.set(20); component.filter.set('book'); component.bookId.set('JHN');
+    component.bookOrder.set('appearance'); component.wordState.set('unlearned'); component.topAmount.set(50);
+    first.detectChanges(); first.destroy();
+    const second = mount(), restored = second.componentInstance;
+    expect([restored.size(), restored.filter(), restored.bookId(), restored.bookOrder(), restored.wordState(), restored.topAmount()])
+      .toEqual([20, 'book', 'JHN', 'appearance', 'unlearned', 50]);
+    second.componentRef.setInput('mode', 'practice'); second.detectChanges();
+    expect(restored.size()).toBe(10); expect(restored.filter()).toBe('all');
+    restored.size.set(5); second.detectChanges();
+    second.componentRef.setInput('mode', 'flashcards'); second.detectChanges();
+    expect(restored.size()).toBe(20); expect(restored.bookId()).toBe('JHN');
+    second.componentRef.setInput('area', 'syntax'); second.detectChanges();
+    expect(restored.size()).toBe(10);
+    restored.lessonId.set('syntax-lesson'); second.detectChanges();
+    second.componentRef.setInput('area', 'vocabulary'); second.detectChanges();
+    expect(restored.lessonId()).toBe(''); expect(restored.size()).toBe(20);
+    second.componentRef.setInput('area', 'syntax'); second.detectChanges();
+    expect(restored.lessonId()).toBe('syntax-lesson');
+  });
 
   it('combines the frequency group and learning state independently from size and selected level', () => {
     const level = signal(0), start = vi.fn();

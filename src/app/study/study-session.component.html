@@ -19,6 +19,7 @@
           <p class="lesson-result-context">{{ lesson.title }}@if (study.nextLesson(); as next) {<span>Próxima aula: {{ next.title }}</span>}</p>
         }
         <div class="result-actions" [class.lesson-result-actions]="study.originLesson()">
+          <button class="button button-outline" (click)="study.restart()">{{ s.mode === 'flashcards' ? 'Refazer flashcards' : 'Refazer prática' }}</button>
           @if (study.errors().length) {
             <button class="button" [class.button-outline]="study.originLesson()" [class.button-primary]="!study.originLesson()" (click)="study.retryErrors()">Revisar as questões</button>
           }
