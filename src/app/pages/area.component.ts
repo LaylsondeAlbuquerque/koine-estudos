@@ -15,6 +15,7 @@ import {WordRepertoryComponent} from '../words/word-repertory.component';
   imports: [RouterLink, IconComponent, StudyLandingComponent, WordRepertoryComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,
   styles: [':host{display:contents}'],
+  styleUrl: './area.component.css',
   templateUrl: './area.component.html'
 })
 export class AreaComponent {

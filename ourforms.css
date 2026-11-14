@@ -132,8 +132,7 @@ html[data-theme] .level-bar{background:transparent;border:0;border-bottom:1px so
 html[data-theme] .level-button{font-size:14px;padding:9px 11px;border:0;border-bottom:2px solid transparent;color:var(--muted);background:transparent}
 html[data-theme] .level-button:hover{background:var(--soft);color:var(--ink)}
 html[data-theme] .level-button.active{border-bottom-color:var(--rule-orange);color:var(--ink);background:transparent;font-weight:400}
-html[data-theme] .level-no{background:transparent;color:inherit;border:1px solid var(--line);border-radius:0}
-html[data-theme] .level-button.active .level-no{background:var(--yellow);color:#242422;border-color:var(--rule-orange)}
+html[data-theme] .level-no,html[data-theme] .level-button.active .level-no{display:inline;background:transparent;color:inherit;border:0;border-radius:0;width:auto;height:auto;line-height:inherit;font-size:inherit;box-shadow:none}
 html[data-theme] .tabs{border-bottom:2px solid var(--green);gap:30px;margin-bottom:30px}
 html[data-theme] .tabs .tab{font-size:17px;color:var(--muted);border-bottom:2px solid transparent}
 html[data-theme] .tabs .tab.active{color:var(--ink);border-bottom-color:var(--rule-orange);font-weight:400}

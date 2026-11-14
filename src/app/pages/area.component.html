@@ -19,11 +19,13 @@
     <button class="level-button" [class.active]="level() === $index" (click)="progress.setLevel(area(), $index)" [attr.aria-pressed]="level() === $index"><span class="level-no">{{ $index + 1 }}</span>{{ name }}</button>
   }
 </div></div>
-<nav class="tabs" aria-label="Modos de estudo">
+<div class="study-layout">
+<nav class="study-rail" aria-label="Modos de estudo">
   @for (item of tabs(); track item.key) {
-    <a class="tab" [class.active]="tab() === item.key" [routerLink]="['/', area(), item.key]" [attr.aria-current]="tab() === item.key ? 'page' : null"><koine-icon [name]="item.icon" [size]="17"/>{{ item.title }}</a>
+    <a class="study-rail-link" [class.active]="tab() === item.key" [routerLink]="['/', area(), item.key]" [attr.aria-label]="item.title" [attr.aria-current]="tab() === item.key ? 'page' : null"><koine-icon [name]="item.icon" [size]="24"/><span class="study-rail-label">{{ item.title }}</span></a>
   }
 </nav>
+<div class="study-panel">
 @switch (tab()) {
   @case ('path') {
     <div class="level-summary"><div><h2>Seu percurso · {{ levels[level()] }}</h2><p>{{ levelDescriptions()[level()] }}</p></div><span class="pill">{{ current().length }} aulas</span></div>
@@ -56,3 +58,5 @@
   }
   @default {<koine-study-landing [area]="area()" [mode]="mode()"/>}
 }
+</div>
+</div>
