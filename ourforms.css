@@ -310,3 +310,18 @@ html[data-theme] .flash-word-marks .word-mark-button{flex:0 1 200px;min-width:12
 html[data-theme] .flash-word-marks .word-mark-note{margin:12px 0 0;color:var(--muted);font-size:11px;line-height:1.8}
 @media(hover:hover){html[data-theme] .word-mark-button:hover{border-style:solid;border-color:currentColor;background:var(--surface-hover)}}
 @media(max-width:600px){html[data-theme] .word-entry .word-study{padding:16px 13px 12px}html[data-theme] .word-entry .word-mark-panel{padding:0 13px 16px}html[data-theme] .word-entry .word-mark-actions{display:grid;grid-template-columns:minmax(0,1fr);gap:7px}html[data-theme] .word-entry .word-mark-button{min-height:42px;padding:9px 7px;font-size:11px}html[data-theme] .word-mark-help{font-size:11px}html[data-theme] .flash-word-marks .word-mark-button{flex:1;min-width:120px}}
+
+/* One centered frame for the header, breadcrumb, pages and footer. The tool
+   rail occupies the outer gutter rather than shifting the study content. */
+:root{--site-gutter:clamp(80px,6vw,96px);--site-frame-width:min(1120px,calc(100vw - 2 * var(--site-gutter)))}
+html[data-theme] .site-header .header-inner,
+html[data-theme] .layout:has(.session-wrap) .site-header .header-inner,
+html[data-theme] :is(.topbar,.content,.page-footer,.home-section){width:var(--site-frame-width);max-width:none;margin-left:auto;margin-right:auto;padding-left:0;padding-right:0}
+html[data-theme] .content.area-home{width:100%;padding:0}
+html[data-theme] .hero-copy{width:var(--site-frame-width);max-width:none}
+html[data-theme] .hero-bottom{width:var(--site-frame-width);left:50%;transform:translateX(-50%);padding-left:0;padding-right:0}
+html[data-theme] .formation-heading{padding-left:0;padding-right:0;justify-content:space-between}
+html[data-theme] .formation-heading-icon{order:2}
+html[data-theme] .level-bar{padding-left:0;padding-right:0}
+html[data-theme] .course-guide{max-width:none;margin-left:0;margin-right:0}
+@media(max-width:700px){:root{--site-gutter:20px}}
