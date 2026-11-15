@@ -88,6 +88,7 @@ export class StudySessionService {
 
   readonly session = signal<StudySession | null>(null);
   private originalSession: StudySession | null = null;
+  private readonly flashcardOrders = new Map<string, string[]>();
   readonly current = computed(() => {
     const session = this.session();
     return session?.questions[session.index] ?? null;
@@ -186,6 +187,7 @@ export class StudySessionService {
       return;
     }
     const origin = mode === 'practice' && lessonId ? this.content.catalog.lessonById.get(lessonId) : undefined;
+    if (mode === 'flashcards') questions = this.shuffleFlashcards(questions);
     this.session.set({area, mode, originLessonId: origin?.area === area ? origin.id : undefined,
       questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
     this.originalSession = this.session();
@@ -198,8 +200,9 @@ export class StudySessionService {
   restart(): void {
     if (!this.finished() || !this.originalSession) return;
     const original = this.originalSession;
-    const questions = original.questions.map(question => this.prepare(question,
+    let questions = original.questions.map(question => this.prepare(question,
       question.lessonId ? this.content.catalog.lessonById.get(question.lessonId) : undefined));
+    if (original.mode === 'flashcards') questions = this.shuffleFlashcards(questions);
     this.session.set({...original, questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
     this.present();
     this.afterRender(() => window.scrollTo(0, 0));
@@ -305,11 +308,27 @@ export class StudySessionService {
     const session = this.session();
     if (!session || !this.finished()) return;
     const failures = new Set(this.errors().map(result => result.id));
-    const questions = session.questions.filter(question => failures.has(question.id));
+    let questions = session.questions.filter(question => failures.has(question.id));
     if (!questions.length) return;
+    if (session.mode === 'flashcards') questions = this.shuffleFlashcards(questions);
     this.session.set({...session, questions, index: 0, correct: 0, results: [], lastPresentedId: null, ...resetQuestion()});
     this.present();
     this.afterRender(() => window.scrollTo(0, 0));
+  }
+
+  private shuffleFlashcards(questions: StudyQuestion[]): StudyQuestion[] {
+    const key = JSON.stringify(questions.map(question => question.id).sort());
+    const previous = this.flashcardOrders.get(key) ?? questions.map(question => question.id);
+    let ordered = shuffle(questions);
+    // Avoid accidentally repeating the whole sequence for the same deck.
+    if (ordered.length > 1 && ordered.every((question, index) => question.id === previous[index])) {
+      const offset = 1 + Math.floor(Math.random() * (ordered.length - 1));
+      ordered = [...ordered.slice(offset), ...ordered.slice(0, offset)];
+    }
+    this.flashcardOrders.delete(key);
+    this.flashcardOrders.set(key, ordered.map(question => question.id));
+    if (this.flashcardOrders.size > 16) this.flashcardOrders.delete(this.flashcardOrders.keys().next().value!);
+    return ordered;
   }
 
   private finish(correct: boolean, selected: number | null = null): void {

@@ -78,7 +78,10 @@ describe('Angular study sessions', () => {
     const fixture = TestBed.createComponent(StudySessionComponent); fixture.detectChanges();
     const button = [...fixture.nativeElement.querySelectorAll('button')].find((item: any) => item.textContent.includes(mode === 'practice' ? 'Refazer prática' : 'Refazer flashcards')) as HTMLButtonElement;
     expect(button).toBeTruthy(); button.click();
-    expect(study.session()!.questions.map(question => question.id)).toEqual(originalIds);
+    const replayIds = study.session()!.questions.map(question => question.id);
+    expect([...replayIds].sort()).toEqual([...originalIds].sort());
+    if (mode === 'flashcards') expect(replayIds).not.toEqual(originalIds);
+    else expect(replayIds).toEqual(originalIds);
     expect(study.finished()).toBe(false); expect(study.session()!.results).toEqual([]);
     expect(study.session()!.correct).toBe(0); expect(study.session()!.answered).toBe(false);
     expect(study.originLesson()?.id).toBe(mode === 'practice' ? 'many' : undefined);
@@ -321,18 +324,38 @@ describe('Angular study sessions', () => {
     study.next();
   };
 
-  it('keeps book frequency and appearance order, intersects learning state and never falls back to the whole NT',()=>{
+  it('uses book ordering to select words but shuffles flashcards and preserves learning filters',()=>{
     const books=TestBed.inject(BookVocabularyService);
     books.books.set([{id:'MAT',name:'Mateus',words:[{id:'word-3',frequency:2,first:1},{id:'word-5',frequency:2,first:3},{id:'word-7',frequency:8,first:2}]}]);
     study.start({area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'frequency',limit:5});
-    expect(study.session()!.questions.map(q=>q.wordId)).toEqual(['word-7','word-3','word-5']);
+    expect(study.session()!.questions.map(q=>q.wordId).sort()).toEqual(['word-3','word-5','word-7']);
     study.start({area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'appearance',limit:5});
-    expect(study.session()!.questions.map(q=>q.wordId)).toEqual(['word-3','word-7','word-5']);
+    expect(study.session()!.questions.map(q=>q.wordId).sort()).toEqual(['word-3','word-5','word-7']);
     progress.mutate(s=>{s.vocab['word-3']={attempts:0,correct:0,dates:[],box:0,nextReview:'2026-01-01',mastered:false,manualState:'learned'};});
     study.start({area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'appearance',wordState:'unlearned',limit:5});
-    expect(study.session()!.questions.map(q=>q.wordId)).toEqual(['word-7','word-5']);
+    expect(study.session()!.questions.map(q=>q.wordId).sort()).toEqual(['word-5','word-7']);
     study.clear();study.start({area:'vocabulary',mode:'flashcards',bookId:'UNKNOWN',limit:5});
     expect(study.session()).toBeNull();
+  });
+
+  it('reshuffles a book deck on replay and on a new session while retaining its selected words',()=>{
+    const random=vi.spyOn(Math,'random').mockReturnValue(.999999);
+    try{
+      const books=TestBed.inject(BookVocabularyService);
+      books.books.set([{id:'MAT',name:'Mateus',words:Array.from({length:10},(_,i)=>({id:`word-${i}`,frequency:i+1,first:i+1}))}]);
+      const options={area:'vocabulary',mode:'flashcards',bookId:'MAT',bookOrder:'appearance',limit:5} as const;
+      study.start(options);
+      const ids=()=>study.session()!.questions.map(q=>q.wordId);
+      const first=ids();
+      expect([...first].sort()).toEqual(['word-0','word-1','word-2','word-3','word-4']);
+      for(let i=0;i<5;i++){study.choose(study.current()!.answer as number);study.next();}
+      study.restart();const replay=ids();
+      expect([...replay].sort()).toEqual([...first].sort());expect(replay).not.toEqual(first);
+      study.clear();study.start(options);const next=ids();
+      expect([...next].sort()).toEqual([...first].sort());expect(next).not.toEqual(replay);
+      study.start({...options,bookOrder:'frequency'});
+      expect([...ids()].sort()).toEqual(['word-5','word-6','word-7','word-8','word-9']);
+    }finally{random.mockRestore();}
   });
 
   it('never places an authored or generated matching answer beside its corresponding item', () => {

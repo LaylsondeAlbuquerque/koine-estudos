@@ -36,6 +36,7 @@
     }
     @if (area() === 'semantics') {<p class="study-selection-note">Use também as oficinas das aulas para redigir suas próprias análises. Acertar uma questão objetiva não substitui justificar uma interpretação com fontes e evidências.</p>}
     <button class="button button-primary" (click)="start()" [disabled]="vocabulary()&&filter()==='book'&&(!selectedBook()||bookVocabulary.loading()||!!bookVocabulary.error())">Começar sessão<koine-icon name="arrow" [size]="15" /></button>
+    @if(flash()){<p class="study-selection-note">Os cartões são embaralhados a cada sessão e ao refazer.@if(vocabulary()){ A ordem por livro define quais vocábulos entram na sessão; a apresentação dos cartões é aleatória.}</p>}
   </section>
   <aside class="study-tips"><span class="eyebrow">Um jeito de estudar melhor</span>
     @for (tip of tips(); track $index; let i = $index) {<div class="tip-row"><span class="tip-num">0{{ i + 1 }}</span><div><strong>{{ tip.title }}</strong>{{ tip.text }}</div></div>}

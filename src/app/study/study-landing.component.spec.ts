@@ -152,6 +152,6 @@ describe('Seleção dos conjuntos de vocabulário', () => {
     expect(page.querySelector('#session-filter')).toBeNull();
     expect(page.querySelector('#session-state')).toBeNull();
     expect(page.querySelector('#session-lesson')).not.toBeNull();
-    expect(page.querySelector('.study-selection-note')).toBeNull();
+    expect(page.querySelector('.study-selection-note')?.textContent).toContain('embaralhados');
   });
 });
