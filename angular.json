@@ -21,6 +21,11 @@
             "assets": [
               {
                 "glob": "*.json",
+                "input": "data/word-forms",
+                "output": "data/word-forms"
+              },
+              {
+                "glob": "*.json",
                 "input": "data/reading",
                 "output": "data/reading"
               },

@@ -20,3 +20,5 @@ for(const book of reading.books){
 assert(!existsSync(new URL('fontes-locais/',browser)),'Private local sources must not be published');
 assert(!existsSync(new URL('tmp/',browser)),'Audit reports must not be published');
 console.log('Reading assets verified; local sources and audit reports excluded.');
+const forms=JSON.parse(readFileSync(new URL('data/word-forms/0.json',browser),'utf8'));
+assert.equal(forms.version,1,'Word forms assets must be included');

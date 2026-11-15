@@ -12,6 +12,8 @@ O repertório utiliza lemas e contagens do corpus MACULA baseado no SBLGNT. A á
 
 ## MACULA Greek Linguistic Datasets
 
+As fichas do repertório em `data/word-forms/` também derivam as formas e análises morfológicas do snapshot MACULA SBLGNT revisado. Transformações: associação aos IDs do repertório com as correções já documentadas; agrupamento por lema e grafia sem distinção de maiúsculas/acentos; contagem de ocorrências; rótulos em português na interface. Alternativas de caso decorrentes do sincretismo neutro são acrescentadas com contagem zero e identificadas na interface. Não se importam glossas contextuais ou campos MARBLE nessas fichas. Dados derivados sob CC BY 4.0; código do projeto conserva sua licença própria.
+
 “MACULA Greek Linguistic Datasets, available at https://github.com/Clear-Bible/macula-greek/”. © 2022–2024 Biblica, Inc.; Clear Bible, Inc.
 
 - Licença: https://github.com/Clear-Bible/macula-greek/blob/main/LICENSE.md

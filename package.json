@@ -8,7 +8,8 @@
   "author": "Laylson de Albuquerque (https://github.com/LaylsondeAlbuquerque)",
   "scripts": {
     "reading:build": "python scripts/reading-build.py",
-    "test:reading": "python scripts/reading-build.test.py",
+    "forms:build": "python scripts/word-forms-build.py",
+    "test:reading": "python scripts/reading-build.test.py && python scripts/word-forms-build.test.py",
     "start": "ng serve --host 127.0.0.1",
     "dev": "npm start",
     "build": "ng build && node scripts/finalize-build.mjs",

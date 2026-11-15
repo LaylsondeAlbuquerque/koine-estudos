@@ -53,7 +53,7 @@
     <div class="vocab-grid">
       @for (word of visibleWords(); track word.id) {
         <article class="word-card word-entry" [attr.data-word-id]="word.id">
-          <button class="word-study" (click)="studyWord(word)" [attr.aria-label]="'Estudar ' + word.lemma">
+          <button class="word-study" (click)="detailWord.set(word)" [attr.aria-label]="'Consultar ' + word.lemma" aria-haspopup="dialog">
           <span class="word-top">
             <span class="word-rank">#{{ rank(word) }}</span>
             @if (word.core300) { <span class="pill amber">Núcleo dos 300</span> }
@@ -89,3 +89,4 @@
     </div>
   }
 </div>
+@if(detailWord();as word){<koine-word-details [word]="word" (closed)="detailWord.set(null)" (practice)="studyWord(word)"/>}

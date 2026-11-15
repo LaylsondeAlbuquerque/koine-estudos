@@ -5,6 +5,7 @@ import {Area, Word} from '../models';
 import {IconComponent} from '../shared/icon.component';
 import {StudySessionService} from '../study/study-session.service';
 import {BookVocabularyService,BookWordOrder} from '../book-vocabulary.service';
+import {WordDetailsComponent} from './word-details.component';
 
 // Keep the repertoire's position while a card or a different tab is opened.
 @Injectable({providedIn: 'root'})
@@ -20,12 +21,13 @@ class RepertoryViewState {
 @Component({
   selector: 'koine-word-repertory',
   standalone: true,
-  imports: [IconComponent],
+  imports: [IconComponent, WordDetailsComponent],
   templateUrl: './word-repertory.component.html',
   styles: ':host {display: contents}',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WordRepertoryComponent {
+  readonly detailWord = signal<Word|null>(null);
   readonly content = inject(ContentService);
   readonly progress = inject(ProgressService);
   readonly study = inject(StudySessionService);
@@ -87,5 +89,5 @@ export class WordRepertoryComponent {
     document.querySelector('.vocab-toolbar')?.scrollIntoView({block: 'start'});
   }
   studyCore(): void { this.study.start({area: 'vocabulary', mode: 'flashcards', filter: 'core', limit: 10}); }
-  studyWord(word: Word): void { this.study.start({area: 'vocabulary', mode: 'flashcards', wordId: word.id}); }
+  studyWord(word: Word): void { this.detailWord.set(null); this.study.start({area: 'vocabulary', mode: 'flashcards', wordId: word.id}); }
 }

@@ -33,6 +33,10 @@ Os artigos atuais exibem “Texto produzido por IA”. Para futuros artigos de a
 
 ## Arquitetura e decisões técnicas
 
+No repertório, clicar no vocábulo abre uma ficha com o significado lexical básico e as formas encontradas no NT. A ficha reúne as análises morfológicas registradas no MACULA e explicita a coincidência de nominativo/acusativo neutros (também vocativo para substantivos e adjetivos), identificando alternativas não atestadas. Não constitui um paradigma exaustivo. O botão “Praticar palavra” continua disponível na ficha.
+
+Os dados são carregados sob demanda de `data/word-forms/`, em 64 blocos. Para regenerá-los a partir da fonte local revisada, execute `npm run forms:build`. O gerador reaproveita as correções de lemas do repertório e confere todas as frequências. Os testes verificam cobertura, contagens e as alternativas morfológicas acrescentadas. Não se geram traduções por flexão; usa-se o significado português já existente no repertório.
+
 | Decisão | Aplicação no projeto |
 | --- | --- |
 | Angular com componentes standalone, signals e OnPush | Templates e eventos Angular organizam as telas; rotas carregadas sob demanda dividem as páginas da aplicação. |
