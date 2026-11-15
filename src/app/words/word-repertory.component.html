@@ -14,7 +14,7 @@
   <button class="text-link" (click)="studyCore()">Estudar os 300<koine-icon name="arrow" [size]="13" /></button>
 </div>
 <div class="vocab-book-toolbar">
-  <label class="field">Livro do Novo Testamento<select id="vocab-book" [value]="bookId()" (change)="changeBook($event)" [disabled]="bookVocabulary.loading()||!!bookVocabulary.error()"><option value="">Todos os livros</option>@for(book of bookStats();track book.id){<option [value]="book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
+  <label class="field">Livro do Novo Testamento<select id="vocab-book" [value]="bookId()" (change)="changeBook($event)" [disabled]="bookVocabulary.loading()||!!bookVocabulary.error()"><option value="">Todos os livros</option>@for(book of bookStats();track book.id){<option [value]="book.id" [selected]="bookId()===book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
   @if(bookId()){
     <label class="field">Ordem dos vocábulos<select id="vocab-book-order" [value]="bookOrder()" (change)="changeBookOrder($event)"><option value="frequency">Mais frequentes neste livro</option><option value="appearance">Primeira aparição no livro</option></select></label>
   }

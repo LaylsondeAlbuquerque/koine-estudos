@@ -11,6 +11,23 @@ describe('Seleção dos conjuntos de vocabulário', () => {
   beforeEach(()=>{localStorage.clear();TestBed.configureTestingModule({providers:[{provide:BookVocabularyService,useValue:{books:signal([]),loading:signal(false),error:signal(''),load:vi.fn()}}]});});
   afterEach(() => TestBed.resetTestingModule());
 
+  it.each(['flashcards','practice'] as const)('restores the book selector after asynchronous options load in %s',mode=>{
+    TestBed.configureTestingModule({providers:[
+      {provide:ContentService,useValue:{lessonsFor:()=>[],catalog:{wordsForLevel:()=>[]}}},
+      {provide:ProgressService,useValue:{level:()=>0,wordLearned:()=>false}},
+      {provide:StudySessionService,useValue:{start:vi.fn()}}
+    ]});
+    let fixture=TestBed.createComponent(StudyLandingComponent);
+    fixture.componentRef.setInput('area','vocabulary');fixture.componentRef.setInput('mode',mode);fixture.detectChanges();
+    fixture.componentInstance.filter.set('book');fixture.componentInstance.bookId.set('JHN');fixture.detectChanges();fixture.destroy();
+    fixture=TestBed.createComponent(StudyLandingComponent);
+    fixture.componentRef.setInput('area','vocabulary');fixture.componentRef.setInput('mode',mode);fixture.detectChanges();
+    expect(fixture.componentInstance.bookId()).toBe('JHN');
+    TestBed.inject(BookVocabularyService).books.set([{id:'JHN',name:'João',words:[]}]);fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('#session-book').value).toBe('JHN');
+    expect(fixture.componentInstance.filter()).toBe('book');
+  });
+
   it('restores settings after remounting and keeps areas and modes independent', () => {
     TestBed.configureTestingModule({providers: [
       {provide: ContentService, useValue: {lessonsFor: () => [], catalog: {wordsForLevel: () => []}}},

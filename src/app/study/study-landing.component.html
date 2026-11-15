@@ -17,7 +17,7 @@
           <label class="field">Faixa de frequência<select id="session-frequency" [value]="topAmount()" (change)="topAmount.set(+$any($event.target).value)">@for(amount of frequencyGroups;track amount){<option [value]="amount">{{amount}} mais frequentes no NT</option>}</select></label>
         }
         @if(filter()==='all'||filter()==='book'){
-          <label class="field">Livro do Novo Testamento<select id="session-book" [value]="filter()==='book'?bookId():''" (change)="selectBook($event)" [disabled]="bookVocabulary.loading()||!!bookVocabulary.error()"><option value="">Todos os livros</option>@for(book of bookStats();track book.id){<option [value]="book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
+          <label class="field">Livro do Novo Testamento<select id="session-book" [value]="filter()==='book'?bookId():''" (change)="selectBook($event)" [disabled]="bookVocabulary.loading()||!!bookVocabulary.error()"><option value="">Todos os livros</option>@for(book of bookStats();track book.id){<option [value]="book.id" [selected]="filter()==='book'&&bookId()===book.id">{{book.name}} · faltam {{book.remaining}} de {{book.total}}</option>}</select></label>
           @if(bookVocabulary.loading()){<p role="status">Carregando vocabulário dos livros…</p>}
           @else if(bookVocabulary.error()){<div role="alert"><p>{{bookVocabulary.error()}}</p><button class="button button-outline" (click)="bookVocabulary.load()">Tentar novamente</button></div>}
           @if(filter()==='book'&&selectedBook()){

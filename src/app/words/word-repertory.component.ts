@@ -9,13 +9,25 @@ import {WordDetailsComponent} from './word-details.component';
 
 // Keep the repertoire's position while a card or a different tab is opened.
 @Injectable({providedIn: 'root'})
-class RepertoryViewState {
+export class RepertoryViewState {
   readonly query = signal('');
   readonly filter = signal('all');
   readonly wordClass = signal('all');
   readonly page = signal(0);
   readonly bookId = signal('');
   readonly bookOrder = signal<BookWordOrder>('frequency');
+  private readonly storageKey = `koine-repertory-book-v1:${new URL('.',document.baseURI).pathname}`;
+  constructor(){
+    try{
+      const saved=JSON.parse(localStorage.getItem(this.storageKey)||'null');
+      if(typeof saved?.bookId==='string' && /^(?:[A-Z0-9]{3})?$/.test(saved.bookId))this.bookId.set(saved.bookId);
+      if(['frequency','appearance'].includes(saved?.bookOrder))this.bookOrder.set(saved.bookOrder);
+    }catch{/* Keep studying when browser storage is unavailable. */}
+  }
+  saveBookSelection():void{
+    try{localStorage.setItem(this.storageKey,JSON.stringify({bookId:this.bookId(),bookOrder:this.bookOrder()}));}
+    catch{/* Browser storage must not block filtering. */}
+  }
 }
 
 @Component({
@@ -82,8 +94,8 @@ export class WordRepertoryComponent {
   changeQuery(event: Event): void { this.query.set((event.target as HTMLInputElement).value); this.page.set(0); }
   changeFilter(event: Event): void { this.filter.set((event.target as HTMLSelectElement).value); this.page.set(0); }
   changeClass(event: Event): void { this.wordClass.set((event.target as HTMLSelectElement).value); this.page.set(0); }
-  changeBook(event:Event):void{this.bookId.set((event.target as HTMLSelectElement).value);this.page.set(0);}
-  changeBookOrder(event:Event):void{this.bookOrder.set((event.target as HTMLSelectElement).value as BookWordOrder);this.page.set(0);}
+  changeBook(event:Event):void{this.bookId.set((event.target as HTMLSelectElement).value);this.page.set(0);this.view.saveBookSelection();}
+  changeBookOrder(event:Event):void{this.bookOrder.set((event.target as HTMLSelectElement).value as BookWordOrder);this.page.set(0);this.view.saveBookSelection();}
   changePage(value: number): void {
     this.page.set(Math.max(0, Math.min(value, this.pages() - 1)));
     document.querySelector('.vocab-toolbar')?.scrollIntoView({block: 'start'});

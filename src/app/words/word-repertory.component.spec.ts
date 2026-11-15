@@ -5,7 +5,7 @@ import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
 import {Word} from '../models';
 import {StudySessionService} from '../study/study-session.service';
-import {WordRepertoryComponent} from './word-repertory.component';
+import {WordRepertoryComponent, RepertoryViewState} from './word-repertory.component';
 import {BookVocabularyService} from '../book-vocabulary.service';
 
 describe('WordRepertoryComponent', () => {
@@ -44,6 +44,26 @@ describe('WordRepertoryComponent', () => {
     {id:'MAT',name:'Mateus',words:[{id:'word-5',frequency:8,first:3},{id:'word-0',frequency:2,first:1},{id:'word-2',frequency:1,first:2}]},
     {id:'JHN',name:'João',words:[{id:'word-0',frequency:9,first:1},{id:'word-3',frequency:1,first:2}]}
   ]);
+
+  it('persists book and ordering across a fresh view state, including all books',()=>{
+    const fixture=TestBed.createComponent(WordRepertoryComponent);
+    fixture.componentInstance.changeBook(change('JHN'));
+    fixture.componentInstance.changeBookOrder(change('appearance'));
+    const restored=new RepertoryViewState();
+    expect(restored.bookId()).toBe('JHN');expect(restored.bookOrder()).toBe('appearance');
+    fixture.componentInstance.changeBook(change(''));
+    expect(new RepertoryViewState().bookId()).toBe('');
+  });
+
+  it('selects the saved book after its options load asynchronously',()=>{
+    const saved=new RepertoryViewState();saved.bookId.set('JHN');saved.saveBookSelection();
+    const fixture=TestBed.createComponent(WordRepertoryComponent);fixture.detectChanges();
+    expect(fixture.componentInstance.bookId()).toBe('JHN');
+    expect(fixture.nativeElement.querySelector('#vocab-book').options.length).toBe(1);
+    setBooks();fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('#vocab-book').value).toBe('JHN');
+    expect(fixture.componentInstance.filtered().map(w=>w.id)).toEqual(['word-0','word-3']);
+  });
 
   it('filters by book and its own frequency or first appearance, preserves selection and restores the whole repertoire',()=>{
     setBooks();let fixture=TestBed.createComponent(WordRepertoryComponent);fixture.detectChanges();
