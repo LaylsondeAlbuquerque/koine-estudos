@@ -122,7 +122,10 @@ export class StudySessionService {
 
   start(options: StartSessionOptions): void {
     const {area, mode, lessonId, wordId} = options;
-    const limit = Number.isInteger(options.limit) && options.limit! > 0 ? Math.min(options.limit!, 20) : 10;
+    // Zero means every eligible flashcard, after applying all selected filters.
+    const allCards = mode === 'flashcards' && options.limit === 0;
+    const limit = allCards ? Infinity : Number.isInteger(options.limit) && options.limit! > 0
+      ? Math.min(options.limit!, mode === 'flashcards' ? 40 : 20) : 10;
     const state = this.progress.state();
     let questions: StudyQuestion[] = [];
     if (area === 'vocabulary' && !lessonId) {
@@ -178,7 +181,7 @@ export class StudySessionService {
           const original = source.questions.find((item: any) => item.id === question.id)!;
           return mode === 'flashcards' && original.kind === 'parse' ? this.parsingCard(original, source) : this.prepare(original, source);
         });
-      if (questions.length && questions.length < limit) {
+      if (!allCards && questions.length && questions.length < limit) {
         this.progress.toast(`Este filtro tem ${questions.length} exercícios únicos. A sessão termina sem repeti-los.`);
       }
     }

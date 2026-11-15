@@ -5,7 +5,7 @@
     <h2 style="margin-top: 12px">{{ title() }}</h2>
     <p>{{ description() }}</p>
     <div class="study-settings">
-      <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option></select></label>
+      <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option>@if(flash()){<option value="30">30 cartões</option><option value="40">40 cartões</option><option value="0">Todos os cartões do filtro</option>}</select></label>
       @if (vocabulary()) {
         <label class="field">Vocabulário<select id="session-filter" [value]="filter()" (change)="filter.set(value($event))">
           <option value="all">Todo o Novo Testamento</option><option value="book">Vocabulário de um livro</option><option value="frequent">Mais frequentes</option><option value="level">Nível selecionado · {{ count() }} vocábulos</option>

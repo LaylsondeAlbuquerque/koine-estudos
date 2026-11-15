@@ -243,6 +243,30 @@ describe('Angular study sessions', () => {
     }
   });
 
+  it('supports 30, 40 and all flashcards without exceeding the selected vocabulary or lesson pool',()=>{
+    const words:Word[]=Array.from({length:65},(_,index)=>({id:`expanded-${index}`,lemma:`λέξις${index}`,meaning:`sentido ${index}`,pos:'substantivo',rank:index+1,frequency:100-index,level:0,core300:true}));
+    content.vocabulary.entries=words;content.catalog=createCatalog(content.lessons,[],words);
+    for(const limit of [30,40]){
+      study.start({area:'vocabulary',mode:'flashcards',filter:'all',limit});
+      expect(study.session()!.questions).toHaveLength(limit);
+    }
+    study.start({area:'vocabulary',mode:'flashcards',filter:'top-50',limit:0});
+    expect(study.session()!.questions).toHaveLength(50);
+    expect(new Set(study.session()!.questions.map(q=>q.id)).size).toBe(50);
+    study.start({area:'vocabulary',mode:'flashcards',filter:'all',limit:0});
+    expect(study.session()!.questions).toHaveLength(65);
+    const books=TestBed.inject(BookVocabularyService);
+    books.books.set([{id:'JHN',name:'João',words:words.slice(0,12).map((word,i)=>({id:word.id,frequency:12-i,first:i+1}))}]);
+    progress.setWordState(words[0].id,'learned');
+    study.start({area:'vocabulary',mode:'flashcards',bookId:'JHN',wordState:'unlearned',limit:0});
+    expect(study.session()!.questions).toHaveLength(11);
+    expect(study.session()!.questions.every(q=>q.wordId!==words[0].id)).toBe(true);
+    study.start({area:'morphology',mode:'flashcards',lessonId:'many',limit:0});
+    expect(study.session()!.questions).toHaveLength(15);
+    study.start({area:'morphology',mode:'practice',lessonId:'many',limit:0});
+    expect(study.session()!.questions).toHaveLength(10);
+  });
+
   it('requires successful lexical reviews on three distinct days for mastery', () => {
     vi.useFakeTimers({toFake: ['Date']});
     const review = (day: string) => {

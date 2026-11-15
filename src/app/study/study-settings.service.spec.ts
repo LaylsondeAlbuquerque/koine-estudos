@@ -3,6 +3,12 @@ import {StudySettingsService} from './study-settings.service';
 
 describe('Study preferences storage', () => {
   afterEach(() => {vi.restoreAllMocks(); localStorage.clear();});
+  it.each([30,40,0])('restores flashcard size %s including all cards',size=>{
+    const service=new StudySettingsService();
+    service.save('vocabulary','flashcards',{...service.load('vocabulary','flashcards'),size});
+    expect(new StudySettingsService().load('vocabulary','flashcards').size).toBe(size);
+    expect(service.load('vocabulary','practice').size).toBe(10);
+  });
   it('validates stored preferences and survives invalid JSON and unavailable storage', () => {
     const service = new StudySettingsService();
     const defaults = service.load('vocabulary', 'flashcards');

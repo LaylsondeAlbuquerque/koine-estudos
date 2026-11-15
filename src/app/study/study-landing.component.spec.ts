@@ -135,7 +135,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
     fixture.componentRef.setInput('area', 'vocabulary');
     fixture.componentRef.setInput('mode', mode);fixture.detectChanges();
     const size = fixture.nativeElement.querySelector('#session-size') as HTMLSelectElement;
-    expect(Array.from(size.options, option => Number(option.value))).toEqual([5, 10, 20]);
+    expect(Array.from(size.options, option => Number(option.value))).toEqual(mode === 'flashcards' ? [5, 10, 20, 30, 40, 0] : [5, 10, 20]);
     expect(size.value).toBe('10');
   });
 
