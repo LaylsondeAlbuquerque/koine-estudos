@@ -129,12 +129,11 @@ export class StudySessionService {
     const state = this.progress.state();
     let questions: StudyQuestion[] = [];
     if (area === 'vocabulary' && !lessonId) {
-      const filter = options.filter || 'level';
+      const filter = options.filter || 'all';
       let words: Word[] = options.bookId ? [] : selectWords(this.content.vocabulary.entries, state.vocab, {
         limit: mode === 'practice' ? limit * 3 : limit,
-        filter: filter === 'level' ? 'all' : filter,
+        filter,
         state: options.wordState || 'all',
-        level: filter === 'level' ? this.progress.level(area) : null,
         recent: state.recentWords || []
       });
       if(options.bookId){

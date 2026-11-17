@@ -237,8 +237,8 @@ describe('Angular study sessions', () => {
       }
       study.start({area: 'vocabulary', mode: 'flashcards', filter: 'top-300', limit: 5});
       expect(study.session()!.questions.length).toBe(5);
-      study.start({area: 'vocabulary', mode: 'flashcards', filter: 'level', limit: 20});
-      expect(study.session()!.questions.every(question => content.catalog.wordById.get(question.wordId).level === 3)).toBe(true);
+      study.start({area: 'vocabulary', mode: 'flashcards', limit: 20});
+      expect(study.session()!.questions.some(question => content.catalog.wordById.get(question.wordId).level !== 3)).toBe(true);
     } finally {
       random.mockRestore();
     }

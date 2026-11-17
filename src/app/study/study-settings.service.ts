@@ -28,7 +28,7 @@ export class StudySettingsService {
       const saved = JSON.parse(localStorage.getItem(this.key(area, mode)) || 'null');
       if (!saved || typeof saved !== 'object') return settings;
       if ((mode === 'flashcards' ? [5, 10, 20, 30, 40, 0] : [5, 10, 20]).includes(saved.size)) settings.size = saved.size;
-      if (['all', 'book', 'frequent', 'level'].includes(saved.filter)) settings.filter = saved.filter;
+      if (['all', 'book', 'frequent'].includes(saved.filter)) settings.filter = saved.filter;
       if ([10, 50, 100, 200, 300].includes(saved.topAmount)) settings.topAmount = saved.topAmount;
       if (typeof saved.bookId === 'string' && /^[A-Z0-9]{3}$/.test(saved.bookId)) settings.bookId = saved.bookId;
       if (['frequency', 'appearance'].includes(saved.bookOrder)) settings.bookOrder = saved.bookOrder;

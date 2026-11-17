@@ -22,7 +22,6 @@ export function createCatalog(lessons, articles, words) {
     return groups;
   };
   const lessonGroups = group(lessons), articleGroups = group(articles);
-  const wordLevels = new Map([0, 1, 2, 3].map(level => [level, words.filter(word => word.level === level)]));
   const getGroup = (groups, area, level) => groups.get(level == null ? area : `${area}:${level}`) || [];
   let readingIndex, wordIndex;
   const search = (index, query, limit) => {
@@ -41,7 +40,6 @@ export function createCatalog(lessons, articles, words) {
     lessonsFor: (area, level = null) => getGroup(lessonGroups, area, level),
     articlesFor: (area, level = null) => getGroup(articleGroups, area, level),
     articlesForLesson: id => related.get(id) || [],
-    wordsForLevel: level => wordLevels.get(level) || [],
     wordClasses: [...new Set(words.map(word => word.pos))].sort(),
     searchReadings(query, limit = 12) {
       const term = normalize(query.trim());

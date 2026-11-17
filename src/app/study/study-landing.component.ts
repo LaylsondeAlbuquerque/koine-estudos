@@ -38,10 +38,8 @@ export class StudyLandingComponent {
   readonly lessonId = signal('');
   readonly flash = computed(() => this.mode() === 'flashcards');
   readonly vocabulary = computed(() => this.area() === 'vocabulary');
-  readonly lessons = computed(() => this.content.lessonsFor(this.area(), this.progress.level(this.area())));
-  readonly count = computed(() => this.vocabulary()
-    ? this.content.catalog.wordsForLevel(this.progress.level(this.area())).length
-    : this.lessons().reduce((sum, lesson) => sum + lesson.questions.filter(question => !this.flash() || ['choice', 'parse'].includes(question.kind)).length, 0));
+  readonly lessons = computed(() => this.vocabulary() ? [] : this.content.lessonsFor(this.area(), this.progress.level(this.area())));
+  readonly count = computed(() => this.lessons().reduce((sum, lesson) => sum + lesson.questions.filter(question => !this.flash() || ['choice', 'parse'].includes(question.kind)).length, 0));
   readonly title = computed(() => this.flash() ? 'Flashcards' : this.vocabulary() ? 'Prática de vocabulário' : this.area() === 'morphology' ? 'Prática de morfologia' : this.area() === 'semantics' ? 'Prática de semântica' : 'Prática de sintaxe');
   readonly description = computed(() => this.flash()
     ? 'Um conceito por cartão. Selecione a resposta para revelar o verso com a explicação; depois avance no seu ritmo.'

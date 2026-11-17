@@ -99,7 +99,6 @@ test('indexed repertoire combines current reviews with text and class filters', 
   }
   const pos = words[0].pos;
   assert.deepEqual(catalog.filterWords({pos}), words.filter(word => word.pos === pos));
-  for (const level of [0, 1, 2, 3]) assert.deepEqual(catalog.wordsForLevel(level), words.filter(word => word.level === level));
 });
 
 test('repertoire state filters combine with text, class and core filters while preserving untouched words', () => {

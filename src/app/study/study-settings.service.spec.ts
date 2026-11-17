@@ -9,6 +9,11 @@ describe('Study preferences storage', () => {
     expect(new StudySettingsService().load('vocabulary','flashcards').size).toBe(size);
     expect(service.load('vocabulary','practice').size).toBe(10);
   });
+  it('replaces a retired level filter with all words while keeping other preferences', () => {
+    const service = new StudySettingsService();
+    service.save('vocabulary', 'flashcards', {...service.load('vocabulary', 'flashcards'), filter: 'level', size: 30, bookId: 'JHN'});
+    expect(service.load('vocabulary', 'flashcards')).toMatchObject({filter: 'all', size: 30, bookId: 'JHN'});
+  });
   it('validates stored preferences and survives invalid JSON and unavailable storage', () => {
     const service = new StudySettingsService();
     const defaults = service.load('vocabulary', 'flashcards');

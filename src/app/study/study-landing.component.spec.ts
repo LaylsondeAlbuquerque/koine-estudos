@@ -13,7 +13,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
 
   it.each(['flashcards','practice'] as const)('restores the book selector after asynchronous options load in %s',mode=>{
     TestBed.configureTestingModule({providers:[
-      {provide:ContentService,useValue:{lessonsFor:()=>[],catalog:{wordsForLevel:()=>[]}}},
+      {provide:ContentService,useValue:{lessonsFor:()=>[]}},
       {provide:ProgressService,useValue:{level:()=>0,wordLearned:()=>false}},
       {provide:StudySessionService,useValue:{start:vi.fn()}}
     ]});
@@ -30,7 +30,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
 
   it('restores settings after remounting and keeps areas and modes independent', () => {
     TestBed.configureTestingModule({providers: [
-      {provide: ContentService, useValue: {lessonsFor: () => [], catalog: {wordsForLevel: () => []}}},
+      {provide: ContentService, useValue: {lessonsFor: () => []}},
       {provide: ProgressService, useValue: {level: () => 0}},
       {provide: StudySessionService, useValue: {start: vi.fn()}}
     ]});
@@ -65,7 +65,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
   it('combines the frequency group and learning state independently from size and selected level', () => {
     const level = signal(0), start = vi.fn();
     TestBed.configureTestingModule({providers: [
-      {provide: ContentService, useValue: {lessonsFor: () => [], catalog: {wordsForLevel: () => []}}},
+      {provide: ContentService, useValue: {lessonsFor: () => []}},
       {provide: ProgressService, useValue: {level: () => level()}},
       {provide: StudySessionService, useValue: {start}}
     ]});
@@ -76,7 +76,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
     const page: HTMLElement = fixture.nativeElement;
     const filter = page.querySelector<HTMLSelectElement>('#session-filter')!;
     expect(filter.value).toBe('all');
-    expect(Array.from(filter.options,option=>option.value)).toEqual(['all','book','frequent','level']);
+    expect(Array.from(filter.options,option=>option.value)).toEqual(['all','book','frequent']);
     expect(page.querySelector('#session-frequency')).toBeNull();
     filter.value = 'frequent';
     filter.dispatchEvent(new Event('change'));
@@ -102,7 +102,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
   it.each(['flashcards','practice'] as const)('shows a direct book selector, remaining words and chosen order in %s',mode=>{
     const learned=signal(new Set(['w1'])),start=vi.fn();
     TestBed.configureTestingModule({providers:[
-      {provide:ContentService,useValue:{lessonsFor:()=>[],catalog:{wordsForLevel:()=>[]}}},
+      {provide:ContentService,useValue:{lessonsFor:()=>[]}},
       {provide:ProgressService,useValue:{level:()=>0,wordLearned:(id:string)=>learned().has(id)}},
       {provide:StudySessionService,useValue:{start}},
       {provide:BookVocabularyService,useValue:{books:signal([{id:'MAT',name:'Mateus',words:[{id:'w1',frequency:20,first:1},{id:'w2',frequency:1,first:2}]}]),loading:signal(false),error:signal(''),load:vi.fn()}}
@@ -127,7 +127,7 @@ describe('Seleção dos conjuntos de vocabulário', () => {
 
   it.each(['flashcards', 'practice'] as const)('presents session sizes in ascending order for %s', mode => {
     TestBed.configureTestingModule({providers: [
-      {provide: ContentService, useValue: {lessonsFor: () => [], catalog: {wordsForLevel: () => []}}},
+      {provide: ContentService, useValue: {lessonsFor: () => []}},
       {provide: ProgressService, useValue: {level: () => 0}},
       {provide: StudySessionService, useValue: {start: vi.fn()}}
     ]});

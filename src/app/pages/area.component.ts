@@ -36,6 +36,7 @@ export class AreaComponent {
     const tab = this.params().get('tab') || 'path';
     return ['path', 'articles', 'flashcards', 'practice', 'words'].includes(tab) ? tab : 'path';
   });
+  readonly showLevels = computed(() => this.area() !== 'vocabulary' || ['path', 'articles'].includes(this.tab()));
   readonly mode = computed<'practice' | 'flashcards'>(() => this.tab() === 'flashcards' ? 'flashcards' : 'practice');
   readonly level = computed(() => this.progress.level(this.area()));
   readonly allLessons = computed(() => this.content.lessonsFor(this.area()));
