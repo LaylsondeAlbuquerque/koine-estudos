@@ -45,8 +45,8 @@
       </div>
       @if (s.mode === 'flashcards') {
         <div class="deck-frame">
-          <section class="study-card" [class.card-back]="back()" [class.card-front]="!back()" [attr.aria-label]="back() ? 'Verso do cartão' : 'Frente do cartão'">
-            <div class="card-edge"><span>{{ back() ? 'VERSO' : 'FRENTE' }}</span><span>{{ q.label || levels[progressLevel(s.area)] }}</span></div>
+          <section class="study-card" [class.card-back]="back()" [class.card-front]="!back()" [attr.aria-label]="back() ? 'Verso do cartão' : 'Frente do cartão'" [attr.data-learning-state]="currentWord() ? progress.wordStudyState(currentWord()!.id) : null">
+            <div class="card-edge"><span>{{ back() ? 'VERSO' : 'FRENTE' }}</span><span [class.core-badge]="currentWord()?.core300">{{ q.label || levels[progressLevel(s.area)] }}</span></div>
             @if (back()) {
               <div class="recall-status" [class.recall-error]="!s.lastCorrect"><koine-icon [name]="s.lastCorrect ? 'check' : 'info'" [size]="18" />{{ s.lastCorrect ? 'Acertou.' : 'Vamos revisar.' }}</div>
               <h2 class="card-answer" [attr.lang]="q.optionsLang === 'grc' || isGreek(answerText(q)) ? 'grc' : null">{{ answerText(q) }}</h2>
@@ -57,7 +57,7 @@
               @if (q.stimulus) {<div class="card-stimulus">{{ q.stimulus }}</div>}
               <h2>{{ q.prompt }}</h2>
               @if (audioSource(q); as audio) {
-                <audio controls preload="none" aria-label="Ouvir vocábulo" style="display: block; margin: 0 auto 18px; max-width: 100%"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>
+                <audio controls preload="none" aria-label="Ouvir vocábulo" class="study-audio"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>
               }
               <p class="card-instruction">{{ s.answered ? 'Você já respondeu a este cartão.' : 'Pense na resposta. Depois selecione uma alternativa abaixo.' }}</p>
             }
@@ -66,7 +66,7 @@
         </div>
         @if (currentWord(); as word) {
           <div class="flash-word-marks">
-            <koine-word-learning-toggle [lemma]="word.lemma" [state]="progress.wordState(word.id) || (progress.wordLearned(word.id) ? 'learned' : progress.state().vocab[word.id]?.attempts ? 'review' : 'unlearned')" (stateChange)="markWord(word.id, $event)"/>
+            <koine-word-learning-toggle [lemma]="word.lemma" [state]="progress.wordStudyState(word.id)" (stateChange)="markWord(word.id, $event)"/>
             <p class="word-mark-note">Arraste ou toque no controle para escolher o estado. Isso não responde ao cartão.</p>
           </div>
         }
@@ -77,11 +77,11 @@
         <div class="session-actions flash-navigation"><span>{{ s.answered ? 'Avance quando terminar de revisar.' : 'Ao responder, o cartão revela o verso com a explicação.' }}</span>@if (s.answered) {<button class="button button-primary" data-action="next" (click)="study.next()">{{ nextText() }}<koine-icon name="arrow" [size]="17" /></button>}</div>
       } @else {
         <section class="practice-question" aria-labelledby="practice-prompt">
-          <div class="challenge-meta"><span>{{ types[q.kind][0] }}</span><span>{{ q.label || levels[progressLevel(s.area)] }}</span></div>
+          <div class="challenge-meta"><span>{{ types[q.kind][0] }}</span><span [class.core-badge]="currentWord()?.core300">{{ q.label || levels[progressLevel(s.area)] }}</span></div>
           <h2 id="practice-prompt">{{ q.prompt }}</h2><p class="challenge-instruction">{{ types[q.kind][1] }}</p>
           @if (q.greek) {<div class="question-greek" [class.long]="q.greek.length > 30" lang="grc">{{ q.greek }}</div>}
           @if (q.stimulus) {<div class="practice-stimulus">{{ q.stimulus }}</div>}
-          @if (audioSource(q); as audio) {<audio controls preload="none" aria-label="Ouvir vocábulo" style="display: block; margin: 0 auto 18px; max-width: 100%"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>}
+          @if (audioSource(q); as audio) {<audio controls preload="none" aria-label="Ouvir vocábulo" class="study-audio"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>}
           <div class="practice-exercise">
             @switch (q.kind) {
               @case ('choice') {<ng-container [ngTemplateOutlet]="answers" [ngTemplateOutletContext]="{q: q, s: s, flash: false}" />}

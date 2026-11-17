@@ -36,7 +36,7 @@ for(const lesson of lessons){
  counts[lesson.area]??={lessons:0,questions:0,levels:new Set()};counts[lesson.area].lessons++;counts[lesson.area].questions+=lesson.questions.length;counts[lesson.area].levels.add(lesson.level);
 }
 for(const c of Object.values(counts))assert.equal(c.levels.size,4);
-for(const path of ['angular.json','src/index.html','src/main.ts','styles.css','core.js','assets/EncodeSans.ttf','assets/GFSDidot.ttf','assets/EncodeSans-OFL.txt','assets/GFSDidot-OFL.txt','LICENSE','CONTENT-LICENSE.md','THIRD_PARTY_NOTICES.md','.nojekyll'])assert(existsSync(new URL(path,root)),path);
+for(const path of ['angular.json','src/index.html','src/main.ts','src/styles.css','src/styles/tokens.css','core.js','assets/MomoTrustDisplay-Regular.ttf','assets/GFSDidot.ttf','assets/MomoTrustDisplay-OFL.txt','assets/GFSDidot-OFL.txt','LICENSE','CONTENT-LICENSE.md','THIRD_PARTY_NOTICES.md','.nojekyll'])assert(existsSync(new URL(path,root)),path);
 // Follow actual runtime links so a newly imported module, stylesheet or font
 // cannot pass checks while missing from the site. Queries are cache versions.
 const checkedFiles=new Set();

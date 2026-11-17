@@ -34,6 +34,9 @@ export class ProgressService {
   completed(area:Area){const state=this.state();return this.content.lessonsFor(area).filter(lesson=>state.lessons[lesson.id]).length;}
   wordState(id:string):ManualWordState|null{return this.state().vocab[id]?.manualState??null;}
   wordLearned(id:string){return isMastered(this.state().vocab[id]);}
+  wordStudyState(id:string):ManualWordState {
+    return this.wordState(id) ?? (this.wordLearned(id) ? 'learned' : this.state().vocab[id]?.attempts ? 'review' : 'unlearned');
+  }
   setWordState(id:string,value:ManualWordState|null){
     if(!this.content.vocabulary.entries.some(word=>word.id===id)||![null,'unlearned','review','learned'].includes(value)||this.wordState(id)===value)return;
     this.mutate(state=>{

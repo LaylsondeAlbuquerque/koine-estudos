@@ -12,10 +12,10 @@ describe('WordLearningToggleComponent', () => {
     fixture.componentInstance.stateChange.subscribe(value => values.push(value));
     const slider = fixture.nativeElement.querySelector('input') as HTMLInputElement;
     slider.value = '1'; slider.dispatchEvent(new Event('input')); fixture.detectChanges();
-    expect(slider.getAttribute('aria-valuetext')).toBe('Revisar');
+    expect(slider.getAttribute('aria-valuetext')).toBe('revisar');
     expect(values).toEqual([]);
     slider.value = '2'; slider.dispatchEvent(new Event('input')); fixture.detectChanges();
-    expect(slider.getAttribute('aria-valuetext')).toBe('Já estudei');
+    expect(slider.getAttribute('aria-valuetext')).toBe('já estudei');
     slider.dispatchEvent(new Event('change'));
     expect(values).toEqual(['learned']);
     fixture.componentRef.setInput('state', 'learned'); fixture.detectChanges();

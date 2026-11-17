@@ -2,7 +2,7 @@
   <section class="study-start">
     <div class="study-glyph" lang="grc">{{ vocabulary() ? 'λέξις' : area() === 'morphology' ? 'λύω' : area() === 'semantics' ? 'σῆμα' : 'σύν' }}</div>
     <span class="eyebrow">{{ levels[progress.level(area())] }} · {{ flash() ? 'Reconhecer e recordar' : 'Aplicar o que você aprendeu' }}</span>
-    <h2 style="margin-top: 12px">{{ title() }}</h2>
+    <h2 class="study-heading">{{ title() }}</h2>
     <p>{{ description() }}</p>
     <div class="study-settings">
       <label class="field">Tamanho da sessão<select id="session-size" [value]="size()" (change)="size.set(+$any($event.target).value)"><option value="5">5 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="10">10 {{ flash() ? 'cartões' : 'exercícios' }}</option><option value="20">20 {{ flash() ? 'cartões' : 'exercícios' }}</option>@if(flash()){<option value="30">30 cartões</option><option value="40">40 cartões</option><option value="0">Todos os cartões do filtro</option>}</select></label>

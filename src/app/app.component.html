@@ -29,16 +29,16 @@
   <div class="search-overlay" (click)="overlayClick($event)"><section class="search-dialog" role="dialog" aria-modal="true" aria-label="Buscar no conteúdo">
    <div class="search-dialog-top"><label class="search-field"><koine-icon name="search" [size]="17"/><span class="sr-only">Buscar em aulas, artigos e vocabulário</span><input id="global-search" type="search" [value]="query()" (input)="query.set($any($event.target).value)" placeholder="Um conceito, uma palavra, uma dúvida…" autocomplete="off"></label><button class="icon-button" (click)="closeSearch()" aria-label="Fechar busca"><koine-icon name="close" [size]="17"/></button></div>
    <div id="search-results">
-    @if(searchTerm().length<2){<p class="muted" style="font-size:11px">Digite pelo menos duas letras. Busque em português ou grego, com ou sem acentos.</p>}
+    @if(searchTerm().length<2){<p class="text-small muted">Digite pelo menos duas letras. Busque em português ou grego, com ou sem acentos.</p>}
     @else{<div class="search-results">
      @for(reading of readings();track reading.id){<a class="search-result" [routerLink]="['/',reading.area,reading.readingType,reading.id]">{{reading.title}}<span>{{reading.readingType==='lesson'?'Aula':'Artigo'}} · {{areas[reading.area].name}} · {{levels[reading.level]}}</span></a>}
      @for(word of words();track word.id){<button class="search-result" (click)="searchWord(word)"><strong class="greek" lang="grc">{{word.lemma}}</strong><span>{{word.meaning}}</span></button>}
-     @if(!readings().length&&!words().length){<p class="muted" style="font-size:11px">Nenhum resultado. Tente um termo mais curto.</p>}
+     @if(!readings().length&&!words().length){<p class="text-small muted">Nenhum resultado. Tente um termo mais curto.</p>}
     </div>}
    </div>
   </section></div>
  }
 } @else {
- <main class="loading"><span class="brand-mark">κ.</span>@if(content.error()){<h1 style="font-size:32px">O estudo ainda não abriu.</h1><p>{{content.error()}} Recarregue a página ou confira a conexão.</p><button class="button button-primary" (click)="reload()">Tentar novamente</button>}@else{<p>Abrindo seu espaço de estudo…</p>}</main>
+ <main class="loading"><span class="brand-mark">κ.</span>@if(content.error()){<h1 class="loading-title">O estudo ainda não abriu.</h1><p>{{content.error()}} Recarregue a página ou confira a conexão.</p><button class="button button-primary" (click)="reload()">Tentar novamente</button>}@else{<p>Abrindo seu espaço de estudo…</p>}</main>
 }
 @if(progress.message()){<div class="toast" role="status">{{progress.message()}}</div>}

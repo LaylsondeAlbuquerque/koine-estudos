@@ -1,6 +1,6 @@
 <section class="vocab-banner">
   <div>
-    <div class="eyebrow" style="color:#b7cbaa">SEU NÚCLEO DE LEITURA</div>
+    <div class="eyebrow">SEU NÚCLEO DE LEITURA</div>
     <h2>300 palavras, muitos reencontros.</h2>
     <p>Os 300 lemas mais frequentes deste repertório somam {{ percent(content.vocabulary.meta.core300?.coveragePercent || 0) }}% das ocorrências do corpus. Isso mede cobertura lexical; interpretar o texto também exige morfologia, sintaxe e contexto.</p>
   </div>
@@ -49,18 +49,18 @@
 <p class="word-mark-help">Use as três posições: à esquerda, não estudei; ao centro, revisar; à direita, já estudei. Os pontos continuam mostrando seus dias com acertos.</p>
 <div id="word-results">
   @if (filtered().length) {
-    <p class="muted" style="font-size:9px;margin-bottom:13px">{{ format(filtered().length) }} {{ filtered().length === 1 ? 'vocábulo encontrado' : 'vocábulos encontrados' }}</p>
+    <p class="word-results-count">{{ format(filtered().length) }} {{ filtered().length === 1 ? 'vocábulo encontrado' : 'vocábulos encontrados' }}</p>
     <div class="vocab-grid">
       @for (word of visibleWords(); track word.id) {
-        <article class="word-card word-entry" [attr.data-word-id]="word.id">
+        <article class="word-card word-entry" [attr.data-word-id]="word.id" [attr.data-learning-state]="progress.wordStudyState(word.id)">
           <button class="word-study" (click)="detailWord.set(word)" [attr.aria-label]="'Consultar ' + word.lemma" aria-haspopup="dialog">
           <span class="word-top">
             <span class="word-rank">#{{ rank(word) }}</span>
-            @if (word.core300) { <span class="pill amber">Núcleo dos 300</span> }
+            @if (word.core300) { <span class="core-badge">Núcleo dos 300</span> }
           </span>
           <span class="greek" lang="grc">{{ word.lemma }}</span>
           <span class="word-meaning">{{ word.meaning }}</span>
-          @if(word.glossStatus==='draft'){<span class="muted" style="font-size:11px">Glosa em revisão</span>}
+          @if(word.glossStatus==='draft'){<span class="gloss-draft">Glosa em revisão</span>}
           <span class="word-bottom">
             <span>{{ word.pos }} · @if(selectedBook()){{{format(bookOccurrences().get(word.id)||0)}} neste livro · {{format(word.frequency)}} no NT}@else{{{format(word.frequency)}} ocorr.}</span>
             <span class="word-state" [attr.aria-label]="successfulDays(word) + ' de 3 dias com acertos'">
@@ -69,7 +69,7 @@
           </span>
           </button>
           <div class="word-mark-panel">
-            <koine-word-learning-toggle [lemma]="word.lemma" [state]="progress.wordState(word.id) || (progress.wordLearned(word.id) ? 'learned' : progress.state().vocab[word.id]?.attempts ? 'review' : 'unlearned')" (stateChange)="markWord(word, $event)"/>
+            <koine-word-learning-toggle [lemma]="word.lemma" [state]="progress.wordStudyState(word.id)" (stateChange)="markWord(word, $event)"/>
           </div>
         </article>
       }

@@ -19,13 +19,13 @@
     <button class="level-button" [class.active]="level() === $index" (click)="progress.setLevel(area(), $index)" [attr.aria-pressed]="level() === $index"><span class="level-no">{{ $index + 1 }}</span>{{ name }}</button>
   }
 </div></div>
-<div class="study-layout tw:min-w-0">
+<div class="study-layout">
 <nav class="study-rail" aria-label="Modos de estudo">
   @for (item of tabs(); track item.key) {
-    <a class="study-rail-link tw:group tw:relative tw:flex tw:items-center tw:justify-center tw:size-12 tw:text-content tw:no-underline tw:border-0 tw:bg-transparent tw:rounded-lg tw:transition-colors tw:duration-150 tw:hover:text-link tw:aria-[current=page]:text-link tw:focus-visible:text-link tw:focus-visible:outline-2 tw:focus-visible:outline-link tw:focus-visible:outline-offset-4 tw:motion-reduce:transition-none" [class.active]="tab() === item.key" [routerLink]="['/', area(), item.key]" [attr.aria-label]="item.title" [attr.aria-current]="tab() === item.key ? 'page' : null"><span class="tw:flex tw:shrink-0 tw:items-center tw:justify-center tw:box-border tw:size-11 tw:border-2 tw:border-solid tw:border-transparent tw:rounded-full tw:transition-[color,border-color,transform] tw:duration-150 tw:group-hover:border-current tw:group-aria-[current=page]:border-current tw:group-focus-visible:border-current tw:group-active:scale-95 tw:motion-reduce:transition-none tw:motion-reduce:transform-none"><koine-icon [name]="item.icon" [size]="24"/></span><span class="study-rail-label tw:absolute tw:right-[calc(100%+12px)] tw:px-2 tw:py-1 tw:rounded tw:bg-content tw:text-canvas tw:text-xs tw:font-semibold tw:leading-normal tw:whitespace-nowrap tw:opacity-0 tw:invisible tw:pointer-events-none tw:transition-[opacity,visibility] tw:duration-150 tw:group-hover:opacity-100 tw:group-hover:visible tw:group-focus-visible:opacity-100 tw:group-focus-visible:visible tw:motion-reduce:transition-none">{{ item.title }}</span></a>
+    <a class="study-rail-link" [class.active]="tab() === item.key" [routerLink]="['/', area(), item.key]" [attr.aria-label]="item.title" [attr.aria-current]="tab() === item.key ? 'page' : null"><span class="study-rail-icon"><koine-icon [name]="item.icon" [size]="24"/></span><span class="study-rail-label">{{ item.title }}</span></a>
   }
 </nav>
-<div class="study-panel tw:min-w-0">
+<div class="study-panel">
 @switch (tab()) {
   @case ('path') {
     <div class="level-summary"><div><h2>Seu percurso · {{ levels[level()] }}</h2><p>{{ levelDescriptions()[level()] }}</p></div><span class="pill">{{ current().length }} aulas</span></div>

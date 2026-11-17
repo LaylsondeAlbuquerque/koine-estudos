@@ -2,7 +2,7 @@
   <section class="article-section">
     <h2>{{ section.heading }}</h2>
     @for (paragraph of paragraphs(section.body); track $index) {
-      <p style="white-space:pre-line">{{ paragraph }}</p>
+      <p class="preserve-line-breaks">{{ paragraph }}</p>
     }
     @if (section.example; as example) {
       <figure class="reading-example">
@@ -29,7 +29,7 @@
       <div class="reading-analysis">
         <h3>{{ analysisHeading() }}</h3>
         @for (paragraph of paragraphs(analysis); track $index) {
-          <p style="white-space:pre-line">{{ paragraph }}</p>
+          <p class="preserve-line-breaks">{{ paragraph }}</p>
         }
       </div>
     }

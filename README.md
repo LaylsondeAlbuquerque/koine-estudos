@@ -86,15 +86,17 @@ npm run preview
 
 Abra [http://127.0.0.1:4181/koine-estudos/](http://127.0.0.1:4181/koine-estudos/). Essa prévia serve somente o diretório compilado.
 
-## Estilos com Tailwind CSS
+## Organização dos estilos
 
-O Angular compila Tailwind CSS 4 pelo plugin PostCSS, sem CDN nem dependência em tempo de execução. `src/styles.css` é a entrada única: importa o design existente na camada `components` e gera as utilidades na camada `utilities`, que tem precedência. O reset existente foi mantido; não há um segundo Preflight.
+O Angular compila Tailwind CSS 4 pelo PostCSS, sem CDN. O HTML usa classes com nomes de componentes; as utilidades Tailwind são reunidas com `@apply` nas folhas locais, junto dos estados e regras responsivas.
 
-As classes usam o prefixo `tw:` para evitar conflitos com nomes antigos. Os tokens semânticos (`tw:text-link`, `tw:bg-canvas`, `tw:font-heading`, por exemplo) acompanham as variáveis dos temas claro e escuro. A variante `tw:dark:` segue `html[data-theme=dark]`. Apenas os arquivos de `src/app` são examinados para gerar as classes.
+- [src/styles.css](src/styles.css): entrada única e ordem dos estilos.
+- [src/styles/tokens.css](src/styles/tokens.css): cores, fontes, medidas compartilhadas e temas claro/escuro.
+- [src/styles/](src/styles/): arquivos separados para base, elementos compartilhados, layout, home, aulas/artigos, estudo, vocabulário e progresso.
+- As folhas `*.component.css` cuidam exclusivamente do respectivo componente.
+- [Guia de edição dos estilos](docs/ESTILOS.md): mapa dos arquivos, exemplos e regras para evitar sobreposições.
 
-O vermelho da identidade visual é sempre o primário do Our Forms (`#E7000B`, equivalente a `red-600`). Use `var(--red)` no CSS ou `tw:text-danger`/`tw:border-danger`/`tw:bg-danger` no Tailwind, inclusive no tema escuro.
-
-A toolbar usa utilidades para os ícones, contorno circular, estados de seleção, hover, foco, toque e movimento reduzido. Seu CSS local conserva apenas o posicionamento flutuante e a disposição em telas de toque. Os estilos específicos das demais telas e da animação permanecem como CSS na camada `components`; a adoção de Tailwind é híbrida, sem reescrita integral desses estilos.
+O vermelho do tema claro permanece `#E7000B`; o escuro usa `#DF5B62`, um vermelho menos saturado. Os estados de vocabulário usam um único mapa em `tokens.css`: não estudei (vermelho), revisar (amarelo), já estudei (azul). O seletor e o selo dos 300 compartilham esse mapa.
 
 ## Estrutura
 
@@ -107,7 +109,6 @@ A toolbar usa utilidades para os ícones, contorno circular, estados de seleçã
 - [src/app/models.ts](src/app/models.ts): tipos e definições do curso.
 - [core.js](core.js) e [catalog.js](catalog.js): lógica pura de revisão, seleção e indexação, com declarações TypeScript.
 - [appearance.js](appearance.js): canvas com ciclo de vida integrado ao componente de início.
-- [ourforms.css](ourforms.css): identidade visual, tipografia e adaptação dos temas claro/escuro, com fontes locais.
 - [angular.json](angular.json): build, estilos e lista explícita dos arquivos públicos.
 - [src/index.html](src/index.html): documento de entrada; a saída compilada fica em `dist/koine/browser/`.
 

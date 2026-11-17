@@ -30,6 +30,7 @@ class MockProgress {
   mutate(update: (state: Progress) => void) { const next = structuredClone(this.state()); update(next); this.state.set(next); }
   wordState(id: string) { return this.state().vocab[id]?.manualState ?? null; }
   wordLearned(id: string) { return isMastered(this.state().vocab[id]); }
+  wordStudyState(id: string) { return this.wordState(id) ?? (this.wordLearned(id) ? 'learned' : this.state().vocab[id]?.attempts ? 'review' : 'unlearned'); }
   readonly setWordState = vi.fn((id: string, manualState: 'unlearned' | 'review' | 'learned' | null) => {
     this.mutate(state => {
       const entry = state.vocab[id] ?? {attempts: 0, correct: 0, dates: [], box: 0, nextReview: '2026-11-07', mastered: false};
@@ -316,7 +317,7 @@ describe('Angular study sessions', () => {
     choose(1);
     expect(progress.setWordState).toHaveBeenLastCalledWith('word-0', 'review');
     expect(slider.value).toBe('1');
-    expect(host.querySelector('.word-learning-label')?.textContent).toContain('Revisar');
+    expect(host.querySelector('.word-learning-label')?.textContent).toContain('revisar');
     expect(study.session()!.answered).toBe(false);expect(study.session()!.index).toBe(0);
     expect(progress.state().answers).toEqual({});
     expect(progress.state().vocab['word-0'].attempts).toBe(0);

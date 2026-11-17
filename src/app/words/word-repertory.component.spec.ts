@@ -184,12 +184,15 @@ describe('WordRepertoryComponent', () => {
     const root = fixture.nativeElement as HTMLElement;
     const word = () => root.querySelector('[data-word-id="word-0"]') as HTMLElement;
     expect(word().querySelector('button button')).toBeNull();
+    expect(word().getAttribute('data-learning-state')).toBe('unlearned');
+    expect(word().querySelector('.core-badge')!.textContent).toContain('Núcleo dos 300');
     const choose = (value: number) => { const input = word().querySelector('input[type=range]') as HTMLInputElement; input.value = String(value); input.dispatchEvent(new Event('change')); };
     choose(2);
     fixture.detectChanges();
     expect(start).not.toHaveBeenCalled();
     expect(progress.wordLearned('word-0')).toBe(true);
-    expect(word().querySelector('.word-learning-label')!.textContent).toContain('Já estudei');
+    expect(word().getAttribute('data-learning-state')).toBe('learned');
+    expect(word().querySelector('.word-learning-label')!.textContent).toContain('já estudei');
     expect((word().querySelector('input[type=range]') as HTMLInputElement).value).toBe('2');
     expect(word().querySelectorAll('.word-state .filled')).toHaveLength(0);
     expect(progress.state().vocab['word-0'].attempts).toBe(0);
@@ -208,7 +211,8 @@ describe('WordRepertoryComponent', () => {
     fixture.detectChanges();
     expect(component.filtered().map(word => word.id)).toEqual(['word-0']);
     expect((word().querySelector('input[type=range]') as HTMLInputElement).value).toBe('1');
-    expect(word().querySelector('.word-learning-label')!.textContent).toContain('Revisar');
+    expect(word().getAttribute('data-learning-state')).toBe('review');
+    expect(word().querySelector('.word-learning-label')!.textContent).toContain('revisar');
     choose(0);
     fixture.detectChanges();
     expect(progress.wordState('word-0')).toBe('unlearned');

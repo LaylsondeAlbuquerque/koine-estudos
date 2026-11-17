@@ -6,7 +6,7 @@
 </div>
 <section class="core-box">
   <div class="core-box-top">
-    <div><span class="eyebrow">Núcleo dos 300</span><h3 style="margin-top:8px">{{ progress.coreMastered() === 300 ? 'Você consolidou os 300 vocábulos prioritários.' : 'Reencontre as palavras que mais aparecem.' }}</h3></div>
+    <div><span class="eyebrow">Núcleo dos 300</span><h3 class="core-title">{{ progress.coreMastered() === 300 ? 'Você consolidou os 300 vocábulos prioritários.' : 'Reencontre as palavras que mais aparecem.' }}</h3></div>
     <span class="core-count">{{ progress.coreMastered() }} <span>/ 300</span></span>
   </div>
   <koine-progress [value]="progress.coreMastered()" [max]="300" />
@@ -25,8 +25,8 @@
 <section class="progress-detail"><h2>Artigos de aprofundamento</h2><p class="muted">{{ readArticles() }} de {{ content.articles.length }} artigos marcados como lidos. Essa leitura é independente da conclusão das aulas.</p></section>
 <div class="backup-panel">
   <div><h3>Leve seu histórico com você</h3><p>Limpar os dados do navegador pode apagar o progresso. Exporte uma cópia e importe-a depois, inclusive em outro aparelho. A importação substitui o histórico deste navegador.</p></div>
-  <div style="display:flex;gap:10px;flex-wrap:wrap">
+  <div class="backup-actions">
     <button class="button button-outline button-small" (click)="progress.exportProgress()"><koine-icon name="download" [size]="13" />Exportar</button>
-    <label class="button button-outline button-small" style="cursor:pointer">Importar<input class="sr-only" type="file" id="import-progress" accept="application/json,.json" (change)="importFile($event)"></label>
+    <label class="button button-outline button-small backup-import">Importar<input class="sr-only" type="file" id="import-progress" accept="application/json,.json" (change)="importFile($event)"></label>
   </div>
 </div>

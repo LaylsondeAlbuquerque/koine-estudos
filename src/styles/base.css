@@ -1,0 +1,571 @@
+/* Reset, tipografia, tabelas e acessibilidade. */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 23px;
+}
+
+h3 {
+  font-size: 19px;
+}
+
+p+p {
+  margin-top: 15px;
+}
+
+small {
+  font-size: 12px;
+}
+
+svg {
+  display: block;
+  flex-shrink: 0;
+}
+
+.greek {
+  font-size: 1.55em;
+}
+
+.skip-link {
+  position: fixed;
+  left: 15px;
+  top: 10px;
+  z-index: 100;
+  transform: translateY(-180%);
+  padding: 10px 16px;
+  background: white;
+  color: var(--navy);
+}
+
+.skip-link:focus {
+  transform: none;
+}
+
+.page-intro {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 25px;
+  margin-bottom: 32px;
+}
+
+.page-intro h1 {
+  font-size: 34px;
+  margin: 8px 0 12px;
+}
+
+.page-intro p {
+  font-size: 14px;
+  color: var(--muted);
+  max-width: 700px;
+}
+
+@media (max-width:800px) {
+  .menu-toggle {
+    display: grid;
+    place-items: center;
+    padding: 7px;
+    margin-left: auto;
+    color: #e5eefb;
+  }
+
+}
+
+@media (max-width:500px) {
+  .menu-toggle {
+    padding: 6px;
+    margin-left: 0;
+  }
+
+  .page-intro h1 {
+    font-size: 28px;
+  }
+
+  .page-intro p {
+    font-size: 12px;
+  }
+
+}
+
+@media (prefers-reduced-motion:reduce) {
+  * {
+    scroll-behavior: auto !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+}
+
+@font-face {
+  font-family: DidotGreek;
+  src: url('../../assets/GFSDidot.ttf') format('truetype');
+  font-display: swap;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+th {
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+tr:last-child td {
+  border-bottom: 0;
+}
+
+td.greek {
+  font-family: var(--greek);
+  font-size: 23px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.study-settings {
+  display: grid;
+  gap: 17px;
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.study-tips {
+  min-width: 0;
+  padding: 5px 0;
+}
+
+.study-tips h3 {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 17px 0;
+}
+
+.question-greek {
+  font-family: var(--greek);
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.65;
+  text-align: center;
+  padding: 24px 10px;
+  color: var(--navy);
+  overflow-wrap: anywhere;
+}
+
+.question-greek.long {
+  font-size: 32px;
+  line-height: 1.75;
+}
+
+.feedback {
+  padding: 20px 22px;
+  margin-top: 23px;
+  border: 1px solid #b8d7c4;
+  border-left: 4px solid #287b4d;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.feedback-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.feedback p {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.order-target {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-content: flex-start;
+  min-height: 106px;
+  max-width: 100%;
+  padding: 18px;
+  margin: 23px 0 18px;
+  border: 1px dashed #94afd0;
+  background: #f3f7fc;
+}
+
+.order-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.progress-line {
+  display: grid;
+  grid-template-columns: 150px minmax(70px,1fr) 70px;
+  align-items: center;
+  gap: 22px;
+  margin: 23px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.progress-line>span:last-child {
+  text-align: right;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.legal-content {
+  max-width: 900px;
+  padding: 30px 34px;
+  overflow-wrap: break-word;
+}
+
+.legal-content h2 {
+  font-family: var(--sans);
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -.3px;
+  margin: 32px 0 17px;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p,
+.legal-content li {
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+.legal-content p+p {
+  margin-top: 15px;
+}
+
+.legal-content ul {
+  padding-left: 20px;
+  margin: 18px 0;
+}
+
+.legal-content li {
+  margin-bottom: 12px;
+}
+
+.legal-content a {
+  color: #0754ba;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width:850px) {
+  .study-tips {
+    padding: 0;
+  }
+
+  .legal-content {
+    max-width: none;
+  }
+
+}
+
+@media (max-width:600px) {
+  th,
+td {
+    padding: 11px 12px;
+  }
+
+  th {
+    font-size: 11px;
+  }
+
+  td {
+    font-size: 13px;
+  }
+
+  td.greek {
+    font-size: 22px;
+  }
+
+  .study-settings {
+    gap: 16px;
+    margin-top: 24px;
+    padding-top: 21px;
+  }
+
+  .question-greek {
+    font-size: 39px;
+    padding: 21px 0;
+  }
+
+  .question-greek.long {
+    font-size: 28px;
+    line-height: 1.7;
+  }
+
+  .feedback {
+    padding: 18px 16px;
+    margin-top: 20px;
+  }
+
+  .feedback-title {
+    align-items: flex-start;
+    font-size: 15px;
+    gap: 9px;
+  }
+
+  .feedback-title svg {
+    margin-top: 3px;
+  }
+
+  .feedback p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .order-target {
+    min-height: 112px;
+    gap: 8px;
+    padding: 14px;
+    margin-top: 20px;
+  }
+
+  .order-options {
+    gap: 9px;
+  }
+
+  .progress-line {
+    grid-template-columns: 90px minmax(40px,1fr) 45px;
+    gap: 12px;
+    font-size: 12px;
+    margin: 21px 0;
+  }
+
+  .progress-line>span:last-child {
+    font-size: 12px;
+  }
+
+  .legal-content {
+    padding: 24px 21px;
+  }
+
+  .legal-content h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    margin: 29px 0 15px;
+  }
+
+  .legal-content p,
+.legal-content li {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+
+  .legal-content ul {
+    padding-left: 18px;
+  }
+
+}
+
+body {
+  transition: background-color .25s,color .25s;
+}
+
+html[data-theme="dark"] .skip-link {
+  background: #eff5ff;
+  color: #0c1018;
+}
+
+html[data-theme="dark"] table {
+  color: #e6eefa;
+}
+
+html[data-theme="dark"] .order-target {
+  background: #111d2e;
+  border-color: #506a8e;
+}
+
+.flash-navigation {
+  max-width: 650px;
+  margin: 26px auto 0;
+  align-items: center;
+}
+
+.flash-navigation>span {
+  max-width: 330px;
+  line-height: 1.8;
+  font-size: 11px;
+}
+
+.challenge-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 17px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.challenge-meta>span:first-child {
+  color: var(--blue);
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.challenge-instruction {
+  font-size: 12px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin: 12px 0 16px;
+}
+
+@media (max-width:600px) {
+  .flash-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 17px;
+  }
+
+  .flash-navigation>span {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .challenge-instruction {
+    font-size: 12px;
+  }
+
+}
+
+html[data-theme=dark] {
+  color-scheme: dark;
+}
+
+html[data-theme] body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+html[data-theme] :is(.greek,[lang=grc]) {
+  font-family: var(--greek);
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: 0;
+}
+
+html[data-theme] ::placeholder {
+  color: var(--muted);
+  opacity: 1;
+}
+
+html[data-theme] table {
+  background: var(--white);
+}
+
+html[data-theme] th {
+  background: var(--soft);
+  color: var(--ink);
+}
+
+html[data-theme] :is(td,th) {
+  border-color: var(--line);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html[data-theme] body {
+    transition: none;
+  }
+
+}
+
+html[data-theme] tbody tr:nth-child(even) {
+  background: var(--soft);
+}
+
+@font-face {
+  font-family: MomoTrust;
+  src: url('../../assets/MomoTrustDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BeVietnam;
+  src: url('../../assets/BeVietnamPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BeVietnam;
+  src: url('../../assets/BeVietnamPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+}
+
+.preserve-line-breaks {
+  white-space: pre-line;
+}
+
+html[data-theme] :is(h1,h2,h3,.brand-name,.footer-wordmark,.brand-mark,.main-nav a,.button,.hero-explore,.level-button,.tab) {
+  font-family: var(--display);
+  font-weight: 400;
+  font-synthesis: none;
+  letter-spacing: 0;
+}

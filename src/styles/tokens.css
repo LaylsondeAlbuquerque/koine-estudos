@@ -1,0 +1,116 @@
+/* Edite aqui as cores, fontes e dimensões compartilhadas do site.
+   O tema escuro só redefine o que muda; os demais valores são herdados. */
+
+:root,
+html[data-theme=light] {
+  --paper: #fdfbf7;
+  --white: #fffefa;
+  --ink: #242422;
+  --muted: #626159;
+  --line: #c7c3b5;
+  --green: #08783e;
+  --blue: #155dfc;
+  --navy: var(--ink);
+  --lime: #f6edb8;
+  --orange: #b84205;
+  --soft: #f3f0e5;
+  --red: #e7000b;
+  --sans: BeVietnam,DidotGreek,Arial,sans-serif;
+  --serif: var(--sans);
+  --greek: DidotGreek,Georgia,serif;
+  --morph: var(--green);
+  --syntax: var(--blue);
+  --vocab: var(--purple);
+  --hero-bg: var(--paper);
+  --hero-ink: var(--ink);
+  --hero-muted: var(--muted);
+  --round-bg: transparent;
+  --round-ink: var(--ink);
+  --soft-shadow: none;
+  --purple: #9810fa;
+  --yellow: #ffdf20;
+  --rule-green: #00a63e;
+  --rule-orange: #ff6900;
+  --rule-red: var(--red);
+  --action: #155dfc;
+  --surface-hover: #f1eee1;
+  --display: MomoTrust,DidotGreek,Arial,sans-serif;
+  --success-bg: #edf6e9;
+  --success-ink: #185b2f;
+  --success-line: #3a8650;
+  --error-bg: #fff0ee;
+  --error-ink: var(--ink);
+  --error-line: var(--red);
+  --selected-bg: #ece7fc;
+  --selected-line: #7843b7;
+  --selected-ink: #4e2378;
+  --logo-ink: #000;
+  --header-bg: var(--yellow);
+  --header-ink: var(--ink);
+  --header-blue: var(--blue);
+  --header-green: var(--green);
+  --header-purple: var(--purple);
+  --header-active: #ff6900;
+  --header-rule: #00a63e;
+  --site-gutter: clamp(80px,6vw,96px);
+  --site-frame-width: min(1120px,calc(100vw - 2 * var(--site-gutter)));
+  --state-unlearned: var(--red);
+  --state-review: #eab308;
+  --state-learned: var(--blue);
+}
+
+html[data-theme=dark] {
+  --hero-bg: #080b12;
+  --hero-ink: #f1f2ff;
+  --hero-muted: #b1b5ce;
+  --round-bg: #202532;
+  --round-ink: #e0e4f5;
+  --soft-shadow: none;
+  --paper: #000;
+  --white: #000;
+  --ink: #f4f4f5;
+  --muted: #aaaab2;
+  --line: #35353b;
+  --green: #99d8ac;
+  --blue: #a7beff;
+  
+  --lime: #25200b;
+  --orange: #ffb285;
+  --soft: #101012;
+  --red: #df5b62;
+
+  --action: #ffdf20;
+  --surface-hover: #111113;
+  --purple: #d5a7ff;
+  --rule-green: #72d99a;
+  --rule-orange: #ffad76;
+  --rule-red: var(--red);
+  --success-bg: #233f2a;
+  --success-ink: #b7e9c5;
+  --success-line: #82bd93;
+  --error-bg: #48282d;
+  --error-ink: var(--ink);
+  --error-line: var(--red);
+  --selected-bg: #382d49;
+  --selected-line: #c294ed;
+  --selected-ink: #ebd5ff;
+  --logo-ink: #fff;
+  --header-bg: #000;
+
+  --header-active: #ffb285;
+  --header-rule: #35353b;
+}
+
+/* Um único mapa de cores para o seletor e os selos de vocabulário. */
+
+[data-learning-state=unlearned] {
+  --learning-color: var(--state-unlearned);
+}
+
+[data-learning-state=review] {
+  --learning-color: var(--state-review);
+}
+
+[data-learning-state=learned] {
+  --learning-color: var(--state-learned);
+}

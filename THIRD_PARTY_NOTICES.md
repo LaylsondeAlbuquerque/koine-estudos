@@ -35,15 +35,6 @@ Transformações: contagens por lema, normalização NFC, correções linguísti
 
 - Fonte: https://github.com/google/fonts/tree/main/ofl/bevietnampro
 
-**Encode Sans** — Copyright 2020 The Encode Project Authors, com nome reservado Encode Sans. Distribuída sob SIL Open Font License 1.1. Arquivo original e aviso em `assets/EncodeSans.ttf` e `assets/EncodeSans-OFL.txt`.
-
-- Fonte: https://github.com/google/fonts/tree/main/ofl/encodesans
-
-
-**Manrope** — projeto Manrope, distribuído pelo repositório Google Fonts sob SIL Open Font License 1.1. Arquivo original e aviso em `assets/Manrope.ttf` e `assets/Manrope-OFL.txt`.
-
-- Fonte: https://github.com/google/fonts/tree/main/ofl/manrope
-
 **GFS Didot** — Greek Font Society, distribuída pelo repositório Google Fonts sob SIL Open Font License 1.1. Arquivo original e aviso em `assets/GFSDidot.ttf` e `assets/GFSDidot-OFL.txt`.
 
 - Fonte: https://github.com/google/fonts/tree/main/ofl/gfsdidot
@@ -80,7 +71,7 @@ A aplicação usa Angular (MIT), RxJS (Apache-2.0) e tslib (0BSD). O build de pr
 
 ## Identidade visual Our Forms
 
-A adaptação visual em `ourforms.css` usa como referência os layouts e estilos de [Our Forms](https://github.com/LaylsondeAlbuquerque/our-forms), de Laylson de Albuquerque, no commit `b8a5c922f5f1dffd5722b08502e0f5f0f6f79b38`. O tema claro conserva sua paleta e linguagem de bordas e tipografia; a versão escura foi elaborada para o Koiné. A animação de grego permanece própria do projeto Koiné.
+A identidade visual organizada em `src/styles/` usa como referência os layouts e estilos de [Our Forms](https://github.com/LaylsondeAlbuquerque/our-forms), de Laylson de Albuquerque, no commit `b8a5c922f5f1dffd5722b08502e0f5f0f6f79b38`. O tema claro conserva sua paleta e linguagem de bordas e tipografia; a versão escura foi elaborada para o Koiné. A animação de grego permanece própria do projeto Koiné.
 
 Código de referência sob MIT, copyright 2025 Laylson de Albuquerque. Aviso integral em `assets/OurForms-MIT.txt`.
 
