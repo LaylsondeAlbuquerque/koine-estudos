@@ -274,7 +274,7 @@ html[data-theme] .vocabulary .formation-heading-icon {
 }
 
 html[data-theme] .vocab-banner {
-  background: var(--soft);
+  background: var(--paper);
   border: 2px solid var(--green);
 }
 
@@ -294,7 +294,7 @@ html[data-theme] .core-box {
   padding: 32px;
   border: 1px solid var(--line);
   border-radius: 0;
-  background: var(--white);
+  background: var(--paper);
 }
 
 html[data-theme] .core-box-top {
