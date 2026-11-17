@@ -55,7 +55,7 @@
             } @else {
               @if (q.greek) {<div class="card-greek" [class.long]="q.greek.length > 30" lang="grc">{{ q.greek }}</div>}
               @if (q.stimulus) {<div class="card-stimulus">{{ q.stimulus }}</div>}
-              <h2>{{ q.prompt }}</h2>
+              @if (q.prompt) {<h2>{{ q.prompt }}</h2>}
               @if (audioSource(q); as audio) {
                 <audio controls preload="none" aria-label="Ouvir vocábulo" class="study-audio"><source [src]="audio">Seu navegador não oferece reprodução de áudio.</audio>
               }
