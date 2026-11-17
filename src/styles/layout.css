@@ -1,15 +1,5 @@
 /* Cabeçalho, navegação, margens da página e rodapé. */
 
-.header-inner {
-  max-width: 1200px;
-  margin: auto;
-  height: 94px;
-  display: flex;
-  gap: 50px;
-  align-items: center;
-  padding: 0 30px;
-}
-
 .wordmark {
   display: flex;
   flex-direction: column;
@@ -180,21 +170,15 @@
 }
 
 @media (min-width:1450px) {
-  .header-inner,
-    .main-nav,
-    .topbar,
-    .content {
+  .main-nav,
+  .topbar,
+  .content {
     max-width: 1260px;
   }
 
 }
 
 @media (max-width:1050px) {
-  .header-inner {
-    gap: 30px;
-    padding: 0 25px;
-  }
-
   .main-nav {
     padding: 0 25px;
     gap: 27px;
@@ -207,12 +191,6 @@
 }
 
 @media (max-width:800px) {
-  .header-inner {
-    height: 81px;
-    gap: 25px;
-    padding: 0 22px;
-  }
-
   .brand-name {
     font-size: 32px;
   }
@@ -287,12 +265,6 @@
 }
 
 @media (max-width:500px) {
-  .header-inner {
-    height: 76px;
-    gap: 15px;
-    padding: 0 18px;
-  }
-
   .brand-name {
     font-size: 31px;
   }
@@ -726,28 +698,18 @@ html[data-theme] .site-header :is(a,button):focus-visible {
 }
 
 @media (min-width:1101px) and (max-width:1280px) {
-  html[data-theme] .site-header .header-inner {
-    gap: 18px;
-  }
-
   html[data-theme] .site-header .main-nav {
     gap: 15px;
   }
 
   html[data-theme] .site-header .main-nav a,
-    html[data-theme] .site-header .main-nav .nav-about {
+  html[data-theme] .site-header .main-nav .nav-about {
     font-size: 15px;
   }
 
 }
 
 @media (max-width:1100px) {
-  html[data-theme] .site-header .header-inner {
-    min-height: 84px;
-    padding: 18px 24px;
-    gap: 15px;
-  }
-
   html[data-theme] .site-header .brand-name {
     font-size: 34px;
   }
@@ -864,8 +826,6 @@ html[data-theme] .site-header .wordmark:hover {
 
 }
 
-html[data-theme] .site-header .header-inner,
-html[data-theme] .layout:has(.session-wrap) .site-header .header-inner,
 html[data-theme] :is(.topbar,.content,.page-footer,.home-section) {
   width: var(--site-frame-width);
   max-width: none;
@@ -873,4 +833,53 @@ html[data-theme] :is(.topbar,.content,.page-footer,.home-section) {
   margin-right: auto;
   padding-left: 0;
   padding-right: 0;
+}
+
+.area-home {
+  min-height: 0;
+}
+
+html[data-theme] .content.area-home {
+  width: 100%;
+  padding: 0;
+}
+
+/* Cabeçalho: mesma margem do conteúdo, sem outra regra de padding lateral. */
+
+html[data-theme] .site-header .header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: var(--site-frame-width);
+  max-width: none;
+  min-height: 96px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 0;
+  gap: 24px;
+}
+
+@media (min-width:1101px) and (max-width:1280px) {
+  html[data-theme] .site-header .header-inner {
+    gap: 18px;
+  }
+
+}
+
+@media (max-width:1100px) {
+  html[data-theme] .site-header .header-inner {
+    min-height: 84px;
+    padding: 18px 0;
+    gap: 15px;
+  }
+
+}
+
+@media (max-width:700px) {
+  html[data-theme] .site-header .header-inner {
+    min-height: 80px;
+    padding: 16px 0;
+    gap: 10px;
+  }
+
 }
