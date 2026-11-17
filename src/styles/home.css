@@ -916,12 +916,7 @@ html[data-theme] .hero-copy h1 {
   font-weight: 400;
   line-height: 1.2;
   letter-spacing: -1px;
-  color: var(--blue);
-}
-
-html[data-theme] .hero-copy h1 span {
-  font-weight: 400;
-  color: var(--green);
+  color: var(--hero-ink);
 }
 
 html[data-theme] .hero-description {

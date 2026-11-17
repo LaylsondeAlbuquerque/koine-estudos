@@ -34,7 +34,7 @@ html[data-theme=light] {
   --syntax: var(--blue);
   --vocab: var(--purple);
   --hero-bg: var(--paper);
-  --hero-ink: var(--ink);
+  --hero-ink: #000;
   --hero-muted: var(--muted);
   --round-bg: transparent;
   --round-ink: var(--ink);
@@ -71,7 +71,7 @@ html[data-theme=light] {
 
 html[data-theme=dark] {
   --hero-bg: #080b12;
-  --hero-ink: #f1f2ff;
+  --hero-ink: #fdfbf7;
   --hero-muted: #b1b5ce;
   --round-bg: #202532;
   --round-ink: #e0e4f5;
