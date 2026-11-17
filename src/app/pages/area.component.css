@@ -19,7 +19,7 @@
 }
 
 .study-rail-link[aria-current=page], .study-rail-link:focus-visible {
-  color: var(--blue);
+  color: var(--purple);
 }
 
 .study-rail-link[aria-current=page] .study-rail-icon, .study-rail-link:focus-visible .study-rail-icon {
@@ -27,7 +27,7 @@
 }
 
 .study-rail-link:focus-visible {
-  outline: 2px solid var(--blue);
+  outline: 2px solid var(--purple);
   outline-offset: 4px;
 }
 
@@ -48,7 +48,7 @@
 }
 
 @media (hover:hover) {
-  .study-rail-link:hover {
+  .study-rail-link:hover:not([aria-current=page]):not(:focus-visible) {
     color: var(--blue);
   }
 
@@ -66,7 +66,7 @@
 .study-rail {
   position: fixed;
   top: 50%;
-  right: calc((100% - var(--site-frame-width))/2 - 60px);
+  right: calc((100% - var(--site-frame-width))/2 - 100px);
   transform: translateY(-50%);
   display: flex;
   flex-direction: column;
@@ -81,7 +81,7 @@
 @media (hover:none) and (min-width:701px) {
   .study-rail {
     width: 72px;
-    right: calc((100% - var(--site-frame-width))/2 - 76px);
+    right: calc((100% - var(--site-frame-width))/2 - 124px);
   }
 
   .study-rail-link {
@@ -119,9 +119,7 @@
 
 @media (max-width:700px) {
   .study-layout {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
+    display: contents;
   }
 
   .study-panel {
@@ -130,7 +128,7 @@
 
   .study-rail {
     position: sticky;
-    top: 12px;
+    top: 0;
     right: auto;
     transform: none;
     flex-direction: row;
@@ -141,7 +139,8 @@
     overflow: visible;
     background: var(--paper);
     padding: 8px 0 12px;
-    border-bottom: 1px solid var(--line);
+    margin-bottom: 28px;
+    border-bottom: var(--ui-line-width) solid var(--line);
   }
 
   .study-rail-link {

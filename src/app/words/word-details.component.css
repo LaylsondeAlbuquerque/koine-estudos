@@ -3,7 +3,7 @@ dialog {
   max-height: 85dvh;
   margin: auto;
   padding: 32px;
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   background: var(--paper);
   color: var(--ink);
   overflow-y: auto;
@@ -44,7 +44,7 @@ h3 {
 
 .form-row {
   padding: 20px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
 }
 
 .form-heading {

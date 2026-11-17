@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   gap: 13px;
-  border: 1px solid #52647e;
+  border: var(--ui-line-width) solid #52647e;
   border-radius: 4px;
   padding: 12px 15px;
   max-width: 530px;
@@ -36,7 +36,7 @@
 
 .header-search kbd {
   margin-left: auto;
-  border: 1px solid #52647e;
+  border: var(--ui-line-width) solid #52647e;
   color: #a7b9d2;
   padding: 0 6px;
   font-family: inherit;
@@ -61,7 +61,7 @@
 }
 
 .nav-container {
-  border-top: 1px solid #ffffff14;
+  border-top: var(--ui-line-width) solid #ffffff14;
   background: #081f3c;
 }
 
@@ -598,7 +598,7 @@ html[data-theme] .header-tools {
 }
 
 html[data-theme] .header-tools .header-tool {
-  border: 1px solid transparent;
+  border: var(--ui-line-width) solid transparent;
   border-radius: 0;
   background: transparent;
   width: 38px;

@@ -292,7 +292,7 @@ html[data-theme] :is(.article-card,.word-card):hover {
 
 html[data-theme] .core-box {
   padding: 32px;
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-radius: 0;
   background: var(--paper);
 }
@@ -352,7 +352,7 @@ html[data-theme] .flash-word-marks {
   max-width: 360px;
   margin: 24px auto 0;
   padding: 20px 0 0;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
   text-align: center;
 }
 
@@ -371,7 +371,7 @@ html[data-theme] .word-entry {
   min-width: 0;
   padding: 0;
   text-align: left;
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
   border-radius: 0;
   background: var(--white);
   color: var(--ink);
@@ -437,7 +437,7 @@ html[data-theme] .word-entry .greek {
   justify-content: space-between;
   gap: 9px;
   padding-top: 12px;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
   font-size: 11px;
   line-height: 1.5;
   color: var(--muted);
@@ -497,7 +497,7 @@ html[data-theme] .word-entry .greek {
   flex-shrink: 0;
   max-width: 100%;
   padding: 3px 6px;
-  border: 1px solid currentColor;
+  border: var(--ui-line-width) solid currentColor;
   background: transparent;
   color: var(--learning-color, var(--state-unlearned));
   font-size: 11px;

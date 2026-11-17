@@ -168,7 +168,7 @@
 }
 
 html[data-theme] .progress-card {
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
 }
 
 html[data-theme] .progress-card strong {

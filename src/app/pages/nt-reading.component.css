@@ -41,7 +41,7 @@
   color: inherit;
   background: var(--white);
   padding: 12px;
-  border: 1px dotted currentColor;
+  border: var(--ui-line-width) dotted currentColor;
   min-height: 48px;
 }
 
@@ -52,7 +52,7 @@
 
 .nt-verse {
   padding: 26px 0;
-  border-bottom: 1px dotted currentColor;
+  border-bottom: var(--ui-line-width) dotted currentColor;
 }
 
 .nt-verse h2 {

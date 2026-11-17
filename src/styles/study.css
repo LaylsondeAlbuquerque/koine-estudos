@@ -40,7 +40,7 @@
   display: flex;
   gap: 16px;
   padding: 21px 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   font-size: 14px;
   line-height: 1.75;
   color: var(--muted);
@@ -96,7 +96,7 @@
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  border: 1px solid #c5d0de;
+  border: var(--ui-line-width) solid #c5d0de;
   border-radius: 4px;
   background: var(--white);
 }
@@ -114,7 +114,7 @@
   min-height: 60px;
   width: 100%;
   padding: 15px 17px;
-  border: 1px solid #c5d0de;
+  border: var(--ui-line-width) solid #c5d0de;
   background: var(--white);
   text-align: left;
   font-size: 16px;
@@ -128,7 +128,7 @@
   flex-shrink: 0;
   width: 28px;
   height: 28px;
-  border: 1px solid #c8d2df;
+  border: var(--ui-line-width) solid #c8d2df;
   font-size: 12px;
   font-weight: 600;
 }
@@ -194,7 +194,7 @@
   width: 100%;
   min-height: 60px;
   padding: 13px 14px;
-  border: 1px solid #c5d0de;
+  border: var(--ui-line-width) solid #c5d0de;
   background: var(--white);
   font-family: var(--sans);
   font-size: 15px;
@@ -244,7 +244,7 @@
   min-height: 44px;
   max-width: 100%;
   padding: 10px 15px;
-  border: 1px solid #b6c5d9;
+  border: var(--ui-line-width) solid #b6c5d9;
   border-bottom-width: 3px;
   background: var(--white);
   font-size: 15px;
@@ -270,7 +270,7 @@
   display: inline-block;
   margin-bottom: 18px;
   padding: 5px 15px;
-  border: 1px solid #d0dced;
+  border: var(--ui-line-width) solid #d0dced;
   border-radius: 3px;
   background: #edf3fc;
   color: #0754ba;
@@ -332,7 +332,7 @@
   max-width: 620px;
   margin: 26px auto 0;
   padding-top: 24px;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
   text-align: left;
 }
 
@@ -851,7 +851,7 @@ html[data-theme="dark"] .result-glyph {
 }
 
 .practice-session .answer-letter {
-  border: 1px solid currentColor;
+  border: var(--ui-line-width) solid currentColor;
   opacity: .7;
 }
 
@@ -959,7 +959,7 @@ html[data-theme="dark"] .result-glyph {
   bottom: 0;
   z-index: 5;
   background: var(--paper);
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
   padding: 22px 12px 18px;
   margin-top: auto;
 }
@@ -994,7 +994,7 @@ html[data-theme] .practice-session .practice-feedback {
   margin: 0 0 19px;
   background: transparent;
   border: 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   border-radius: 0;
   color: var(--ink);
 }
@@ -1287,12 +1287,12 @@ koine-study-session {
 }
 
 html[data-theme] .study-start {
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
   padding: 30px;
 }
 
 html[data-theme] .study-start .study-glyph {
-  border: 1px solid var(--green);
+  border: var(--ui-line-width) solid var(--green);
   background: transparent;
   color: var(--green);
   border-radius: 0;
@@ -1313,7 +1313,7 @@ html[data-theme] .study-selection-note {
 }
 
 html[data-theme] .tip-num {
-  border: 1px solid var(--blue);
+  border: var(--ui-line-width) solid var(--blue);
   background: transparent;
   color: var(--blue);
 }
@@ -1325,7 +1325,7 @@ html[data-theme] .tip-row strong {
 
 html[data-theme] .notice {
   background: var(--soft);
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
   border-radius: 0;
   color: var(--muted);
 }
@@ -1339,7 +1339,7 @@ html[data-theme] .study-card {
 
 html[data-theme] .deck-frame:before,
 html[data-theme] .deck-frame:after {
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-radius: 0;
   background: var(--soft);
   box-shadow: none;
@@ -1362,7 +1362,7 @@ html[data-theme] .study-card h2 {
 
 html[data-theme] .flash-session .answer,
 html[data-theme] .practice-session .answer {
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-bottom-width: 2px;
   border-radius: 0;
   background: var(--white);
@@ -1431,7 +1431,7 @@ html[data-theme] .practice-question h2 {
 html[data-theme] .practice-session .match-button {
   background: var(--white);
   color: var(--ink);
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-bottom-width: 2px;
   border-radius: 0;
 }
@@ -1439,7 +1439,7 @@ html[data-theme] .practice-session .match-button {
 html[data-theme] .practice-session .token {
   background: var(--white);
   color: var(--ink);
-  border: 1px solid var(--purple);
+  border: var(--ui-line-width) solid var(--purple);
   border-bottom-width: 2px;
   border-radius: 0;
 }
@@ -1450,13 +1450,13 @@ html[data-theme] .practice-session .order-target {
 }
 
 html[data-theme] .practice-session .parse-grid select {
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-bottom-width: 2px;
   border-radius: 0;
 }
 
 html[data-theme] .session-result {
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
 }
 
 @media (max-width:600px) {

@@ -152,7 +152,7 @@ th {
 th,
 td {
   padding: 12px 15px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   vertical-align: top;
 }
 
@@ -172,7 +172,7 @@ td.greek {
   gap: 17px;
   margin-top: 28px;
   padding-top: 24px;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
 }
 
 .study-tips {
@@ -207,7 +207,7 @@ td.greek {
 .feedback {
   padding: 20px 22px;
   margin-top: 23px;
-  border: 1px solid #b8d7c4;
+  border: var(--ui-line-width) solid #b8d7c4;
   border-left: 4px solid #287b4d;
   font-size: 14px;
   line-height: 1.75;
@@ -237,7 +237,7 @@ td.greek {
   max-width: 100%;
   padding: 18px;
   margin: 23px 0 18px;
-  border: 1px dashed #94afd0;
+  border: var(--ui-line-width) dashed #94afd0;
   background: #f3f7fc;
 }
 

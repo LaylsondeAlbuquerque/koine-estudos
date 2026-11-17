@@ -368,7 +368,7 @@
 .article-head {
   padding-bottom: 26px;
   margin-bottom: 30px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
 }
 
 .article-head .eyebrow {
@@ -445,7 +445,7 @@
 }
 
 .example-box {
-  border: 1px solid #c9d8ec;
+  border: var(--ui-line-width) solid #c9d8ec;
   border-left: 4px solid var(--blue);
   padding: 20px 22px;
   margin: 18px 0;
@@ -475,13 +475,13 @@
   max-width: 100%;
   overflow-x: auto;
   margin: 20px 0;
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   overscroll-behavior-x: contain;
 }
 
 .references {
   padding-top: 22px;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
   font-size: 12px;
   line-height: 1.8;
   color: var(--muted);
@@ -705,7 +705,7 @@ html[data-theme="dark"] :is(.article-card .text-link,.article-section a,.legal-c
 }
 
 .deep-article-card {
-  border-top-width: 1px;
+  border-top-width: var(--ui-line-width);
   border-radius: 15px;
   padding: 27px;
   min-height: 320px;
@@ -723,7 +723,7 @@ html[data-theme="dark"] :is(.article-card .text-link,.article-section a,.legal-c
   color: var(--muted);
   margin: 17px 0 12px;
   padding-top: 14px;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
   width: 100%;
 }
 
@@ -742,7 +742,7 @@ html[data-theme="dark"] :is(.article-card .text-link,.article-section a,.legal-c
   gap: 10px;
   padding: 14px 0;
   margin: -6px 0 26px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   color: var(--muted);
   font-size: 12px;
   line-height: 1.8;
@@ -755,7 +755,7 @@ html[data-theme="dark"] :is(.article-card .text-link,.article-section a,.legal-c
 .lesson-deeper {
   margin: 34px 0;
   padding: 24px 25px;
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-left: 3px solid var(--blue);
 }
 
@@ -797,8 +797,8 @@ html[data-theme="dark"] :is(.article-card .text-link,.article-section a,.legal-c
 
 .discussion-questions {
   padding: 25px 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   margin: 32px 0;
 }
 
@@ -996,7 +996,7 @@ html[data-theme] .formation-heading .eyebrow {
 html[data-theme] .level-bar {
   background: transparent;
   border: 0;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   padding: 20px 24px 24px;
 }
 
@@ -1062,13 +1062,13 @@ html[data-theme] .level-summary h2 {
 html[data-theme] .lesson-list {
   background: transparent;
   border: 0;
-  border-top: 1px solid var(--line);
+  border-top: var(--ui-line-width) solid var(--line);
 }
 
 html[data-theme] .lesson-row {
   padding: 28px 24px;
   gap: 24px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   background: transparent;
 }
 
@@ -1081,7 +1081,7 @@ html[data-theme] .lesson-row:hover {
 }
 
 html[data-theme] .lesson-step {
-  border: 1px solid var(--blue);
+  border: var(--ui-line-width) solid var(--blue);
   background: transparent;
   color: var(--blue);
   border-radius: 0;
@@ -1104,7 +1104,7 @@ html[data-theme] .lesson-row-actions .text-link {
 }
 
 html[data-theme] .article-card {
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
   padding: 28px;
 }
 
@@ -1153,7 +1153,7 @@ html[data-theme] .article-section p {
 
 html[data-theme] .article-aside {
   background: var(--soft);
-  border: 1px dashed var(--purple);
+  border: var(--ui-line-width) dashed var(--purple);
   box-shadow: none;
   border-radius: 0;
 }
@@ -1390,7 +1390,7 @@ html[data-theme] .course-guide p+p {
 
 html[data-theme] .course-guide details {
   margin-top: 20px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   padding-bottom: 20px;
 }
 
@@ -1412,7 +1412,7 @@ html[data-theme] .course-guide summary:focus-visible {
 
 html[data-theme] .course-module {
   padding: 28px 24px 24px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   margin-top: 16px;
 }
 

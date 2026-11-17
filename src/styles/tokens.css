@@ -8,6 +8,7 @@ html[data-theme=light] {
   --ink: #242422;
   --muted: #626159;
   --line: #c7c3b5;
+  --ui-line-width: 2px;
   --green: #08783e;
   --blue: #155dfc;
   --navy: var(--ink);
@@ -52,7 +53,7 @@ html[data-theme=light] {
   --header-purple: var(--purple);
   --header-active: #ff6900;
   --header-rule: #00a63e;
-  --site-gutter: clamp(80px,6vw,96px);
+  --site-gutter: clamp(136px,10vw,160px);
   --site-frame-width: min(1120px,calc(100vw - 2 * var(--site-gutter)));
   --state-unlearned: var(--red);
   --state-review: #eab308;

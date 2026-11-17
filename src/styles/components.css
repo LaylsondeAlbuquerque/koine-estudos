@@ -50,7 +50,7 @@ select {
   align-items: center;
   justify-content: center;
   gap: 11px;
-  border: 1px solid transparent;
+  border: var(--ui-line-width) solid transparent;
 }
 
 .text-link {
@@ -141,7 +141,7 @@ input[type=search] {
   max-width: 100%;
   min-height: 44px;
   padding: 11px 13px;
-  border: 1px solid #b8c5d6;
+  border: var(--ui-line-width) solid #b8c5d6;
   border-radius: 4px;
   font-family: var(--sans);
   font-size: 15px;
@@ -196,7 +196,7 @@ select {
 
 .empty-state {
   padding: 38px 28px;
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-radius: 5px;
   background: var(--white);
   text-align: center;
@@ -261,7 +261,7 @@ select {
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  border: 1px solid #c5d0de;
+  border: var(--ui-line-width) solid #c5d0de;
   border-radius: 4px;
 }
 
@@ -284,7 +284,7 @@ select {
   width: 100%;
   min-width: 0;
   padding: 16px 4px;
-  border-bottom: 1px solid var(--line);
+  border-bottom: var(--ui-line-width) solid var(--line);
   text-align: left;
   font-size: 15px;
   line-height: 1.65;
@@ -510,13 +510,13 @@ html[data-theme] .text-link:hover {
 
 html[data-theme] .icon-button {
   background: var(--white);
-  border: 1px dashed var(--line);
+  border: var(--ui-line-width) dashed var(--line);
   color: var(--ink);
 }
 
 html[data-theme] .progress-track {
   background: var(--soft);
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
 }
 
 html[data-theme] .progress-fill {
@@ -592,7 +592,7 @@ html[data-theme] .search-dialog-top .icon-button {
   line-height: 1.4;
   white-space: nowrap;
   flex-shrink: 0;
-  border: 1px solid var(--green);
+  border: var(--ui-line-width) solid var(--green);
   border-radius: 0;
   background: var(--soft);
   color: var(--green);
@@ -615,7 +615,7 @@ html[data-theme] :is(.formation-card,.quick-card,.discovery-card,.formation-head
 html[data-theme] .article-layout>article {
   background: var(--white);
   color: var(--ink);
-  border: 1px solid var(--line);
+  border: var(--ui-line-width) solid var(--line);
   border-radius: 0;
   box-shadow: none;
 }

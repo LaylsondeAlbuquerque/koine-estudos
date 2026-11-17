@@ -1,5 +1,5 @@
 <header [class]="'formation-heading ' + area()">
-  <div class="formation-heading-icon"><koine-icon [name]="area()" [size]="32"/></div>
+  <div class="formation-heading-icon"></div>
   <div><div class="eyebrow">FORMAÇÃO · GREGO KOINÉ</div><h1>{{ areas[area()].name }}</h1><p>{{ areas[area()].focus }}</p>
     <div class="formation-info"><span><koine-icon name="path" [size]="14"/>{{ allLessons().length }} aulas</span><span><koine-icon name="book" [size]="14"/>{{ content.articlesFor(area()).length }} artigos</span>@if (showLevels()) {<span><koine-icon name="path" [size]="14"/>4 níveis</span>}@if (moduleCount()) {<span>{{ moduleCount() }} módulos</span>}<span><koine-icon name="practice" [size]="14"/>{{ questionCount() }} exercícios</span>@if (area() === 'vocabulary') {<span>{{ number.format(content.vocabulary.entries.length) }} vocábulos</span>}</div>
   </div>
