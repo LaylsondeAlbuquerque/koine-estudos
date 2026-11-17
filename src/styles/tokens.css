@@ -73,12 +73,10 @@ html[data-theme=dark] {
   --line: #35353b;
   --green: #99d8ac;
   --blue: #a7beff;
-  
   --lime: #25200b;
   --orange: #ffb285;
   --soft: #101012;
   --red: #df5b62;
-
   --action: #ffdf20;
   --surface-hover: #111113;
   --purple: #d5a7ff;
@@ -96,7 +94,6 @@ html[data-theme=dark] {
   --selected-ink: #ebd5ff;
   --logo-ink: #fff;
   --header-bg: #000;
-
   --header-active: #ffb285;
   --header-rule: #35353b;
 }

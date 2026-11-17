@@ -1362,7 +1362,7 @@ html[data-theme] .lesson-row-actions {
 
 @media (prefers-reduced-motion:reduce) {
   html[data-theme] .site-header .main-nav a,
-html[data-theme] .tabs .tab {
+  html[data-theme] .tabs .tab {
     transition: none;
   }
 

@@ -516,7 +516,8 @@ html[data-theme] .word-entry .greek {
     padding: 0 13px 16px;
   }
 
-  .word-mark-help, .core-badge {
+  .word-mark-help,
+  .core-badge {
     font-size: 10px;
   }
 

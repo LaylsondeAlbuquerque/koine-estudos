@@ -549,8 +549,8 @@
 
 @media (prefers-reduced-motion:reduce) {
   .article-card,
-.answer,
-.match-button {
+  .answer,
+  .match-button {
     transition: none;
   }
 
@@ -1039,7 +1039,7 @@ html[data-theme=dark] .practice-session .parse-mark.is-wrong {
 
 @media (max-width:600px) {
   .session-wrap.flash-session,
-.practice-session {
+  .practice-session {
     max-width: 100%;
   }
 
@@ -1190,7 +1190,7 @@ html[data-theme=dark] .practice-session .parse-mark.is-wrong {
   }
 
   .practice-stimulus,
-.card-stimulus {
+  .card-stimulus {
     font-size: 24px;
   }
 
@@ -1202,7 +1202,7 @@ html[data-theme=dark] .practice-session .parse-mark.is-wrong {
   }
 
   .practice-session .progress-fill,
-.practice-session .answer {
+  .practice-session .answer {
     transition: none;
   }
 
@@ -1284,16 +1284,6 @@ koine-word-repertory,
 koine-study-landing,
 koine-study-session {
   display: contents;
-}
-
-html[data-theme] .site-header .header-inner,
-html[data-theme] .layout:has(.session-wrap) .site-header .header-inner {
-  min-height: 96px;
-  height: auto;
-  padding: 20px 32px;
-  gap: 24px;
-  justify-content: space-between;
-  align-items: center;
 }
 
 html[data-theme] .study-start {
@@ -1470,13 +1460,6 @@ html[data-theme] .session-result {
 }
 
 @media (max-width:600px) {
-  html[data-theme] .site-header .header-inner,
-html[data-theme] .layout:has(.session-wrap) .site-header .header-inner {
-    padding: 16px 18px;
-    min-height: 80px;
-    gap: 10px;
-  }
-
   html[data-theme] .study-start {
     padding: 24px 20px;
   }

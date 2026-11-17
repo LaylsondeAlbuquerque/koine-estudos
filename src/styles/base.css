@@ -321,7 +321,7 @@ td.greek {
 
 @media (max-width:600px) {
   th,
-td {
+  td {
     padding: 11px 12px;
   }
 
@@ -406,7 +406,7 @@ td {
   }
 
   .legal-content p,
-.legal-content li {
+  .legal-content li {
     font-size: 14px;
     line-height: 1.85;
   }
