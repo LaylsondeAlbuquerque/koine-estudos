@@ -22,6 +22,7 @@
   --color-line: var(--line);
   --color-link: var(--blue);
   --color-success: var(--green);
+  --color-danger: var(--red);
   --color-vocabulary: var(--purple);
   --color-highlight: var(--yellow);
   --color-accent: var(--orange);

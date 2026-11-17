@@ -92,6 +92,8 @@ O Angular compila Tailwind CSS 4 pelo plugin PostCSS, sem CDN nem dependência e
 
 As classes usam o prefixo `tw:` para evitar conflitos com nomes antigos. Os tokens semânticos (`tw:text-link`, `tw:bg-canvas`, `tw:font-heading`, por exemplo) acompanham as variáveis dos temas claro e escuro. A variante `tw:dark:` segue `html[data-theme=dark]`. Apenas os arquivos de `src/app` são examinados para gerar as classes.
 
+O vermelho da identidade visual é sempre o primário do Our Forms (`#E7000B`, equivalente a `red-600`). Use `var(--red)` no CSS ou `tw:text-danger`/`tw:border-danger`/`tw:bg-danger` no Tailwind, inclusive no tema escuro.
+
 A toolbar usa utilidades para os ícones, contorno circular, estados de seleção, hover, foco, toque e movimento reduzido. Seu CSS local conserva apenas o posicionamento flutuante e a disposição em telas de toque. Os estilos específicos das demais telas e da animação permanecem como CSS na camada `components`; a adoção de Tailwind é híbrida, sem reescrita integral desses estilos.
 
 ## Estrutura
