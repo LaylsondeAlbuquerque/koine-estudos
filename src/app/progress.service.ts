@@ -35,12 +35,12 @@ export class ProgressService {
   wordState(id:string):ManualWordState|null{return this.state().vocab[id]?.manualState??null;}
   wordLearned(id:string){return isMastered(this.state().vocab[id]);}
   setWordState(id:string,value:ManualWordState|null){
-    if(!this.content.vocabulary.entries.some(word=>word.id===id)||![null,'review','learned'].includes(value)||this.wordState(id)===value)return;
+    if(!this.content.vocabulary.entries.some(word=>word.id===id)||![null,'unlearned','review','learned'].includes(value)||this.wordState(id)===value)return;
     this.mutate(state=>{
       const entry=state.vocab[id]??={attempts:0,correct:0,dates:[],box:0,nextReview:localDate(),mastered:false};
       if(value===null)delete entry.manualState;else entry.manualState=value;
     });
-    this.toast(value==='review'?'Palavra marcada para revisar.':value==='learned'?'Palavra marcada como já aprendida.':'Marcação removida. O acompanhamento automático foi retomado.');
+    this.toast(value==='unlearned'?'Palavra marcada como não estudada.':value==='review'?'Palavra marcada para revisar.':value==='learned'?'Palavra marcada como já aprendida.':'Marcação removida. O acompanhamento automático foi retomado.');
   }
   masteredCount(){const state=this.state();return this.content.vocabulary.entries.filter(word=>isMastered(state.vocab[word.id])).length;}
   coreMastered(){const state=this.state();return this.content.vocabulary.entries.filter(word=>word.core300&&isMastered(state.vocab[word.id])).length;}

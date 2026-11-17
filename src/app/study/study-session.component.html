@@ -66,12 +66,8 @@
         </div>
         @if (currentWord(); as word) {
           <div class="flash-word-marks">
-            <p class="word-learning-label" [class.is-review]="progress.wordState(word.id) === 'review'" [class.is-learned]="progress.wordLearned(word.id)">{{ wordStateLabel(word.id) }}</p>
-            <div class="word-mark-actions" [attr.aria-label]="'Organizar revisão de ' + word.lemma">
-              <button class="word-mark-button review" [attr.aria-pressed]="progress.wordState(word.id) === 'review'" [attr.aria-label]="'Revisar ' + word.lemma" (click)="markWord(word.id, 'review')"><koine-icon name="cards" [size]="14"/>Revisar</button>
-              <button class="word-mark-button learned" [attr.aria-pressed]="progress.wordState(word.id) === 'learned'" [attr.aria-label]="'Já aprendida: ' + word.lemma" (click)="markWord(word.id, 'learned')"><koine-icon name="check" [size]="14"/>Já aprendida</button>
-            </div>
-            <p class="word-mark-note">Clique novamente na marcação selecionada para removê-la. Marcar uma palavra não responde ao cartão.</p>
+            <koine-word-learning-toggle [lemma]="word.lemma" [state]="progress.wordState(word.id) || (progress.wordLearned(word.id) ? 'learned' : progress.state().vocab[word.id]?.attempts ? 'review' : 'unlearned')" (stateChange)="markWord(word.id, $event)"/>
+            <p class="word-mark-note">Arraste ou toque no controle para escolher o estado. Isso não responde ao cartão.</p>
           </div>
         }
         @if (s.answered) {

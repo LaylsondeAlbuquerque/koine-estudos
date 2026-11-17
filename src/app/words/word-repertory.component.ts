@@ -1,3 +1,4 @@
+import {WordLearningToggleComponent} from './word-learning-toggle.component';
 import {ChangeDetectionStrategy, Component, Injectable, computed, inject, input, signal} from '@angular/core';
 import {ContentService} from '../content.service';
 import {ProgressService} from '../progress.service';
@@ -33,7 +34,7 @@ export class RepertoryViewState {
 @Component({
   selector: 'koine-word-repertory',
   standalone: true,
-  imports: [IconComponent, WordDetailsComponent],
+  imports: [WordLearningToggleComponent, IconComponent, WordDetailsComponent],
   templateUrl: './word-repertory.component.html',
   styles: ':host {display: contents}',
   changeDetection: ChangeDetectionStrategy.OnPush
@@ -82,13 +83,9 @@ export class WordRepertoryComponent {
   percent(value: number): string { return this.percentFormat.format(value); }
   rank(word: Word): string { return String(word.rank).padStart(3, '0'); }
   successfulDays(word: Word): number { return Math.min(this.progress.state().vocab[word.id]?.dates?.length || 0, 3); }
-  learningLabel(word: Word): string {
-    if (this.progress.wordState(word.id) === 'review') return 'Marcada para revisar';
-    if (this.progress.wordLearned(word.id)) return 'Já aprendida';
-    return 'Ainda não aprendida';
-  }
-  markWord(word: Word, state: 'review' | 'learned'): void {
-    this.progress.setWordState(word.id, this.progress.wordState(word.id) === state ? null : state);
+
+  markWord(word: Word, state: 'unlearned' | 'review' | 'learned'): void {
+    this.progress.setWordState(word.id, state);
   }
 
   changeQuery(event: Event): void { this.query.set((event.target as HTMLInputElement).value); this.page.set(0); }

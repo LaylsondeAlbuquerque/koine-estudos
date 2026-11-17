@@ -46,7 +46,7 @@
     </select>
   </label>
 </div>
-<p class="word-mark-help">Marque uma palavra para revisar ou como já aprendida. Para remover uma marcação, selecione o mesmo botão novamente. Os pontos continuam mostrando seus dias com acertos.</p>
+<p class="word-mark-help">Use as três posições: à esquerda, não estudei; ao centro, revisar; à direita, já aprendi. Os pontos continuam mostrando seus dias com acertos.</p>
 <div id="word-results">
   @if (filtered().length) {
     <p class="muted" style="font-size:9px;margin-bottom:13px">{{ format(filtered().length) }} {{ filtered().length === 1 ? 'vocábulo encontrado' : 'vocábulos encontrados' }}</p>
@@ -69,11 +69,7 @@
           </span>
           </button>
           <div class="word-mark-panel">
-            <p class="word-learning-label" [class.is-review]="progress.wordState(word.id) === 'review'" [class.is-learned]="progress.wordLearned(word.id)">{{ learningLabel(word) }}</p>
-            <div class="word-mark-actions">
-              <button class="word-mark-button review" (click)="markWord(word, 'review')" [attr.aria-pressed]="progress.wordState(word.id) === 'review'" [attr.aria-label]="'Marcar ' + word.lemma + ' para revisar'" [title]="progress.wordState(word.id) === 'review' ? 'Remover marcação de revisão' : 'Marcar para revisar'"><koine-icon name="clock" [size]="13" />Revisar</button>
-              <button class="word-mark-button learned" (click)="markWord(word, 'learned')" [attr.aria-pressed]="progress.wordState(word.id) === 'learned'" [attr.aria-label]="'Marcar ' + word.lemma + ' como já aprendida'" [title]="progress.wordState(word.id) === 'learned' ? 'Remover marcação de já aprendida' : 'Marcar como já aprendida'"><koine-icon name="check" [size]="13" />Já aprendida</button>
-            </div>
+            <koine-word-learning-toggle [lemma]="word.lemma" [state]="progress.wordState(word.id) || (progress.wordLearned(word.id) ? 'learned' : progress.state().vocab[word.id]?.attempts ? 'review' : 'unlearned')" (stateChange)="markWord(word, $event)"/>
           </div>
         </article>
       }

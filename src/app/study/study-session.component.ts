@@ -1,3 +1,4 @@
+import {WordLearningToggleComponent} from '../words/word-learning-toggle.component';
 import {ChangeDetectionStrategy, Component, computed, inject} from '@angular/core';
 import {NgTemplateOutlet} from '@angular/common';
 import {RouterLink} from '@angular/router';
@@ -10,7 +11,7 @@ import {StudyQuestion, StudySessionService} from './study-session.service';
 
 @Component({
   selector: 'koine-study-session',
-  imports: [NgTemplateOutlet, RouterLink, IconComponent, ProgressBarComponent],
+  imports: [WordLearningToggleComponent, NgTemplateOutlet, RouterLink, IconComponent, ProgressBarComponent],
   templateUrl: './study-session.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {style: 'display: contents'}
@@ -42,13 +43,10 @@ export class StudySessionComponent {
     return question.pairs?.every(pair => /^[\u0370-\u03ff\u1f00-\u1fff]$/u.test(pair.left.normalize('NFC')) && /^[A-Za-zÀ-ÿ -]{1,20}$/.test(pair.right)) ?? false;
   }
   selectValue(event: Event): string { return (event.target as HTMLSelectElement).value; }
-  markWord(wordId: string, state: 'review' | 'learned'): void {
-    this.progress.setWordState(wordId, this.progress.wordState(wordId) === state ? null : state);
+  markWord(wordId: string, state: 'unlearned' | 'review' | 'learned'): void {
+    this.progress.setWordState(wordId, state);
   }
-  wordStateLabel(wordId: string): string {
-    const manual = this.progress.wordState(wordId);
-    return manual === 'review' ? 'Marcada para revisar' : manual === 'learned' ? 'Já aprendida · marcada por você' : this.progress.wordLearned(wordId) ? 'Já aprendida · pelos acertos' : 'Ainda não aprendida';
-  }
+
   audioSource(question: StudyQuestion): string | null {
     const source = question.audio;
     return source && !source.includes('..') && /^(?:\.\/)?assets\/audio\/[a-zA-Z0-9_./-]+\.(?:mp3|ogg|wav)$/i.test(source) ? source : null;

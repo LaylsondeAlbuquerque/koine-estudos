@@ -124,4 +124,19 @@ describe('ProgressService compatibility',()=>{
   await progress.importProgress({size:100,text:async()=>JSON.stringify(invalid)} as File);
   expect(progress.state()).toBe(saved);
  });
+ it('persists not-studied even for words already mastered automatically',()=>{
+  const progress=TestBed.inject(ProgressService);
+  let automatic;
+  for(const day of ['2026-10-20','2026-10-23','2026-10-30'])automatic=reviewAnswer(automatic,true,day);
+  progress.mutate(state=>state.vocab['word-a']=automatic!);
+  expect(progress.wordLearned('word-a')).toBe(true);
+  progress.setWordState('word-a','unlearned');
+  expect(progress.wordLearned('word-a')).toBe(false);
+  expect(progress.coreMastered()).toBe(0);
+  expect(progress.state().vocab['word-a'].dates).toEqual(automatic!.dates);
+  const restored=TestBed.runInInjectionContext(()=>new ProgressService());
+  expect(restored.wordState('word-a')).toBe('unlearned');
+  expect(restored.wordLearned('word-a')).toBe(false);
+ });
+
 });

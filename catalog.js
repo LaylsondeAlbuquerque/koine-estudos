@@ -72,7 +72,7 @@ export function createCatalog(lessons, articles, words) {
         matchesWordState(reviews[word.id], state) &&
         (!['mastered', 'marked', 'unlearned'].includes(filter) || matchesWordState(reviews[word.id], filter)) &&
         (filter !== 'due' || isDue(reviews[word.id], day)) &&
-        (filter !== 'new' || !reviews[word.id] || reviews[word.id].attempts === 0)
+        (filter !== 'new' || matchesWordState(reviews[word.id], 'new'))
       ).map(item => item.value);
     }
   };

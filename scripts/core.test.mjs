@@ -233,3 +233,22 @@ test('new semantic levels validate without rejecting older backups',()=>{
  for(const semantics of [0,1,2,3])assert.equal(validProgress({...old,levels:{...old.levels,semantics}}),true);
  for(const semantics of [-1,4,'2',null])assert.equal(validProgress({...old,levels:{...old.levels,semantics}}),false);
 });
+
+
+test('not-studied overrides automatic mastery without deleting history and remains a valid backup',()=>{
+ let automatic;
+ for(const day of ['2026-10-20','2026-10-23','2026-10-30'])automatic=reviewAnswer(automatic,true,day);
+ const reset={...automatic,manualState:'unlearned'};
+ assert.equal(isMastered(reset),false);
+ assert.equal(isDue(reset,'2026-12-01'),false);
+ assert.equal(validProgress({...blank(),vocab:{a:reset}}),true);
+ const word={id:'a',rank:1,level:0,frequency:20};
+ assert.equal(selectWords([word],{a:reset},{filter:'new'}).length,1);
+ assert.equal(selectWords([word],{a:reset},{state:'mastered'}).length,0);
+ assert.deepEqual(reset.dates,automatic.dates);
+ assert.equal(coverage([word],{a:reset},100),0);
+ const resumed=reviewAnswer(reset,true,'2026-11-17');
+ assert.equal(resumed.manualState,undefined);
+ assert.equal(resumed.attempts,automatic.attempts+1);
+ assert.equal(reset.manualState,'unlearned');
+});
