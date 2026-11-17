@@ -1,6 +1,17 @@
 /* Edite aqui as cores, fontes e dimensões compartilhadas do site.
    O tema escuro só redefine o que muda; os demais valores são herdados. */
 
+:root {
+  --site-gutter: clamp(136px,10vw,160px);
+  --site-frame-width: min(1120px,calc(100vw - 2 * var(--site-gutter)));
+}
+
+@media (max-width:700px) {
+  :root {
+    --site-gutter: 20px;
+  }
+}
+
 :root,
 html[data-theme=light] {
   --paper: #fdfbf7;
@@ -53,8 +64,6 @@ html[data-theme=light] {
   --header-purple: var(--purple);
   --header-active: #ff6900;
   --header-rule: #00a63e;
-  --site-gutter: clamp(136px,10vw,160px);
-  --site-frame-width: min(1120px,calc(100vw - 2 * var(--site-gutter)));
   --state-unlearned: var(--red);
   --state-review: #eab308;
   --state-learned: var(--blue);

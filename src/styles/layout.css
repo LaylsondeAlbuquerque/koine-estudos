@@ -819,13 +819,6 @@ html[data-theme] .site-header .wordmark:hover {
   opacity: 1;
 }
 
-@media (max-width:700px) {
-  :root {
-    --site-gutter: 20px;
-  }
-
-}
-
 html[data-theme] :is(.topbar,.content,.page-footer,.home-section) {
   width: var(--site-frame-width);
   max-width: none;
