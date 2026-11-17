@@ -15,7 +15,7 @@ describe('WordLearningToggleComponent', () => {
     expect(slider.getAttribute('aria-valuetext')).toBe('Revisar');
     expect(values).toEqual([]);
     slider.value = '2'; slider.dispatchEvent(new Event('input')); fixture.detectChanges();
-    expect(slider.getAttribute('aria-valuetext')).toBe('Já aprendi');
+    expect(slider.getAttribute('aria-valuetext')).toBe('Já estudei');
     slider.dispatchEvent(new Event('change'));
     expect(values).toEqual(['learned']);
     fixture.componentRef.setInput('state', 'learned'); fixture.detectChanges();

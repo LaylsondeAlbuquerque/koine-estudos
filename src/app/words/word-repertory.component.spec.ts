@@ -189,7 +189,7 @@ describe('WordRepertoryComponent', () => {
     fixture.detectChanges();
     expect(start).not.toHaveBeenCalled();
     expect(progress.wordLearned('word-0')).toBe(true);
-    expect(word().querySelector('.word-learning-label')!.textContent).toContain('Já aprendi');
+    expect(word().querySelector('.word-learning-label')!.textContent).toContain('Já estudei');
     expect((word().querySelector('input[type=range]') as HTMLInputElement).value).toBe('2');
     expect(word().querySelectorAll('.word-state .filled')).toHaveLength(0);
     expect(progress.state().vocab['word-0'].attempts).toBe(0);

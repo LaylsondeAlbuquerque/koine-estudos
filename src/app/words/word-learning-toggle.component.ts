@@ -5,7 +5,7 @@ import {ManualWordState} from '../models';
   selector: 'koine-word-learning-toggle',
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <label class="tw:flex tw:items-center tw:justify-between tw:gap-3 tw:min-h-11 tw:text-content tw:cursor-pointer">
+    <label [attr.data-state]="states[position()]" class="tw:flex tw:items-center tw:justify-between tw:gap-3 tw:min-h-11 tw:text-content tw:cursor-pointer">
       <span class="word-learning-label tw:text-xs tw:font-semibold">{{ labels[position()] }}</span>
       <input type="range" min="0" max="2" step="1" [value]="position()"
         [attr.aria-label]="'Estado de estudo de ' + lemma()" [attr.aria-valuetext]="labels[position()]"
@@ -18,7 +18,7 @@ export class WordLearningToggleComponent {
   readonly state = input.required<ManualWordState>();
   readonly stateChange = output<ManualWordState>();
   readonly states = ['unlearned', 'review', 'learned'] as const;
-  readonly labels = ['Não estudei', 'Revisar', 'Já aprendi'] as const;
+  readonly labels = ['Não estudei', 'Revisar', 'Já estudei'] as const;
   readonly preview = signal<number|null>(null);
   readonly position = computed(() => this.preview() ?? this.states.indexOf(this.state()));
   constructor() { effect(() => { this.state(); this.preview.set(null); }); }
