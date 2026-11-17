@@ -1,0 +1,31 @@
+/* Explicit layers let Tailwind utilities override the existing design system. */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme) prefix(tw);
+@import "../styles.css" layer(components);
+@import "../study.css" layer(components);
+@import "../home.css" layer(components);
+@import "../theme.css" layer(components);
+@import "../learning.css" layer(components);
+@import "../readings.css" layer(components);
+@import "./angular.css" layer(components);
+@import "../ourforms.css" layer(components);
+@import "tailwindcss/utilities.css" layer(utilities) prefix(tw) source(none);
+
+/* Only application templates generate utilities, never local source materials. */
+@source "./app";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@theme inline {
+  --color-canvas: var(--paper);
+  --color-surface: var(--white);
+  --color-content: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-link: var(--blue);
+  --color-success: var(--green);
+  --color-vocabulary: var(--purple);
+  --color-highlight: var(--yellow);
+  --color-accent: var(--orange);
+  --font-body: var(--sans);
+  --font-heading: var(--display);
+  --font-greek: var(--greek);
+}

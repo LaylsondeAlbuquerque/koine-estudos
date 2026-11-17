@@ -61,14 +61,7 @@
               }
             ],
             "styles": [
-              "styles.css",
-              "study.css",
-              "home.css",
-              "theme.css",
-              "learning.css",
-              "readings.css",
-              "src/angular.css",
-              "ourforms.css"
+              "src/styles.css"
             ]
           },
           "configurations": {

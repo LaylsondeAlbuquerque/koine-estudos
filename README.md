@@ -2,7 +2,7 @@
 
 [**Acessar a demonstração**](https://laylsondealbuquerque.github.io/koine-estudos/) · [Ver o pipeline de publicação](.github/workflows/pages.yml)
 
-Aplicação **Angular 21 + TypeScript** para estudar grego do Novo Testamento. O projeto organiza aulas, artigos, exercícios e revisão de vocabulário em um único ambiente, com busca em grego e português e acompanhamento do estudo no navegador.
+Aplicação **Angular 21 + TypeScript + Tailwind CSS 4** para estudar grego do Novo Testamento. O projeto organiza aulas, artigos, exercícios e revisão de vocabulário em um único ambiente, com busca em grego e português e acompanhamento do estudo no navegador.
 
 **Código proprietário:** a reutilização do código original publicado sob os termos atuais exige autorização prévia e por escrito de Laylson de Albuquerque, observadas as permissões e ressalvas em [LICENSE](LICENSE). O acesso ao site para estudar é gratuito.
 
@@ -85,6 +85,14 @@ npm run preview
 ```
 
 Abra [http://127.0.0.1:4181/koine-estudos/](http://127.0.0.1:4181/koine-estudos/). Essa prévia serve somente o diretório compilado.
+
+## Estilos com Tailwind CSS
+
+O Angular compila Tailwind CSS 4 pelo plugin PostCSS, sem CDN nem dependência em tempo de execução. `src/styles.css` é a entrada única: importa o design existente na camada `components` e gera as utilidades na camada `utilities`, que tem precedência. O reset existente foi mantido; não há um segundo Preflight.
+
+As classes usam o prefixo `tw:` para evitar conflitos com nomes antigos. Os tokens semânticos (`tw:text-link`, `tw:bg-canvas`, `tw:font-heading`, por exemplo) acompanham as variáveis dos temas claro e escuro. A variante `tw:dark:` segue `html[data-theme=dark]`. Apenas os arquivos de `src/app` são examinados para gerar as classes.
+
+A toolbar usa utilidades para os ícones, contorno circular, estados de seleção, hover, foco, toque e movimento reduzido. Seu CSS local conserva apenas o posicionamento flutuante e a disposição em telas de toque. Os estilos específicos das demais telas e da animação permanecem como CSS na camada `components`; a adoção de Tailwind é híbrida, sem reescrita integral desses estilos.
 
 ## Estrutura
 
