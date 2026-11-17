@@ -4,11 +4,11 @@ label[data-state=review]{--learning-color:#eab308}
 label[data-state=learned]{--learning-color:var(--blue)}
 /* Native range supplies dragging, touch, arrow keys, Home and End. Only the
    release commits a change, so filtering cannot remove a card during a drag. */
-input[type=range]{appearance:none;-webkit-appearance:none;box-sizing:border-box;flex:none;width:88px;height:44px;margin:0;padding:0;background:transparent;border:0;border-radius:999px;cursor:grab;touch-action:pan-y}
+input[type=range]{appearance:none;-webkit-appearance:none;box-sizing:border-box;flex:none;width:64px;height:44px;margin:0;padding:0;background:transparent;border:0;border-radius:999px;cursor:grab;touch-action:pan-y}
 input[type=range]:active{cursor:grabbing}
-input[type=range]::-webkit-slider-runnable-track{box-sizing:border-box;height:16px;background:transparent;border:1px dashed var(--learning-color);border-radius:999px}
-input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;box-sizing:border-box;width:28px;height:28px;margin-top:-7px;border:0;border-radius:50%;background:var(--learning-color)}
-input[type=range]::-moz-range-track{box-sizing:border-box;height:16px;background:transparent;border:1px dashed var(--learning-color);border-radius:999px}
+input[type=range]::-webkit-slider-runnable-track{box-sizing:border-box;height:28px;background:transparent;border:1px dashed var(--learning-color);border-radius:999px}
+input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;box-sizing:border-box;width:28px;height:28px;margin-top:-1px;border:0;border-radius:50%;background:var(--learning-color)}
+input[type=range]::-moz-range-track{box-sizing:border-box;height:28px;background:transparent;border:1px dashed var(--learning-color);border-radius:999px}
 input[type=range]::-moz-range-thumb{box-sizing:border-box;width:28px;height:28px;border:0;border-radius:50%;background:var(--learning-color)}
 input[type=range]:focus-visible{outline:2px solid var(--learning-color);outline-offset:3px}
 @container(max-width:200px){label{flex-direction:column;align-items:flex-start;gap:2px}}
