@@ -17,7 +17,7 @@
 @if (showLevels()) {
 <div class="level-bar"><span>Selecione seu nível</span><div class="level-buttons" aria-label="Escolher nível">
   @for (name of levels; track $index) {
-    <button class="level-button" [class.active]="level() === $index" (click)="progress.setLevel(area(), $index)" [attr.aria-pressed]="level() === $index"><span class="level-no">{{ $index + 1 }}</span>{{ name }}</button>
+    <button class="level-button" [class.active]="level() === $index" (click)="progress.setLevel(area(), $index)" [attr.aria-pressed]="level() === $index">{{ name }}</button>
   }
 </div></div>
 }
